@@ -40,7 +40,6 @@ import Heading from '../../typography/Heading.vue'
 <style scoped>
 .list {
 	padding: 0;
-	padding-bottom: 50px;
 	max-width: 700px;
 	display: grid;
 	gap: 30px;

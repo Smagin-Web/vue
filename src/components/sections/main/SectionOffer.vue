@@ -51,6 +51,7 @@ import Heading from '../../typography/Heading.vue'
 }
 
 .card-content {
+	padding-bottom: 50px;
 	display: flex;
 	justify-content: space-between;
 	gap: 20px;
