@@ -11,7 +11,8 @@
 			letterSpacing: letterSpacingHeading,
 			textAlign: textAlignHeading,
 			textTransform: textTransform,
-			maxWidth: maxWidth
+			maxWidth: maxWidth,
+			margin: m
 		}"
 	>
 		<slot></slot>
@@ -28,6 +29,10 @@ export default {
 		pb: {
 			type: String,
 			default: '0px'
+		},
+		m: {
+			type: String,
+			default: undefined
 		},
 		color: {
 			type: String,
