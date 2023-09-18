@@ -29,7 +29,7 @@ import PictureResult from '../../icons/PictureResult.vue'
 <style scoped>
 .section-result {
 	padding-top: 250px;
-  padding-bottom: 190px;
+	padding-bottom: 190px;
 }
 .section-result__picture-container {
 	position: relative;
@@ -37,6 +37,9 @@ import PictureResult from '../../icons/PictureResult.vue'
 	background: #ede4da;
 	max-height: 442px;
 	height: 500px;
+	-webkit-box-shadow: -2px 33px 64px -6px rgba(49, 34, 17, 0.1);
+	-moz-box-shadow: -2px 33px 64px -6px rgba(49, 34, 17, 0.1);
+	box-shadow: -2px 33px 64px -6px rgba(49, 34, 17, 0.1);
 }
 
 .section-result__picture-container svg {
