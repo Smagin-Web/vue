@@ -13,9 +13,7 @@ import MContainer from '../../shared/MContainer.vue'
 				</p>
 				<div class="section-stories__cards">
 					<div class="section-stories__card">
-						<img
-							src="https://www.cosmetologist.ru/images/services/acne/acne-treatment-01-500-366.jpg"
-						/>
+						<img src="../../model.jpg" />
 						<p>
 							Описание курса и проведёных процедур.Lorem ipsum dolor sit amet
 							consectetur. Purus dui vulputate sagittis aliquam ac pellentesque
@@ -30,9 +28,7 @@ import MContainer from '../../shared/MContainer.vue'
 						</div>
 					</div>
 					<div class="section-stories__card">
-						<img
-							src="https://www.cosmetologist.ru/images/services/acne/acne-treatment-01-500-366.jpg"
-						/>
+						<img src="../../model.jpg" />
 						<p>
 							Описание курса и проведёных процедур.Lorem ipsum dolor sit amet
 							consectetur. Purus dui vulputate sagittis aliquam ac pellentesque
@@ -47,9 +43,7 @@ import MContainer from '../../shared/MContainer.vue'
 						</div>
 					</div>
 					<div class="section-stories__card">
-						<img
-							src="https://www.cosmetologist.ru/images/services/acne/acne-treatment-01-500-366.jpg"
-						/>
+						<img src="../../model.jpg" />
 						<p>
 							Описание курса и проведёных процедур.Lorem ipsum dolor sit amet
 							consectetur. Purus dui vulputate sagittis aliquam ac pellentesque
