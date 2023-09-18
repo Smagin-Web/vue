@@ -1,0 +1,139 @@
+@import './base.css';
+
+@font-face {
+	font-family: 'Pelinka';
+	font-weight: 500;
+	font-style: normal;
+	font-display: auto;
+	src:
+		local('Roboto'),
+		url('/fonts/pelinka/Pelinka-Bold.woff') format('woff');
+}
+@font-face {
+	font-family: 'Pelinka';
+	font-weight: 600;
+	font-style: normal;
+	font-display: auto;
+	src:
+		local('Roboto'),
+		url('/fonts/pelinka/Pelinka-CondensedBold.woff') format('woff');
+}
+@font-face {
+	font-family: 'Pelinka';
+	font-weight: 700;
+	font-style: normal;
+	font-display: auto;
+	src:
+		local('Roboto'),
+		url('/fonts/pelinka/Pelinka-ExpandedBold.woff') format('woff');
+}
+@font-face {
+	font-family: 'Pelinka';
+	font-weight: 400;
+	font-style: normal;
+	font-display: auto;
+	src:
+		local('Roboto'),
+		url('/fonts/pelinka/Pelinka-CondensedExtraLight.woff') format('woff');
+}
+@font-face {
+	font-family: 'Pelinka';
+	font-weight: 200;
+	font-style: normal;
+	font-display: auto;
+	src:
+		local('Roboto'),
+		url('/fonts/pelinka/Pelinka-ExpandedExtraLight.woff') format('woff');
+}
+@font-face {
+	font-family: 'Pelinka';
+	font-weight: 300;
+	font-style: normal;
+	font-display: auto;
+	src:
+		local('Roboto'),
+		url('/fonts/pelinka/Pelinka-ExtraLight.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'BrisaSans';
+	font-weight: 100;
+	font-style: normal;
+	font-display: auto;
+	src:
+		local('Roboto'),
+		url('/fonts/brisa/BrisaSans-Thin.woff') format('woff');
+}
+@font-face {
+	font-family: 'BrisaSans';
+	font-weight: 300;
+	font-style: normal;
+	font-display: auto;
+	src:
+		local('Roboto'),
+		url('/fonts/brisa/BrisaSans-Light.woff') format('woff');
+}
+@font-face {
+	font-family: 'BrisaSans';
+	font-weight: 400;
+	font-style: normal;
+	font-display: auto;
+	src:
+		local('Roboto'),
+		url('/fonts/brisa/BrisaSans-Regular.woff') format('woff');
+}
+@font-face {
+	font-family: 'BrisaSans';
+	font-weight: 500;
+	font-style: normal;
+	font-display: auto;
+	src:
+		local('Roboto'),
+		url('/fonts/brisa/BrisaSans-Medium.woff') format('woff');
+}
+@font-face {
+	font-family: 'BrisaSans';
+	font-weight: 700;
+	font-style: normal;
+	font-display: auto;
+	src:
+		local('Roboto'),
+		url('/fonts/brisa/BrisaSans-Bold.woff') format('woff');
+}
+
+#app {
+	font-weight: normal;
+	background-color: #f4eee8;
+	/* font-family: 'Pelinka', sans-serif; */
+}
+
+body {
+	/* font-family: 'Pelinka', sans-serif; */
+	font-family: 'BrisaSans', sans-serif;
+}
+
+svg {
+	display: block;
+}
+
+* {
+	font-style: normal;
+	line-height: normal;
+}
+
+a,
+button,
+.green {
+	cursor: pointer;
+	text-decoration: none;
+	transition: 0.4s;
+}
+
+@media (hover: hover) {
+	a:hover {
+		opacity: 0.7;
+	}
+	button:hover {
+		opacity: 0.6;
+	}
+}
