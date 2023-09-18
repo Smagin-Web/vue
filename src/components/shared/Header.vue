@@ -4,6 +4,8 @@ import MContainer from '../shared/MContainer.vue'
 import IconGoogle from '../icons/IconGoogle.vue'
 import IconYandex from '../icons/IconYandex.vue'
 import IconLogo from '../icons/IconLogo.vue'
+import Text from '../typography/Text.vue'
+import IconBurger from '../icons/IconBurger.vue'
 </script>
 
 <template>
@@ -18,14 +20,29 @@ import IconLogo from '../icons/IconLogo.vue'
 							</a>
 						</div>
 						<div class="header__icons">
-							<a><IconGoogle></IconGoogle></a>
-							<a><IconYandex></IconYandex></a>
+							<a class="header__social-link">
+								<IconGoogle />
+								<Text font-size-text="14px" font-weight-text="700" pt="3px"
+									>5</Text
+								>
+							</a>
+							<a class="header__social-link">
+								<IconYandex />
+								<Text font-size-text="14px" font-weight-text="700" pt="3px"
+									>4.5</Text
+								>
+							</a>
 						</div>
 					</div>
 					<div>
 						<nav class="header-nav">
 							<a v-for="item in items" :key="item">
-								{{ item }}
+								<template v-if="item === 'burger'">
+									<IconBurger />
+								</template>
+								<template v-else>
+									{{ item }}
+								</template>
 							</a>
 						</nav>
 					</div>
@@ -45,7 +62,7 @@ export default {
 				'Процедуры',
 				'Аппараты',
 				'Цены',
-				'='
+				'burger'
 			]
 		}
 	}
@@ -67,6 +84,12 @@ export default {
 	gap: 85px;
 }
 
+.header__social-link {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+}
+
 .header__icons {
 	display: flex;
 	gap: 22px;
@@ -75,6 +98,7 @@ export default {
 .header-nav {
 	display: flex;
 	gap: 30px;
+	align-items: center;
 }
 
 .header-nav a {

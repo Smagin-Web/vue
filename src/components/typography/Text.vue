@@ -5,6 +5,7 @@
 		:is="tag"
 		:style="{
 			paddingBottom: pb,
+			paddingTop: pt,
 			color: color,
 			fontWeight: fontWeightText,
 			fontSize: fontSizeText,
@@ -26,6 +27,10 @@ export default {
 			default: 'p'
 		},
 		pb: {
+			type: String,
+			default: undefined
+		},
+		pt: {
 			type: String,
 			default: undefined
 		},
