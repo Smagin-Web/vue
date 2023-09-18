@@ -101,6 +101,39 @@
 		url('/fonts/brisa/BrisaSans-Bold.woff') format('woff');
 }
 
+/* UA Brand */
+
+@font-face {
+	font-family: 'UABrand';
+	font-weight: 400;
+	font-style: normal;
+	font-display: auto;
+	src:
+		local('Roboto'),
+		url('/fonts/ua-brand/ua-BRAND-regular.woff2') format('woff2'),
+		url('/fonts/ua-brand/ua-BRAND-regular.woff') format('woff');
+}
+@font-face {
+	font-family: 'UABrand';
+	font-weight: 700;
+	font-style: normal;
+	font-display: auto;
+	src:
+		local('Roboto'),
+		url('/fonts/ua-brand/ua-BRAND-bold.woff2') format('woff2'),
+		url('/fonts/ua-brand/ua-BRAND-bold.woff') format('woff');
+}
+@font-face {
+	font-family: 'UABrand';
+	font-weight: 800;
+	font-style: normal;
+	font-display: auto;
+	src:
+		local('Roboto'),
+		url('/fonts/ua-brand/ua-BRAND-black.woff2') format('woff2'),
+		url('/fonts/ua-brand/ua-BRAND-black.woff') format('woff');
+}
+
 #app {
 	font-weight: normal;
 	background-color: #f4eee8;

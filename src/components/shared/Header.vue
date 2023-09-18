@@ -16,7 +16,7 @@ import IconBurger from '../icons/IconBurger.vue'
 					<div class="header-flex__left">
 						<div>
 							<a href="#">
-								<IconLogo></IconLogo>
+								<IconLogo />
 							</a>
 						</div>
 						<div class="header__icons">
