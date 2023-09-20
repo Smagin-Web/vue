@@ -12,7 +12,7 @@ import Heading from '../../typography/Heading.vue'
 			<template #children>
 				<div class="card">
 					<div class="card-badge">
-						<MBadge></MBadge>
+						<MBadge />
 					</div>
 					<div class="card-content">
 						<div>

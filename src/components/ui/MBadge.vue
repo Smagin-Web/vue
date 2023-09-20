@@ -1,5 +1,5 @@
 <template>
-	<div class="main-badge">Диагностика</div>
+	<div class="main-badge"><slot></slot></div>
 </template>
 
 <style scoped>
