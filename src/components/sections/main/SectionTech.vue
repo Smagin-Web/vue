@@ -1,31 +1,15 @@
 <script setup lang="ts">
 import MContainer from '../../shared/MContainer.vue'
-import Heading from '../../typography/Heading.vue'
 </script>
 
 <template>
 	<section class="section-tech">
 		<MContainer>
 			<template #children>
-				<Heading
-					tag="h3"
-					pb="50px"
-					color="#6D6364"
-					font-size-heading="50px"
-					max-width="1200px"
-					m="auto"
-				>
-					Мы&nbsp;разработали новый продукт в&nbsp;косметологии
-				</Heading>
-				<Heading
-					tag="h3"
-					color="white"
-					font-size-heading="150px"
-					class="big-heading"
-					pb="160px"
-				>
-					8&nbsp;концептов твоей красоты
-				</Heading>
+				<h4 class="heading">
+					Мы&nbsp;разработали новый&nbsp;продукт в&nbsp;косметологии
+				</h4>
+				<h4 class="big-heading">8&nbsp;концептов твоей красоты</h4>
 			</template>
 		</MContainer>
 	</section>
@@ -36,7 +20,37 @@ import Heading from '../../typography/Heading.vue'
 	padding: 104px 0 160px;
 }
 
+.heading {
+	color: #6d6364;
+	text-align: center;
+	font-family: 'Pelinka';
+	font-size: 50px;
+	font-weight: 700;
+	padding-bottom: 50px;
+}
+
 .big-heading {
+	color: #fff;
+	text-align: center;
 	text-shadow: 0px 10px 20px #d0c3b4;
+	font-family: 'Pelinka';
+	font-size: 150px;
+	font-weight: 700;
+}
+
+@media screen and (max-width: 1000px) {
+	.section-tech {
+		padding: 70px 0;
+	}
+
+	.heading {
+		font-size: 22px;
+	}
+
+	.big-heading {
+		font-family: 'Pelinka';
+		font-size: 42px;
+		font-weight: 700;
+	}
 }
 </style>

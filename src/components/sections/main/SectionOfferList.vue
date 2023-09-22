@@ -68,4 +68,11 @@ import Heading from '../../typography/Heading.vue'
 	justify-content: center;
 	align-items: center;
 }
+
+@media screen and (max-width: 1000px) {
+	.list-item {
+		gap: 10px;
+		grid-template-columns: 1fr;
+	}
+}
 </style>

@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import MContainer from '../../shared/MContainer.vue'
-import Heading from '../../typography/Heading.vue'
 import Text from '../../typography/Text.vue'
 </script>
 
@@ -8,41 +7,22 @@ import Text from '../../typography/Text.vue'
 	<section class="section-info">
 		<MContainer>
 			<template #children>
-				<Heading
-					tag="h3"
-					color="#fff"
-					font-size-heading="50px"
-					pb="80px"
-					max-width="1200px"
-					m="auto"
-				>
+				<h3 class="heading">
 					Наш Центр специализируется на&nbsp;аппаратной косметологии лица
 					и&nbsp;имеет медицинскую лицензию
-				</Heading>
-				<Text
-					color="#fff"
-					font-size-text="24px"
-					text-align-text="center"
-					font-weight-text="300"
-					max-width="880px"
-					pb="30px"
-				>
+				</h3>
+
+				<p class="text">
 					Мы&nbsp;уверены, что аппаратная косметология&nbsp;&mdash; это
 					безболезненные процедуры без стресса и&nbsp;реабилитации, при которых
 					клетки начинают работать лучше, улучшая состояние твоей кожи
 					на&nbsp;клеточном уровне.
-				</Text>
-				<Text
-					color="#fff"
-					font-size-text="24px"
-					text-align-text="center"
-					font-weight-text="300"
-					max-width="880px"
-				>
+					<br />
+					<br />
 					В&nbsp;отличие от&nbsp;инъекций, которые дают быстрый,
 					но&nbsp;временный результат, мы&nbsp;заботимся о&nbsp;долгосрочном
 					здоровье твоей кожи.
-				</Text>
+				</p>
 			</template>
 		</MContainer>
 	</section>
@@ -60,12 +40,37 @@ import Text from '../../typography/Text.vue'
 	padding-bottom: 80px;
 }
 
-.section-info p {
+.heading {
 	color: #fff;
 	text-align: center;
+	font-family: 'Pelinka';
+	font-size: 50px;
+	font-weight: 700;
+	padding-bottom: 80px;
+}
+
+.text {
+	color: #fff;
+	font-family: 'BrisaSans';
+	text-align: center;
 	font-size: 24px;
-	font-weight: 400;
-	max-width: 800px;
+	font-weight: 300;
+	max-width: 880px;
 	margin: auto;
+}
+
+@media screen and (max-width: 1000px) {
+	.heading {
+		font-size: 22px;
+		padding-bottom: 45px;
+	}
+
+	.text {
+		font-size: 16px;
+	}
+
+	.section-info {
+		padding: 76px 0;
+	}
 }
 </style>

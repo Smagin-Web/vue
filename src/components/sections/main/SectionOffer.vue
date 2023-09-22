@@ -3,7 +3,6 @@ import MContainer from '../../shared/MContainer.vue'
 import MBadge from '../../ui/MBadge.vue'
 import CardInsideOffer from '../../cards/CardInsideOffer.vue'
 import SectionOfferList from './SectionOfferList.vue'
-import Heading from '../../typography/Heading.vue'
 </script>
 
 <template>
@@ -12,17 +11,11 @@ import Heading from '../../typography/Heading.vue'
 			<template #children>
 				<div class="card">
 					<div class="card-badge">
-						<MBadge />
+						<MBadge>Диагностика</MBadge>
 					</div>
 					<div class="card-content">
 						<div>
-							<Heading
-								font-size-heading="42px"
-								text-align-heading="left"
-								pb="40px"
-							>
-								Хочешь здоровую кожу?
-							</Heading>
+							<h3 class="heading">Хочешь здоровую кожу?</h3>
 
 							<SectionOfferList />
 						</div>
@@ -31,7 +24,7 @@ import Heading from '../../typography/Heading.vue'
 							<img src="./offer.png" class="image" />
 						</div>
 					</div>
-					<CardInsideOffer />
+					<CardInsideOffer class="card-inside" />
 				</div>
 			</template>
 		</MContainer>
@@ -42,6 +35,15 @@ import Heading from '../../typography/Heading.vue'
 .section-offer {
 	padding-bottom: 100px;
 }
+
+.heading {
+	color: #000;
+	font-family: 'Pelinka';
+	font-size: 42px;
+	font-weight: 700;
+	padding-bottom: 40px;
+}
+
 .card {
 	position: relative;
 	border-radius: 100px;
@@ -75,5 +77,38 @@ import Heading from '../../typography/Heading.vue'
 	left: 0;
 	top: 50%;
 	transform: translateX(-62%) translateY(-54%);
+}
+
+@media screen and (max-width: 1000px) {
+	.heading {
+		font-size: 20px;
+		padding-bottom: 38px;
+	}
+
+	.card {
+		padding: 12px;
+		padding-top: 50px;
+	}
+
+	.card-content {
+		display: grid;
+		gap: 38px;
+		padding-bottom: 30px;
+	}
+
+	.image {
+		width: 100%;
+		height: auto;
+	}
+
+	.image-more {
+		width: 180px;
+		height: auto;
+		left: auto;
+		top: auto;
+		right: -10%;
+		bottom: -35%;
+		transform: none;
+	}
 }
 </style>
