@@ -182,3 +182,27 @@ h5 {
 		opacity: 0.6;
 	}
 }
+
+.heading-section {
+	padding-bottom: 40px;
+	font-size: 50px;
+}
+
+.text-section {
+	color: #6d6364;
+	font-size: 24px;
+	padding-bottom: 60px;
+}
+
+@media screen and (max-width: 1000px) {
+	.heading-section {
+		padding-bottom: 40px;
+		font-size: 20px;
+	}
+
+	.text-section {
+		color: #6d6364;
+		font-size: 17px;
+		padding-bottom: 34px;
+	}
+}

@@ -13,7 +13,7 @@ import CardInsideOfferPrice from './CardInsideOfferPrice.vue'
 			<CardInsideOfferPrice class="prices" />
 			<div class="buttons">
 				<MButton>Записаться на приём</MButton>
-				<MButtonOutline></MButtonOutline>
+				<MButtonOutline>Задать вопрос</MButtonOutline>
 			</div>
 		</div>
 	</div>

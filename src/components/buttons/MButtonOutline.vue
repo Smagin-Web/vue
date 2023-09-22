@@ -1,5 +1,5 @@
 <template>
-	<button class="main-button-outline">Задать вопрос</button>
+	<button class="main-button-outline"><slot></slot></button>
 </template>
 
 <style scoped>
