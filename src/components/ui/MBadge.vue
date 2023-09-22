@@ -19,4 +19,14 @@
 	font-size: 48px;
 	font-weight: 700;
 }
+
+@media screen and (max-width: 1000px) {
+	.main-badge {
+		font-size: 20px;
+
+		padding: 6px 40px;
+		line-height: 22px;
+		border-radius: 10px;
+	}
+}
 </style>

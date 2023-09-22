@@ -10,30 +10,32 @@ import CardInsideOfferPrice from './CardInsideOfferPrice.vue'
 			<h4 class="heading">
 				Первичный приём врача&nbsp;дерматолога&nbsp;+<br />диагностика&nbsp;Antera&nbsp;3D
 			</h4>
+			<CardInsideOfferPrice class="prices" />
 			<div class="buttons">
 				<MButton>Записаться на приём</MButton>
 				<MButtonOutline></MButtonOutline>
 			</div>
 		</div>
-
-		<CardInsideOfferPrice />
 	</div>
 </template>
 
 <style scoped>
 .card-inside {
-	display: flex;
-	justify-content: space-between;
 	background-color: #fff;
 	border-radius: 50px;
 	padding: 80px;
-	padding-bottom: 54px;
+	position: relative;
+}
+
+.prices {
+	position: absolute;
+	right: 90px;
+	bottom: 60px;
 }
 
 .buttons {
 	display: flex;
 	gap: 20px;
-	padding-bottom: 26px;
 }
 
 .heading {
@@ -45,15 +47,23 @@ import CardInsideOfferPrice from './CardInsideOfferPrice.vue'
 	padding-bottom: 70px;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1450px) {
+	.prices {
+		position: static;
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: start;
+		padding-bottom: 40px;
+		gap: 24px;
+	}
 	.card-inside {
 		display: grid;
-		padding: 30px 16px 44px;
+		padding: 44px 16px;
 	}
 
 	.heading {
 		font-size: 20px;
-		padding-bottom: 160px;
+		padding-bottom: 24px;
 	}
 
 	.buttons {

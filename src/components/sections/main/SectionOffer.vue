@@ -77,6 +77,7 @@ import SectionOfferList from './SectionOfferList.vue'
 	left: 0;
 	top: 50%;
 	transform: translateX(-62%) translateY(-54%);
+	z-index: 20;
 }
 
 @media screen and (max-width: 1000px) {
@@ -88,6 +89,7 @@ import SectionOfferList from './SectionOfferList.vue'
 	.card {
 		padding: 12px;
 		padding-top: 50px;
+		border-radius: 40px;
 	}
 
 	.card-content {
@@ -109,6 +111,12 @@ import SectionOfferList from './SectionOfferList.vue'
 		right: -10%;
 		bottom: -35%;
 		transform: none;
+	}
+
+	.card-badge {
+		left: 50%;
+		top: 0;
+		transform: translateY(-50%) translateX(-50%);
 	}
 }
 </style>

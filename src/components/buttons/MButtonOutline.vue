@@ -16,4 +16,11 @@
 
 	padding: 14px 44px;
 }
+
+@media screen and (max-width: 1000px) {
+	.main-button-outline {
+		font-size: 16px;
+		padding: 14px 18px;
+	}
+}
 </style>
