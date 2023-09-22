@@ -1,24 +1,20 @@
 <script setup lang="ts">
 import MContainer from '../../shared/MContainer.vue'
-import PictureResult from '../../icons/PictureResult.vue'
+import SectionResultBanner from './SectionResultBanner.vue'
 </script>
 
 <template>
 	<section class="section-result">
 		<MContainer>
 			<template #children>
-				<div class="section-result__grid">
-					<div class="section-result__picture-container">
-						<PictureResult />
-					</div>
+				<div class="content">
+					<SectionResultBanner class="banner" />
 					<div>
-						<h3 class="section-result__heading">
-							Что ты получишь<br />в результате приёма?
-						</h3>
-						<p>
+						<h3 class="heading">Что ты получишь<br />в результате приёма?</h3>
+						<h5 class="text">
 							Анализируя полученные данные,<br />врач проведёт оценку состояния
 							твоей кожи<br />и&nbsp;определит стадию заболевания
-						</p>
+						</h5>
 					</div>
 				</div>
 			</template>
@@ -31,40 +27,47 @@ import PictureResult from '../../icons/PictureResult.vue'
 	padding-top: 250px;
 	padding-bottom: 190px;
 }
-.section-result__picture-container {
-	position: relative;
-	border-radius: 150px 20px;
-	background: #ede4da;
-	max-height: 442px;
-	height: 500px;
-	-webkit-box-shadow: -2px 33px 64px -6px rgba(49, 34, 17, 0.1);
-	-moz-box-shadow: -2px 33px 64px -6px rgba(49, 34, 17, 0.1);
-	box-shadow: -2px 33px 64px -6px rgba(49, 34, 17, 0.1);
-}
 
-.section-result__picture-container svg {
-	position: absolute;
-	bottom: 0;
-	left: 20%;
-}
-
-.section-result__grid {
+.content {
 	display: grid;
 	gap: 168px;
 	align-items: center;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr minmax(200px, 700px);
 }
 
-.section-result__heading {
+.heading {
 	padding-bottom: 40px;
-	color: #000;
 	font-size: 42px;
-	font-weight: 700;
 }
 
-.section-result p {
+.text {
 	color: #6d6364;
 	font-size: 24px;
-	font-weight: 700;
+}
+
+@media screen and (max-width: 1000px) {
+	.section-result {
+		padding-top: 0;
+		padding-bottom: 90px;
+	}
+	.content {
+		display: flex;
+		flex-direction: column-reverse;
+		gap: 80px;
+		grid-template-columns: 1fr;
+		align-items: stretch;
+		max-width: 400px;
+	}
+
+	.banner {
+		padding-top: 25%;
+	}
+
+	.heading {
+		font-size: 20px;
+	}
+	.text {
+		font-size: 17px;
+	}
 }
 </style>
