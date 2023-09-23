@@ -12,7 +12,7 @@ import SectionPlusesPicture3 from './SectionPlusesPicture3.vue'
 				<div class="cards">
 					<SectionPlusesPicture1 />
 					<SectionPlusesPicture2 />
-					<SectionPlusesPicture3 />
+					<SectionPlusesPicture3 class="picture-3" />
 				</div>
 			</template>
 		</MContainer>
@@ -25,7 +25,7 @@ import SectionPlusesPicture3 from './SectionPlusesPicture3.vue'
 	align-items: start;
 	grid-template-columns: 1fr 1fr 1fr;
 	gap: 24px;
-	padding-bottom: 160px;
+	padding-bottom: 170px;
 }
 .section-pluses {
 	margin-top: 200px;
@@ -34,6 +34,10 @@ import SectionPlusesPicture3 from './SectionPlusesPicture3.vue'
 @media screen and (max-width: 1450px) {
 	.cards {
 		grid-template-columns: minmax(100px, 500px);
+	}
+
+	.picture-3 {
+		padding-top: 150px;
 	}
 }
 </style>

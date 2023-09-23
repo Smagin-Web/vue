@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import PicturePluses1 from '../../icons/PicturePluses1.vue'
+import SectionPlusesPictureText from './SectionPlusesPictureText.vue'
 </script>
 
 <template>
@@ -20,8 +21,10 @@ import PicturePluses1 from '../../icons/PicturePluses1.vue'
 			<PicturePluses1 class="picture" />
 			<div class="text-wrapper">
 				<h4 class="text">
-					Сертифицированные косметологи&nbsp;и&nbsp;врачи
-					со&nbsp;стажем&nbsp;от&nbsp;10&nbsp;лет
+					<SectionPlusesPictureText>
+						Сертифицированные косметологи&nbsp;и&nbsp;врачи
+						со&nbsp;стажем&nbsp;от&nbsp;10&nbsp;лет
+					</SectionPlusesPictureText>
 				</h4>
 			</div>
 		</div>
@@ -58,23 +61,9 @@ import PicturePluses1 from '../../icons/PicturePluses1.vue'
 	padding-right: 10%;
 }
 
-.text {
-	font-family: 'Pelinka';
-	font-size: 24px;
-	text-align: center;
-	font-weight: 700;
-	color: black;
-}
-
-@media screen and (max-width: 1760px) {
-	.text {
-		font-size: 20px;
-	}
-}
-
-@media screen and (max-width: 1600px) {
-	.text {
-		font-size: 18px;
+@media screen and (max-width: 1450px) {
+	.card {
+		padding-top: 0;
 	}
 }
 </style>

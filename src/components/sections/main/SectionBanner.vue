@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import SectionBannerBadges from './SectionBannerBadges.vue'
 import SectionBannerBlock from './SectionBannerBlock.vue'
 import SectionBannerText from './SectionBannerText.vue'
 </script>
@@ -104,6 +103,7 @@ import SectionBannerText from './SectionBannerText.vue'
 	.content-info {
 		padding-right: 0;
 		justify-content: start;
+		padding-bottom: 0;
 	}
 
 	.content-heading-text {

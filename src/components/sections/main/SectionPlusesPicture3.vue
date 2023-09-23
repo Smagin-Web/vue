@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import PicturePluses3 from '../../icons/PicturePluses3.vue'
+import SectionPlusesPictureText from './SectionPlusesPictureText.vue'
 </script>
 
 <template>
@@ -18,10 +19,10 @@ import PicturePluses3 from '../../icons/PicturePluses3.vue'
 		</svg>
 		<PicturePluses3 class="picture" />
 		<div class="text-wrapper">
-			<h4 class="text">
+			<SectionPlusesPictureText>
 				Своё&nbsp;закрытое&nbsp;сообщество, где&nbsp;делимся&nbsp;секретами
 				молодости
-			</h4>
+			</SectionPlusesPictureText>
 		</div>
 	</div>
 </template>
@@ -55,25 +56,5 @@ import PicturePluses3 from '../../icons/PicturePluses3.vue'
 	padding-bottom: 7.5%;
 	padding-left: 10%;
 	padding-right: 10%;
-}
-
-.text {
-	font-family: 'Pelinka';
-	font-size: 24px;
-	text-align: center;
-	font-weight: 700;
-	color: black;
-}
-
-@media screen and (max-width: 1760px) {
-	.text {
-		font-size: 20px;
-	}
-}
-
-@media screen and (max-width: 1600px) {
-	.text {
-		font-size: 18px;
-	}
 }
 </style>
