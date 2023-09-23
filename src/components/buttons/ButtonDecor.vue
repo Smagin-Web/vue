@@ -17,8 +17,17 @@
 
 	font-size: 16px;
 	font-weight: 400;
-  letter-spacing: 2px;
+	letter-spacing: 2px;
 
 	cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+	.button-decor {
+		padding: 6px 16px;
+
+		font-size: 12px;
+		font-weight: 600;
+	}
 }
 </style>

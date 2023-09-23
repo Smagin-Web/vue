@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import MContainer from '../../shared/MContainer.vue'
-import Heading from '../../typography/Heading.vue'
 </script>
 
 <template>
@@ -8,9 +7,7 @@ import Heading from '../../typography/Heading.vue'
 		<MContainer>
 			<template #children>
 				<div class="section-review-content">
-					<Heading tag="h4" font-size-heading="42px">
-						Отзывы на площадках
-					</Heading>
+					<h4 class="heading">Отзывы на&nbsp;площадках</h4>
 					<div class="section-review__links">
 						<img src="./Yandex.png" />
 						<img src="./Yandex.png" />
@@ -24,6 +21,9 @@ import Heading from '../../typography/Heading.vue'
 </template>
 
 <style scoped>
+.heading {
+	font-size: 42px;
+}
 .section-review {
 	padding-bottom: 160px;
 }
@@ -39,5 +39,37 @@ import Heading from '../../typography/Heading.vue'
 .section-review__links {
 	display: flex;
 	gap: 16px;
+}
+
+@media screen and (max-width: 1450px) {
+	.section-review-content {
+		flex-direction: column;
+		gap: 25px;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.heading {
+		font-size: 22px;
+	}
+
+	.section-review {
+		padding-bottom: 50px;
+	}
+
+	.section-review-content {
+		padding: 40px 14px;
+		border-radius: 40px;
+	}
+
+	.section-review-content img {
+		width: 100%;
+	}
+
+	.section-review__links {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 15px;
+	}
 }
 </style>
