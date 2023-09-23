@@ -106,6 +106,10 @@ export default {
 	.header-nav .header-nav-item:first-child {
 		padding-right: 16px;
 	}
+
+	.header {
+		padding: 24px 0;
+	}
 }
 
 @media screen and (max-width: 1340px) {
