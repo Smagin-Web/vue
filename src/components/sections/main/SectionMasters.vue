@@ -38,4 +38,5 @@ import MButtonOutline from '../../buttons/MButtonOutline.vue'
 	gap: 24px;
 	padding-bottom: 54px;
 }
+
 </style>

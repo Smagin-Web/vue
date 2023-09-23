@@ -34,10 +34,18 @@ import SectionPlusesPicture3 from './SectionPlusesPicture3.vue'
 @media screen and (max-width: 1450px) {
 	.cards {
 		grid-template-columns: minmax(100px, 500px);
+		padding-bottom: 100px;
+		max-width: 400px;
 	}
 
 	.picture-3 {
 		padding-top: 150px;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.picture-3 {
+		padding-top: 100px;
 	}
 }
 </style>

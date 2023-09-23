@@ -57,4 +57,10 @@ import SectionPlusesPictureText from './SectionPlusesPictureText.vue'
 	padding-left: 10%;
 	padding-right: 10%;
 }
+
+@media screen and (max-width: 1450px) {
+	.picture {
+		bottom: 25%;
+	}
+}
 </style>
