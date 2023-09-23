@@ -1,11 +1,9 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <script setup lang="ts">
 import MContainer from '../shared/MContainer.vue'
-import IconGoogle from '../icons/IconGoogle.vue'
-import IconYandex from '../icons/IconYandex.vue'
-import IconLogo from '../icons/IconLogo.vue'
-import Text from '../typography/Text.vue'
+import Logo from './Logo.vue'
 import IconBurger from '../icons/IconBurger.vue'
+import HeaderSocialLink from './HeaderSocialLink.vue'
 </script>
 
 <template>
@@ -13,39 +11,20 @@ import IconBurger from '../icons/IconBurger.vue'
 		<MContainer>
 			<template #children>
 				<div class="header-flex">
-					<div class="header-flex__left">
-						<div>
-							<a href="#">
-								<IconLogo />
-							</a>
-						</div>
-						<div class="header__icons">
-							<a class="header__social-link">
-								<IconGoogle />
-								<Text font-size-text="14px" font-weight-text="700" pt="3px"
-									>5</Text
-								>
-							</a>
-							<a class="header__social-link">
-								<IconYandex />
-								<Text font-size-text="14px" font-weight-text="700" pt="3px"
-									>4.5</Text
-								>
-							</a>
-						</div>
+					<div class="header-flex-left">
+						<Logo />
+						<HeaderSocialLink class="socials" />
 					</div>
-					<div>
-						<nav class="header-nav">
-							<a v-for="item in items" :key="item">
-								<template v-if="item === 'burger'">
-									<IconBurger />
-								</template>
-								<template v-else>
-									{{ item }}
-								</template>
-							</a>
-						</nav>
-					</div>
+					<nav class="header-nav">
+						<a class="header-nav-item" v-for="item in items" :key="item">
+							<template v-if="item === 'burger'">
+								<IconBurger class="burger-icon" />
+							</template>
+							<template v-else>
+								<span class="header-nav-item-link">{{ item }}</span>
+							</template>
+						</a>
+					</nav>
 				</div>
 			</template>
 		</MContainer>
@@ -71,7 +50,13 @@ export default {
 
 <style scoped>
 .header {
+	background: #f4eee8;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
 	padding: 45px 0 30px;
+	z-index: 100;
 }
 
 .header-flex {
@@ -79,20 +64,9 @@ export default {
 	justify-content: space-between;
 }
 
-.header-flex__left {
+.header-flex-left {
 	display: flex;
 	gap: 85px;
-}
-
-.header__social-link {
-	display: flex;
-	align-items: center;
-	gap: 6px;
-}
-
-.header__icons {
-	display: flex;
-	gap: 22px;
 }
 
 .header-nav {
@@ -101,17 +75,68 @@ export default {
 	align-items: center;
 }
 
-.header-nav a {
+.header-nav-item-link {
 	color: #6d6364;
+	font-family: 'Pelinka';
 	font-size: 20px;
 	font-weight: 700;
 }
 
-.header-nav a:first-child {
+.header-nav .header-nav-item:first-child {
 	padding-right: 50px;
 }
 
-.logo {
-	margin-left: 85px;
+@media screen and (max-width: 1620px) {
+	.header-nav-item-link {
+		font-size: 18px;
+	}
+}
+
+@media screen and (max-width: 1550px) {
+	.header-nav-item-link {
+		font-size: 16px;
+	}
+
+	.header-flex-left {
+		gap: 48px;
+	}
+}
+
+@media screen and (max-width: 1480px) {
+	.header-nav .header-nav-item:first-child {
+		padding-right: 16px;
+	}
+}
+
+@media screen and (max-width: 1340px) {
+	.socials {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	.header-nav-item-link {
+		font-size: 14px;
+	}
+}
+
+@media screen and (max-width: 1080px) {
+	.header-nav .header-nav-item:first-child {
+		padding-right: 0;
+	}
+
+	.header-nav {
+		gap: 20px;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.header-nav-item-link {
+		display: none;
+	}
+
+	.header {
+		padding: 12px 0 10px;
+	}
 }
 </style>

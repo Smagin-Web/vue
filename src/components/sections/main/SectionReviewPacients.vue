@@ -2,8 +2,6 @@
 
 <script setup lang="ts">
 import MContainer from '../../shared/MContainer.vue'
-import CardMaster from '../../cards/CardMaster.vue'
-import MButtonOutline from '../../buttons/MButtonOutline.vue'
 import PictureReviews from '@/components/icons/PictureReviews.vue'
 import MButton from '@/components/buttons/MButton.vue'
 </script>

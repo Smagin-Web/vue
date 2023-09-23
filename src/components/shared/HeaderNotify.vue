@@ -16,7 +16,7 @@ import IconClose from '../icons/IconClose.vue'
 						letter-spacing-heading="6.9px"
 						text-transform="uppercase"
 					>
-						Версия сайта для слабовидящих
+						Версия сайта для слабовидящих 222
 					</Heading>
 					<div style="position: absolute; right: 0; top: -2px">
 						<IconClose />
@@ -31,5 +31,11 @@ import IconClose from '../icons/IconClose.vue'
 .header-notify {
 	padding: 15px 0;
 	background-color: #fff;
+}
+
+@media screen and (max-width: 1000px) {
+	.header-notify {
+		display: none;
+	}
 }
 </style>

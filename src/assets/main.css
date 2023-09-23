@@ -135,7 +135,6 @@
 }
 
 #app {
-	font-weight: normal;
 	background-color: #f4eee8;
 	/* font-family: 'Pelinka', sans-serif; */
 }
@@ -143,6 +142,8 @@
 body {
 	/* font-family: 'Pelinka', sans-serif; */
 	font-family: 'BrisaSans', sans-serif;
+	overflow-x: hidden;
+	/* font-weight: 400; */
 }
 
 svg {

@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import Text from '../../typography/Text.vue'
 import SectionBannerBlock from './SectionBannerBlock.vue'
 import MBadge from '@/components/ui/MBadge.vue'
 </script>
@@ -162,6 +161,7 @@ import MBadge from '@/components/ui/MBadge.vue'
 	}
 
 	.banner {
+		width: 100%;
 		max-width: 500px;
 	}
 
