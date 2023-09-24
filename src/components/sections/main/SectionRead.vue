@@ -44,18 +44,19 @@ import { Swiper, SwiperSlide } from 'swiper/vue'
 </template>
 
 <script lang="ts">
+const onSwiper = (swiper: any) => {
+	console.log(swiper)
+}
+const onSlideChange = () => {
+	console.log('slide change')
+}
 export default {
 	components: {
 		Swiper,
 		SwiperSlide
 	},
-	setup() {
-		const onSwiper = (swiper: any) => {
-			console.log(swiper)
-		}
-		const onSlideChange = () => {
-			console.log('slide change')
-		}
+
+	data() {
 		return {
 			onSwiper,
 			onSlideChange
