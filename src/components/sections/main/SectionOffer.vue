@@ -34,6 +34,7 @@ import SectionOfferList from './SectionOfferList.vue'
 <style scoped>
 .section-offer {
 	padding-bottom: 100px;
+	overflow-x: hidden;
 }
 
 .heading {

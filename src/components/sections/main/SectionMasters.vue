@@ -1,4 +1,7 @@
 <script setup lang="ts">
+import 'swiper/css'
+import { Swiper, SwiperSlide } from 'swiper/vue'
+
 import MContainer from '../../shared/MContainer.vue'
 import CardMaster from '../../cards/CardMaster.vue'
 import MButtonOutline from '../../buttons/MButtonOutline.vue'
@@ -14,12 +17,12 @@ import MButtonOutline from '../../buttons/MButtonOutline.vue'
 						Врачи-косметологи Face Concept помогут вернуть твоей коже молодость
 						и&nbsp;красоту!
 					</h5>
-					<div class="card-group">
-						<CardMaster />
-						<CardMaster />
-						<CardMaster />
-						<CardMaster />
-					</div>
+					<Swiper>
+						<swiper-slide><CardMaster /></swiper-slide>
+						<swiper-slide><CardMaster /></swiper-slide>
+						<swiper-slide><CardMaster /></swiper-slide>
+						<swiper-slide><CardMaster /></swiper-slide>
+					</Swiper>
 					<div style="display: flex; justify-content: center">
 						<MButtonOutline>Показать ещё врачей</MButtonOutline>
 					</div>
@@ -28,6 +31,27 @@ import MButtonOutline from '../../buttons/MButtonOutline.vue'
 		</MContainer>
 	</section>
 </template>
+
+<script lang="ts">
+export default {
+	components: {
+		Swiper,
+		SwiperSlide
+	},
+	setup() {
+		const onSwiper = (swiper: any) => {
+			console.log(swiper)
+		}
+		const onSlideChange = () => {
+			console.log('slide change')
+		}
+		return {
+			onSwiper,
+			onSlideChange
+		}
+	}
+}
+</script>
 
 <style scoped>
 .section-masters {
@@ -38,5 +62,4 @@ import MButtonOutline from '../../buttons/MButtonOutline.vue'
 	gap: 24px;
 	padding-bottom: 54px;
 }
-
 </style>

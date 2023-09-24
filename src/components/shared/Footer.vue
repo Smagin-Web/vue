@@ -7,7 +7,7 @@ import FooterInfo from './FooterInfo.vue'
 </script>
 
 <template>
-	<header class="footer">
+	<footer class="footer">
 		<MContainer>
 			<template #children>
 				<div>
@@ -19,7 +19,7 @@ import FooterInfo from './FooterInfo.vue'
 				<FooterInfo />
 			</template>
 		</MContainer>
-	</header>
+	</footer>
 </template>
 
 <script lang="ts">

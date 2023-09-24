@@ -26,6 +26,7 @@ import SectionResultBanner from './SectionResultBanner.vue'
 .section-result {
 	padding-top: 250px;
 	padding-bottom: 190px;
+	overflow-x: hidden;
 }
 
 .content {

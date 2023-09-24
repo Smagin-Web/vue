@@ -26,9 +26,10 @@ import SectionPlusesPicture3 from './SectionPlusesPicture3.vue'
 	grid-template-columns: 1fr 1fr 1fr;
 	gap: 24px;
 	padding-bottom: 170px;
+	padding-top: 200px;
 }
 .section-pluses {
-	margin-top: 200px;
+	overflow-x: hidden;
 }
 
 @media screen and (max-width: 1450px) {
