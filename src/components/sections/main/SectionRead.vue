@@ -67,7 +67,7 @@ export default {
 
 <style scoped>
 .button {
-	padding-top: 70px;
+	margin-top: 70px;
 }
 .swiper-container {
 	margin: 0 -24px;
@@ -88,7 +88,7 @@ export default {
 	}
 
 	.button {
-		padding-top: 54px;
+		margin-top: 54px;
 	}
 }
 </style>

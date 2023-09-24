@@ -1,8 +1,3 @@
-<script setup lang="ts">
-import Heading from '../typography/Heading.vue'
-import Text from '../typography/Text.vue'
-</script>
-
 <template>
 	<div class="card">
 		<img src="./Avatar.png" class="card-img" />

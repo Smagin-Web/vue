@@ -65,6 +65,6 @@ export default {
 }
 
 .button {
-	padding-top: 54px;
+	margin-top: 54px;
 }
 </style>
