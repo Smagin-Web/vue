@@ -1,5 +1,7 @@
 <script setup lang="ts">
+import { Swiper, SwiperSlide } from 'swiper/vue'
 import MContainer from '../../shared/MContainer.vue'
+import 'swiper/css'
 </script>
 
 <template>
@@ -12,56 +14,94 @@ import MContainer from '../../shared/MContainer.vue'
 					и&nbsp;ориентироваться в&nbsp;его стоимости
 				</h5>
 				<div class="card-group">
-					<div class="card">
-						<img src="../../model.jpg" class="card-img" />
-						<p class="card-text">
-							Описание курса и проведёных процедур.Lorem ipsum dolor sit amet
-							consectetur. Purus dui vulputate sagittis aliquam ac pellentesque
-							condimentum lectus amet. Mollis vitae sit gravida tellus vel
-							faucibus. Purus elementum tortor lectus scelerisque non. Vitae sit
-							non velit elit nisl ut egestas. Felis nulla faucibus rhoncus diam
-							nisi tempor.
-						</p>
-						<div class="card-link-group">
-							<a class="card-link">Срок</a>
-							<a class="card-link">Стоимость</a>
-						</div>
-					</div>
-					<div class="card">
-						<img src="../../model.jpg" class="card-img" />
-						<p class="card-text">
-							Описание курса и проведёных процедур.Lorem ipsum dolor sit amet
-							consectetur. Purus dui vulputate sagittis aliquam ac pellentesque
-							condimentum lectus amet. Mollis vitae sit gravida tellus vel
-							faucibus. Purus elementum tortor lectus scelerisque non. Vitae sit
-							non velit elit nisl ut egestas. Felis nulla faucibus rhoncus diam
-							nisi tempor.
-						</p>
-						<div class="card-link-group">
-							<a class="card-link">Срок</a>
-							<a class="card-link">Стоимость</a>
-						</div>
-					</div>
-					<div class="card">
-						<img src="../../model.jpg" class="card-img" />
-						<p class="card-text">
-							Описание курса и проведёных процедур.Lorem ipsum dolor sit amet
-							consectetur. Purus dui vulputate sagittis aliquam ac pellentesque
-							condimentum lectus amet. Mollis vitae sit gravida tellus vel
-							faucibus. Purus elementum tortor lectus scelerisque non. Vitae sit
-							non velit elit nisl ut egestas. Felis nulla faucibus rhoncus diam
-							nisi tempor.
-						</p>
-						<div class="card-link-group">
-							<a class="card-link">Срок</a>
-							<a class="card-link">Стоимость</a>
-						</div>
-					</div>
+					<Swiper
+						:breakpoints="{
+							300: { slidesPerView: 1.2 },
+							600: { slidesPerView: 2.2 },
+							900: { slidesPerView: 3 }
+						}"
+						:space-between="14"
+						@swiper="onSwiper"
+						@slideChange="onSlideChange"
+					>
+						<swiper-slide>
+							<div class="card">
+								<img src="../../model.jpg" class="card-img" />
+								<p class="card-text">
+									Описание курса и проведёных процедур.Lorem ipsum dolor sit
+									amet consectetur. Purus dui vulputate sagittis aliquam ac
+									pellentesque condimentum lectus amet. Mollis vitae sit gravida
+									tellus vel faucibus. Purus elementum tortor lectus scelerisque
+									non. Vitae sit non velit elit nisl ut egestas. Felis nulla
+									faucibus rhoncus diam nisi tempor.
+								</p>
+								<div class="card-link-group">
+									<a class="card-link">Срок</a>
+									<a class="card-link">Стоимость</a>
+								</div>
+							</div>
+						</swiper-slide>
+						<swiper-slide>
+							<div class="card">
+								<img src="../../model.jpg" class="card-img" />
+								<p class="card-text">
+									Описание курса и проведёных процедур.Lorem ipsum dolor sit
+									amet consectetur. Purus dui vulputate sagittis aliquam ac
+									pellentesque condimentum lectus amet. Mollis vitae sit gravida
+									tellus vel faucibus. Purus elementum tortor lectus scelerisque
+									non. Vitae sit non velit elit nisl ut egestas. Felis nulla
+									faucibus rhoncus diam nisi tempor.
+								</p>
+								<div class="card-link-group">
+									<a class="card-link">Срок</a>
+									<a class="card-link">Стоимость</a>
+								</div>
+							</div>
+						</swiper-slide>
+						<swiper-slide>
+							<div class="card">
+								<img src="../../model.jpg" class="card-img" />
+								<p class="card-text">
+									Описание курса и проведёных процедур.Lorem ipsum dolor sit
+									amet consectetur. Purus dui vulputate sagittis aliquam ac
+									pellentesque condimentum lectus amet. Mollis vitae sit gravida
+									tellus vel faucibus. Purus elementum tortor lectus scelerisque
+									non. Vitae sit non velit elit nisl ut egestas. Felis nulla
+									faucibus rhoncus diam nisi tempor.
+								</p>
+								<div class="card-link-group">
+									<a class="card-link">Срок</a>
+									<a class="card-link">Стоимость</a>
+								</div>
+							</div>
+						</swiper-slide>
+					</Swiper>
 				</div>
 			</template>
 		</MContainer>
 	</section>
 </template>
+
+<script lang="ts">
+export default {
+	components: {
+		Swiper,
+		SwiperSlide
+	},
+	setup() {
+		const onSwiper = (swiper: any) => {
+			console.log(swiper)
+		}
+		const onSlideChange = () => {
+			console.log('slide change')
+		}
+		return {
+			onSwiper,
+			onSlideChange
+		}
+	}
+}
+</script>
 
 <style scoped>
 .section-stories {
@@ -77,13 +117,6 @@ import MContainer from '../../shared/MContainer.vue'
 	color: #6d6364;
 	font-size: 24px;
 	padding-bottom: 60px;
-}
-
-.card-group {
-	display: grid;
-	max-width: 100%;
-	grid-template-columns: 1fr 1fr 1fr;
-	gap: 24px;
 }
 
 .card {
@@ -117,7 +150,7 @@ import MContainer from '../../shared/MContainer.vue'
 	font-family: 'Pelinka';
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1300px) {
 	.heading {
 		padding-bottom: 40px;
 		font-size: 20px;
@@ -140,10 +173,6 @@ import MContainer from '../../shared/MContainer.vue'
 
 	.card-link-group {
 		padding-right: 0;
-	}
-
-	.card-group {
-		gap: 14px;
 	}
 
 	.card-text {

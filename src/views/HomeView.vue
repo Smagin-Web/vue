@@ -11,13 +11,15 @@ import SectionStories from '../components/sections/main/SectionStories.vue'
 import SectionMasters from '../components/sections/main/SectionMasters.vue'
 import SectionRead from '../components/sections/main/SectionRead.vue'
 import SectionReview from '../components/sections/main/SectionReview.vue'
-import SectionBanner from '@/components/sections/main/SectionBanner.vue'
-import SectionReviewPacients from '@/components/sections/main/SectionReviewPacients.vue'
+import SectionBanner from '../components/sections/main/SectionBanner.vue'
+import SectionReviewPacients from '../components/sections/main/SectionReviewPacients.vue'
+import SwiperComponent from '../components/SwiperComponent.vue'
 </script>
 
 <template>
 	<HeaderNotify />
 	<Header />
+	<SwiperComponent />
 	<SectionBanner />
 	<SectionPluses />
 	<SectionInfo />
