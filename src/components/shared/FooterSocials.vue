@@ -27,7 +27,8 @@ import IconGooglePlay from '../icons/IconGooglePlay.vue'
 
 <style scoped>
 .footer-socials {
-	max-width: 350px;
+	width: 350px;
+  max-width: 350px;
 }
 
 .footer-socials-icons {

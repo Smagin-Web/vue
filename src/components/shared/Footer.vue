@@ -3,6 +3,7 @@
 import MContainer from '../shared/MContainer.vue'
 import Logo from '../icons/IconLogo.vue'
 import FooterNav from './FooterNav.vue'
+import FooterInfo from './FooterInfo.vue'
 </script>
 
 <template>
@@ -10,11 +11,12 @@ import FooterNav from './FooterNav.vue'
 		<MContainer>
 			<template #children>
 				<div>
-					<div class="footer__logo">
+					<div class="footer-logo">
 						<Logo />
 					</div>
 					<FooterNav />
 				</div>
+				<FooterInfo />
 			</template>
 		</MContainer>
 	</header>
@@ -123,16 +125,7 @@ export default {
 	padding: 50px 0;
 }
 
-.footer-nav-title {
-}
-
-.footer__link {
-	font-family: 'Pelinka', sans-serif;
-	color: #6d6364;
-	font-size: 22px;
-	font-weight: 700;
-}
-.footer__logo {
+.footer-logo {
 	padding-bottom: 65px;
 }
 
@@ -142,5 +135,11 @@ export default {
 	font-size: 22px;
 	font-weight: 700;
 	margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1500px) {
+	.footer-logo {
+		display: none;
+	}
 }
 </style>

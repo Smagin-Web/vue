@@ -27,6 +27,9 @@ import MButton from '../../buttons/MButton.vue'
 </template>
 
 <style scoped>
+.section-read {
+	padding-bottom: 100px;
+}
 .card-group {
 	display: flex;
 	gap: 24px;
@@ -34,9 +37,6 @@ import MButton from '../../buttons/MButton.vue'
 }
 
 @media screen and (max-width: 1000px) {
-	.section-read {
-		padding-bottom: 100px;
-	}
 	.card-group {
 		gap: 14px;
 		padding-bottom: 50px;

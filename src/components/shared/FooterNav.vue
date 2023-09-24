@@ -24,7 +24,7 @@ import FooterSocials from './FooterSocials.vue'
 			<a class="footer-nav-link">+7 498 661-07-31</a>
 			<a class="footer-nav-link">+7 925 726-71-81</a>
 			<a class="footer-nav-link">hello@faceconcept.ru</a>
-			<a class="footer-nav-link">
+			<a class="footer-nav-link footer-nav-link-address">
 				Москва, Красноказарменная 14А, корпус 6
 				<span class="footer-nav-link-span"
 					>Работаем с 10:00 до 22:00 без выходных</span
@@ -154,6 +154,8 @@ export default {
 	font-size: 22px;
 	font-weight: 700;
 	padding: 10px 0;
+
+	letter-spacing: 0.1px;
 }
 
 .footer-nav-link-span {
@@ -163,21 +165,31 @@ export default {
 	font-family: 'BrisaSans';
 	font-size: 18px;
 	font-weight: 400;
-  padding-bottom: 28px;
+	padding-bottom: 28px;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1500px) {
 	.footer-nav-only-lg {
 		display: none;
 	}
 
-	.footer-nav- .footer-nav-title {
+	.footer-nav-title {
 		color: #000;
+		font-family: 'Pelinka';
 		font-size: 20px;
+		font-weight: 700;
+		padding-bottom: 30px;
 	}
 
 	.footer-nav-link {
-		font-size: 28px;
+		color: #6d6364;
+		font-family: 'Pelinka';
+		font-size: 24px;
+		font-weight: 700;
+	}
+
+	.footer-nav-link-address {
+		font-size: 17px;
 	}
 }
 </style>
