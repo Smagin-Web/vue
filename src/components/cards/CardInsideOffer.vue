@@ -71,4 +71,10 @@ import CardInsideOfferPrice from './CardInsideOfferPrice.vue'
 		gap: 30px;
 	}
 }
+
+@media (max-width: 600px) {
+	.heading {
+		font-size: 18px;
+	}
+}
 </style>

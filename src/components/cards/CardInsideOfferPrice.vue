@@ -59,4 +59,13 @@
 		font-size: 28px;
 	}
 }
+
+@media screen and (max-width: 600px) {
+	.price-new {
+		font-size: 48px;
+	}
+	.price-old {
+		font-size: 24px;
+	}
+}
 </style>

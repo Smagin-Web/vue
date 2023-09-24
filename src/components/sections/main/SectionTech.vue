@@ -33,9 +33,7 @@ import MContainer from '../../shared/MContainer.vue'
 	color: #fff;
 	text-align: center;
 	text-shadow: 0px 10px 20px #d0c3b4;
-	font-family: 'Pelinka';
 	font-size: 150px;
-	font-weight: 700;
 }
 
 @media screen and (max-width: 1000px) {
@@ -48,9 +46,13 @@ import MContainer from '../../shared/MContainer.vue'
 	}
 
 	.big-heading {
-		font-family: 'Pelinka';
 		font-size: 42px;
-		font-weight: 700;
+	}
+}
+
+@media (max-width: 600px) {
+	.big-heading {
+		font-size: 38px;
 	}
 }
 </style>

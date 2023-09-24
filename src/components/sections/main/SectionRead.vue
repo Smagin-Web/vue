@@ -36,7 +36,7 @@ import { Swiper, SwiperSlide } from 'swiper/vue'
 					</swiper-slide>
 				</Swiper>
 				<div style="display: flex; justify-content: center">
-					<MButton>Больше интересных статей</MButton>
+					<MButton class="button">Больше интересных статей</MButton>
 				</div>
 			</template>
 		</MContainer>
@@ -66,6 +66,9 @@ export default {
 </script>
 
 <style scoped>
+.button {
+	padding-top: 70px;
+}
 .swiper-container {
 	margin: 0 -24px;
 }
@@ -82,6 +85,10 @@ export default {
 	.card-group {
 		gap: 14px;
 		padding-bottom: 50px;
+	}
+
+	.button {
+		padding-top: 54px;
 	}
 }
 </style>

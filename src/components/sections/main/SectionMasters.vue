@@ -24,7 +24,7 @@ import MButtonOutline from '../../buttons/MButtonOutline.vue'
 						<swiper-slide><CardMaster /></swiper-slide>
 					</Swiper>
 					<div style="display: flex; justify-content: center">
-						<MButtonOutline>Показать ещё врачей</MButtonOutline>
+						<MButtonOutline class="button">Показать ещё врачей</MButtonOutline>
 					</div>
 				</div>
 			</template>
@@ -62,5 +62,9 @@ export default {
 	display: flex;
 	gap: 24px;
 	padding-bottom: 54px;
+}
+
+.button {
+	padding-top: 54px;
 }
 </style>
