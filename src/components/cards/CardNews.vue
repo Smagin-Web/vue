@@ -68,6 +68,7 @@ import ButtonDecor from '../buttons/ButtonDecor.vue'
 @media screen and (max-width: 1000px) {
 	.card {
 		padding: 20px;
+		border-radius: 20px;
 	}
 
 	.card-heading {

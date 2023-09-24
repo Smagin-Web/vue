@@ -1,7 +1,7 @@
 <script setup lang="ts">
+import 'swiper/css'
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import MContainer from '../../shared/MContainer.vue'
-import 'swiper/css'
 </script>
 
 <template>
