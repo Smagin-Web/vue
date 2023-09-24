@@ -7,31 +7,36 @@ import SectionOfferList from './SectionOfferList.vue'
 
 <template>
 	<section class="section-offer">
-		<MContainer>
-			<template #children>
-				<div class="card">
-					<div class="card-badge">
-						<MBadge>Диагностика</MBadge>
-					</div>
-					<div class="card-content">
-						<div>
-							<h3 class="heading">Хочешь здоровую кожу?</h3>
+		<div class="section-offer-container">
+			<MContainer>
+				<template #children>
+					<div class="card">
+						<div class="card-badge">
+							<MBadge>Диагностика</MBadge>
+						</div>
+						<div class="card-content">
+							<div>
+								<h3 class="heading">Хочешь здоровую кожу?</h3>
 
-							<SectionOfferList />
+								<SectionOfferList />
+							</div>
+							<div class="image-container">
+								<img src="./more.png" class="image-more" />
+								<img src="./offer.png" class="image" />
+							</div>
 						</div>
-						<div class="image-container">
-							<img src="./more.png" class="image-more" />
-							<img src="./offer.png" class="image" />
-						</div>
+						<CardInsideOffer class="card-inside" />
 					</div>
-					<CardInsideOffer class="card-inside" />
-				</div>
-			</template>
-		</MContainer>
+				</template>
+			</MContainer>
+		</div>
 	</section>
 </template>
 
 <style scoped>
+.section-offer-container {
+	padding-top: 50px;
+}
 .section-offer {
 	padding-bottom: 100px;
 	overflow-x: hidden;
