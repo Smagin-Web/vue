@@ -1,9 +1,8 @@
-Наши пациентыстали нам добрыми друзьями.
-
 <script setup lang="ts">
 import MContainer from '../../shared/MContainer.vue'
 import PictureReviews from '@/components/icons/PictureReviews.vue'
 import MButton from '@/components/buttons/MButton.vue'
+import ButtonLink from '../../buttons/ButtonLink.vue'
 </script>
 
 <template>
@@ -24,6 +23,7 @@ import MButton from '@/components/buttons/MButton.vue'
 				</div>
 				<div class="buttons">
 					<MButton>Перейти к отзывам</MButton>
+					<ButtonLink>Оставить отзыв</ButtonLink>
 				</div>
 			</template>
 		</MContainer>
@@ -45,6 +45,16 @@ import MButton from '@/components/buttons/MButton.vue'
 	padding-top: 100px;
 	font-size: 42px;
 	max-width: 690px;
+}
+
+.buttons {
+	margin-top: -100px;
+}
+
+@media (max-width: 1780px) {
+	.buttons {
+		margin-top: -50px;
+	}
 }
 
 @media screen and (max-width: 1400px) {

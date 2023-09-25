@@ -1,5 +1,5 @@
 <template>
-	<a class="button-link">Ссылка на ресурсы</a>
+	<a class="button-link"><slot></slot></a>
 </template>
 
 <style scoped>
