@@ -32,6 +32,7 @@ import SectionBannerText from './SectionBannerText.vue'
 .container-custom {
 	max-width: 1920px;
 	padding: 0 46px;
+	margin: 0 auto;
 }
 .section-banner {
 	padding-top: 170px;
