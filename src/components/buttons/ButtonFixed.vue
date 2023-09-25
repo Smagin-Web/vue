@@ -29,6 +29,11 @@ import IconMessage from '../icons/IconMessage.vue'
 	border: none;
 }
 
+.button-fixed:hover {
+	opacity: 1;
+	background: #a87b7e;
+}
+
 .buttons-fixed {
 	z-index: 120;
 	position: fixed;
@@ -45,6 +50,11 @@ import IconMessage from '../icons/IconMessage.vue'
 	border-radius: 100px;
 	background: #81cca4;
 	border: none;
+}
+
+.button-fixed-two:hover {
+	opacity: 1;
+	background: #63ac86;
 }
 @media (max-width: 1000px) {
 	.buttons-fixed {
@@ -77,7 +87,7 @@ import IconMessage from '../icons/IconMessage.vue'
 		height: 40px;
 	}
 
-	.background {
+	.button- .background {
 		display: block;
 		position: absolute;
 		left: 0;
