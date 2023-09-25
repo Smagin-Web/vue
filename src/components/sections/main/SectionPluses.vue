@@ -32,7 +32,7 @@ import SectionPlusesPicture3 from './SectionPlusesPicture3.vue'
 	overflow-x: hidden;
 }
 
-@media screen and (max-width: 1450px) {
+@media screen and (max-width: 1200px) {
 	.cards {
 		grid-template-columns: minmax(100px, 500px);
 		padding-bottom: 100px;
