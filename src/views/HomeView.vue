@@ -13,11 +13,13 @@ import SectionRead from '../components/sections/main/SectionRead.vue'
 import SectionReview from '../components/sections/main/SectionReview.vue'
 import SectionBanner from '../components/sections/main/SectionBanner.vue'
 import SectionReviewPacients from '../components/sections/main/SectionReviewPacients.vue'
+import CustomSlider from '@/components/CustomSlider.vue'
 </script>
 
 <template>
 	<HeaderNotify />
 	<Header />
+	<CustomSlider />
 	<SectionBanner />
 	<SectionPluses />
 	<SectionInfo />

@@ -1,0 +1,104 @@
+<script setup lang="ts">
+import MButtonOutline from './buttons/MButtonOutline.vue'
+import MButton from './buttons/MButton.vue'
+</script>
+
+<template>
+	<div class="wrapper">
+		<div class="card">
+			<div class="card-info-content">
+				<h3 class="title">
+					Вылечим твою кожу и&nbsp;избавим от высыпания на лице.
+				</h3>
+				<h5 class="subtitle">
+					Задачей концепта является эффективное лечение заболевания Акне первой,
+					второй и&nbsp;третьей степени.
+				</h5>
+				<p class="card-text">
+					Комплексный подход к&nbsp;терапии угревой сыпи позволяет специалистам
+					Центра косметологии Face Concept не&nbsp;только быстро избавлять наших
+					пациентов от&nbsp;кожных проблем, но&nbsp;и&nbsp;предупреждать
+					их&nbsp;повторное появление в&nbsp;будущем.
+					<br /><br />
+					Результат нашего лечения ты&nbsp;сможешь увидеть уже после первого
+					посещения.
+				</p>
+				<div class="buttons">
+					<MButton>Записаться на приём</MButton>
+					<MButtonOutline>Задать вопрос</MButtonOutline>
+				</div>
+			</div>
+			<img src="./slider.png" alt="" class="card-image" />
+		</div>
+	</div>
+</template>
+
+<style scoped>
+.wrapper {
+	padding-top: 150px;
+}
+.card-info-content {
+	max-width: 880px;
+}
+.card {
+	max-width: 1680px;
+	margin: 0 auto;
+	position: relative;
+	border-radius: 100px;
+	background: #fff;
+	padding: 80px;
+	padding-top: 90px;
+}
+
+.title {
+	font-size: 42px;
+	padding-bottom: 40px;
+}
+
+.subtitle {
+	color: #6d6364;
+	font-size: 24px;
+	padding-bottom: 30px;
+}
+
+.card-text {
+	color: #6d6364;
+	font-family: 'BrisaSans';
+	font-size: 22px;
+	font-weight: 400;
+
+	padding-bottom: 70px;
+}
+
+.buttons {
+	display: flex;
+	gap: 20px;
+}
+
+.card-image {
+	position: absolute;
+	right: 5%;
+	bottom: 0;
+	width: 42%;
+}
+
+@media (max-width: 1000px) {
+	.card {
+		border-radius: 40px;
+	}
+	.title {
+		font-size: 20px;
+		padding-bottom: 18px;
+	}
+	.subtitle {
+		font-size: 17px;
+		padding-bottom: 25px;
+	}
+
+	.card-text {
+		font-size: 16px;
+
+		padding-bottom: 0;
+	}
+}
+</style>
