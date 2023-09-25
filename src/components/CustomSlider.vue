@@ -29,6 +29,10 @@ import MButton from './buttons/MButton.vue'
 				</div>
 			</div>
 			<img src="./slider.png" alt="" class="card-image" />
+			<div class="card-badges">
+				<div class="card-dadge">01.</div>
+				<div class="card-dadge">AntiAcne Concept</div>
+			</div>
 		</div>
 	</div>
 </template>
@@ -80,6 +84,26 @@ import MButton from './buttons/MButton.vue'
 	right: 5%;
 	bottom: 0;
 	width: 42%;
+}
+
+.card-badges {
+	position: absolute;
+	display: flex;
+	top: 0;
+	left: 80px;
+	transform: translateY(-50%);
+}
+
+.card-dadge {
+	color: #fff;
+	font-family: 'UABrand';
+	font-size: 48px;
+	font-weight: 700;
+
+	border-radius: 20px;
+	background: #ce99ab;
+	padding: 0 22px 4px;
+	z-index: 20;
 }
 
 @media (max-width: 1000px) {
