@@ -24,14 +24,14 @@ import MButton from './buttons/MButton.vue'
 					посещения.
 				</p>
 				<div class="buttons">
-					<MButton>Записаться на приём</MButton>
+					<img src="./slider.png" alt="" class="card-image" />
+					<MButton class="first-button">Записаться на приём</MButton>
 					<MButtonOutline>Задать вопрос</MButtonOutline>
 				</div>
 			</div>
-			<img src="./slider.png" alt="" class="card-image" />
 			<div class="card-badges">
-				<div class="card-dadge">01.</div>
-				<div class="card-dadge">AntiAcne Concept</div>
+				<div class="card-badge">01.</div>
+				<div class="card-badge">AntiAcne Concept</div>
 			</div>
 		</div>
 	</div>
@@ -40,7 +40,7 @@ import MButton from './buttons/MButton.vue'
 <style scoped>
 .wrapper {
 	padding-top: 150px;
-  padding: 30px;
+	padding: 30px;
 }
 .card-info-content {
 	max-width: 880px;
@@ -95,7 +95,7 @@ import MButton from './buttons/MButton.vue'
 	transform: translateY(-50%);
 }
 
-.card-dadge {
+.card-badge {
 	color: #fff;
 	font-family: 'UABrand';
 	font-size: 48px;
@@ -108,7 +108,14 @@ import MButton from './buttons/MButton.vue'
 }
 
 @media (max-width: 1000px) {
+	.card-badge {
+		font-size: 20px;
+		padding-left: 10px;
+		padding-right: 10px;
+		border-radius: 10px;
+	}
 	.card {
+		padding: 50px 12px 32px;
 		border-radius: 40px;
 	}
 	.title {
@@ -124,6 +131,28 @@ import MButton from './buttons/MButton.vue'
 		font-size: 16px;
 
 		padding-bottom: 0;
+	}
+
+	.buttons {
+		display: grid;
+		/* grid-template-columns: max-content; */
+		justify-content: center;
+		justify-items: center;
+		gap: 0;
+	}
+
+	.buttons button {
+		width: 320px;
+	}
+
+	.first-button {
+		margin-bottom: 20px;
+	}
+
+	.card-image {
+		position: static;
+		width: 380px;
+		padding-right: 30px;
 	}
 }
 </style>
