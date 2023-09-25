@@ -14,7 +14,7 @@ import SectionBannerText from './SectionBannerText.vue'
 						Преобразуй
 						<br />
 						свою&nbsp;кожу
-						<!-- <SectionBannerBadges class="banner-badges" /> -->
+						<SectionBannerBadges class="banner-badges" />
 					</h2>
 					<SectionBannerText />
 				</div>
@@ -26,8 +26,8 @@ import SectionBannerText from './SectionBannerText.vue'
 <style scoped>
 .banner-badges {
 	position: absolute;
-	left: calc(100% - 50px);
-	top: 120px;
+	left: calc(100% - 70px);
+	bottom: 20px;
 }
 .container-custom {
 	max-width: 1920px;
@@ -76,13 +76,21 @@ import SectionBannerText from './SectionBannerText.vue'
 	.content-heading-text {
 		font-size: 80px;
 	}
-	/* 
-	.content-info {
-		padding-right: 280px;
-	} */
+
+	.banner-badges {
+		left: calc(100% - 110px);
+		bottom: 20px;
+		width: 340px;
+	}
 }
 
 @media screen and (max-width: 1500px) {
+	.banner-badges {
+		left: calc(100% - 100px);
+		bottom: 40px;
+		width: 250px;
+	}
+
 	.content-info {
 		padding-right: 120px;
 	}
@@ -96,6 +104,11 @@ import SectionBannerText from './SectionBannerText.vue'
 }
 
 @media screen and (max-width: 1200px) {
+	.banner-badges {
+		left: 222px;
+		bottom: 30px;
+		width: 140px;
+	}
 	.content {
 		grid-template-columns: 1fr;
 		justify-items: start;
