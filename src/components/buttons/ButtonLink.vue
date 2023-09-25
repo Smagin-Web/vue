@@ -4,13 +4,22 @@
 
 <style scoped>
 .button-link {
-	display: inline-block;
-	cursor: pointer;
+	font-family: 'BrisaSans';
+	font-size: 24px;
+	font-weight: 700;
 	color: black;
 	text-decoration: underline;
+	text-align: center;
 
 	padding: 10px 20px;
 
-	font-size: 32px;
+	display: inline-block;
+	cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+	.button-link {
+		font-size: 16px;
+	}
 }
 </style>

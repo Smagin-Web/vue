@@ -17,7 +17,16 @@ import MButtonOutline from '../../buttons/MButtonOutline.vue'
 						Врачи-косметологи Face Concept помогут вернуть твоей коже молодость
 						и&nbsp;красоту!
 					</h5>
-					<Swiper>
+					<Swiper
+						:breakpoints="{
+							300: { slidesPerView: 1.1 },
+							600: { slidesPerView: 2.2 },
+							900: { slidesPerView: 3 }
+						}"
+						:space-between="14"
+						@swiper="onSwiper"
+						@slideChange="onSlideChange"
+					>
 						<swiper-slide><CardMaster /></swiper-slide>
 						<swiper-slide><CardMaster /></swiper-slide>
 						<swiper-slide><CardMaster /></swiper-slide>

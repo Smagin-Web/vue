@@ -92,6 +92,8 @@ import ButtonLink from '../../buttons/ButtonLink.vue'
 	}
 
 	.buttons {
+		padding-top: 60px;
+		justify-content: center;
 		display: grid;
 		gap: 30px;
 	}
