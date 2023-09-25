@@ -87,7 +87,7 @@ import IconMessage from '../icons/IconMessage.vue'
 		height: 40px;
 	}
 
-	.button- .background {
+	.background {
 		display: block;
 		position: absolute;
 		left: 0;
