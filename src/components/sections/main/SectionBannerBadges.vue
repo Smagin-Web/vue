@@ -12,24 +12,30 @@ import PictureBannerBadge2 from '@/components/icons/PictureBannerBadge2.vue'
 
 <style scoped>
 .badge-group {
-	width: 360px;
 	overflow: visible;
 	position: absolute;
-	height: 200px;
 }
 
 .badge-1,
 .badge-2 {
 	position: absolute;
-	height: 100%;
+	height: 70px;
+	width: auto;
 }
 
 .badge-1 {
 	transform: rotate(-13deg);
+	height: 80px;
+	z-index: 10;
+	top: 0;
+	left: 20px;
 }
 
 .badge-2 {
 	transform: rotate(7deg);
+	height: 70px;
+	z-index: 0;
+	top: 50px;
 }
 
 @media screen and (max-width: 1500px) {

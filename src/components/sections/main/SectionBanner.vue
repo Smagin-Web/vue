@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import SectionBannerBadges from './SectionBannerBadges.vue'
 import SectionBannerBlock from './SectionBannerBlock.vue'
 import SectionBannerText from './SectionBannerText.vue'
 </script>
@@ -25,8 +26,8 @@ import SectionBannerText from './SectionBannerText.vue'
 <style scoped>
 .banner-badges {
 	position: absolute;
-	right: 80px;
-	top: 38px;
+	left: calc(100% - 50px);
+	top: 120px;
 }
 .container-custom {
 	max-width: 1920px;
@@ -75,10 +76,10 @@ import SectionBannerText from './SectionBannerText.vue'
 	.content-heading-text {
 		font-size: 80px;
 	}
-
+	/* 
 	.content-info {
 		padding-right: 280px;
-	}
+	} */
 }
 
 @media screen and (max-width: 1500px) {
