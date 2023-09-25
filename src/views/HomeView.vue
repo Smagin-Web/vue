@@ -19,11 +19,11 @@ import CustomSlider from '@/components/CustomSlider.vue'
 <template>
 	<HeaderNotify />
 	<Header />
-	<CustomSlider />
 	<SectionBanner />
 	<SectionPluses />
 	<SectionInfo />
 	<SectionTech />
+	<CustomSlider />
 	<SectionOffer />
 	<SectionResult />
 	<SectionStories />

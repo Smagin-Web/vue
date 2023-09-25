@@ -40,6 +40,7 @@ import MButton from './buttons/MButton.vue'
 <style scoped>
 .wrapper {
 	padding-top: 150px;
+  padding: 30px;
 }
 .card-info-content {
 	max-width: 880px;
