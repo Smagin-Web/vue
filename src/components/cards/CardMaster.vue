@@ -11,10 +11,16 @@
 	max-width: 402px;
 	min-width: 260px;
 }
+
+.card:hover .card-img {
+	transform: scale(0.9);
+}
+
 .card-img {
 	width: 100%;
 	height: auto;
 	margin-bottom: 40px;
+	transition: 0.2s;
 }
 
 .card-heading {
