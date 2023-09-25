@@ -30,6 +30,7 @@ import IconMessage from '../icons/IconMessage.vue'
 }
 
 .buttons-fixed {
+	z-index: 120;
 	position: fixed;
 	bottom: 40px;
 	right: 40px;
@@ -52,7 +53,6 @@ import IconMessage from '../icons/IconMessage.vue'
 		bottom: 0;
 		justify-content: center;
 		background-color: #f4eee8;
-		z-index: 100;
 		padding: 10px;
 		gap: 10px;
 	}
