@@ -134,5 +134,8 @@ import SectionBannerText from './SectionBannerText.vue'
 		max-width: 100%;
 		text-align: center;
 	}
+	.container-custom {
+		padding: 0 14px;
+	}
 }
 </style>
