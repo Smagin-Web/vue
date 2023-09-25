@@ -95,6 +95,9 @@ import MContainer from '../../shared/MContainer.vue'
 }
 
 @media (max-width: 1000px) {
+	.section-circles {
+		padding-top: 0;
+	}
 	.heading-circles {
 		font-size: 22px;
 	}
