@@ -4,7 +4,7 @@ import MContainer from '../../shared/MContainer.vue'
 </script>
 
 <template>
-	<section class="section-pluses">
+	<section class="section-circles">
 		<MContainer>
 			<template #children>
 				<h3 class="heading-section">Отзывы клиентов в кружочках</h3>
@@ -40,6 +40,10 @@ import MContainer from '../../shared/MContainer.vue'
 </template>
 
 <style scoped>
+.section-circles {
+	padding-bottom: 100px;
+	padding-top: 100px;
+}
 .circle-empty {
 	width: 260px;
 }

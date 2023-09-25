@@ -23,7 +23,6 @@ import SectionCircles from '../components/sections/main/SectionCircles.vue'
 	<HeaderNotify />
 	<Header />
 	<SectionBanner />
-	<SectionCircles />
 	<SectionPluses />
 	<SectionInfo />
 	<SectionTech />
@@ -33,6 +32,7 @@ import SectionCircles from '../components/sections/main/SectionCircles.vue'
 	<SectionStories />
 	<SectionMasters />
 	<SectionReviewPacients />
+	<SectionCircles />
 	<SectionReview />
 	<SectionRead />
 	<Footer />

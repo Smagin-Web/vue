@@ -1,9 +1,20 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
 	<div class="avatar">
-		<img src="../model.jpg" alt="" class="avatar-img" />
+		<img src="../sections/main/Avatar2.png" alt="" class="avatar-img" />
 	</div>
 </template>
+
+<script lang="ts">
+export default {
+	props: {
+		src: {
+			type: String,
+			default: null
+		}
+	}
+}
+</script>
 
 <style scoped>
 .avatar {
@@ -19,7 +30,5 @@
 	border-radius: 50%;
 	width: 100%;
 	height: 100%;
-	padding: 20px;
-	background-color: #ede4da;
 }
 </style>
