@@ -1,158 +1,94 @@
 <script setup lang="ts">
-import MButtonOutline from './buttons/MButtonOutline.vue'
-import MButton from './buttons/MButton.vue'
+import { EffectFade, Mousewheel } from 'swiper/modules'
+
+import 'swiper/css'
+import 'swiper/css/effect-fade'
+import 'swiper/css/mousewheel'
+import { Swiper, SwiperSlide } from 'swiper/vue'
+
+import CustomSliderCardBlack from './CustomSliderCardBlack.vue'
+import CustomSliderCard from './CustomSliderCard.vue'
+import CustomSliderCard2 from './CustomSliderCard2.vue'
+import CustomSliderCard3 from './CustomSliderCard3.vue'
+import CustomSliderCard4 from './CustomSliderCard4.vue'
+import CustomSliderCard5 from './CustomSliderCard5.vue'
+import CustomSliderCard6 from './CustomSliderCard6.vue'
 </script>
 
 <template>
-	<div class="wrapper">
-		<div class="card">
-			<div class="card-info-content">
-				<h3 class="title">
-					Вылечим твою кожу и&nbsp;избавим от высыпания на лице.
-				</h3>
-				<h5 class="subtitle">
-					Задачей концепта является эффективное лечение заболевания Акне первой,
-					второй и&nbsp;третьей степени.
-				</h5>
-				<p class="card-text">
-					Комплексный подход к&nbsp;терапии угревой сыпи позволяет специалистам
-					Центра косметологии Face Concept не&nbsp;только быстро избавлять наших
-					пациентов от&nbsp;кожных проблем, но&nbsp;и&nbsp;предупреждать
-					их&nbsp;повторное появление в&nbsp;будущем.
-					<br /><br />
-					Результат нашего лечения ты&nbsp;сможешь увидеть уже после первого
-					посещения.
-				</p>
-				<div class="buttons">
-					<img src="./slider.png" alt="" class="card-image" />
-					<MButton class="first-button">Записаться на приём</MButton>
-					<MButtonOutline>Задать вопрос</MButtonOutline>
-				</div>
-			</div>
-			<div class="card-badges">
-				<div class="card-badge">01.</div>
-				<div class="card-badge">AntiAcne Concept</div>
-			</div>
-		</div>
+	<div class="wrapper" @wheel="onWheel">
+		<Swiper
+			effect="fade"
+			:mousewheel="{ releaseOnEdges: true }"
+			:threshold="20000"
+			:release-on-edges="true"
+			:modules="[EffectFade, Mousewheel]"
+			:slides-per-view="1"
+			:space-between="14"
+			@swiper="onSwiper"
+			@slideChange="onSlideChange"
+		>
+			<SwiperSlide>
+				<CustomSliderCard />
+			</SwiperSlide>
+			<SwiperSlide>
+				<CustomSliderCard2 />
+			</SwiperSlide>
+			<SwiperSlide>
+				<CustomSliderCard3 />
+			</SwiperSlide>
+			<SwiperSlide>
+				<CustomSliderCard4 />
+			</SwiperSlide>
+			<SwiperSlide>
+				<CustomSliderCard5 />
+			</SwiperSlide>
+			<SwiperSlide>
+				<CustomSliderCard6 />
+			</SwiperSlide>
+		</Swiper>
 	</div>
 </template>
 
+<script lang="ts">
+const onSwiper = (swiper: any) => {
+	console.log(swiper)
+}
+const onSlideChange = () => {
+	console.log('slide change')
+}
+const onWheel = (event: WheelEvent) => {
+	event.stopPropagation()
+}
+export default {
+	components: {
+		Swiper,
+		SwiperSlide
+	},
+
+	data() {
+		return {
+			onSwiper,
+			onSlideChange,
+			EffectFade,
+			Mousewheel
+		}
+	}
+}
+</script>
+
 <style scoped>
+.swiper-slide {
+	opacity: 0 !important;
+	transition: 0.2s;
+}
+
+.swiper-slide-active {
+	opacity: 1 !important;
+}
+
 .wrapper {
 	padding-top: 150px;
 	padding: 30px;
-}
-.card-info-content {
-	max-width: 880px;
-}
-.card {
-	max-width: 1680px;
-	margin: 0 auto;
-	position: relative;
-	border-radius: 100px;
-	background: #fff;
-	padding: 80px;
-	padding-top: 90px;
-}
-
-.title {
-	font-size: 42px;
-	padding-bottom: 40px;
-}
-
-.subtitle {
-	color: #6d6364;
-	font-size: 24px;
-	padding-bottom: 30px;
-}
-
-.card-text {
-	color: #6d6364;
-	font-family: 'BrisaSans';
-	font-size: 22px;
-	font-weight: 400;
-
-	padding-bottom: 70px;
-}
-
-.buttons {
-	display: flex;
-	gap: 20px;
-}
-
-.card-image {
-	position: absolute;
-	right: 5%;
-	bottom: 0;
-	width: 42%;
-}
-
-.card-badges {
-	position: absolute;
-	display: flex;
-	top: 0;
-	left: 80px;
-	transform: translateY(-50%);
-}
-
-.card-badge {
-	color: #fff;
-	font-family: 'UABrand';
-	font-size: 48px;
-	font-weight: 700;
-
-	border-radius: 20px;
-	background: #ce99ab;
-	padding: 0 22px 4px;
-	z-index: 20;
-}
-
-@media (max-width: 1000px) {
-	.card-badge {
-		font-size: 20px;
-		padding-left: 10px;
-		padding-right: 10px;
-		border-radius: 10px;
-	}
-	.card {
-		padding: 50px 12px 32px;
-		border-radius: 40px;
-	}
-	.title {
-		font-size: 20px;
-		padding-bottom: 18px;
-	}
-	.subtitle {
-		font-size: 17px;
-		padding-bottom: 25px;
-	}
-
-	.card-text {
-		font-size: 16px;
-
-		padding-bottom: 0;
-	}
-
-	.buttons {
-		display: grid;
-		/* grid-template-columns: max-content; */
-		justify-content: center;
-		justify-items: center;
-		gap: 0;
-	}
-
-	.buttons button {
-		width: 320px;
-	}
-
-	.first-button {
-		margin-bottom: 20px;
-	}
-
-	.card-image {
-		position: static;
-		width: 380px;
-		padding-right: 30px;
-	}
 }
 </style>
