@@ -19,6 +19,10 @@ import CustomSliderCard6 from './CustomSliderCard6.vue'
 <template>
 	<!-- <div class="wrapper" ref="container" @wheel.prevent="onWheel"> -->
 	<div class="wrapper" ref="container">
+		<div class="slider-backcards">
+			<div class="slider-backcard-2" />
+			<div class="slider-backcard-1" />
+		</div>
 		<Swiper
 			effect="fade"
 			:mousewheel="{ releaseOnEdges: true }"
@@ -26,7 +30,6 @@ import CustomSliderCard6 from './CustomSliderCard6.vue'
 			:release-on-edges="true"
 			:modules="[EffectFade, Mousewheel]"
 			:slides-per-view="1"
-			:space-between="14"
 			@wheel="handleWheel"
 		>
 			<SwiperSlide>
@@ -52,10 +55,10 @@ import CustomSliderCard6 from './CustomSliderCard6.vue'
 </template>
 
 <script lang="ts">
-const container = ref<HTMLElement & { swiper?: any } | null>(null);
+const container = ref<(HTMLElement & { swiper?: any }) | null>(null)
 
 const handleWheel = (event: WheelEvent) => {
-	const swiper = (event.currentTarget as HTMLElement & { swiper?: any })?.swiper;
+	const swiper = (event.currentTarget as HTMLElement & { swiper?: any })?.swiper
 
 	if (!swiper) {
 		return
@@ -94,10 +97,62 @@ export default {
 </script>
 
 <style scoped>
-.card {
-	margin-top: 140px;
-	height: 650px;
+.wrapper {
+	position: relative;
+
+	max-width: calc(1680px + 60px);
+	padding-left: 30px;
+	padding-right: 30px;
+	margin: 0 auto 100px;
+	padding-top: 150px;
 }
+
+.card {
+	position: relative;
+
+	margin: 70px auto;
+	padding: 80px;
+	padding-top: 90px;
+
+	border-radius: 100px;
+	background: #fff;
+	height: 650px;
+	z-index: 30;
+}
+
+.slider-backcards {
+	position: absolute;
+	bottom: 0;
+	top: 0;
+	right: 0;
+	left: 0;
+
+	display: flex;
+	justify-content: center;
+}
+
+.slider-backcard-1 {
+	position: absolute;
+	bottom: 0;
+	left: 100px;
+	right: 100px;
+	height: 50%;
+
+	border-radius: 100px;
+	background: #ede4da;
+}
+
+.slider-backcard-2 {
+	position: absolute;
+	bottom: -50px;
+	left: 150px;
+	right: 150px;
+	height: 50%;
+
+	border-radius: 100px;
+	background: #f0dcc8;
+}
+
 .swiper-slide {
 	opacity: 0 !important;
 	transition: 0.2s;
@@ -105,10 +160,5 @@ export default {
 
 .swiper-slide-active {
 	opacity: 1 !important;
-}
-
-.wrapper {
-	padding-top: 150px;
-	padding: 30px;
 }
 </style>

@@ -34,21 +34,8 @@ import MButton from './buttons/MButton.vue'
 </template>
 
 <style scoped>
-.wrapper {
-	padding-top: 150px;
-	padding: 30px;
-}
 .card-info-content {
 	max-width: 880px;
-}
-.card {
-	max-width: 1680px;
-	margin: 70px auto;
-	position: relative;
-	border-radius: 100px;
-	background: #fff;
-	padding: 80px;
-	padding-top: 90px;
 }
 
 .title {
