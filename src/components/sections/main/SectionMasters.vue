@@ -24,8 +24,6 @@ import MButtonOutline from '../../buttons/MButtonOutline.vue'
 							900: { slidesPerView: 3 }
 						}"
 						:space-between="14"
-						@swiper="onSwiper"
-						@slideChange="onSlideChange"
 					>
 						<swiper-slide><CardMaster /></swiper-slide>
 						<swiper-slide><CardMaster /></swiper-slide>
@@ -42,12 +40,6 @@ import MButtonOutline from '../../buttons/MButtonOutline.vue'
 </template>
 
 <script lang="ts">
-const onSwiper = (swiper: any) => {
-	console.log(swiper)
-}
-const onSlideChange = () => {
-	console.log('slide change')
-}
 export default {
 	components: {
 		Swiper,
@@ -55,10 +47,7 @@ export default {
 	},
 
 	data() {
-		return {
-			onSwiper,
-			onSlideChange
-		}
+		return {}
 	}
 }
 </script>

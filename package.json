@@ -17,6 +17,7 @@
     "swiper": "^10.3.0",
     "volar-service-vetur": "^0.0.13",
     "vue": "^3.3.4",
+    "vue-carousel-3d": "^1.0.1",
     "vue-router": "^4.2.4"
   },
   "devDependencies": {

@@ -1,8 +1,7 @@
 <script setup lang="ts">
-import { EffectFade, Mousewheel } from 'swiper/modules'
+import { Mousewheel, EffectCreative } from 'swiper/modules'
 
 import 'swiper/css'
-import 'swiper/css/effect-fade'
 import 'swiper/css/mousewheel'
 import { Swiper, SwiperSlide } from 'swiper/vue'
 
@@ -19,17 +18,31 @@ import CustomSliderCard6 from './CustomSliderCard6.vue'
 <template>
 	<!-- <div class="wrapper" ref="container" @wheel.prevent="onWheel"> -->
 	<div class="wrapper" ref="container">
-		<div class="slider-backcards">
+		<!-- <div class="slider-backcards">
 			<div class="slider-backcard-2" />
 			<div class="slider-backcard-1" />
-		</div>
+		</div> -->
 		<Swiper
-			effect="fade"
+			grab-cursor
+			:effect="'creative'"
+			:creativeEffect="{
+				prev: {
+					translate: [0, -100, 0],
+					scale: 0.8
+				},
+				next: {
+					translate: [0, 100, 0],
+					scale: 0.8
+				}
+			}"
 			:mousewheel="{ releaseOnEdges: true }"
 			:threshold="20000"
 			:release-on-edges="true"
-			:modules="[EffectFade, Mousewheel]"
+			:modules="[EffectCreative, Mousewheel]"
 			:slides-per-view="1"
+			@activeIndexChange="onChangeActive"
+			@swiper="onSwiper"
+			@reachEnd="onSlideEnd"
 			@wheel="handleWheel"
 		>
 			<SwiperSlide>
@@ -81,6 +94,33 @@ const scrollToCenter = () => {
 		containerElement.scrollIntoView({ behavior: 'smooth', block: 'center' })
 	}
 }
+
+const onSlideEnd = () => {
+	console.log('end')
+}
+
+const onChangeActive = (swiper: any) => {
+	if (swiper.activeIndex + 1 === 5) {
+		console.log('предпоследний слайдер')
+	}
+}
+
+const onSwiper = (swiper: any) => {
+	console.log(swiper.activeIndexChange)
+	// Обработка события достижения края слайдера
+	if (swiper.isBeginning || swiper.isEnd) {
+		// Вставь здесь код, который будет выполняться при достижении края слайдера
+		if (swiper.isBeginning) {
+			console.log('Достигнут левый край слайдера')
+			// Действия при достижении левого края слайдера
+		}
+		if (swiper.isEnd) {
+			console.log('Достигнут правый край слайдера')
+			// Действия при достижении правого края слайдера
+		}
+	}
+}
+
 export default {
 	components: {
 		Swiper,
@@ -89,14 +129,64 @@ export default {
 
 	data() {
 		return {
-			EffectFade,
-			Mousewheel
+			onChangeActive,
+			onSlideEnd,
+			onSwiper,
+			Mousewheel,
+			EffectCreative
 		}
 	}
 }
 </script>
 
 <style scoped>
+.swiper {
+	padding: 180px 0;
+	max-height: 1000px;
+}
+
+.swiper-slide {
+	opacity: 0.1 !important;
+	transition: 0.2s;
+}
+
+.swiper-slide .card:after {
+	content: '';
+	position: absolute;
+	display: block;
+	top: -150px;
+	bottom: -150px;
+	left: 50px;
+	right: 50px;
+	border-radius: 100px;
+	background-color: #f0dcc8;
+	transition: 0.2s;
+}
+
+.swiper-slide-active .card:after {
+	display: none;
+}
+
+.swiper-slide-prev,
+.swiper-slide-next {
+	opacity: 1 !important;
+}
+
+.swiper-slide-prev .card:after,
+.swiper-slide-next .card:after {
+	top: -90px;
+	bottom: -60px;
+	left: 0;
+	right: 0;
+	background-color: #ede4da;
+}
+
+.swiper-slide-active {
+	opacity: 1 !important;
+}
+
+/*  */
+
 .wrapper {
 	position: relative;
 
@@ -110,7 +200,6 @@ export default {
 .card {
 	position: relative;
 
-	margin: 70px auto;
 	padding: 80px;
 	padding-top: 90px;
 
@@ -151,14 +240,5 @@ export default {
 
 	border-radius: 100px;
 	background: #f0dcc8;
-}
-
-.swiper-slide {
-	opacity: 0 !important;
-	transition: 0.2s;
-}
-
-.swiper-slide-active {
-	opacity: 1 !important;
 }
 </style>
