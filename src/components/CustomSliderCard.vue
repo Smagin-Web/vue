@@ -144,14 +144,16 @@ import MButton from './buttons/MButton.vue'
 	top: -22%;
 	width: 44%;
 	height: auto;
-	transition: 0.2s;
+	transition: 1s;
 	display: block;
 
 	opacity: 0;
+	transform: rotate(-10deg);
 }
 
 .active .card-image + svg {
 	opacity: 1;
+	transform: rotate(1deg);
 }
 
 .card-image + svg g path:nth-child(1n) {
