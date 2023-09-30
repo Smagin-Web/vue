@@ -13,7 +13,7 @@
 }
 
 .card:hover .card-img {
-	transform: scale(0.9);
+	transform: scale(0.98);
 }
 
 .card-img {

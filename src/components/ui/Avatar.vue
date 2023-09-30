@@ -34,7 +34,7 @@ export default {
 }
 
 .avatar:hover .avatar-img {
-	transform: scale(0.9);
+	transform: scale(0.98);
 }
 .avatar-play-icon {
 	position: absolute;
