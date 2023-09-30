@@ -143,6 +143,7 @@ export default {
 .swiper {
 	padding: 180px 0;
 	max-height: 1000px;
+	transition: 0.2s;
 }
 
 .swiper-slide {
@@ -163,13 +164,10 @@ export default {
 	transition: 0.2s;
 }
 
-.swiper-slide-active .card:after {
-	display: none;
-}
-
 .swiper-slide-prev,
 .swiper-slide-next {
 	opacity: 1 !important;
+	transition: 0.2s;
 }
 
 .swiper-slide-prev .card:after,
@@ -179,10 +177,17 @@ export default {
 	left: 0;
 	right: 0;
 	background-color: #ede4da;
+	transition: 0.2s;
+}
+
+.swiper-slide-active .card:after {
+	opacity: 0;
+	transition: 0.2s;
 }
 
 .swiper-slide-active {
 	opacity: 1 !important;
+	transition: 0.2s;
 }
 
 /*  */
