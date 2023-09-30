@@ -41,33 +41,33 @@ import CustomSliderCard6 from './CustomSliderCard6.vue'
 			:modules="[EffectCreative, Mousewheel]"
 			:slides-per-view="1"
 			@activeIndexChange="onChangeActive"
-			@swiper="onSwiper"
 			@reachEnd="onSlideEnd"
 			@wheel="handleWheel"
 		>
 			<SwiperSlide>
-				<CustomSliderCard />
+				<CustomSliderCard v-bind:class="{ active: activeSlideIndex === 1 }" />
 			</SwiperSlide>
 			<SwiperSlide>
-				<CustomSliderCard2 />
+				<CustomSliderCard2 v-bind:class="{ active: activeSlideIndex === 2 }" />
 			</SwiperSlide>
 			<SwiperSlide>
-				<CustomSliderCard3 />
+				<CustomSliderCard3 v-bind:class="{ active: activeSlideIndex === 3 }" />
 			</SwiperSlide>
 			<SwiperSlide>
-				<CustomSliderCard4 />
+				<CustomSliderCard4 v-bind:class="{ active: activeSlideIndex === 4 }" />
 			</SwiperSlide>
 			<SwiperSlide>
-				<CustomSliderCard5 />
+				<CustomSliderCard5 v-bind:class="{ active: activeSlideIndex === 5 }" />
 			</SwiperSlide>
 			<SwiperSlide>
-				<CustomSliderCard6 />
+				<CustomSliderCard6 v-bind:class="{ active: activeSlideIndex === 6 }" />
 			</SwiperSlide>
 		</Swiper>
 	</div>
 </template>
 
 <script lang="ts">
+let activeSlideIndex = ref(1)
 const container = ref<(HTMLElement & { swiper?: any }) | null>(null)
 
 const handleWheel = (event: WheelEvent) => {
@@ -100,25 +100,8 @@ const onSlideEnd = () => {
 }
 
 const onChangeActive = (swiper: any) => {
-	if (swiper.activeIndex + 1 === 5) {
-		console.log('предпоследний слайдер')
-	}
-}
-
-const onSwiper = (swiper: any) => {
-	console.log(swiper.activeIndexChange)
-	// Обработка события достижения края слайдера
-	if (swiper.isBeginning || swiper.isEnd) {
-		// Вставь здесь код, который будет выполняться при достижении края слайдера
-		if (swiper.isBeginning) {
-			console.log('Достигнут левый край слайдера')
-			// Действия при достижении левого края слайдера
-		}
-		if (swiper.isEnd) {
-			console.log('Достигнут правый край слайдера')
-			// Действия при достижении правого края слайдера
-		}
-	}
+	console.log(swiper.activeIndex + 1)
+	activeSlideIndex.value = swiper.activeIndex + 1
 }
 
 export default {
@@ -131,9 +114,9 @@ export default {
 		return {
 			onChangeActive,
 			onSlideEnd,
-			onSwiper,
 			Mousewheel,
-			EffectCreative
+			EffectCreative,
+			activeSlideIndex
 		}
 	}
 }
