@@ -13,6 +13,7 @@ import CustomSliderCard3 from './CustomSliderCard3.vue'
 import CustomSliderCard4 from './CustomSliderCard4.vue'
 import CustomSliderCard5 from './CustomSliderCard5.vue'
 import CustomSliderCard6 from './CustomSliderCard6.vue'
+import CustomSliderCard7 from './CustomSliderCard7.vue'
 import CustomSliderCard8 from './CustomSliderCard8.vue'
 </script>
 
@@ -59,7 +60,7 @@ import CustomSliderCard8 from './CustomSliderCard8.vue'
 				<CustomSliderCard6 v-bind:class="{ active: activeSlideIndex === 6 }" />
 			</SwiperSlide>
 			<SwiperSlide>
-				<CustomSliderCard6 v-bind:class="{ active: activeSlideIndex === 7 }" />
+				<CustomSliderCard7 v-bind:class="{ active: activeSlideIndex === 7 }" />
 			</SwiperSlide>
 			<SwiperSlide>
 				<CustomSliderCard8 v-bind:class="{ active: activeSlideIndex === 8 }" />
