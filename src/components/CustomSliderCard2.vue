@@ -251,8 +251,8 @@ import MButton from './buttons/MButton.vue'
 .card-image + svg {
 	overflow: visible;
 	position: absolute;
-	top: 25%;
-	right: 19%;
+	top: 20%;
+	right: 18%;
 	display: block;
 
 	transition: 0.2s;
@@ -260,7 +260,7 @@ import MButton from './buttons/MButton.vue'
 .card-image + svg path {
 	fill: rgb(154, 154, 255) !important;
 	transition: 2s;
-	transform: rotate(30deg);
+	transform: rotate(2deg);
 	opacity: 0;
 }
 .active .card-image + svg path {

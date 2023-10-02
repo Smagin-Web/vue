@@ -560,7 +560,7 @@ import MButton from './buttons/MButton.vue'
 	transition: 0.2s;
 }
 .card-image + svg path {
-	transform: scale(0.7);
+	transform: scale(0.99);
 	transition: 2s;
 	opacity: 0;
 }

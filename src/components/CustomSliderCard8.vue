@@ -87,8 +87,8 @@ import MButton from './buttons/MButton.vue'
 			</div>
 		</div>
 		<div class="card-badges">
-			<div class="card-badge">01.</div>
-			<div class="card-badge">AntiAcne Concept</div>
+			<div class="card-badge">08.</div>
+			<div class="card-badge">Personal Concept</div>
 		</div>
 	</div>
 </template>
@@ -148,33 +148,12 @@ import MButton from './buttons/MButton.vue'
 	display: block;
 
 	opacity: 0;
-	transform: rotate(-10deg);
+	transform: rotate(-4deg);
 }
 
 .active .card-image + svg {
 	opacity: 1;
-	transform: rotate(1deg);
-}
-
-.card-image + svg g path:nth-child(1n) {
-	fill: transparent !important;
-	transition: 1s;
-}
-.card-image + svg g path:nth-child(3n),
-.card-image + svg g path:nth-child(4n) {
-	fill: rgb(255, 239, 150) !important;
-	transition: 1s;
-}
-
-.active .card-image + svg path:nth-child(1n) {
-	fill: #fefefe !important;
-	opacity: 1;
-}
-
-.active .card-image + svg path:nth-child(3n),
-.active .card-image + svg path:nth-child(4n) {
-	fill: #b9b5a7 !important;
-	opacity: 1;
+	transform: rotate(0);
 }
 
 .card-badges {
@@ -192,7 +171,7 @@ import MButton from './buttons/MButton.vue'
 	font-weight: 700;
 
 	border-radius: 20px;
-	background: #ce99ab;
+	background: #b9b5a7;
 	padding: 0 22px 4px;
 	z-index: 20;
 }

@@ -7,21 +7,17 @@ import { Swiper, SwiperSlide } from 'swiper/vue'
 
 import { ref } from 'vue'
 
-import CustomSliderCard from './CustomSliderCard.vue'
+import CustomSliderCard1 from './CustomSliderCard1.vue'
 import CustomSliderCard2 from './CustomSliderCard2.vue'
 import CustomSliderCard3 from './CustomSliderCard3.vue'
 import CustomSliderCard4 from './CustomSliderCard4.vue'
 import CustomSliderCard5 from './CustomSliderCard5.vue'
 import CustomSliderCard6 from './CustomSliderCard6.vue'
+import CustomSliderCard8 from './CustomSliderCard8.vue'
 </script>
 
 <template>
-	<!-- <div class="wrapper" ref="container" @wheel.prevent="onWheel"> -->
-	<div class="wrapper" ref="container">
-		<!-- <div class="slider-backcards">
-			<div class="slider-backcard-2" />
-			<div class="slider-backcard-1" />
-		</div> -->
+	<div class="wrapper" ref="container" @wheel="handleScroll">
 		<Swiper
 			grab-cursor
 			:effect="'creative'"
@@ -45,7 +41,7 @@ import CustomSliderCard6 from './CustomSliderCard6.vue'
 			@wheel="handleWheel"
 		>
 			<SwiperSlide>
-				<CustomSliderCard v-bind:class="{ active: activeSlideIndex === 1 }" />
+				<CustomSliderCard1 v-bind:class="{ active: activeSlideIndex === 1 }" />
 			</SwiperSlide>
 			<SwiperSlide>
 				<CustomSliderCard2 v-bind:class="{ active: activeSlideIndex === 2 }" />
@@ -62,6 +58,12 @@ import CustomSliderCard6 from './CustomSliderCard6.vue'
 			<SwiperSlide>
 				<CustomSliderCard6 v-bind:class="{ active: activeSlideIndex === 6 }" />
 			</SwiperSlide>
+			<SwiperSlide>
+				<CustomSliderCard6 v-bind:class="{ active: activeSlideIndex === 7 }" />
+			</SwiperSlide>
+			<SwiperSlide>
+				<CustomSliderCard8 v-bind:class="{ active: activeSlideIndex === 8 }" />
+			</SwiperSlide>
 		</Swiper>
 	</div>
 </template>
@@ -69,30 +71,38 @@ import CustomSliderCard6 from './CustomSliderCard6.vue'
 <script lang="ts">
 let activeSlideIndex = ref(1)
 const container = ref<(HTMLElement & { swiper?: any }) | null>(null)
+const isLockScroll = ref(true)
 
 const handleWheel = (event: WheelEvent) => {
 	const swiper = (event.currentTarget as HTMLElement & { swiper?: any })?.swiper
 
-	if (!swiper) {
-		return
+	const isEndSlide: boolean = swiper.isEnd && event.deltaY > 0
+	const isStartSlide: boolean = swiper.isBeginning && event.deltaY < 0
+
+	// Если скролл заблокирован - блокируем событие, скроллим на центр слайдера
+	if (isLockScroll.value === true) {
+		console.log('Opa')
+		scrollToCenter()
+		event.preventDefault()
 	}
 
-	const isEndSlide = swiper.isEnd && event.deltaY > 0
-	const isStartSlide = swiper.isBeginning && event.deltaY < 0
-
+	// Если слайд последний или первый - запускаем разблокировку скролла
 	if (isEndSlide || isStartSlide) {
-		// Выполняем стандартную прокрутку страницы
+		setTimeout(() => (isLockScroll.value = false), 300)
 		return
+	} else {
+		isLockScroll.value = true
 	}
-
-	event.stopPropagation()
-	scrollToCenter()
 }
 const scrollToCenter = () => {
 	const containerElement = container.value as HTMLElement | null
 	if (containerElement) {
 		containerElement.scrollIntoView({ behavior: 'smooth', block: 'center' })
 	}
+}
+
+const handleScroll = () => {
+	console.log('Hello!')
 }
 
 const onSlideEnd = () => {
@@ -116,7 +126,8 @@ export default {
 			onSlideEnd,
 			Mousewheel,
 			EffectCreative,
-			activeSlideIndex
+			activeSlideIndex,
+			handleScroll
 		}
 	}
 }

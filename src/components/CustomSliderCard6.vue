@@ -124,18 +124,17 @@ import MButton from './buttons/MButton.vue'
 }
 .card-image + svg path {
 	fill: rgb(154, 154, 255) !important;
-	transform: rotate(-90deg);
+	transform: scale(0.98);
 	transition: 2s;
 	opacity: 0;
 }
 .active .card-image + svg path {
 	fill: #918e9f !important;
-	transform: rotate(0);
+	transform: scale(1);
 	opacity: 1;
 }
 .active .card-image + svg path:nth-child(1n) {
 	fill: #54596b !important;
-	transform: rotate(0);
 	opacity: 1;
 }
 /* ------------ */
