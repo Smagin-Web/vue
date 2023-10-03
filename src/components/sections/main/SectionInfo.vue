@@ -12,7 +12,6 @@ const handleScroll = () => {
 		const scrollTop = window.scrollY
 		// Высота секции
 		const scrollHeight = sectionInfo.scrollHeight
-		console.log(scrollTop)
 
 		if (scrollTop > 1200) {
 			scrollProgress.value = (scrollTop - 1200) / scrollHeight
@@ -21,7 +20,6 @@ const handleScroll = () => {
 				scrollProgress.value > 0.02
 					? `opacity: ${scrollProgress.value}; transform: translateX(0)`
 					: 'opacity: 0;  transform: translateX(-300px)'
-			console.log(scrollProgress.value)
 		}
 
 		// scrollProgress.value = Math.min(100, (scrollTop / scrollHeight) * 100)

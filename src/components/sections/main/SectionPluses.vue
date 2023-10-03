@@ -10,10 +10,18 @@ const parallaxStyle2 = ref('')
 const parallaxStyle3 = ref('')
 
 const handleScroll = () => {
-	const scrollTop = window.scrollY
-	parallaxStyle.value = `transform: translateY(${scrollTop * 0.03}px)`
-	parallaxStyle2.value = `transform: translateY(${scrollTop * -0.05}px)`
-	parallaxStyle3.value = `transform: translateY(${scrollTop * 0.06}px)`
+	// Если ширина экрана более 1200px, parallax работает
+	// Иначе (на экранах меньше 1200px) - parallax отключаем
+	if (window.innerWidth > 1200) {
+		const scrollTop = window.scrollY
+		parallaxStyle.value = `transform: translateY(${scrollTop * 0.03}px)`
+		parallaxStyle2.value = `transform: translateY(${scrollTop * -0.05}px)`
+		parallaxStyle3.value = `transform: translateY(${scrollTop * 0.06}px)`
+	} else {
+		parallaxStyle.value = ''
+		parallaxStyle2.value = ''
+		parallaxStyle3.value = ''
+	}
 }
 
 onMounted(() => {

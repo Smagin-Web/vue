@@ -82,7 +82,6 @@ const handleWheel = (event: WheelEvent) => {
 
 	// Если скролл заблокирован - блокируем событие, скроллим на центр слайдера
 	if (isLockScroll.value === true) {
-		console.log('Opa')
 		scrollToCenter()
 		event.preventDefault()
 	}
@@ -107,7 +106,6 @@ const handleScroll = () => {}
 const onSlideEnd = () => {}
 
 const onChangeActive = (swiper: any) => {
-	console.log(swiper.activeIndex + 1)
 	activeSlideIndex.value = swiper.activeIndex + 1
 }
 
