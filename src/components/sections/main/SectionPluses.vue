@@ -10,7 +10,6 @@ const parallaxStyle2 = ref('')
 const parallaxStyle3 = ref('')
 
 const handleScroll = () => {
-	console.log('Handle')
 	const scrollTop = window.scrollY
 	parallaxStyle.value = `transform: translateY(${scrollTop * 0.03}px)`
 	parallaxStyle2.value = `transform: translateY(${scrollTop * -0.05}px)`
@@ -18,7 +17,6 @@ const handleScroll = () => {
 }
 
 onMounted(() => {
-	console.log('hello')
 	window.addEventListener('scroll', handleScroll)
 })
 

@@ -1,18 +1,64 @@
 <script setup lang="ts">
 import MContainer from '../../shared/MContainer.vue'
-import Text from '../../typography/Text.vue'
+import { ref, onMounted, onUnmounted } from 'vue'
+
+const scrollProgress = ref(0)
+const infoStyles = ref('opacity: 0; transform: translateX(-300px)')
+
+const handleScroll = () => {
+	const sectionInfo = document.querySelector('.section-info')
+	if (sectionInfo) {
+		// На сколько пролистали страницу
+		const scrollTop = window.scrollY
+		// Высота секции
+		const scrollHeight = sectionInfo.scrollHeight
+		console.log(scrollTop)
+
+		if (scrollTop > 1200) {
+			scrollProgress.value = (scrollTop - 1200) / scrollHeight
+
+			infoStyles.value =
+				scrollProgress.value > 0.02
+					? `opacity: ${scrollProgress.value}; transform: translateX(0)`
+					: 'opacity: 0;  transform: translateX(-300px)'
+			console.log(scrollProgress.value)
+		}
+
+		// scrollProgress.value = Math.min(100, (scrollTop / scrollHeight) * 100)
+	}
+}
+
+onMounted(() => {
+	window.addEventListener('scroll', handleScroll)
+})
+
+onUnmounted(() => {
+	window.removeEventListener('scroll', handleScroll)
+})
 </script>
 
 <template>
-	<section class="section-info">
-		<MContainer>
+	<section class="section-info" style="height: 300vh">
+		<MContainer
+			style="
+				position: sticky;
+				top: 15px;
+				padding-top: 100px;
+				padding-bottom: 100px;
+				height: 100vh;
+				display: grid;
+				justify-content: center;
+				align-items: center;
+				align-content: center;
+			"
+		>
 			<template #children>
-				<h3 class="heading">
+				<h3 class="heading" :style="infoStyles">
 					Наш Центр специализируется на&nbsp;аппаратной косметологии лица
 					и&nbsp;имеет медицинскую лицензию
 				</h3>
 
-				<p class="text">
+				<p class="text" :style="infoStyles">
 					Мы&nbsp;уверены, что аппаратная косметология&nbsp;&mdash; это
 					безболезненные процедуры без стресса и&nbsp;реабилитации, при которых
 					клетки начинают работать лучше, улучшая состояние твоей кожи
@@ -30,14 +76,10 @@ import Text from '../../typography/Text.vue'
 
 <style scoped>
 .section-info {
+	position: relative;
 	background: linear-gradient(180deg, #bac3d8 0%, #7986a5 100%);
+	height: 500vh;
 	padding: 164px 0;
-}
-
-.section-info h2 {
-	max-width: 1000px;
-	margin: auto;
-	padding-bottom: 80px;
 }
 
 .heading {
@@ -47,6 +89,7 @@ import Text from '../../typography/Text.vue'
 	font-size: 50px;
 	font-weight: 700;
 	padding-bottom: 80px;
+	transition: 0.2s;
 }
 
 .text {
@@ -57,6 +100,7 @@ import Text from '../../typography/Text.vue'
 	font-weight: 300;
 	max-width: 880px;
 	margin: auto;
+	transition: 0.2s;
 }
 
 @media screen and (max-width: 1000px) {

@@ -102,13 +102,9 @@ const scrollToCenter = () => {
 	}
 }
 
-const handleScroll = () => {
-	console.log('Hello!')
-}
+const handleScroll = () => {}
 
-const onSlideEnd = () => {
-	console.log('end')
-}
+const onSlideEnd = () => {}
 
 const onChangeActive = (swiper: any) => {
 	console.log(swiper.activeIndex + 1)
