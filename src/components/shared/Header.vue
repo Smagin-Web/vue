@@ -4,6 +4,16 @@ import MContainer from '../shared/MContainer.vue'
 import Logo from './Logo.vue'
 import IconBurger from '../icons/IconBurger.vue'
 import HeaderSocialLink from './HeaderSocialLink.vue'
+import { ref } from 'vue'
+
+const items = ref([
+	'+7 498 661-07-31',
+	'Концепты',
+	'Процедуры',
+	'Аппараты',
+	'Цены',
+	'burger'
+])
 </script>
 
 <template>
@@ -31,7 +41,7 @@ import HeaderSocialLink from './HeaderSocialLink.vue'
 	</header>
 </template>
 
-<script lang="ts">
+<!-- <script lang="ts">
 export default {
 	data() {
 		return {
@@ -46,7 +56,7 @@ export default {
 		}
 	}
 }
-</script>
+</script> -->
 
 <style scoped>
 .header {
@@ -55,7 +65,7 @@ export default {
 	top: 0;
 	left: 0;
 	right: 0;
-	padding: 45px 0 30px;
+	padding: 30px 0;
 	z-index: 100;
 }
 

@@ -1,8 +1,30 @@
 <script setup lang="ts">
+import { onMounted, onUnmounted, ref } from 'vue'
 import MContainer from '../../shared/MContainer.vue'
 import SectionPlusesPicture1 from './SectionPlusesPicture1.vue'
 import SectionPlusesPicture2 from './SectionPlusesPicture2.vue'
 import SectionPlusesPicture3 from './SectionPlusesPicture3.vue'
+
+const parallaxStyle = ref('')
+const parallaxStyle2 = ref('')
+const parallaxStyle3 = ref('')
+
+const handleScroll = () => {
+	console.log('Handle')
+	const scrollTop = window.scrollY
+	parallaxStyle.value = `transform: translateY(${scrollTop * 0.03}px)`
+	parallaxStyle2.value = `transform: translateY(${scrollTop * -0.05}px)`
+	parallaxStyle3.value = `transform: translateY(${scrollTop * 0.06}px)`
+}
+
+onMounted(() => {
+	console.log('hello')
+	window.addEventListener('scroll', handleScroll)
+})
+
+onUnmounted(() => {
+	window.removeEventListener('scroll', handleScroll)
+})
 </script>
 
 <template>
@@ -10,9 +32,19 @@ import SectionPlusesPicture3 from './SectionPlusesPicture3.vue'
 		<MContainer>
 			<template #children>
 				<div class="cards">
-					<SectionPlusesPicture1 />
-					<SectionPlusesPicture2 />
-					<SectionPlusesPicture3 class="picture-3" />
+					<SectionPlusesPicture1
+						:style="parallaxStyle"
+						style="transition: 1s"
+					/>
+					<SectionPlusesPicture2
+						:style="parallaxStyle2"
+						style="transition: 1s"
+					/>
+					<SectionPlusesPicture3
+						:style="parallaxStyle3"
+						style="transition: 1s"
+						class="picture-3"
+					/>
 				</div>
 			</template>
 		</MContainer>

@@ -25,70 +25,15 @@ import MButton from './buttons/MButton.vue'
 			<div class="buttons">
 				<img src="./slider.png" alt="" class="card-image" />
 
-				<svg
-					width="304"
-					height="241"
-					viewBox="0 0 304 241"
-					fill="none"
-					xmlns="http://www.w3.org/2000/svg"
-					xmlns:xlink="http://www.w3.org/1999/xlink"
-				>
-					<rect width="304" height="241" fill="#F5F5F5" />
-					<rect
-						width="3979"
-						height="3807"
-						transform="translate(-3106 -2140)"
-						fill="#F4EEE8"
-					/>
-					<rect
-						x="-1067"
-						y="-92"
-						width="1680"
-						height="651"
-						rx="100"
-						fill="white"
-					/>
-					<rect
-						x="-167"
-						y="-229"
-						width="703"
-						height="788"
-						fill="url(#pattern0)"
-					/>
-					<rect width="304" height="241" fill="url(#pattern1)" />
-					<defs>
-						<pattern
-							id="pattern0"
-							patternContentUnits="objectBoundingBox"
-							width="1"
-							height="1"
-						>
-							<use
-								xlink:href="#image0_0_1"
-								transform="scale(0.00109464 0.000976562)"
-							/>
-						</pattern>
-						<pattern
-							id="pattern1"
-							patternContentUnits="objectBoundingBox"
-							width="1"
-							height="1"
-						>
-							<use
-								xlink:href="#image1_0_1"
-								transform="matrix(0.00257391 0 0 0.00324675 -0.000624786 0)"
-							/>
-						</pattern>
-					</defs>
-				</svg>
+				<img src="./sections/main/slider-picture.png" class="card-image-svg" />
 
 				<MButton class="first-button">Записаться на приём</MButton>
 				<MButtonOutline>Задать вопрос</MButtonOutline>
 			</div>
 		</div>
 		<div class="card-badges">
-			<div class="card-badge">08.</div>
-			<div class="card-badge">Personal Concept</div>
+			<div class="card-badge">07.</div>
+			<div class="card-badge">Red Concept</div>
 		</div>
 	</div>
 </template>
@@ -130,19 +75,13 @@ import MButton from './buttons/MButton.vue'
 	width: 42%;
 	transition: 1s;
 	transition-delay: 0.4s;
-
-	opacity: 0;
 }
 
-.active .card-image {
-	opacity: 1;
-}
-
-.card-image + svg {
+.card-image-svg {
 	position: absolute;
-	right: 4%;
-	top: -22%;
-	width: 44%;
+	right: 17.3%;
+	top: 11.9%;
+	width: 20%;
 	height: auto;
 	transition: 1s;
 	display: block;
@@ -151,7 +90,7 @@ import MButton from './buttons/MButton.vue'
 	transform: rotate(-4deg);
 }
 
-.active .card-image + svg {
+.active .card-image-svg {
 	opacity: 1;
 	transform: rotate(0);
 }
@@ -171,7 +110,7 @@ import MButton from './buttons/MButton.vue'
 	font-weight: 700;
 
 	border-radius: 20px;
-	background: #b9b5a7;
+	background: #f88476;
 	padding: 0 22px 4px;
 	z-index: 20;
 }
