@@ -102,7 +102,7 @@ const items = ref([
 		padding-right: 16px;
 	}
 
-	.header {
+	.header-flex {
 		padding: 24px 0;
 	}
 }
@@ -134,7 +134,7 @@ const items = ref([
 		display: none;
 	}
 
-	.header {
+	.header-flex {
 		padding: 12px 0 10px;
 	}
 }
