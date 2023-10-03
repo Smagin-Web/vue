@@ -5,6 +5,7 @@ import Logo from './Logo.vue'
 import IconBurger from '../icons/IconBurger.vue'
 import HeaderSocialLink from './HeaderSocialLink.vue'
 import { ref } from 'vue'
+import HeaderNotify from './HeaderNotify.vue'
 
 const items = ref([
 	'+7 498 661-07-31',
@@ -18,6 +19,7 @@ const items = ref([
 
 <template>
 	<header class="header">
+		<HeaderNotify />
 		<MContainer>
 			<template #children>
 				<div class="header-flex">
@@ -41,23 +43,6 @@ const items = ref([
 	</header>
 </template>
 
-<!-- <script lang="ts">
-export default {
-	data() {
-		return {
-			items: [
-				'+7 498 661-07-31',
-				'Концепты',
-				'Процедуры',
-				'Аппараты',
-				'Цены',
-				'burger'
-			]
-		}
-	}
-}
-</script> -->
-
 <style scoped>
 .header {
 	background: #f4eee8;
@@ -65,11 +50,11 @@ export default {
 	top: 0;
 	left: 0;
 	right: 0;
-	padding: 30px 0;
 	z-index: 100;
 }
 
 .header-flex {
+	padding: 30px 0;
 	display: flex;
 	justify-content: space-between;
 }

@@ -16,7 +16,7 @@ import IconClose from '../icons/IconClose.vue'
 						letter-spacing-heading="6.9px"
 						text-transform="uppercase"
 					>
-						Версия сайта для слабовидящих 222
+						Версия сайта для слабовидящих
 					</Heading>
 					<div style="position: absolute; right: 0; top: -2px">
 						<IconClose />

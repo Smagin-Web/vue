@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import Header from '../components/shared/Header.vue'
 import Footer from '../components/shared/Footer.vue'
-import HeaderNotify from '../components/shared/HeaderNotify.vue'
 import SectionPluses from '../components/sections/main/SectionPluses.vue'
 import SectionInfo from '../components/sections/main/SectionInfo.vue'
 import SectionTech from '../components/sections/main/SectionTech.vue'
@@ -20,7 +19,6 @@ import SectionCircles from '../components/sections/main/SectionCircles.vue'
 
 <template>
 	<ButtonFixed />
-	<HeaderNotify />
 	<Header />
 	<SectionBanner />
 	<SectionPluses />
