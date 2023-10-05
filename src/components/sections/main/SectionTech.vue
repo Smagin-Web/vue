@@ -1,15 +1,53 @@
 <script setup lang="ts">
 import MContainer from '../../shared/MContainer.vue'
+
+import { ref, onMounted, onUnmounted } from 'vue'
+
+const stylesH1 = ref('transform: translateX(2000px);')
+const stylesH2 = ref('transform: translateX(-2000px);')
+
+const isSectionInfoVisible = ref(false)
+let observer: IntersectionObserver | null = null
+
+const handleSectionIntersect = (entries: IntersectionObserverEntry[]) => {
+	const [entry] = entries
+	isSectionInfoVisible.value = entry.isIntersecting
+	if (isSectionInfoVisible.value) {
+		stylesH1.value = 'transform: translateX(0);'
+
+		setTimeout(() => {
+			stylesH2.value =
+				'transform: translateX(0); text-shadow: 0px 10px 20px #d0c3b4;'
+		}, 600)
+	}
+}
+
+onMounted(() => {
+	observer = new IntersectionObserver(handleSectionIntersect)
+	// Установите целевой элемент, который нужно отслеживать
+	const sectionTech = document.querySelector('.section-tech')
+	if (sectionTech) {
+		observer.observe(sectionTech)
+	}
+})
+
+onUnmounted(() => {
+	if (observer) {
+		observer.disconnect()
+	}
+})
 </script>
 
 <template>
 	<section class="section-tech">
 		<MContainer>
 			<template #children>
-				<h4 class="heading">
+				<h4 class="heading section-tech-heading" :style="stylesH1">
 					Мы&nbsp;разработали новый&nbsp;продукт в&nbsp;косметологии
 				</h4>
-				<h4 class="big-heading">8&nbsp;концептов твоей красоты</h4>
+				<h4 class="big-heading section-tech-heading-2" :style="stylesH2">
+					8&nbsp;концептов твоей красоты
+				</h4>
 			</template>
 		</MContainer>
 	</section>
@@ -27,13 +65,17 @@ import MContainer from '../../shared/MContainer.vue'
 	font-size: 50px;
 	font-weight: 700;
 	padding-bottom: 50px;
+	transition: 1s;
 }
 
 .big-heading {
 	color: #fff;
 	text-align: center;
-	text-shadow: 0px 10px 20px #d0c3b4;
+	/* text-shadow: 0px 10px 20px #d0c3b4; */
 	font-size: 150px;
+	transition:
+		transform 1s ease 0s,
+		text-shadow 0.5s ease-in 0s;
 }
 
 @media screen and (max-width: 1000px) {

@@ -36,7 +36,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-	<section class="section-info" style="height: 300vh">
+	<section class="section-info" style="height: 200vh">
 		<MContainer
 			style="
 				position: sticky;

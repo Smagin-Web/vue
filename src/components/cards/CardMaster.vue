@@ -20,6 +20,7 @@ import IconPlay from '../icons/IconPlay.vue'
 	position: relative;
 	max-width: 402px;
 	min-width: 260px;
+	cursor: pointer;
 }
 
 .card-icon {
