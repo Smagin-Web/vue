@@ -15,9 +15,9 @@ const handleScroll = () => {
 		console.log(scrollTop)
 		if (scrollTop > 7000 && scrollTop < 10000) {
 			let value = scrollTop - 7000
-			parallaxStyle.value = `transform: translateY(${value * 0.01}px)`
-			parallaxStyle2.value = `transform: translateY(${value * -0.01}px)`
-			parallaxStyle3.value = `transform: translateY(${value * 0.01}px)`
+			parallaxStyle.value = `transform: translateY(${value * 0.01}px) translateX(${value * -0.01}px)`
+			parallaxStyle2.value = `transform: translateY(${value * -0.01}px) translateX(${value * 0.015}px)`
+			parallaxStyle3.value = `transform: translateY(${value * 0.01}px) translateX(${value * 0.01}px)`
 		}
 	} else {
 		parallaxStyle.value = ''
