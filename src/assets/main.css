@@ -201,6 +201,36 @@ h5 {
 	padding-bottom: 60px;
 }
 
+@media (max-width: 1780px) {
+	.heading-section {
+		font-size: 48px;
+	}
+}
+
+@media (max-width: 1640px) {
+	.heading-section {
+		font-size: 44px;
+	}
+}
+
+@media (max-width: 1500px) {
+	.heading-section {
+		font-size: 38px;
+	}
+}
+
+@media (max-width: 1400px) {
+	.heading-section {
+		font-size: 36px;
+	}
+}
+
+@media (max-width: 1200px) {
+	.heading-section {
+		font-size: 32px;
+	}
+}
+
 @media screen and (max-width: 1000px) {
 	.heading-section {
 		padding-bottom: 20px;

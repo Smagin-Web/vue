@@ -18,7 +18,7 @@ const handleSectionIntersect = (entries: IntersectionObserverEntry[]) => {
 		setTimeout(() => {
 			stylesH2.value =
 				'transform: translateX(0); text-shadow: 0px 10px 20px #d0c3b4;'
-		}, 600)
+		}, 400)
 	}
 }
 
