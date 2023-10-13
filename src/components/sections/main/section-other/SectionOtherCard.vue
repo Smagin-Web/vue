@@ -13,7 +13,7 @@ const props = defineProps({
 
 function getImageUrl() {
 	// This path must be correct for your file
-	return new URL(`./${props.iconFilename}`, import.meta.url)
+	return new URL(`./${props.iconFilename}`, import.meta.url).toString()
 }
 </script>
 
