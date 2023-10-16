@@ -34,6 +34,19 @@
 	--color-text: var(--vt-c-text-light-1);
 
 	--section-gap: 160px;
+
+	--container-padding-xxxl: 120px;
+	--container-padding-xxl: 80px;
+	--container-padding-xl: 60px;
+	--container-padding-l: 40px;
+	--container-padding-sm: 20px;
+
+	/* Отрицательные paddings контейнера */
+	--container-padding-xxxl-n: -120px;
+	--container-padding-xxl-n: -80px;
+	--container-padding-xl-n: -60px;
+	--container-padding-l-n: -40px;
+	--container-padding-sm-n: -20px;
 }
 
 @media (prefers-color-scheme: dark) {

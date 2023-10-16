@@ -54,4 +54,11 @@ export default {
 	height: 100%;
 	transition: 0.2s;
 }
+
+@media (max-width: 1000px) {
+	.avatar {
+		width: 150px;
+		height: 150px;
+	}
+}
 </style>

@@ -8,31 +8,30 @@
 .container {
 	max-width: 1920px;
 	margin: auto;
-	padding: 0 120px;
+	padding: 0 var(--container-padding-xxxl);
 }
 
 @media screen and (max-width: 1720px) {
 	.container {
-		padding: 0 80px;
+		padding: 0 var(--container-padding-xxl);
 	}
 }
 
 @media screen and (max-width: 1420px) {
 	.container {
-		padding: 0 60px;
+		padding: 0 var(--container-padding-xl);
 	}
 }
 
 @media screen and (max-width: 960px) {
 	.container {
-		padding: 0 40px;
+		padding: 0 var(--container-padding-l);
 	}
 }
 
-
 @media screen and (max-width: 800px) {
 	.container {
-		padding: 0 20px;
+		padding: 0 var(--container-padding-sm);
 	}
 }
 </style>

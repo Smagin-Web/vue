@@ -26,27 +26,27 @@ import MContainer from '../../shared/MContainer.vue'
 				<div class="content-container">
 					<div class="circles" style="padding-bottom: 34px">
 						<Avatar />
-						<div class="circle-empty" />
+						<Avatar style="opacity: 0" />
 						<Avatar />
-						<div class="circle-empty" />
+						<Avatar style="opacity: 0" />
 						<Avatar />
-						<div class="circle-empty" />
+						<Avatar style="opacity: 0" />
 					</div>
 					<div class="circles circles-absolute">
-						<div class="circle-empty" />
+						<Avatar style="opacity: 0" />
 						<Avatar />
-						<div class="circle-empty" />
+						<Avatar style="opacity: 0" />
 						<Avatar />
-						<div class="circle-empty" />
+						<Avatar style="opacity: 0" />
 						<Avatar />
 					</div>
 					<div class="circles">
 						<Avatar />
-						<div class="circle-empty" />
+						<Avatar style="opacity: 0" />
 						<Avatar />
-						<div class="circle-empty" />
+						<Avatar style="opacity: 0" />
 						<Avatar />
-						<div class="circle-empty" />
+						<Avatar style="opacity: 0" />
 					</div>
 				</div>
 			</template>
@@ -76,6 +76,8 @@ import MContainer from '../../shared/MContainer.vue'
 }
 .content-container {
 	position: relative;
+
+	overflow-x: auto;
 }
 .circles-absolute {
 	position: absolute;
@@ -85,7 +87,8 @@ import MContainer from '../../shared/MContainer.vue'
 	transform: translateY(-50%);
 }
 .circles {
-	display: flex;
+	display: grid;
+	grid-template-columns: repeat(6, max-content);
 	align-items: start;
 	justify-content: space-between;
 }
@@ -94,12 +97,36 @@ import MContainer from '../../shared/MContainer.vue'
 	margin-top: 147px;
 }
 
+@media screen and (max-width: 1720px) {
+	.content-container {
+		margin: 0 var(--container-padding-xxl-n);
+	}
+}
+
+@media (max-width: 1420px) {
+	.content-container {
+		margin: 0 var(--container-padding-xl-n);
+	}
+}
+
 @media (max-width: 1000px) {
 	.section-circles {
 		padding-top: 0;
 	}
 	.heading-circles {
 		font-size: 22px;
+	}
+}
+
+@media (max-width: 960px) {
+	.content-container {
+		margin: 0 var(--container-padding-l-n);
+	}
+}
+
+@media (max-width: 800px) {
+	.content-container {
+		margin: 0 var(--container-padding-sm-n);
 	}
 }
 </style>
