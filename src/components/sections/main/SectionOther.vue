@@ -10,14 +10,21 @@ const parallaxStyle3 = ref('')
 const handleScroll = () => {
 	// Если ширина экрана более 1200px, parallax работает
 	// Иначе (на экранах меньше 1200px) - parallax отключаем
+	console.log(window.scrollY);
 	if (window.innerWidth > 1200) {
 		const scrollTop = window.scrollY
 		console.log(scrollTop)
 		if (scrollTop > 7000 && scrollTop < 10000) {
-			let value = scrollTop - 7000
-			parallaxStyle.value = `transform: translateY(${value * 0.01}px) translateX(${value * -0.01}px)`
-			parallaxStyle2.value = `transform: translateY(${value * -0.01}px) translateX(${value * 0.015}px)`
-			parallaxStyle3.value = `transform: translateY(${value * 0.01}px) translateX(${value * 0.01}px)`
+			let value = scrollTop - 7500
+			parallaxStyle.value = `transform: translateY(${
+				value * 0.01
+			}px) translateX(${value * 0.01}px)`
+			parallaxStyle2.value = `transform: translateY(${
+				value * -0.01
+			}px) translateX(${value * -0.015}px)`
+			parallaxStyle3.value = `transform: translateY(${
+				value * 0.01
+			}px) translateX(${value * -0.01}px)`
 		}
 	} else {
 		parallaxStyle.value = ''
@@ -146,6 +153,29 @@ onUnmounted(() => {
 
 .card-group-2 > div:nth-child(2n) {
 	margin-top: 40px;
+}
+
+@media (max-width: 1850px) {
+	.card-group-1 {
+		margin-top: 32px;
+		display: grid;
+		grid-template-columns: max-content max-content max-content;
+		justify-content: center;
+		gap: 0 100px;
+		justify-items: center;
+	}
+
+	.card-group-2 {
+		margin-top: -360px;
+		margin-left: auto;
+		margin-right: 0;
+	}
+}
+
+@media (max-width: 1680px) {
+	.card-group {
+		margin: 0;
+	}
 }
 
 @media (max-width: 1780px) {

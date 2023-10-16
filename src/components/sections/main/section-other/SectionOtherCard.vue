@@ -27,8 +27,17 @@ function getImageUrl() {
 }
 
 .parallax-card-photo {
+	display: block;
 	height: 100%;
 	width: auto;
 	max-width: 100%;
+}
+
+@media (max-width: 1680px) {
+	.parallax-card-wrapper {
+		max-height: 232px;
+		margin: 0 auto;
+		max-width: 100%;
+	}
 }
 </style>
