@@ -111,5 +111,9 @@ import ButtonDecor from '../buttons/ButtonDecor.vue'
 	.card-img {
 		border-radius: 15px;
 	}
+
+	.card-img-container:after {
+		border-radius: 15px;
+	}
 }
 </style>
