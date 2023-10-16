@@ -21,7 +21,8 @@ import MButtonOutline from '../../buttons/MButtonOutline.vue'
 						:breakpoints="{
 							300: { slidesPerView: 1.1 },
 							600: { slidesPerView: 2.2 },
-							900: { slidesPerView: 3 }
+							1000: { slidesPerView: 3 },
+							1500: { slidesPerView: 4 }
 						}"
 						:space-between="14"
 					>

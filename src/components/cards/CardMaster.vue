@@ -4,14 +4,20 @@ import IconPlay from '../icons/IconPlay.vue'
 
 <template>
 	<div class="card">
-		<IconPlay class="card-icon" />
+		<a href="https://youtube.com" target="_blank">
+			<div class="card-img-wrapper">
+				<img src="./Avatar.png" class="card-img" />
+				<IconPlay class="card-icon" />
+			</div>
+		</a>
 
-		<div class="card-img-wrapper">
-			<img src="./Avatar.png" class="card-img" />
-		</div>
+		<a href="https://youtube.com" target="_blank">
+			<h5 class="card-heading">Ольга Заика</h5>
+		</a>
 
-		<h5 class="card-heading">Ольга Заика</h5>
-		<p class="card-text">Главный врач, врач-косметолог</p>
+		<a href="https://youtube.com" target="_blank">
+			<p class="card-text">Главный врач, врач-косметолог</p>
+		</a>
 	</div>
 </template>
 
@@ -20,17 +26,16 @@ import IconPlay from '../icons/IconPlay.vue'
 	position: relative;
 	max-width: 402px;
 	min-width: 260px;
-	cursor: pointer;
 }
 
 .card-icon {
 	position: absolute;
-	top: 300px;
+	opacity: 0;
+	transition: 0.2s;
+
+	bottom: 55px;
 	left: 50%;
 	transform: translateX(-50%);
-	opacity: 0;
-
-	transition: 0.2s;
 }
 
 .card:hover .card-icon {
