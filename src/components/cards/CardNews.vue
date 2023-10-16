@@ -5,10 +5,12 @@ import ButtonDecor from '../buttons/ButtonDecor.vue'
 
 <template>
 	<div class="card">
-		<img
-			class="card-img"
-			src="https://static.zdravcity.ru/upload/main/fdd/1024_768_%D1%87%D0%B8%D1%81%D1%82%D0%BA%D0%B0.jpg"
-		/>
+		<div class="card-img-container">
+			<img
+				class="card-img"
+				src="https://static.zdravcity.ru/upload/main/fdd/1024_768_%D1%87%D0%B8%D1%81%D1%82%D0%BA%D0%B0.jpg"
+			/>
+		</div>
 		<div
 			style="
 				padding-bottom: 24px;
@@ -43,9 +45,32 @@ import ButtonDecor from '../buttons/ButtonDecor.vue'
 }
 
 .card-img {
+	display: block;
 	max-width: 100%;
 	border-radius: 30px;
 	margin-bottom: 20px;
+}
+
+.card-img-container {
+	position: relative;
+}
+
+.card-img-container:after {
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	top: 0;
+
+	border-radius: 30px;
+	transition: 0.2s;
+	border: 1px solid white;
+}
+
+.card:hover .card-img-container:after {
+	border: 10px solid white;
 }
 
 .card-date-text {
