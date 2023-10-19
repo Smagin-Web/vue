@@ -84,6 +84,10 @@ import ButtonLink from '../../buttons/ButtonLink.vue'
 		max-width: 600px;
 		min-height: auto;
 	}
+
+	.buttons {
+		padding-top: 60px;
+	}
 }
 
 @media screen and (max-width: 1000px) {
