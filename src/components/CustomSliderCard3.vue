@@ -81,7 +81,7 @@ import MButton from './buttons/MButton.vue'
 	transition: 0.2s;
 }
 .card-image + svg path {
-	transform: translateY(32px);
+	transform: translateY(2px);
 	transition: 2s;
 	opacity: 0;
 }

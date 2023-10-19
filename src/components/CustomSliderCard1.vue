@@ -2438,16 +2438,7 @@ import MButton from './buttons/MButton.vue'
 	position: absolute;
 	right: 5%;
 	bottom: 0;
-	width: 42%;
-	transition: 1s;
-	transition-delay: 0.4s;
-
-	opacity: 0;
-}
-
-.active .card-image {
-	opacity: 1;
-}
+	width: 42%;}
 
 .card-image + svg {
 	position: absolute;
@@ -2459,7 +2450,7 @@ import MButton from './buttons/MButton.vue'
 	display: block;
 
 	opacity: 0;
-	transform: rotate(-4deg);
+	transform: rotate(-1deg);
 }
 
 .active .card-image + svg {
@@ -2482,7 +2473,7 @@ import MButton from './buttons/MButton.vue'
 	font-weight: 700;
 
 	border-radius: 20px;
-	background: #b9b5a7;
+	background: #ce99ab;
 	padding: 0 22px 4px;
 	z-index: 20;
 }

@@ -87,7 +87,7 @@ import MButton from './buttons/MButton.vue'
 	display: block;
 
 	opacity: 0;
-	transform: rotate(-4deg);
+	transform: rotate(-1deg);
 }
 
 .active .card-image-svg {

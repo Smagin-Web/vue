@@ -60,7 +60,7 @@ import MButton from './buttons/MButton.vue'
 }
 .card-image + svg path {
 	fill: rgb(154, 154, 255) !important;
-	transform: rotate(2deg);
+	transform: rotate(1deg);
 	transition: 1s;
 	opacity: 0;
 }
