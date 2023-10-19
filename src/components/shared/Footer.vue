@@ -123,6 +123,7 @@ export default {
 <style scoped>
 .footer {
 	padding: 50px 0;
+	padding-bottom: 150px;
 }
 
 .footer-logo {

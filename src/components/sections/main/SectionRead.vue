@@ -11,9 +11,9 @@ import { Swiper, SwiperSlide } from 'swiper/vue'
 		<MContainer>
 			<template #children>
 				<h3 class="heading-section">Читай полезное и интересное</h3>
-				<h5 class="text-section">
-					Мы хотим поделиться с тобой некоторыми советами, которые помогут тебе
-					ухаживать за кожей
+				<h5 class="text-section section-read-text">
+					Мы&nbsp;хотим поделиться с&nbsp;тобой некоторыми советами, которые
+					помогут тебе ухаживать за&nbsp;кожей
 				</h5>
 				<Swiper
 					:breakpoints="{
@@ -55,19 +55,28 @@ export default {
 </script>
 
 <style scoped>
-.button {
-	margin-top: 70px;
-}
 .swiper-container {
 	margin: 0 -24px;
 }
 .section-read {
 	padding-bottom: 100px;
 }
+.section-read-heading {
+	padding-bottom: 35px;
+}
+
+.section-read-text {
+	max-width: 866px;
+	padding-bottom: 70px;
+}
 .card-group {
 	display: flex;
 	gap: 24px;
 	padding-bottom: 70px;
+}
+
+.button {
+	margin-top: 70px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -78,6 +87,14 @@ export default {
 
 	.button {
 		margin-top: 54px;
+	}
+
+	.section-read-heading {
+		padding-bottom: 20px;
+	}
+
+	.section-read-text {
+		padding-bottom: 35px;
 	}
 }
 </style>
