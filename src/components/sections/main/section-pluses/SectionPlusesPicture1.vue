@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import PicturePluses1 from '../../icons/PicturePluses1.vue'
+import PicturePluses1 from '../../../icons/PicturePluses1.vue'
 import SectionPlusesPictureText from './SectionPlusesPictureText.vue'
 </script>
 

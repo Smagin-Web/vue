@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { onMounted, onUnmounted, ref } from 'vue'
-import MContainer from '../../shared/MContainer.vue'
+import MContainer from '../../../shared/MContainer.vue'
 import SectionPlusesPicture1 from './SectionPlusesPicture1.vue'
 import SectionPlusesPicture2 from './SectionPlusesPicture2.vue'
 import SectionPlusesPicture3 from './SectionPlusesPicture3.vue'
@@ -67,10 +67,17 @@ onUnmounted(() => {
 	padding-top: 200px;
 }
 .section-pluses {
+	padding-top: 200px;
 	overflow-x: hidden;
 }
 
-@media screen and (max-width: 1200px) {
+@media (max-width: 1600px) {
+	.section-pluses {
+		padding-top: 100px;
+	}
+}
+
+@media (max-width: 1200px) {
 	.cards {
 		grid-template-columns: minmax(100px, 500px);
 		padding-bottom: 100px;

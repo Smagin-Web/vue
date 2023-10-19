@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import Header from '@/components/shared/Header.vue'
 import Footer from '@/components/shared/Footer.vue'
-import SectionPluses from '@/components/sections/main/SectionPluses.vue'
+import SectionPluses from '@/components/sections/main/section-pluses/SectionPluses.vue'
 import SectionInfo from '@/components/sections/main/SectionInfo.vue'
 import SectionTech from '@/components/sections/main/SectionTech.vue'
 import SectionOffer from '@/components/sections/main/SectionOffer.vue'
