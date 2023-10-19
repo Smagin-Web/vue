@@ -49,6 +49,9 @@ import ButtonLink from '../../buttons/ButtonLink.vue'
 
 .buttons {
 	margin-top: -100px;
+	display: flex;
+	gap: 48px;
+	align-items: center;
 }
 
 @media (max-width: 1780px) {
