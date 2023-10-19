@@ -86,6 +86,7 @@ onUnmounted(() => {
 	font-weight: 700;
 	padding-bottom: 80px;
 	transition: 0.2s;
+	max-width: 1200px;
 }
 
 .text {
