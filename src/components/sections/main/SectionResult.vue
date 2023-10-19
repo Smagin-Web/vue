@@ -31,9 +31,9 @@ import SectionResultBanner from './SectionResultBanner.vue'
 
 .content {
 	display: grid;
-	gap: 168px;
+	gap: 80px;
 	align-items: center;
-	grid-template-columns: 1fr minmax(200px, 700px);
+	grid-template-columns: minmax(100px, 800px) minmax(200px, 810px);
 }
 
 .heading {
@@ -46,7 +46,20 @@ import SectionResultBanner from './SectionResultBanner.vue'
 	font-size: 24px;
 }
 
-@media screen and (max-width: 1000px) {
+@media (max-width: 1500px) {
+	.heading {
+		padding-bottom: 26px;
+		font-size: 36px;
+		max-width: 700px;
+	}
+	.text {
+		font-size: 18px;
+		max-width: 700px;
+		line-height: 1.2;
+	}
+}
+
+@media (max-width: 1000px) {
 	.section-result {
 		padding-top: 0;
 		padding-bottom: 90px;
@@ -69,6 +82,7 @@ import SectionResultBanner from './SectionResultBanner.vue'
 	}
 	.text {
 		font-size: 17px;
+		line-height: 1.2;
 	}
 }
 </style>
