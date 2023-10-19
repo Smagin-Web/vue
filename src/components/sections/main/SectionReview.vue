@@ -10,9 +10,9 @@ import MContainer from '../../shared/MContainer.vue'
 					<h4 class="heading">Отзывы на&nbsp;площадках</h4>
 					<div class="section-review__links">
 						<img src="./Yandex.png" />
-						<img src="./Yandex.png" />
-						<img src="./Yandex.png" />
-						<img src="./Yandex.png" />
+						<img src="./Zoon.png" />
+						<img src="./Google.png" />
+						<img src="./2Gis.png" />
 					</div>
 				</div>
 			</template>
