@@ -30,6 +30,7 @@ import MContainer from '../../shared/MContainer.vue'
 .section-review-content {
 	display: flex;
 	justify-content: space-between;
+	gap: 80px;
 	align-items: center;
 	padding: 80px;
 	border-radius: 500px;
@@ -41,10 +42,11 @@ import MContainer from '../../shared/MContainer.vue'
 	gap: 12px;
 }
 
-@media screen and (max-width: 1450px) {
+@media screen and (max-width: 1550px) {
 	.section-review-content {
 		flex-direction: column;
 		gap: 25px;
+		padding: 70px;
 	}
 }
 
