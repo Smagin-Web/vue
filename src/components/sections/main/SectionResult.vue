@@ -13,7 +13,7 @@ import SectionResultBanner from './SectionResultBanner.vue'
 						<h3 class="heading">Что ты получишь<br />в результате приёма?</h3>
 						<h5 class="text">
 							Анализируя полученные данные,<br />врач проведёт оценку состояния
-							твоей кожи<br />и&nbsp;определит стадию заболевания
+							твоей&nbsp;кожи<br />и&nbsp;определит стадию заболевания
 						</h5>
 					</div>
 				</div>
