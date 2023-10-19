@@ -74,7 +74,7 @@ onUnmounted(() => {
 	/* text-shadow: 0px 10px 20px #d0c3b4; */
 	font-size: 150px;
 	transition:
-		transform 1s ease 0s,
+		transform .5s ease 0s,
 		text-shadow 0.5s ease-in 0s;
 }
 

@@ -37,19 +37,7 @@ onUnmounted(() => {
 
 <template>
 	<section class="section-info" style="height: 200vh">
-		<MContainer
-			style="
-				position: sticky;
-				top: 15px;
-				padding-top: 100px;
-				padding-bottom: 100px;
-				height: 100vh;
-				display: grid;
-				justify-content: center;
-				align-items: center;
-				align-content: center;
-			"
-		>
+		<MContainer class="section-info-container" style="">
 			<template #children>
 				<h3 class="heading" :style="infoStyles">
 					Наш Центр специализируется на&nbsp;аппаратной косметологии лица
@@ -73,11 +61,21 @@ onUnmounted(() => {
 </template>
 
 <style scoped>
+.section-info-container {
+	position: sticky;
+	top: 15px;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	height: calc(100vh + 100px);
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
 .section-info {
 	position: relative;
 	background: linear-gradient(180deg, #bac3d8 0%, #7986a5 100%);
 	height: 500vh;
-	padding: 164px 0;
 }
 
 .heading {
@@ -98,7 +96,7 @@ onUnmounted(() => {
 	font-weight: 300;
 	max-width: 880px;
 	margin: auto;
-	transition: 0.2s;
+	transition: 0.1s;
 }
 
 @media screen and (max-width: 1000px) {

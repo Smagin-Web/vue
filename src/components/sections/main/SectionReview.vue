@@ -38,7 +38,7 @@ import MContainer from '../../shared/MContainer.vue'
 
 .section-review__links {
 	display: flex;
-	gap: 16px;
+	gap: 12px;
 }
 
 @media screen and (max-width: 1450px) {
