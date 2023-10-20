@@ -90,7 +90,7 @@ import MContainer from '../../shared/MContainer.vue'
 	display: grid;
 	grid-template-columns: repeat(6, max-content);
 	align-items: start;
-	justify-content: space-between;
+	justify-content: start;
 }
 
 .circle-bottom {
