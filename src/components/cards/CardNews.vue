@@ -4,44 +4,72 @@ import ButtonDecor from '../buttons/ButtonDecor.vue'
 </script>
 
 <template>
-	<div class="card">
-		<div class="card-img-container">
-			<img
-				class="card-img"
-				src="https://static.zdravcity.ru/upload/main/fdd/1024_768_%D1%87%D0%B8%D1%81%D1%82%D0%BA%D0%B0.jpg"
-			/>
-		</div>
-		<div
-			style="
-				padding-bottom: 24px;
-				display: flex;
-				justify-content: space-between;
-				align-items: center;
-			"
-		>
-			<div style="display: flex; align-items: center; gap: 5px">
-				<IconNew />
-				<span class="card-date-text">15.05.2023</span>
+	<div class="card-wrapper">
+		<a href="#" class="card-link" />
+		<div class="card">
+			<div class="card-img-container">
+				<img
+					class="card-img"
+					src="https://static.zdravcity.ru/upload/main/fdd/1024_768_%D1%87%D0%B8%D1%81%D1%82%D0%BA%D0%B0.jpg"
+				/>
 			</div>
-			<ButtonDecor>Новость</ButtonDecor>
-		</div>
-		<h5 class="card-heading">Название публикации</h5>
+			<div
+				style="
+					padding-bottom: 24px;
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+				"
+			>
+				<div style="display: flex; align-items: center; gap: 5px">
+					<IconNew />
+					<span class="card-date-text">15.05.2023</span>
+				</div>
+				<ButtonDecor class="card-tag">Новость</ButtonDecor>
+			</div>
+			<h5 class="card-heading">Название публикации</h5>
 
-		<p class="card-text">
-			Краткий анонс публикацииLorem ipsum dolor sit amet consectetur. Purus dui
-			vulputate sagittis aliquam ac pellentesque condimentum lectus amet. Mollis
-			vitae sit gravida tellus vel faucibus. Purus elementum tortor lectus
-			scelerisque non. Vitae sit non velit elit nisl ut egestas.
-		</p>
+			<p class="card-text">
+				Краткий анонс публикацииLorem ipsum dolor sit amet consectetur. Purus
+				dui vulputate sagittis aliquam ac pellentesque condimentum lectus amet.
+				Mollis vitae sit gravida tellus vel faucibus. Purus elementum tortor
+				lectus scelerisque non. Vitae sit non velit elit nisl ut egestas.
+			</p>
+		</div>
 	</div>
 </template>
 
 <style scoped>
+.card-wrapper {
+	position: relative;
+	padding: 10px 0;
+}
+
+.card-wrapper:hover .card-img-container:after {
+	border: 10px solid white;
+}
 .card {
 	background-color: #fff;
 	border-radius: 50px;
 	padding: 40px;
 	max-width: 550px;
+
+	transition: 0.2s;
+}
+
+.card-tag {
+	position: relative;
+	z-index: 20;
+}
+
+.card-link {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border-radius: 50px;
+	z-index: 10;
 }
 
 .card-img {
@@ -59,18 +87,14 @@ import ButtonDecor from '../buttons/ButtonDecor.vue'
 	content: '';
 	display: block;
 	position: absolute;
-	bottom: 0;
-	right: 0;
-	left: 0;
-	top: 0;
+	bottom: -1px;
+	right: -1px;
+	left: -1px;
+	top: -1px;
 
 	border-radius: 30px;
 	transition: 0.2s;
 	border: 1px solid white;
-}
-
-.card:hover .card-img-container:after {
-	border: 10px solid white;
 }
 
 .card-date-text {

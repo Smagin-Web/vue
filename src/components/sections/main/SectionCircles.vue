@@ -26,27 +26,27 @@ import MContainer from '../../shared/MContainer.vue'
 				<div class="content-container">
 					<div class="circles" style="padding-bottom: 34px">
 						<Avatar />
-						<Avatar style="opacity: 0" />
+						<Avatar style="opacity: 0; z-index: -10" />
 						<Avatar />
-						<Avatar style="opacity: 0" />
+						<Avatar style="opacity: 0; z-index: -10" />
 						<Avatar />
-						<Avatar style="opacity: 0" />
+						<Avatar style="opacity: 0; z-index: -10" />
 					</div>
 					<div class="circles circles-absolute">
-						<Avatar style="opacity: 0" />
+						<Avatar style="opacity: 0; z-index: -10" />
 						<Avatar />
-						<Avatar style="opacity: 0" />
+						<Avatar style="opacity: 0; z-index: -10" />
 						<Avatar />
-						<Avatar style="opacity: 0" />
+						<Avatar style="opacity: 0; z-index: -10" />
 						<Avatar />
 					</div>
 					<div class="circles">
 						<Avatar />
-						<Avatar style="opacity: 0" />
+						<Avatar style="opacity: 0; z-index: -10" />
 						<Avatar />
-						<Avatar style="opacity: 0" />
+						<Avatar style="opacity: 0; z-index: -10" />
 						<Avatar />
-						<Avatar style="opacity: 0" />
+						<Avatar style="opacity: 0; z-index: -10" />
 					</div>
 				</div>
 			</template>
