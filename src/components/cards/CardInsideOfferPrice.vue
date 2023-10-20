@@ -51,7 +51,7 @@
 	border-radius: 20px;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
 	.price-new {
 		font-size: 54px;
 	}

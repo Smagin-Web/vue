@@ -47,7 +47,21 @@ import CardInsideOfferPrice from './CardInsideOfferPrice.vue'
 	padding-bottom: 70px;
 }
 
-@media screen and (max-width: 1450px) {
+@media (max-width: 1500px) {
+	.buttons {
+		display: grid;
+		gap: 30px;
+		max-width: 500px;
+	}
+	.heading {
+		font-size: 28px;
+	}
+}
+
+@media (max-width: 1300px) {
+	.heading {
+		padding-bottom: 40px;
+	}
 	.prices {
 		position: static;
 		display: flex;
@@ -56,9 +70,17 @@ import CardInsideOfferPrice from './CardInsideOfferPrice.vue'
 		padding-bottom: 40px;
 		gap: 24px;
 	}
+
+	.buttons {
+		display: flex;
+		max-width: 100%;
+	}
+}
+
+@media (max-width: 1100px) {
 	.card-inside {
 		display: grid;
-		padding: 44px 16px;
+		padding: 44px 32px;
 	}
 
 	.heading {
@@ -66,15 +88,32 @@ import CardInsideOfferPrice from './CardInsideOfferPrice.vue'
 		padding-bottom: 24px;
 	}
 
+	.prices {
+		padding-bottom: 10px;
+	}
+
+	.buttons button {
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 700px) {
 	.buttons {
 		display: grid;
-		gap: 30px;
+		gap: 24px;
+	}
+
+	.buttons button {
+		font-size: 16px;
 	}
 }
 
 @media (max-width: 600px) {
 	.heading {
 		font-size: 18px;
+	}
+	.card-inside {
+		padding: 44px 16px;
 	}
 }
 </style>

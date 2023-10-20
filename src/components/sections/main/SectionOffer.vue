@@ -143,4 +143,11 @@ import SectionOfferList from './SectionOfferList.vue'
 		transform: translateY(-50%) translateX(-50%);
 	}
 }
+
+@media (max-width: 600px) {
+	.image-more {
+		/* transform: translateY(50%) translateX(40%); */
+		padding-right: 40px;
+	}
+}
 </style>
