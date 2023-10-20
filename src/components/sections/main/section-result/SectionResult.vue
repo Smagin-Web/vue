@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import MContainer from '../../shared/MContainer.vue'
+import MContainer from '../../../shared/MContainer.vue'
 import SectionResultBanner from './SectionResultBanner.vue'
 </script>
 
@@ -74,7 +74,7 @@ import SectionResultBanner from './SectionResultBanner.vue'
 	}
 
 	.banner {
-		padding-top: 25%;
+		margin-top: 25%;
 	}
 
 	.heading {

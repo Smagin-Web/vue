@@ -6,7 +6,7 @@ import SectionPluses from '@/components/sections/main/section-pluses/SectionPlus
 import SectionInfo from '@/components/sections/main/SectionInfo.vue'
 import SectionTech from '@/components/sections/main/SectionTech.vue'
 import SectionOffer from '@/components/sections/main/SectionOffer.vue'
-import SectionResult from '@/components/sections/main/SectionResult.vue'
+import SectionResult from '@/components/sections/main/section-result/SectionResult.vue'
 import SectionStories from '@/components/sections/main/SectionStories.vue'
 import SectionMasters from '@/components/sections/main/SectionMasters.vue'
 import SectionRead from '@/components/sections/main/SectionRead.vue'
