@@ -40,20 +40,27 @@ onUnmounted(() => {
 		<MContainer class="section-info-container" style="">
 			<template #children>
 				<h3 class="heading" :style="infoStyles">
-					Наш Центр специализируется на&nbsp;аппаратной косметологии лица
+					Наш Центр специализируется
+					<br />
+					на&nbsp;аппаратной косметологии лица
+					<br />
 					и&nbsp;имеет медицинскую лицензию
 				</h3>
 
 				<p class="text" :style="infoStyles">
 					Мы&nbsp;уверены, что аппаратная косметология&nbsp;&mdash; это
-					безболезненные процедуры без стресса и&nbsp;реабилитации, при которых
-					клетки начинают работать лучше, улучшая состояние твоей кожи
-					на&nbsp;клеточном уровне.
+					безболезненные процедуры
+					<br />
+					без стресса и&nbsp;реабилитации, при которых клетки начинают работать
+					лучше,
+					<br />
+					улучшая состояние твоей кожи на&nbsp;клеточном уровне.
 					<br />
 					<br />
 					В&nbsp;отличие от&nbsp;инъекций, которые дают быстрый,
-					но&nbsp;временный результат, мы&nbsp;заботимся о&nbsp;долгосрочном
-					здоровье твоей кожи.
+					но&nbsp;временный результат,
+					<br />
+					мы&nbsp;заботимся о&nbsp;долгосрочном здоровье твоей кожи.
 				</p>
 			</template>
 		</MContainer>
@@ -82,22 +89,22 @@ onUnmounted(() => {
 	color: #fff;
 	text-align: center;
 	font-family: 'Pelinka';
-	font-size: 50px;
+	/* font-size: 50px; */
+	font-size: 2.4vw;
 	font-weight: 700;
 	padding-bottom: 80px;
-	transition: 0.2s;
-	max-width: 1200px;
+	transition: 0.2s opacity;
 }
 
 .text {
 	color: #fff;
 	font-family: 'BrisaSans';
 	text-align: center;
-	font-size: 24px;
+	/* font-size: 24px; */
+	font-size: 1.2vw;
 	font-weight: 300;
-	max-width: 880px;
 	margin: auto;
-	transition: 0.1s;
+	transition: 0.1s opacity;
 }
 
 @media screen and (max-width: 1000px) {
