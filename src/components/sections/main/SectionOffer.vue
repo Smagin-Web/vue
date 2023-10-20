@@ -16,7 +16,7 @@ import SectionOfferList from './SectionOfferList.vue'
 						</div>
 						<div class="card-content">
 							<div>
-								<h3 class="heading">Хочешь здоровую кожу?</h3>
+								<h3 class="heading">Хочешь&nbsp;здоровую&nbsp;кожу?</h3>
 
 								<SectionOfferList />
 							</div>
@@ -62,7 +62,8 @@ import SectionOfferList from './SectionOfferList.vue'
 	padding-bottom: 50px;
 	display: flex;
 	justify-content: space-between;
-	gap: 20px;
+	align-items: start;
+	gap: 150px;
 }
 
 .card-badge {
@@ -77,16 +78,48 @@ import SectionOfferList from './SectionOfferList.vue'
 }
 .image {
 	max-width: 600px;
+	width: 100%;
 }
 .image-more {
+	height: 100%;
 	position: absolute;
 	left: 0;
-	top: 50%;
-	transform: translateX(-62%) translateY(-54%);
+	padding: 3px 0;
+	transform: translateX(-62%);
 	z-index: 20;
 }
 
-@media screen and (max-width: 1000px) {
+@media (max-width: 1600px) {
+	.heading {
+		font-size: 38px;
+	}
+}
+
+@media (max-width: 1400px) {
+	.card-content {
+		gap: 100px;
+	}
+}
+
+@media (max-width: 1300px) {
+	.card-content {
+		display: grid;
+	}
+
+	.image-container {
+		max-width: 500px;
+		height: auto;
+	}
+	.image-more {
+		height: 90%;
+		right: 0;
+		transform: translateY(50%) translateX(40%);
+		left: auto;
+		padding: 0;
+	}
+}
+
+@media (max-width: 1000px) {
 	.heading {
 		font-size: 20px;
 		padding-bottom: 38px;
@@ -102,21 +135,6 @@ import SectionOfferList from './SectionOfferList.vue'
 		display: grid;
 		gap: 38px;
 		padding-bottom: 30px;
-	}
-
-	.image {
-		width: 100%;
-		height: auto;
-	}
-
-	.image-more {
-		width: 180px;
-		height: auto;
-		left: auto;
-		top: auto;
-		right: -10%;
-		bottom: -35%;
-		transform: none;
 	}
 
 	.card-badge {

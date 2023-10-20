@@ -10,10 +10,8 @@ const parallaxStyle3 = ref('')
 const handleScroll = () => {
 	// Если ширина экрана более 1200px, parallax работает
 	// Иначе (на экранах меньше 1200px) - parallax отключаем
-	console.log(window.scrollY);
 	if (window.innerWidth > 1200) {
 		const scrollTop = window.scrollY
-		console.log(scrollTop)
 		if (scrollTop > 7000 && scrollTop < 10000) {
 			let value = scrollTop - 7500
 			parallaxStyle.value = `transform: translateY(${

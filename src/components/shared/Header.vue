@@ -51,6 +51,8 @@ const items = ref([
 	left: 0;
 	right: 0;
 	z-index: 100;
+
+	transition: 0.2s;
 }
 
 .header-flex {

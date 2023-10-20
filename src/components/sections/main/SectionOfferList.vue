@@ -60,7 +60,13 @@
 	align-items: center;
 }
 
-@media screen and (max-width: 1000px) {
+@media (max-width: 1600px) {
+	.list-item-text {
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 1000px) {
 	.list {
 		max-width: 370px;
 	}

@@ -20,7 +20,7 @@ import MContainer from '../../shared/MContainer.vue'
 							600: { slidesPerView: 2.2 },
 							900: { slidesPerView: 3 }
 						}"
-						:space-between="14"
+						:space-between="24"
 					>
 						<swiper-slide>
 							<div class="card">
@@ -107,6 +107,7 @@ export default {
 	color: #6d6364;
 	font-size: 24px;
 	padding-bottom: 60px;
+	max-width: 870px;
 }
 
 .card {
