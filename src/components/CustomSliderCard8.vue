@@ -128,14 +128,6 @@ import MButton from './buttons/MButton.vue'
 	right: 5%;
 	bottom: 0;
 	width: 42%;
-	transition: 1s;
-	transition-delay: 0.4s;
-
-	opacity: 0;
-}
-
-.active .card-image {
-	opacity: 1;
 }
 
 .card-image + svg {
