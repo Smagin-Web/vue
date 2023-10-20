@@ -1,10 +1,12 @@
 <script setup lang="ts">
 import PicturePluses1 from '../../../icons/PicturePluses1.vue'
 import SectionPlusesPictureText from './SectionPlusesPictureText.vue'
+import SectionPlusesShadow from './SectionPlusesShadow.vue'
 </script>
 
 <template>
 	<div class="card">
+		<SectionPlusesShadow class="card-shadow" />
 		<div class="wrapper">
 			<svg
 				width="100%"
@@ -33,8 +35,17 @@ import SectionPlusesPictureText from './SectionPlusesPictureText.vue'
 
 <style scoped>
 .card {
+	position: relative;
 	padding-top: 224px;
 }
+
+.card-shadow {
+	position: absolute;
+	bottom: -25%;
+	width: 80%;
+	left: 5%;
+}
+
 .wrapper {
 	position: relative;
 	width: 100%;
