@@ -29,6 +29,7 @@ import SectionPlusesShadow from './SectionPlusesShadow.vue'
 
 <style scoped>
 .card {
+	position: relative;
 	padding-top: 60px;
 }
 
