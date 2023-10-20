@@ -18,8 +18,11 @@ import IconClose from '../icons/IconClose.vue'
 					>
 						Версия сайта для слабовидящих
 					</Heading>
+
 					<div style="position: absolute; right: 0; top: -2px">
-						<IconClose />
+						<a href="#">
+							<IconClose />
+						</a>
 					</div>
 				</div>
 			</template>
