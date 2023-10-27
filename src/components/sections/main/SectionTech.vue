@@ -3,8 +3,8 @@ import MContainer from '../../shared/MContainer.vue'
 
 import { ref, onMounted, onUnmounted } from 'vue'
 
-const stylesH1 = ref('transform: translateX(2000px);')
-const stylesH2 = ref('transform: translateX(-2000px);')
+const stylesH1 = ref('opacity: 0;')
+const stylesH2 = ref('opacity: 0;')
 
 const isSectionInfoVisible = ref(false)
 let observer: IntersectionObserver | null = null
@@ -13,11 +13,9 @@ const handleSectionIntersect = (entries: IntersectionObserverEntry[]) => {
 	const [entry] = entries
 	isSectionInfoVisible.value = entry.isIntersecting
 	if (isSectionInfoVisible.value) {
-		stylesH1.value = 'transform: translateX(0);'
-
 		setTimeout(() => {
-			stylesH2.value =
-				'transform: translateX(0); text-shadow: 0px 10px 20px #d0c3b4;'
+			stylesH1.value = 'opacity: 1;'
+			stylesH2.value = 'opacity: 1; text-shadow: 0px 10px 20px #d0c3b4;'
 		}, 400)
 	}
 }
@@ -74,11 +72,17 @@ onUnmounted(() => {
 	/* text-shadow: 0px 10px 20px #d0c3b4; */
 	font-size: 150px;
 	transition:
-		transform .5s ease 0s,
+		transform 0.5s ease 0s,
 		text-shadow 0.5s ease-in 0s;
 }
 
-@media screen and (max-width: 1000px) {
+@media (max-width: 1400px) {
+	.big-heading {
+		font-size: 54px;
+	}
+}
+
+@media screen and (max-width: 1200px) {
 	.section-tech {
 		padding: 70px 0;
 	}
