@@ -18,10 +18,10 @@ const handleScroll = () => {
 			}px) translateX(${value * -0.01}px)`
 			parallaxStyle2.value = `transform: translateY(${
 				value * -0.01
-			}px) translateX(${value * 0.015}px)`
+			}px) translateX(${value * 0.008}px)`
 			parallaxStyle3.value = `transform: translateY(${
 				value * 0.01
-			}px) translateX(${value * 0.02}px)`
+			}px) translateX(${value * 0.01}px)`
 		}
 	} else {
 		parallaxStyle.value = ''

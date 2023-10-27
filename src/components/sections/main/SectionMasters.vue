@@ -9,7 +9,7 @@ import MButtonOutline from '../../buttons/MButtonOutline.vue'
 
 <template>
 	<section class="section-masters">
-		<MContainer>
+		<MContainer class="container-custom">
 			<template #children>
 				<div class="section-masters-content">
 					<h3 class="heading-section">Давай знакомиться</h3>
@@ -18,6 +18,7 @@ import MButtonOutline from '../../buttons/MButtonOutline.vue'
 						и&nbsp;красоту!
 					</h5>
 					<Swiper
+						class="swiper-custom"
 						:breakpoints="{
 							300: { slidesPerView: 1.1 },
 							600: { slidesPerView: 2.2 },
@@ -65,5 +66,15 @@ export default {
 
 .button {
 	margin-top: 54px;
+}
+
+@media (max-width: 1000px) {
+	.container-custom {
+		padding: 0;
+	}
+
+	.swiper-custom {
+		padding: 0 16px;
+	}
 }
 </style>

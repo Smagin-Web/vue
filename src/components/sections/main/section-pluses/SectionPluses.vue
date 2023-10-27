@@ -67,6 +67,7 @@ onUnmounted(() => {
 	padding-top: 200px;
 }
 .section-pluses {
+	overflow: hidden;
 	padding-top: 200px;
 }
 

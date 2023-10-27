@@ -6,7 +6,7 @@ import MContainer from '../../shared/MContainer.vue'
 
 <template>
 	<section class="section-stories">
-		<MContainer>
+		<MContainer class="container-custom">
 			<template #children>
 				<h2 class="heading">Истории наших клиентов</h2>
 				<h5 class="text">
@@ -15,6 +15,7 @@ import MContainer from '../../shared/MContainer.vue'
 				</h5>
 				<div class="card-group">
 					<Swiper
+						class="swiper-custom"
 						:breakpoints="{
 							300: { slidesPerView: 1.2 },
 							600: { slidesPerView: 2.2 },
@@ -174,6 +175,16 @@ export default {
 	.card-img {
 		border-radius: 15px;
 		margin-bottom: 22px;
+	}
+}
+
+@media (max-width: 900px) {
+	.container-custom {
+		padding: 0;
+	}
+
+	.swiper-custom {
+		padding: 0 24px;
 	}
 }
 </style>
