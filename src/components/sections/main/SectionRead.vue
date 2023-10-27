@@ -15,24 +15,33 @@ import { Swiper, SwiperSlide } from 'swiper/vue'
 					Мы&nbsp;хотим поделиться с&nbsp;тобой некоторыми советами, которые
 					помогут тебе ухаживать за&nbsp;кожей
 				</h5>
-				<Swiper
-					:breakpoints="{
-						300: { slidesPerView: 1.1 },
-						600: { slidesPerView: 2.2 },
-						900: { slidesPerView: 3 }
-					}"
-					:space-between="14"
-				>
-					<swiper-slide>
-						<CardNews />
-					</swiper-slide>
-					<swiper-slide>
-						<CardNews />
-					</swiper-slide>
-					<swiper-slide>
-						<CardNews />
-					</swiper-slide>
-				</Swiper>
+				<div class="swiper-wrapper-custom">
+					<Swiper
+						style="padding-left: 14px; padding-right: 14px"
+						:breakpoints="{
+							300: { slidesPerView: 1.1 },
+							600: { slidesPerView: 2.2 },
+							1000: { slidesPerView: 3 }
+						}"
+						:space-between="14"
+					>
+						<swiper-slide>
+							<CardNews />
+						</swiper-slide>
+						<swiper-slide>
+							<CardNews />
+						</swiper-slide>
+						<swiper-slide>
+							<CardNews />
+						</swiper-slide>
+						<swiper-slide>
+							<CardNews />
+						</swiper-slide>
+						<swiper-slide>
+							<CardNews />
+						</swiper-slide>
+					</Swiper>
+				</div>
 				<div style="display: flex; justify-content: center">
 					<MButton class="button">Больше интересных статей</MButton>
 				</div>
@@ -79,7 +88,11 @@ export default {
 	margin-top: 70px;
 }
 
-@media screen and (max-width: 1000px) {
+@media (max-width: 1000px) {
+	/* .swiper-wrapper-custom {
+		margin-left: var(--container-padding-xl-n);
+		margin-right: var(--container-padding-xl-n);
+	} */
 	.card-group {
 		gap: 14px;
 		padding-bottom: 50px;
@@ -95,6 +108,20 @@ export default {
 
 	.section-read-text {
 		padding-bottom: 35px;
+	}
+}
+
+@media (max-width: 960px) {
+	.swiper-wrapper-custom {
+		margin-left: var(--container-padding-l-n);
+		margin-right: var(--container-padding-l-n);
+	}
+}
+
+@media (max-width: 800px) {
+	.swiper-wrapper-custom {
+		margin-left: var(--container-padding-sm-n);
+		margin-right: var(--container-padding-sm-n);
 	}
 }
 </style>

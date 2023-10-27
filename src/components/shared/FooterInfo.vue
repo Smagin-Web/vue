@@ -63,9 +63,27 @@ import IconAge18 from '../icons/IconAge18.vue'
 	top: 2px;
 }
 
-@media screen and (max-width: 1000px) {
+@media (max-width: 1400px) {
 	.footer-info {
-		display: block;
+		flex-direction: column;
+		align-items: center;
+		gap: 32px;
+	}
+
+	.footer-info-right {
+		text-align: center;
+		justify-items: center;
+		align-items: center;
+	}
+
+	.footer-info-left {
+		text-align: center;
+	}
+}
+
+@media (max-width: 1000px) {
+	.footer-info {
+		gap: 0;
 	}
 	.footer-info-right {
 		display: flex;

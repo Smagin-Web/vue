@@ -168,7 +168,7 @@ export default {
 	padding-bottom: 28px;
 }
 
-@media screen and (max-width: 1500px) {
+@media (max-width: 1500px) {
 	.footer-nav-only-lg {
 		display: none;
 	}
