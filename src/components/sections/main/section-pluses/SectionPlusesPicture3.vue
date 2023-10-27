@@ -77,5 +77,9 @@ import SectionPlusesShadow from './SectionPlusesShadow.vue'
 	.picture {
 		bottom: 25%;
 	}
+
+	.text-wrapper {
+		padding-bottom: 20px;
+	}
 }
 </style>

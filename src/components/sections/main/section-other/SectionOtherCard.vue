@@ -1,6 +1,6 @@
 <template>
-	<div class="parallax-card-wrapper">
-		<img :src="getImageUrl()" class="parallax-card-photo" />
+	<div>
+		<img :src="getImageUrl()" class="image" />
 	</div>
 </template>
 
@@ -18,26 +18,37 @@ function getImageUrl() {
 </script>
 
 <style>
-.parallax-card-wrapper {
-	transition: 0.4s;
-	max-height: 269px;
-	border-radius: 88px;
-	background-color: #ede4da;
-	padding: 20px;
-}
-
-.parallax-card-photo {
+.image {
 	display: block;
 	height: 100%;
 	width: auto;
-	max-width: 100%;
+
+	outline: solid 20px #ede4da;
+	border-radius: 70px;
 }
 
-@media (max-width: 1680px) {
-	.parallax-card-wrapper {
-		max-height: 232px;
-		margin: 0 auto;
-		max-width: 100%;
+@media (max-width: 1700px) {
+	.image {
+	outline: solid 16px #ede4da;
+	}
+}
+
+@media (max-width: 1400px) {
+	.image {
+		border-radius: 48px;
+	}
+}
+
+@media (max-width: 1200px) {
+	.image {
+		border-radius: 40px;
+	}
+}
+
+@media (max-width: 700px) {
+	.image {
+		outline: solid 10px #ede4da;
+		border-radius: 40px;
 	}
 }
 </style>

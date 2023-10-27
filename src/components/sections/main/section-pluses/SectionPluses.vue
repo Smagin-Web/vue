@@ -68,7 +68,6 @@ onUnmounted(() => {
 }
 .section-pluses {
 	padding-top: 200px;
-	overflow-x: hidden;
 }
 
 @media (max-width: 1600px) {

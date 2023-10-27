@@ -16,7 +16,7 @@ import SectionReviewPacients from '@/components/sections/main/SectionReviewPacie
 import CustomSlider from '@/components/CustomSlider.vue'
 import ButtonFixed from '@/components/buttons/ButtonFixed.vue'
 import SectionCircles from '@/components/sections/main/section-circles/SectionCircles.vue'
-import SectionOther from '@/components/sections/main/SectionOther.vue'
+import SectionOther from '@/components/sections/main/section-other/SectionOther.vue'
 </script>
 
 <template>
