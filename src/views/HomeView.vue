@@ -15,7 +15,7 @@ import SectionBanner from '@/components/sections/main/section-banner/SectionBann
 import SectionReviewPacients from '@/components/sections/main/SectionReviewPacients.vue'
 import CustomSlider from '@/components/CustomSlider.vue'
 import ButtonFixed from '@/components/buttons/ButtonFixed.vue'
-import SectionCircles from '@/components/sections/main/SectionCircles.vue'
+import SectionCircles from '@/components/sections/main/section-circles/SectionCircles.vue'
 import SectionOther from '@/components/sections/main/SectionOther.vue'
 </script>
 

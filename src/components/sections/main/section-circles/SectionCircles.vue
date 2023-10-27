@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import Avatar from '@/components/ui/Avatar.vue'
-import MContainer from '../../shared/MContainer.vue'
+import MContainer from '../../../shared/MContainer.vue'
+import SectionCirclesArrow from './SectionCirclesArrow.vue'
+import SectionCirclesArrowSm from './SectionCirclesArrowSm.vue'
 </script>
 
 <template>
@@ -8,20 +10,11 @@ import MContainer from '../../shared/MContainer.vue'
 		<MContainer>
 			<template #children>
 				<h3 class="heading-section heading-circles">
-					Отзывы клиентов в кружочках
-					<svg
-						class="heading-icon"
-						xmlns="http://www.w3.org/2000/svg"
-						width="233"
-						height="89"
-						viewBox="0 0 233 89"
-						fill="none"
-					>
-						<path
-							d="M224.894 88.3592C225.652 88.6939 226.537 88.3509 226.872 87.5931L232.326 75.2439C232.661 74.4861 232.318 73.6005 231.56 73.2658C230.802 72.9311 229.917 73.2741 229.582 74.0319L224.734 85.0089L213.757 80.1607C212.999 79.826 212.113 80.169 211.779 80.9268C211.444 81.6846 211.787 82.5703 212.545 82.905L224.894 88.3592ZM2.29642 28.7582C80.7209 -20.3794 191.03 2.13715 224.101 87.5288L226.899 86.4453C192.97 -1.16203 80.2792 -23.6429 0.703568 26.216L2.29642 28.7582Z"
-							fill="black"
-						/>
-					</svg>
+					<span style="position: relative">
+						Отзывы клиентов в&nbsp;кружочках
+						<SectionCirclesArrowSm class="heading-icon-sm" />
+					</span>
+					<SectionCirclesArrow class="heading-icon" />
 				</h3>
 				<div class="content-container">
 					<div class="circles" style="padding-bottom: 34px">
@@ -55,6 +48,10 @@ import MContainer from '../../shared/MContainer.vue'
 </template>
 
 <style scoped>
+.heading-icon-sm {
+	display: none;
+}
+
 .heading-circles {
 	max-width: 880px;
 
@@ -97,7 +94,7 @@ import MContainer from '../../shared/MContainer.vue'
 	margin-top: 147px;
 }
 
-@media screen and (max-width: 1720px) {
+@media (max-width: 1720px) {
 	.content-container {
 		margin: 0 var(--container-padding-xxl-n);
 	}
@@ -109,12 +106,35 @@ import MContainer from '../../shared/MContainer.vue'
 	}
 }
 
+@media (max-width: 1300px) {
+	.heading-circles {
+		max-width: 700px;
+	}
+	.heading-icon {
+		left: 80%;
+	}
+}
+
 @media (max-width: 1000px) {
 	.section-circles {
 		padding-top: 0;
 	}
 	.heading-circles {
+		display: grid;
+		justify-content: start;
 		font-size: 22px;
+		padding-bottom: 48px;
+	}
+
+	.heading-icon {
+		display: none;
+	}
+
+	.heading-icon-sm {
+		display: block;
+		position: absolute;
+		top: 0;
+		right: -100px;
 	}
 }
 
@@ -127,6 +147,16 @@ import MContainer from '../../shared/MContainer.vue'
 @media (max-width: 800px) {
 	.content-container {
 		margin: 0 var(--container-padding-sm-n);
+	}
+}
+
+@media (max-width: 600px) {
+	.heading-circles span {
+		max-width: 260px;
+	}
+
+	.heading-icon-sm {
+		top: 10px;
 	}
 }
 </style>
