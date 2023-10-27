@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div style="transition: 0.2s">
 		<img :src="getImageUrl()" class="image" />
 	</div>
 </template>
@@ -29,7 +29,7 @@ function getImageUrl() {
 
 @media (max-width: 1700px) {
 	.image {
-	outline: solid 16px #ede4da;
+		outline: solid 16px #ede4da;
 	}
 }
 

@@ -15,13 +15,13 @@ const handleScroll = () => {
 			let value = scrollTop - 7500
 			parallaxStyle.value = `transform: translateY(${
 				value * 0.01
-			}px) translateX(${value * 0.01}px)`
+			}px) translateX(${value * -0.01}px)`
 			parallaxStyle2.value = `transform: translateY(${
 				value * -0.01
-			}px) translateX(${value * -0.015}px)`
+			}px) translateX(${value * 0.015}px)`
 			parallaxStyle3.value = `transform: translateY(${
 				value * 0.01
-			}px) translateX(${value * -0.01}px)`
+			}px) translateX(${value * 0.02}px)`
 		}
 	} else {
 		parallaxStyle.value = ''
@@ -53,7 +53,7 @@ onUnmounted(() => {
 					:iconFilename="'ParallaxPhoto1.png'"
 					:style="parallaxStyle"
 				/>
-				<div class="card-absolute" style="top: 130%; left: -30%">
+				<div class="card-absolute" style="top: 140%; left: -30%">
 					<SectionOtherCard
 						:iconFilename="'ParallaxPhoto3.png'"
 						:style="parallaxStyle2"
