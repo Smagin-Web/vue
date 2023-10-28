@@ -136,37 +136,37 @@ export default {
 }
 
 .swiper-slide {
-	opacity: 0.1 !important;
-	transition: 0.2s;
-}
-
-.swiper-slide .card:after {
-	content: '';
-	position: absolute;
-	display: block;
-	top: -150px;
-	bottom: -150px;
-	left: 50px;
-	right: 50px;
-	border-radius: 100px;
-	background-color: #f0dcc8;
-	transition: 0.2s;
-}
-
-.swiper-slide-prev,
-.swiper-slide-next {
 	opacity: 1 !important;
 	transition: 0.2s;
 }
 
-.swiper-slide-prev .card:after,
-.swiper-slide-next .card:after {
-	top: -90px;
-	bottom: -60px;
-	left: 0;
-	right: 0;
-	background-color: #ede4da;
+/* Для всех карточек делаем прозрачный контент */
+
+.swiper-slide >>> .card-info-content,
+.swiper-slide >>> .card-badges {
+	opacity: 0;
 	transition: 0.2s;
+}
+
+/* Делаем непрозрачный контент для активной карточки */
+
+.swiper-slide-active >>> .card-badges,
+.swiper-slide-active >>> .card-info-content {
+	opacity: 1;
+}
+
+/* Меняем фон предыдущей карточки и перемещаем её вверх на 80px */
+
+.swiper-slide-prev >>> .card {
+	top: -80px;
+	background-color: #ede4da;
+}
+
+/* Меняем фон следующей карточки и перемещаем её вниз на 80px */
+
+.swiper-slide-next >>> .card {
+	bottom: -40px;
+	background-color: #ede4da;
 }
 
 .swiper-slide-active .card:after {
@@ -178,8 +178,6 @@ export default {
 	opacity: 1 !important;
 	transition: 0.2s;
 }
-
-/*  */
 
 .wrapper {
 	position: relative;
@@ -201,38 +199,5 @@ export default {
 	background: #fff;
 	height: 650px;
 	z-index: 30;
-}
-
-.slider-backcards {
-	position: absolute;
-	bottom: 0;
-	top: 0;
-	right: 0;
-	left: 0;
-
-	display: flex;
-	justify-content: center;
-}
-
-.slider-backcard-1 {
-	position: absolute;
-	bottom: 0;
-	left: 100px;
-	right: 100px;
-	height: 50%;
-
-	border-radius: 100px;
-	background: #ede4da;
-}
-
-.slider-backcard-2 {
-	position: absolute;
-	bottom: -50px;
-	left: 150px;
-	right: 150px;
-	height: 50%;
-
-	border-radius: 100px;
-	background: #f0dcc8;
 }
 </style>

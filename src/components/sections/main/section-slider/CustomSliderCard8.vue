@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import MButtonOutline from './buttons/MButtonOutline.vue'
-import MButton from './buttons/MButton.vue'
+import MButtonOutline from '@/components/buttons/MButtonOutline.vue'
+import MButton from '@/components/buttons/MButton.vue'
 </script>
 
 <template>
