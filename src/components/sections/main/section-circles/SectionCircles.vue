@@ -17,29 +17,31 @@ import SectionCirclesArrowSm from './SectionCirclesArrowSm.vue'
 					<SectionCirclesArrow class="heading-icon" />
 				</h3>
 				<div class="content-container">
-					<div class="circles" style="padding-bottom: 34px">
-						<Avatar />
-						<Avatar style="opacity: 0; z-index: -10" />
-						<Avatar />
-						<Avatar style="opacity: 0; z-index: -10" />
-						<Avatar />
-						<Avatar style="opacity: 0; z-index: -10" />
-					</div>
-					<div class="circles circles-absolute">
-						<Avatar style="opacity: 0; z-index: -10" />
-						<Avatar />
-						<Avatar style="opacity: 0; z-index: -10" />
-						<Avatar />
-						<Avatar style="opacity: 0; z-index: -10" />
-						<Avatar />
-					</div>
-					<div class="circles">
-						<Avatar />
-						<Avatar style="opacity: 0; z-index: -10" />
-						<Avatar />
-						<Avatar style="opacity: 0; z-index: -10" />
-						<Avatar />
-						<Avatar style="opacity: 0; z-index: -10" />
+					<div style="display: grid">
+						<div class="circles" style="padding-bottom: 34px">
+							<Avatar />
+							<Avatar style="opacity: 0; z-index: -10" />
+							<Avatar />
+							<Avatar style="opacity: 0; z-index: -10" />
+							<Avatar />
+							<Avatar style="opacity: 0; z-index: -10" />
+						</div>
+						<div class="circles circles-absolute">
+							<Avatar style="opacity: 0; z-index: -10" />
+							<Avatar />
+							<Avatar style="opacity: 0; z-index: -10" />
+							<Avatar />
+							<Avatar style="opacity: 0; z-index: -10" />
+							<Avatar />
+						</div>
+						<div class="circles">
+							<Avatar />
+							<Avatar style="opacity: 0; z-index: -10" />
+							<Avatar />
+							<Avatar style="opacity: 0; z-index: -10" />
+							<Avatar />
+							<Avatar style="opacity: 0; z-index: -10" />
+						</div>
 					</div>
 				</div>
 			</template>
@@ -98,11 +100,21 @@ import SectionCirclesArrowSm from './SectionCirclesArrowSm.vue'
 	.content-container {
 		margin: 0 var(--container-padding-xxl-n);
 	}
+
+	.circles {
+		padding: 0 var(--container-padding-xxl);
+		max-width: auto;
+	}
 }
 
 @media (max-width: 1420px) {
 	.content-container {
 		margin: 0 var(--container-padding-xl-n);
+		padding-bottom: 20px;
+	}
+
+	.circles {
+		padding: 0 var(--container-padding-xl);
 	}
 }
 
@@ -142,11 +154,17 @@ import SectionCirclesArrowSm from './SectionCirclesArrowSm.vue'
 	.content-container {
 		margin: 0 var(--container-padding-l-n);
 	}
+	.circles {
+		padding: 0 var(--container-padding-l);
+	}
 }
 
 @media (max-width: 800px) {
 	.content-container {
 		margin: 0 var(--container-padding-sm-n);
+	}
+	.circles {
+		padding: 0 var(--container-padding-sm);
 	}
 }
 

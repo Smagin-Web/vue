@@ -69,6 +69,13 @@ export default {
 }
 
 @media (max-width: 1000px) {
+	.heading-section {
+		padding: 0 20px;
+	}
+
+	.text-section {
+		padding: 10px 20px 20px;
+	}
 	.container-custom {
 		padding: 0;
 	}
