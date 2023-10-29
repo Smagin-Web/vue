@@ -40,10 +40,10 @@ onUnmounted(() => {
 	<section class="section-tech">
 		<MContainer>
 			<template #children>
-				<h4 class="heading section-tech-heading" :style="stylesH1">
+				<h4 class="heading" :style="stylesH1">
 					Мы&nbsp;разработали новый&nbsp;продукт в&nbsp;косметологии
 				</h4>
-				<h4 class="big-heading section-tech-heading-2" :style="stylesH2">
+				<h4 class="big-heading" :style="stylesH2">
 					8&nbsp;концептов твоей красоты
 				</h4>
 			</template>
@@ -53,7 +53,7 @@ onUnmounted(() => {
 
 <style scoped>
 .section-tech {
-	padding: 104px 0 160px;
+	padding: 104px 0 0;
 }
 
 .heading {

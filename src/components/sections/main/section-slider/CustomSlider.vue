@@ -129,6 +129,28 @@ export default {
 </script>
 
 <style scoped>
+.swiper >>> .svg-picture {
+	display: block;
+	position: absolute;
+	top: 18%;
+	right: 23.3%;
+	height: 74%;
+	width: auto;
+}
+
+.swiper >>> .card-image-wrapper {
+	position: absolute;
+	right: 5%;
+	bottom: 0;
+	width: 42%;
+}
+
+.swiper >>> .card-image {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
 .swiper {
 	padding: 180px 0;
 	max-height: 1000px;
@@ -186,7 +208,7 @@ export default {
 	padding-left: 30px;
 	padding-right: 30px;
 	margin: 0 auto 100px;
-	padding-top: 150px;
+	padding-top: 140px;
 }
 
 .card {
@@ -199,5 +221,18 @@ export default {
 	background: #fff;
 	height: 650px;
 	z-index: 30;
+}
+
+@media (max-width: 1400px) {
+	.wrapper {
+		padding-top: 50px;
+	}
+}
+
+
+@media (max-width: 1200px) {
+	.wrapper {
+		padding-top: 0;
+	}
 }
 </style>

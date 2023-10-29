@@ -23,9 +23,10 @@ import MButton from '@/components/buttons/MButton.vue'
 				посещения.
 			</p>
 			<div class="buttons">
-				<img src="./slider.png" alt="" class="card-image" />
-
-				<img src="./slider-picture.png" class="card-image-svg" />
+				<div class="card-image-wrapper">
+					<img src="./slider.png" alt="" class="card-image" />
+					<img src="./slider-picture-svg.png" class="svg-picture" />
+				</div>
 
 				<MButton class="first-button">Записаться на приём</MButton>
 				<MButtonOutline>Задать вопрос</MButtonOutline>
@@ -66,28 +67,6 @@ import MButton from '@/components/buttons/MButton.vue'
 .buttons {
 	display: flex;
 	gap: 20px;
-}
-
-.card-image {
-	position: absolute;
-	right: 5%;
-	bottom: 0;
-	width: 42%;
-	transition: 1s;
-	transition-delay: 0.4s;
-}
-
-.card-image-svg {
-	position: absolute;
-	right: 17.3%;
-	top: 11.9%;
-	width: 20%;
-	height: auto;
-	transition: 1s;
-	display: block;
-
-	opacity: 0;
-	transform: rotate(-1deg);
 }
 
 .active .card-image-svg {

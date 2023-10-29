@@ -22,8 +22,10 @@ import SvgPicture3 from './SvgPicture3.vue'
 				посещения.
 			</p>
 			<div class="buttons">
-				<img src="./slider.png" alt="" class="card-image" />
-				<SvgPicture3 />
+				<div class="card-image-wrapper">
+					<img src="./slider.png" alt="" class="card-image" />
+					<SvgPicture3 class="svg-picture" />
+				</div>
 
 				<MButton class="first-button">Записаться на приём</MButton>
 				<MButtonOutline>Задать вопрос</MButtonOutline>
@@ -83,13 +85,6 @@ import SvgPicture3 from './SvgPicture3.vue'
 .buttons {
 	display: flex;
 	gap: 20px;
-}
-
-.card-image {
-	position: absolute;
-	right: 5%;
-	bottom: 0;
-	width: 42%;
 }
 
 .card-badges {
