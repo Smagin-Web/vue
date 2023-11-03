@@ -18,7 +18,7 @@ import CustomSliderCard8 from './CustomSliderCard8.vue'
 </script>
 
 <template>
-	<div class="wrapper" ref="container" @wheel="handleScroll">
+	<div class="wrapper" ref="container">
 		<Swiper
 			grab-cursor
 			:effect="'creative'"
@@ -38,8 +38,7 @@ import CustomSliderCard8 from './CustomSliderCard8.vue'
 			:modules="[EffectCreative, Mousewheel]"
 			:slides-per-view="1"
 			@activeIndexChange="onChangeActive"
-			@reachEnd="onSlideEnd"
-			@wheel="handleWheel"
+			@wheel="(event: WheelEvent) => handleWheel(event)"
 		>
 			<SwiperSlide>
 				<CustomSliderCard1 v-bind:class="{ active: activeSlideIndex === 1 }" />
@@ -101,10 +100,6 @@ const scrollToCenter = () => {
 	}
 }
 
-const handleScroll = () => {}
-
-const onSlideEnd = () => {}
-
 const onChangeActive = (swiper: any) => {
 	activeSlideIndex.value = swiper.activeIndex + 1
 }
@@ -118,18 +113,17 @@ export default {
 	data() {
 		return {
 			onChangeActive,
-			onSlideEnd,
 			Mousewheel,
 			EffectCreative,
 			activeSlideIndex,
-			handleScroll
+			handleWheel
 		}
 	}
 }
 </script>
 
 <style scoped>
-.swiper >>> .svg-picture {
+.swiper :deep() .svg-picture {
 	display: block;
 	position: absolute;
 	top: 18%;
@@ -138,14 +132,14 @@ export default {
 	width: auto;
 }
 
-.swiper >>> .card-image-wrapper {
+.swiper :deep() .card-image-wrapper {
 	position: absolute;
 	right: 5%;
 	bottom: 0;
 	width: 42%;
 }
 
-.swiper >>> .card-image {
+.swiper :deep() .card-image {
 	display: block;
 	width: 100%;
 	height: auto;
@@ -164,29 +158,29 @@ export default {
 
 /* Для всех карточек делаем прозрачный контент */
 
-.swiper-slide >>> .card-info-content,
-.swiper-slide >>> .card-badges {
+.swiper-slide :deep() .card-info-content,
+.swiper-slide :deep() .card-badges {
 	opacity: 0;
 	transition: 0.2s;
 }
 
 /* Делаем непрозрачный контент для активной карточки */
 
-.swiper-slide-active >>> .card-badges,
-.swiper-slide-active >>> .card-info-content {
+.swiper-slide-active :deep() .card-badges,
+.swiper-slide-active :deep() .card-info-content {
 	opacity: 1;
 }
 
 /* Меняем фон предыдущей карточки и перемещаем её вверх на 80px */
 
-.swiper-slide-prev >>> .card {
+.swiper-slide-prev :deep() .card {
 	top: -80px;
 	background-color: #ede4da;
 }
 
 /* Меняем фон следующей карточки и перемещаем её вниз на 80px */
 
-.swiper-slide-next >>> .card {
+.swiper-slide-next :deep() .card {
 	bottom: -40px;
 	background-color: #ede4da;
 }
@@ -228,7 +222,6 @@ export default {
 		padding-top: 50px;
 	}
 }
-
 
 @media (max-width: 1200px) {
 	.wrapper {

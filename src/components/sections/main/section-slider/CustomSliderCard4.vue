@@ -148,11 +148,5 @@ import SvgPicture4 from './SvgPicture4.vue'
 	.first-button {
 		margin-bottom: 20px;
 	}
-
-	.card-image {
-		position: static;
-		width: 380px;
-		padding-right: 30px;
-	}
 }
 </style>
