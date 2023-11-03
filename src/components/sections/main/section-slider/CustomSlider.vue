@@ -38,7 +38,7 @@ import CustomSliderCard8 from './CustomSliderCard8.vue'
 			:modules="[EffectCreative, Mousewheel]"
 			:slides-per-view="1"
 			@activeIndexChange="onChangeActive"
-			@wheel="(event: WheelEvent) => handleWheel(event)"
+			@wheel="handleWheel"
 		>
 			<SwiperSlide>
 				<CustomSliderCard1 v-bind:class="{ active: activeSlideIndex === 1 }" />
@@ -73,7 +73,8 @@ let activeSlideIndex = ref(1)
 const container = ref<(HTMLElement & { swiper?: any }) | null>(null)
 const isLockScroll = ref(true)
 
-const handleWheel = (event: WheelEvent) => {
+const handleWheel = (...args: unknown[]) => {
+	const event: unknown = args[0]
 	const swiper = (event.currentTarget as HTMLElement & { swiper?: any })?.swiper
 
 	const isEndSlide: boolean = swiper.isEnd && event.deltaY > 0

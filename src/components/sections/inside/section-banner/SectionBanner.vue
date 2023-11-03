@@ -1,71 +1,55 @@
 <script setup lang="ts">
 import SectionBannerBadges from './SectionBannerBadges.vue'
-import SectionBannerBlock from './SectionBannerBlock.vue'
-import SectionBannerText from './SectionBannerText.vue'
 </script>
 
 <template>
-	<section class="section-banner">
+	<section>
 		<div class="container-custom">
-			<div class="content">
-				<SectionBannerBlock class="banner" />
-				<div class="content-info">
-					<h2 class="content-heading-text">
-						Преобразуй
-						<br />
-						свою&nbsp;кожу
-						<SectionBannerBadges class="banner-badges" />
-					</h2>
-					<SectionBannerText />
-				</div>
+			<img class="banner" src="./banner.png" alt="" />
+			<div class="content-info">
+				<h2 class="heading">
+					<span style="position: relative; z-index: 10">
+						Вылечим кожу и&nbsp;избавим от&nbsp;высыпания на&nbsp;лице
+					</span>
+					<SectionBannerBadges class="badges" />
+				</h2>
 			</div>
 		</div>
 	</section>
 </template>
 
 <style scoped>
-.banner-badges {
-	position: absolute;
-	left: calc(100% - 70px);
-	bottom: 20px;
-}
 .container-custom {
 	max-width: 1920px;
 	padding: 0 46px;
 	margin: 0 auto;
-}
-.section-banner {
-	padding-top: 280px;
-}
-.content {
-	gap: 50px;
-	display: grid;
-	grid-template-columns: minmax(0, 732px) max-content;
-	align-items: center;
-}
-
-.content-info {
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	width: 100%;
-	padding-bottom: 80px;
-	padding-right: 280px;
+	align-items: center;
+
+	padding-top: 130px;
 }
 
-.content-heading-text {
+.banner {
+	width: 42.2%;
+}
+
+.heading {
 	position: relative;
 	color: black;
 	font-family: 'Pelinka';
 	font-weight: 700;
 	font-size: 90px;
 	padding-bottom: 25px;
-	position: relative;
+	z-index: 10;
 }
 
-.content-info {
-	padding-right: 300px;
+.badges {
+	position: absolute;
+	left: 650px;
+	top: 46px;
+	z-index: 0;
 }
+
 .text {
 	color: #6d6364;
 	font-family: 'BrisaSans', sans-serif;
@@ -73,76 +57,127 @@ import SectionBannerText from './SectionBannerText.vue'
 	max-width: 650px;
 }
 
-@media screen and (max-width: 1600px) {
-	.content-heading-text {
-		font-size: 80px;
+@media (max-width: 1825px) {
+	.heading {
+		font-size: 82px;
 	}
 
-	.banner-badges {
-		left: calc(100% - 110px);
-		bottom: 20px;
-		width: 340px;
+	.badges {
+		left: 590px;
+		top: 32px;
 	}
 }
 
-@media screen and (max-width: 1500px) {
-	.banner-badges {
-		left: calc(100% - 100px);
-		bottom: 40px;
-		width: 250px;
-	}
-
-	.content-info {
-		padding-right: 120px;
-	}
-	.content-heading-text {
+@media (max-width: 1730px) {
+	.heading {
 		font-size: 70px;
 	}
 
-	.banner-badges {
-		right: 100px;
+	.badges {
+		left: 520px;
+		top: 10px;
 	}
 }
 
-@media screen and (max-width: 1200px) {
-	.banner-badges {
-		left: 222px;
-		bottom: 30px;
-		width: 140px;
-	}
-	.content {
-		grid-template-columns: 1fr;
-		justify-items: start;
+@media (max-width: 1600px) {
+	.heading {
+		font-size: 60px;
 	}
 
-	.content-info {
-		padding-right: 0;
-		justify-content: start;
-		padding-bottom: 0;
+	.badges {
+		left: 430px;
+		top: 20px;
+	}
+}
+
+@media (max-width: 1320px) {
+	.heading {
+		font-size: 50px;
 	}
 
-	.content-heading-text {
-		text-align: left;
-		font-size: 34px;
+	.badges {
+		left: 360px;
+		top: 14px;
 	}
+}
 
+@media (max-width: 1250px) {
 	.banner {
-		width: 100%;
-		max-width: 350px;
+		width: 45%;
+	}
+}
+
+@media (max-width: 1150px) {
+	.heading {
+		font-size: 42px;
 	}
 
-	.text {
-		max-width: 100%;
-		text-align: center;
-	}
-	.container-custom {
-		padding: 0 14px;
+	.badges {
+		left: 300px;
+		top: 10px;
 	}
 }
 
 @media (max-width: 1000px) {
-	.section-banner {
-		padding-top: 130px;
+	.container-custom {
+		overflow: hidden;
+		flex-direction: column;
+		align-items: center;
+
+		max-width: 700px;
+
+		padding-top: 40px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.banner {
+		width: 100%;
+	}
+}
+
+@media (max-width: 590px) {
+	.banner {
+		max-width: 90%;
+	}
+
+	.heading {
+		font-size: 38px;
+	}
+
+	.badges {
+		left: 270px;
+	}
+}
+
+@media (max-width: 490px) {
+	.heading {
+		font-size: 34px;
+	}
+}
+
+@media (max-width: 450px) {
+	.badges {
+		left: 234px;
+		top: 12px;
+	}
+}
+
+@media (max-width: 400px) {
+	.badges {
+		top: 18px;
+		left: 230px;
+	}
+}
+
+@media (max-width: 380px) {
+	.heading {
+		font-size: 30px;
+	}
+
+	.badges {
+		top: 12px;
+		left: 205px;
 	}
 }
 </style>

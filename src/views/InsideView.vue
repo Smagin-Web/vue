@@ -4,7 +4,9 @@ import Header from '@/components/shared/Header.vue'
 import Footer from '@/components/shared/Footer.vue'
 import ButtonFixed from '@/components/buttons/ButtonFixed.vue'
 
-// import SectionBanner from '@/components/sections/inside/section-banner/SectionBanner.vue'
+import SectionBanner from '@/components/sections/inside/section-banner/SectionBanner.vue'
+import SectionPluses from '@/components/sections/main/section-pluses/SectionPluses.vue'
+import SectionInfo from '@/components/sections/main/SectionInfo.vue'
 </script>
 
 <template>
@@ -12,7 +14,9 @@ import ButtonFixed from '@/components/buttons/ButtonFixed.vue'
 		<ButtonFixed />
 		<Header :style="headerStyles" />
 
-    <!-- <SectionBanner /> -->
+		<SectionBanner />
+		<SectionPluses />
+		<SectionInfo />
 
 		<Footer />
 	</div>

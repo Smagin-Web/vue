@@ -48,4 +48,40 @@
 	width: 100%;
 	height: auto;
 }
+
+@media (max-width: 1600px) {
+	.badge-group {
+		width: 300px;
+	}
+}
+
+@media (max-width: 1320px) {
+	.badge-group {
+		width: 260px;
+	}
+}
+
+@media (max-width: 1150px) {
+	.badge-group {
+		width: 225px;
+	}
+}
+
+@media (max-width: 590px) {
+	.badge-group {
+		width: 200px;
+	}
+}
+
+@media (max-width: 490px) {
+	.badge-group {
+		width: 160px;
+	}
+}
+
+@media (max-width: 400px) {
+	.badge-group {
+		width: 140px;
+	}
+}
 </style>
