@@ -7,6 +7,8 @@ import ButtonFixed from '@/components/buttons/ButtonFixed.vue'
 import SectionBanner from '@/components/sections/inside/section-banner/SectionBanner.vue'
 import SectionPluses from '@/components/sections/main/section-pluses/SectionPluses.vue'
 import SectionInfo from '@/components/sections/main/SectionInfo.vue'
+import SectionPreview from '@/components/sections/shared/section-preview/SectionPreview.vue'
+import SectionTech from '@/components/sections/inside/section-tech/SectionTech.vue'
 </script>
 
 <template>
@@ -17,6 +19,8 @@ import SectionInfo from '@/components/sections/main/SectionInfo.vue'
 		<SectionBanner />
 		<SectionPluses />
 		<SectionInfo />
+		<SectionPreview />
+		<SectionTech />
 
 		<Footer />
 	</div>

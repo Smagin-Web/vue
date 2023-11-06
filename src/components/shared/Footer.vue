@@ -124,6 +124,7 @@ export default {
 .footer {
 	padding: 50px 0;
 	padding-bottom: 150px;
+	overflow: hidden;
 }
 
 .footer-logo {
