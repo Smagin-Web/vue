@@ -73,8 +73,7 @@ let activeSlideIndex = ref(1)
 const container = ref<(HTMLElement & { swiper?: any }) | null>(null)
 const isLockScroll = ref(true)
 
-const handleWheel = (...args: unknown[]) => {
-	const event: unknown = args[0]
+const handleWheel = (event: WheelEvent) => {
 	const swiper = (event.currentTarget as HTMLElement & { swiper?: any })?.swiper
 
 	const isEndSlide: boolean = swiper.isEnd && event.deltaY > 0
