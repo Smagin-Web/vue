@@ -28,7 +28,7 @@ const items = ref([
 						<HeaderSocialLink class="socials" />
 					</div>
 					<nav class="header-nav">
-						<a class="header-nav-item" v-for="item in items" :key="item">
+						<a class="header-nav-item" href="/inside" v-for="item in items" :key="item">
 							<template v-if="item === 'burger'">
 								<IconBurger class="burger-icon" />
 							</template>
