@@ -9,9 +9,18 @@ import SectionProceduresCard from './SectionProceduresCard.vue'
 			<template #children>
 				<h3 class="heading-section">Процедуры</h3>
 				<div style="display: flex; gap: 24px">
-					<SectionProceduresCard />
-					<SectionProceduresCard />
-					<SectionProceduresCard />
+					<div style="display: grid; gap: 50px">
+						<SectionProceduresCard />
+						<SectionProceduresCard />
+					</div>
+					<div style="display: grid; gap: 50px">
+						<SectionProceduresCard />
+						<SectionProceduresCard />
+					</div>
+					<div style="display: grid; gap: 50px">
+						<SectionProceduresCard />
+						<SectionProceduresCard />
+					</div>
 				</div>
 			</template>
 		</MContainer>
