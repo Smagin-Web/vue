@@ -125,7 +125,7 @@ import IconLink from './IconLink.vue'
 
 	.card-link {
 		bottom: 20px;
-    right: 30px;
+		right: 30px;
 	}
 }
 

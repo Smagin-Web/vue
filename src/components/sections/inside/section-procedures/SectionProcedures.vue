@@ -11,15 +11,15 @@ import MButtonOutline from '@/components/buttons/MButtonOutline.vue'
 				<h3 class="heading-section">Процедуры</h3>
 
 				<div class="content">
-					<div style="display: grid; gap: 50px">
+					<div class="content-group">
 						<SectionProceduresCard />
 						<SectionProceduresCard />
 					</div>
-					<div style="display: grid; gap: 50px">
+					<div class="content-group">
 						<SectionProceduresCard />
 						<SectionProceduresCard />
 					</div>
-					<div style="display: grid; gap: 50px">
+					<div class="content-group content-group-lg">
 						<SectionProceduresCard />
 						<SectionProceduresCard />
 					</div>
@@ -45,6 +45,11 @@ import MButtonOutline from '@/components/buttons/MButtonOutline.vue'
 	padding-bottom: 70px;
 }
 
+.content-group {
+	display: grid;
+	gap: 50px;
+}
+
 .button-wrapper {
 	display: flex;
 	justify-content: center;
@@ -61,6 +66,10 @@ import MButtonOutline from '@/components/buttons/MButtonOutline.vue'
 	.content {
 		grid-template-columns: 1fr 1fr;
 		justify-content: start;
+	}
+
+	.content-group-lg {
+		display: none;
 	}
 }
 </style>

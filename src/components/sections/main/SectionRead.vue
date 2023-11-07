@@ -2,8 +2,9 @@
 import MContainer from '../../shared/MContainer.vue'
 import CardNews from '../../cards/CardNews.vue'
 import MButton from '../../buttons/MButton.vue'
-import 'swiper/css'
+
 import { Swiper, SwiperSlide } from 'swiper/vue'
+import 'swiper/css'
 </script>
 
 <template>
