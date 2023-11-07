@@ -1,6 +1,8 @@
 <template>
 	<a href="#" style="display: flex">
-		<span class="badge">AntiAcne Concept</span>
+		<span class="badge">
+			<slot></slot>
+		</span>
 	</a>
 </template>
 
@@ -16,5 +18,13 @@
 	font-family: 'UABrand';
 	font-size: 16px;
 	font-weight: 700;
+	white-space: nowrap;
+}
+
+@media (max-width: 1150px) {
+	.badge {
+		font-size: 14px;
+		padding: 5px 10px;
+	}
 }
 </style>

@@ -12,6 +12,7 @@ import SectionTech from '@/components/sections/inside/section-tech/SectionTech.v
 import SectionOffer from '@/components/sections/main/SectionOffer.vue'
 import SectionResult from '@/components/sections/main/section-result/SectionResult.vue'
 import SectionProcedures from '@/components/sections/inside/section-procedures/SectionProcedures.vue'
+import SectionRec from '@/components/sections/inside/section-rec/SectionRec.vue'
 </script>
 
 <template>
@@ -27,6 +28,7 @@ import SectionProcedures from '@/components/sections/inside/section-procedures/S
 		<SectionOffer />
 		<SectionResult />
 		<SectionProcedures />
+		<SectionRec />
 
 		<Footer />
 	</div>

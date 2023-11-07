@@ -30,7 +30,7 @@ import IconLink from './IconLink.vue'
 		<h6 class="card-big-text">4 500₽</h6>
 
 		<a class="card-link">
-			<IconLink />
+			<IconLink class="card-link-icon" />
 		</a>
 	</div>
 </template>
@@ -80,5 +80,58 @@ import IconLink from './IconLink.vue'
 	position: absolute;
 	right: 40px;
 	bottom: 40px;
+}
+
+@media (max-width: 1000px) {
+	.card {
+		border-radius: 30px;
+		padding: 26px;
+	}
+
+	.card-link-icon {
+		width: 100px;
+		height: auto;
+	}
+
+	.card-big-text {
+		font-size: 28px;
+	}
+
+	.card-heading {
+		padding-top: 16px;
+		padding-bottom: 16px;
+	}
+
+	.card-text {
+		padding-bottom: 16px;
+		font-size: 18px;
+		max-width: 330px;
+	}
+}
+
+@media (max-width: 900px) {
+	.card {
+		padding-bottom: 10px;
+	}
+
+	.card-heading {
+		font-size: 20px;
+		padding-bottom: 10px;
+	}
+
+	.card-text {
+		font-size: 16px;
+	}
+
+	.card-link {
+		bottom: 20px;
+    right: 30px;
+	}
+}
+
+@media (max-width: 800px) {
+	.card-big-text {
+		font-size: 24px;
+	}
 }
 </style>
