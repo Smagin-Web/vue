@@ -14,7 +14,7 @@ const modules = [Pagination]
 		<MContainer>
 			<template #children>
 				<h3 class="heading-section heading">Рекомендованная косметика</h3>
-				<div style="">
+				<div style="overflow: hidden; margin: 0 -24px">
 					<div class="content">
 						<Swiper
 							class="swiper-custom"
