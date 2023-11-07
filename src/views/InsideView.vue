@@ -9,6 +9,9 @@ import SectionPluses from '@/components/sections/main/section-pluses/SectionPlus
 import SectionInfo from '@/components/sections/main/SectionInfo.vue'
 import SectionPreview from '@/components/sections/shared/section-preview/SectionPreview.vue'
 import SectionTech from '@/components/sections/inside/section-tech/SectionTech.vue'
+import SectionOffer from '@/components/sections/main/SectionOffer.vue'
+import SectionResult from '@/components/sections/main/section-result/SectionResult.vue'
+import SectionProcedures from '@/components/sections/inside/section-procedures/SectionProcedures.vue'
 </script>
 
 <template>
@@ -21,6 +24,9 @@ import SectionTech from '@/components/sections/inside/section-tech/SectionTech.v
 		<SectionInfo />
 		<SectionPreview />
 		<SectionTech />
+		<SectionOffer />
+		<SectionResult />
+		<SectionProcedures />
 
 		<Footer />
 	</div>
