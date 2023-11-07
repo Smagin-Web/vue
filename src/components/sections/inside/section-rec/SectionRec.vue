@@ -19,6 +19,10 @@ import SectionRecCard from './SectionRecCard.vue'
 </template>
 
 <style scoped>
+.section-procedures {
+	padding-bottom: 160px;
+}
+
 .heading {
 	padding-bottom: 50px;
 }

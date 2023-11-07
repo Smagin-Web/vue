@@ -2,9 +2,9 @@
 import 'swiper/css'
 import { Swiper, SwiperSlide } from 'swiper/vue'
 
-import MContainer from '../../shared/MContainer.vue'
-import CardMaster from '../../cards/CardMaster.vue'
-import MButtonOutline from '../../buttons/MButtonOutline.vue'
+import MContainer from '@/components/shared/MContainer.vue'
+import CardMaster from './CardMaster.vue'
+import MButtonOutline from '@/components/buttons/MButtonOutline.vue'
 </script>
 
 <template>

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import IconPlay from '../icons/IconPlay.vue'
+import IconPlay from '@/components/icons/IconPlay.vue'
 </script>
 
 <template>

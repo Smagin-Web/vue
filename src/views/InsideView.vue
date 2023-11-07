@@ -13,6 +13,7 @@ import SectionOffer from '@/components/sections/main/SectionOffer.vue'
 import SectionResult from '@/components/sections/main/section-result/SectionResult.vue'
 import SectionProcedures from '@/components/sections/inside/section-procedures/SectionProcedures.vue'
 import SectionRec from '@/components/sections/inside/section-rec/SectionRec.vue'
+import SectionMasters from '@/components/sections/shared/section-masters/SectionMasters.vue'
 </script>
 
 <template>
@@ -29,6 +30,7 @@ import SectionRec from '@/components/sections/inside/section-rec/SectionRec.vue'
 		<SectionResult />
 		<SectionProcedures />
 		<SectionRec />
+		<SectionMasters />
 
 		<Footer />
 	</div>
