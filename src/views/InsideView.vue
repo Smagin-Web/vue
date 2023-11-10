@@ -18,6 +18,8 @@ import SectionDevices from '@/components/sections/inside/section-devices/Section
 import SectionTariff from '@/components/sections/inside/section-tariff/SectionTariff.vue'
 import SectionStories from '@/components/sections/main/SectionStories.vue'
 import SectionOther from '@/components/sections/main/section-other/SectionOther.vue'
+import SectionCircles from '@/components/sections/main/section-circles/SectionCircles.vue'
+import SectionReview from '@/components/sections/main/SectionReview.vue'
 </script>
 
 <template>
@@ -39,6 +41,8 @@ import SectionOther from '@/components/sections/main/section-other/SectionOther.
 		<SectionStories />
 		<SectionOther />
 		<SectionTariff />
+		<SectionCircles />
+		<SectionReview />
 
 		<Footer />
 	</div>
