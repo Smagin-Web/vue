@@ -95,4 +95,36 @@ const props = defineProps(['text', 'title', 'price', 'info'])
 		height: auto;
 	}
 }
+
+@media (max-width: 1000px) {
+	.card {
+		padding: 30px;
+		border-radius: 30px;
+	}
+	.card-tag {
+		padding-top: 0;
+		font-size: 20px;
+	}
+	.card-heading {
+		font-size: 30px;
+	}
+	.card-text {
+		font-size: 16px;
+		padding-bottom: 20px;
+	}
+	.card-button-wrapper {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+}
+
+@media (max-width: 430px) {
+	.card {
+		padding: 18px;
+		border-radius: 20px;
+	}
+	.card-button-wrapper {
+		padding-top: 12px;
+	}
+}
 </style>
