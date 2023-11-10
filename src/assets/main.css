@@ -169,6 +169,10 @@ button,
 	transition: 0.4s;
 }
 
+p {
+	font-family: 'BrisaSans';
+}
+
 h1,
 h2,
 h3,

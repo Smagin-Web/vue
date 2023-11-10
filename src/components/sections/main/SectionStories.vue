@@ -6,13 +6,17 @@ import MContainer from '../../shared/MContainer.vue'
 
 <template>
 	<section class="section-stories">
-		<MContainer class="container-custom">
+		<MContainer>
 			<template #children>
 				<h2 class="heading">Истории наших клиентов</h2>
 				<h5 class="text">
 					Это поможет тебе лучше понять структуру плана лечения
 					и&nbsp;ориентироваться в&nbsp;его стоимости
 				</h5>
+			</template>
+		</MContainer>
+		<MContainer class="container-custom">
+			<template #children>
 				<div class="card-group">
 					<Swiper
 						class="swiper-custom"

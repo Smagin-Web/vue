@@ -24,7 +24,7 @@ const props = defineProps(['title', 'icon', 'text'])
 }
 .info-title {
 	display: flex;
-	gap: 10px;
+	gap: 6px;
 	align-items: center;
 
 	color: #6d6364;
