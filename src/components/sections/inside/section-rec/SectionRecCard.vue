@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import MButton from '@/components/buttons/MButton.vue'
+import MButtonBig from '@/components/buttons/MButtonBig.vue'
+import CardInfo from '@/components/card-elements/CardInfo.vue'
 </script>
 
 <template>
@@ -13,9 +14,9 @@ import MButton from '@/components/buttons/MButton.vue'
 			Hyaluron Refill Cream — DR.GRANDEL
 		</p>
 
-		<h6 class="card-price">6 350₽</h6>
+		<CardInfo text="6 350₽" />
 		<div class="card-button-wrapper">
-			<MButton class="card-button">Хочу</MButton>
+			<MButtonBig class="card-button">Хочу</MButtonBig>
 		</div>
 	</div>
 </template>
@@ -27,6 +28,7 @@ import MButton from '@/components/buttons/MButton.vue'
 	background: #fff;
 	padding: 40px;
 	padding-top: 70px;
+	margin: 0 12px;
 }
 
 .card-image-wrapper {
@@ -49,7 +51,7 @@ import MButton from '@/components/buttons/MButton.vue'
 }
 
 .card-price {
-	padding-bottom: 20px;
+	padding-bottom: 32px;
 	color: #000;
 	font-size: 34px;
 	font-family: 'Pelinka', sans-serif;
@@ -61,10 +63,48 @@ import MButton from '@/components/buttons/MButton.vue'
 	align-items: center;
 }
 
-.card-button {
-	width: 100%;
-	max-width: 380px;
-	line-height: 30px;
-	padding: 24px 0;
+@media (max-width: 1200px) {
+	.card {
+		max-width: 500px;
+		padding: 30px;
+		padding-top: 50px;
+	}
+	.card-image-wrapper {
+		height: 240px;
+	}
+	.card-image {
+		height: 240px;
+	}
+	.card-text {
+		font-size: 18px;
+		padding-bottom: 28px;
+	}
+	.card-price {
+		font-size: 28px;
+	}
+
+	.card-button {
+		border-radius: 30px;
+		width: 270px;
+	}
+}
+
+@media (max-width: 800px) {
+	.card-image-wrapper {
+		height: 220px;
+	}
+	.card-image {
+		height: 220px;
+	}
+	.card-text {
+		font-size: 16px;
+	}
+	.card {
+		max-width: 400px;
+		border-radius: 20px;
+	}
+	.card-price {
+		font-size: 24px;
+	}
 }
 </style>

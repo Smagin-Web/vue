@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import IconClock from '@/components/icons/IconClock.vue'
-import IconPay from '@/components/icons/IconPay.vue'
 import SectionProceduresBadge from './SectionProceduresBadge.vue'
 import IconLink from './IconLink.vue'
+import CardInfo from '@/components/card-elements/CardInfo.vue'
+import CardLink from '@/components/card-elements/CardLink.vue'
 </script>
 
 <template>
@@ -18,20 +18,11 @@ import IconLink from './IconLink.vue'
 		<p class="card-text">
 			Красота и здоровье кожи надолго, всего за одну процедуру.
 		</p>
-		<div style="display: flex; gap: 6px; padding-bottom: 10px">
-			<IconClock />
-			<p class="card-mini-text">Время процедуры</p>
-		</div>
-		<h6 class="card-big-text">1 час 30 минут</h6>
-		<div style="display: flex; gap: 6px; padding-bottom: 10px">
-			<IconPay />
-			<p class="card-mini-text">Стоимость</p>
-		</div>
-		<h6 class="card-big-text">4 500₽</h6>
 
-		<a class="card-link">
-			<IconLink class="card-link-icon" />
-		</a>
+		<CardInfo icon="time" title="Время процедуры" text="1 час 30 минут" />
+		<CardInfo icon="pay" title="Стоимость" text="4 500₽" />
+
+		<CardLink class="card-link" />
 	</div>
 </template>
 
@@ -65,17 +56,6 @@ import IconLink from './IconLink.vue'
 	padding-bottom: 30px;
 }
 
-.card-mini-text {
-	color: #6d6364;
-	font-size: 16px;
-}
-
-.card-big-text {
-	color: #000;
-	font-size: 34px;
-	padding-bottom: 20px;
-}
-
 .card-link {
 	position: absolute;
 	right: 40px;
@@ -91,10 +71,6 @@ import IconLink from './IconLink.vue'
 	.card-link-icon {
 		width: 100px;
 		height: auto;
-	}
-
-	.card-big-text {
-		font-size: 28px;
 	}
 
 	.card-heading {
@@ -126,12 +102,6 @@ import IconLink from './IconLink.vue'
 	.card-link {
 		bottom: 20px;
 		right: 30px;
-	}
-}
-
-@media (max-width: 800px) {
-	.card-big-text {
-		font-size: 24px;
 	}
 }
 </style>

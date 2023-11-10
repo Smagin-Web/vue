@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import MContainer from '@/components/shared/MContainer.vue'
 import SectionProceduresCard from './SectionProceduresCard.vue'
-import MButtonOutline from '@/components/buttons/MButtonOutline.vue'
+import MButtonOutlineBig from '@/components/buttons/MButtonOutlineBig.vue'
 </script>
 
 <template>
@@ -26,7 +26,7 @@ import MButtonOutline from '@/components/buttons/MButtonOutline.vue'
 				</div>
 
 				<div class="button-wrapper">
-					<MButtonOutline class="button">Все процедуры</MButtonOutline>
+					<MButtonOutlineBig>Все процедуры</MButtonOutlineBig>
 				</div>
 			</template>
 		</MContainer>
@@ -55,13 +55,6 @@ import MButtonOutline from '@/components/buttons/MButtonOutline.vue'
 	justify-content: center;
 }
 
-.button {
-	padding: 24px 0;
-	width: 100%;
-	max-width: 400px;
-	line-height: 30px;
-}
-
 @media (max-width: 1550px) {
 	.content {
 		grid-template-columns: 1fr 1fr;
@@ -69,6 +62,12 @@ import MButtonOutline from '@/components/buttons/MButtonOutline.vue'
 	}
 
 	.content-group-lg {
+		display: none;
+	}
+}
+
+@media (max-width: 850px) {
+	.section-procedures {
 		display: none;
 	}
 }

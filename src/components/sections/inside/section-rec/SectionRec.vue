@@ -14,7 +14,12 @@ const modules = [Pagination]
 		<MContainer>
 			<template #children>
 				<h3 class="heading-section heading">Рекомендованная косметика</h3>
-				<div style="overflow: hidden; margin: 0 -24px">
+			</template>
+		</MContainer>
+
+		<MContainer class="container-custom">
+			<template #children>
+				<div style="overflow: hidden">
 					<div class="content">
 						<Swiper
 							class="swiper-custom"
@@ -23,9 +28,9 @@ const modules = [Pagination]
 								clickable: true
 							}"
 							:breakpoints="{
-								300: { slidesPerView: 1, spaceBetween: 12, initialSlide: 2 },
-								600: { slidesPerView: 1, spaceBetween: 24, initialSlide: 2 },
-								1000: { slidesPerView: 1, spaceBetween: 24, initialSlide: 2 }
+								300: { slidesPerView: 1, spaceBetween: 0 },
+								600: { slidesPerView: 1, spaceBetween: 0 },
+								1000: { slidesPerView: 1, spaceBetween: 0 }
 							}"
 						>
 							<SwiperSlide><SectionRecCard /></SwiperSlide>
@@ -80,5 +85,38 @@ const modules = [Pagination]
 .swiper {
 	padding-bottom: 100px;
 	overflow: visible;
+}
+
+@media (max-width: 1875px) {
+	.container-custom {
+		padding: 0 !important;
+	}
+
+	.content {
+		max-width: 500px;
+	}
+}
+
+@media (max-width: 1500px) {
+	.section-procedures {
+		padding-bottom: 100px;
+	}
+}
+
+@media (max-width: 800px) {
+	.section-procedures {
+		padding-bottom: 10px;
+	}
+	.content {
+		max-width: 400px;
+	}
+	.swiper-custom :deep() .swiper-pagination-bullet {
+		width: 40px;
+		height: 14px;
+	}
+	.swiper-custom :deep() .swiper-pagination {
+		gap: 24px;
+		margin-top: 32px;
+	}
 }
 </style>

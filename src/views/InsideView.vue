@@ -14,6 +14,7 @@ import SectionResult from '@/components/sections/main/section-result/SectionResu
 import SectionProcedures from '@/components/sections/inside/section-procedures/SectionProcedures.vue'
 import SectionRec from '@/components/sections/inside/section-rec/SectionRec.vue'
 import SectionMasters from '@/components/sections/shared/section-masters/SectionMasters.vue'
+import SectionDevices from '@/components/sections/inside/section-devices/SectionDevices.vue'
 </script>
 
 <template>
@@ -31,6 +32,7 @@ import SectionMasters from '@/components/sections/shared/section-masters/Section
 		<SectionProcedures />
 		<SectionRec />
 		<SectionMasters />
+		<SectionDevices />
 
 		<Footer />
 	</div>

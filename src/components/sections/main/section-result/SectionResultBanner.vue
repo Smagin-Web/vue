@@ -10,7 +10,6 @@ import SectionResultShadow from './SectionResultShadow.vue'
 			<PictureResult class="picture" />
 			<svg
 				width="100%"
-				height="auto"
 				viewBox="0 0 686 442"
 				fill="none"
 				xmlns="http://www.w3.org/2000/svg"
