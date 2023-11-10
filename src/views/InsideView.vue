@@ -20,6 +20,7 @@ import SectionStories from '@/components/sections/main/SectionStories.vue'
 import SectionOther from '@/components/sections/main/section-other/SectionOther.vue'
 import SectionCircles from '@/components/sections/main/section-circles/SectionCircles.vue'
 import SectionReview from '@/components/sections/main/SectionReview.vue'
+import SectionHelp from '@/components/sections/inside/section-help/SectionHelp.vue'
 </script>
 
 <template>
@@ -43,6 +44,7 @@ import SectionReview from '@/components/sections/main/SectionReview.vue'
 		<SectionTariff />
 		<SectionCircles />
 		<SectionReview />
+		<SectionHelp />
 
 		<Footer />
 	</div>
