@@ -42,6 +42,11 @@ import CardShadow from './CardShadow.vue'
 </template>
 
 <style scoped>
+.section-help {
+	padding-top: 100px;
+	padding-bottom: 160px;
+}
+
 .card-wrapper {
 	position: relative;
 }
@@ -184,6 +189,10 @@ import CardShadow from './CardShadow.vue'
 		font-size: 16px;
 		height: 46px;
 	}
+	.section-help {
+		padding-top: 140px;
+		padding-bottom: 100px;
+	}
 }
 
 @media (max-width: 930px) {
@@ -193,25 +202,28 @@ import CardShadow from './CardShadow.vue'
 }
 
 @media (max-width: 800px) {
+	.section-help {
+		padding-top: 50px;
+	}
 	.card {
 		display: grid;
 		gap: 110px;
 	}
-  .card-picture {
-    margin-bottom: 0;
-  }
+	.card-picture {
+		margin-bottom: 0;
+	}
 }
 
 @media (max-width: 480px) {
-  .card {
-    padding: 30px;
-    border-radius: 30px;
-  }
-  .card-heading {
-    font-size: 22px;
-  }
-  .card-text {
-    font-size: 14px;
-  }
+	.card {
+		padding: 30px;
+		border-radius: 30px;
+	}
+	.card-heading {
+		font-size: 22px;
+	}
+	.card-text {
+		font-size: 14px;
+	}
 }
 </style>

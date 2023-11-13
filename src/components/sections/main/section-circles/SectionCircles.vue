@@ -88,4 +88,11 @@ import SectionCirclesBlock from './SectionCirclesBlock.vue'
 		top: 10px;
 	}
 }
+
+@media (max-width: 400px) {
+	.heading-icon-sm {
+		right: 0;
+		top: 34px;
+	}
+}
 </style>
