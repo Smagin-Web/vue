@@ -4,7 +4,7 @@ import SectionPlacesCard from './SectionPlacesCard.vue'
 </script>
 
 <template>
-	<section class="section-procedures">
+	<section class="section-places">
 		<MContainer>
 			<h3 class="heading-section">Наши филиалы</h3>
 			<h5 class="text-section text">
@@ -18,6 +18,10 @@ import SectionPlacesCard from './SectionPlacesCard.vue'
 </template>
 
 <style scoped>
+.section-places {
+	padding-bottom: 150px;
+}
+
 .text {
 	padding-bottom: 100px;
 }
@@ -31,5 +35,11 @@ import SectionPlacesCard from './SectionPlacesCard.vue'
 	width: 100%;
 	display: block;
 	background-color: #000;
+}
+
+@media (max-width: 1000px) {
+	.section-places {
+		padding-bottom: 80px;
+	}
 }
 </style>
