@@ -6,7 +6,7 @@ import SectionBonusPicture from './SectionBonusPicture.vue'
 </script>
 
 <template>
-	<section class="section-procedures">
+	<section class="section-bonus">
 		<MContainer>
 			<div class="card">
 				<h6 class="card-badge">Подарочный сертификат</h6>
@@ -24,6 +24,10 @@ import SectionBonusPicture from './SectionBonusPicture.vue'
 </template>
 
 <style scoped>
+.section-bonus {
+	padding-bottom: 160px;
+}
+
 .card {
 	position: relative;
 
@@ -97,6 +101,9 @@ import SectionBonusPicture from './SectionBonusPicture.vue'
 }
 
 @media (max-width: 1300px) {
+	.section-bonus {
+		padding-bottom: 130px;
+	}
 	.card-heading {
 		font-size: 34px;
 	}
@@ -130,6 +137,9 @@ import SectionBonusPicture from './SectionBonusPicture.vue'
 }
 
 @media (max-width: 850px) {
+	.section-bonus {
+		padding-bottom: 90px;
+	}
 	.card-badge {
 		font-size: 22px;
 		left: 50%;
@@ -140,10 +150,10 @@ import SectionBonusPicture from './SectionBonusPicture.vue'
 	.card {
 		padding-bottom: 360px;
 	}
-  .card-heading {
-    font-size: 24px;
-    padding-bottom: 20px;
-  }
+	.card-heading {
+		font-size: 24px;
+		padding-bottom: 20px;
+	}
 	.card-picture {
 		max-height: 330px;
 		right: auto;
@@ -153,15 +163,14 @@ import SectionBonusPicture from './SectionBonusPicture.vue'
 }
 
 @media (max-width: 450px) {
-  .card {
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 40px;
-    border-radius: 30px;
-  }
-  .card-heading {
-    font-size: 20px;
-  }
-  
+	.card {
+		padding-left: 30px;
+		padding-right: 30px;
+		padding-top: 40px;
+		border-radius: 30px;
+	}
+	.card-heading {
+		font-size: 20px;
+	}
 }
 </style>
