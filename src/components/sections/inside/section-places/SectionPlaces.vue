@@ -6,15 +6,13 @@ import SectionPlacesCard from './SectionPlacesCard.vue'
 <template>
 	<section class="section-procedures">
 		<MContainer>
-			<template #children>
-				<h3 class="heading-section">Наши филиалы</h3>
-				<h5 class="text-section text">
-					Атмосферные пространства комфорта и красоты
-				</h5>
-				<SectionPlacesCard class="card" />
-				<div class="line" />
-				<SectionPlacesCard class="card" />
-			</template>
+			<h3 class="heading-section">Наши филиалы</h3>
+			<h5 class="text-section text">
+				Атмосферные пространства комфорта и красоты
+			</h5>
+			<SectionPlacesCard class="card" />
+			<div class="line" />
+			<SectionPlacesCard class="card" />
 		</MContainer>
 	</section>
 </template>

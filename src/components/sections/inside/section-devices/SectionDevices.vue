@@ -6,13 +6,11 @@ import SectionDevicesCard from './SectionDevicesCard.vue'
 <template>
 	<section class="section-devices">
 		<MContainer>
-			<template #children>
-				<h3 class="heading-section heading">Аппараты AntiAcne Concept</h3>
-				<SectionDevicesCard class="section-devices-card" />
-				<SectionDevicesCard class="section-devices-card" />
-				<SectionDevicesCard class="section-devices-card" />
-				<SectionDevicesCard class="section-devices-card" />
-			</template>
+			<h3 class="heading-section heading">Аппараты AntiAcne Concept</h3>
+			<SectionDevicesCard class="section-devices-card" />
+			<SectionDevicesCard class="section-devices-card" />
+			<SectionDevicesCard class="section-devices-card" />
+			<SectionDevicesCard class="section-devices-card" />
 		</MContainer>
 	</section>
 </template>

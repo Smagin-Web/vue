@@ -8,16 +8,14 @@ import SectionCirclesBlock from './SectionCirclesBlock.vue'
 <template>
 	<section class="section">
 		<MContainer>
-			<template #children>
-				<h3 class="heading-section heading">
-					<span style="position: relative">
-						Отзывы клиентов в&nbsp;кружочках
-						<SectionCirclesArrowSm class="heading-icon-sm" />
-					</span>
-					<SectionCirclesArrow class="heading-icon" />
-				</h3>
-				<SectionCirclesBlock />
-			</template>
+			<h3 class="heading-section heading">
+				<span style="position: relative">
+					Отзывы клиентов в&nbsp;кружочках
+					<SectionCirclesArrowSm class="heading-icon-sm" />
+				</span>
+				<SectionCirclesArrow class="heading-icon" />
+			</h3>
+			<SectionCirclesBlock />
 		</MContainer>
 	</section>
 </template>

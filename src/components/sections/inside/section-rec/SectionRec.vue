@@ -12,36 +12,32 @@ const modules = [Pagination]
 <template>
 	<section class="section-procedures">
 		<MContainer>
-			<template #children>
-				<h3 class="heading-section heading">Рекомендованная косметика</h3>
-			</template>
+			<h3 class="heading-section heading">Рекомендованная косметика</h3>
 		</MContainer>
 
 		<MContainer class="container-custom">
-			<template #children>
-				<div style="overflow: hidden">
-					<div class="content">
-						<Swiper
-							class="swiper-custom"
-							:modules="modules"
-							:pagination="{
-								clickable: true
-							}"
-							:breakpoints="{
-								300: { slidesPerView: 1, spaceBetween: 0 },
-								600: { slidesPerView: 1, spaceBetween: 0 },
-								1000: { slidesPerView: 1, spaceBetween: 0 }
-							}"
-						>
-							<SwiperSlide><SectionRecCard /></SwiperSlide>
-							<SwiperSlide><SectionRecCard /></SwiperSlide>
-							<SwiperSlide><SectionRecCard /></SwiperSlide>
-							<SwiperSlide><SectionRecCard /></SwiperSlide>
-							<SwiperSlide><SectionRecCard /></SwiperSlide>
-						</Swiper>
-					</div>
+			<div style="overflow: hidden">
+				<div class="content">
+					<Swiper
+						class="swiper-custom"
+						:modules="modules"
+						:pagination="{
+							clickable: true
+						}"
+						:breakpoints="{
+							300: { slidesPerView: 1, spaceBetween: 0 },
+							600: { slidesPerView: 1, spaceBetween: 0 },
+							1000: { slidesPerView: 1, spaceBetween: 0 }
+						}"
+					>
+						<SwiperSlide><SectionRecCard /></SwiperSlide>
+						<SwiperSlide><SectionRecCard /></SwiperSlide>
+						<SwiperSlide><SectionRecCard /></SwiperSlide>
+						<SwiperSlide><SectionRecCard /></SwiperSlide>
+						<SwiperSlide><SectionRecCard /></SwiperSlide>
+					</Swiper>
 				</div>
-			</template>
+			</div>
 		</MContainer>
 	</section>
 </template>

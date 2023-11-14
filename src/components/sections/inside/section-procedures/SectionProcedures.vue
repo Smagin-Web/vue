@@ -7,28 +7,26 @@ import MButtonOutlineBig from '@/components/buttons/MButtonOutlineBig.vue'
 <template>
 	<section class="section-procedures">
 		<MContainer>
-			<template #children>
-				<h3 class="heading-section">Процедуры</h3>
+			<h3 class="heading-section">Процедуры</h3>
 
-				<div class="content">
-					<div class="content-group">
-						<SectionProceduresCard />
-						<SectionProceduresCard />
-					</div>
-					<div class="content-group">
-						<SectionProceduresCard />
-						<SectionProceduresCard />
-					</div>
-					<div class="content-group content-group-lg">
-						<SectionProceduresCard />
-						<SectionProceduresCard />
-					</div>
+			<div class="content">
+				<div class="content-group">
+					<SectionProceduresCard />
+					<SectionProceduresCard />
 				</div>
+				<div class="content-group">
+					<SectionProceduresCard />
+					<SectionProceduresCard />
+				</div>
+				<div class="content-group content-group-lg">
+					<SectionProceduresCard />
+					<SectionProceduresCard />
+				</div>
+			</div>
 
-				<div class="button-wrapper">
-					<MButtonOutlineBig>Все процедуры</MButtonOutlineBig>
-				</div>
-			</template>
+			<div class="button-wrapper">
+				<MButtonOutlineBig>Все процедуры</MButtonOutlineBig>
+			</div>
 		</MContainer>
 	</section>
 </template>

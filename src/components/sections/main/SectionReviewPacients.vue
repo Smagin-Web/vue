@@ -8,24 +8,22 @@ import ButtonLink from '../../buttons/ButtonLink.vue'
 <template>
 	<section class="section-review-pactients">
 		<MContainer>
-			<template #children>
-				<div class="content">
-					<h3 class="heading">
-						Наши пациенты стали нам добрыми друзьями.
-						<br /><br />
-						Они хорошеют год от&nbsp;года и оставляют положительные отзывы.
-						<br /><br />
-						Присоединяйся и ты!
-					</h3>
-					<div class="picture-wrapper">
-						<PictureReviews />
-					</div>
+			<div class="content">
+				<h3 class="heading">
+					Наши пациенты стали нам добрыми друзьями.
+					<br /><br />
+					Они хорошеют год от&nbsp;года и оставляют положительные отзывы.
+					<br /><br />
+					Присоединяйся и ты!
+				</h3>
+				<div class="picture-wrapper">
+					<PictureReviews />
 				</div>
-				<div class="buttons">
-					<MButton>Перейти к отзывам</MButton>
-					<ButtonLink>Оставить отзыв</ButtonLink>
-				</div>
-			</template>
+			</div>
+			<div class="buttons">
+				<MButton>Перейти к отзывам</MButton>
+				<ButtonLink>Оставить отзыв</ButtonLink>
+			</div>
 		</MContainer>
 	</section>
 </template>

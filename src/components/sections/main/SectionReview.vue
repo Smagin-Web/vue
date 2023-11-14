@@ -5,17 +5,15 @@ import MContainer from '../../shared/MContainer.vue'
 <template>
 	<section class="section-review">
 		<MContainer>
-			<template #children>
-				<div class="section-review-content">
-					<h4 class="heading">Отзывы на&nbsp;площадках</h4>
-					<div class="section-review__links">
-						<img src="./Yandex.png" />
-						<img src="./Zoon.png" />
-						<img src="./Google.png" />
-						<img src="./2Gis.png" />
-					</div>
+			<div class="section-review-content">
+				<h4 class="heading">Отзывы на&nbsp;площадках</h4>
+				<div class="section-review__links">
+					<img src="./Yandex.png" />
+					<img src="./Zoon.png" />
+					<img src="./Google.png" />
+					<img src="./2Gis.png" />
 				</div>
-			</template>
+			</div>
 		</MContainer>
 	</section>
 </template>

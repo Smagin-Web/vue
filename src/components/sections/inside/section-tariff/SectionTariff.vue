@@ -8,31 +8,29 @@ const text = `Lorem ipsum dolor sit amet consectetur. Elit mi in nisi tincidunt 
 <template>
 	<section class="section-procedures">
 		<MContainer>
-			<template #children>
-				<h3 class="heading-section heading">Выбери свой тариф</h3>
-				<div class="cards-wrapper">
-					<SectionTariffCard
-						:text="text"
-						title="Базовый"
-						price="5 900₽"
-						info="3 процедуры"
-					/>
-					<SectionTariffCard
-						class="card-2"
-						:text="text"
-						title="Базовый Плюс"
-						price="7 900₽"
-						info="5 процедур"
-					/>
-					<SectionTariffCard
-						class="card-3"
-						:text="text"
-						title="Полная очистка"
-						price="12 900₽"
-						info="10 процедур"
-					/>
-				</div>
-			</template>
+			<h3 class="heading-section heading">Выбери свой тариф</h3>
+			<div class="cards-wrapper">
+				<SectionTariffCard
+					:text="text"
+					title="Базовый"
+					price="5 900₽"
+					info="3 процедуры"
+				/>
+				<SectionTariffCard
+					class="card-2"
+					:text="text"
+					title="Базовый Плюс"
+					price="7 900₽"
+					info="5 процедур"
+				/>
+				<SectionTariffCard
+					class="card-3"
+					:text="text"
+					title="Полная очистка"
+					price="12 900₽"
+					info="10 процедур"
+				/>
+			</div>
 		</MContainer>
 	</section>
 </template>

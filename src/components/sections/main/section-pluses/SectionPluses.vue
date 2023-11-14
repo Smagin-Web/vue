@@ -36,23 +36,15 @@ onUnmounted(() => {
 <template>
 	<section class="section-pluses">
 		<MContainer>
-			<template #children>
-				<div class="cards">
-					<SectionPlusesPicture1
-						:style="parallaxStyle"
-						style="transition: 1s"
-					/>
-					<SectionPlusesPicture2
-						:style="parallaxStyle2"
-						style="transition: 1s"
-					/>
-					<SectionPlusesPicture3
-						:style="parallaxStyle3"
-						style="transition: 1s"
-						class="picture-3"
-					/>
-				</div>
-			</template>
+			<div class="cards">
+				<SectionPlusesPicture1 :style="parallaxStyle" style="transition: 1s" />
+				<SectionPlusesPicture2 :style="parallaxStyle2" style="transition: 1s" />
+				<SectionPlusesPicture3
+					:style="parallaxStyle3"
+					style="transition: 1s"
+					class="picture-3"
+				/>
+			</div>
 		</MContainer>
 	</section>
 </template>

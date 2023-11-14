@@ -22,6 +22,7 @@ import SectionCircles from '@/components/sections/main/section-circles/SectionCi
 import SectionReview from '@/components/sections/main/SectionReview.vue'
 import SectionHelp from '@/components/sections/inside/section-help/SectionHelp.vue'
 import SectionPlaces from '@/components/sections/inside/section-places/SectionPlaces.vue'
+import SectionBonus from '@/components/sections/inside/section-bonus/SectionBonus.vue'
 </script>
 
 <template>
@@ -47,6 +48,7 @@ import SectionPlaces from '@/components/sections/inside/section-places/SectionPl
 		<SectionReview />
 		<SectionHelp />
 		<SectionPlaces />
+		<SectionBonus />
 
 		<Footer />
 	</div>

@@ -10,33 +10,31 @@ import MButtonOutline from '@/components/buttons/MButtonOutline.vue'
 <template>
 	<section class="section-masters">
 		<MContainer class="container-custom">
-			<template #children>
-				<div class="section-masters-content">
-					<h3 class="heading-section">Давай знакомиться</h3>
-					<h5 class="text-section" style="max-width: 866px">
-						Врачи-косметологи Face Concept помогут вернуть твоей коже молодость
-						и&nbsp;красоту!
-					</h5>
-					<Swiper
-						class="swiper-custom"
-						:breakpoints="{
-							300: { slidesPerView: 1.1 },
-							600: { slidesPerView: 2.2 },
-							1000: { slidesPerView: 3 },
-							1500: { slidesPerView: 4 }
-						}"
-						:space-between="14"
-					>
-						<swiper-slide><CardMaster /></swiper-slide>
-						<swiper-slide><CardMaster /></swiper-slide>
-						<swiper-slide><CardMaster /></swiper-slide>
-						<swiper-slide><CardMaster /></swiper-slide>
-					</Swiper>
-					<div style="display: flex; justify-content: center">
-						<MButtonOutline class="button">Показать ещё врачей</MButtonOutline>
-					</div>
+			<div class="section-masters-content">
+				<h3 class="heading-section">Давай знакомиться</h3>
+				<h5 class="text-section" style="max-width: 866px">
+					Врачи-косметологи Face Concept помогут вернуть твоей коже молодость
+					и&nbsp;красоту!
+				</h5>
+				<Swiper
+					class="swiper-custom"
+					:breakpoints="{
+						300: { slidesPerView: 1.1 },
+						600: { slidesPerView: 2.2 },
+						1000: { slidesPerView: 3 },
+						1500: { slidesPerView: 4 }
+					}"
+					:space-between="14"
+				>
+					<swiper-slide><CardMaster /></swiper-slide>
+					<swiper-slide><CardMaster /></swiper-slide>
+					<swiper-slide><CardMaster /></swiper-slide>
+					<swiper-slide><CardMaster /></swiper-slide>
+				</Swiper>
+				<div style="display: flex; justify-content: center">
+					<MButtonOutline class="button">Показать ещё врачей</MButtonOutline>
 				</div>
-			</template>
+			</div>
 		</MContainer>
 	</section>
 </template>

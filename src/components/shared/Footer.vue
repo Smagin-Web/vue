@@ -9,15 +9,13 @@ import FooterInfo from './FooterInfo.vue'
 <template>
 	<footer class="footer">
 		<MContainer>
-			<template #children>
-				<div>
-					<div class="footer-logo">
-						<Logo />
-					</div>
-					<FooterNav />
+			<div>
+				<div class="footer-logo">
+					<Logo />
 				</div>
-				<FooterInfo />
-			</template>
+				<FooterNav />
+			</div>
+			<FooterInfo />
 		</MContainer>
 	</footer>
 </template>

@@ -39,14 +39,12 @@ onUnmounted(() => {
 <template>
 	<section class="section-tech">
 		<MContainer>
-			<template #children>
-				<h4 class="heading" :style="stylesH1">
-					Мы&nbsp;разработали новый&nbsp;продукт в&nbsp;косметологии
-				</h4>
-				<h4 class="big-heading" :style="stylesH2">
-					8&nbsp;концептов твоей красоты
-				</h4>
-			</template>
+			<h4 class="heading" :style="stylesH1">
+				Мы&nbsp;разработали новый&nbsp;продукт в&nbsp;косметологии
+			</h4>
+			<h4 class="big-heading" :style="stylesH2">
+				8&nbsp;концептов твоей красоты
+			</h4>
 		</MContainer>
 	</section>
 </template>

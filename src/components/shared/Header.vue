@@ -21,24 +21,27 @@ const items = ref([
 	<header class="header">
 		<HeaderNotify />
 		<MContainer>
-			<template #children>
-				<div class="header-flex">
-					<div class="header-flex-left">
-						<Logo />
-						<HeaderSocialLink class="socials" />
-					</div>
-					<nav class="header-nav">
-						<a class="header-nav-item" href="/inside" v-for="item in items" :key="item">
-							<template v-if="item === 'burger'">
-								<IconBurger class="burger-icon" />
-							</template>
-							<template v-else>
-								<span class="header-nav-item-link">{{ item }}</span>
-							</template>
-						</a>
-					</nav>
+			<div class="header-flex">
+				<div class="header-flex-left">
+					<Logo />
+					<HeaderSocialLink class="socials" />
 				</div>
-			</template>
+				<nav class="header-nav">
+					<a
+						class="header-nav-item"
+						href="/inside"
+						v-for="item in items"
+						:key="item"
+					>
+						<template v-if="item === 'burger'">
+							<IconBurger class="burger-icon" />
+						</template>
+						<template v-else>
+							<span class="header-nav-item-link">{{ item }}</span>
+						</template>
+					</a>
+				</nav>
+			</div>
 		</MContainer>
 	</header>
 </template>

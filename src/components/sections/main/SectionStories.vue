@@ -7,80 +7,76 @@ import MContainer from '../../shared/MContainer.vue'
 <template>
 	<section class="section-stories">
 		<MContainer>
-			<template #children>
-				<h2 class="heading">Истории наших клиентов</h2>
-				<h5 class="text">
-					Это поможет тебе лучше понять структуру плана лечения
-					и&nbsp;ориентироваться в&nbsp;его стоимости
-				</h5>
-			</template>
+			<h2 class="heading">Истории наших клиентов</h2>
+			<h5 class="text">
+				Это поможет тебе лучше понять структуру плана лечения
+				и&nbsp;ориентироваться в&nbsp;его стоимости
+			</h5>
 		</MContainer>
 		<MContainer class="container-custom">
-			<template #children>
-				<div class="card-group">
-					<Swiper
-						class="swiper-custom"
-						:breakpoints="{
-							300: { slidesPerView: 1.2 },
-							600: { slidesPerView: 2.2 },
-							900: { slidesPerView: 3 }
-						}"
-						:space-between="24"
-					>
-						<swiper-slide>
-							<div class="card">
-								<img src="../../model.jpg" class="card-img" />
-								<p class="card-text">
-									Описание курса и проведёных процедур.Lorem ipsum dolor sit
-									amet consectetur. Purus dui vulputate sagittis aliquam ac
-									pellentesque condimentum lectus amet. Mollis vitae sit gravida
-									tellus vel faucibus. Purus elementum tortor lectus scelerisque
-									non. Vitae sit non velit elit nisl ut egestas. Felis nulla
-									faucibus rhoncus diam nisi tempor.
-								</p>
-								<div class="card-link-group">
-									<a class="card-link">Срок</a>
-									<a class="card-link">Стоимость</a>
-								</div>
+			<div class="card-group">
+				<Swiper
+					class="swiper-custom"
+					:breakpoints="{
+						300: { slidesPerView: 1.2 },
+						600: { slidesPerView: 2.2 },
+						900: { slidesPerView: 3 }
+					}"
+					:space-between="24"
+				>
+					<swiper-slide>
+						<div class="card">
+							<img src="../../model.jpg" class="card-img" />
+							<p class="card-text">
+								Описание курса и проведёных процедур.Lorem ipsum dolor sit amet
+								consectetur. Purus dui vulputate sagittis aliquam ac
+								pellentesque condimentum lectus amet. Mollis vitae sit gravida
+								tellus vel faucibus. Purus elementum tortor lectus scelerisque
+								non. Vitae sit non velit elit nisl ut egestas. Felis nulla
+								faucibus rhoncus diam nisi tempor.
+							</p>
+							<div class="card-link-group">
+								<a class="card-link">Срок</a>
+								<a class="card-link">Стоимость</a>
 							</div>
-						</swiper-slide>
-						<swiper-slide>
-							<div class="card">
-								<img src="../../model.jpg" class="card-img" />
-								<p class="card-text">
-									Описание курса и проведёных процедур.Lorem ipsum dolor sit
-									amet consectetur. Purus dui vulputate sagittis aliquam ac
-									pellentesque condimentum lectus amet. Mollis vitae sit gravida
-									tellus vel faucibus. Purus elementum tortor lectus scelerisque
-									non. Vitae sit non velit elit nisl ut egestas. Felis nulla
-									faucibus rhoncus diam nisi tempor.
-								</p>
-								<div class="card-link-group">
-									<a class="card-link">Срок</a>
-									<a class="card-link">Стоимость</a>
-								</div>
+						</div>
+					</swiper-slide>
+					<swiper-slide>
+						<div class="card">
+							<img src="../../model.jpg" class="card-img" />
+							<p class="card-text">
+								Описание курса и проведёных процедур.Lorem ipsum dolor sit amet
+								consectetur. Purus dui vulputate sagittis aliquam ac
+								pellentesque condimentum lectus amet. Mollis vitae sit gravida
+								tellus vel faucibus. Purus elementum tortor lectus scelerisque
+								non. Vitae sit non velit elit nisl ut egestas. Felis nulla
+								faucibus rhoncus diam nisi tempor.
+							</p>
+							<div class="card-link-group">
+								<a class="card-link">Срок</a>
+								<a class="card-link">Стоимость</a>
 							</div>
-						</swiper-slide>
-						<swiper-slide>
-							<div class="card">
-								<img src="../../model.jpg" class="card-img" />
-								<p class="card-text">
-									Описание курса и проведёных процедур.Lorem ipsum dolor sit
-									amet consectetur. Purus dui vulputate sagittis aliquam ac
-									pellentesque condimentum lectus amet. Mollis vitae sit gravida
-									tellus vel faucibus. Purus elementum tortor lectus scelerisque
-									non. Vitae sit non velit elit nisl ut egestas. Felis nulla
-									faucibus rhoncus diam nisi tempor.
-								</p>
-								<div class="card-link-group">
-									<a class="card-link">Срок</a>
-									<a class="card-link">Стоимость</a>
-								</div>
+						</div>
+					</swiper-slide>
+					<swiper-slide>
+						<div class="card">
+							<img src="../../model.jpg" class="card-img" />
+							<p class="card-text">
+								Описание курса и проведёных процедур.Lorem ipsum dolor sit amet
+								consectetur. Purus dui vulputate sagittis aliquam ac
+								pellentesque condimentum lectus amet. Mollis vitae sit gravida
+								tellus vel faucibus. Purus elementum tortor lectus scelerisque
+								non. Vitae sit non velit elit nisl ut egestas. Felis nulla
+								faucibus rhoncus diam nisi tempor.
+							</p>
+							<div class="card-link-group">
+								<a class="card-link">Срок</a>
+								<a class="card-link">Стоимость</a>
 							</div>
-						</swiper-slide>
-					</Swiper>
-				</div>
-			</template>
+						</div>
+					</swiper-slide>
+				</Swiper>
+			</div>
 		</MContainer>
 	</section>
 </template>

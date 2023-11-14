@@ -9,7 +9,7 @@ import IconTelegram from './IconTelegram.vue'
 <template>
 	<div class="card">
 		<div class="card-left">
-			<h5 class="card-heading">Москва, улица Красноказарменная14А, корпус 6</h5>
+			<h5 class="card-heading">Москва, улица Красноказарменная14А, корпус 6</h5>
 			<div class="card-badges">
 				<p class="card-badge">
 					<Icon8 />

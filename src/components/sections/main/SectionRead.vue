@@ -10,43 +10,41 @@ import 'swiper/css'
 <template>
 	<section class="section-read">
 		<MContainer>
-			<template #children>
-				<h3 class="heading-section">Читай полезное и интересное</h3>
-				<h5 class="text-section section-read-text">
-					Мы&nbsp;хотим поделиться с&nbsp;тобой некоторыми советами, которые
-					помогут тебе ухаживать за&nbsp;кожей
-				</h5>
-				<div class="swiper-wrapper-custom">
-					<Swiper
-						style="padding-left: 14px; padding-right: 14px"
-						:breakpoints="{
-							300: { slidesPerView: 1.1 },
-							600: { slidesPerView: 2.2 },
-							1000: { slidesPerView: 3 }
-						}"
-						:space-between="14"
-					>
-						<swiper-slide>
-							<CardNews />
-						</swiper-slide>
-						<swiper-slide>
-							<CardNews />
-						</swiper-slide>
-						<swiper-slide>
-							<CardNews />
-						</swiper-slide>
-						<swiper-slide>
-							<CardNews />
-						</swiper-slide>
-						<swiper-slide>
-							<CardNews />
-						</swiper-slide>
-					</Swiper>
-				</div>
-				<div style="display: flex; justify-content: center">
-					<MButton class="button">Больше интересных статей</MButton>
-				</div>
-			</template>
+			<h3 class="heading-section">Читай полезное и интересное</h3>
+			<h5 class="text-section section-read-text">
+				Мы&nbsp;хотим поделиться с&nbsp;тобой некоторыми советами, которые
+				помогут тебе ухаживать за&nbsp;кожей
+			</h5>
+			<div class="swiper-wrapper-custom">
+				<Swiper
+					style="padding-left: 14px; padding-right: 14px"
+					:breakpoints="{
+						300: { slidesPerView: 1.1 },
+						600: { slidesPerView: 2.2 },
+						1000: { slidesPerView: 3 }
+					}"
+					:space-between="14"
+				>
+					<swiper-slide>
+						<CardNews />
+					</swiper-slide>
+					<swiper-slide>
+						<CardNews />
+					</swiper-slide>
+					<swiper-slide>
+						<CardNews />
+					</swiper-slide>
+					<swiper-slide>
+						<CardNews />
+					</swiper-slide>
+					<swiper-slide>
+						<CardNews />
+					</swiper-slide>
+				</Swiper>
+			</div>
+			<div style="display: flex; justify-content: center">
+				<MButton class="button">Больше интересных статей</MButton>
+			</div>
 		</MContainer>
 	</section>
 </template>

@@ -9,25 +9,23 @@ import SectionOfferList from './SectionOfferList.vue'
 	<section class="section-offer">
 		<div class="section-offer-container">
 			<MContainer>
-				<template #children>
-					<div class="card">
-						<div class="card-badge">
-							<MBadge>Диагностика</MBadge>
-						</div>
-						<div class="card-content">
-							<div>
-								<h3 class="heading">Хочешь&nbsp;здоровую&nbsp;кожу?</h3>
-
-								<SectionOfferList />
-							</div>
-							<div class="image-container">
-								<img src="./more.png" class="image-more" />
-								<img src="./offer.png" class="image" />
-							</div>
-						</div>
-						<CardInsideOffer class="card-inside" />
+				<div class="card">
+					<div class="card-badge">
+						<MBadge>Диагностика</MBadge>
 					</div>
-				</template>
+					<div class="card-content">
+						<div>
+							<h3 class="heading">Хочешь&nbsp;здоровую&nbsp;кожу?</h3>
+
+							<SectionOfferList />
+						</div>
+						<div class="image-container">
+							<img src="./more.png" class="image-more" />
+							<img src="./offer.png" class="image" />
+						</div>
+					</div>
+					<CardInsideOffer class="card-inside" />
+				</div>
 			</MContainer>
 		</div>
 	</section>

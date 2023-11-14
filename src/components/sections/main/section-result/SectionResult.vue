@@ -6,18 +6,16 @@ import SectionResultBanner from './SectionResultBanner.vue'
 <template>
 	<section class="section-result">
 		<MContainer>
-			<template #children>
-				<div class="content">
-					<SectionResultBanner class="banner" />
-					<div>
-						<h3 class="heading">Что ты получишь<br />в результате приёма?</h3>
-						<h5 class="text">
-							Анализируя полученные данные,<br />врач проведёт оценку состояния
-							твоей&nbsp;кожи<br />и&nbsp;определит стадию заболевания
-						</h5>
-					</div>
+			<div class="content">
+				<SectionResultBanner class="banner" />
+				<div>
+					<h3 class="heading">Что ты получишь<br />в результате приёма?</h3>
+					<h5 class="text">
+						Анализируя полученные данные,<br />врач проведёт оценку состояния
+						твоей&nbsp;кожи<br />и&nbsp;определит стадию заболевания
+					</h5>
 				</div>
-			</template>
+			</div>
 		</MContainer>
 	</section>
 </template>

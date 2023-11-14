@@ -7,42 +7,40 @@ import SectionTechPicture from './SectionTechPicture.vue'
 <template>
 	<section class="section-tech">
 		<MContainer>
-			<template #children>
-				<div class="content">
-					<div class="content-left">
-						<div class="card-wrapper">
-							<div class="card card-1">
-								<h5 class="card-text">
-									В&nbsp;ходе лечения мы&nbsp;применяем новейшее оборудование
-									и&nbsp;инновационные терапевтические методики.
-									<br />
-									<br />
-									Лечение в&nbsp;нашем центре проходит без боли и&nbsp;других
-									неприятных ощущений.
-								</h5>
-							</div>
-							<SectionTechShadow class="card-shadow" />
-						</div>
-						<SectionTechPicture class="picture" />
-					</div>
-
+			<div class="content">
+				<div class="content-left">
 					<div class="card-wrapper">
-						<div class="card card-2">
+						<div class="card card-1">
 							<h5 class="card-text">
-								Благодаря комплексному подходу к&nbsp;терапии угревой сыпи
-								мы&nbsp;не&nbsp;только быстро избавляем наших пациентов
-								от&nbsp;кожных проблем, но&nbsp;и предотвращаем
-								их&nbsp;повторное появление в&nbsp;будущем.
+								В&nbsp;ходе лечения мы&nbsp;применяем новейшее оборудование
+								и&nbsp;инновационные терапевтические методики.
 								<br />
 								<br />
-								Результат нашего лечения ты&nbsp;сможешь увидеть уже после
-								первого посещения.
+								Лечение в&nbsp;нашем центре проходит без боли и&nbsp;других
+								неприятных ощущений.
 							</h5>
 						</div>
 						<SectionTechShadow class="card-shadow" />
 					</div>
+					<SectionTechPicture class="picture" />
 				</div>
-			</template>
+
+				<div class="card-wrapper">
+					<div class="card card-2">
+						<h5 class="card-text">
+							Благодаря комплексному подходу к&nbsp;терапии угревой сыпи
+							мы&nbsp;не&nbsp;только быстро избавляем наших пациентов
+							от&nbsp;кожных проблем, но&nbsp;и предотвращаем их&nbsp;повторное
+							появление в&nbsp;будущем.
+							<br />
+							<br />
+							Результат нашего лечения ты&nbsp;сможешь увидеть уже после первого
+							посещения.
+						</h5>
+					</div>
+					<SectionTechShadow class="card-shadow" />
+				</div>
+			</div>
 		</MContainer>
 	</section>
 </template>

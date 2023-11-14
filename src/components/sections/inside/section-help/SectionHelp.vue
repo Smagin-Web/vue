@@ -9,34 +9,32 @@ import CardShadow from './CardShadow.vue'
 <template>
 	<section class="section-help">
 		<MContainer>
-			<template #children>
-				<div class="card-wrapper">
-					<div class="card">
-						<div class="card-left">
-							<h5 class="card-heading">Остались вопросы?</h5>
-							<h6 class="card-text">
-								Пиши или звони напрямую нам.
-								<br />
-								Мы открыты, и на связи в любое разумное время.
-							</h6>
-							<div class="card-buttons">
-								<a class="button-link button-link-tg" href="#">
-									Написать в Телеграм
-									<IconTelegram2 />
-								</a>
-								<a class="button-link button-link-wa" href="#">
-									Написать в WhatsApp
-									<IconWhatsApp2 />
-								</a>
-							</div>
+			<div class="card-wrapper">
+				<div class="card">
+					<div class="card-left">
+						<h5 class="card-heading">Остались вопросы?</h5>
+						<h6 class="card-text">
+							Пиши или звони напрямую нам.
+							<br />
+							Мы открыты, и на связи в любое разумное время.
+						</h6>
+						<div class="card-buttons">
+							<a class="button-link button-link-tg" href="#">
+								Написать в Телеграм
+								<IconTelegram2 />
+							</a>
+							<a class="button-link button-link-wa" href="#">
+								Написать в WhatsApp
+								<IconWhatsApp2 />
+							</a>
 						</div>
-
-						<SectionHelpPicture class="card-picture" />
 					</div>
 
-					<CardShadow class="card-shadow" />
+					<SectionHelpPicture class="card-picture" />
 				</div>
-			</template>
+
+				<CardShadow class="card-shadow" />
+			</div>
 		</MContainer>
 	</section>
 </template>

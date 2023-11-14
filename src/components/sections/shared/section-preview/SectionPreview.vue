@@ -5,13 +5,11 @@ import MContainer from '@/components/shared/MContainer.vue'
 <template>
 	<section class="section-preview">
 		<MContainer>
-			<template #children>
-				<h3 class="heading">Мы разработали продукт&nbsp;— AntiAcne Concept</h3>
-				<h4 class="heading-2">
-					Задачей которого является эффективное лечение заболевания Акне первой,
-					второй и&nbsp;третьей степен
-				</h4>
-			</template>
+			<h3 class="heading">Мы разработали продукт&nbsp;— AntiAcne Concept</h3>
+			<h4 class="heading-2">
+				Задачей которого является эффективное лечение заболевания Акне первой,
+				второй и&nbsp;третьей степен
+			</h4>
 		</MContainer>
 	</section>
 </template>

@@ -7,25 +7,23 @@ import IconClose from '../icons/IconClose.vue'
 <template>
 	<div class="header-notify">
 		<MContainer>
-			<template #children>
-				<div style="position: relative">
-					<Heading
-						tag="h5"
-						color="#6D6364"
-						font-size-heading="20px"
-						letter-spacing-heading="6.9px"
-						text-transform="uppercase"
-					>
-						Версия сайта для слабовидящих
-					</Heading>
+			<div style="position: relative">
+				<Heading
+					tag="h5"
+					color="#6D6364"
+					font-size-heading="20px"
+					letter-spacing-heading="6.9px"
+					text-transform="uppercase"
+				>
+					Версия сайта для слабовидящих
+				</Heading>
 
-					<div style="position: absolute; right: 0; top: -2px">
-						<a href="#">
-							<IconClose />
-						</a>
-					</div>
+				<div style="position: absolute; right: 0; top: -2px">
+					<a href="#">
+						<IconClose />
+					</a>
 				</div>
-			</template>
+			</div>
 		</MContainer>
 	</div>
 </template>
