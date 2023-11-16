@@ -20,6 +20,7 @@ import SectionPlacesCard from './SectionPlacesCard.vue'
 <style scoped>
 .section-places {
 	padding-bottom: 150px;
+	overflow: hidden;
 }
 
 .text {
@@ -37,9 +38,27 @@ import SectionPlacesCard from './SectionPlacesCard.vue'
 	background-color: #000;
 }
 
+@media (max-width: 1140px) {
+	.text {
+		padding-bottom: 50px;
+	}
+}
+
 @media (max-width: 1000px) {
 	.section-places {
 		padding-bottom: 80px;
+	}
+	.text {
+		padding-bottom: 20px;
+	}
+}
+
+@media (max-width: 600px) {
+	.text {
+		padding-bottom: 0;
+	}
+	.card {
+		padding: 40px 0;
 	}
 }
 </style>

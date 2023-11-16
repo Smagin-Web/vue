@@ -9,21 +9,25 @@ import IconTelegram from './IconTelegram.vue'
 <template>
 	<div class="card">
 		<div class="card-left">
-			<h5 class="card-heading">Москва, улица Красноказарменная14А, корпус 6</h5>
+			<h5 class="card-heading">
+				Москва, улица Красноказарменная14А, корпус&nbsp;6
+			</h5>
 			<div class="card-badges">
 				<p class="card-badge">
-					<Icon8 />
+					<Icon8 class="card-badge-icon" />
 					Авиамоторная — 5 мин
 				</p>
 				<p class="card-badge">
-					<IconP />
+					<IconP class="card-badge-icon" />
 					Бесплатня парковка
 				</p>
 			</div>
 			<div class="card-contacts">
 				<h6 class="card-number">+7 925 726-71-81</h6>
-				<IconWhatsapp class="card-contacts-icon" />
-				<IconTelegram class="card-contacts-icon" />
+				<div class="card-contacts-icons">
+					<IconWhatsapp class="card-contacts-icon" />
+					<IconTelegram class="card-contacts-icon" />
+				</div>
 			</div>
 			<MButtonOutlineBig>Подробнее</MButtonOutlineBig>
 		</div>
@@ -77,6 +81,12 @@ import IconTelegram from './IconTelegram.vue'
 	padding-bottom: 50px;
 }
 
+.card-contacts-icons {
+	display: flex;
+	gap: 30px;
+	align-items: center;
+}
+
 .card-number {
 	color: #000;
 	font-size: 60px;
@@ -101,19 +111,59 @@ import IconTelegram from './IconTelegram.vue'
 	.card-number {
 		font-size: 38px;
 	}
-  .card-contacts-icon {
-    width: 40px;
-    height: auto;
-  }
-  .card-badges {
-    display: grid;
-    gap: 16px;
-  }
+	.card-contacts-icon {
+		width: 40px;
+		height: auto;
+	}
+	.card-badges {
+		display: grid;
+		gap: 16px;
+	}
 }
 
 @media (max-width: 1140px) {
-  .card {
-    display: grid;
-  }
+	.card {
+		display: grid;
+		grid-template-columns: minmax(100px, 100%);
+	}
+}
+
+@media (max-width: 600px) {
+	.card {
+		gap: 32px;
+	}
+	.card-number {
+		font-size: 30px;
+	}
+	.card-heading {
+		font-size: 18px;
+	}
+	.card-badge {
+		font-size: 16px;
+	}
+	.card-badge-icon {
+		width: 19px;
+		height: auto;
+	}
+	.card-contacts {
+		display: grid;
+		gap: 16px;
+		padding-bottom: 36px;
+	}
+	.card-contacts-icon {
+		width: 32px;
+		height: auto;
+	}
+	.card-right {
+		display: flex;
+		justify-content: center;
+		max-width: 100%;
+	}
+	.card-img {
+		max-width: 100%;
+		width: 100%;
+		height: auto;
+		min-width: auto;
+	}
 }
 </style>

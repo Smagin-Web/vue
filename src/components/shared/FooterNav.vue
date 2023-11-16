@@ -192,4 +192,17 @@ export default {
 		font-size: 17px;
 	}
 }
+
+
+@media (max-width: 400px) {
+	.footer-nav {
+		grid-template-columns: minmax(100px, 100%);
+	}
+	.footer-nav-link {
+		font-size: 18px;
+	}
+	.footer-nav-link-span {
+		font-size: 16px;
+	}
+}
 </style>
