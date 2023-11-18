@@ -137,9 +137,10 @@ export default {
 	margin-bottom: 20px;
 }
 
-@media screen and (max-width: 1500px) {
+@media (max-width: 1500px) {
 	.footer-logo {
 		display: none;
 	}
 }
+
 </style>

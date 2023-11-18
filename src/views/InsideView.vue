@@ -24,6 +24,7 @@ import SectionHelp from '@/components/sections/inside/section-help/SectionHelp.v
 import SectionPlaces from '@/components/sections/inside/section-places/SectionPlaces.vue'
 import SectionBonus from '@/components/sections/inside/section-bonus/SectionBonus.vue'
 import SectionRead from '@/components/sections/main/SectionRead.vue'
+import SectionFaq from '@/components/sections/inside/section-faq/SectionFaq.vue'
 </script>
 
 <template>
@@ -51,6 +52,7 @@ import SectionRead from '@/components/sections/main/SectionRead.vue'
 		<SectionPlaces />
 		<SectionBonus />
 		<SectionRead />
+		<SectionFaq />
 
 		<Footer />
 	</div>

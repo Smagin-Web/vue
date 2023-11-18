@@ -1,0 +1,37 @@
+<script setup lang="ts">
+import MContainer from '@/components/shared/MContainer.vue'
+import FaqItem from './FaqItem.vue'
+</script>
+
+<template>
+	<section class="section-faq">
+		<MContainer>
+			<h3 class="heading-section">Популярные вопросы</h3>
+			<div class="items">
+				<FaqItem
+					text="Можем порекомендовать микротоки или пилинги для глаз. Микротоки прекрасно работают с отечностью и темными кругами под глазами, разглаживают «гусиные лапки». Пилинги разглаживают мелкие морщинки, делают кожу упругой, осветляют ее."
+					title="Посоветуйте пожалуйста процедуру для ухода и омоложения кожи вокруг глаз? Не хочу пока прибегать к инъекционным методикам."
+				/>
+				<FaqItem
+					text="text1"
+					title="Хочу поставить ботокс в лоб. Сколько уколов потребуется?"
+				/>
+				<FaqItem
+					text="text1"
+					title="Можно ли вылечить вросший ноготь навсегда? У меня ноготь врастает уже на протяжении полутора лет."
+				/>
+			</div>
+		</MContainer>
+	</section>
+</template>
+
+<style scoped>
+.section-faq {
+	padding-bottom: 100px;
+}
+
+.items {
+	display: grid;
+	gap: 24px;
+}
+</style>
