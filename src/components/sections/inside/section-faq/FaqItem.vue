@@ -8,8 +8,13 @@ defineProps<{
 
 const textRef = ref()
 
+const onResize = () => {
+	isActive.value = false
+	heightItem.value = ''
+}
+
 onMounted(() => {
-	console.log(textRef.value.offsetHeight)
+	window.addEventListener('resize', onResize)
 })
 
 let isActive = ref(false)
@@ -28,12 +33,14 @@ const handler = () => {
 
 <template>
 	<div class="item" @click="handler" :style="heightItem">
-		<h6 class="item-title">
-			{{ title }}
-		</h6>
-		<p class="item-text" v-bind:class="{ active: isActive }" ref="textRef">
-			{{ text }}
-		</p>
+		<div class="item-content">
+			<h6 class="item-title">
+				{{ title }}
+			</h6>
+			<p class="item-text" v-bind:class="{ active: isActive }" ref="textRef">
+				{{ text }}
+			</p>
+		</div>
 		<div class="item-icon-wrapper">
 			<div class="item-icon" v-bind:class="{ active: isActive }" />
 		</div>
@@ -43,15 +50,19 @@ const handler = () => {
 <style scoped>
 .item {
 	position: relative;
-	padding-right: 142px;
+	height: 150px;
+	padding-left: 40px;
+	padding-right: 140px;
 
 	border-radius: 50px;
 	background: #fff;
-
 	cursor: pointer;
 	transition: 0.2s;
-	height: 150px;
-	padding-left: 40px;
+}
+
+.item-content {
+	position: relative;
+	height: 100%;
 }
 
 .item-title {
@@ -84,7 +95,6 @@ const handler = () => {
 	font-size: 22px;
 	font-weight: 300;
 
-	transition: 0.1s linear;
 	opacity: 0;
 
 	padding-right: 142px;
@@ -93,6 +103,8 @@ const handler = () => {
 
 .item-text.active {
 	opacity: 1;
+	transition: 0.2s;
+	transition-delay: 0.2s;
 }
 
 .item-icon-wrapper {
