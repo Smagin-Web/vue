@@ -99,6 +99,7 @@ const handler = () => {
 
 	padding-right: 142px;
 	user-select: none;
+	pointer-events: none;
 }
 
 .item-text.active {
