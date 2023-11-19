@@ -10,6 +10,7 @@ import SectionCircles from '@/components/sections/main/section-circles/SectionCi
 import SectionReview from '@/components/sections/main/SectionReview.vue'
 import SectionHelp from '@/components/sections/inside/section-help/SectionHelp.vue'
 import SectionReviewPacients from '@/components/sections/main/SectionReviewPacients.vue'
+import SectionCategories from '@/components/sections/procedures/section-categories/SectionCategories.vue'
 </script>
 
 <template>
@@ -17,6 +18,7 @@ import SectionReviewPacients from '@/components/sections/main/SectionReviewPacie
 		<ButtonFixed />
 		<Header :style="headerStyles" />
 
+		<SectionCategories />
 		<SectionOffer />
 		<SectionMasters />
 		<SectionReviewPacients />

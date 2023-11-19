@@ -7,6 +7,8 @@ defineProps<{
 }>()
 
 const textRef = ref()
+const titleRef = ref()
+const itemRef = ref()
 
 const onResize = () => {
 	isActive.value = false
@@ -24,7 +26,12 @@ const handler = () => {
 	isActive.value = !isActive.value
 
 	if (isActive.value) {
-		heightItem.value = `height: ${150 + textRef.value.offsetHeight}px;`
+		heightItem.value = `height: ${itemRef.value.offsetHeight}px`
+		setTimeout(() => {
+			heightItem.value = `height: ${
+				itemRef.value.offsetHeight + textRef.value.offsetHeight
+			}px;`
+		}, 10)
 	} else {
 		heightItem.value = ''
 	}
@@ -32,15 +39,13 @@ const handler = () => {
 </script>
 
 <template>
-	<div class="item" @click="handler" :style="heightItem">
-		<div class="item-content">
-			<h6 class="item-title">
-				{{ title }}
-			</h6>
-			<p class="item-text" v-bind:class="{ active: isActive }" ref="textRef">
-				{{ text }}
-			</p>
-		</div>
+	<div class="item" @click="handler" :style="heightItem" ref="itemRef">
+		<h6 class="item-title" ref="titleRef">
+			{{ title }}
+		</h6>
+		<p class="item-text" v-bind:class="{ active: isActive }" ref="textRef">
+			{{ text }}
+		</p>
 		<div class="item-icon-wrapper">
 			<div class="item-icon" v-bind:class="{ active: isActive }" />
 		</div>
@@ -50,26 +55,23 @@ const handler = () => {
 <style scoped>
 .item {
 	position: relative;
-	height: 150px;
-	padding-left: 40px;
-	padding-right: 140px;
+	padding: 50px 140px 50px 50px;
 
 	border-radius: 50px;
 	background: #fff;
 	cursor: pointer;
 	transition: 0.2s;
-}
 
-.item-content {
-	position: relative;
-	height: 100%;
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+	-webkit-tap-highlight-color: transparent;
 }
 
 .item-title {
-	height: 150px;
 	display: flex;
 	width: 100%;
 	align-items: center;
+	line-height: 24px;
+	min-height: 50px;
 }
 
 .item:hover {
@@ -120,8 +122,8 @@ const handler = () => {
 .item-icon {
 	position: relative;
 
-	width: 60px;
-	height: 60px;
+	width: 100%;
+	height: 100%;
 	background-color: #ae8c8e;
 	border-radius: 50%;
 	transition: 0.2s;
@@ -140,7 +142,7 @@ const handler = () => {
 
 	content: '';
 	display: block;
-	width: 30px;
+	width: 50%;
 	height: 3px;
 	background-color: #fff;
 	border-radius: 4px;
@@ -149,5 +151,75 @@ const handler = () => {
 
 .item-icon:before {
 	transform: translateX(-50%) translateY(-50%) rotate(90deg);
+}
+
+@media (max-width: 1200px) {
+	.item-icon-wrapper {
+		width: 50px;
+		height: 50px;
+	}
+	.item {
+		height: auto;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		padding-left: 30px;
+		border-radius: 30px;
+	}
+	.item-text {
+		padding-top: 20px;
+	}
+}
+
+@media (max-width: 1000px) {
+	.item {
+		padding-top: 20px;
+		padding-left: 20px;
+		padding-bottom: 20px;
+		border-radius: 20px;
+	}
+	.item-title {
+		font-size: 18px;
+	}
+	.item-text {
+		font-size: 18px;
+		bottom: 20px;
+		padding-top: 6px;
+	}
+}
+
+@media (max-width: 800px) {
+	.item {
+		padding-right: 80px;
+	}
+	.item-icon-wrapper {
+		right: 20px;
+		width: 38px;
+		height: 38px;
+	}
+}
+
+@media (max-width: 500px) {
+	.item {
+		padding-top: 14px;
+		padding-left: 14px;
+		padding-bottom: 10px;
+		border-radius: 10px;
+		padding-right: 60px;
+	}
+	.item-title {
+		font-size: 14px;
+		line-height: 1.3;
+	}
+	.item-text {
+		font-size: 14px;
+		padding-top: 10px;
+		bottom: 10px;
+		padding-right: 60px;
+	}
+	.item-icon-wrapper {
+		width: 32px;
+		height: 32px;
+		right: 10px;
+	}
 }
 </style>
