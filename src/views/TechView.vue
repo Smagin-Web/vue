@@ -10,6 +10,7 @@ import SectionBonus from '@/components/sections/inside/section-bonus/SectionBonu
 import SectionRead from '@/components/sections/main/SectionRead.vue'
 import SectionFaq from '@/components/sections/inside/section-faq/SectionFaq.vue'
 import SectionPrice from '@/components/sections/tech/section-price/SectionPrice.vue'
+import SectionMain from '@/components/sections/tech/section-main/SectionMain.vue'
 
 const headerStyles = ref('display: block')
 
@@ -26,6 +27,8 @@ const handleScroll = (event: WheelEvent) => {
 	<div @wheel="handleScroll">
 		<ButtonFixed />
 		<Header :style="headerStyles" />
+
+		<SectionMain />
 
 		<SectionPrice />
 		<SectionMasters />
