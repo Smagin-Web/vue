@@ -11,6 +11,8 @@ import SectionRead from '@/components/sections/main/SectionRead.vue'
 import SectionFaq from '@/components/sections/inside/section-faq/SectionFaq.vue'
 import SectionPrice from '@/components/sections/tech/section-price/SectionPrice.vue'
 import SectionMain from '@/components/sections/tech/section-main/SectionMain.vue'
+import SectionPluses from '@/components/sections/tech/section-pluses/SectionPluses.vue'
+import SectionBanner from '@/components/sections/tech/section-banner/SectionBanner.vue'
 
 const headerStyles = ref('display: block')
 
@@ -29,6 +31,8 @@ const handleScroll = (event: WheelEvent) => {
 		<Header :style="headerStyles" />
 
 		<SectionMain />
+		<SectionPluses />
+		<SectionBanner />
 
 		<SectionPrice />
 		<SectionMasters />

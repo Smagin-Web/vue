@@ -172,5 +172,10 @@ import SectionBonusPicture from './SectionBonusPicture.vue'
 	.card-heading {
 		font-size: 20px;
 	}
+	.card-badge {
+		font-size: 14px;
+		font-weight: 600;
+		border-radius: 6px;
+	}
 }
 </style>

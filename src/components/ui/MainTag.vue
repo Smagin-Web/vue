@@ -15,4 +15,11 @@
 	padding: 10px 20px;
   background: transparent;
 }
+
+@media (max-width: 1250px) {
+	.tag {
+		padding: 8px 16px;
+		font-size: 12px;
+	}
+}
 </style>

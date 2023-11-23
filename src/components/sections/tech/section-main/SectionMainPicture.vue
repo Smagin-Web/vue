@@ -18,9 +18,9 @@ import SectionPictureBg from './SectionPictureBg.vue'
 }
 
 .picture-bg {
-  position: relative;
-  width: 100%;
-  z-index: 10;
+	position: relative;
+	width: 100%;
+	z-index: 10;
 	height: auto;
 }
 
@@ -29,15 +29,15 @@ import SectionPictureBg from './SectionPictureBg.vue'
 	position: absolute;
 	bottom: 5%;
 	left: 10%;
-  z-index: 10;
+	z-index: 10;
 }
 
 .picture-shadow {
-  position: absolute;
-  z-index: 0;
-  bottom: -10%;
-  left: 0;
-  width: 100%;
-  height: auto;
+	position: absolute;
+	z-index: 0;
+	bottom: -10%;
+	left: 0;
+	width: 100%;
+	height: auto;
 }
 </style>

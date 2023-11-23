@@ -19,12 +19,17 @@ import SectionPriceItem from './SectionPriceItem.vue'
 
 <style scoped>
 .section-price {
-	padding-top: 200px;
 	padding-bottom: 150px;
 }
 
 .items {
 	display: grid;
 	gap: 10px;
+}
+
+@media (max-width: 1000px) {
+	.section-price {
+		padding-bottom: 70px;
+	}
 }
 </style>
