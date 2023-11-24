@@ -12,31 +12,49 @@ import ListItem from './ListItem.vue'
 
 			<div class="content-wrapper">
 				<div class="list">
-					<ListItem>
+					<ListItem img-src="./1.png">
+						<template #img>
+							<img src="./1.png" alt="" class="number-img" />
+						</template>
 						Молниеносное переключение между 3&nbsp;частотами создает совершенно
 						новую 3D-волну, которая действует не&nbsp;ниже дермы, как
 						ультразвуковые аппараты прежних поколений, а&nbsp;в&nbsp;зоне дермы
 						и&nbsp;эпидермиса
 					</ListItem>
 					<ListItem>
+						<template #img>
+							<img src="./2.png" alt="" class="number-img" />
+						</template>
 						Использование трех разных частот усиливает эффективность процедуры
 						и&nbsp;дает стойкий, выразительный и&nbsp;пролонгированный эффект
 						заживления поврежденной кожи и&nbsp;омоложения
 					</ListItem>
 					<ListItem>
+						<template #img>
+							<img src="./3.png" alt="" class="number-img" />
+						</template>
 						Благодаря мощной частоте, время процедуры сокращается с&nbsp;20-30
 						минут до&nbsp;12&nbsp;минут! Заглянуть к&nbsp;косметологу можно
 						в&nbsp;обеденный перерыв!
 					</ListItem>
 					<ListItem>
+						<template #img>
+							<img src="./4.png" alt="" class="number-img" />
+						</template>
 						Процедура может использоваться как отдельная методика, а&nbsp;также
 						до&nbsp;и&nbsp;после агрессивных воздействий
 					</ListItem>
-					<ListItem
-						>Реабилитация не&nbsp;требуется. Skinova Pro не&nbsp;вызывает отеков
-						даже у&nbsp;склонных к&nbsp;ним пациентам</ListItem
-					>
 					<ListItem>
+						<template #img>
+							<img src="./5.png" alt="" class="number-img" />
+						</template>
+						Реабилитация не&nbsp;требуется. Skinova Pro не&nbsp;вызывает отеков
+						даже у&nbsp;склонных к&nbsp;ним пациентам
+					</ListItem>
+					<ListItem>
+						<template #img>
+							<img src="./6.png" alt="" class="number-img" />
+						</template>
 						100% комфортная процедура, не&nbsp;требующая анестезии
 					</ListItem>
 				</div>
