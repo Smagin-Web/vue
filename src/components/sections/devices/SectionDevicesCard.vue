@@ -1,10 +1,13 @@
 <script setup lang="ts">
+import CardInfo from '@/components/card-elements/CardInfo.vue'
+import CardLink from '@/components/card-elements/CardLink.vue'
 import BadgeMd from '@/components/ui/BadgeMd.vue'
 import MainTag from '@/components/ui/MainTag.vue'
 </script>
 
 <template>
 	<div class="card">
+		<CardLink class="card-link" />
 		<div class="card-left">
 			<h5 class="card-title">Skinova Pro</h5>
 			<div class="badges">
@@ -31,14 +34,28 @@ import MainTag from '@/components/ui/MainTag.vue'
 				<MainTag>Постакне</MainTag>
 			</div>
 		</div>
+		<div class="card-right">
+			<img src="./card-photo.png" alt="" class="card-photo" />
+			<CardInfo title="Время процедуры" icon="time" text="60 минут" />
+			<CardInfo title="Стоимость" icon="pay" text="от 4 500₽" />
+		</div>
 	</div>
 </template>
 
 <style scoped>
 .card {
+	position: relative;
 	border-radius: 50px;
 	background: #fff;
 	padding: 40px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.card-link {
+	position: absolute;
+  bottom: 40px;
+  left: 40px;
 }
 
 .card-left {
@@ -73,5 +90,9 @@ import MainTag from '@/components/ui/MainTag.vue'
 	display: flex;
 	flex-wrap: wrap;
 	gap: 20px;
+}
+
+.card-photo {
+	margin-bottom: 30px;
 }
 </style>
