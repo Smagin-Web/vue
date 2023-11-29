@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import MContainer from '../../shared/MContainer.vue'
-import MBadge from '../../ui/MBadge.vue'
-import CardInsideOffer from '../../cards/CardInsideOffer.vue'
+import MContainer from '@/components/shared/MContainer.vue'
+import MBadge from '../../../ui/MBadge.vue'
+import CardInsideOffer from '../../../cards/CardInsideOffer.vue'
 import SectionOfferList from './SectionOfferList.vue'
 </script>
 

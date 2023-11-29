@@ -4,6 +4,8 @@ import InsideView from '../views/InsideView.vue'
 import ProceduresView from '../views/ProceduresView.vue'
 import TechView from '../views/TechView.vue'
 import PricesView from '@/views/PricesView.vue'
+import NavView from '@/views/NavView.vue'
+import DevicesView from '@/views/DevicesView.vue'
 
 const router = createRouter({
 	history: createWebHistory(import.meta.env.BASE_URL),
@@ -32,6 +34,16 @@ const router = createRouter({
 			path: '/prices',
 			name: 'prices',
 			component: PricesView
+		},
+		{
+			path: '/nav',
+			name: 'nav',
+			component: NavView
+		},
+		{
+			path: '/devices',
+			name: 'devices',
+			component: DevicesView
 		}
 	]
 })

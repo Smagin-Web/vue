@@ -4,8 +4,9 @@ import Header from '@/components/shared/Header.vue'
 import Footer from '@/components/shared/Footer.vue'
 import ButtonFixed from '@/components/buttons/ButtonFixed.vue'
 
-import SectionOffer from '@/components/sections/main/SectionOffer.vue'
+import SectionOffer from '@/components/sections/shared/section-offer/SectionOffer.vue'
 import SectionMasters from '@/components/sections/shared/section-masters/SectionMasters.vue'
+
 import SectionCircles from '@/components/sections/main/section-circles/SectionCircles.vue'
 import SectionReview from '@/components/sections/main/SectionReview.vue'
 import SectionHelp from '@/components/sections/inside/section-help/SectionHelp.vue'
