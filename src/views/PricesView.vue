@@ -5,7 +5,7 @@ import Footer from '@/components/shared/Footer.vue'
 import ButtonFixed from '@/components/buttons/ButtonFixed.vue'
 
 import SectionPrices from '@/components/sections/prices/SectionPrices.vue'
-import SectionHelp from '@/components/sections/inside/section-help/SectionHelp.vue'
+import SectionHelp from '@/components/sections/shared/section-help/SectionHelp.vue'
 
 const headerStyles = ref('display: block')
 

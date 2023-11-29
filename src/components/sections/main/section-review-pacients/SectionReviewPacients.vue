@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import MContainer from '../../shared/MContainer.vue'
+import MContainer from '@/components/shared/MContainer.vue'
 import PictureReviews from '@/components/icons/PictureReviews.vue'
 import MButton from '@/components/buttons/MButton.vue'
-import ButtonLink from '../../buttons/ButtonLink.vue'
+import ButtonLink from '@/components/buttons/ButtonLink.vue'
 </script>
 
 <template>

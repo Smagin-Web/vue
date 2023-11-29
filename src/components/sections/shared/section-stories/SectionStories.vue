@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import 'swiper/css'
 import { Swiper, SwiperSlide } from 'swiper/vue'
-import MContainer from '../../shared/MContainer.vue'
+import MContainer from '@/components/shared/MContainer.vue'
 </script>
 
 <template>
@@ -26,7 +26,7 @@ import MContainer from '../../shared/MContainer.vue'
 				>
 					<swiper-slide>
 						<div class="card">
-							<img src="../../model.jpg" class="card-img" />
+							<img src="./model.jpg" class="card-img" />
 							<p class="card-text">
 								Описание курса и проведёных процедур.Lorem ipsum dolor sit amet
 								consectetur. Purus dui vulputate sagittis aliquam ac
@@ -43,7 +43,7 @@ import MContainer from '../../shared/MContainer.vue'
 					</swiper-slide>
 					<swiper-slide>
 						<div class="card">
-							<img src="../../model.jpg" class="card-img" />
+							<img src="./model.jpg" class="card-img" />
 							<p class="card-text">
 								Описание курса и проведёных процедур.Lorem ipsum dolor sit amet
 								consectetur. Purus dui vulputate sagittis aliquam ac
@@ -60,7 +60,7 @@ import MContainer from '../../shared/MContainer.vue'
 					</swiper-slide>
 					<swiper-slide>
 						<div class="card">
-							<img src="../../model.jpg" class="card-img" />
+							<img src="./model.jpg" class="card-img" />
 							<p class="card-text">
 								Описание курса и проведёных процедур.Lorem ipsum dolor sit amet
 								consectetur. Purus dui vulputate sagittis aliquam ac

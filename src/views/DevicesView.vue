@@ -5,14 +5,8 @@ import Footer from '@/components/shared/Footer.vue'
 import ButtonFixed from '@/components/buttons/ButtonFixed.vue'
 
 import SectionOffer from '@/components/sections/shared/section-offer/SectionOffer.vue'
-// import SectionHelp from '@/components/sections/inside/section-help/SectionHelp.vue'
-// import SectionBonus from '@/components/sections/inside/section-bonus/SectionBonus.vue'
-// import SectionRead from '@/components/sections/main/SectionRead.vue'
-// import SectionFaq from '@/components/sections/inside/section-faq/SectionFaq.vue'
-// import SectionPrice from '@/components/sections/tech/section-price/SectionPrice.vue'
-// import SectionMain from '@/components/sections/tech/section-main/SectionMain.vue'
-// import SectionPluses from '@/components/sections/tech/section-pluses/SectionPluses.vue'
-// import SectionBanner from '@/components/sections/tech/section-banner/SectionBanner.vue'
+import SectionResult from '@/components/sections/shared/section-result/SectionResult.vue'
+import SectionStories from '@/components/sections/shared/section-stories/SectionStories.vue'
 
 const headerStyles = ref('display: block')
 
@@ -31,6 +25,8 @@ const handleScroll = (event: WheelEvent) => {
 		<Header :style="headerStyles" />
 
 		<SectionOffer />
+		<SectionResult />
+		<SectionStories />
 
 		<Footer />
 	</div>

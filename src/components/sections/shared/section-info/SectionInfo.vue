@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import MContainer from '../../shared/MContainer.vue'
+import MContainer from '@/components/shared/MContainer.vue'
 import { ref, onMounted, onUnmounted } from 'vue'
 
 const scrollProgress = ref(0)

@@ -2,22 +2,22 @@
 import { ref } from 'vue'
 import Header from '@/components/shared/Header.vue'
 import Footer from '@/components/shared/Footer.vue'
-
-import SectionOffer from '@/components/sections/shared/section-offer/SectionOffer.vue'
-import SectionMasters from '@/components/sections/shared/section-masters/SectionMasters.vue'
-
-import SectionPluses from '@/components/sections/main/section-pluses/SectionPluses.vue'
-import SectionInfo from '@/components/sections/main/SectionInfo.vue'
-import SectionTech from '@/components/sections/main/SectionTech.vue'
-import SectionResult from '@/components/sections/main/section-result/SectionResult.vue'
-import SectionStories from '@/components/sections/main/SectionStories.vue'
-import SectionRead from '@/components/sections/main/SectionRead.vue'
-import SectionReview from '@/components/sections/main/SectionReview.vue'
-import SectionBanner from '@/components/sections/main/section-banner/SectionBanner.vue'
-import SectionReviewPacients from '@/components/sections/main/SectionReviewPacients.vue'
-import CustomSlider from '@/components/sections/main/section-slider/CustomSlider.vue'
 import ButtonFixed from '@/components/buttons/ButtonFixed.vue'
+
+import SectionStories from '@/components/sections/shared/section-stories/SectionStories.vue'
+import SectionMasters from '@/components/sections/shared/section-masters/SectionMasters.vue'
+import SectionResult from '@/components/sections/shared/section-result/SectionResult.vue'
+import SectionReview from '@/components/sections/shared/section-review/SectionReview.vue'
+import SectionOffer from '@/components/sections/shared/section-offer/SectionOffer.vue'
+import SectionInfo from '@/components/sections/shared/section-info/SectionInfo.vue'
+import SectionRead from '@/components/sections/shared/section-read/SectionRead.vue'
+import SectionTech from '@/components/sections/shared/section-tech/SectionTech.vue'
+
+import SectionReviewPacients from '@/components/sections/main/section-review-pacients/SectionReviewPacients.vue'
 import SectionCircles from '@/components/sections/main/section-circles/SectionCircles.vue'
+import SectionPluses from '@/components/sections/main/section-pluses/SectionPluses.vue'
+import SectionBanner from '@/components/sections/main/section-banner/SectionBanner.vue'
+import CustomSlider from '@/components/sections/main/section-slider/CustomSlider.vue'
 import SectionOther from '@/components/sections/main/section-other/SectionOther.vue'
 </script>
 

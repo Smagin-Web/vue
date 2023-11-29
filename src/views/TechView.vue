@@ -5,9 +5,10 @@ import Footer from '@/components/shared/Footer.vue'
 import ButtonFixed from '@/components/buttons/ButtonFixed.vue'
 
 import SectionMasters from '@/components/sections/shared/section-masters/SectionMasters.vue'
-import SectionHelp from '@/components/sections/inside/section-help/SectionHelp.vue'
-import SectionBonus from '@/components/sections/inside/section-bonus/SectionBonus.vue'
-import SectionRead from '@/components/sections/main/SectionRead.vue'
+import SectionBonus from '@/components/sections/shared/section-bonus/SectionBonus.vue'
+import SectionRead from '@/components/sections/shared/section-read/SectionRead.vue'
+import SectionHelp from '@/components/sections/shared/section-help/SectionHelp.vue'
+
 import SectionFaq from '@/components/sections/inside/section-faq/SectionFaq.vue'
 import SectionPrice from '@/components/sections/tech/section-price/SectionPrice.vue'
 import SectionMain from '@/components/sections/tech/section-main/SectionMain.vue'
