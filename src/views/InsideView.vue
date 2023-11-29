@@ -7,13 +7,16 @@ import ButtonFixed from '@/components/buttons/ButtonFixed.vue'
 import SectionStories from '@/components/sections/shared/section-stories/SectionStories.vue'
 import SectionPreview from '@/components/sections/shared/section-preview/SectionPreview.vue'
 import SectionMasters from '@/components/sections/shared/section-masters/SectionMasters.vue'
+import SectionCircles from '@/components/sections/shared/section-circles/SectionCircles.vue'
 import SectionResult from '@/components/sections/shared/section-result/SectionResult.vue'
 import SectionReview from '@/components/sections/shared/section-review/SectionReview.vue'
 import SectionBonus from '@/components/sections/shared/section-bonus/SectionBonus.vue'
 import SectionOffer from '@/components/sections/shared/section-offer/SectionOffer.vue'
+import SectionOther from '@/components/sections/shared/section-other/SectionOther.vue'
 import SectionHelp from '@/components/sections/shared/section-help/SectionHelp.vue'
 import SectionInfo from '@/components/sections/shared/section-info/SectionInfo.vue'
 import SectionRead from '@/components/sections/shared/section-read/SectionRead.vue'
+
 
 import SectionProcedures from '@/components/sections/inside/section-procedures/SectionProcedures.vue'
 import SectionDevices from '@/components/sections/inside/section-devices/SectionDevices.vue'
@@ -24,9 +27,7 @@ import SectionTech from '@/components/sections/inside/section-tech/SectionTech.v
 import SectionRec from '@/components/sections/inside/section-rec/SectionRec.vue'
 import SectionFaq from '@/components/sections/inside/section-faq/SectionFaq.vue'
 
-import SectionCircles from '@/components/sections/main/section-circles/SectionCircles.vue'
 import SectionPluses from '@/components/sections/main/section-pluses/SectionPluses.vue'
-import SectionOther from '@/components/sections/main/section-other/SectionOther.vue'
 </script>
 
 <template>

@@ -3,7 +3,7 @@
 	<div class="avatar-wrapper">
 		<a href="#" class="avatar-link" />
 		<div class="avatar">
-			<img src="../sections/main/Avatar2.png" alt="" class="avatar-img" />
+			<img src="./AvatarImg.png" alt="" class="avatar-img" />
 
 			<IconPlay class="avatar-play-icon" />
 		</div>

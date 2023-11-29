@@ -4,9 +4,17 @@ import Header from '@/components/shared/Header.vue'
 import Footer from '@/components/shared/Footer.vue'
 import ButtonFixed from '@/components/buttons/ButtonFixed.vue'
 
-import SectionOffer from '@/components/sections/shared/section-offer/SectionOffer.vue'
-import SectionResult from '@/components/sections/shared/section-result/SectionResult.vue'
+import SectionReviewPacients from '@/components/sections/shared/section-review-pacients/SectionReviewPacients.vue'
+import SectionCircles from '@/components/sections/shared/section-circles/SectionCircles.vue'
 import SectionStories from '@/components/sections/shared/section-stories/SectionStories.vue'
+import SectionMasters from '@/components/sections/shared/section-masters/SectionMasters.vue'
+import SectionReview from '@/components/sections/shared/section-review/SectionReview.vue'
+import SectionResult from '@/components/sections/shared/section-result/SectionResult.vue'
+import SectionOffer from '@/components/sections/shared/section-offer/SectionOffer.vue'
+import SectionOther from '@/components/sections/shared/section-other/SectionOther.vue'
+import SectionHelp from '@/components/sections/shared/section-help/SectionHelp.vue'
+
+import SectionDevices from '@/components/sections/devices/SectionDevices.vue'
 
 const headerStyles = ref('display: block')
 
@@ -24,9 +32,16 @@ const handleScroll = (event: WheelEvent) => {
 		<ButtonFixed />
 		<Header :style="headerStyles" />
 
+		<SectionDevices />
 		<SectionOffer />
 		<SectionResult />
 		<SectionStories />
+		<SectionOther />
+		<SectionMasters />
+		<SectionReviewPacients />
+		<SectionCircles />
+		<SectionReview />
+		<SectionHelp />
 
 		<Footer />
 	</div>
