@@ -31,6 +31,7 @@ import CardNews from '@/components/cards/CardNews.vue'
 
 <style scoped>
 .section-media {
+	padding-top: 150px;
   padding-bottom: 150px;
 }
 
