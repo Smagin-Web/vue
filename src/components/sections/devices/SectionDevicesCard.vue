@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import CardInfo from '@/components/card-elements/CardInfo.vue'
 import CardLink from '@/components/card-elements/CardLink.vue'
+import IconPlay from '@/components/icons/IconPlay.vue'
 import BadgeMd from '@/components/ui/BadgeMd.vue'
 import MainTag from '@/components/ui/MainTag.vue'
 </script>
@@ -35,7 +36,10 @@ import MainTag from '@/components/ui/MainTag.vue'
 			</div>
 		</div>
 		<div class="card-right">
-			<img src="./card-photo.png" alt="" class="card-photo" />
+			<div class="card-photo-wrapper">
+				<IconPlay class="card-photo-icon" />
+				<img src="./card-photo.png" alt="" class="card-photo" />
+			</div>
 			<CardInfo title="Время процедуры" icon="time" text="60 минут" />
 			<CardInfo title="Стоимость" icon="pay" text="от 4 500₽" />
 		</div>
@@ -54,8 +58,8 @@ import MainTag from '@/components/ui/MainTag.vue'
 
 .card-link {
 	position: absolute;
-  bottom: 40px;
-  left: 40px;
+	bottom: 40px;
+	left: 40px;
 }
 
 .card-left {
@@ -92,7 +96,46 @@ import MainTag from '@/components/ui/MainTag.vue'
 	gap: 20px;
 }
 
-.card-photo {
+.card-photo-wrapper {
+  cursor: pointer;
+	position: relative;
+	border-radius: 36px;
 	margin-bottom: 30px;
+}
+
+.card-photo-wrapper:after {
+	display: block;
+	content: '';
+	position: absolute;
+	left: -7px;
+	right: -7px;
+	bottom: -7px;
+	top: -7px;
+
+	border: 0 solid #fff;
+	border-radius: 36px;
+	transition: 0.2s;
+}
+
+.card-photo-wrapper:hover::after {
+	border-width: 14px;
+}
+
+.card-photo {
+	display: block;
+	height: auto;
+}
+
+.card-photo-icon {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	opacity: 0;
+	transition: 0.2s;
+}
+
+.card-photo-wrapper:hover .card-photo-icon {
+	opacity: 1;
 }
 </style>
