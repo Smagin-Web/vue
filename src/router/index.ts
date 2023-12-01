@@ -9,6 +9,7 @@ import DevicesView from '@/views/DevicesView.vue'
 import MediaView from '@/views/MediaView.vue'
 import FaqView from '@/views/FaqView.vue'
 import MastersView from '@/views/MastersView.vue'
+import MasterView from '@/views/MasterView.vue'
 
 const router = createRouter({
 	history: createWebHistory(import.meta.env.BASE_URL),
@@ -62,6 +63,11 @@ const router = createRouter({
 			path: '/masters',
 			name: 'masters',
 			component: MastersView
+		},
+		{
+			path: '/master',
+			name: 'master',
+			component: MasterView
 		}
 	]
 })
