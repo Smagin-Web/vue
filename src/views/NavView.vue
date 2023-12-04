@@ -32,6 +32,7 @@ const handleScroll = (event: WheelEvent) => {
 				<a class="link" href="/media">7) Медиа</a>
 				<a class="link" href="/faq">8) Faq</a>
 				<a class="link" href="/masters">9) Специалисты</a>
+				<a class="link" href="/master">10) Карточка специалиста</a>
 			</div>
 		</MContainer>
 
@@ -45,7 +46,8 @@ const handleScroll = (event: WheelEvent) => {
 }
 
 .link {
+	color: rgb(65, 55, 55);
 	display: block;
-	font-size: 35px;
+	font-size: 28px;
 }
 </style>
