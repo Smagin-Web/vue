@@ -2,13 +2,10 @@
 import CardReviewMaster from '@/components/cards/CardReviewMaster.vue'
 import MContainer from '@/components/shared/MContainer.vue'
 import MButtonBig from '@/components/buttons/MButtonBig.vue'
-
-import { Swiper, SwiperSlide } from 'swiper/vue'
-import { Pagination } from 'swiper/modules'
-import 'swiper/css'
 import MButtonOutlineBig from '@/components/buttons/MButtonOutlineBig.vue'
 
-const modules = [Pagination]
+import SliderVariant1 from '@/components/shared/SliderVariant1.vue'
+import { SwiperSlide } from 'swiper/vue'
 </script>
 
 <template>
@@ -17,32 +14,18 @@ const modules = [Pagination]
 			<h3 class="heading-section">Последние отзывы о специалисте</h3>
 		</MContainer>
 
-		<MContainer class="container-custom">
-			<div style="overflow: hidden">
-				<div class="content">
-					<Swiper
-						class="swiper-custom"
-						:modules="modules"
-						:pagination="{
-							clickable: true
-						}"
-						:breakpoints="{
-							300: { slidesPerView: 1, spaceBetween: 24 },
-							600: { slidesPerView: 1, spaceBetween: 24 },
-							1000: { slidesPerView: 1, spaceBetween: 24 }
-						}"
-					>
-						<SwiperSlide><CardReviewMaster /></SwiperSlide>
-						<SwiperSlide><CardReviewMaster /></SwiperSlide>
-						<SwiperSlide><CardReviewMaster /></SwiperSlide>
-						<SwiperSlide><CardReviewMaster /></SwiperSlide>
-						<SwiperSlide><CardReviewMaster /></SwiperSlide>
-					</Swiper>
-				</div>
-				<div class="buttons">
-					<MButtonBig>Посмотреть больше</MButtonBig>
-					<MButtonOutlineBig>Оставить отзыв</MButtonOutlineBig>
-				</div>
+		<SliderVariant1>
+			<SwiperSlide><CardReviewMaster /></SwiperSlide>
+			<SwiperSlide><CardReviewMaster /></SwiperSlide>
+			<SwiperSlide><CardReviewMaster /></SwiperSlide>
+			<SwiperSlide><CardReviewMaster /></SwiperSlide>
+			<SwiperSlide><CardReviewMaster /></SwiperSlide>
+		</SliderVariant1>
+
+		<MContainer>
+			<div class="buttons">
+				<MButtonBig>Посмотреть больше</MButtonBig>
+				<MButtonOutlineBig>Оставить отзыв</MButtonOutlineBig>
 			</div>
 		</MContainer>
 	</section>
@@ -86,8 +69,8 @@ const modules = [Pagination]
 }
 
 .buttons {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
+	display: flex;
+	justify-content: center;
+	gap: 30px;
 }
 </style>
