@@ -1,11 +1,7 @@
 <script setup lang="ts">
-const items = [
-	'Коррекция мимических морщин',
-	'Объемное моделирование лица филлерами',
-	'Мезотерапия, биоревитализация',
-	'Нитевые методики (Аптос, ПДО)',
-	'Химические пилинги'
-]
+defineProps<{
+	items: string[]
+}>()
 </script>
 
 <template>
@@ -27,5 +23,14 @@ const items = [
 	font-family: 'BrisaSans';
 	font-size: 22px;
 	font-weight: 400;
+}
+
+@media (max-width: 1000px) {
+	.list {
+		padding-bottom: 32px;
+	}
+	.list-item {
+		font-size: 18px;
+	}
 }
 </style>

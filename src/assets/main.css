@@ -152,7 +152,7 @@ body {
 	/* font-weight: 400; */
 }
 
-svg {
+svg, img {
 	display: block;
 }
 
