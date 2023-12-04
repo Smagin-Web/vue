@@ -1,10 +1,12 @@
 <script setup lang="ts">
 import CardReviewMaster from '@/components/cards/CardReviewMaster.vue'
 import MContainer from '@/components/shared/MContainer.vue'
+import MButtonBig from '@/components/buttons/MButtonBig.vue'
 
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import { Pagination } from 'swiper/modules'
 import 'swiper/css'
+import MButtonOutlineBig from '@/components/buttons/MButtonOutlineBig.vue'
 
 const modules = [Pagination]
 </script>
@@ -36,6 +38,10 @@ const modules = [Pagination]
 						<SwiperSlide><CardReviewMaster /></SwiperSlide>
 						<SwiperSlide><CardReviewMaster /></SwiperSlide>
 					</Swiper>
+				</div>
+				<div class="buttons">
+					<MButtonBig>Посмотреть больше</MButtonBig>
+					<MButtonOutlineBig>Оставить отзыв</MButtonOutlineBig>
 				</div>
 			</div>
 		</MContainer>
@@ -77,5 +83,11 @@ const modules = [Pagination]
 .swiper {
 	padding-bottom: 100px;
 	overflow: visible;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
 }
 </style>

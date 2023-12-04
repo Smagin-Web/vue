@@ -6,6 +6,8 @@ import ButtonFixed from '@/components/buttons/ButtonFixed.vue'
 
 import SectionMaster from '@/components/sections/master/SectionMaster.vue'
 import SectionMasterReview from '@/components/sections/master/SectionMasterReview.vue'
+import SectionMasters from '@/components/sections/shared/section-masters/SectionMasters.vue'
+import SectionOffer from '@/components/sections/shared/section-offer/SectionOffer.vue'
 
 const headerStyles = ref('display: block')
 
@@ -25,6 +27,8 @@ const handleScroll = (event: WheelEvent) => {
 
 		<SectionMaster />
 		<SectionMasterReview />
+		<SectionMasters />
+    <SectionOffer />
 
 		<Footer />
 	</div>
