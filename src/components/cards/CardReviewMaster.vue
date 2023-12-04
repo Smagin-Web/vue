@@ -44,8 +44,8 @@ import ButtonMore from '@/components/buttons/ButtonMore.vue'
 .button-read-more {
 	position: absolute;
 	bottom: 32px;
-  left: 50%;
-  transform: translateX(-50%);
+	left: 50%;
+	transform: translateX(-50%);
 }
 
 .card-head {
