@@ -40,6 +40,7 @@ import ButtonMore from '@/components/buttons/ButtonMore.vue'
 	padding: 68px 40px 80px;
 	max-width: 544px;
 	transition: 0.2s;
+	cursor: pointer;
 }
 
 .button-read-more {

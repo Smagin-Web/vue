@@ -10,7 +10,7 @@ const modules = [Pagination]
 
 let swiperObject: any = undefined
 
-const onSwiperInit = swiper => {
+const onSwiperInit = (swiper: any) => {
 	swiperObject = swiper
 	console.log('hello')
 }
