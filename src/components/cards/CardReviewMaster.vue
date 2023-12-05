@@ -39,6 +39,7 @@ import ButtonMore from '@/components/buttons/ButtonMore.vue'
 	background: #fff;
 	padding: 68px 40px 80px;
 	max-width: 544px;
+	transition: 0.2s;
 }
 
 .button-read-more {
@@ -46,6 +47,16 @@ import ButtonMore from '@/components/buttons/ButtonMore.vue'
 	bottom: 32px;
 	left: 50%;
 	transform: translateX(-50%);
+	opacity: 0;
+	transition: 0.1s;
+}
+
+.card:hover .button-read-more {
+	opacity: 1;
+}
+
+.card:hover {
+	background: rgba(255, 252, 252, 0.9);
 }
 
 .card-head {
