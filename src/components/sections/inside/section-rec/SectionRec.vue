@@ -2,11 +2,8 @@
 import MContainer from '@/components/shared/MContainer.vue'
 import SectionRecCard from './SectionRecCard.vue'
 
-import { Swiper, SwiperSlide } from 'swiper/vue'
-import { Pagination } from 'swiper/modules'
-import 'swiper/css'
-
-const modules = [Pagination]
+import { SwiperSlide } from 'swiper/vue'
+import SliderVariant1 from '@/components/shared/SliderVariant1.vue'
 </script>
 
 <template>
@@ -15,30 +12,13 @@ const modules = [Pagination]
 			<h3 class="heading-section heading">Рекомендованная косметика</h3>
 		</MContainer>
 
-		<MContainer class="container-custom">
-			<div style="overflow: hidden">
-				<div class="content">
-					<Swiper
-						class="swiper-custom"
-						:modules="modules"
-						:pagination="{
-							clickable: true
-						}"
-						:breakpoints="{
-							300: { slidesPerView: 1, spaceBetween: 0 },
-							600: { slidesPerView: 1, spaceBetween: 0 },
-							1000: { slidesPerView: 1, spaceBetween: 0 }
-						}"
-					>
-						<SwiperSlide><SectionRecCard /></SwiperSlide>
-						<SwiperSlide><SectionRecCard /></SwiperSlide>
-						<SwiperSlide><SectionRecCard /></SwiperSlide>
-						<SwiperSlide><SectionRecCard /></SwiperSlide>
-						<SwiperSlide><SectionRecCard /></SwiperSlide>
-					</Swiper>
-				</div>
-			</div>
-		</MContainer>
+		<SliderVariant1>
+			<SwiperSlide><SectionRecCard /></SwiperSlide>
+			<SwiperSlide><SectionRecCard /></SwiperSlide>
+			<SwiperSlide><SectionRecCard /></SwiperSlide>
+			<SwiperSlide><SectionRecCard /></SwiperSlide>
+			<SwiperSlide><SectionRecCard /></SwiperSlide>
+		</SliderVariant1>
 	</section>
 </template>
 
@@ -54,33 +34,6 @@ const modules = [Pagination]
 .content {
 	max-width: 544px;
 	margin: 0 auto;
-}
-
-.swiper-custom :deep() .swiper-pagination-bullet {
-	position: relative;
-	display: block;
-	width: 60px;
-	height: 20px;
-	background-color: #ede4da;
-	border-radius: 100px;
-	z-index: 10;
-}
-
-.swiper-custom :deep() .swiper-pagination-bullet-active {
-	background-color: #ae8c8e;
-}
-
-.swiper-custom :deep() .swiper-pagination {
-	display: flex;
-	cursor: pointer;
-	justify-content: center;
-	gap: 24px;
-	margin-top: 50px;
-}
-
-.swiper {
-	padding-bottom: 100px;
-	overflow: visible;
 }
 
 @media (max-width: 1875px) {
@@ -105,14 +58,6 @@ const modules = [Pagination]
 	}
 	.content {
 		max-width: 400px;
-	}
-	.swiper-custom :deep() .swiper-pagination-bullet {
-		width: 40px;
-		height: 14px;
-	}
-	.swiper-custom :deep() .swiper-pagination {
-		gap: 24px;
-		margin-top: 32px;
 	}
 }
 </style>

@@ -41,6 +41,7 @@ const sliderPrev = () => {
 					:pagination="{
 						clickable: true
 					}"
+          :initialSlide="1"
 					:breakpoints="{
 						300: { slidesPerView: 1, spaceBetween: 24 },
 						600: { slidesPerView: 1, spaceBetween: 24 },
