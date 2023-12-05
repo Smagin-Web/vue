@@ -10,6 +10,7 @@ import MediaView from '@/views/MediaView.vue'
 import FaqView from '@/views/FaqView.vue'
 import MastersView from '@/views/MastersView.vue'
 import MasterView from '@/views/MasterView.vue'
+import ReviewView from '@/views/ReviewView.vue'
 
 const router = createRouter({
 	history: createWebHistory(import.meta.env.BASE_URL),
@@ -68,6 +69,11 @@ const router = createRouter({
 			path: '/master',
 			name: 'master',
 			component: MasterView
+		},
+		{
+			path: '/review',
+			name: 'review',
+			component: ReviewView
 		}
 	]
 })
