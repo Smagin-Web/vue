@@ -2,7 +2,6 @@
 import CardReviewMaster from '@/components/cards/CardReviewMaster.vue'
 import MContainer from '@/components/shared/MContainer.vue'
 import MButtonBig from '@/components/buttons/MButtonBig.vue'
-import MButtonOutlineBig from '@/components/buttons/MButtonOutlineBig.vue'
 
 import SliderVariant1 from '@/components/shared/SliderVariant1.vue'
 import { SwiperSlide } from 'swiper/vue'
@@ -11,7 +10,7 @@ import { SwiperSlide } from 'swiper/vue'
 <template>
 	<section class="section-master-review">
 		<MContainer>
-			<h3 class="heading-section">Последние отзывы о специалисте</h3>
+			<h3 class="heading-section">Другие отзывы о специалисте</h3>
 		</MContainer>
 
 		<SliderVariant1>
@@ -24,8 +23,7 @@ import { SwiperSlide } from 'swiper/vue'
 
 		<MContainer>
 			<div class="buttons">
-				<MButtonBig>Посмотреть больше</MButtonBig>
-				<MButtonOutlineBig>Оставить отзыв</MButtonOutlineBig>
+				<MButtonBig>Посмотреть больше отзывов</MButtonBig>
 			</div>
 		</MContainer>
 	</section>
