@@ -22,6 +22,7 @@
 	display: flex;
   align-items: center;
 	gap: 10px;
+	padding-bottom: 20px;
 }
 .item {
 	color: #6d6364;

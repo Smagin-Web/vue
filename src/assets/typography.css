@@ -30,6 +30,13 @@
 	font-weight: 700;
 }
 
+.text-sm {
+	color: #6d6364;
+	font-family: 'BrisaSans';
+	font-size: 22px;
+	font-weight: 400;
+}
+
 @media (max-width: 1780px) {
 	.h-xl {
 		font-size: 48px;
