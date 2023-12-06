@@ -1,8 +1,5 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-import Header from '@/components/shared/Header.vue'
-import Footer from '@/components/shared/Footer.vue'
-import ButtonFixed from '@/components/buttons/ButtonFixed.vue'
+import ViewWrapper from '@/components/ViewWrapper.vue'
 
 import SectionStories from '@/components/sections/shared/section-stories/SectionStories.vue'
 import SectionPreview from '@/components/sections/shared/section-preview/SectionPreview.vue'
@@ -17,7 +14,6 @@ import SectionHelp from '@/components/sections/shared/section-help/SectionHelp.v
 import SectionInfo from '@/components/sections/shared/section-info/SectionInfo.vue'
 import SectionRead from '@/components/sections/shared/section-read/SectionRead.vue'
 
-
 import SectionProcedures from '@/components/sections/inside/section-procedures/SectionProcedures.vue'
 import SectionDevices from '@/components/sections/inside/section-devices/SectionDevices.vue'
 import SectionBanner from '@/components/sections/inside/section-banner/SectionBanner.vue'
@@ -31,10 +27,7 @@ import SectionPluses from '@/components/sections/main/section-pluses/SectionPlus
 </script>
 
 <template>
-	<div @wheel="handleScroll">
-		<ButtonFixed />
-		<Header :style="headerStyles" />
-
+	<ViewWrapper>
 		<SectionBanner />
 		<SectionPluses />
 		<SectionInfo />
@@ -56,29 +49,5 @@ import SectionPluses from '@/components/sections/main/section-pluses/SectionPlus
 		<SectionBonus />
 		<SectionRead />
 		<SectionFaq />
-
-		<Footer />
-	</div>
+	</ViewWrapper>
 </template>
-
-<script lang="ts">
-const headerStyles = ref('display: block')
-
-const handleScroll = (event: WheelEvent) => {
-	if (event.deltaY > 0) {
-		headerStyles.value = 'transform: translateY(-100%)'
-	} else if (event.deltaY < 0) {
-		headerStyles.value = 'transform: translateY(0)'
-	}
-}
-
-export default {
-	components: {},
-
-	data() {
-		return {
-			handleScroll
-		}
-	}
-}
-</script>

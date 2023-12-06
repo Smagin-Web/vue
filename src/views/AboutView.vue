@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import ViewWrapper from '@/components/ViewWrapper.vue'
-
 import SectionReviewAll from '@/components/sections/review/SectionReviewAll.vue'
 </script>
 
