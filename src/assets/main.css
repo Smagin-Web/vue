@@ -1,155 +1,13 @@
 @import './base.css';
-
-@font-face {
-	font-family: 'Pelinka';
-	font-weight: 500;
-	font-style: normal;
-	font-display: auto;
-	src:
-		local('Roboto'),
-		url('/fonts/pelinka/PelinkaBold.woff') format('woff'),
-		url('/fonts/pelinka/PelinkaBold.woff2') format('woff2');
-}
-@font-face {
-	font-family: 'Pelinka';
-	font-weight: 600;
-	font-style: normal;
-	font-display: auto;
-	src:
-		local('Roboto'),
-		url('/fonts/pelinka/PelinkaCondensedBold.woff') format('woff'),
-		url('/fonts/pelinka/PelinkaCondensedBold.woff2') format('woff2');
-}
-@font-face {
-	font-family: 'Pelinka';
-	font-weight: 700;
-	font-style: normal;
-	font-display: auto;
-	src:
-		local('Roboto'),
-		url('/fonts/pelinka/PelinkaExpandedBold.woff') format('woff'),
-		url('/fonts/pelinka/PelinkaExpandedBold.woff2') format('woff2');
-}
-@font-face {
-	font-family: 'Pelinka';
-	font-weight: 400;
-	font-style: normal;
-	font-display: auto;
-	src:
-		local('Roboto'),
-		url('/fonts/pelinka/PelinkaCondensedExtraLight.woff') format('woff'),
-		url('/fonts/pelinka/PelinkaCondensedExtraLight.woff2') format('woff2');
-}
-@font-face {
-	font-family: 'Pelinka';
-	font-weight: 200;
-	font-style: normal;
-	font-display: auto;
-	src:
-		local('Roboto'),
-		url('/fonts/pelinka/PelinkaExpandedExtraLight.woff') format('woff'),
-		url('/fonts/pelinka/PelinkaExpandedExtraLight.woff2') format('woff2');
-}
-@font-face {
-	font-family: 'Pelinka';
-	font-weight: 300;
-	font-style: normal;
-	font-display: auto;
-	src:
-		local('Roboto'),
-		url('/fonts/pelinka/PelinkaExtraLight.woff') format('woff'),
-		url('/fonts/pelinka/PelinkaExtraLight.woff2') format('woff2');
-}
-
-@font-face {
-	font-family: 'BrisaSans';
-	font-weight: 100;
-	font-style: normal;
-	font-display: auto;
-	src:
-		local('Roboto'),
-		url('/fonts/brisa/BrisaSans-Thin.woff') format('woff');
-}
-@font-face {
-	font-family: 'BrisaSans';
-	font-weight: 300;
-	font-style: normal;
-	font-display: auto;
-	src:
-		local('Roboto'),
-		url('/fonts/brisa/BrisaSans-Light.woff') format('woff');
-}
-@font-face {
-	font-family: 'BrisaSans';
-	font-weight: 400;
-	font-style: normal;
-	font-display: auto;
-	src:
-		local('Roboto'),
-		url('/fonts/brisa/BrisaSans-Regular.woff') format('woff');
-}
-@font-face {
-	font-family: 'BrisaSans';
-	font-weight: 500;
-	font-style: normal;
-	font-display: auto;
-	src:
-		local('Roboto'),
-		url('/fonts/brisa/BrisaSans-Medium.woff') format('woff');
-}
-@font-face {
-	font-family: 'BrisaSans';
-	font-weight: 700;
-	font-style: normal;
-	font-display: auto;
-	src:
-		local('Roboto'),
-		url('/fonts/brisa/BrisaSans-Bold.woff') format('woff');
-}
-
-/* UA Brand */
-
-@font-face {
-	font-family: 'UABrand';
-	font-weight: 400;
-	font-style: normal;
-	font-display: auto;
-	src:
-		local('Roboto'),
-		url('/fonts/ua-brand/ua-BRAND-regular.woff2') format('woff2'),
-		url('/fonts/ua-brand/ua-BRAND-regular.woff') format('woff');
-}
-@font-face {
-	font-family: 'UABrand';
-	font-weight: 700;
-	font-style: normal;
-	font-display: auto;
-	src:
-		local('Roboto'),
-		url('/fonts/ua-brand/ua-BRAND-bold.woff2') format('woff2'),
-		url('/fonts/ua-brand/ua-BRAND-bold.woff') format('woff');
-}
-@font-face {
-	font-family: 'UABrand';
-	font-weight: 800;
-	font-style: normal;
-	font-display: auto;
-	src:
-		local('Roboto'),
-		url('/fonts/ua-brand/ua-BRAND-black.woff2') format('woff2'),
-		url('/fonts/ua-brand/ua-BRAND-black.woff') format('woff');
-}
+@import './fonts.css';
 
 #app {
 	background-color: #f4eee8;
-	/* font-family: 'Pelinka', sans-serif; */
 }
 
 body {
-	/* font-family: 'Pelinka', sans-serif; */
 	font-family: 'BrisaSans', sans-serif;
 	overflow-x: hidden;
-	/* font-weight: 400; */
 }
 
 svg,
@@ -164,8 +22,7 @@ img {
 }
 
 a,
-button,
-.green {
+button {
 	cursor: pointer;
 	text-decoration: none;
 	transition: 0.4s;
@@ -199,65 +56,4 @@ h6 {
 
 svg {
 	display: block;
-}
-
-.heading-section {
-	padding-bottom: 40px;
-	font-size: 50px;
-}
-
-.text-section {
-	color: #6d6364;
-	font-size: 24px;
-	padding-bottom: 60px;
-}
-
-.text-lg {
-	color:  #6d6364;
-	font-family: "Pelinka";
-	font-size: 24px;
-	font-weight: 700;
-}
-
-@media (max-width: 1780px) {
-	.heading-section {
-		font-size: 48px;
-	}
-}
-
-@media (max-width: 1640px) {
-	.heading-section {
-		font-size: 44px;
-	}
-}
-
-@media (max-width: 1500px) {
-	.heading-section {
-		font-size: 38px;
-	}
-}
-
-@media (max-width: 1400px) {
-	.heading-section {
-		font-size: 36px;
-	}
-}
-
-@media (max-width: 1200px) {
-	.heading-section {
-		font-size: 32px;
-	}
-}
-
-@media screen and (max-width: 1000px) {
-	.heading-section {
-		padding-bottom: 20px;
-		font-size: 20px;
-	}
-
-	.text-section {
-		color: #6d6364;
-		font-size: 17px;
-		padding-bottom: 34px;
-	}
 }

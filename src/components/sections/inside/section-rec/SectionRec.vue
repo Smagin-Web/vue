@@ -9,7 +9,7 @@ import SliderVariant1 from '@/components/shared/SliderVariant1.vue'
 <template>
 	<section class="section-procedures">
 		<MContainer>
-			<h3 class="heading-section heading">Рекомендованная косметика</h3>
+			<h3 class="h-xl heading">Рекомендованная косметика</h3>
 		</MContainer>
 
 		<SliderVariant1>

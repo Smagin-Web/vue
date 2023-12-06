@@ -6,7 +6,7 @@ import SectionBlockResponse from './SectionBlockResponse.vue'
 <template>
 	<section class="section-other">
 		<MContainer>
-			<h4 class="heading-section heading-section--other">
+			<h4 class="h-xl heading-section--other">
 				Другие примеры результата, к&nbsp;которому мы&nbsp;помогли придти
 			</h4>
 			<SectionBlockResponse />

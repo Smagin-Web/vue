@@ -8,7 +8,7 @@ import SectionCirclesBlock from './SectionCirclesBlock.vue'
 <template>
 	<section class="section">
 		<MContainer>
-			<h3 class="heading-section heading">
+			<h3 class="h-xl heading">
 				<span style="position: relative">
 					Отзывы клиентов в&nbsp;кружочках
 					<SectionCirclesArrowSm class="heading-icon-sm" />

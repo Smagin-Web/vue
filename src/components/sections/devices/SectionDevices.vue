@@ -8,7 +8,7 @@ import SectionDevicesCard from './SectionDevicesCard.vue'
 	<section class="section-devices">
 		<MContainer>
 			<BreadCrumbs />
-			<h3 class="heading-section">Аппараты</h3>
+			<h3 class="h-xl">Аппараты</h3>
 			<p class="section-devices-text">
 				Мы используем оригинальное оборудование премиум-класса, которое имеет
 				сертификаты, регистрационные удостоверения Российской Федерации, а также

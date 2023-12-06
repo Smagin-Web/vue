@@ -8,7 +8,7 @@ const text = `Lorem ipsum dolor sit amet consectetur. Elit mi in nisi tincidunt 
 <template>
 	<section class="section-procedures">
 		<MContainer>
-			<h3 class="heading-section heading">Выбери свой тариф</h3>
+			<h3 class="h-xl heading">Выбери свой тариф</h3>
 			<div class="cards-wrapper">
 				<SectionTariffCard
 					:text="text"

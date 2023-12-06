@@ -10,7 +10,7 @@ import { SwiperSlide } from 'swiper/vue'
 <template>
 	<section class="section-master-review">
 		<MContainer>
-			<h3 class="heading-section">Другие отзывы о специалисте</h3>
+			<h3 class="h-xl">Другие отзывы о специалисте</h3>
 		</MContainer>
 
 		<SliderVariant1>

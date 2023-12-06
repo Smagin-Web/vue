@@ -1,0 +1,140 @@
+
+@font-face {
+	font-family: 'Pelinka';
+	font-weight: 500;
+	font-style: normal;
+	font-display: auto;
+	src:
+		local('Roboto'),
+		url('/fonts/pelinka/PelinkaBold.woff') format('woff'),
+		url('/fonts/pelinka/PelinkaBold.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'Pelinka';
+	font-weight: 600;
+	font-style: normal;
+	font-display: auto;
+	src:
+		local('Roboto'),
+		url('/fonts/pelinka/PelinkaCondensedBold.woff') format('woff'),
+		url('/fonts/pelinka/PelinkaCondensedBold.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'Pelinka';
+	font-weight: 700;
+	font-style: normal;
+	font-display: auto;
+	src:
+		local('Roboto'),
+		url('/fonts/pelinka/PelinkaExpandedBold.woff') format('woff'),
+		url('/fonts/pelinka/PelinkaExpandedBold.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'Pelinka';
+	font-weight: 400;
+	font-style: normal;
+	font-display: auto;
+	src:
+		local('Roboto'),
+		url('/fonts/pelinka/PelinkaCondensedExtraLight.woff') format('woff'),
+		url('/fonts/pelinka/PelinkaCondensedExtraLight.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'Pelinka';
+	font-weight: 200;
+	font-style: normal;
+	font-display: auto;
+	src:
+		local('Roboto'),
+		url('/fonts/pelinka/PelinkaExpandedExtraLight.woff') format('woff'),
+		url('/fonts/pelinka/PelinkaExpandedExtraLight.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'Pelinka';
+	font-weight: 300;
+	font-style: normal;
+	font-display: auto;
+	src:
+		local('Roboto'),
+		url('/fonts/pelinka/PelinkaExtraLight.woff') format('woff'),
+		url('/fonts/pelinka/PelinkaExtraLight.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'BrisaSans';
+	font-weight: 100;
+	font-style: normal;
+	font-display: auto;
+	src:
+		local('Roboto'),
+		url('/fonts/brisa/BrisaSans-Thin.woff') format('woff');
+}
+@font-face {
+	font-family: 'BrisaSans';
+	font-weight: 300;
+	font-style: normal;
+	font-display: auto;
+	src:
+		local('Roboto'),
+		url('/fonts/brisa/BrisaSans-Light.woff') format('woff');
+}
+@font-face {
+	font-family: 'BrisaSans';
+	font-weight: 400;
+	font-style: normal;
+	font-display: auto;
+	src:
+		local('Roboto'),
+		url('/fonts/brisa/BrisaSans-Regular.woff') format('woff');
+}
+@font-face {
+	font-family: 'BrisaSans';
+	font-weight: 500;
+	font-style: normal;
+	font-display: auto;
+	src:
+		local('Roboto'),
+		url('/fonts/brisa/BrisaSans-Medium.woff') format('woff');
+}
+@font-face {
+	font-family: 'BrisaSans';
+	font-weight: 700;
+	font-style: normal;
+	font-display: auto;
+	src:
+		local('Roboto'),
+		url('/fonts/brisa/BrisaSans-Bold.woff') format('woff');
+}
+
+/* UA Brand */
+
+@font-face {
+	font-family: 'UABrand';
+	font-weight: 400;
+	font-style: normal;
+	font-display: auto;
+	src:
+		local('Roboto'),
+		url('/fonts/ua-brand/ua-BRAND-regular.woff2') format('woff2'),
+		url('/fonts/ua-brand/ua-BRAND-regular.woff') format('woff');
+}
+@font-face {
+	font-family: 'UABrand';
+	font-weight: 700;
+	font-style: normal;
+	font-display: auto;
+	src:
+		local('Roboto'),
+		url('/fonts/ua-brand/ua-BRAND-bold.woff2') format('woff2'),
+		url('/fonts/ua-brand/ua-BRAND-bold.woff') format('woff');
+}
+@font-face {
+	font-family: 'UABrand';
+	font-weight: 800;
+	font-style: normal;
+	font-display: auto;
+	src:
+		local('Roboto'),
+		url('/fonts/ua-brand/ua-BRAND-black.woff2') format('woff2'),
+		url('/fonts/ua-brand/ua-BRAND-black.woff') format('woff');
+}

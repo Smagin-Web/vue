@@ -6,7 +6,7 @@ import SectionPriceItem from './SectionPriceItem.vue'
 <template>
 	<section class="section-price">
 		<MContainer>
-			<h3 class="heading-section">Цены на процедуры</h3>
+			<h3 class="h-xl">Цены на процедуры</h3>
 			<div class="items">
 				<SectionPriceItem />
 				<SectionPriceItem />

@@ -13,7 +13,7 @@ import IconLogo from './IconLogo.vue'
 	<section class="section-review-inside">
 		<MContainer>
 			<BreadCrumbs />
-			<h3 class="heading-section heading-section-custom">
+			<h3 class="h-xl heading-section-custom">
 				Отзыв о работе
 				<br />
 				Юлии Епишиной

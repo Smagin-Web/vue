@@ -10,7 +10,7 @@ import 'swiper/css'
 <template>
 	<section class="section-read">
 		<MContainer>
-			<h3 class="heading-section">Читай полезное и интересное</h3>
+			<h3 class="h-xl">Читай полезное и интересное</h3>
 			<h5 class="text-section section-read-text">
 				Мы&nbsp;хотим поделиться с&nbsp;тобой некоторыми советами, которые
 				помогут тебе ухаживать за&nbsp;кожей

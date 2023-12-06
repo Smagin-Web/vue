@@ -10,7 +10,7 @@ import SectionProceduresCard from '../../inside/section-procedures/SectionProced
 	<section class="section-categories">
 		<MContainer>
 			<BreadCrumbs class="bread-crumbs" />
-			<h1 class="heading-section">Процедуры</h1>
+			<h1 class="h-xl">Процедуры</h1>
 			<div class="filters">
 				<Filter :active="true">Все процедуры</Filter>
 				<Filter :active="false">AntiAcne Concept</Filter>

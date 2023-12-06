@@ -11,7 +11,7 @@ import MButtonOutline from '@/components/buttons/MButtonOutline.vue'
 	<section class="section-masters">
 		<MContainer class="container-custom">
 			<div class="section-masters-content">
-				<h3 class="heading-section">Давай знакомиться</h3>
+				<h3 class="h-xl heading-section">Давай знакомиться</h3>
 				<h5 class="text-section" style="max-width: 866px">
 					Врачи-косметологи Face Concept помогут вернуть твоей коже молодость
 					и&nbsp;красоту!

@@ -6,7 +6,7 @@ import ListItem from './ListItem.vue'
 <template>
 	<section class="section-pluses">
 		<MContainer>
-			<h4 class="heading-section section-main-heading">
+			<h4 class="h-xl section-main-heading">
 				Преимущества ультразвукового омоложения SKINOVA&nbsp;PRO
 			</h4>
 
