@@ -33,6 +33,7 @@ const handleScroll = (event: WheelEvent) => {
 				<a class="link" href="/faq">8) Faq</a>
 				<a class="link" href="/masters">9) Специалисты</a>
 				<a class="link" href="/master">10) Карточка специалиста</a>
+				<a class="link" href="/review">11) Отзывы</a>
 			</div>
 		</MContainer>
 

@@ -3,6 +3,8 @@ import MContainer from '@/components/shared/MContainer.vue'
 import BreadCrumbs from '@/components/shared/BreadCrumbs.vue'
 import CardReviewMaster from '@/components/cards/CardReviewMaster.vue'
 import PaginationItems from '@/components/shared/PaginationItems.vue'
+import SearchInput from '@/components/shared/SearchInput.vue'
+import MButtonBig from '@/components/buttons/MButtonBig.vue'
 </script>
 
 <template>
@@ -10,6 +12,14 @@ import PaginationItems from '@/components/shared/PaginationItems.vue'
 		<MContainer>
 			<BreadCrumbs />
 			<h3 class="heading-section">Отзывы</h3>
+			<div class="content">
+				<p class="text-lg" style="max-width: 660px;">
+					Выберите специалиста, о&nbsp;котором хотите прочитать или оставить
+					отзыв
+				</p>
+				<SearchInput />
+				<MButtonBig>Оставить отзыв</MButtonBig>
+			</div>
 			<div class="cards">
 				<CardReviewMaster master-name="Заика Ольга" />
 				<CardReviewMaster master-name="Заика Ольга" />
@@ -29,10 +39,18 @@ import PaginationItems from '@/components/shared/PaginationItems.vue'
 	padding-bottom: 150px;
 }
 
+.content {
+	padding-bottom: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 34px;
+}
+
 .cards {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 50px 24px;
-  margin-bottom: 70px;
+	margin-bottom: 70px;
 }
 </style>

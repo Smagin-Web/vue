@@ -152,7 +152,8 @@ body {
 	/* font-weight: 400; */
 }
 
-svg, img {
+svg,
+img {
 	display: block;
 }
 
@@ -209,6 +210,13 @@ svg {
 	color: #6d6364;
 	font-size: 24px;
 	padding-bottom: 60px;
+}
+
+.text-lg {
+	color:  #6d6364;
+	font-family: "Pelinka";
+	font-size: 24px;
+	font-weight: 700;
 }
 
 @media (max-width: 1780px) {

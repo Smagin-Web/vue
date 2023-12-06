@@ -57,7 +57,7 @@ defineProps<{
 }
 
 .card-wrapper-with-header {
-	margin-top: 100px;
+	margin-top: 110px;
 }
 
 .card-header {
