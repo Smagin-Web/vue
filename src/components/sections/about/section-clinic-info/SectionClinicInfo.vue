@@ -1,15 +1,16 @@
 <script setup lang="ts">
 import MContainer from '@/components/shared/MContainer.vue'
 import BreadCrumbs from '@/components/shared/BreadCrumbs.vue'
+import SectionClinicInfoRight from './SectionClinicInfoRight.vue'
 </script>
 
 <template>
 	<section class="section-clinic-info">
 		<MContainer>
 			<BreadCrumbs />
-			<h1 class="h-xxl title">О клинике</h1>
 			<div class="content">
 				<div>
+					<h1 class="h-xxl title">О клинике</h1>
 					<h3 class="h-l subtitle">
 						Наш Центр специализируется на&nbsp;аппаратной косметологии
 						и&nbsp;имеет медицинскую лицензию
@@ -20,7 +21,7 @@ import BreadCrumbs from '@/components/shared/BreadCrumbs.vue'
 						начиная от черных точек и&nbsp;заканчивая возрастными изменениями.
 					</p>
 				</div>
-				<img src="./photo.png" alt="" />
+				<SectionClinicInfoRight />
 			</div>
 		</MContainer>
 	</section>
@@ -34,9 +35,8 @@ import BreadCrumbs from '@/components/shared/BreadCrumbs.vue'
 
 .content {
 	display: flex;
-	align-items: center;
-  justify-content: space-between;
-  gap: 40px;
+	justify-content: space-between;
+	gap: 40px;
 }
 
 .title {
@@ -49,6 +49,6 @@ import BreadCrumbs from '@/components/shared/BreadCrumbs.vue'
 }
 
 .text {
-	max-width: 820px;
+	max-width: 760px;
 }
 </style>

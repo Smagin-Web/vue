@@ -7,6 +7,8 @@ import IconLocation from './IconLocation.vue'
 import IconCalendar from './IconCalendar.vue'
 import IconPerson from './IconPerson.vue'
 import IconLogo from './IconLogo.vue'
+import IconText1 from './IconText1.vue'
+import IconText2 from './IconText2.vue'
 </script>
 
 <template>
@@ -64,6 +66,8 @@ import IconLogo from './IconLogo.vue'
 				</div>
 				<div class="photo-wrapper">
 					<img src="./noPhoto.png" alt="" class="photo" />
+					<IconText1 class="icon-text icon-text-1" />
+					<IconText2 class="icon-text icon-text-2" />
 				</div>
 			</div>
 		</MContainer>
@@ -137,11 +141,26 @@ import IconLogo from './IconLogo.vue'
 }
 
 .photo-wrapper {
+	position: relative;
 	max-width: 544px;
 }
 
 .photo {
 	width: 100%;
+}
+
+.icon-text {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.icon-text-2 {
+	bottom: 45px;
+}
+
+.icon-text-1 {
+	bottom: 180px;
 }
 
 .card-footer {
@@ -164,12 +183,12 @@ import IconLogo from './IconLogo.vue'
 .card-footer-text {
 	color: #6d6364;
 	font-size: 22px;
-  max-width: 80%;
+	max-width: 80%;
 }
 
 .card-footer-logo {
-  position: absolute;
-  right: 40px;
-  bottom: 32px;
+	position: absolute;
+	right: 40px;
+	bottom: 32px;
 }
 </style>
