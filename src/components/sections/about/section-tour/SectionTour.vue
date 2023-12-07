@@ -5,6 +5,7 @@ import MContainer from '@/components/shared/MContainer.vue'
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import { Pagination } from 'swiper/modules'
 import 'swiper/css'
+import ButtonTour from './ButtonTour.vue'
 
 const modules = [Pagination]
 </script>
@@ -12,8 +13,11 @@ const modules = [Pagination]
 <template>
 	<section class="section-clinic-info">
 		<MContainer>
-			<h2 class="h-l section-heading" style="max-width: 880px">
-				Атмосферное пространство комфорта и&nbsp;красоты
+			<h2 class="h-l section-heading">
+				Атмосферное пространство
+				<br />
+				комфорта и&nbsp;красоты
+				<ButtonTour />
 			</h2>
 			<Swiper
 				class="swiper-custom"
@@ -59,7 +63,11 @@ const modules = [Pagination]
 
 <style scoped>
 .section-heading {
-	padding-bottom: 50px;
+	display: flex;
+	justify-content: space-between;
+  align-items: center;
+
+	padding-bottom: 60px;
 }
 
 .card-room-photo {
