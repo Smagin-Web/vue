@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import ViewWrapper from '@/components/ViewWrapper.vue'
 import SectionClinicInfo from '@/components/sections/about/section-clinic-info/SectionClinicInfo.vue'
+import SectionTour from '@/components/sections/about/section-tour/SectionTour.vue'
+
 import SectionPlaces from '@/components/sections/inside/section-places/SectionPlaces.vue'
 import SectionPluses from '@/components/sections/main/section-pluses/SectionPluses.vue'
 import SectionCircles from '@/components/sections/shared/section-circles/SectionCircles.vue'
@@ -13,6 +15,7 @@ import SectionReview from '@/components/sections/shared/section-review/SectionRe
 	<ViewWrapper>
 		<SectionClinicInfo />
 		<SectionPluses />
+		<SectionTour />
 
 		<SectionPlaces />
 		<SectionReviewPacients />

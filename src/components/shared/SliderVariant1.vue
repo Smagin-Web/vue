@@ -12,7 +12,6 @@ let swiperObject: any = undefined
 
 const onSwiperInit = (swiper: any) => {
 	swiperObject = swiper
-	console.log('hello')
 }
 
 const sliderNext = () => {
