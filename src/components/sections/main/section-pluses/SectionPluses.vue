@@ -31,6 +31,10 @@ onMounted(() => {
 onUnmounted(() => {
 	window.removeEventListener('scroll', handleScroll)
 })
+
+defineProps<{
+	moreText?: string;
+}>()
 </script>
 
 <template>
@@ -39,7 +43,7 @@ onUnmounted(() => {
 			<div class="cards">
 				<SectionPlusesPicture1 :style="parallaxStyle" style="transition: 1s" />
 				<SectionPlusesPicture2
-					:more-text="'Лицензия № ЛО-50-01-010568 от 05.02.2019'"
+					:more-text="moreText"
 					:style="parallaxStyle2"
 					style="transition: 1s"
 				/>

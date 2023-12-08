@@ -14,7 +14,7 @@ import SectionReview from '@/components/sections/shared/section-review/SectionRe
 <template>
 	<ViewWrapper>
 		<SectionClinicInfo />
-		<SectionPluses />
+		<SectionPluses :more-text="'Лицензия № ЛО-50-01-010568 от 05.02.2019'" />
 		<SectionTour />
 
 		<SectionPlaces />
