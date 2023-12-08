@@ -2,6 +2,9 @@
 import PicturePluses2 from '../../../icons/PicturePluses2.vue'
 import SectionPlusesPictureText from './SectionPlusesPictureText.vue'
 import SectionPlusesShadow from './SectionPlusesShadow.vue'
+defineProps<{
+	moreText?: string
+}>()
 </script>
 
 <template>
@@ -20,6 +23,7 @@ import SectionPlusesShadow from './SectionPlusesShadow.vue'
 			<div class="text-wrapper">
 				<SectionPlusesPictureText>
 					Парк&nbsp;лицензированной аппаратной&nbsp;косметологии
+					<span class="more-text" v-if="moreText">{{ moreText }}</span>
 				</SectionPlusesPictureText>
 			</div>
 		</div>
@@ -48,6 +52,13 @@ import SectionPlusesShadow from './SectionPlusesShadow.vue'
 	width: 100%;
 	position: absolute;
 	bottom: 15%;
+}
+
+.more-text {
+	color: #6d6364;
+	font-family: 'BrisaSans';
+	font-size: 18px;
+	font-weight: 400;
 }
 
 .text-wrapper {

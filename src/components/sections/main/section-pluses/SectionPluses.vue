@@ -38,7 +38,11 @@ onUnmounted(() => {
 		<MContainer>
 			<div class="cards">
 				<SectionPlusesPicture1 :style="parallaxStyle" style="transition: 1s" />
-				<SectionPlusesPicture2 :style="parallaxStyle2" style="transition: 1s" />
+				<SectionPlusesPicture2
+					:more-text="'Лицензия № ЛО-50-01-010568 от 05.02.2019'"
+					:style="parallaxStyle2"
+					style="transition: 1s"
+				/>
 				<SectionPlusesPicture3
 					:style="parallaxStyle3"
 					style="transition: 1s"
