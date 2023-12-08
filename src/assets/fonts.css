@@ -67,7 +67,8 @@
 	font-display: auto;
 	src:
 		local('Roboto'),
-		url('/fonts/brisa/BrisaSans-Thin.woff') format('woff');
+		url('/fonts/brisa/BrisaSans-Thin.woff') format('woff'),
+		url('/fonts/brisa/BrisaSans-Thin.woff2') format('woff2');
 }
 @font-face {
 	font-family: 'BrisaSans';
@@ -76,7 +77,8 @@
 	font-display: auto;
 	src:
 		local('Roboto'),
-		url('/fonts/brisa/BrisaSans-Light.woff') format('woff');
+		url('/fonts/brisa/BrisaSans-Light.woff') format('woff'),
+		url('/fonts/brisa/BrisaSans-Light.woff2') format('woff2');
 }
 @font-face {
 	font-family: 'BrisaSans';
@@ -85,7 +87,8 @@
 	font-display: auto;
 	src:
 		local('Roboto'),
-		url('/fonts/brisa/BrisaSans-Regular.woff') format('woff');
+		url('/fonts/brisa/BrisaSans-Regular.woff') format('woff'),
+		url('/fonts/brisa/BrisaSans-Regular.woff2') format('woff2');
 }
 @font-face {
 	font-family: 'BrisaSans';
@@ -94,7 +97,8 @@
 	font-display: auto;
 	src:
 		local('Roboto'),
-		url('/fonts/brisa/BrisaSans-Medium.woff') format('woff');
+		url('/fonts/brisa/BrisaSans-Medium.woff') format('woff'),
+		url('/fonts/brisa/BrisaSans-Medium.woff2') format('woff2');
 }
 @font-face {
 	font-family: 'BrisaSans';
@@ -103,7 +107,8 @@
 	font-display: auto;
 	src:
 		local('Roboto'),
-		url('/fonts/brisa/BrisaSans-Bold.woff') format('woff');
+		url('/fonts/brisa/BrisaSans-Bold.woff') format('woff'),
+		url('/fonts/brisa/BrisaSans-Bold.woff2') format('woff2');
 }
 
 /* UA Brand */
