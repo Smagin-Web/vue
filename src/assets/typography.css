@@ -17,6 +17,13 @@
 	font-weight: 700;
 }
 
+.h-md {
+	color: #000;
+	font-family: 'Pelinka';
+	font-size: 34px;
+	font-weight: 700;
+}
+
 .text-section {
 	color: #6d6364;
 	font-size: 24px;
