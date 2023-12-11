@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import MContainer from '@/components/shared/MContainer.vue'
 import MapBadge from './MapBadge.vue'
+import SelectRoad from './SelectRoad.vue'
 </script>
 
 <template>
@@ -10,11 +11,14 @@ import MapBadge from './MapBadge.vue'
 			<div class="map">
 				<div class="map-header">
 					<h6 class="map-header-title">Ближайшие станции метро</h6>
-					<div class="map-header-badges">
-						<MapBadge number="8">Авиамоторная</MapBadge>
-						<MapBadge number="8">Площадь Ильича</MapBadge>
-						<MapBadge number="11" color="#7ECECE">Лефортово</MapBadge>
-						<MapBadge number="10" color="#BED968">Римская</MapBadge>
+					<div class="map-header-flex">
+						<div class="map-header-badges">
+							<MapBadge number="8">Авиамоторная</MapBadge>
+							<MapBadge number="8">Площадь Ильича</MapBadge>
+							<MapBadge number="11" color="#7ECECE">Лефортово</MapBadge>
+							<MapBadge number="10" color="#BED968">Римская</MapBadge>
+						</div>
+						<SelectRoad />
 					</div>
 				</div>
 				<div class="map-body">
@@ -49,8 +53,15 @@ import MapBadge from './MapBadge.vue'
 	padding-right: 40px;
 }
 
+.map-header-flex {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-bottom: 20px;
+}
+
 .map-header-badges {
-  padding-top: 32px;
+	padding-top: 32px;
 	padding-bottom: 32px;
 	display: flex;
 	gap: 30px;
