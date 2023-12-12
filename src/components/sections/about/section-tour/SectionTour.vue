@@ -65,9 +65,11 @@ const modules = [Pagination]
 .section-heading {
 	display: flex;
 	justify-content: space-between;
-  align-items: center;
+	align-items: center;
 
 	padding-bottom: 60px;
+	overflow: hidden;
+	max-width: 100%;
 }
 
 .card-room-photo {
@@ -110,5 +112,39 @@ const modules = [Pagination]
 	justify-content: center;
 	gap: 24px;
 	margin-top: 50px;
+}
+
+@media (max-width: 1200px) {
+	.card-room-photo {
+		height: 324px;
+		width: auto;
+		object-fit: cover;
+	}
+}
+
+@media (max-width: 1000px) {
+	.card-room-photo {
+		height: 250px;
+		width: auto;
+		object-fit: cover;
+	}
+}
+
+@media (max-width: 640px) {
+	.section-heading {
+		flex-direction: column;
+		align-items: start;
+		gap: 20px;
+	}
+
+	.swiper-custom :deep() .swiper-pagination-bullet {
+		width: 40px;
+		height: 12px;
+		border-radius: 80px;
+	}
+	.swiper-custom :deep() .swiper-pagination {
+		margin-top: 30px;
+		gap: 14px;
+	}
 }
 </style>

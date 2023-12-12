@@ -4,6 +4,7 @@ import MButtonBig from '@/components/buttons/MButtonBig.vue'
 <template>
 	<MButtonBig class="button-tour">
 		<svg
+		class="button-tour-icon"
 			xmlns="http://www.w3.org/2000/svg"
 			width="24"
 			height="24"
@@ -31,9 +32,24 @@ import MButtonBig from '@/components/buttons/MButtonBig.vue'
 
 <style scoped>
 .button-tour {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 15px;
+}
+
+@media (max-width: 1000px) {
+	.button-tour {
+		max-width: 200px;
+		max-height: 50px;
+		font-size: 16px;
+		font-weight: 400;
+		padding-left: 10px;
+		gap: 8px;
+	}
+	.button-tour-icon {
+		width: 16px;
+		height: auto;
+	}
 }
 </style>

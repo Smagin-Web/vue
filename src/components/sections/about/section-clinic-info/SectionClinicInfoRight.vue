@@ -45,6 +45,7 @@ import IconPlay from '@/components/icons/IconPlay.vue'
 
 .content-photo {
 	margin-top: 32px;
+	max-width: 100%;
 }
 
 .content-photo-icon {

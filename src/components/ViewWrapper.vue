@@ -16,10 +16,16 @@ const handleScroll = (event: WheelEvent) => {
 </script>
 
 <template>
-	<div @wheel="handleScroll">
+	<div @wheel="handleScroll" class="page-wrapper">
 		<ButtonFixed />
 		<Header :style="headerStyles" />
 		<slot />
 		<Footer />
 	</div>
 </template>
+
+<style scoped>
+.page-wrapper {
+	padding-top: 194px;
+}
+</style>

@@ -9,7 +9,7 @@ import SectionClinicInfoRight from './SectionClinicInfoRight.vue'
 		<MContainer>
 			<BreadCrumbs />
 			<div class="content">
-				<div>
+				<div class="content-left">
 					<h1 class="h-xxl title">О клинике</h1>
 					<h3 class="h-l subtitle">
 						Наш Центр специализируется на&nbsp;аппаратной косметологии
@@ -21,7 +21,7 @@ import SectionClinicInfoRight from './SectionClinicInfoRight.vue'
 						начиная от черных точек и&nbsp;заканчивая возрастными изменениями.
 					</p>
 				</div>
-				<SectionClinicInfoRight />
+				<SectionClinicInfoRight class="content-right" />
 			</div>
 		</MContainer>
 	</section>
@@ -29,7 +29,6 @@ import SectionClinicInfoRight from './SectionClinicInfoRight.vue'
 
 <style scoped>
 .section-clinic-info {
-	padding-top: 150px;
 	padding-bottom: 150px;
 }
 
@@ -50,5 +49,67 @@ import SectionClinicInfoRight from './SectionClinicInfoRight.vue'
 
 .text {
 	max-width: 760px;
+}
+
+@media (max-width: 1900px) {
+	.title {
+		padding-bottom: 40px;
+	}
+
+	.content-right {
+		max-width: 600px;
+		width: 100%;
+	}
+}
+
+@media (max-width: 1600px) {
+	.content-right {
+		max-width: 550px;
+	}
+}
+
+@media (max-width: 1600px) {
+	.title {
+		padding-bottom: 32px;
+	}
+	.subtitle {
+		padding-bottom: 32px;
+	}
+	.content-right {
+		max-width: 500px;
+	}
+	.text {
+		max-width: 600px;
+	}
+}
+
+@media (max-width: 1350px) {
+	.content-right {
+		max-width: 400px;
+	}
+}
+
+@media (max-width: 1200px) {
+	.text {
+		max-width: 400px;
+	}
+	.content {
+		align-items: center;
+	}
+}
+
+@media (max-width: 1000px) {
+	.content {
+		flex-direction: column;
+		align-items: start;
+		justify-content: start;
+	}
+	.content-right {
+		margin-left: 80px;
+		max-width: 300px;
+	}
+	.content-left {
+		max-width: 600px;
+	}
 }
 </style>

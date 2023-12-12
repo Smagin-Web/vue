@@ -22,6 +22,7 @@ import MContainer from '@/components/shared/MContainer.vue'
 				<a class="link" href="/review-inside">12) Отзыв - карточка</a>
 				<a class="link" href="/about">13) О клинике</a>
 				<a class="link" href="/contacts">14) Контакты</a>
+				<a class="link" href="/branches">15) Филиалы</a>
 			</div>
 		</MContainer>
 	</ViewWrapper>

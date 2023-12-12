@@ -6,7 +6,7 @@ import PricesCard from './PricesCard.vue'
 </script>
 
 <template>
-	<section class="section-prices">
+	<section>
 		<MContainer>
 			<BreadCrumbs class="bread-crumbs" />
 			<h1 class="heading">Цены</h1>
@@ -26,7 +26,7 @@ import PricesCard from './PricesCard.vue'
 					<PricesCard />
 					<PricesCard />
 					<PricesCard />
-          
+
 					<PricesCard />
 					<PricesCard />
 					<PricesCard />
@@ -37,10 +37,6 @@ import PricesCard from './PricesCard.vue'
 </template>
 
 <style scoped>
-.section-prices {
-	padding-top: 180px;
-}
-
 .heading {
 	color: #000;
 	font-size: 60px;
@@ -61,7 +57,7 @@ import PricesCard from './PricesCard.vue'
 }
 
 .cards {
-  display: grid;
-  gap: 10px;
+	display: grid;
+	gap: 10px;
 }
 </style>
