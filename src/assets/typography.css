@@ -78,6 +78,9 @@
 	.h-l {
 		font-size: 34px;
 	}
+	.text-lg {
+		font-size: 22px;
+	}
 	.text-sm {
 		font-size: 20px;
 	}
@@ -92,6 +95,9 @@
 	}
 	.h-l {
 		font-size: 32px;
+	}
+	.text-lg {
+		font-size: 20px;
 	}
 	.text-sm {
 		font-size: 18px;
@@ -112,13 +118,16 @@
 
 @media (max-width: 1000px) {
 	.h-xxl {
-		font-size: 38px;
+		font-size: 30px;
 	}
 	.h-xl {
 		padding-bottom: 20px;
 		font-size: 20px;
 	}
 	.h-l {
+		font-size: 18px;
+	}
+	.text-lg {
 		font-size: 18px;
 	}
 	.text-sm {
@@ -128,5 +137,11 @@
 		color: #6d6364;
 		font-size: 17px;
 		padding-bottom: 34px;
+	}
+}
+
+@media (max-width: 800px) {
+	.h-xxl {
+		font-size: 28px;
 	}
 }

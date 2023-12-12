@@ -17,7 +17,13 @@
 	background-color: transparent;
 
 	border-radius: 100px;
-	border: black 2px solid;
+	border: 2px solid #000;
+}
+
+@media (max-width: 1600px) {
+	.main-button-outline {
+		padding: 18px 0;
+	}
 }
 
 @media (max-width: 1200px) {

@@ -46,8 +46,9 @@ import IconList from './IconList.vue'
 					<a
 						href="https://yandex.ru/maps/213/moscow/category/landmark_attraction/89683368508/?utm_medium=mapframe&utm_source=maps"
 						style="color: #eee; font-size: 12px; position: absolute; top: 28px"
-						>Достопримечательность в Москве</a
 					>
+						Достопримечательность в Москве
+					</a>
 					<iframe
 						src="https://yandex.ru/map-widget/v1/org/moskovskiy_kreml/1023322799/?ll=37.618879%2C55.751426&z=14"
 						width="100%"
@@ -64,12 +65,11 @@ import IconList from './IconList.vue'
 
 <style scoped>
 .section-contacts-card {
-	padding-top: 150px;
 	padding-bottom: 150px;
 }
 
 .heading {
-  padding-bottom: 50px;
+	padding-bottom: 50px;
 }
 
 .buttons {

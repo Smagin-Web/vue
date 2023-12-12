@@ -6,10 +6,10 @@ import PricesCard from './PricesCard.vue'
 </script>
 
 <template>
-	<section>
+	<section class="section-prices">
 		<MContainer>
 			<BreadCrumbs class="bread-crumbs" />
-			<h1 class="heading">Цены</h1>
+			<h1 class="h-xxl heading">Цены</h1>
 			<p class="text">
 				Здесь ты&nbsp;найдешь стоимость услуг, предлагаемых в&nbsp;нашем
 				косметологическом центре Face Concept. После тщательного обследования
@@ -37,9 +37,11 @@ import PricesCard from './PricesCard.vue'
 </template>
 
 <style scoped>
+.section-prices {
+	padding-bottom: 150px;
+}
+
 .heading {
-	color: #000;
-	font-size: 60px;
 	padding-bottom: 50px;
 }
 
@@ -59,5 +61,11 @@ import PricesCard from './PricesCard.vue'
 .cards {
 	display: grid;
 	gap: 10px;
+}
+
+@media (max-width: 1000px) {
+	.section-prices{
+		padding-bottom: 80px;
+	}
 }
 </style>

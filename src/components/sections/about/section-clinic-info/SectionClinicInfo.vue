@@ -112,4 +112,11 @@ import SectionClinicInfoRight from './SectionClinicInfoRight.vue'
 		max-width: 600px;
 	}
 }
+
+@media (max-width: 600px) {
+	.content-right {
+		max-width: 250px;
+		margin-left: 60px;
+	}
+}
 </style>
