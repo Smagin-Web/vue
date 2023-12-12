@@ -39,6 +39,8 @@ import CardPlaceContacts from './CardPlaceContacts.vue'
 	background-color: #fff;
 	padding: 40px;
 	border-radius: 50px;
+
+	cursor: pointer;
 }
 
 .card-text {
@@ -51,7 +53,14 @@ import CardPlaceContacts from './CardPlaceContacts.vue'
 	right: 40px;
 	bottom: 40px;
 	border-radius: 30px;
+	opacity: 0.7;
+	transition: 0.2s;
 }
+
+.card:hover .card-img {
+	opacity: 1;
+}
+
 .card-heading {
 	color: #000;
 	font-size: 34px;
