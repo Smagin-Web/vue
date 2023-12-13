@@ -28,4 +28,10 @@ const handleScroll = (event: WheelEvent) => {
 .page-wrapper {
 	padding-top: 194px;
 }
+
+@media (max-width: 1000px) {
+	.page-wrapper {
+		padding-top: 80px;
+	}
+}
 </style>

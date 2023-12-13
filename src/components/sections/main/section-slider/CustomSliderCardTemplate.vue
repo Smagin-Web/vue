@@ -1,63 +1,76 @@
 <script setup lang="ts">
 import MButtonOutline from '@/components/buttons/MButtonOutline.vue'
 import MButton from '@/components/buttons/MButton.vue'
-import SvgPicture3 from './SvgPicture3.vue'
+
+const props = defineProps([
+	'title',
+	'subtitle',
+	'p1',
+	'p2',
+	'badgeNumber',
+	'badgeName',
+	'badgeColor',
+	'iconSrc',
+	'iconBigSrc'
+])
+
+const getImageUrl = () => {
+	return new URL(
+		`${props.iconSrc || props.iconBigSrc}`,
+		import.meta.url
+	).toString()
+}
 </script>
 
 <template>
 	<div class="card">
 		<div class="card-info-content">
-			<h3 class="title">Детоксикация кожи.</h3>
-			<h5 class="subtitle">
-				Задачей концепта является эффективное лечение заболевания Акне первой,
-				второй и&nbsp;третьей степени.
-			</h5>
+			<h3 class="title" v-html="props.title" />
+			<h5 class="subtitle" v-html="props.subtitle" />
 			<p class="card-text">
-				Комплексный подход к&nbsp;терапии угревой сыпи позволяет специалистам
-				Центра косметологии Face Concept не&nbsp;только быстро избавлять наших
-				пациентов от&nbsp;кожных проблем, но&nbsp;и&nbsp;предупреждать
-				их&nbsp;повторное появление в&nbsp;будущем.
-				<br /><br />
-				Результат нашего лечения ты&nbsp;сможешь увидеть уже после первого
-				посещения.
+				<span v-html="props.p1" />
+				<span v-html="props.p2" />
 			</p>
+
 			<div class="buttons">
 				<div class="card-image-wrapper">
 					<img src="./slider.png" alt="" class="card-image" />
-					<SvgPicture3 class="svg-picture" />
+					<img v-if="props.iconSrc" :src="getImageUrl()" class="svg-picture" />
+					<img
+						v-if="props.iconBigSrc"
+						:src="getImageUrl()"
+						class="svg-picture-head"
+					/>
 				</div>
 
 				<MButton class="first-button">Записаться на приём</MButton>
 				<MButtonOutline>Задать вопрос</MButtonOutline>
 			</div>
 		</div>
+
 		<div class="card-badges">
-			<div class="card-badge">03.</div>
-			<div class="card-badge">Detox Concept</div>
+			<div
+				class="card-badge"
+				:style="`background: ${props.badgeColor}`"
+				v-html="props.badgeNumber"
+			/>
+			<div
+				class="card-badge"
+				:style="`background: ${props.badgeColor}`"
+				v-html="props.badgeName"
+			/>
 		</div>
 	</div>
 </template>
 
 <style scoped>
-/* Animated svg */
-.card-image + svg {
-	position: absolute;
-	top: 1%;
-	right: 15%;
+.svg-picture-head {
 	display: block;
-
-	transition: 0.2s;
+	position: absolute;
+	top: 0;
+	width: 103.2%;
+	height: auto;
 }
-.card-image + svg path {
-	transform: translateY(2px);
-	transition: 2s;
-	opacity: 0;
-}
-.active .card-image + svg path {
-	transform: none;
-	opacity: 1;
-}
-/* ------------ */
 .card-info-content {
 	max-width: 880px;
 }
@@ -74,6 +87,9 @@ import SvgPicture3 from './SvgPicture3.vue'
 }
 
 .card-text {
+	display: grid;
+	gap: 26px;
+
 	color: #6d6364;
 	font-family: 'BrisaSans';
 	font-size: 22px;
@@ -102,7 +118,6 @@ import SvgPicture3 from './SvgPicture3.vue'
 	font-weight: 700;
 
 	border-radius: 20px;
-	background: #a7ca90;
 	padding: 0 22px 4px;
 	z-index: 20;
 }

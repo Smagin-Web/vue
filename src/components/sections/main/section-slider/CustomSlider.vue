@@ -7,14 +7,44 @@ import { Swiper, SwiperSlide } from 'swiper/vue'
 
 import { ref } from 'vue'
 
-import CustomSliderCard1 from './CustomSliderCard1.vue'
-import CustomSliderCard2 from './CustomSliderCard2.vue'
-import CustomSliderCard3 from './CustomSliderCard3.vue'
-import CustomSliderCard4 from './CustomSliderCard4.vue'
-import CustomSliderCard5 from './CustomSliderCard5.vue'
-import CustomSliderCard6 from './CustomSliderCard6.vue'
-import CustomSliderCard7 from './CustomSliderCard7.vue'
-import CustomSliderCard8 from './CustomSliderCard8.vue'
+import CustomSliderCardTemplate from './CustomSliderCardTemplate.vue'
+import { dataSlides } from './data'
+
+let activeSlideIndex = ref(1)
+const container = ref<(HTMLElement & { swiper?: any }) | null>(null)
+const isLockScroll = ref(true)
+
+const handleWheel = (event: WheelEvent) => {
+	const swiper = (event.currentTarget as HTMLElement & { swiper?: any })?.swiper
+
+	const isEndSlide: boolean = swiper.isEnd && event.deltaY > 0
+	const isStartSlide: boolean = swiper.isBeginning && event.deltaY < 0
+
+	// Если скролл заблокирован - блокируем событие, скроллим на центр слайдера
+	if (isLockScroll.value === true) {
+		scrollToCenter()
+		event.preventDefault()
+	}
+
+	// Если слайд последний или первый - запускаем разблокировку скролла
+	if (isEndSlide || isStartSlide) {
+		setTimeout(() => (isLockScroll.value = false), 300)
+		return
+	} else {
+		isLockScroll.value = true
+	}
+}
+
+const scrollToCenter = () => {
+	const containerElement = container.value as HTMLElement | null
+	if (containerElement) {
+		containerElement.scrollIntoView({ behavior: 'smooth', block: 'center' })
+	}
+}
+
+const onChangeActive = (swiper: any) => {
+	activeSlideIndex.value = swiper.activeIndex + 1
+}
 </script>
 
 <template>
@@ -40,87 +70,22 @@ import CustomSliderCard8 from './CustomSliderCard8.vue'
 			@activeIndexChange="onChangeActive"
 			@wheel="handleWheel"
 		>
-			<SwiperSlide>
-				<CustomSliderCard1 v-bind:class="{ active: activeSlideIndex === 1 }" />
-			</SwiperSlide>
-			<SwiperSlide>
-				<CustomSliderCard2 v-bind:class="{ active: activeSlideIndex === 2 }" />
-			</SwiperSlide>
-			<SwiperSlide>
-				<CustomSliderCard3 v-bind:class="{ active: activeSlideIndex === 3 }" />
-			</SwiperSlide>
-			<SwiperSlide>
-				<CustomSliderCard4 v-bind:class="{ active: activeSlideIndex === 4 }" />
-			</SwiperSlide>
-			<SwiperSlide>
-				<CustomSliderCard5 v-bind:class="{ active: activeSlideIndex === 5 }" />
-			</SwiperSlide>
-			<SwiperSlide>
-				<CustomSliderCard6 v-bind:class="{ active: activeSlideIndex === 6 }" />
-			</SwiperSlide>
-			<SwiperSlide>
-				<CustomSliderCard7 v-bind:class="{ active: activeSlideIndex === 7 }" />
-			</SwiperSlide>
-			<SwiperSlide>
-				<CustomSliderCard8 v-bind:class="{ active: activeSlideIndex === 8 }" />
+			<SwiperSlide v-for="(item, index) in dataSlides" :key="index">
+				<CustomSliderCardTemplate
+					:title="item.title"
+					:subtitle="item.subtitle"
+					:badge-name="item.badgeName"
+					:badge-color="item.badgeColor"
+					:badge-number="item.badgeNumber"
+					:p1="item.p1"
+					:p2="item.p2"
+					:iconSrc="item.iconSrc"
+					:iconBigSrc="item.iconBigSrc"
+				/>
 			</SwiperSlide>
 		</Swiper>
 	</div>
 </template>
-
-<script lang="ts">
-let activeSlideIndex = ref(1)
-const container = ref<(HTMLElement & { swiper?: any }) | null>(null)
-const isLockScroll = ref(true)
-
-const handleWheel = (event: WheelEvent) => {
-	const swiper = (event.currentTarget as HTMLElement & { swiper?: any })?.swiper
-
-	const isEndSlide: boolean = swiper.isEnd && event.deltaY > 0
-	const isStartSlide: boolean = swiper.isBeginning && event.deltaY < 0
-
-	// Если скролл заблокирован - блокируем событие, скроллим на центр слайдера
-	if (isLockScroll.value === true) {
-		scrollToCenter()
-		event.preventDefault()
-	}
-
-	// Если слайд последний или первый - запускаем разблокировку скролла
-	if (isEndSlide || isStartSlide) {
-		setTimeout(() => (isLockScroll.value = false), 300)
-		return
-	} else {
-		isLockScroll.value = true
-	}
-}
-const scrollToCenter = () => {
-	const containerElement = container.value as HTMLElement | null
-	if (containerElement) {
-		containerElement.scrollIntoView({ behavior: 'smooth', block: 'center' })
-	}
-}
-
-const onChangeActive = (swiper: any) => {
-	activeSlideIndex.value = swiper.activeIndex + 1
-}
-
-export default {
-	components: {
-		Swiper,
-		SwiperSlide
-	},
-
-	data() {
-		return {
-			onChangeActive,
-			Mousewheel,
-			EffectCreative,
-			activeSlideIndex,
-			handleWheel
-		}
-	}
-}
-</script>
 
 <style scoped>
 .swiper :deep() .svg-picture {

@@ -6,7 +6,7 @@ import CardPlace from '@/components/cards/card-place/CardPlace.vue'
 <template>
 	<section class="section-contacts-card">
 		<MContainer>
-			<CardPlace class="card" />
+			<CardPlace class="card" title="Face Concept Лефортово" />
 		</MContainer>
 	</section>
 </template>
