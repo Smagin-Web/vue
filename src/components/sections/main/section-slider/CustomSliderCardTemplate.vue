@@ -25,9 +25,9 @@ const getImageUrl = () => {
 <template>
 	<div class="card">
 		<div class="card-info-content">
-			<h3 class="title" v-html="props.title" />
-			<h5 class="subtitle" v-html="props.subtitle" />
-			<p class="card-text">
+			<h3 class="h-l title" v-html="props.title" />
+			<h5 class="text-lg subtitle" v-html="props.subtitle" />
+			<p class="text-sm card-text">
 				<span v-html="props.p1" />
 				<span v-html="props.p2" />
 			</p>
@@ -64,6 +64,49 @@ const getImageUrl = () => {
 </template>
 
 <style scoped>
+.card {
+	position: relative;
+
+	padding: 80px;
+	padding-top: 90px;
+
+	border-radius: 100px;
+	background: #fff;
+	height: 650px;
+	z-index: 30;
+}
+.card {
+	position: relative;
+
+	padding: 80px;
+	padding-top: 90px;
+
+	border-radius: 100px;
+	background: #fff;
+	height: 650px;
+	z-index: 30;
+}
+.svg-picture {
+	display: block;
+	position: absolute;
+	top: 18%;
+	right: 23.3%;
+	height: 74%;
+	width: auto;
+}
+
+.card-image-wrapper {
+	position: absolute;
+	right: 5%;
+	bottom: 0;
+	width: 42%;
+}
+
+.card-image {
+	display: block;
+	width: 100%;
+	height: auto;
+}
 .svg-picture-head {
 	display: block;
 	position: absolute;
@@ -76,25 +119,16 @@ const getImageUrl = () => {
 }
 
 .title {
-	font-size: 42px;
 	padding-bottom: 40px;
 }
 
 .subtitle {
-	color: #6d6364;
-	font-size: 24px;
 	padding-bottom: 30px;
 }
 
 .card-text {
 	display: grid;
 	gap: 26px;
-
-	color: #6d6364;
-	font-family: 'BrisaSans';
-	font-size: 22px;
-	font-weight: 400;
-
 	padding-bottom: 70px;
 }
 
@@ -122,6 +156,58 @@ const getImageUrl = () => {
 	z-index: 20;
 }
 
+@media (max-width: 1600px) {
+	.card-info-content {
+		max-width: 900px;
+	}
+
+	.card-image-wrapper {
+		max-width: 500px;
+	}
+}
+
+@media (max-width: 1500px) {
+	.card-info-content {
+		max-width: 750px;
+	}
+	.card-badge {
+		font-size: 30px;
+		border-radius: 14px;
+	}
+}
+
+@media (max-width: 1300px) {
+	.card-info-content {
+		max-width: 550px;
+	}
+	.buttons {
+		display: grid;
+		max-width: 400px;
+	}
+	.card-text {
+		padding-bottom: 40px;
+	}
+	.card {
+		padding: 50px;
+		border-radius: 60px;
+	}
+	.title {
+		padding-bottom: 22px;
+	}
+	.subtitle {
+		padding-bottom: 20px;
+	}
+	.card-text {
+		gap: 14px;
+	}
+}
+
+@media (max-width: 1150px) {
+	.card-image-wrapper {
+		max-width: 350px;
+	}
+}
+
 @media (max-width: 1000px) {
 	.card-badge {
 		font-size: 20px;
@@ -132,13 +218,13 @@ const getImageUrl = () => {
 	.card {
 		padding: 50px 12px 32px;
 		border-radius: 40px;
+		max-height: 100%;
+		height: auto;
 	}
 	.title {
-		font-size: 20px;
 		padding-bottom: 18px;
 	}
 	.subtitle {
-		font-size: 17px;
 		padding-bottom: 25px;
 	}
 
@@ -162,6 +248,16 @@ const getImageUrl = () => {
 
 	.first-button {
 		margin-bottom: 20px;
+	}
+
+	.card-image-wrapper {
+		margin-top: 20px;
+		position: relative;
+		width: 250px;
+	}
+
+	.card-info-content {
+		max-width: 100%;
 	}
 }
 </style>

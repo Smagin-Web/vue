@@ -88,28 +88,6 @@ const onChangeActive = (swiper: any) => {
 </template>
 
 <style scoped>
-.swiper :deep() .svg-picture {
-	display: block;
-	position: absolute;
-	top: 18%;
-	right: 23.3%;
-	height: 74%;
-	width: auto;
-}
-
-.swiper :deep() .card-image-wrapper {
-	position: absolute;
-	right: 5%;
-	bottom: 0;
-	width: 42%;
-}
-
-.swiper :deep() .card-image {
-	display: block;
-	width: 100%;
-	height: auto;
-}
-
 .swiper {
 	padding: 180px 0;
 	max-height: 1000px;
@@ -170,18 +148,6 @@ const onChangeActive = (swiper: any) => {
 	padding-top: 140px;
 }
 
-.card {
-	position: relative;
-
-	padding: 80px;
-	padding-top: 90px;
-
-	border-radius: 100px;
-	background: #fff;
-	height: 650px;
-	z-index: 30;
-}
-
 @media (max-width: 1400px) {
 	.wrapper {
 		padding-top: 50px;
@@ -191,6 +157,13 @@ const onChangeActive = (swiper: any) => {
 @media (max-width: 1200px) {
 	.wrapper {
 		padding-top: 0;
+	}
+}
+
+@media (max-width: 1000px) {
+	.swiper {
+		max-height: 100%;
+		height: auto;
 	}
 }
 </style>
