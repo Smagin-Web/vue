@@ -31,6 +31,9 @@ import SectionBlockResponse from './SectionBlockResponse.vue'
 }
 
 @media (max-width: 1000px) {
+	.section-other {
+		padding-bottom: 80px;
+	}
 	.heading-section--other {
 		max-width: 500px;
 	}

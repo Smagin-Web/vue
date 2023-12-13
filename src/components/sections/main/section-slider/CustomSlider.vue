@@ -3,6 +3,7 @@ import { Mousewheel, EffectCreative } from 'swiper/modules'
 
 import 'swiper/css'
 import 'swiper/css/mousewheel'
+import './slider-custom.css'
 import { Swiper, SwiperSlide } from 'swiper/vue'
 
 import { ref } from 'vue'
@@ -88,8 +89,16 @@ const onChangeActive = (swiper: any) => {
 </template>
 
 <style scoped>
+.wrapper {
+	position: relative;
+	padding: 100px 30px;
+	padding-top: 0;
+	max-width: calc(1680px + 60px);
+	margin: 0 auto;
+}
+
 .swiper {
-	padding: 180px 0;
+	padding: 100px 0;
 	max-height: 1000px;
 	transition: 0.2s;
 }
@@ -122,7 +131,7 @@ const onChangeActive = (swiper: any) => {
 /* Меняем фон следующей карточки и перемещаем её вниз на 80px */
 
 .swiper-slide-next :deep() .card {
-	bottom: -40px;
+	bottom: -60px;
 	background-color: #ede4da;
 }
 
@@ -136,32 +145,24 @@ const onChangeActive = (swiper: any) => {
 	transition: 0.2s;
 }
 
-.wrapper {
-	position: relative;
-
-	max-width: calc(1680px + 60px);
-	padding-left: 30px;
-	padding-right: 30px;
-	margin: 0 auto 100px;
-	padding-top: 140px;
-}
-
-@media (max-width: 1400px) {
-	.wrapper {
-		padding-top: 50px;
-	}
-}
-
 @media (max-width: 1200px) {
 	.wrapper {
-		padding-top: 0;
+		padding-bottom: 30px;
 	}
 }
 
 @media (max-width: 1000px) {
 	.swiper {
+		padding-bottom: 60px;
 		max-height: 100%;
 		height: auto;
+	}
+
+	.swiper-slide-prev :deep() .card {
+		top: -20px;
+	}
+	.swiper-slide-next :deep() .card {
+		bottom: -20px;
 	}
 }
 </style>

@@ -51,7 +51,8 @@ onUnmounted(() => {
 
 <style scoped>
 .section-tech {
-	padding: 104px 0 0;
+	padding-top: 100px;
+	padding-bottom: 150px;
 }
 
 .heading {
@@ -75,14 +76,18 @@ onUnmounted(() => {
 }
 
 @media (max-width: 1400px) {
+	.section-tech {
+		padding-bottom: 100px;
+	}
 	.big-heading {
 		font-size: 54px;
 	}
 }
 
-@media screen and (max-width: 1200px) {
+@media (max-width: 1200px) {
 	.section-tech {
-		padding: 70px 0;
+		padding-top: 70px;
+		padding-bottom: 80px;
 	}
 
 	.heading {
@@ -91,6 +96,12 @@ onUnmounted(() => {
 
 	.big-heading {
 		font-size: 42px;
+	}
+}
+
+@media (max-width: 1000px) {
+	.section-tech {
+		padding-bottom: 0;
 	}
 }
 
