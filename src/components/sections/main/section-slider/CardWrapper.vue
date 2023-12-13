@@ -57,7 +57,7 @@ const props = defineProps(['badgeColor', 'badgeName', 'badgeNumber'])
 
 @media (max-width: 1000px) {
 	.card {
-		padding: 38px 12px 32px;
+		padding: 50px 14px 32px;
 		border-radius: 40px;
 		max-height: 100%;
 		height: auto;

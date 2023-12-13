@@ -66,7 +66,7 @@ const getImageUrl = () => {
 @media (max-width: 1000px) {
 	.card-image-wrapper {
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-55%);
 		margin-top: 20px;
 		position: relative;
 		width: 250px;
