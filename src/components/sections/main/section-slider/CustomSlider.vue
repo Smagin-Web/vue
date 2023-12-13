@@ -101,16 +101,14 @@ const onChangeActive = (swiper: any) => {
 
 /* Для всех карточек делаем прозрачный контент */
 
-.swiper-slide :deep() .card-info-content,
-.swiper-slide :deep() .card-badges {
+.swiper-slide :deep() .card * {
 	opacity: 0;
 	transition: 0.2s;
 }
 
 /* Делаем непрозрачный контент для активной карточки */
 
-.swiper-slide-active :deep() .card-badges,
-.swiper-slide-active :deep() .card-info-content {
+.swiper-slide-active :deep() .card * {
 	opacity: 1;
 }
 
