@@ -35,7 +35,7 @@ import SectionBannerText from './SectionBannerText.vue'
 	margin: 0 auto;
 }
 .section-banner {
-	padding-top: 280px;
+	padding-top: 100px;
 }
 .content {
 	gap: 50px;
@@ -142,7 +142,7 @@ import SectionBannerText from './SectionBannerText.vue'
 
 @media (max-width: 1000px) {
 	.section-banner {
-		padding-top: 130px;
+		padding-top: 50px;
 	}
 }
 </style>

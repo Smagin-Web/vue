@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import MContainer from '@/components/shared/MContainer.vue'
 import PictureReviews from '@/components/icons/PictureReviews.vue'
-import MButton from '@/components/buttons/MButton.vue'
+import MButtonBig from '@/components/buttons/MButtonBig.vue'
 import ButtonLink from '@/components/buttons/ButtonLink.vue'
 </script>
 
@@ -21,7 +21,7 @@ import ButtonLink from '@/components/buttons/ButtonLink.vue'
 				</div>
 			</div>
 			<div class="buttons">
-				<MButton>Перейти к отзывам</MButton>
+				<MButtonBig>Перейти к отзывам</MButtonBig>
 				<ButtonLink>Оставить отзыв</ButtonLink>
 			</div>
 		</MContainer>

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import MContainer from '@/components/shared/MContainer.vue'
 import CardNews from '@/components/cards/CardNews.vue'
-import MButton from '@/components/buttons/MButton.vue'
+import MButtonBig from '@/components/buttons/MButtonBig.vue'
 
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import 'swiper/css'
@@ -43,7 +43,7 @@ import 'swiper/css'
 				</Swiper>
 			</div>
 			<div style="display: flex; justify-content: center">
-				<MButton class="button">Больше интересных статей</MButton>
+				<MButtonBig class="button">Больше интересных статей</MButtonBig>
 			</div>
 		</MContainer>
 	</section>

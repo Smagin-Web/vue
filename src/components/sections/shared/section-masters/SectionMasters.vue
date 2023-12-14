@@ -6,6 +6,7 @@ import MContainer from '@/components/shared/MContainer.vue'
 import CardMaster from './CardMaster.vue'
 import MButtonOutline from '@/components/buttons/MButtonOutline.vue'
 import SwiperMasters from './SwiperMasters.vue'
+import MButtonOutlineBig from '@/components/buttons/MButtonOutlineBig.vue'
 </script>
 
 <template>
@@ -31,9 +32,9 @@ import SwiperMasters from './SwiperMasters.vue'
 
 		<MContainer>
 			<div class="section-button-wrapper">
-				<MButtonOutline class="section-button">
+				<MButtonOutlineBig class="section-button">
 					Показать ещё врачей
-				</MButtonOutline>
+				</MButtonOutlineBig>
 			</div>
 		</MContainer>
 	</section>
