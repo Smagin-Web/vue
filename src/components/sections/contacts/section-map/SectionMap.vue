@@ -10,7 +10,7 @@ import SelectRoad from './SelectRoad.vue'
 			<h3 class="h-xl">Как добраться</h3>
 			<div class="map">
 				<div class="map-header">
-					<h6 class="map-header-title">Ближайшие станции метро</h6>
+					<h6 class="h-sm-ultra map-header-title">Ближайшие станции метро</h6>
 					<div class="map-header-flex">
 						<div class="map-header-badges">
 							<MapBadge number="8">Авиамоторная</MapBadge>
@@ -65,6 +65,7 @@ import SelectRoad from './SelectRoad.vue'
 	padding-bottom: 32px;
 	display: flex;
 	gap: 30px;
+	flex-wrap: wrap;
 }
 
 .map-body {
@@ -73,8 +74,22 @@ import SelectRoad from './SelectRoad.vue'
 }
 
 .map-header-title {
-	color: #000;
-	font-size: 24px;
 	padding-bottom: 6px;
+}
+
+@media (max-width: 1750px) {
+	.map-header-flex {
+		display: grid;
+	}
+}
+
+@media (max-width: 800px) {
+	.map {
+		border-radius: 24px;
+	}
+	.map-header {
+		padding-left: 20px;
+		padding-right: 28px;
+	}
 }
 </style>

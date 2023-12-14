@@ -19,6 +19,7 @@ color: ${props.color ? '#fff' : '#000'}
 	display: flex;
 	align-items: center;
 	gap: 10px;
+	white-space: nowrap;
 }
 
 .map-badge-number {
