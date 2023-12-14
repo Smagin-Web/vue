@@ -21,7 +21,7 @@ import ButtonLink from '@/components/buttons/ButtonLink.vue'
 				</div>
 			</div>
 			<div class="buttons">
-				<MButtonBig>Перейти к отзывам</MButtonBig>
+				<MButtonBig class="button-big">Перейти к отзывам</MButtonBig>
 				<ButtonLink>Оставить отзыв</ButtonLink>
 			</div>
 		</MContainer>
@@ -36,6 +36,10 @@ import ButtonLink from '@/components/buttons/ButtonLink.vue'
 	display: grid;
 	grid-template-columns: max-content 1fr;
 	gap: 60px;
+}
+
+.button-big{
+	min-width: 300px;
 }
 
 .heading {
