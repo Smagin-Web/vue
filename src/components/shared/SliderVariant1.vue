@@ -37,15 +37,12 @@ const sliderPrev = () => {
 					@swiper="swiper => onSwiperInit(swiper)"
 					class="swiper-custom"
 					:modules="modules"
+					:centered-slides="true"
 					:pagination="{
 						clickable: true
 					}"
-          :initialSlide="1"
-					:breakpoints="{
-						300: { slidesPerView: 1, spaceBetween: 24 },
-						600: { slidesPerView: 1, spaceBetween: 24 },
-						1000: { slidesPerView: 1, spaceBetween: 24 }
-					}"
+					:initialSlide="1"
+					:slidesPerView="'auto'"
 				>
 					<slot />
 				</Swiper>
@@ -55,6 +52,9 @@ const sliderPrev = () => {
 </template>
 
 <style scoped>
+.swiper :deep() .swiper-slide {
+	width: fit-content;
+}
 .content {
 	max-width: 544px;
 	margin: 0 auto;
@@ -74,14 +74,14 @@ const sliderPrev = () => {
 	z-index: 1000;
 	border-radius: 50%;
 	display: block;
-  border: 1px solid rgb(27, 26, 26, 0);
-  transition: .1s;
+	border: 1px solid rgb(27, 26, 26, 0);
+	transition: 0.1s;
 }
 
 .button-next:hover,
 .button-prev:hover {
 	opacity: 1;
-  border: 1px solid rgb(66, 62, 62);
+	border: 1px solid rgb(66, 62, 62);
 }
 
 .button-prev {

@@ -7,9 +7,7 @@ import CardPlace from '@/components/cards/card-place/CardPlace.vue'
 	<section class="section-places">
 		<MContainer>
 			<h3 class="h-xl title">Наши филиалы</h3>
-			<h5 class="text-lg text">
-				Атмосферные пространства комфорта и красоты
-			</h5>
+			<h5 class="text-lg text">Атмосферные пространства комфорта и красоты</h5>
 			<div class="cards">
 				<CardPlace />
 				<CardPlace />
@@ -50,12 +48,6 @@ import CardPlace from '@/components/cards/card-place/CardPlace.vue'
 	}
 	.text {
 		padding-bottom: 20px;
-	}
-}
-
-@media (max-width: 600px) {
-	.text {
-		padding-bottom: 0;
 	}
 }
 </style>

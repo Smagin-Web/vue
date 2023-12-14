@@ -55,7 +55,7 @@
 	display: grid;
 	gap: 30px;
 
-	max-width: 348px;
+	width: 348px;
 	padding: 40px;
 	border-radius: 50px;
 	background: #ede4da;
@@ -64,7 +64,7 @@
 
 .card-text {
 	font-weight: 500;
-  line-height: 1.6;
+	line-height: 1.6;
 }
 
 .card-items {
@@ -82,5 +82,22 @@
 	font-size: 22px;
 	font-weight: 700;
 	text-decoration-line: underline;
+}
+
+@media (max-width: 1100px) {
+	.card {
+		width: 300px;
+		padding: 28px;
+		padding-left: 34px;
+		border-radius: 40px;
+		gap: 16px;
+	}
+	.card-item {
+		font-size: 18px;
+	}
+	.card-item svg {
+		width: 26px;
+		height: auto;
+	}
 }
 </style>

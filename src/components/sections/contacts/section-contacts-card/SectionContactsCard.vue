@@ -20,8 +20,8 @@ import MButtonOutlineBig from '@/components/buttons/MButtonOutlineBig.vue'
 						<p class="text-sm numbers-title">Запись и консультация</p>
 						<h5 class="h-xxl numbers-item">
 							+7 498 661-07-30
-							<IconWhatsApp />
-							<IconTelegram />
+							<IconWhatsApp class="contact-icon" />
+							<IconTelegram class="contact-icon" />
 						</h5>
 
 						<h5 class="h-xxl">+7 925 726-71-81</h5>
@@ -38,7 +38,7 @@ import MButtonOutlineBig from '@/components/buttons/MButtonOutlineBig.vue'
 					<p class="text-sm">с 10:00 до 22:00 без выходных</p>
 				</div>
 				<div class="content-right">
-					<CardInfo />
+					<CardInfo class="card-mini" />
 					<MButtonOutlineBig class="button-show-all">
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -64,7 +64,6 @@ import MButtonOutlineBig from '@/components/buttons/MButtonOutlineBig.vue'
 
 <style scoped>
 .section-contacts-card {
-	padding-top: 150px;
 	padding-bottom: 150px;
 }
 
@@ -114,5 +113,30 @@ import MButtonOutlineBig from '@/components/buttons/MButtonOutlineBig.vue'
 	padding-bottom: 20px;
 	display: flex;
 	gap: 30px;
+}
+
+@media (max-width: 1200px) {
+	.contact-icon {
+		width: 46px;
+		height: auto;
+	}
+}
+
+@media (max-width: 1000px) {
+	.contact-icon {
+		width: 30px;
+	}
+	.numbers-item {
+		gap: 16px;
+	}
+	.contacts-title {
+		padding-bottom: 28px;
+	}
+}
+
+@media (max-width: 720px) {
+	.content {
+		display: grid;
+	}
 }
 </style>

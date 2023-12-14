@@ -54,6 +54,9 @@
 	.h-l {
 		font-size: 42px;
 	}
+	.h-md {
+		font-size: 30px;
+	}
 }
 
 @media (max-width: 1640px) {
@@ -65,6 +68,9 @@
 	}
 	.h-l {
 		font-size: 40px;
+	}
+	.h-md {
+		font-size: 28px;
 	}
 }
 
@@ -78,6 +84,9 @@
 	.h-l {
 		font-size: 34px;
 	}
+	.h-md {
+		font-size: 26px;
+	}
 	.text-lg {
 		font-size: 22px;
 	}
@@ -88,13 +97,16 @@
 
 @media (max-width: 1400px) {
 	.h-xxl {
-		font-size: 44px;
+		font-size: 38px;
 	}
 	.h-xl {
-		font-size: 36px;
+		font-size: 32px;
 	}
 	.h-l {
-		font-size: 32px;
+		font-size: 26px;
+	}
+	.h-md {
+		font-size: 24px;
 	}
 	.text-lg {
 		font-size: 20px;
@@ -106,25 +118,31 @@
 
 @media (max-width: 1200px) {
 	.h-xxl {
-		font-size: 40px;
+		font-size: 34px;
 	}
 	.h-xl {
-		font-size: 32px;
+		font-size: 26px;
 	}
 	.h-l {
-		font-size: 28px;
+		font-size: 24px;
+	}
+	.h-md {
+		font-size: 22px;
 	}
 }
 
 @media (max-width: 1000px) {
 	.h-xxl {
-		font-size: 30px;
+		font-size: 24px;
 	}
 	.h-xl {
 		padding-bottom: 20px;
 		font-size: 20px;
 	}
 	.h-l {
+		font-size: 18px;
+	}
+	.h-md {
 		font-size: 18px;
 	}
 	.text-lg {
@@ -142,7 +160,7 @@
 
 @media (max-width: 800px) {
 	.h-xxl {
-		font-size: 28px;
+		font-size: 22px;
 	}
 	.text-lg {
 		font-size: 16px;
