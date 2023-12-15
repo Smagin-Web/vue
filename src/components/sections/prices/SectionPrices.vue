@@ -8,7 +8,6 @@ import PricesSidebarMobile from './PricesSidebarMobile.vue'
 
 <template>
 	<section class="section-prices">
-		<PricesSidebarMobile />
 		<MContainer>
 			<BreadCrumbs class="bread-crumbs" />
 			<h1 class="h-xxl heading">Цены</h1>
@@ -20,7 +19,8 @@ import PricesSidebarMobile from './PricesSidebarMobile.vue'
 				домашнего ухода и&nbsp;системную терапию.
 			</p>
 			<div class="workspace">
-				<PricesSidebar />
+				<PricesSidebar class="sidebar-lg" />
+				<PricesSidebarMobile class="sidebar-sm" />
 				<div class="cards">
 					<PricesCard />
 					<PricesCard />
@@ -65,9 +65,26 @@ import PricesSidebarMobile from './PricesSidebarMobile.vue'
 	gap: 10px;
 }
 
+.sidebar-sm {
+	display: none;
+}
+
 @media (max-width: 1000px) {
 	.section-prices {
 		padding-bottom: 80px;
+	}
+}
+
+@media (max-width: 1450px) {
+	.sidebar-lg {
+		display: none;
+	}
+	.sidebar-sm {
+		display: block;
+		margin-bottom: 20px;
+	}
+	.workspace {
+		display: block;
 	}
 }
 </style>

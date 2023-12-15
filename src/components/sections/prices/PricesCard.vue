@@ -112,4 +112,11 @@ import BadgeMd from '@/components/ui/BadgeMd.vue'
 	display: flex;
 	gap: 10px;
 }
+
+@media (max-width: 1800px) {
+	.card-info {
+		display: grid;
+		grid-template-columns: 1fr 3fr 2fr;
+	}
+}
 </style>

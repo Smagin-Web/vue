@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, onMounted } from 'vue'
+import { ref } from 'vue'
 
 let isActive = ref(false)
 
@@ -56,9 +56,10 @@ const onClickHandler = () => {
 <style scoped>
 .nav {
 	position: relative;
-	max-width: 335px;
+	max-width: 450px;
 	background-color: #fff;
 	border-radius: 100px;
+	margin: 0 auto;
 }
 
 .nav-main-button {
@@ -98,7 +99,8 @@ const onClickHandler = () => {
 	border-radius: 30px;
 	transition: 0.2s;
 	width: 100%;
-  opacity: 0;
+	opacity: 0;
+	z-index: 1;
 }
 
 .nav-list-scroll {
@@ -122,13 +124,14 @@ const onClickHandler = () => {
 .nav-list-active {
 	height: 450px;
 	transform: translateY(-30px);
-	z-index: 0;
+	z-index: 1;
 
 	padding-top: 60px;
 	padding-left: 10px;
 	padding-bottom: 30px;
 	padding-right: 10px;
-  opacity: 1;
+	opacity: 1;
+	box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .nav-list-button {

@@ -49,10 +49,12 @@
 
 <style scoped>
 .sidebar {
+	position: relative;
 	width: 400px;
 	border-radius: 30px;
 	background: #ede4da;
 	padding: 40px;
+	z-index: 30;
 }
 
 .link-group {
@@ -82,5 +84,11 @@
 
 	margin: 0 -20px;
 	margin-bottom: 30px;
+}
+
+@media (max-width: 1800px) {
+	.sidebar {
+		width: 360px;
+	}
 }
 </style>
