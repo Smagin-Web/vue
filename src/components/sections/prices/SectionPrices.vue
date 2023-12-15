@@ -3,10 +3,12 @@ import MContainer from '@/components/shared/MContainer.vue'
 import BreadCrumbs from '@/components/shared/BreadCrumbs.vue'
 import PricesSidebar from './PricesSidebar.vue'
 import PricesCard from './PricesCard.vue'
+import PricesSidebarMobile from './PricesSidebarMobile.vue'
 </script>
 
 <template>
 	<section class="section-prices">
+		<PricesSidebarMobile />
 		<MContainer>
 			<BreadCrumbs class="bread-crumbs" />
 			<h1 class="h-xxl heading">Цены</h1>
@@ -64,7 +66,7 @@ import PricesCard from './PricesCard.vue'
 }
 
 @media (max-width: 1000px) {
-	.section-prices{
+	.section-prices {
 		padding-bottom: 80px;
 	}
 }
