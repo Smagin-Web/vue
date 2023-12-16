@@ -5,29 +5,35 @@
 
 .h-xxl {
 	color: #000;
-	font-family: 'Pelinka';
+	font-family: 'Pelinka', sans-serif;
 	font-size: 60px;
 	font-weight: 700;
 }
 
 .h-l {
 	color: #000;
-	font-family: 'Pelinka';
+	font-family: 'Pelinka', sans-serif;
 	font-size: 42px;
 	font-weight: 700;
 }
 
 .h-md {
 	color: #000;
-	font-family: 'Pelinka';
+	font-family: 'Pelinka', sans-serif;
 	font-size: 34px;
 	font-weight: 700;
 }
 
 .h-sm-ultra {
 	color: #000;
-	font-family: 'Pelinka';
+	font-family: 'Pelinka', sans-serif;
 	font-size: 24px;
+	font-weight: 700;
+}
+.h-xs {
+	color: #000;
+	font-family: 'Pelinka', sans-serif;
+	font-size: 20px;
 	font-weight: 700;
 }
 
@@ -39,14 +45,14 @@
 
 .text-lg {
 	color: #6d6364;
-	font-family: 'Pelinka';
+	font-family: 'Pelinka', sans-serif;
 	font-size: 24px;
 	font-weight: 700;
 }
 
 .text-sm {
 	color: #6d6364;
-	font-family: 'BrisaSans';
+	font-family: 'BrisaSans', sans-serif;
 	font-size: 22px;
 	font-weight: 400;
 }
@@ -124,6 +130,9 @@
 	.text-sm {
 		font-size: 18px;
 	}
+	.h-xs {
+		font-size: 18px;
+	}
 }
 
 @media (max-width: 1200px) {
@@ -169,6 +178,9 @@
 		font-size: 17px;
 		padding-bottom: 34px;
 	}
+	.h-xs {
+		font-size: 16px;
+	}
 }
 
 @media (max-width: 800px) {
@@ -177,5 +189,8 @@
 	}
 	.text-lg {
 		font-size: 16px;
+	}
+	.h-xs {
+		font-size: 14px;
 	}
 }

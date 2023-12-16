@@ -4,28 +4,36 @@ import BadgeMd from '@/components/ui/BadgeMd.vue'
 <template>
 	<div class="card">
 		<div class="card-info">
-			<div>
-				<p class="card-title">Код услуги</p>
-				<h6 class="card-text">А22.30.022</h6>
+			<div class="card-info-group-1">
+				<div class="card-info-item-1">
+					<p class="card-title">Код услуги</p>
+					<h6 class="h-xs">А22.30.022</h6>
+				</div>
+
+				<div>
+					<p class="card-title">Наименование</p>
+					<h6 class="h-xs">
+						Ультразвуковой SMAS - лифтинг. Лицо полностью , включая подчелюстную
+						зону
+					</h6>
+				</div>
 			</div>
-			<div>
-				<p class="card-title">Наименование</p>
-				<h6 class="card-text">
-					Ультразвуковой SMAS - лифтинг. Лицо полностью , включая подчелюстную
-					зону
-				</h6>
-			</div>
+
 			<div>
 				<p class="card-title">Аппарат</p>
-				<h6 class="card-text">Аппарат LIFTERA-A, Южная Корея</h6>
+				<h6 class="h-xs">Аппарат LIFTERA-A, Южная Корея</h6>
 			</div>
-			<div>
-				<p class="card-title">Время процедуры</p>
-				<h6 class="card-text">120 мин</h6>
-			</div>
-			<div>
-				<p class="card-title">Стоимость</p>
-				<h6 class="card-text">44 900₽</h6>
+
+			<div class="card-info-group-3">
+				<div>
+					<p class="card-title">Время процедуры</p>
+					<h6 class="h-xs">120 мин</h6>
+				</div>
+
+				<div>
+					<p class="card-title">Стоимость</p>
+					<h6 class="h-xs">44 900₽</h6>
+				</div>
 			</div>
 		</div>
 
@@ -86,7 +94,7 @@ import BadgeMd from '@/components/ui/BadgeMd.vue'
 
 .button-second {
 	background: rgba(174, 140, 142, 0.2);
-  color: #AE8C8E;
+	color: #ae8c8e;
 	/* backdrop-filter: blur(50px); */
 }
 
@@ -98,14 +106,25 @@ import BadgeMd from '@/components/ui/BadgeMd.vue'
 
 .card-info {
 	display: grid;
-	grid-template-columns: 1fr 6fr 4fr 2fr 2fr;
+	grid-template-columns: 2fr 1fr 1fr;
 	gap: 20px;
 	padding-bottom: 20px;
 }
 
-.card-text {
-	color: #000;
-	font-size: 20px;
+.card-info-group-1 {
+	display: flex;
+	grid-template-columns: 1fr 3fr;
+	gap: 20px;
+}
+
+.card-info-item-1 {
+	width: fit-content;
+}
+
+.card-info-group-3 {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
 }
 
 .badges {
@@ -113,10 +132,55 @@ import BadgeMd from '@/components/ui/BadgeMd.vue'
 	gap: 10px;
 }
 
-@media (max-width: 1800px) {
+@media (max-width: 1400px) {
 	.card-info {
+		grid-template-columns: 4fr 2fr 1fr;
+	}
+	.card-info-group-3 {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media (max-width: 1000px) {
+	.buttons {
+		position: static;
+		display: block;
+	}
+	.button-accent {
+		position: absolute;
+		bottom: 20px;
+		left: 20px;
+		right: 20px;
+		top: auto;
+	}
+	.button-second {
+		position: absolute;
+		top: 20px;
+		right: 20px;
+	}
+}
+
+@media (max-width: 1000px) {
+	.card {
+		padding-bottom: 100px;
+	}
+	.card-info {
+		grid-template-columns: 1fr;
+	}
+	.card-info-group-1 {
 		display: grid;
-		grid-template-columns: 1fr 3fr 2fr;
+		grid-template-columns: 1fr;
+	}
+	.card-info-group-3 {
+		grid-template-columns: 1fr 1fr;
+	}
+	.buttons {
+		opacity: 1;
+	}
+	.button-accent,
+	.button-second {
+		font-size: 18px;
+		padding: 16px 30px;
 	}
 }
 </style>
