@@ -183,4 +183,11 @@ import BadgeMd from '@/components/ui/BadgeMd.vue'
 		padding: 16px 30px;
 	}
 }
+
+@media (max-width: 700px) {
+	.button-accent,
+	.button-second {
+		font-size: 16px;
+	}
+}
 </style>
