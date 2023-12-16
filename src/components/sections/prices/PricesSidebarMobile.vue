@@ -55,6 +55,7 @@ const onClickHandler = () => {
 
 <style scoped>
 .nav {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 	position: relative;
 	max-width: 450px;
 	background-color: #fff;
