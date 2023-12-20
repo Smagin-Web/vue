@@ -9,7 +9,7 @@ import SectionDevicesCard from './SectionDevicesCard.vue'
 		<MContainer>
 			<BreadCrumbs />
 			<h3 class="h-xl">Аппараты</h3>
-			<p class="section-devices-text">
+			<p class="text-sm section-devices-text">
 				Мы используем оригинальное оборудование премиум-класса, которое имеет
 				сертификаты, регистрационные удостоверения Российской Федерации, а также
 				сертификаты и разрешения FDA (США) и Европейского Союза! Вводный
@@ -27,13 +27,10 @@ import SectionDevicesCard from './SectionDevicesCard.vue'
 
 <style scoped>
 .section-devices {
-	padding-top: 150px;
-  padding-bottom: 150px;
+	padding-bottom: 150px;
 }
 
 .section-devices-text {
-	color: #6d6364;
-	font-size: 22px;
 	padding-bottom: 50px;
 }
 </style>

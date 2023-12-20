@@ -10,13 +10,13 @@ import MainTag from '@/components/ui/MainTag.vue'
 	<div class="card">
 		<CardLink class="card-link" />
 		<div class="card-left">
-			<h5 class="card-title">Skinova Pro</h5>
+			<h5 class="h-md card-title">Skinova Pro</h5>
 			<div class="badges">
 				<BadgeMd type="1">AntiAcne Concept</BadgeMd>
 				<BadgeMd type="2">AntiAcne Concept</BadgeMd>
 				<BadgeMd type="3">AntiAcne Concept</BadgeMd>
 			</div>
-			<p class="card-text">
+			<p class="text-sm card-text">
 				Клеточная реконструкция высокочастотным ультразвуком. Единственная
 				технология, регулирующая уровень кавеолина — структурного белка
 				клеточной мембраны, который находится практически во всех клетках кожи.
@@ -54,6 +54,7 @@ import MainTag from '@/components/ui/MainTag.vue'
 	padding: 40px;
 	display: flex;
 	justify-content: space-between;
+	gap: 20px;
 }
 
 .card-link {
@@ -67,8 +68,6 @@ import MainTag from '@/components/ui/MainTag.vue'
 }
 
 .card-title {
-	color: #000;
-	font-size: 34px;
 	padding-bottom: 12px;
 }
 
@@ -79,8 +78,6 @@ import MainTag from '@/components/ui/MainTag.vue'
 }
 
 .card-text {
-	color: #6d6364;
-	font-size: 22px;
 	padding-bottom: 20px;
 }
 
@@ -97,7 +94,7 @@ import MainTag from '@/components/ui/MainTag.vue'
 }
 
 .card-photo-wrapper {
-  cursor: pointer;
+	cursor: pointer;
 	position: relative;
 	border-radius: 36px;
 	margin-bottom: 30px;
@@ -137,5 +134,61 @@ import MainTag from '@/components/ui/MainTag.vue'
 
 .card-photo-wrapper:hover .card-photo-icon {
 	opacity: 1;
+}
+
+@media (max-width: 1300px) {
+	.card-link-icon {
+		width: 100px;
+		height: auto;
+	}
+	.card-photo-wrapper {
+		width: 350px;
+	}
+	.card-photo {
+		width: 100%;
+		height: auto;
+	}
+	.card-tags {
+		gap: 10px;
+	}
+	.badges {
+		flex-wrap: wrap;
+	}
+}
+
+@media (max-width: 1200px) {
+	.card {
+		padding: 20px;
+		border-radius: 20px;
+	}
+	.card-left {
+		padding-bottom: 80px;
+	}
+	.card-link {
+		bottom: 20px;
+		left: 20px;
+	}
+}
+
+@media (max-width: 800px) {
+	.card {
+		display: block;
+		padding-bottom: 80px;
+	}
+	.card-left {
+		padding-bottom: 20px;
+	}
+}
+
+@media (max-width: 430px) {
+	.card-right {
+		width: 100%;
+	}
+	.card-photo-wrapper {
+		width: 100%;
+	}
+	.card-photo {
+		width: 100%;
+	}
 }
 </style>

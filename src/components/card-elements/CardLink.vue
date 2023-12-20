@@ -16,6 +16,13 @@ const props = defineProps(['path'])
 }
 .card-link-icon {
 	width: 100%;
+	height: auto;
+}
+
+@media (max-width: 1200px) {
+	.card-link {
+		max-width: 100px;
+	}
 }
 
 @media (max-width: 700px) {
