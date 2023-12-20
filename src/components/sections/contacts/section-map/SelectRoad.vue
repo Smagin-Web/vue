@@ -131,4 +131,13 @@ const onClickHandler = () => {
 .select-road-list-button:hover {
 	background: #ede4da;
 }
+
+@media (max-width: 1000px) {
+	.select-road {
+		width: 100%;
+	}
+	.select-road-button {
+		font-size: 18px;
+	}
+}
 </style>

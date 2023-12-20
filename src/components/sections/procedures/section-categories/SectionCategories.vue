@@ -82,5 +82,8 @@ import SectionProceduresCard from '../../inside/section-procedures/SectionProced
 		grid-template-columns: 1fr;
 		gap: 30px;
 	}
+	.filters {
+		gap: 8px;
+	}
 }
 </style>

@@ -98,4 +98,32 @@ import ListItem from './ListItem.vue'
 .content-right {
 	max-width: 544px;
 }
+
+@media (max-width: 1450px) {
+	.list {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media (max-width: 1100px) {
+	.photo {
+		width: 340px;
+	}
+	.title {
+		font-size: 40px;
+		max-width: 340px;
+	}
+}
+
+@media (max-width: 1000px) {
+	.content-wrapper {
+		display: block;
+	}
+	.title {
+		padding-bottom: 20px;
+	}
+	.section-pluses {
+		padding-bottom: 80px;
+	}
+}
 </style>

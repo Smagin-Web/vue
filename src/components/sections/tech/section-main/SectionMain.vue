@@ -47,7 +47,6 @@ import SectionMainPicture from './SectionMainPicture.vue'
 
 <style scoped>
 .section-main {
-	padding-top: 150px;
 	padding-bottom: 150px;
 }
 

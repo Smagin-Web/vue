@@ -19,4 +19,10 @@ import MContainer from '@/components/shared/MContainer.vue'
 	max-width: 100%;
   height: auto;
 }
+
+@media (max-width: 1000px) {
+	.section-banner {
+		padding-bottom: 80px;
+	}
+}
 </style>

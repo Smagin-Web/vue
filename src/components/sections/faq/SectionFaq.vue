@@ -68,4 +68,10 @@ import FaqItem from '../inside/section-faq/FaqItem.vue'
 	max-width: 100%;
 	gap: 24px;
 }
+
+@media (max-width: 1000px) {
+	.filters {
+		gap: 8px;
+	}
+}
 </style>

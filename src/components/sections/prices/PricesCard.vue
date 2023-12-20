@@ -187,7 +187,8 @@ import BadgeMd from '@/components/ui/BadgeMd.vue'
 @media (max-width: 700px) {
 	.button-accent,
 	.button-second {
-		font-size: 16px;
+		font-size: 16px
+		;
 	}
 }
 </style>

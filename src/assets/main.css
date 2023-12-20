@@ -10,6 +10,10 @@ body {
 	overflow-x: hidden;
 }
 
+section {
+	overflow-x: hidden;
+}
+
 svg,
 img {
 	display: block;

@@ -27,4 +27,14 @@
 	color: #6d6364;
 	font-size: 22px;
 }
+
+@media (max-width: 1000px) {
+	.number-wrapper :deep() img {
+		width: 42px;
+	}
+	.list-item-text {
+		color: #6d6364;
+		font-size: 14px;
+	}
+}
 </style>

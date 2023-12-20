@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import ViewWrapper from '@/components/ViewWrapper.vue'
-
 import SectionPrices from '@/components/sections/prices/SectionPrices.vue'
 import SectionHelp from '@/components/sections/shared/section-help/SectionHelp.vue'
 </script>

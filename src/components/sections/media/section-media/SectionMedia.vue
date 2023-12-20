@@ -32,7 +32,7 @@ import CardNews from '@/components/cards/CardNews.vue'
 <style scoped>
 .section-media {
 	padding-top: 150px;
-  padding-bottom: 150px;
+	padding-bottom: 150px;
 }
 
 .heading {
@@ -48,8 +48,14 @@ import CardNews from '@/components/cards/CardNews.vue'
 }
 
 .cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 24px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 24px;
+}
+
+@media (max-width: 1000px) {
+	.filters {
+		gap: 8px;
+	}
 }
 </style>
