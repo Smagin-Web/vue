@@ -10,15 +10,15 @@ import InstagramIcon from './InstagramIcon.vue'
 	<section class="section-telegram">
 		<MContainer>
 			<div class="card">
-        <img src="./picture.png" alt="" class="card-picture" />
+				<img src="./picture.png" alt="" class="card-picture" />
 				<div class="card-content">
-					<h3 class="card-title">Подпишись на наш телеграм-канал</h3>
+					<h3 class="h-xxl card-title">Подпишись на наш телеграм-канал</h3>
 					<h6 class="card-text">
-						получай полезную информациюпо уходу за кожей
+						получай полезную информацию по&nbsp;уходу за&nbsp;кожей
 					</h6>
 					<MButtonBig class="card-button">Подписаться на канал</MButtonBig>
 					<div class="card-other">
-						<h6 class="card-text">и другие соцсети</h6>
+						<h6 class="card-text card-text-other">и другие соцсети</h6>
 						<VkIcon class="card-icon" />
 						<InstagramIcon class="card-icon" />
 						<YouTubeIcon class="card-icon" />
@@ -35,18 +35,18 @@ import InstagramIcon from './InstagramIcon.vue'
 }
 
 .card {
-  position: relative;
+	position: relative;
 	padding: 80px;
 	padding-top: 125px;
 	border-radius: 150px 20px;
 	background: #ede4da;
 }
 
-.card-picture{
-  position: absolute;
-  width: 40%;
-  right: 40px;
-  top: 30px;
+.card-picture {
+	position: absolute;
+	width: 40%;
+	right: 40px;
+	top: 30px;
 }
 
 .card-content {
@@ -54,8 +54,6 @@ import InstagramIcon from './InstagramIcon.vue'
 }
 
 .card-title {
-	color: #000;
-	font-size: 60px;
 	padding-bottom: 30px;
 }
 
@@ -66,6 +64,7 @@ import InstagramIcon from './InstagramIcon.vue'
 .card-text {
 	color: #6d6364;
 	font-size: 34px;
+	max-width: 760px;
 }
 
 .card-other {
@@ -76,5 +75,121 @@ import InstagramIcon from './InstagramIcon.vue'
 
 .card-icon {
 	opacity: 0.5;
+}
+
+.card-text-other {
+	white-space: nowrap;
+}
+
+@media (max-width: 1650px) {
+	.card-text {
+		color: #6d6364;
+		font-size: 30px;
+	}
+}
+
+@media (max-width: 1500px) {
+	.card-title {
+		max-width: 700px;
+	}
+	.card-text {
+		font-size: 26px;
+		max-width: 670px;
+	}
+}
+
+@media (max-width: 1300px) {
+	.card {
+		padding: 60px;
+		padding-top: 80px;
+		border-radius: 100px 20px;
+	}
+	.card-picture {
+		width: 35%;
+	}
+}
+
+@media (max-width: 1200px) {
+	.card-title {
+		max-width: 600px;
+	}
+	.card-text {
+		font-size: 24px;
+	}
+	.card-button {
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+}
+
+@media (max-width: 1000px) {
+	.card {
+		padding: 40px;
+		border-radius: 40px 10px;
+	}
+	.card-title {
+		max-width: 450px;
+	}
+	.card-text {
+		max-width: 500px;
+		font-size: 18px;
+	}
+	.card-icon {
+		width: 80px;
+		height: auto;
+	}
+}
+
+@media (max-width: 800px) {
+	.card-title {
+		max-width: 400px;
+	}
+	.card-text {
+		max-width: 350px;
+	}
+}
+
+@media (max-width: 700px) {
+	.card-other {
+		gap: 14px;
+	}
+	.card-text {
+		font-size: 15px;
+		max-width: 300px;
+	}
+	.card-picture {
+		width: 30%;
+	}
+}
+
+@media (max-width: 600px) {
+	.card-picture {
+		top: 60px;
+	}
+}
+
+@media (max-width: 500px) {
+	.card {
+		padding: 16px;
+		padding-top: 40px;
+		border-radius: 30px 10px;
+	}
+	.card-text-other {
+		width: 100%;
+		text-align: center;
+	}
+	.card-other {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.card-button {
+		width: 100%;
+		max-width: 100%;
+		margin-bottom: 30px;
+	}
+	.card-picture {
+		right: 20px;
+		top: 80px;
+	}
 }
 </style>

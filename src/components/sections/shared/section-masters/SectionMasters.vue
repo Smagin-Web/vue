@@ -81,7 +81,7 @@ import MButtonOutlineBig from '@/components/buttons/MButtonOutlineBig.vue'
 		padding-bottom: 80px;
 	}
 	.section-subtitle {
-		padding-bottom: 58px;
+		padding-bottom: 50px;
 	}
 	.container-custom {
 		padding: 0;

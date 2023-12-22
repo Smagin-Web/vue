@@ -147,5 +147,8 @@ import SectionOfferList from './SectionOfferList.vue'
 		/* transform: translateY(50%) translateX(40%); */
 		padding-right: 40px;
 	}
+	.card-inside {
+		border-radius: 40px;
+	}
 }
 </style>

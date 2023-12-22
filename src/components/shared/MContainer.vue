@@ -9,7 +9,6 @@
 	max-width: 1920px;
 	margin: auto;
 	padding: 0 var(--container-padding-xxxl);
-	overflow-x: hidden;
 }
 
 @media screen and (max-width: 1720px) {

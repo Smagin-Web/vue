@@ -4,19 +4,17 @@
 	<ul class="list">
 		<li class="list-item">
 			<span>1</span>
-			<h5 class="list-item-text">
-				Просто запишись к&nbsp;нам&nbsp;на&nbsp;приём
-			</h5>
+			<h5 class="text-lg">Просто запишись к&nbsp;нам&nbsp;на&nbsp;приём</h5>
 		</li>
 		<li class="list-item">
 			<span>2</span>
-			<h5 class="list-item-text">
+			<h5 class="text-lg">
 				Пройди 5-ти минутную диагностику с&nbsp;помощью Antera&nbsp;3D
 			</h5>
 		</li>
 		<li class="list-item">
 			<span>3</span>
-			<h5 class="list-item-text">
+			<h5 class="text-lg">
 				Получи чёткий план по&nbsp;возвращению коже её&nbsp;естественной красоты
 			</h5>
 		</li>
@@ -38,11 +36,6 @@
 	grid-template-columns: max-content 1fr;
 }
 
-.list-item-text {
-	color: #6d6364;
-	font-size: 24px;
-}
-
 .list-item span {
 	padding-top: 3px;
 	color: white;
@@ -58,12 +51,6 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-}
-
-@media (max-width: 1600px) {
-	.list-item-text {
-		font-size: 20px;
-	}
 }
 
 @media (max-width: 1000px) {
@@ -84,9 +71,14 @@
 		width: 40px;
 		height: 40px;
 	}
+	.list-item span {
+		font-size: 16px;
 
-	.list-item-text {
-		font-size: 17px;
+		width: 30px;
+		height: 30px;
+	}
+	.list {
+		gap: 10px;
 	}
 }
 </style>

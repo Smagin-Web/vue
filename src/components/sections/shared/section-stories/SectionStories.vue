@@ -179,12 +179,18 @@ export default {
 }
 
 @media (max-width: 900px) {
+	.section-stories {
+		padding-bottom: 80px;
+	}
 	.container-custom {
 		padding: 0;
 	}
 
 	.swiper-custom {
 		padding: 0 24px;
+	}
+	.heading{
+		padding-bottom: 30px;
 	}
 }
 </style>
