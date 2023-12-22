@@ -58,7 +58,29 @@ import SectionMastersSearch from './SectionMastersSearch.vue'
 	gap: 100px 24px;
 }
 
-.section-masters-search{
+.section-masters-search {
 	margin-bottom: 100px;
+}
+
+@media (max-width: 1000px) {
+	.heading {
+		padding-bottom: 20px;
+	}
+	.text {
+		padding-bottom: 20px;
+	}
+	.section-masters-search {
+		margin-bottom: 40px;
+	}
+	.cards {
+		grid-template-columns: 1fr 1fr;
+		justify-items: center;
+	}
+}
+
+@media (max-width: 700px) {
+	.cards {
+		grid-template-columns: 1fr;
+	}
 }
 </style>

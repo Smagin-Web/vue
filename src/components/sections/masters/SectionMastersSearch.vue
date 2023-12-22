@@ -51,4 +51,20 @@ import SearchIcon from './SearchIcon.vue'
 .search-icon:hover {
 	opacity: 0.8;
 }
+
+@media (max-width: 1000px) {
+	.search-input,
+	.search-input::placeholder {
+		font-size: 16px;
+	}
+	.search-input {
+		padding: 18px 90px 18px 26px;
+	}
+	.search-icon {
+		top: 8px;
+		right: 8px;
+		height: calc(100% - 16px);
+		width: auto;
+	}
+}
 </style>
