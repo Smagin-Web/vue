@@ -9,8 +9,8 @@ import SectionMastersSearch from './SectionMastersSearch.vue'
 	<section class="section-masters">
 		<MContainer>
 			<BreadCrumbs class="bread-crumbs" />
-			<h1 class="heading">Специалисты</h1>
-			<p class="section-masters-text">
+			<h1 class="h-xxl heading">Специалисты</h1>
+			<p class="text-sm text">
 				Мы используем оригинальное оборудование премиум-класса, которое имеет
 				сертификаты, регистрационные удостоверения Российской Федерации, а также
 				сертификаты и разрешения FDA (США) и Европейского Союза! Вводный
@@ -22,7 +22,7 @@ import SectionMastersSearch from './SectionMastersSearch.vue'
 				cras.
 			</p>
 
-			<SectionMastersSearch />
+			<SectionMastersSearch class="section-masters-search" />
 
 			<div class="cards">
 				<CardMaster />
@@ -45,14 +45,10 @@ import SectionMastersSearch from './SectionMastersSearch.vue'
 }
 
 .heading {
-	color: #000;
-	font-size: 60px;
 	padding-bottom: 50px;
 }
 
-.section-masters-text {
-	color: #6d6364;
-	font-size: 22px;
+.text {
 	padding-bottom: 50px;
 }
 
@@ -60,5 +56,9 @@ import SectionMastersSearch from './SectionMastersSearch.vue'
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	gap: 100px 24px;
+}
+
+.section-masters-search{
+	margin-bottom: 100px;
 }
 </style>

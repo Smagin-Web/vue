@@ -73,5 +73,8 @@ import FaqItem from '../inside/section-faq/FaqItem.vue'
 	.filters {
 		gap: 8px;
 	}
+	.section-faq {
+		padding-bottom: 80px;
+	}
 }
 </style>
