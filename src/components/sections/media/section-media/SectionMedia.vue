@@ -9,7 +9,7 @@ import CardNews from '@/components/cards/CardNews.vue'
 	<section class="section-media">
 		<MContainer>
 			<BreadCrumbs class="bread-crumbs" />
-			<h1 class="heading">Медиа</h1>
+			<h1 class="h-xxl heading">Медиа</h1>
 
 			<div class="filters">
 				<Filter :active="true">Все публикации</Filter>
@@ -31,13 +31,10 @@ import CardNews from '@/components/cards/CardNews.vue'
 
 <style scoped>
 .section-media {
-	padding-top: 150px;
 	padding-bottom: 150px;
 }
 
 .heading {
-	color: #000;
-	font-size: 60px;
 	padding-bottom: 50px;
 }
 
@@ -54,8 +51,22 @@ import CardNews from '@/components/cards/CardNews.vue'
 }
 
 @media (max-width: 1000px) {
+	.section-media {
+		padding-bottom: 50px;
+	}
 	.filters {
 		gap: 8px;
+		flex-wrap: wrap;
+	}
+	.heading {
+		padding-bottom: 20px;
+	}
+	.filters {
+		padding-bottom: 40px;
+	}
+	.cards {
+		grid-template-columns: 1fr;
+		gap: 10px;
 	}
 }
 </style>

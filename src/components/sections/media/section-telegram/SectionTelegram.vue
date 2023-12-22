@@ -123,6 +123,9 @@ import InstagramIcon from './InstagramIcon.vue'
 }
 
 @media (max-width: 1000px) {
+	.section-telegram {
+		padding-bottom: 40px;
+	}
 	.card {
 		padding: 40px;
 		border-radius: 40px 10px;
