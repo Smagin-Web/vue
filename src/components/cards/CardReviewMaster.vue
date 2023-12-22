@@ -16,7 +16,7 @@ defineProps<{
 		<div class="card-header" v-if="masterName">
 			<img src="./CardReviewMasterAvatar.png" alt="" />
 			<div>
-				<p class="card-header-title">Отзыв о специалисте</p>
+				<p class="text-sm card-header-title">Отзыв о специалисте</p>
 				<h6 class="card-header-name">{{ masterName }}</h6>
 			</div>
 		</div>
@@ -85,8 +85,7 @@ defineProps<{
 }
 
 .card-header-title {
-	color: #6d6364;
-	font-size: 22px;
+	padding-bottom: 6px;
 }
 
 .card {
@@ -133,12 +132,38 @@ defineProps<{
 
 .card-badges {
 	display: flex;
-	justify-content: space-between;
+	gap: 30px;
 }
 
 .card-calendar-badge {
 	display: flex;
 	gap: 6px;
 	align-items: center;
+}
+
+@media (max-width: 1000px) {
+	.card-header-name {
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 550px) {
+	.card {
+		padding: 40px 26px 34px;
+		border-radius: 38px;
+	}
+	.card-photo {
+		width: 100px;
+		height: 100px;
+	}
+	.card-header-name {
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 450px) {
+	.card-badges {
+		display: grid;
+	}
 }
 </style>

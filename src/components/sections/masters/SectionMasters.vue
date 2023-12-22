@@ -2,7 +2,7 @@
 import MContainer from '@/components/shared/MContainer.vue'
 import BreadCrumbs from '@/components/shared/BreadCrumbs.vue'
 import CardMaster from '../shared/section-masters/CardMaster.vue'
-import SectionMastersSearch from './SectionMastersSearch.vue'
+import SearchInput from '@/components/shared/SearchInput.vue'
 </script>
 
 <template>
@@ -22,7 +22,7 @@ import SectionMastersSearch from './SectionMastersSearch.vue'
 				cras.
 			</p>
 
-			<SectionMastersSearch class="section-masters-search" />
+			<SearchInput class="section-masters-search" />
 
 			<div class="cards">
 				<CardMaster />

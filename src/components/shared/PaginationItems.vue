@@ -26,6 +26,7 @@ import IconSliderArrowRight from '../icons/IconSliderArrowRight.vue'
 }
 
 .pagination-button {
+	flex-shrink: 0;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -53,5 +54,38 @@ import IconSliderArrowRight from '../icons/IconSliderArrowRight.vue'
 .pagination-button-prev {
 	transform: rotate(180deg);
 	margin-right: 20px;
+}
+
+@media (max-width: 1000px) {
+	.pagination {
+		gap: 4px;
+	}
+	.pagination-button {
+		font-size: 18px;
+		width: 40px;
+		height: 40px;
+	}
+	.pagination-button-prev,
+	.pagination-button-next {
+		width: 40px;
+		height: 40px;
+	}
+}
+
+@media (max-width: 500px) {
+	.pagination {
+		gap: 0;
+		position: relative;
+	}
+	.pagination-button-prev {
+		position: absolute;
+		top: -60px;
+		left: 40px;
+	}
+	.pagination-button-next {
+		position: absolute;
+		top: -60px;
+		right: 40px;
+	}
 }
 </style>
