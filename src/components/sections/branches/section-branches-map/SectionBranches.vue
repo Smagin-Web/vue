@@ -6,7 +6,7 @@ import IconList from './IconList.vue'
 </script>
 
 <template>
-	<section class="section-contacts-card">
+	<section class="section-branches">
 		<MContainer>
 			<BreadCrumbs />
 			<h1 class="h-xxl heading">Филиалы</h1>
@@ -64,7 +64,7 @@ import IconList from './IconList.vue'
 </template>
 
 <style scoped>
-.section-contacts-card {
+.section-branches {
 	padding-bottom: 150px;
 }
 
@@ -114,6 +114,9 @@ import IconList from './IconList.vue'
 }
 
 @media (max-width: 1000px) {
+	.section-branches {
+		padding-bottom: 80px;
+	}
 	.heading {
 		padding-bottom: 20px;
 	}

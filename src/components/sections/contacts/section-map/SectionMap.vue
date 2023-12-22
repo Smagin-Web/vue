@@ -29,7 +29,7 @@ import SelectRoad from './SelectRoad.vue'
 						style="border: 0; width: 100%; border-radius: 34px"
 						loading="lazy"
 						referrerpolicy="no-referrer-when-downgrade"
-					></iframe>
+					/>
 				</div>
 			</div>
 		</MContainer>
@@ -80,6 +80,11 @@ import SelectRoad from './SelectRoad.vue'
 @media (max-width: 1750px) {
 	.map-header-flex {
 		display: grid;
+	}
+}
+@media (max-width: 1000px) {
+	.section-map {
+		padding-bottom: 50px;
 	}
 }
 
