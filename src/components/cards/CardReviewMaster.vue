@@ -25,11 +25,11 @@ defineProps<{
 			<ButtonMore class="button-read-more">Читать отзыв</ButtonMore>
 			<div class="card-head">
 				<div>
-					<h4 class="card-title">Каролина Милютина</h4>
+					<h4 class="h-sm card-title">Каролина<br />Милютина</h4>
 					<div class="card-badges">
 						<p class="card-calendar-badge">
 							<IconCalendar />
-							15.05.2023
+							<span class="text-sm">15.05.2023</span>
 						</p>
 						<IconYandexLocation />
 					</div>
@@ -38,7 +38,7 @@ defineProps<{
 				</div>
 			</div>
 
-			<p class="card-text">
+			<p class="text-sm">
 				Не первый год пользуюсь услугами центра косметологии MIRA.С огромным
 				удовольствием прихожу на приём к Ольге Владимировне.Последний раз не
 				исключение, результат превосходный!!Она никогда не посоветует
@@ -117,21 +117,17 @@ defineProps<{
 
 .card-head {
 	margin-bottom: 40px;
-
-	display: grid;
-	grid-template-columns: 220px 1fr;
-	position: relative;
 }
 
 .card-photo {
 	position: absolute;
-	bottom: 0;
-	right: 0;
+	height: 140px;
+	width: auto;
+	top: 32px;
+	right: 40px;
 }
 
 .card-title {
-	color: #000;
-	font-size: 30px;
 	padding-bottom: 16px;
 }
 
@@ -141,16 +137,8 @@ defineProps<{
 }
 
 .card-calendar-badge {
-	color: #6d6364;
-	font-size: 16px;
-
 	display: flex;
 	gap: 6px;
 	align-items: center;
-}
-
-.card-text {
-	color: #6d6364;
-	font-size: 22px;
 }
 </style>

@@ -43,7 +43,6 @@ const sliderPrev = () => {
 					}"
 					:initialSlide="1"
 					:slidesPerView="'auto'"
-					:spaceBetween="24"
 				>
 					<slot />
 				</Swiper>
@@ -124,5 +123,17 @@ const sliderPrev = () => {
 	display: flex;
 	justify-content: center;
 	gap: 30px;
+}
+
+@media (max-width: 600px) {
+	.button-next,
+	.button-prev {
+		opacity: 0.5;
+	}
+	.button-next:hover,
+	.button-prev:hover {
+		opacity: 0.5;
+		border: none;
+	}
 }
 </style>
