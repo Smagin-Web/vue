@@ -13,11 +13,11 @@ import IconList from './IconList.vue'
 
 			<div class="buttons">
 				<button class="button">
-					<IconLocation />
+					<IconLocation class="button-icon" />
 					На карте
 				</button>
 				<button class="button-outline">
-					<IconList />
+					<IconList class="button-icon" />
 					Списком
 				</button>
 			</div>
@@ -80,6 +80,7 @@ import IconList from './IconList.vue'
 
 .button,
 .button-outline {
+	white-space: nowrap;
 	padding: 16px 50px;
 	display: flex;
 	justify-content: center;
@@ -110,5 +111,36 @@ import IconList from './IconList.vue'
 	border: 20px solid #fff;
 	overflow: hidden;
 	height: 814px;
+}
+
+@media (max-width: 1000px) {
+	.heading {
+		padding-bottom: 20px;
+	}
+	.buttons {
+		padding-bottom: 30px;
+	}
+	.button,
+	.button-outline {
+		padding: 10px 36px;
+		gap: 4px;
+
+		border-radius: 100px;
+		font-size: 18px;
+	}
+	.button-icon {
+		width: 30px;
+		height: auto;
+	}
+}
+
+@media (max-width: 500px) {
+	.button,
+	.button-outline {
+		padding: 10px 24px;
+	}
+	.buttons {
+		gap: 10px;
+	}
 }
 </style>

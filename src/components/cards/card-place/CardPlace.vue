@@ -10,7 +10,7 @@ import CardPlaceContacts from './CardPlaceContacts.vue'
 		<h2 class="h-xl card-heading-place">Face Concept Лефортово</h2>
 
 		<h5 class="h-l card-text">
-			Москва, улица&nbsp;Красноказарменная&nbsp;14А, корпус&nbsp;6
+			Москва, улица Красноказарменная&nbsp;14А, корпус&nbsp;6
 		</h5>
 
 		<div class="card-badges">
@@ -151,6 +151,9 @@ import CardPlaceContacts from './CardPlaceContacts.vue'
 }
 
 @media (max-width: 550px) {
+	.card {
+		padding: 12px;
+	}
 	.card-img {
 		margin-bottom: 30px;
 		position: static;

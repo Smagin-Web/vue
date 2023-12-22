@@ -17,4 +17,11 @@ import CardPlace from '@/components/cards/card-place/CardPlace.vue'
 	border-radius: 50px;
 	padding: 40px;
 }
+
+@media (max-width: 550px) {
+	.card {
+		padding: 26px;
+		border-radius: 38px;
+	}
+}
 </style>
