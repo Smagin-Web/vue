@@ -43,6 +43,7 @@ const sliderPrev = () => {
 					}"
 					:initialSlide="1"
 					:slidesPerView="'auto'"
+					:spaceBetween="24"
 				>
 					<slot />
 				</Swiper>

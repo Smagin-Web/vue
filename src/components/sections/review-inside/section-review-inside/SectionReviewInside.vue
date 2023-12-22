@@ -15,7 +15,7 @@ import IconText2 from './IconText2.vue'
 	<section class="section-review-inside">
 		<MContainer>
 			<BreadCrumbs />
-			<h3 class="h-xl heading-section-custom">
+			<h3 class="h-xl section-title">
 				Отзыв о работе
 				<br />
 				Юлии Епишиной
@@ -76,11 +76,10 @@ import IconText2 from './IconText2.vue'
 
 <style scoped>
 .section-review-inside {
-	padding-top: 150px;
 	padding-bottom: 250px;
 }
 
-.heading-section-custom {
+.section-title {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -190,5 +189,13 @@ import IconText2 from './IconText2.vue'
 	position: absolute;
 	right: 40px;
 	bottom: 32px;
+}
+
+@media (max-width: 600px) {
+	.section-title {
+		flex-direction: column-reverse;
+		align-items: start;
+		gap: 40px;
+	}
 }
 </style>
