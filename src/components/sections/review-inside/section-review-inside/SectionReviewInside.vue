@@ -26,31 +26,31 @@ import IconText2 from './IconText2.vue'
 			<div class="card-with-photo">
 				<div class="card">
 					<div class="card-footer">
-						<h6 class="card-footer-title">Ответ клиники</h6>
-						<p class="card-footer-text">
+						<h6 class="h-sm-ultra card-footer-title">Ответ клиники</h6>
+						<p class="text-sm card-footer-text">
 							Каролина, огромная благодарность вам за столь подробный и
 							развернутый отзыв!
 						</p>
 						<IconLogo class="card-footer-logo" />
 					</div>
-					<h6 class="card-title">Каролина Милютина</h6>
+					<h6 class="h-sm-ultra card-title">Каролина Милютина</h6>
 					<div class="card-badges">
 						<p class="card-badge">
 							<IconPerson />
-							36 лет
+							<span class="text-sm">36 лет</span>
 						</p>
 
 						<p class="card-badge">
 							<IconLocation />
-							Москва
+							<span class="text-sm">Москва</span>
 						</p>
 
 						<p class="card-badge">
 							<IconCalendar />
-							15.05.2023
+							<span class="text-sm">15.05.2023</span>
 						</p>
 					</div>
-					<p class="card-text">
+					<p class="text-sm card-text">
 						В современном мире сложно найти профессионала , знающего толк в
 						своем деле. В этом вопросе, мне очень повезло, мой ведущий
 						косметолог Юлия Николаевна именно такой специалист. Каждая процедура
@@ -88,9 +88,11 @@ import IconText2 from './IconText2.vue'
 .card-with-photo {
 	display: flex;
 	justify-content: space-between;
+	gap: 24px;
 }
 
 .card {
+	width: 100%;
 	position: relative;
 	padding: 80px;
 	padding-right: 75px;
@@ -115,13 +117,7 @@ import IconText2 from './IconText2.vue'
 }
 
 .card-title {
-	font-size: 24px;
 	padding-bottom: 30px;
-}
-
-.card-text {
-	color: #6d6364;
-	font-size: 22px;
 }
 
 .card-badges {
@@ -134,18 +130,21 @@ import IconText2 from './IconText2.vue'
 	display: flex;
 	align-items: center;
 	gap: 8px;
-
-	color: #6d6364;
-	font-size: 22px;
+	white-space: nowrap;
 }
 
 .photo-wrapper {
+	width: 100%;
+	display: flex;
+	align-items: start;
 	position: relative;
 	max-width: 544px;
+	height: fit-content;
 }
 
 .photo {
 	width: 100%;
+	height: auto;
 }
 
 .icon-text {
@@ -155,11 +154,13 @@ import IconText2 from './IconText2.vue'
 }
 
 .icon-text-2 {
-	bottom: 45px;
+	width: 70%;
+	bottom: 5%;
 }
 
 .icon-text-1 {
-	bottom: 180px;
+	width: 40%;
+	bottom: 30%;
 }
 
 .card-footer {
@@ -175,13 +176,10 @@ import IconText2 from './IconText2.vue'
 }
 
 .card-footer-title {
-	font-size: 24px;
 	padding-bottom: 20px;
 }
 
 .card-footer-text {
-	color: #6d6364;
-	font-size: 22px;
 	max-width: 80%;
 }
 
@@ -196,6 +194,74 @@ import IconText2 from './IconText2.vue'
 		flex-direction: column-reverse;
 		align-items: start;
 		gap: 40px;
+	}
+}
+
+@media (max-width: 1400px) {
+	.photo-wrapper {
+		max-width: 400px;
+	}
+}
+
+@media (max-width: 1200px) {
+	.card {
+		padding: 40px;
+		padding-right: 70px;
+		border-radius: 40px;
+	}
+	.card:after {
+		width: 70px;
+		height: 70px;
+		right: -28px;
+		border-radius: 6px;
+	}
+	.card-title {
+		padding-bottom: 20px;
+	}
+	.card-badges {
+		padding-bottom: 20px;
+	}
+	.card-footer {
+		padding: 28px;
+		border-radius: 0 0 22px 22px;
+	}
+	.card-footer-logo {
+		width: 60px;
+		height: auto;
+		right: 20px;
+		bottom: 50%;
+		transform: translateY(50%);
+	}
+	.card-footer-title {
+		padding-bottom: 10px;
+	}
+}
+
+@media (max-width: 1100px) {
+	.photo-wrapper {
+		max-width: 300px;
+	}
+}
+
+@media (max-width: 900px) {
+	.card-with-photo {
+		flex-direction: column-reverse;
+		gap: 50px;
+	}
+	.card {
+		padding: 24px;
+		border-radius: 20px;
+	}
+	.card:after {
+		left: 100px;
+		right: auto;
+		top: -25px;
+		bottom: auto;
+		z-index: 0;
+	}
+	.card-title {
+		position: relative;
+		z-index: 10;
 	}
 }
 </style>
