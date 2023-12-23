@@ -17,32 +17,32 @@ const onClickHandler = () => {
 
 <template>
 	<div class="select-road" v-bind:class="className">
-		<button class="select-road-button" :onClick="onClickHandler">
+		<button class="select-road-button text-sm" :onClick="onClickHandler">
 			Как добраться от МКАД на автомобиле
 		</button>
 
 		<SelectArrow class="select-road-icon" />
 
 		<div class="select-road-list" v-bind:class="className">
-			<button class="select-road-list-button">
+			<button class="select-road-list-button text-sm">
 				Как добраться от МКАД на автомобиле
 			</button>
-			<button class="select-road-list-button">
+			<button class="select-road-list-button text-sm">
 				Как добраться от МКАД на автомобиле
 			</button>
-			<button class="select-road-list-button">
+			<button class="select-road-list-button text-sm">
 				Как добраться от МКАД на автомобиле
 			</button>
-			<button class="select-road-list-button">
+			<button class="select-road-list-button text-sm">
 				Как добраться от МКАД на автомобиле
 			</button>
-			<button class="select-road-list-button">
+			<button class="select-road-list-button text-sm">
 				Как добраться от МКАД на автомобиле
 			</button>
-			<button class="select-road-list-button">
+			<button class="select-road-list-button text-sm">
 				Как добраться от МКАД на автомобиле
 			</button>
-			<button class="select-road-list-button">
+			<button class="select-road-list-button text-sm">
 				Как добраться от МКАД на автомобиле
 			</button>
 		</div>
@@ -66,9 +66,7 @@ const onClickHandler = () => {
 	position: relative;
 	border: none;
 	background: none;
-	color: #6d6364;
-	font-family: 'BrisaSans';
-	font-size: 22px;
+
 	padding: 26px 30px;
 	padding-right: 30px;
 
@@ -121,10 +119,6 @@ const onClickHandler = () => {
 	border: none;
 	background: transparent;
 
-	color: #6d6364;
-	font-family: 'BrisaSans';
-	font-size: 22px;
-	font-weight: 400;
 	z-index: 1;
 }
 
@@ -138,6 +132,25 @@ const onClickHandler = () => {
 	}
 	.select-road-button {
 		font-size: 18px;
+	}
+}
+
+@media (max-width: 700px) {
+	.select-road-button {
+		padding-right: 100px;
+	}
+}
+
+@media (max-width: 550px) {
+	.select-road {
+		border-radius: 10px;
+	}
+	.select-road-button {
+		padding: 20px 20px;
+		border-radius: 5px;
+	}
+	.select-road-list {
+		border-radius: 10px;
 	}
 }
 </style>
