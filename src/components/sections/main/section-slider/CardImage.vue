@@ -1,21 +1,21 @@
 <script setup lang="ts">
 const props = defineProps(['iconSrc', 'iconBigSrc'])
 
-const getImageUrl = () => {
+const getImageUrl = (name) => {
 	return new URL(
-		`${props.iconSrc || props.iconBigSrc}`,
+		`${name}`,
 		import.meta.url
-	).toString()
+	).href.toString()
 }
 </script>
 
 <template>
 	<div class="card-image-wrapper">
 		<img src="./slider.png" alt="" class="card-image" />
-		<img v-if="props.iconSrc" :src="getImageUrl()" class="svg-picture" />
+		<img v-if="props.iconSrc" :src="getImageUrl(props.iconSrc)" class="svg-picture" />
 		<img
 			v-if="props.iconBigSrc"
-			:src="getImageUrl()"
+			:src="getImageUrl(props.iconBigSrc)"
 			class="svg-picture-head"
 		/>
 	</div>
@@ -65,8 +65,8 @@ const getImageUrl = () => {
 
 @media (max-width: 1000px) {
 	.card-image-wrapper {
-    left: 50%;
-    transform: translateX(-55%);
+		left: 50%;
+		transform: translateX(-55%);
 		margin-top: 20px;
 		position: relative;
 		width: 250px;
