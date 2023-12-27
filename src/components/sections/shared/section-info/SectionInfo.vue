@@ -36,9 +36,9 @@ onUnmounted(() => {
 </script>
 
 <template>
-	<section class="section-info" style="height: 200vh">
-		<MContainer class="section-info-container" style="">
-			<h3 class="heading" :style="infoStyles">
+	<section class="section-info">
+		<MContainer class="section-info-container">
+			<h3 class="heading">
 				Наш Центр специализируется
 				<br />
 				на&nbsp;аппаратной косметологии лица
@@ -46,7 +46,7 @@ onUnmounted(() => {
 				и&nbsp;имеет медицинскую лицензию
 			</h3>
 
-			<p class="text" :style="infoStyles">
+			<p class="text">
 				Мы&nbsp;уверены, что аппаратная косметология&nbsp;&mdash; это
 				безболезненные процедуры
 				<br />
@@ -71,16 +71,16 @@ onUnmounted(() => {
 	top: 15px;
 	padding-top: 100px;
 	padding-bottom: 100px;
-	height: calc(100vh + 100px);
 	display: grid;
 	justify-content: center;
 	align-items: center;
 	align-content: center;
 }
 .section-info {
+	padding-top: 100px;
+	padding-bottom: 100px;
 	position: relative;
 	background: linear-gradient(180deg, #bac3d8 0%, #7986a5 100%);
-	height: 500vh;
 }
 
 .heading {
