@@ -1,24 +1,17 @@
 <script setup lang="ts">
-import { ref, watchEffect } from 'vue'
-
 const props = defineProps(['iconSrc', 'iconBigSrc'])
 
 const getImageUrl = (name: any) => {
 	return new URL(`${name}`, import.meta.url).href.toString()
 }
 
-const logo = ref()
-watchEffect(async () => {
-	logo.value = (await import(/* @vite-ignore */ `${props.iconSrc}`)).default
-	console.log(logo)
-})
+const image = new URL(`${props.iconSrc}`, import.meta.url).href
 </script>
 
 <template>
 	<div class="card-image-wrapper">
 		<img src="./slider.png" alt="" class="card-image" />
-		<!-- <img v-if="props.iconSrc" :src="getImageUrl(props.iconSrc)" class="svg-picture" /> -->
-		<img v-if="props.iconSrc" :src="logo" class="svg-picture" />
+		<img v-if="props.iconSrc" :src="image" class="svg-picture" />
 		<img
 			v-if="props.iconBigSrc"
 			:src="getImageUrl(props.iconBigSrc)"
