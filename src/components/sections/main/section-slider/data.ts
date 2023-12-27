@@ -8,7 +8,7 @@ export const dataSlides: any[] = [
 		badgeNumber: '01.',
 		badgeName: 'AntiAcne Concept',
 		badgeColor: '#ce99ab',
-		iconSrc: '/components/sections/main/section-slider/icon1.svg'
+		iconSrc: './icon1.svg'
 	},
 	{
 		title: 'Вылечим твою кожу и&nbsp;избавим от высыпания на лице.',
@@ -74,7 +74,8 @@ export const dataSlides: any[] = [
 		badgeNumber: '07.',
 		badgeName: 'Red Concept',
 		badgeColor: '#F88476',
-		iconSrc: './slider-picture-svg.png'
+		// iconSrc: './slider-picture-svg.png'
+		iconSrc: './icon6.svg'
 	},
 	{
 		title: 'Вылечим твою кожу и&nbsp;избавим от высыпания на лице.',

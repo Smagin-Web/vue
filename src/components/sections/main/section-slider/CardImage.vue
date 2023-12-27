@@ -1,23 +1,26 @@
 <script setup lang="ts">
 const props = defineProps(['iconSrc', 'iconBigSrc'])
 
-const getImageUrl = (name: any) => {
-	return new URL(`${name}`, import.meta.url).href.toString()
+const getSrc = (name: any) => {
+	const path = `${name}`
+	const modules = import.meta.glob('./*.svg')
+	return modules[path]().then(mod => mod.default)
 }
 
-// const image = new URL(`${props.iconSrc}`, import.meta.url).href
-const image = `/src/components/sections/main/section-slider/${props.iconSrc}`
+const svg = await getSrc(props.iconSrc)
+
+console.log(svg)
 </script>
 
 <template>
 	<div class="card-image-wrapper">
 		<img src="./slider.png" alt="" class="card-image" />
-		<img v-if="props.iconSrc" :src="image" class="svg-picture" />
-		<img
+		<img v-if="props.iconSrc" :src="svg" class="svg-picture" />
+		<!-- <img
 			v-if="props.iconBigSrc"
-			:src="getImageUrl(props.iconBigSrc)"
+			:src="getSrc(props.iconBigSrc)"
 			class="svg-picture-head"
-		/>
+		/> -->
 	</div>
 </template>
 
