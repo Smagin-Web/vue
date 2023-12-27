@@ -28,6 +28,12 @@ import SectionDevicesCard from './SectionDevicesCard.vue'
 	margin-bottom: 24px;
 }
 
+@media (max-width: 1000px) {
+	.section-devices {
+		padding-bottom: 70px;
+	}
+}
+
 @media (max-width: 700px) {
 	.heading {
 		padding-bottom: 30px;

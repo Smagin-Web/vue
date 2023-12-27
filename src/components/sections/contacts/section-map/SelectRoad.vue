@@ -18,32 +18,23 @@ const onClickHandler = () => {
 <template>
 	<div class="select-road" v-bind:class="className">
 		<button class="select-road-button text-sm" :onClick="onClickHandler">
-			Как добраться от МКАД на автомобиле
+			Как добраться от МКАД на авто
 		</button>
 
 		<SelectArrow class="select-road-icon" />
 
 		<div class="select-road-list" v-bind:class="className">
 			<button class="select-road-list-button text-sm">
-				Как добраться от МКАД на автомобиле
+				Из центра на автомобиле
 			</button>
 			<button class="select-road-list-button text-sm">
-				Как добраться от МКАД на автомобиле
+				На машрутке №1 от метро «Римская»
 			</button>
 			<button class="select-road-list-button text-sm">
-				Как добраться от МКАД на автомобиле
+				Пешком от метро «Авиамоторная»
 			</button>
 			<button class="select-road-list-button text-sm">
-				Как добраться от МКАД на автомобиле
-			</button>
-			<button class="select-road-list-button text-sm">
-				Как добраться от МКАД на автомобиле
-			</button>
-			<button class="select-road-list-button text-sm">
-				Как добраться от МКАД на автомобиле
-			</button>
-			<button class="select-road-list-button text-sm">
-				Как добраться от МКАД на автомобиле
+				Пешком от метро «Лефортово»
 			</button>
 		</div>
 	</div>
@@ -129,9 +120,6 @@ const onClickHandler = () => {
 @media (max-width: 1000px) {
 	.select-road {
 		width: 100%;
-	}
-	.select-road-button {
-		font-size: 18px;
 	}
 }
 
