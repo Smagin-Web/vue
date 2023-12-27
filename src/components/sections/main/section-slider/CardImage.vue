@@ -3,8 +3,8 @@ const props = defineProps(['iconSrc', 'iconBigSrc'])
 
 const getSrc = (name: any) => {
 	const path = `${name}`
-	const modules = import.meta.glob('./*.svg')
-	return modules[path]().then(mod => mod.default)
+	const modules: Record<string, any> = import.meta.glob('./*.svg')
+	return modules[path]().then((mod: { default: unknown }) => mod.default);
 }
 
 const svg = await getSrc(props.iconSrc)
