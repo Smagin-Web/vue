@@ -9,7 +9,7 @@ import FaqItem from '../inside/section-faq/FaqItem.vue'
 	<section class="section-faq">
 		<MContainer>
 			<BreadCrumbs class="bread-crumbs" />
-			<h1 class="heading">Медиа</h1>
+			<h1 class="heading">Частые вопросы</h1>
 
 			<div class="filters">
 				<Filter :active="true">Все вопросы</Filter>
@@ -46,7 +46,6 @@ import FaqItem from '../inside/section-faq/FaqItem.vue'
 
 <style scoped>
 .section-faq {
-	padding-top: 150px;
 	padding-bottom: 150px;
 }
 
