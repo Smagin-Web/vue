@@ -36,6 +36,7 @@ import SectionBannerText from './SectionBannerText.vue'
 }
 .section-banner {
 	padding-top: 100px;
+	overflow: visible;
 }
 .content {
 	gap: 50px;
@@ -143,6 +144,13 @@ import SectionBannerText from './SectionBannerText.vue'
 @media (max-width: 1000px) {
 	.section-banner {
 		padding-top: 50px;
+	}
+}
+
+@media (max-width: 400px) {
+	.section-banner {
+		overflow: hidden;
+		padding-top: 100px;
 	}
 }
 </style>

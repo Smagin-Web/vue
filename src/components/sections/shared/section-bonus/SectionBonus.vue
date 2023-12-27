@@ -26,6 +26,7 @@ import SectionBonusPicture from './SectionBonusPicture.vue'
 <style scoped>
 .section-bonus {
 	padding-bottom: 160px;
+		padding-top: 34px;
 }
 
 .card {
@@ -125,6 +126,7 @@ import SectionBonusPicture from './SectionBonusPicture.vue'
 }
 
 @media (max-width: 1000px) {
+	
 	.card-badge {
 		font-size: 28px;
 		border-radius: 10px;
