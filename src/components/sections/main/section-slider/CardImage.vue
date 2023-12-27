@@ -5,7 +5,8 @@ const getImageUrl = (name: any) => {
 	return new URL(`${name}`, import.meta.url).href.toString()
 }
 
-const image = new URL(`${props.iconSrc}`, import.meta.url).href
+// const image = new URL(`${props.iconSrc}`, import.meta.url).href
+const image = `/src/components/sections/main/section-slider/${props.iconSrc}`
 </script>
 
 <template>
