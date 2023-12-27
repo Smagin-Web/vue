@@ -9,7 +9,7 @@ import MContainer from '@/components/shared/MContainer.vue'
 		<MContainer>
 			<div class="links">
 				<a class="link" href="/">1) Главная</a>
-				<a class="link" href="/tech">2) Технология</a>
+				<a class="link" href="/tech">2) Карточка аппарата</a>
 				<a class="link" href="/procedures">3) Процедуры</a>
 				<a class="link" href="/inside">4) AntiAcne Concept</a>
 				<a class="link" href="/prices">5) Цены</a>
