@@ -25,8 +25,6 @@ import MButtonOutlineBig from '@/components/buttons/MButtonOutlineBig.vue'
 				<swiper-slide><CardMaster /></swiper-slide>
 				<swiper-slide><CardMaster /></swiper-slide>
 				<swiper-slide><CardMaster /></swiper-slide>
-				<swiper-slide><CardMaster /></swiper-slide>
-				<swiper-slide><CardMaster /></swiper-slide>
 			</SwiperMasters>
 		</MContainer>
 
