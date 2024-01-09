@@ -7,9 +7,10 @@ import IconAge18 from '../icons/IconAge18.vue'
 		<div class="footer-info-left">
 			<p class="footer-info-text">
 				Copyright&nbsp;©&nbsp;2019-2023.
-				ООО&nbsp;«Центр&nbsp;косметологии&nbsp;FACE&nbsp;CONCEPT» Лицензия
+				ООО&nbsp;«Центр&nbsp;косметологии&nbsp;FACE&nbsp;CONCEPT»
+				<br />
 				<a href="#" class="footer-link">
-					№&nbsp;ЛО-50-01-010568&nbsp;от&nbsp;05.02.2019
+					Лицензия №&nbsp;ЛО-50-01-010568&nbsp;от&nbsp;05.02.2019
 				</a>
 			</p>
 			<p class="footer-info-text">
