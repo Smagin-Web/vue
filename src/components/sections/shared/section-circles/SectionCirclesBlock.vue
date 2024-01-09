@@ -4,7 +4,7 @@ import Avatar from '@/components/ui/Avatar.vue'
 
 <template>
 	<div class="wrapper">
-		<div style="display: grid">
+		<div class="groups">
 			<div class="group" style="padding-bottom: 34px">
 				<Avatar />
 				<Avatar style="opacity: 0; z-index: -10" />
@@ -37,6 +37,12 @@ import Avatar from '@/components/ui/Avatar.vue'
 .wrapper {
 	position: relative;
 	overflow-x: auto;
+	padding-left: 40px;
+}
+
+.groups {
+	position: relative;
+	display: grid;
 }
 
 .group-center {

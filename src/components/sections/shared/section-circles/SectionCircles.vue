@@ -23,6 +23,7 @@ import SectionCirclesBlock from './SectionCirclesBlock.vue'
 <style scoped>
 .heading {
 	max-width: 880px;
+	padding-bottom: 80px;
 
 	position: relative;
 	font-size: 42px;
