@@ -33,7 +33,7 @@ const props = defineProps([
 			/>
 		</div>
 
-		<Suspense> <CardImage :icon-src="props.iconSrc" /></Suspense>
+		<Suspense><CardImage :icon-src="props.iconSrc" :icon-big-src="props.iconBigSrc" /></Suspense>
 
 		<div class="card-buttons">
 			<MButton class="first-button">Записаться на приём</MButton>

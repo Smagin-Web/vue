@@ -4,10 +4,10 @@ const props = defineProps(['iconSrc', 'iconBigSrc'])
 const getSrc = (name: any) => {
 	const path = `${name}`
 	const modules: Record<string, any> = import.meta.glob('./*.svg')
-	return modules[path]().then((mod: { default: unknown }) => mod.default);
+	return modules[path]().then((mod: { default: unknown }) => mod.default)
 }
 
-const svg = await getSrc(props.iconSrc)
+const svg = await getSrc(props.iconSrc || props.iconBigSrc)
 
 console.log(svg)
 </script>
@@ -16,11 +16,7 @@ console.log(svg)
 	<div class="card-image-wrapper">
 		<img src="./slider.png" alt="" class="card-image" />
 		<img v-if="props.iconSrc" :src="svg" class="svg-picture" />
-		<!-- <img
-			v-if="props.iconBigSrc"
-			:src="getSrc(props.iconBigSrc)"
-			class="svg-picture-head"
-		/> -->
+		<img v-if="props.iconBigSrc" :src="svg" class="svg-picture-head" />
 	</div>
 </template>
 

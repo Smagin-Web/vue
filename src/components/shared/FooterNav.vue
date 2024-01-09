@@ -26,9 +26,9 @@ import FooterSocials from './FooterSocials.vue'
 			<a class="footer-nav-link">hello@faceconcept.ru</a>
 			<a class="footer-nav-link footer-nav-link-address">
 				Москва, Красноказарменная 14А, корпус 6
-				<span class="footer-nav-link-span"
-					>Работаем с 10:00 до 22:00 без выходных</span
-				>
+				<span class="footer-nav-link-span">
+					Работаем с 10:00 до 22:00 без выходных
+				</span>
 			</a>
 			<FooterSocials />
 		</div>
@@ -192,7 +192,6 @@ export default {
 		font-size: 17px;
 	}
 }
-
 
 @media (max-width: 400px) {
 	.footer-nav {

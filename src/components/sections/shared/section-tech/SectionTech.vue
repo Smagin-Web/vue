@@ -40,7 +40,9 @@ onUnmounted(() => {
 	<section class="section-tech">
 		<MContainer>
 			<h4 class="heading" :style="stylesH1">
-				Мы&nbsp;разработали новый&nbsp;продукт в&nbsp;косметологии
+				Мы&nbsp;разработали новый&nbsp;продукт
+				<br />
+				в&nbsp;косметологии
 			</h4>
 			<h4 class="big-heading" :style="stylesH2">
 				8&nbsp;концептов твоей красоты
