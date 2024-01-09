@@ -1,9 +1,16 @@
 <script setup lang="ts">
+import MContainer from '@/components/shared/MContainer.vue'
+import BreadCrumbs from '@/components/shared/BreadCrumbs.vue'
 import SectionBannerBadges from './SectionBannerBadges.vue'
 </script>
 
 <template>
 	<section>
+		<MContainer>
+			<BreadCrumbs
+				:items="['Главная', 'Концепты', 'Аппаратное лечение акне']"
+			/>
+		</MContainer>
 		<div class="container-custom">
 			<img class="banner" src="./banner.png" alt="" />
 			<div class="content-info">
@@ -26,7 +33,6 @@ import SectionBannerBadges from './SectionBannerBadges.vue'
 	display: flex;
 	align-items: center;
 
-	padding-top: 130px;
 }
 
 .banner {
