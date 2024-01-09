@@ -5,8 +5,8 @@ const props = defineProps(['items'])
 <template>
 	<div class="wrapper">
 		<p class="item" v-for="(item, index) in props.items" :key="index + item">
+			<a class="item-link" href="#" />
 			{{ item }}
-			{{ index < props.items.langth }}
 			<svg
 				v-if="index < props.items.length - 1"
 				class="item-icon"
@@ -33,6 +33,7 @@ const props = defineProps(['items'])
 	padding-bottom: 20px;
 }
 .item {
+	position: relative;
 	display: flex;
 	align-items: center;
 	gap: 10px;
@@ -40,5 +41,12 @@ const props = defineProps(['items'])
 	color: #6d6364;
 	font-size: 22px;
 	font-weight: 400;
+}
+.item-link{
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
 }
 </style>

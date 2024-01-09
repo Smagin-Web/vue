@@ -9,7 +9,7 @@ import SectionProceduresCard from '../../inside/section-procedures/SectionProced
 <template>
 	<section class="section-categories">
 		<MContainer>
-			<BreadCrumbs class="bread-crumbs" />
+			<BreadCrumbs class="bread-crumbs" :items="['Главная', 'Процедуры']" />
 			<h1 class="h-xl">Процедуры</h1>
 			<div class="filters">
 				<Filter :active="true">Все процедуры</Filter>
@@ -38,9 +38,6 @@ import SectionProceduresCard from '../../inside/section-procedures/SectionProced
 </template>
 
 <style scoped>
-.section-categories {
-	padding-top: 200px;
-}
 .heading {
 	color: #000;
 	font-size: 60px;
