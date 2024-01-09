@@ -14,7 +14,7 @@
 
 .number-wrapper {
 	position: relative;
-	padding: 0 14px;
+	padding: 0 14px 20px;
 }
 
 .number-wrapper :deep() img {

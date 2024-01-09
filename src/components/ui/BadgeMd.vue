@@ -5,11 +5,15 @@ const className = `badge-${props.type}`
 </script>
 
 <template>
-	<div class="badge-md" v-bind:class="className"><slot /></div>
+	<div class="badge-md" v-bind:class="className">
+		<a href="#" class="badge-md-link" />
+		<slot />
+	</div>
 </template>
 
 <style scoped>
 .badge-md {
+	position: relative;
 	border-radius: 10px;
 	background: #eea3a3;
 	padding: 8px 10px;
@@ -32,6 +36,14 @@ const className = `badge-${props.type}`
 
 .badge-3 {
 	background-color: #eea3a3;
+}
+
+.badge-md-link {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
 }
 
 @media (max-width: 1000px) {

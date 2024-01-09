@@ -42,13 +42,13 @@ const handler = () => {
 	<div class="item" @click="handler" :style="heightItem" ref="itemRef">
 		<h6 class="item-title" ref="titleRef">
 			{{ title }}
+			<div class="item-icon-wrapper">
+				<div class="item-icon" v-bind:class="{ active: isActive }" />
+			</div>
 		</h6>
 		<p class="item-text" v-bind:class="{ active: isActive }" ref="textRef">
 			{{ text }}
 		</p>
-		<div class="item-icon-wrapper">
-			<div class="item-icon" v-bind:class="{ active: isActive }" />
-		</div>
 	</div>
 </template>
 
@@ -67,6 +67,7 @@ const handler = () => {
 }
 
 .item-title {
+	position: relative;
 	display: flex;
 	width: 100%;
 	align-items: center;
@@ -112,18 +113,18 @@ const handler = () => {
 
 .item-icon-wrapper {
 	position: absolute;
-	right: 40px;
+	right: -70px;
 	top: 50%;
-	transform: translateY(-50%);
-	height: 60px;
-	width: 60px;
+	height: 0;
+	width: 0;
 }
 
 .item-icon {
 	position: relative;
+	transform: translateX(-50%) translateY(-50%);
 
-	width: 100%;
-	height: 100%;
+	height: 60px;
+	width: 60px;
 	background-color: #ae8c8e;
 	border-radius: 50%;
 	transition: 0.2s;
@@ -154,10 +155,6 @@ const handler = () => {
 }
 
 @media (max-width: 1200px) {
-	.item-icon-wrapper {
-		width: 50px;
-		height: 50px;
-	}
 	.item {
 		height: auto;
 		padding-top: 30px;
@@ -185,6 +182,13 @@ const handler = () => {
 		bottom: 20px;
 		padding-top: 6px;
 	}
+	.item-icon {
+		width: 40px;
+		height: 40px;
+	}
+	.item-icon-wrapper {
+		right: -80px;
+	}
 }
 
 @media (max-width: 800px) {
@@ -192,9 +196,7 @@ const handler = () => {
 		padding-right: 80px;
 	}
 	.item-icon-wrapper {
-		right: 20px;
-		width: 38px;
-		height: 38px;
+		right: -40px;
 	}
 }
 
@@ -217,9 +219,11 @@ const handler = () => {
 		padding-right: 60px;
 	}
 	.item-icon-wrapper {
-		width: 32px;
-		height: 32px;
-		right: 10px;
+		right: -30px;
+	}
+	.item-icon {
+		width: 34px;
+		height: 34px;
 	}
 }
 </style>

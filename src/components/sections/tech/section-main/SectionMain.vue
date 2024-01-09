@@ -9,7 +9,10 @@ import SectionMainPicture from './SectionMainPicture.vue'
 <template>
 	<section class="section-main">
 		<MContainer>
-			<BreadCrumbs class="bread-crumbs" />
+			<BreadCrumbs
+				class="bread-crumbs"
+				:items="['Главная', 'Аппараты', 'Skinova Pro']"
+			/>
 			<div class="section-content">
 				<div class="section-content-left">
 					<SectionMainPicture class="picture" />
