@@ -12,15 +12,15 @@ import IconGooglePlay from '../icons/IconGooglePlay.vue'
 <template>
 	<div class="footer-socials">
 		<div class="footer-socials-icons">
-			<IconTelegram />
-			<IconWhatsapp />
-			<IconVk />
-			<IconInstagram />
-			<IconYoutube />
+			<a href="#"><IconTelegram /></a>
+			<a href="#"><IconWhatsapp /></a>
+			<a href="#"><IconVk /></a>
+			<a href="#"><IconInstagram /></a>
+			<a href="#"><IconYoutube /></a>
 		</div>
 		<div class="footer-socials-stores">
-			<IconAppStore />
-			<IconGooglePlay />
+			<a href="#"><IconAppStore /></a>
+			<a href="#"><IconGooglePlay /></a>
 		</div>
 	</div>
 </template>

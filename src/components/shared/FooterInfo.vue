@@ -8,12 +8,20 @@ import IconAge18 from '../icons/IconAge18.vue'
 			<p class="footer-info-text">
 				Copyright&nbsp;©&nbsp;2019-2023.
 				ООО&nbsp;«Центр&nbsp;косметологии&nbsp;FACE&nbsp;CONCEPT» Лицензия
-				№&nbsp;ЛО-50-01-010568&nbsp;от&nbsp;05.02.2019
+				<a href="#" class="footer-link">
+					№&nbsp;ЛО-50-01-010568&nbsp;от&nbsp;05.02.2019
+				</a>
 			</p>
-			<p class="footer-info-text">Политика по обработке персональных данных</p>
+			<p class="footer-info-text">
+				<a href="#" class="footer-link">
+					Политика по обработке персональных данных
+				</a>
+			</p>
 		</div>
 		<div class="footer-info-right">
-			<p class="footer-info-text">Разработка сайта Pixl.ru</p>
+			<p class="footer-info-text">
+				<a href="#" class="footer-link">Разработка сайта Pixl.ru</a>
+			</p>
 			<p class="footer-info-text">
 				Сайт может содержать материалы для лиц старше 18 лет
 				<IconAge18 class="footer-info-icon-18" />
@@ -61,6 +69,10 @@ import IconAge18 from '../icons/IconAge18.vue'
 	position: absolute;
 	left: 0;
 	top: 2px;
+}
+
+.footer-link {
+	color: #6d6364;
 }
 
 @media (max-width: 1400px) {
