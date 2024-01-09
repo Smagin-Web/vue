@@ -25,6 +25,7 @@ import SectionBonusPicture from './SectionBonusPicture.vue'
 
 <style scoped>
 .section-bonus {
+	overflow: visible;
 	padding-bottom: 160px;
 	padding-top: 34px;
 }

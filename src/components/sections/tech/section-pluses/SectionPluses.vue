@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import MContainer from '@/components/shared/MContainer.vue'
 import ListItem from './ListItem.vue'
+import IconPlay from '@/components/icons/IconPlay.vue'
 </script>
 
 <template>
@@ -60,7 +61,10 @@ import ListItem from './ListItem.vue'
 				</div>
 				<div class="content-right">
 					<h4 class="title">Видео процедуры</h4>
-					<img src="./photo.png" alt="" class="photo" />
+					<div class="photo-wrapper">
+						<IconPlay class="photo-icon" />
+						<img src="./photo.png" alt="" class="photo" />
+					</div>
 				</div>
 			</div>
 		</MContainer>
@@ -71,11 +75,13 @@ import ListItem from './ListItem.vue'
 .section-pluses {
 	padding-bottom: 160px;
 }
+
 .content-wrapper {
 	display: flex;
 	gap: 100px;
 	align-items: center;
 }
+
 .section-main-heading {
 	max-width: 1200px;
 }
@@ -97,6 +103,18 @@ import ListItem from './ListItem.vue'
 
 .content-right {
 	max-width: 544px;
+}
+
+.photo-wrapper {
+	position: relative;
+	cursor: pointer;
+}
+
+.photo-icon {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%);
 }
 
 @media (max-width: 1450px) {
