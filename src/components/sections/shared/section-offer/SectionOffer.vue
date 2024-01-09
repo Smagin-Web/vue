@@ -53,7 +53,6 @@ import SectionOfferList from './SectionOfferList.vue'
 	border-radius: 100px;
 	background: #ede4da;
 	padding: 80px;
-	padding-bottom: 50px;
 }
 
 .card-content {
