@@ -31,6 +31,7 @@ import ButtonLink from '@/components/buttons/ButtonLink.vue'
 <style scoped>
 .section-review-pactients {
 	padding-bottom: 100px;
+	overflow: visible;
 }
 .content {
 	display: grid;
@@ -50,10 +51,16 @@ import ButtonLink from '@/components/buttons/ButtonLink.vue'
 }
 
 .buttons {
-	margin-top: -100px;
+	margin-top: -190px;
 	display: flex;
 	gap: 48px;
 	align-items: center;
+}
+
+@media (max-width: 1850px) {
+	.buttons {
+		margin-top: -150px;
+	}
 }
 
 @media (max-width: 1780px) {
