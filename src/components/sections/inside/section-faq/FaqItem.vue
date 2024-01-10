@@ -1,9 +1,11 @@
 <script lang="ts" setup>
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, watchEffect } from 'vue'
 
-defineProps<{
+const props = defineProps<{
 	title: string
 	text: string
+	isActive: boolean
+	onClick: () => void
 }>()
 
 const textRef = ref()
@@ -11,7 +13,6 @@ const titleRef = ref()
 const itemRef = ref()
 
 const onResize = () => {
-	isActive.value = false
 	heightItem.value = ''
 }
 
@@ -19,13 +20,10 @@ onMounted(() => {
 	window.addEventListener('resize', onResize)
 })
 
-let isActive = ref(false)
 let heightItem = ref('')
 
-const handler = () => {
-	isActive.value = !isActive.value
-
-	if (isActive.value) {
+watchEffect(() => {
+	if (props.isActive) {
 		heightItem.value = `height: ${itemRef.value.offsetHeight}px`
 		setTimeout(() => {
 			heightItem.value = `height: ${
@@ -35,11 +33,25 @@ const handler = () => {
 	} else {
 		heightItem.value = ''
 	}
-}
+})
+
+// const onClickHandler = () => {
+// 	props.onClick()
+// 	if (props.isActive) {
+// 		heightItem.value = `height: ${itemRef.value.offsetHeight}px`
+// 		setTimeout(() => {
+// 			heightItem.value = `height: ${
+// 				itemRef.value.offsetHeight + textRef.value.offsetHeight
+// 			}px;`
+// 		}, 10)
+// 	} else {
+// 		heightItem.value = ''
+// 	}
+// }
 </script>
 
 <template>
-	<div class="item" @click="handler" :style="heightItem" ref="itemRef">
+	<div class="item" @click="onClick" :style="heightItem" ref="itemRef">
 		<h6 class="item-title" ref="titleRef">
 			{{ title }}
 			<div class="item-icon-wrapper">
