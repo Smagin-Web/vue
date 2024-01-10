@@ -54,7 +54,16 @@ const sliderPrev = () => {
 <style scoped>
 .swiper :deep() .swiper-slide {
 	width: fit-content;
+	opacity: 0.5;
+	transition: opacity 0.2s;
 }
+
+.swiper :deep() .swiper-slide-active,
+.swiper :deep() .swiper-slide-next,
+.swiper :deep() .swiper-slide-prev {
+	opacity: 1;
+}
+
 .content {
 	max-width: 544px;
 	margin: 0 auto;

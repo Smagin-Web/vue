@@ -91,8 +91,7 @@ const onChangeActive = (swiper: any) => {
 <style scoped>
 .wrapper {
 	position: relative;
-	padding: 100px 30px;
-	padding-top: 0;
+	padding: 150px 30px 100px;
 	max-width: calc(1680px + 60px);
 	margin: 0 auto;
 }
