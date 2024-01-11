@@ -16,6 +16,7 @@ const container = ref<(HTMLElement & { swiper?: any }) | null>(null)
 const isLockScroll = ref(true)
 
 const handleWheel = (event: WheelEvent) => {
+	event.stopPropagation()
 	const swiper = (event.currentTarget as HTMLElement & { swiper?: any })?.swiper
 
 	const isEndSlide: boolean = swiper.isEnd && event.deltaY > 0
