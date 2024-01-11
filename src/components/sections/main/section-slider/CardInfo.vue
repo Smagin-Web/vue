@@ -13,17 +13,17 @@ const props = defineProps(['title', 'subtitle', 'p1', 'p2'])
 
 <style scoped>
 .title {
-	padding-bottom: 40px;
+	padding-bottom: 34px;
 }
 
 .subtitle {
-	padding-bottom: 30px;
+	padding-bottom: 26px;
 }
 
 .card-text {
 	display: grid;
-	gap: 26px;
-	padding-bottom: 70px;
+	gap: 24px;
+	padding-bottom: 56px;
 }
 
 @media (max-width: 1300px) {

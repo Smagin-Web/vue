@@ -29,7 +29,7 @@ const props = defineProps(['badgeNumber', 'badgeColor', 'badgeName'])
 .card-badge {
 	color: #fff;
 	font-family: 'UABrand';
-	font-size: 48px;
+	font-size: 42px;
 	font-weight: 700;
 
 	border-radius: 20px;

@@ -100,6 +100,7 @@ const onChangeActive = (swiper: any) => {
 	padding: 100px 0;
 	max-height: 1000px;
 	transition: 0.2s;
+	overflow: visible;
 }
 
 .swiper-slide {

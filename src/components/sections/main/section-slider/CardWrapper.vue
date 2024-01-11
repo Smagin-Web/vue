@@ -20,12 +20,13 @@ const props = defineProps(['badgeColor', 'badgeName', 'badgeNumber'])
 .card {
 	position: relative;
 
-	padding: 80px;
-	padding-top: 90px;
+	padding: 70px;
+	padding-top: 80px;
+	padding-right: 80px;
 
 	border-radius: 100px;
 	background: #fff;
-	height: 650px;
+	height: 610px;
 	z-index: 30;
 }
 

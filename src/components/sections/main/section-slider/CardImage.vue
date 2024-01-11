@@ -25,7 +25,7 @@ console.log(svg)
 	position: absolute;
 	right: 5%;
 	bottom: 0;
-	width: 42%;
+	width: 40%;
 }
 
 .svg-picture {
