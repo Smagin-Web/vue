@@ -54,6 +54,7 @@ const onChangeActive = (swiper: any) => {
 		<Swiper
 			grab-cursor
 			:effect="'creative'"
+			:speed="300"
 			:creativeEffect="{
 				prev: {
 					translate: [0, -100, 0],
