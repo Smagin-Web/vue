@@ -1,13 +1,19 @@
 <script setup lang="ts">
 import MContainer from '@/components/shared/MContainer.vue'
+import ButtonTour from './ButtonTour.vue'
 
 // Swiper
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import { Pagination } from 'swiper/modules'
 import 'swiper/css'
-import ButtonTour from './ButtonTour.vue'
 
 const modules = [Pagination]
+
+const changeActiveSlide = (swiper: any) => {
+	setTimeout(() => {
+		swiper.slideTo(0)
+	}, 50)
+}
 </script>
 
 <template>
@@ -20,13 +26,15 @@ const modules = [Pagination]
 				<ButtonTour />
 			</h2>
 			<Swiper
+				@swiper="changeActiveSlide"
+				:init="false"
+				:slidesPerView="'auto'"
 				class="swiper-custom"
 				:modules="modules"
 				:grabCursor="true"
 				:centeredSlides="true"
-				:slidesPerView="'auto'"
 				:spaceBetween="24"
-				:initialSlide="1"
+				:initialSlide="-2"
 				:pagination="{
 					clickable: true
 				}"
