@@ -7,7 +7,7 @@ import SectionDevicesCard from './SectionDevicesCard.vue'
 <template>
 	<section class="section-devices">
 		<MContainer>
-			<BreadCrumbs />
+			<BreadCrumbs :items="['Главная', 'Аппараты']" />
 			<h3 class="h-xl">Аппараты</h3>
 			<p class="text-sm section-devices-text">
 				Мы используем оригинальное оборудование премиум-класса, которое имеет

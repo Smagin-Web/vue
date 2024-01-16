@@ -11,7 +11,7 @@ import MButtonOutlineBig from '@/components/buttons/MButtonOutlineBig.vue'
 <template>
 	<section class="section-contacts-card">
 		<MContainer>
-			<BreadCrumbs />
+			<BreadCrumbs :items="['Главная', 'Контакты']" />
 			<div class="content">
 				<div>
 					<h1 class="h-xxl contacts-title">Контакты</h1>

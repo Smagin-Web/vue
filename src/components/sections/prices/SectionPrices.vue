@@ -9,7 +9,7 @@ import PricesSidebarMobile from './PricesSidebarMobile.vue'
 <template>
 	<section class="section-prices">
 		<MContainer>
-			<BreadCrumbs class="bread-crumbs" />
+			<BreadCrumbs class="bread-crumbs" :items="['Главная', 'Цены']" />
 			<h1 class="h-xxl heading">Цены</h1>
 			<p class="text">
 				Здесь ты&nbsp;найдешь стоимость услуг, предлагаемых в&nbsp;нашем

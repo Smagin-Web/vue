@@ -8,7 +8,7 @@ import SearchInput from '@/components/shared/SearchInput.vue'
 <template>
 	<section class="section-masters">
 		<MContainer>
-			<BreadCrumbs class="bread-crumbs" />
+			<BreadCrumbs class="bread-crumbs" :items="['Главная', 'Специалисты']" />
 			<h1 class="h-xxl heading">Специалисты</h1>
 			<p class="text-sm text">
 				Мы используем оригинальное оборудование премиум-класса, которое имеет
@@ -40,7 +40,6 @@ import SearchInput from '@/components/shared/SearchInput.vue'
 
 <style scoped>
 .section-masters {
-	padding-top: 150px;
 	padding-bottom: 150px;
 }
 

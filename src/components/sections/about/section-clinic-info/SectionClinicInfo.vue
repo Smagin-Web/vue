@@ -7,7 +7,7 @@ import SectionClinicInfoRight from './SectionClinicInfoRight.vue'
 <template>
 	<section class="section-clinic-info">
 		<MContainer>
-			<BreadCrumbs />
+			<BreadCrumbs :items="['Главная', 'О клинике']" />
 			<div class="content">
 				<div class="content-left">
 					<h1 class="h-xxl title">О клинике</h1>

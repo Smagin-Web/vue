@@ -46,7 +46,10 @@ const moreSkills = [
 <template>
 	<section class="section-master">
 		<MContainer>
-			<BreadCrumbs class="bread-crumbs" />
+			<BreadCrumbs
+				class="bread-crumbs"
+				:items="['Главная', 'Специалисты', 'Ольга Заика']"
+			/>
 			<h1 class="heading">
 				Ольга Заика
 				<ButtonBack class="button-back">Все специалисты</ButtonBack>
@@ -90,7 +93,6 @@ const moreSkills = [
 
 <style scoped>
 .section-master {
-	padding-top: 150px;
 	padding-bottom: 150px;
 }
 
@@ -196,9 +198,9 @@ const moreSkills = [
 	}
 
 	.photo-wrapper {
-    margin-right: auto;
+		margin-right: auto;
 		margin-bottom: 40px;
-    max-width: 300px;
+		max-width: 300px;
 	}
 
 	.photo {
@@ -235,10 +237,10 @@ const moreSkills = [
 	.heading {
 		position: relative;
 	}
-  .button-back{
-    position: absolute;
-    top: -36px;
-    right: 0;
-  }
+	.button-back {
+		position: absolute;
+		top: -36px;
+		right: 0;
+	}
 }
 </style>

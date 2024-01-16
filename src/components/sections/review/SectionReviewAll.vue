@@ -10,7 +10,7 @@ import MButtonBig from '@/components/buttons/MButtonBig.vue'
 <template>
 	<section class="section-review-all">
 		<MContainer>
-			<BreadCrumbs />
+			<BreadCrumbs :items="['Главная', 'Отзывы']" />
 			<h3 class="h-xl">Отзывы</h3>
 			<div class="content">
 				<p class="text-lg" style="max-width: 660px">
@@ -35,7 +35,6 @@ import MButtonBig from '@/components/buttons/MButtonBig.vue'
 
 <style scoped>
 .section-review-all {
-	padding-top: 150px;
 	padding-bottom: 150px;
 }
 

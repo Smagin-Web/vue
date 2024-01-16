@@ -8,7 +8,7 @@ import IconList from './IconList.vue'
 <template>
 	<section class="section-branches">
 		<MContainer>
-			<BreadCrumbs />
+			<BreadCrumbs :items="['Главная', 'Филиалы']" />
 			<h1 class="h-xxl heading">Филиалы</h1>
 
 			<div class="buttons">

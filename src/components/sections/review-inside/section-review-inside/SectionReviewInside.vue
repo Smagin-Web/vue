@@ -14,7 +14,7 @@ import IconText2 from './IconText2.vue'
 <template>
 	<section class="section-review-inside">
 		<MContainer>
-			<BreadCrumbs />
+			<BreadCrumbs :items="['Главная', 'Специалисты', 'Ольга Заика']" />
 			<h3 class="h-xl section-title">
 				Отзыв о работе
 				<br />

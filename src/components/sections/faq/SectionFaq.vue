@@ -43,7 +43,10 @@ const increment4 = () => {
 <template>
 	<section class="section-faq">
 		<MContainer>
-			<BreadCrumbs class="bread-crumbs" />
+			<BreadCrumbs
+				class="bread-crumbs"
+				:items="['Главная', 'Частые вопросы']"
+			/>
 			<h1 class="heading">Частые вопросы</h1>
 
 			<div class="filters">

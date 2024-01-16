@@ -8,7 +8,7 @@ import CardNews from '@/components/cards/CardNews.vue'
 <template>
 	<section class="section-media">
 		<MContainer>
-			<BreadCrumbs class="bread-crumbs" />
+			<BreadCrumbs class="bread-crumbs" :items="['Главная', 'Медиа']" />
 			<h1 class="h-xxl heading">Медиа</h1>
 
 			<div class="filters">
