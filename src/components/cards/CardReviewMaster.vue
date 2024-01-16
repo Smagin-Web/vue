@@ -132,6 +132,7 @@ defineProps<{
 
 .card-badges {
 	display: flex;
+	align-items: center;
 	gap: 30px;
 }
 
