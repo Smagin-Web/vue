@@ -35,6 +35,7 @@ import SectionClinicInfoRight from './SectionClinicInfoRight.vue'
 .content {
 	display: flex;
 	justify-content: space-between;
+	align-items: start;
 	gap: 40px;
 }
 

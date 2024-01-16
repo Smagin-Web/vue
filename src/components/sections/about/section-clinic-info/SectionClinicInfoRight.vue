@@ -5,7 +5,7 @@ import IconPlay from '@/components/icons/IconPlay.vue'
 </script>
 
 <template>
-	<div class="content">
+	<div class="content-clinic-right">
 		<div class="content-photo-wrapper">
 			<img src="./photo.png" alt="" class="content-photo" />
 			<IconPlay class="content-photo-icon" />
@@ -16,8 +16,11 @@ import IconPlay from '@/components/icons/IconPlay.vue'
 </template>
 
 <style scoped>
-.content {
+.content-clinic-right {
+	padding-top: 30px;
 	position: relative;
+	display: flex;
+	align-items: start;
 }
 
 .content-emblem {
@@ -41,10 +44,27 @@ import IconPlay from '@/components/icons/IconPlay.vue'
 	display: flex;
 	align-items: start;
 	cursor: pointer;
+	border: 1px solid;
+}
+
+.content-photo-wrapper::after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	transition: 0.1s;
+	border-radius: 38px;
+	border: 6px solid #f4eee8;
+}
+
+.content-photo-wrapper:hover::after {
+	border: 15px solid #f4eee8;
 }
 
 .content-photo {
-	margin-top: 32px;
 	max-width: 100%;
 }
 
@@ -53,11 +73,10 @@ import IconPlay from '@/components/icons/IconPlay.vue'
 	top: 50%;
 	left: 50%;
 	transform: translateX(-50%) translateY(-50%);
-	opacity: 0;
-	transition: 0.1s;
+	transition: 0.2s;
 }
 
 .content-photo-wrapper:hover .content-photo-icon {
-	opacity: 1;
+	opacity: 0.8;
 }
 </style>
