@@ -23,9 +23,9 @@ import MButtonBig from '@/components/buttons/MButtonBig.vue'
 			<div class="cards">
 				<CardReviewMaster master-name="Заика Ольга" class="card-master" />
 				<CardReviewMaster master-name="Заика Ольга" class="card-master" />
+				<CardReviewMaster master-name="Заика Ольга" class="card-master" :badge="'yandex'" />
 				<CardReviewMaster master-name="Заика Ольга" class="card-master" />
-				<CardReviewMaster master-name="Заика Ольга" class="card-master" />
-				<CardReviewMaster master-name="Заика Ольга" class="card-master" />
+				<CardReviewMaster master-name="Заика Ольга" class="card-master" :badge="'2gis'" />
 				<CardReviewMaster master-name="Заика Ольга" class="card-master" />
 			</div>
 			<PaginationItems />

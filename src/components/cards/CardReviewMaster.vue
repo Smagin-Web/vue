@@ -2,9 +2,11 @@
 import IconYandexLocation from '@/components/icons/IconYandexLocation.vue'
 import IconCalendar from '@/components/icons/IconCalendar.vue'
 import ButtonMore from '@/components/buttons/ButtonMore.vue'
+import IconLocation2Gis from '../icons/IconLocation2Gis.vue'
 
 defineProps<{
 	masterName?: string
+	badge?: 'yandex' | '2gis'
 }>()
 </script>
 
@@ -31,7 +33,8 @@ defineProps<{
 							<IconCalendar />
 							<span class="text-sm">15.05.2023</span>
 						</p>
-						<IconYandexLocation />
+						<IconYandexLocation v-if="badge === 'yandex'" />
+						<IconLocation2Gis v-if="badge === '2gis'" />
 					</div>
 
 					<img src="./CardReviewMasterPhoto.png" alt="" class="card-photo" />

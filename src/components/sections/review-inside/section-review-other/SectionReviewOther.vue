@@ -14,8 +14,12 @@ import { SwiperSlide } from 'swiper/vue'
 		</MContainer>
 
 		<SliderVariant1>
-			<SwiperSlide><CardReviewMaster class="card-review-master" /></SwiperSlide>
-			<SwiperSlide><CardReviewMaster class="card-review-master" /></SwiperSlide>
+			<SwiperSlide
+				><CardReviewMaster class="card-review-master" :badge="'yandex'"
+			/></SwiperSlide>
+			<SwiperSlide
+				><CardReviewMaster class="card-review-master" :badge="'2gis'"
+			/></SwiperSlide>
 			<SwiperSlide><CardReviewMaster class="card-review-master" /></SwiperSlide>
 			<SwiperSlide><CardReviewMaster class="card-review-master" /></SwiperSlide>
 			<SwiperSlide><CardReviewMaster class="card-review-master" /></SwiperSlide>
