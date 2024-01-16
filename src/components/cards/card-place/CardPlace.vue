@@ -9,8 +9,10 @@ import CardPlaceContacts from './CardPlaceContacts.vue'
 	<div class="card">
 		<h2 class="h-xl card-heading-place">Face Concept Лефортово</h2>
 
-		<h5 class="h-l card-text">
-			Москва, улица Красноказарменная&nbsp;14А, корпус&nbsp;6
+		<h5 class="h-md card-text">
+			Москва, улица Красноказарменная&nbsp;14А,
+			<br />
+			корпус&nbsp;6
 		</h5>
 
 		<div class="card-badges">

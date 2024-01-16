@@ -24,6 +24,7 @@ import IconTelegram from './IconTelegram.vue'
 .contacts {
 	display: grid;
 	gap: 24px;
+	grid-template-columns: max-content max-content;
 	padding-bottom: 50px;
 }
 
@@ -43,6 +44,12 @@ import IconTelegram from './IconTelegram.vue'
 	.contacts-icon {
 		width: 40px;
 		height: auto;
+	}
+}
+
+@media (max-width: 1000px) {
+	.contacts {
+		grid-template-columns: 1fr;
 	}
 }
 
