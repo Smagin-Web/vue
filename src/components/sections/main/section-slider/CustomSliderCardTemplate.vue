@@ -14,7 +14,8 @@ const props = defineProps([
 	'badgeName',
 	'badgeColor',
 	'iconSrc',
-	'iconBigSrc'
+	'iconBigSrc',
+	'iconPng'
 ])
 </script>
 
@@ -33,7 +34,13 @@ const props = defineProps([
 			/>
 		</div>
 
-		<Suspense><CardImage :icon-src="props.iconSrc" :icon-big-src="props.iconBigSrc" /></Suspense>
+		<Suspense>
+			<CardImage
+				:icon-src="props.iconSrc"
+				:icon-big-src="props.iconBigSrc"
+				:icon-png="props.iconPng"
+			/>
+		</Suspense>
 
 		<div class="card-buttons">
 			<MButton class="first-button">Записаться на приём</MButton>

@@ -74,8 +74,7 @@ export const dataSlides: any[] = [
 		badgeNumber: '07.',
 		badgeName: 'Red Concept',
 		badgeColor: '#F88476',
-		// iconSrc: './slider-picture-svg.png'
-		iconSrc: './icon6.svg'
+		iconPng: './slider-picture-svg.png'
 	},
 	{
 		title: 'Вылечим твою кожу и&nbsp;избавим от высыпания на лице.',

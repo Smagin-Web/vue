@@ -84,6 +84,7 @@ const onChangeActive = (swiper: any) => {
 					:p2="item.p2"
 					:iconSrc="item.iconSrc"
 					:iconBigSrc="item.iconBigSrc"
+					:iconPng="item.iconPng"
 				/>
 			</SwiperSlide>
 		</Swiper>

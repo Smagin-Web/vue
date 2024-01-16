@@ -1,22 +1,30 @@
 <script setup lang="ts">
-const props = defineProps(['iconSrc', 'iconBigSrc'])
+const props = defineProps(['iconSrc', 'iconBigSrc', 'iconPng'])
 
 const getSrc = (name: any) => {
-	const path = `${name}`
-	const modules: Record<string, any> = import.meta.glob('./*.svg')
-	return modules[path]().then((mod: { default: unknown }) => mod.default)
+	if (name !== undefined) {
+		const path = `${name}`
+		const modules: Record<string, any> = import.meta.glob('./*.svg')
+		return modules[path]().then((mod: { default: unknown }) => mod.default)
+	}
 }
 
-const svg = await getSrc(props.iconSrc || props.iconBigSrc)
+const icon = await getSrc(props.iconSrc || props.iconBigSrc || undefined)
 
-console.log(svg)
+console.log(props.iconPng)
 </script>
 
 <template>
 	<div class="card-image-wrapper">
 		<img src="./slider.png" alt="" class="card-image" />
-		<img v-if="props.iconSrc" :src="svg" class="svg-picture" />
-		<img v-if="props.iconBigSrc" :src="svg" class="svg-picture-head" />
+		<img v-if="props.iconSrc" :src="icon" class="svg-picture" alt="" />
+		<img v-if="props.iconBigSrc" :src="icon" class="svg-picture-head" alt="" />
+		<img
+			v-if="props.iconPng"
+			class="svg-picture"
+			src="./slider-picture-svg.png"
+			alt=""
+		/>
 	</div>
 </template>
 
