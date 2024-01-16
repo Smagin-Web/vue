@@ -15,11 +15,11 @@ import { SwiperSlide } from 'swiper/vue'
 		</MContainer>
 
 		<SliderVariant1>
-			<SwiperSlide><CardReviewMaster /></SwiperSlide>
-			<SwiperSlide><CardReviewMaster /></SwiperSlide>
-			<SwiperSlide><CardReviewMaster /></SwiperSlide>
-			<SwiperSlide><CardReviewMaster /></SwiperSlide>
-			<SwiperSlide><CardReviewMaster /></SwiperSlide>
+			<SwiperSlide><CardReviewMaster class="card-review-master" /></SwiperSlide>
+			<SwiperSlide><CardReviewMaster class="card-review-master" /></SwiperSlide>
+			<SwiperSlide><CardReviewMaster class="card-review-master" /></SwiperSlide>
+			<SwiperSlide><CardReviewMaster class="card-review-master" /></SwiperSlide>
+			<SwiperSlide><CardReviewMaster class="card-review-master" /></SwiperSlide>
 		</SliderVariant1>
 
 		<MContainer>
@@ -32,6 +32,10 @@ import { SwiperSlide } from 'swiper/vue'
 </template>
 
 <style scoped>
+.card-review-master {
+	margin: 0 12px;
+}
+
 .section-master-review {
 	padding-bottom: 100px;
 }
