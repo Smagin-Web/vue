@@ -15,6 +15,7 @@ import ReviewInsideView from '@/views/ReviewInsideView.vue'
 import AboutView from '@/views/AboutView.vue'
 import ContactsView from '@/views/ContactsView.vue'
 import BranchesView from '@/views/BranchesView.vue'
+import MediaPostView from '@/views/MediaPostView.vue'
 
 const router = createRouter({
 	history: createWebHistory(import.meta.env.BASE_URL),
@@ -98,6 +99,11 @@ const router = createRouter({
 			path: '/branches',
 			name: 'branches',
 			component: BranchesView
+		},
+		{
+			path: '/media/1',
+			name: '/media/1',
+			component: MediaPostView
 		}
 	]
 })
