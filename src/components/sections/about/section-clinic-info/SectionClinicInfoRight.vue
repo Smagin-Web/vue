@@ -44,7 +44,6 @@ import IconPlay from '@/components/icons/IconPlay.vue'
 	display: flex;
 	align-items: start;
 	cursor: pointer;
-	border: 1px solid;
 }
 
 .content-photo-wrapper::after {
