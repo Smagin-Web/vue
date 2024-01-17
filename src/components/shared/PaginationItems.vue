@@ -3,7 +3,13 @@ import IconSliderArrowRight from '../icons/IconSliderArrowRight.vue'
 </script>
 <template>
 	<div class="pagination">
-		<IconSliderArrowRight class="pagination-button-prev" />
+		<div class="pagination-button-wrapper">
+			<IconSliderArrowRight
+				class="pagination-button-prev pagination-button-arrow"
+			/>
+			<a class="pagination-button-link" href="#" />
+		</div>
+
 		<button type="button" class="pagination-button pagination-button-active">
 			1
 		</button>
@@ -14,7 +20,12 @@ import IconSliderArrowRight from '../icons/IconSliderArrowRight.vue'
 		<button type="button" class="pagination-button">11</button>
 		<button type="button" class="pagination-button">12</button>
 
-		<IconSliderArrowRight class="pagination-button-next" />
+		<div class="pagination-button-wrapper">
+			<IconSliderArrowRight
+				class="pagination-button-next pagination-button-arrow"
+			/>
+			<a class="pagination-button-link" href="#" />
+		</div>
 	</div>
 </template>
 
@@ -41,6 +52,26 @@ import IconSliderArrowRight from '../icons/IconSliderArrowRight.vue'
 	border-radius: 50%;
 	border: 2px solid transparent;
 	background: transparent;
+}
+
+.pagination-button-wrapper {
+	position: relative;
+}
+
+.pagination-button-arrow {
+	transition: 0.2s;
+}
+
+.pagination-button-wrapper:hover .pagination-button-arrow {
+	opacity: 0.8;
+}
+
+.pagination-button-link {
+	position: absolute;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	top: 0;
 }
 
 .pagination-button-active {
