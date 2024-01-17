@@ -78,6 +78,7 @@ import InstagramIcon from './InstagramIcon.vue'
 }
 
 .card-text-other {
+	padding-right: 20px;
 	white-space: nowrap;
 }
 
