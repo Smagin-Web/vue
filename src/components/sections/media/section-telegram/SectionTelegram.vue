@@ -19,9 +19,9 @@ import InstagramIcon from './InstagramIcon.vue'
 					<MButtonBig class="card-button">Подписаться на канал</MButtonBig>
 					<div class="card-other">
 						<h6 class="card-text card-text-other">и другие соцсети</h6>
-						<VkIcon class="card-icon" />
-						<InstagramIcon class="card-icon" />
-						<YouTubeIcon class="card-icon" />
+						<a href="#"><VkIcon class="card-icon" /></a>
+						<a href="#"><InstagramIcon class="card-icon" /></a>
+						<a href="#"><YouTubeIcon class="card-icon" /></a>
 					</div>
 				</div>
 			</div>
