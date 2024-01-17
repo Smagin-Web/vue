@@ -19,12 +19,12 @@ import MButtonOutlineBig from '@/components/buttons/MButtonOutlineBig.vue'
 					<div class="numbers">
 						<p class="text-sm numbers-title">Запись и консультация</p>
 						<h5 class="h-xxl numbers-item">
-							+7 498 661-07-30
-							<IconWhatsApp class="contact-icon" />
-							<IconTelegram class="contact-icon" />
+							<a href="#" style="color: black">+7 498 661-07-30</a>
+							<a href="#"><IconWhatsApp class="contact-icon" /></a>
+							<a href="#"><IconTelegram class="contact-icon" /></a>
 						</h5>
 
-						<h5 class="h-xxl">+7 925 726-71-81</h5>
+						<a href="#"><h5 class="h-xxl">+7 925 726-71-81</h5></a>
 					</div>
 
 					<a href="#">
