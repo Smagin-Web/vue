@@ -117,13 +117,13 @@ import IconPlay from '@/components/icons/IconPlay.vue'
 	right: 0;
 	bottom: 0;
 	left: 0;
-	border-radius: 44px;
-	border: 2px solid #eee;
+	border-radius: 48px;
+	border: 1px solid #f4eee8;
 	transition: 0.1s;
 }
 
 .photo-wrapper:hover::after {
-	border: 15px solid #eee;
+	border: 15px solid #f4eee8;
 }
 
 .photo-wrapper:hover .photo-icon {
