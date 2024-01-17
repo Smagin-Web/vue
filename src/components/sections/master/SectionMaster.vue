@@ -145,6 +145,7 @@ const moreSkills = [
 	font-size: 24px;
 	font-weight: 700;
 	text-decoration-line: underline;
+	background: none;
 
 	display: flex;
 	align-items: center;
@@ -169,17 +170,32 @@ const moreSkills = [
 	position: relative;
 }
 
+.photo-wrapper::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	border-radius: 48px;
+	border: 1px solid #f4eee8;
+	transition: 0.1s;
+}
+
+.photo-wrapper:hover::after {
+	border: 15px solid #f4eee8;
+}
+
 .photo-icon-play {
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translateX(-50%) translateY(-50%);
-	opacity: 0;
 	transition: 0.2s;
 }
 
 .photo-wrapper:hover .photo-icon-play {
-	opacity: 1;
+	opacity: 0.8;
 }
 
 .button-review-wrapper {
