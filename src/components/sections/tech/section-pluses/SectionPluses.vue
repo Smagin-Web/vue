@@ -110,11 +110,32 @@ import IconPlay from '@/components/icons/IconPlay.vue'
 	cursor: pointer;
 }
 
+.photo-wrapper::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	border-radius: 44px;
+	border: 2px solid #eee;
+	transition: 0.1s;
+}
+
+.photo-wrapper:hover::after {
+	border: 15px solid #eee;
+}
+
+.photo-wrapper:hover .photo-icon {
+	opacity: 0.8;
+}
+
 .photo-icon {
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translateY(-50%) translateX(-50%);
+	transition: 0.1s;
 }
 
 @media (max-width: 1450px) {

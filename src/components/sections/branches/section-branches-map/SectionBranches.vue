@@ -49,13 +49,14 @@ import IconList from './IconList.vue'
 					>
 						Достопримечательность в Москве
 					</a>
+
 					<iframe
-						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.4343035283673!2d37.61500057720295!3d55.75095739213286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a50b315e573%3A0xa886bf5a3d9b2e68!2z0JzQvtGB0LrQvtCy0YHQutC40Lkg0JrRgNC10LzQu9GM!5e0!3m2!1sru!2sru!4v1702030838589!5m2!1sru!2sru"
+						src="https://yandex.ru/map-widget/v1/org/moskovskiy_kreml/1023322799/?ll=37.618879%2C55.751426&z=14"
 						width="100%"
-						height="101%"
-						style="position: relative; display: block; margin: -4px"
-						loading="lazy"
-						referrerpolicy="no-referrer-when-downgrade"
+						height="100%"
+						frameborder="1"
+						allowfullscreen="true"
+						style="position: relative; display: block; margin: -2px"
 					/>
 				</div>
 			</div>
