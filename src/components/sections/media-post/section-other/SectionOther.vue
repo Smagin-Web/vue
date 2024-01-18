@@ -7,7 +7,7 @@ import CardOther from './CardOther.vue'
 </script>
 
 <template>
-	<section class="section-service">
+	<section class="section-other">
 		<MContainer>
 			<h2 class="h-xl">Другие услуги</h2>
 		</MContainer>
@@ -21,4 +21,8 @@ import CardOther from './CardOther.vue'
 	</section>
 </template>
 
-<style scoped></style>
+<style scoped>
+.section-other {
+	padding-bottom: 120px;
+}
+</style>
