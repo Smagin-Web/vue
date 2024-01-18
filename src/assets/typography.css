@@ -58,9 +58,16 @@
 }
 
 .text-sm {
-	color: #6d6364;
 	font-family: 'BrisaSans', sans-serif;
+	color: #6d6364;
 	font-size: 22px;
+	font-weight: 400;
+}
+
+.text-mini {
+	font-family: 'BrisaSans', sans-serif;
+	color: #6d6364;
+	font-size: 16px;
 	font-weight: 400;
 }
 
@@ -199,6 +206,9 @@
 	}
 	.h-xs {
 		font-size: 16px;
+	}
+	.text-mini {
+		font-size: 14px;
 	}
 }
 

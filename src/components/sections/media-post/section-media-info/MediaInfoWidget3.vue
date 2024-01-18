@@ -1,16 +1,23 @@
-<script setup lang="ts">
-import IconInfo from './IconInfo.vue'
-</script>
+<script setup lang="ts"></script>
 
 <template>
 	<div class="widget">
-		<IconInfo />
+		<div class="widget-header">
+			<img src="./avatar.png" alt="" />
+			<div>
+				<h6 class="h-xs widget-header-title">Ольга Заика</h6>
+				<p class="text-mini">
+					Врач – косметолог, дерматовенеролог , член общества специалистов
+					эстетической медицины, сертифицированный национальный тренер по
+					аппаратной и инъекционной косметологии компании.
+				</p>
+			</div>
+		</div>
 		<p class="text-sm">
-			В&nbsp;разные периоды жизни, будь&nbsp;то подростковый возраст или зрелые
-			годы, люди сталкиваются с&nbsp;проблемой прыщей на&nbsp;лице. Это
-			хроническое воспалительное заболевание кожи, проявляющееся в&nbsp;виде
-			различных элементов, таких как черные точки, белые головки, папулы,
-			пустулы, узлы и&nbsp;кисты.
+			В нашей клинике каждому пациенту предоставляется индивидуальный подход. Мы
+			предлагаем широкий спектр самых современных методов для лечения акне,
+			гарантируя качественный результат. Преимущества работы с нами – это
+			профессионализм и забота о здоровье вашей кожи.
 		</p>
 	</div>
 </template>
@@ -18,12 +25,20 @@ import IconInfo from './IconInfo.vue'
 <style scoped>
 .widget {
 	padding: 20px 40px;
-	display: grid;
-	grid-template-columns: 40px 1fr;
-	align-items: center;
-	gap: 38px;
 	border-radius: 50px;
 	background: #fff;
-  margin-bottom: 50px;
+	margin-bottom: 50px;
+}
+
+.widget-header {
+	display: grid;
+	grid-template-columns: max-content 1fr;
+	gap: 36px;
+	align-items: center;
+	padding-bottom: 40px;
+}
+
+.widget-header-title {
+	padding-bottom: 10px;
 }
 </style>
