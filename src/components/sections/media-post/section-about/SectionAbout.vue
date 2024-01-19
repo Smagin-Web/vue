@@ -32,7 +32,7 @@ const listItems = [
 					Как избавиться от&nbsp;прыщей на&nbsp;лице: путь к&nbsp;чистой
 					и&nbsp;здоровой коже
 				</span>
-				<ButtonBack class="button-back">Все специалисты</ButtonBack>
+				<ButtonBack class="button-back">Вернуться</ButtonBack>
 			</h1>
 
 			<div class="list-with-photo">
@@ -44,6 +44,7 @@ const listItems = [
 							:key="index + item"
 							class="list-item"
 						>
+							<a class="list-item-link" href="#" />
 							{{ item }}
 						</li>
 					</ol>
@@ -83,7 +84,7 @@ const listItems = [
 }
 
 .heading {
-	padding-bottom: 25px;
+	padding-bottom: 50px;
 	display: flex;
 	justify-content: space-between;
 	align-items: start;
@@ -115,8 +116,22 @@ const listItems = [
 }
 
 .list-item {
+	position: relative;
 	padding: 0;
 	font-size: 22px;
 	color: #6d6364;
+	transition: 0.1s;
+}
+
+.list-item:hover {
+	color: rgb(129, 128, 128);
+}
+
+.list-item-link {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
 }
 </style>

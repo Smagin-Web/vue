@@ -20,9 +20,8 @@ import IconInfo from './IconInfo.vue'
 	padding: 20px 40px;
 	display: grid;
 	grid-template-columns: 40px 1fr;
-	align-items: center;
 	gap: 38px;
 	border-radius: 50px;
-	background: #c2e5d2;
+	background: #EDE4DA;
 }
 </style>

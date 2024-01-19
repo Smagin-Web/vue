@@ -11,7 +11,7 @@ import CardOther from './CardOther.vue'
 		<MContainer>
 			<h2 class="h-xl">Другие услуги</h2>
 		</MContainer>
-		<SliderVariant1>
+		<SliderVariant1 class="section-other-swiper">
 			<SwiperSlide><CardOther /></SwiperSlide>
 			<SwiperSlide><CardOther /></SwiperSlide>
 			<SwiperSlide><CardOther /></SwiperSlide>
@@ -24,5 +24,13 @@ import CardOther from './CardOther.vue'
 <style scoped>
 .section-other {
 	padding-bottom: 120px;
+}
+
+.section-other-swiper :deep() .button-prev {
+	top: 20%;
+}
+
+.section-other-swiper :deep() .button-next {
+	top: 20%;
 }
 </style>

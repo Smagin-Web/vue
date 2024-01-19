@@ -24,7 +24,7 @@
 
 <style scoped>
 .widget {
-	padding: 20px 40px;
+	padding: 40px;
 	border-radius: 50px;
 	background: #fff;
 	margin-bottom: 50px;

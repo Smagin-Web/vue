@@ -18,7 +18,7 @@ import IconLike from './IconLike.vue'
 	display: grid;
 	grid-template-columns: 40px 1fr;
 	align-items: center;
-  gap: 38px;
+	gap: 38px;
 	border-radius: 50px;
 	background: #c2e5d2;
 }
