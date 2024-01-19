@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import MContainer from '@/components/shared/MContainer.vue'
 import IconSliderArrowRight from '@/components/icons/IconSliderArrowRight.vue'
+import { ref } from 'vue'
 
 import { Swiper } from 'swiper/vue'
 import { Pagination } from 'swiper/modules'
@@ -14,21 +15,44 @@ const onSwiperInit = (swiper: any) => {
 	swiperObject = swiper
 }
 
+const isActiveNext = ref(true)
+const isActivePrev = ref(true)
+
 const sliderNext = () => {
 	swiperObject.slideNext(500)
+	if (swiperObject.slides.length !== swiperObject.realIndex + 1) {
+		isActivePrev.value = true
+	} else {
+		isActiveNext.value = false
+	}
 }
 
 const sliderPrev = () => {
 	swiperObject.slidePrev(500)
+	if (swiperObject.realIndex !== 0) {
+		isActiveNext.value = true
+	} else {
+		isActivePrev.value = false
+	}
 }
 </script>
 
 <template>
 	<MContainer class="container-custom">
-		<button class="button-prev" :onClick="sliderPrev">
+		<button
+			:disabled="!isActivePrev"
+			class="button-prev"
+			:class="!isActivePrev && 'disabled'"
+			:onClick="sliderPrev"
+		>
 			<IconSliderArrowRight style="transform: rotate(180deg)" />
 		</button>
-		<button class="button-next" :onClick="sliderNext">
+		<button
+			:disabled="!isActiveNext"
+			class="button-next"
+			:class="!isActiveNext && 'disabled'"
+			:onClick="sliderNext"
+		>
 			<IconSliderArrowRight />
 		</button>
 		<div>
@@ -99,6 +123,16 @@ const sliderPrev = () => {
 
 .button-next {
 	right: 30px;
+}
+
+.button-next.disabled,
+.button-prev.disabled {
+	opacity: 0.2;
+}
+
+.button-next.disabled:hover,
+.button-prev.button-next.disabled:hover {
+	border: 1px solid transparent;
 }
 
 .swiper-custom :deep() .swiper-pagination-bullet {
