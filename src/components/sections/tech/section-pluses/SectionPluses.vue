@@ -80,6 +80,7 @@ import IconPlay from '@/components/icons/IconPlay.vue'
 	display: flex;
 	gap: 100px;
 	align-items: center;
+	justify-content: space-between;
 }
 
 .section-main-heading {

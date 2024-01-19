@@ -8,7 +8,7 @@ import SectionDevicesCard from './SectionDevicesCard.vue'
 	<section class="section-devices">
 		<MContainer>
 			<BreadCrumbs :items="['Главная', 'Аппараты']" />
-			<h3 class="h-xl">Аппараты</h3>
+			<h3 class="h-xxl section-title">Аппараты</h3>
 			<p class="text-sm section-devices-text">
 				Мы используем оригинальное оборудование премиум-класса, которое имеет
 				сертификаты, регистрационные удостоверения Российской Федерации, а также
@@ -30,6 +30,9 @@ import SectionDevicesCard from './SectionDevicesCard.vue'
 	padding-bottom: 150px;
 }
 
+.section-title {
+	padding-bottom: 50px;
+}
 .section-devices-text {
 	padding-bottom: 50px;
 }

@@ -11,7 +11,7 @@ import MButtonBig from '@/components/buttons/MButtonBig.vue'
 	<section class="section-review-all">
 		<MContainer>
 			<BreadCrumbs :items="['Главная', 'Отзывы']" />
-			<h3 class="h-xl">Отзывы</h3>
+			<h3 class="h-xxl">Отзывы</h3>
 			<div class="content">
 				<p class="text-lg" style="max-width: 660px">
 					Выберите специалиста, о&nbsp;котором хотите прочитать или оставить

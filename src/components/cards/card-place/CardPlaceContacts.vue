@@ -32,6 +32,7 @@ import IconTelegram from './IconTelegram.vue'
 	display: flex;
 	gap: 30px;
 	align-items: center;
+	padding-bottom: 8px;
 }
 
 @media (max-width: 1600px) {

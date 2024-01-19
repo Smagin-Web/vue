@@ -77,6 +77,12 @@ const onClickHandler = () => {
 	width: auto;
 	z-index: 10;
 	pointer-events: none;
+	transform: rotate(180deg);
+	transition: 0.1s;
+}
+
+.select-road.active .select-road-icon {
+	transform: rotate(0);
 }
 
 .select-road-list {

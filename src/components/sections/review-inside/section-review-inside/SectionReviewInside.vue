@@ -15,7 +15,7 @@ import IconText2 from './IconText2.vue'
 	<section class="section-review-inside">
 		<MContainer>
 			<BreadCrumbs :items="['Главная', 'Специалисты', 'Ольга Заика']" />
-			<h3 class="h-xl section-title">
+			<h3 class="h-xxl section-title">
 				Отзыв о работе
 				<br />
 				Юлии Епишиной
@@ -83,6 +83,7 @@ import IconText2 from './IconText2.vue'
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	padding-bottom: 50px;
 }
 
 .card-with-photo {
