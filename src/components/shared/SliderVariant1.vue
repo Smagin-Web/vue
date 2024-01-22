@@ -15,7 +15,7 @@ const sliderNext = () => swiperObject.slideNext(500)
 const sliderPrev = () => swiperObject.slidePrev(500)
 
 const isActiveNext = ref(true)
-const isActivePrev = ref(true)
+const isActivePrev = ref(false)
 
 const onChangeSlider = (swiper: any) => {
 	if (swiper.realIndex === 0) {
@@ -61,13 +61,13 @@ const onSwiperStart = () => {
 		<div>
 			<div class="content">
 				<Swiper
-					@reach-end="swiper => onSwiperEnd()"
-					@reach-beginning="swiper => onSwiperStart()"
+					@reach-end="() => onSwiperEnd()"
+					@reach-beginning="() => onSwiperStart()"
 					@active-index-change="swiper => onChangeSlider(swiper)"
 					@swiper="swiper => onSwiperInit(swiper)"
 					class="swiper-custom"
 					:modules="modules"
-					:initialSlide="1"
+					:initialSlide="0"
 					:slidesPerView="'auto'"
 					:pagination="{
 						clickable: true
