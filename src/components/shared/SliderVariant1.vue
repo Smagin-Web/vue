@@ -32,11 +32,15 @@ const onChangeSlider = (swiper: any) => {
 }
 
 const onSwiperEnd = () => {
-	isActiveNext.value = false
+	setTimeout(() => {
+		isActiveNext.value = false
+	}, 300)
 }
 
 const onSwiperStart = () => {
-	isActivePrev.value = false
+	setTimeout(() => {
+		isActivePrev.value = false
+	}, 300)
 }
 </script>
 
