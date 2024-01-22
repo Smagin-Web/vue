@@ -1,11 +1,13 @@
 <script setup lang="ts">
 import MContainer from '@/components/shared/MContainer.vue'
 import IconSliderArrowRight from '@/components/icons/IconSliderArrowRight.vue'
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
 
 import { Swiper } from 'swiper/vue'
 import { Pagination } from 'swiper/modules'
 import 'swiper/css'
+
+const el = ref()
 
 const modules = [Pagination]
 
@@ -20,20 +22,35 @@ const isActivePrev = ref(true)
 
 const sliderNext = () => {
 	swiperObject.slideNext(500)
-	if (swiperObject.slides.length !== swiperObject.realIndex + 1) {
-		isActivePrev.value = true
+	// if (swiperObject.slides.length !== swiperObject.realIndex + 1) {
+	// 	isActivePrev.value = true
+	// } else {
+	// 	isActiveNext.value = false
+	// }
+}
+
+const onChangeSlider = (swiper: any) => {
+	if (swiper.realIndex === 0) {
+		console.log('Индекс слайдера 0')
+		isActivePrev.value = false
 	} else {
+		isActivePrev.value = true
+	}
+
+	if (swiper.slides.length === swiper.realIndex + 1) {
 		isActiveNext.value = false
+	} else {
+		isActiveNext.value = true
 	}
 }
 
 const sliderPrev = () => {
 	swiperObject.slidePrev(500)
-	if (swiperObject.realIndex !== 0) {
-		isActiveNext.value = true
-	} else {
-		isActivePrev.value = false
-	}
+	// if (swiperObject.realIndex !== 0) {
+	// 	isActiveNext.value = true
+	// } else {
+	// 	isActivePrev.value = false
+	// }
 }
 </script>
 
@@ -58,6 +75,7 @@ const sliderPrev = () => {
 		<div>
 			<div class="content">
 				<Swiper
+					@active-index-change="swiper => onChangeSlider(swiper)"
 					@swiper="swiper => onSwiperInit(swiper)"
 					class="swiper-custom"
 					:modules="modules"
