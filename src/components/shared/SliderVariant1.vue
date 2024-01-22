@@ -74,13 +74,19 @@ const onChangeSlider = (swiper: any) => {
 .swiper :deep() .swiper-slide {
 	width: fit-content;
 	opacity: 0.5;
-	transition: opacity 0.2s;
+	transition: 0.2s;
+	transform: scale(0.8);
 }
 
-.swiper :deep() .swiper-slide-active,
 .swiper :deep() .swiper-slide-next,
 .swiper :deep() .swiper-slide-prev {
+	opacity: 0.7;
+	transform: scale(0.9);
+}
+
+.swiper :deep() .swiper-slide-active {
 	opacity: 1;
+	transform: scale(1);
 }
 
 .content {

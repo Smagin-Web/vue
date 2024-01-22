@@ -216,6 +216,11 @@
   resolved "https://registry.npmjs.org/@types/semver/-/semver-7.5.2.tgz"
   integrity sha512-7aqorHYgdNO4DM36stTiGO3DvKoex9TQRwsJU6vMaFGyqpBA1MNZkz+PG3gaNUPpTAOYhT1WR7M1JyA3fbS9Cw==
 
+"@types/yandex-maps@^2.1.34":
+  version "2.1.34"
+  resolved "https://registry.npmjs.org/@types/yandex-maps/-/yandex-maps-2.1.34.tgz"
+  integrity sha512-Fp3QxGgedj42FPwBaeIqetgqgqEIoMvVazwIgxShXTAY0yojIvK9V7DYmNvk4TLSGgu8NcVQLzAZrJeRYIiUlw==
+
 "@typescript-eslint/eslint-plugin@^6.7.0":
   version "6.7.0"
   resolved "https://registry.npmjs.org/@typescript-eslint/eslint-plugin/-/eslint-plugin-6.7.0.tgz"
@@ -3417,6 +3422,11 @@ vue-tsc@^1.8.11:
     "@vue/language-core" "1.8.11"
     "@vue/typescript" "1.8.11"
     semver "^7.3.8"
+
+vue-yandex-maps@^0.11.18:
+  version "0.11.18"
+  resolved "https://registry.npmjs.org/vue-yandex-maps/-/vue-yandex-maps-0.11.18.tgz"
+  integrity sha512-S3P/V8msGXA+e9LXY/fM5IVIRr9wYuUTtcXFSmTuRycYD0cYuMj69vI9h4fksf44CzEp+qrNvJsvQj/20Ckxsw==
 
 vue@^2.6.11:
   version "2.7.14"

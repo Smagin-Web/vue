@@ -2,6 +2,18 @@
 import MContainer from '@/components/shared/MContainer.vue'
 import MapBadge from './MapBadge.vue'
 import SelectRoad from './SelectRoad.vue'
+
+// import YmapPlugin from 'vue-yandex-maps'
+// import Vue from 'vue'
+
+// // const settings = {
+// // 	apiKey: '',
+// // 	lang: 'ru_RU',
+// // 	coordorder: 'latlong',
+// // 	enterprise: false,
+// // 	version: '2.1'
+// // }
+// // Vue.use(YmapPlugin, settings)
 </script>
 
 <template>
@@ -22,7 +34,17 @@ import SelectRoad from './SelectRoad.vue'
 					</div>
 				</div>
 				<div class="map-body">
-					<iframe
+					<div
+						ref="map"
+						style="
+							border: none;
+							position: relative;
+							display: block;
+							margin: -2px;
+							border-radius: 50px;
+						"
+					/>
+					<!-- <iframe
 						class="ymaps-map"
 						src="https://yandex.ru/map-widget/v1/org/moskovskiy_kreml/1023322799/?ll=37.618879%2C55.751426&z=14"
 						width="100%"
@@ -36,7 +58,7 @@ import SelectRoad from './SelectRoad.vue'
 							margin: -2px;
 							border-radius: 50px;
 						"
-					/>
+					/> -->
 				</div>
 			</div>
 		</MContainer>
