@@ -30,6 +30,14 @@ const onChangeSlider = (swiper: any) => {
 		isActiveNext.value = true
 	}
 }
+
+const onSwiperEnd = () => {
+	isActiveNext.value = false
+}
+
+const onSwiperStart = () => {
+	isActivePrev.value = false
+}
 </script>
 
 <template>
@@ -53,6 +61,8 @@ const onChangeSlider = (swiper: any) => {
 		<div>
 			<div class="content">
 				<Swiper
+					@reach-end="swiper => onSwiperEnd()"
+					@reach-beginning="swiper => onSwiperStart()"
 					@active-index-change="swiper => onChangeSlider(swiper)"
 					@swiper="swiper => onSwiperInit(swiper)"
 					class="swiper-custom"
