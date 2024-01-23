@@ -54,6 +54,7 @@ const onSwiperStart = () => {
 		>
 			<IconSliderArrowRight style="transform: rotate(180deg)" />
 		</button>
+
 		<button
 			:disabled="!isActiveNext"
 			class="button-next"
@@ -62,6 +63,7 @@ const onSwiperStart = () => {
 		>
 			<IconSliderArrowRight />
 		</button>
+
 		<div>
 			<div class="content">
 				<Swiper
@@ -176,9 +178,6 @@ const onSwiperStart = () => {
 
 .swiper {
 	padding-bottom: 100px;
-	padding-left: 10px;
-	padding-right: 10px;
-	/* overflow: visible; */
 }
 
 .buttons {
