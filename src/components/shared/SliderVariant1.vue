@@ -175,7 +175,7 @@ const onSwiperStart = () => {
 
 .swiper {
 	padding-bottom: 100px;
-	overflow: visible;
+	/* overflow: visible; */
 }
 
 .buttons {
