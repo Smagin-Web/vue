@@ -129,14 +129,13 @@ const onSwiperStart = () => {
 	z-index: 1000;
 	border-radius: 50%;
 	display: block;
-	border: 1px solid rgb(27, 26, 26, 0);
+	border: none;
 	transition: 0.1s;
 }
 
 .button-next:hover,
 .button-prev:hover {
-	opacity: 1;
-	border: 1px solid rgb(66, 62, 62);
+	opacity: 0.7;
 }
 
 .button-prev {
