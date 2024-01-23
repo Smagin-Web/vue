@@ -126,7 +126,7 @@ const onSwiperStart = () => {
 	padding: 0;
 	border: none;
 	background: transparent;
-	z-index: 1000;
+	z-index: 20;
 	border-radius: 50%;
 	display: block;
 	border: none;
