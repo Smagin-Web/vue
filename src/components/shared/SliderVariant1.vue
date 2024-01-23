@@ -77,20 +77,16 @@ const onSwiperStart = () => {
 					}"
 					:breakpoints="{
 						1000: {
-							slidesPerView: 2,
-							spaceBetween: 20
+							slidesPerView: 2
 						},
 						1100: {
-							slidesPerView: 1.5,
-							spaceBetween: 20
+							slidesPerView: 1.5
 						},
 						1300: {
-							slidesPerView: 2,
-							spaceBetween: 24
+							slidesPerView: 2
 						},
 						1400: {
-							slidesPerView: 3,
-							spaceBetween: 24
+							slidesPerView: 3
 						}
 					}"
 				>
@@ -114,12 +110,13 @@ const onSwiperStart = () => {
 }
 
 .content {
-	padding: 0 40px;
+	padding: 0 100px;
 	margin: 0 auto;
 }
 
 .container-custom {
 	position: relative;
+	padding: 0;
 }
 
 .button-next,
