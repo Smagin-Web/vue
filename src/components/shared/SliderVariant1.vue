@@ -151,11 +151,6 @@ const onSwiperStart = () => {
 	opacity: 0.2;
 }
 
-.button-next.disabled:hover,
-.button-prev.button-next.disabled:hover {
-	border: 1px solid transparent;
-}
-
 .swiper-custom :deep() .swiper-pagination-bullet {
 	position: relative;
 	display: block;
@@ -193,11 +188,6 @@ const onSwiperStart = () => {
 	.button-next,
 	.button-prev {
 		opacity: 0.5;
-	}
-	.button-next:hover,
-	.button-prev:hover {
-		opacity: 0.5;
-		border: none;
 	}
 }
 </style>
