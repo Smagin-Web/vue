@@ -72,9 +72,26 @@ const onSwiperStart = () => {
 					class="swiper-custom"
 					:modules="modules"
 					:initialSlide="0"
-					:slidesPerView="'auto'"
 					:pagination="{
 						clickable: true
+					}"
+					:breakpoints="{
+						1000: {
+							slidesPerView: 2,
+							spaceBetween: 20
+						},
+						1100: {
+							slidesPerView: 1.5,
+							spaceBetween: 20
+						},
+						1300: {
+							slidesPerView: 2,
+							spaceBetween: 24
+						},
+						1400: {
+							slidesPerView: 3,
+							spaceBetween: 24
+						}
 					}"
 				>
 					<slot />
@@ -97,6 +114,7 @@ const onSwiperStart = () => {
 }
 
 .content {
+	padding: 0 40px;
 	margin: 0 auto;
 }
 
