@@ -135,7 +135,7 @@ const onSwiperStart = () => {
 
 .button-next:hover,
 .button-prev:hover {
-	opacity: 0.7;
+	opacity: 0.8;
 }
 
 .button-prev {
