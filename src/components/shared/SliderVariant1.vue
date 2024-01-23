@@ -110,8 +110,9 @@ const onSwiperStart = () => {
 }
 
 .content {
-	padding: 0 100px;
-	margin: 0 auto;
+	position: relative;
+	margin: 0 100px;
+	/* margin: 0 auto; */
 }
 
 .container-custom {
@@ -175,6 +176,8 @@ const onSwiperStart = () => {
 
 .swiper {
 	padding-bottom: 100px;
+	padding-left: 10px;
+	padding-right: 10px;
 	/* overflow: visible; */
 }
 
