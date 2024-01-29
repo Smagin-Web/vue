@@ -63,6 +63,7 @@
 @media screen and (max-width: 600px) {
 	.price-new {
 		font-size: 48px;
+		line-height: 40px;
 	}
 	.price-old {
 		font-size: 24px;

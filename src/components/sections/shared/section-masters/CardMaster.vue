@@ -100,5 +100,9 @@ import IconPlay from '@/components/icons/IconPlay.vue'
 	.card-text {
 		font-size: 16px;
 	}
+
+	.card-icon {
+		opacity: 1;
+	}
 }
 </style>

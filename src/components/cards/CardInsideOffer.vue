@@ -113,7 +113,10 @@ import CardInsideOfferPrice from './CardInsideOfferPrice.vue'
 		font-size: 18px;
 	}
 	.card-inside {
-		padding: 44px 16px;
+		padding: 30px 16px 44px;
+	}
+	.prices {
+		padding-bottom: 40px;
 	}
 }
 </style>

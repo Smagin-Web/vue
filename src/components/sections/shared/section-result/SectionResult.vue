@@ -14,6 +14,10 @@ import SectionResultBanner from './SectionResultBanner.vue'
 						Анализируя полученные данные,<br />врач проведёт оценку состояния
 						твоей&nbsp;кожи<br />и&nbsp;определит стадию заболевания
 					</h5>
+					<h5 class="text text-sm">
+						Анализируя полученные данные, врач проведёт оценку состояния
+						твоей&nbsp;кожи и&nbsp;определит стадию заболевания
+					</h5>
 				</div>
 			</div>
 		</MContainer>
@@ -42,6 +46,10 @@ import SectionResultBanner from './SectionResultBanner.vue'
 .text {
 	color: #6d6364;
 	font-size: 24px;
+}
+
+.text-sm {
+	display: none;
 }
 
 @media (max-width: 1500px) {
@@ -79,8 +87,13 @@ import SectionResultBanner from './SectionResultBanner.vue'
 		font-size: 20px;
 	}
 	.text {
-		font-size: 17px;
+		display: none;
+	}
+	.text-sm {
+		display: block;
+		font-size: 18px;
 		line-height: 1.2;
+		font-weight: 700;
 	}
 }
 </style>

@@ -70,6 +70,11 @@ import MContainer from '@/components/shared/MContainer.vue'
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		gap: 15px;
+		align-items: start;
+	}
+
+	.section-review__links img {
+		height: 74px;
 	}
 }
 </style>

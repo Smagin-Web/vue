@@ -8,7 +8,7 @@ import SectionOfferList from './SectionOfferList.vue'
 <template>
 	<section class="section-offer">
 		<div class="section-offer-container">
-			<MContainer>
+			<MContainer class="section-offer-container-custom">
 				<div class="card">
 					<div class="card-badge">
 						<MBadge>Диагностика</MBadge>
@@ -17,7 +17,7 @@ import SectionOfferList from './SectionOfferList.vue'
 						<div>
 							<h3 class="heading">Хочешь&nbsp;здоровую&nbsp;кожу?</h3>
 
-							<SectionOfferList />
+							<SectionOfferList class="section-offer-list" />
 						</div>
 						<div class="image-container">
 							<img src="./more.png" class="image-more" />
@@ -139,15 +139,27 @@ import SectionOfferList from './SectionOfferList.vue'
 		top: 0;
 		transform: translateY(-50%) translateX(-50%);
 	}
+	.section-offer-container-custom {
+		padding-right: 8px;
+		padding-left: 8px;
+	}
+	.heading {
+		text-align: center;
+	}
 }
 
 @media (max-width: 600px) {
+	.section-offer {
+		padding-bottom: 50px;
+	}
 	.image-more {
-		/* transform: translateY(50%) translateX(40%); */
 		padding-right: 40px;
 	}
 	.card-inside {
 		border-radius: 40px;
+	}
+	.section-offer-list {
+		max-width: 300px;
 	}
 }
 </style>

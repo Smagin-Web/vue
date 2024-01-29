@@ -157,6 +157,7 @@ const onChangeActive = (swiper: any) => {
 @media (max-width: 1000px) {
 	.swiper {
 		padding-bottom: 60px;
+		padding-top: 48px;
 		max-height: 100%;
 		height: auto;
 	}
@@ -166,6 +167,11 @@ const onChangeActive = (swiper: any) => {
 	}
 	.swiper-slide-next :deep() .card {
 		bottom: -20px;
+	}
+	.wrapper {
+		padding-top: 0;
+		padding-right: 8px;
+		padding-left: 8px;
 	}
 }
 </style>
