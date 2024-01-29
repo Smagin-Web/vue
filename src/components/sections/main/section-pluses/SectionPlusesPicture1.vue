@@ -71,9 +71,15 @@ import SectionPlusesShadow from './SectionPlusesShadow.vue'
 	padding-right: 10%;
 }
 
-@media screen and (max-width: 1200px) {
+@media (max-width: 1200px) {
 	.card {
 		padding-top: 0;
+	}
+}
+
+@media (max-width: 800px) {
+	.card-shadow {
+		bottom: -65%;
 	}
 }
 </style>

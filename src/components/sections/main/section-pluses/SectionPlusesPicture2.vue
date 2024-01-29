@@ -74,4 +74,11 @@ defineProps<{
 	padding-left: 10%;
 	padding-right: 10%;
 }
+
+
+@media (max-width: 800px) {
+	.card-shadow {
+		bottom: -33%;
+	}
+}
 </style>

@@ -86,7 +86,7 @@ import SectionBannerText from './SectionBannerText.vue'
 	}
 }
 
-@media screen and (max-width: 1500px) {
+@media (max-width: 1500px) {
 	.banner-badges {
 		left: calc(100% - 100px);
 		bottom: 40px;
@@ -105,7 +105,7 @@ import SectionBannerText from './SectionBannerText.vue'
 	}
 }
 
-@media screen and (max-width: 1200px) {
+@media (max-width: 1200px) {
 	.banner-badges {
 		left: 222px;
 		bottom: 30px;
@@ -150,7 +150,7 @@ import SectionBannerText from './SectionBannerText.vue'
 @media (max-width: 400px) {
 	.section-banner {
 		overflow: hidden;
-		padding-top: 100px;
+		padding-top: 65px;
 	}
 }
 </style>
