@@ -45,7 +45,7 @@ import IconMessage from '../icons/IconMessage.vue'
 }
 
 .button-fixed-two {
-	padding: 25px 24.5px;
+	padding: 25px;
 
 	border-radius: 100px;
 	background: #81cca4;
@@ -63,7 +63,7 @@ import IconMessage from '../icons/IconMessage.vue'
 		bottom: 0;
 		justify-content: center;
 		background-color: #f4eee8;
-		padding: 10px;
+		padding: 20px;
 		gap: 10px;
 	}
 
@@ -83,7 +83,7 @@ import IconMessage from '../icons/IconMessage.vue'
 		justify-content: center;
 		align-items: center;
 		padding: 0;
-		width: 40px;
+		width: 102px;
 		height: 40px;
 	}
 

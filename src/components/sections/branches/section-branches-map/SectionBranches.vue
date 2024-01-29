@@ -3,6 +3,13 @@ import MContainer from '@/components/shared/MContainer.vue'
 import BreadCrumbs from '@/components/shared/BreadCrumbs.vue'
 import IconLocation from './IconLocation.vue'
 import IconList from './IconList.vue'
+import { ref } from 'vue'
+
+const mapWrapper = ref('')
+
+const onMapScroll = (e: any) => {
+	e.preventDefault()
+}
 </script>
 
 <template>
@@ -50,14 +57,16 @@ import IconList from './IconList.vue'
 						Достопримечательность в Москве
 					</a>
 
-					<iframe
-						src="https://yandex.ru/map-widget/v1/org/moskovskiy_kreml/1023322799/?ll=37.618879%2C55.751426&z=14"
-						width="100%"
-						height="100%"
-						frameborder="1"
-						allowfullscreen="true"
-						style="position: relative; display: block; margin: -2px"
-					/>
+					<div class="map-wrapper" ref="mapWrapper">
+						<iframe
+							src="https://yandex.ru/map-widget/v1/org/moskovskiy_kreml/1023322799/?ll=37.618879%2C55.751426&z=14"
+							width="100%"
+							height="100%"
+							frameborder="1"
+							allowfullscreen="true"
+							style="position: relative; display: block; margin: -2px"
+						/>
+					</div>
 				</div>
 			</div>
 		</MContainer>
@@ -67,6 +76,10 @@ import IconList from './IconList.vue'
 <style scoped>
 .section-branches {
 	padding-bottom: 150px;
+}
+
+.map-wrapper {
+	height: 100%;
 }
 
 .heading {
