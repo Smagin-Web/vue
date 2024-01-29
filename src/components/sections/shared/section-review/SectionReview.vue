@@ -8,10 +8,21 @@ import MContainer from '@/components/shared/MContainer.vue'
 			<div class="section-review-content">
 				<h4 class="heading">Отзывы на&nbsp;площадках</h4>
 				<div class="section-review__links">
-					<img src="./Yandex.png" />
-					<img src="./Zoon.png" />
-					<img src="./Google.png" />
-					<img src="./2Gis.png" />
+					<div class="section-review-item">
+						<img src="./yandex.png" />
+					</div>
+
+					<div class="section-review-item">
+						<img src="./zoon.png" />
+					</div>
+
+					<div class="section-review-item">
+						<img src="./gmaps.png" />
+					</div>
+
+					<div class="section-review-item">
+						<img src="./twogis.png" />
+					</div>
 				</div>
 			</div>
 		</MContainer>
@@ -40,6 +51,18 @@ import MContainer from '@/components/shared/MContainer.vue'
 	gap: 12px;
 }
 
+.section-review-item {
+	width: 172px;
+	height: 100px;
+	border-radius: 50px;
+	background: #fff;
+}
+
+.section-review-item img {
+	max-width: 100px;
+	height: auto;
+}
+
 @media screen and (max-width: 1550px) {
 	.section-review-content {
 		flex-direction: column;
@@ -62,19 +85,20 @@ import MContainer from '@/components/shared/MContainer.vue'
 		border-radius: 40px;
 	}
 
-	.section-review-content img {
-		width: 100%;
-	}
-
 	.section-review__links {
+		width: 100%;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		gap: 15px;
 		align-items: start;
 	}
 
-	.section-review__links img {
+	.section-review-item {
+		width: 100%;
 		height: 74px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 }
 </style>
