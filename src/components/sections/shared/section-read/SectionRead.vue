@@ -94,6 +94,10 @@ import { SwiperSlide } from 'swiper/vue'
 }
 
 @media (max-width: 800px) {
+	.button {
+		margin-top: -30px;
+		max-width: 300px;
+	}
 	.swiper-wrapper-custom {
 		margin-left: var(--container-padding-sm-n);
 		margin-right: var(--container-padding-sm-n);

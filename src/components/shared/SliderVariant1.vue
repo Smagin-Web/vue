@@ -189,7 +189,17 @@ const onSwiperStart = () => {
 @media (max-width: 600px) {
 	.button-next,
 	.button-prev {
+		display: none;
 		opacity: 0.5;
+		top: 150px;
+	}
+	.content {
+		margin: 0;
+	}
+	.swiper-custom :deep() .swiper-pagination {
+		margin-top: 26px;
+		margin-right: 20px;
+		margin-left: 20px;
 	}
 }
 </style>
