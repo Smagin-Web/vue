@@ -105,7 +105,7 @@ onUnmounted(() => {
 	transition: 0.1s opacity;
 }
 
-@media screen and (max-width: 1000px) {
+@media (max-width: 1000px) {
 	.heading {
 		font-size: 22px;
 		padding-bottom: 45px;
@@ -117,6 +117,10 @@ onUnmounted(() => {
 
 	.section-info {
 		padding: 76px 0;
+	}
+	.section-info-container {
+		padding-top: 0;
+		padding-bottom: 0;
 	}
 }
 </style>

@@ -82,4 +82,10 @@ import SectionPlusesShadow from './SectionPlusesShadow.vue'
 		bottom: -65%;
 	}
 }
+
+@media (max-width: 400px) {
+	.card-shadow {
+		bottom: -80%;
+	}
+}
 </style>

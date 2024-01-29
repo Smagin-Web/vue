@@ -97,6 +97,9 @@ onUnmounted(() => {
 }
 
 @media (max-width: 1000px) {
+	.section-tech {
+		padding-bottom: 40px;
+	}
 }
 
 @media (max-width: 600px) {
