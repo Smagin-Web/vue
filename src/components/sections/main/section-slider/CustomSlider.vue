@@ -47,6 +47,10 @@ const scrollToCenter = () => {
 const onChangeActive = (swiper: any) => {
 	activeSlideIndex.value = swiper.activeIndex + 1
 }
+
+const onTouchSlider = (swiper: any, pointerdown: any) => {
+	console.log(pointerdown)
+}
 </script>
 
 <template>
@@ -70,6 +74,9 @@ const onChangeActive = (swiper: any) => {
 			:release-on-edges="true"
 			:modules="[EffectCreative, Mousewheel]"
 			:slides-per-view="1"
+			:allowTouchMove="true"
+			@sliderMove="onTouchSlider"
+			@touch-move="onTouchSlider"
 			@activeIndexChange="onChangeActive"
 			@wheel="handleWheel"
 		>

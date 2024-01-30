@@ -71,4 +71,10 @@ import SectionOtherCard from './SectionOtherCard.vue'
 		height: 115px;
 	}
 }
+
+@media (max-width: 600px) {
+	.wrapper-cards {
+		padding-left: 300px;
+	}
+}
 </style>

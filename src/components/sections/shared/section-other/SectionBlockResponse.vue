@@ -41,4 +41,11 @@ import SectionOtherBlockLg from './SectionOtherBlockLg.vue'
 		display: none;
 	}
 }
+
+@media (max-width: 600px) {
+	.pictures-block-sm {
+		overflow: scroll;
+		margin: 0 -20px;
+	}
+}
 </style>
