@@ -52,6 +52,9 @@ import MContainer from '@/components/shared/MContainer.vue'
 }
 
 .section-review-item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 172px;
 	height: 100px;
 	border-radius: 50px;
@@ -59,7 +62,7 @@ import MContainer from '@/components/shared/MContainer.vue'
 }
 
 .section-review-item img {
-	max-width: 100px;
+	width: 130px;
 	height: auto;
 }
 
