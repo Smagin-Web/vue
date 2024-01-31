@@ -53,4 +53,13 @@ const props = defineProps(['title', 'subtitle', 'p1', 'p2'])
 		padding-bottom: 0;
 	}
 }
+
+@media (max-width: 600px) {
+	.card-text {
+		display: none;
+	}
+	.subtitle {
+		padding-bottom: 0;
+	}
+}
 </style>
