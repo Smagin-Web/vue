@@ -94,6 +94,9 @@ import { SwiperSlide } from 'swiper/vue'
 }
 
 @media (max-width: 800px) {
+	.section-read {
+		padding-bottom: 10px;
+	}
 	.button {
 		margin-top: -30px;
 		max-width: 300px;
