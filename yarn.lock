@@ -3381,6 +3381,11 @@ vue-carousel-3d@^1.0.1:
     core-js "^3.6.5"
     vue "^2.6.11"
 
+vue-debounce@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.npmjs.org/vue-debounce/-/vue-debounce-5.0.0.tgz"
+  integrity sha512-heIPTbmFC6Hghhnwbfjw0nYRBYH+YFp/d9xGQ/rDRPUfU6NBIndbJz+i0pHVii4BXXRi1CaljT6H3fDSbbPMvg==
+
 vue-demi@>=0.14.5:
   version "0.14.6"
   resolved "https://registry.npmjs.org/vue-demi/-/vue-demi-0.14.6.tgz"
@@ -3436,7 +3441,7 @@ vue@^2.6.11:
     "@vue/compiler-sfc" "2.7.14"
     csstype "^3.1.0"
 
-"vue@^2.6.14 || ^3.3.0", "vue@^3.0.0-0 || ^2.6.0", vue@^3.2.0, vue@^3.2.25, vue@^3.3.4, vue@3.3.4:
+"vue@^2.6.14 || ^3.3.0", "vue@^3.0.0-0 || ^2.6.0", vue@^3.2.0, vue@^3.2.25, vue@^3.3.4, "vue@>= 3.0.0", vue@3.3.4:
   version "3.3.4"
   resolved "https://registry.npmjs.org/vue/-/vue-3.3.4.tgz"
   integrity sha512-VTyEYn3yvIeY1Py0WaYGZsXnz3y5UnGi62GjVEqvEGPl6nxbOrCXbVOTQWBEJUqAyTUk2uJ5JLVnYJ6ZzGbrSw==

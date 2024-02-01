@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { Mousewheel, EffectCreative } from 'swiper/modules'
 
+import throttle from './throttle.ts'
+
 import 'swiper/css'
 import 'swiper/css/mousewheel'
 import './slider-custom.css'
@@ -10,6 +12,9 @@ import { ref } from 'vue'
 
 import CustomSliderCardTemplate from './CustomSliderCardTemplate.vue'
 import { dataSlides } from './data'
+
+let swiperObject: any = undefined
+const onSwiperInit = (swiper: any) => (swiperObject = swiper)
 
 let activeSlideIndex = ref(1)
 const container = ref<(HTMLElement & { swiper?: any }) | null>(null)
@@ -38,6 +43,7 @@ const handleWheel = (event: WheelEvent) => {
 }
 
 const scrollToCenter = () => {
+	console.log('center')
 	const containerElement = container.value as HTMLElement | null
 	if (containerElement) {
 		containerElement.scrollIntoView({ behavior: 'smooth', block: 'center' })
@@ -48,14 +54,22 @@ const onChangeActive = (swiper: any) => {
 	activeSlideIndex.value = swiper.activeIndex + 1
 }
 
-const onTouchSlider = (swiper: any, pointerdown: any) => {
-	console.log(pointerdown)
+const stopScrollingMobile = () => {
+	
+}
+
+const mobileSlideNext = throttle(() => swiperObject.slideNext(500), 1000)
+
+const onTouchSlider = () => {
+	scrollToCenter()
+	mobileSlideNext()
 }
 </script>
 
 <template>
 	<div class="wrapper" ref="container">
 		<Swiper
+			@swiper="swiper => onSwiperInit(swiper)"
 			grab-cursor
 			:effect="'creative'"
 			:speed="300"
