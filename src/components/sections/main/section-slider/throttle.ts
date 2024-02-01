@@ -1,12 +1,14 @@
+/* eslint-disable prefer-rest-params */
 function throttle(func: any, ms: number) {
 	let isThrottle = false
 
-	function wrapper() {
+	function wrapper(...args: any) {
 		console.log(isThrottle)
 		if (isThrottle) {
 			return
 		}
-		func.apply(this, arguments)
+    func.call(this as any, args)
+		// func.apply(this as Function, arguments)
 		isThrottle = true
 
 		setTimeout(function () {
