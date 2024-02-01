@@ -2,7 +2,7 @@
 function throttle(func: any, ms: number) {
 	let isThrottle = false
 
-	function wrapper(...args: any) {
+	function wrapper(this: any, ...args: any) {
 		console.log(isThrottle)
 		if (isThrottle) {
 			return
