@@ -1,8 +1,8 @@
-function throttle(func, ms) {
+function throttle(func: any, ms: number) {
 	let isThrottle = false
 
 	function wrapper() {
-    console.log(isThrottle)
+		console.log(isThrottle)
 		if (isThrottle) {
 			return
 		}
