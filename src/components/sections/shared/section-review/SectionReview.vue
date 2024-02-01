@@ -11,7 +11,6 @@ import MContainer from '@/components/shared/MContainer.vue'
 					<div class="section-review-item">
 						<img src="./yandex.png" />
 					</div>
-
 					<div class="section-review-item">
 						<img src="./zoon.png" />
 					</div>
