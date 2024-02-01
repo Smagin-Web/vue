@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { Mousewheel, EffectCreative } from 'swiper/modules'
 
-import throttle from './throttle.ts'
+import throttle from './throttle'
 
 import 'swiper/css'
 import 'swiper/css/mousewheel'
