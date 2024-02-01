@@ -8,20 +8,20 @@ import MContainer from '@/components/shared/MContainer.vue'
 			<div class="section-review-content">
 				<h4 class="heading">Отзывы на&nbsp;площадках</h4>
 				<div class="section-review__links">
-					<!-- <div class="section-review-item">
-						<img src="./yandex.png" />
-					</div> -->
-					<!-- <div class="section-review-item">
-						<img src="./zoon.png" />
+					<div class="section-review-item">
+						<img src="./yandex2.png" />
+					</div>
+					<div class="section-review-item">
+						<img src="./zoon2.png" />
 					</div>
 
 					<div class="section-review-item">
-						<img src="./gmaps.png" />
+						<img src="./gmaps2.png" />
 					</div>
 
 					<div class="section-review-item">
-						<img src="./twogis.png" />
-					</div> -->
+						<img src="./twogis2.png" />
+					</div>
 				</div>
 			</div>
 		</MContainer>
