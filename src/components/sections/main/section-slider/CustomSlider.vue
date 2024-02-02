@@ -138,6 +138,14 @@ const onTouchSlider = () => {
 	transition: 0.2s;
 }
 
+.swiper-slide :deep() .card {
+	background-color: #ede4da;
+}
+
+.swiper-slide-active :deep() .card {
+	background-color: #fff;
+}
+
 /* Для всех карточек делаем прозрачный контент */
 
 .swiper-slide :deep() .card * {
@@ -199,6 +207,19 @@ const onTouchSlider = () => {
 		padding-top: 0;
 		padding-right: 8px;
 		padding-left: 8px;
+	}
+}
+
+@media (max-width: 500px) {
+	.swiper-slide-prev :deep() .card {
+		top: 0px;
+		background-color: #ede4da;
+	}
+
+	/* Меняем фон следующей карточки и перемещаем её вниз на 80px */
+
+	.swiper-slide-next :deep() .card {
+		bottom: 0px;
 	}
 }
 </style>

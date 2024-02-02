@@ -79,4 +79,10 @@ console.log(props.iconPng)
 		width: 250px;
 	}
 }
+
+@media (max-width: 500px) {
+	.card-image-wrapper {
+		margin-top: 0;
+	}
+}
 </style>

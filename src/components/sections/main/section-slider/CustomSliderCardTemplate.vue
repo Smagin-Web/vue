@@ -93,4 +93,10 @@ const props = defineProps([
 		max-width: 100%;
 	}
 }
+
+@media (max-width: 500px) {
+	.card {
+		padding-top: 40px;
+	}
+}
 </style>
