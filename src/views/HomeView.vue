@@ -16,6 +16,7 @@ import SectionTech from '@/components/sections/shared/section-tech/SectionTech.v
 import SectionPluses from '@/components/sections/main/section-pluses/SectionPluses.vue'
 import SectionBanner from '@/components/sections/main/section-banner/SectionBanner.vue'
 import CustomSlider from '@/components/sections/main/section-slider/CustomSlider.vue'
+import CustomSliderSm from '@/components/sections/main/section-slider/CustomSliderSm.vue'
 </script>
 
 <template>
@@ -24,7 +25,8 @@ import CustomSlider from '@/components/sections/main/section-slider/CustomSlider
 		<SectionPluses />
 		<SectionInfo />
 		<SectionTech />
-		<CustomSlider />
+		<CustomSlider class="custom-slider-lg" />
+		<CustomSliderSm class="custom-slider-sm" />
 		<SectionOffer />
 		<SectionResult />
 		<SectionStories />
@@ -36,3 +38,18 @@ import CustomSlider from '@/components/sections/main/section-slider/CustomSlider
 		<SectionRead />
 	</ViewWrapper>
 </template>
+
+<style scoped>
+.custom-slider-sm {
+	display: none;
+}
+
+@media (max-width: 1000px) {
+	.custom-slider-sm {
+		display: block;
+	}
+	.custom-slider-lg {
+		display: none;
+	}
+}
+</style>
