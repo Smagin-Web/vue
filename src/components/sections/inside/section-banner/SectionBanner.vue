@@ -5,7 +5,7 @@ import SectionBannerBadges from './SectionBannerBadges.vue'
 </script>
 
 <template>
-	<section>
+	<section class="section-banner-about">
 		<MContainer>
 			<BreadCrumbs
 				class="bread-crumbs"
@@ -147,10 +147,17 @@ import SectionBannerBadges from './SectionBannerBadges.vue'
 }
 
 @media (max-width: 590px) {
-	.banner {
-		max-width: 90%;
+	.section-banner-about {
+		overflow: hidden;
 	}
-
+	.container-custom {
+		padding-top: 0;
+	}
+	.banner {
+		margin-top: -10px;
+		width: 120%;
+		max-width: 500px;
+	}
 	.heading {
 		font-size: 38px;
 	}

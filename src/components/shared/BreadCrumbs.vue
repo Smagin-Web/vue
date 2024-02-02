@@ -41,12 +41,24 @@ const props = defineProps(['items'])
 	color: #6d6364;
 	font-size: 22px;
 	font-weight: 400;
+
+	white-space: nowrap;
 }
-.item-link{
+.item-link {
 	position: absolute;
 	top: 0;
 	right: 0;
 	left: 0;
 	bottom: 0;
+}
+
+@media (max-width: 1000px) {
+	.wrapper {
+		overflow: hidden;
+		width: 0;
+		height: 0;
+		opacity: 0;
+		pointer-events: none;
+	}
 }
 </style>
