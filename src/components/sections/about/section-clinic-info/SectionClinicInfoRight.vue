@@ -78,4 +78,10 @@ import IconPlay from '@/components/icons/IconPlay.vue'
 .content-photo-wrapper:hover .content-photo-icon {
 	opacity: 0.8;
 }
+
+@media (max-width: 1000px) {
+	.content-photo-wrapper::after {
+		display: none;
+	}
+}
 </style>

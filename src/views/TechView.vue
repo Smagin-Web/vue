@@ -22,7 +22,15 @@ import SectionBanner from '@/components/sections/tech/section-banner/SectionBann
 		<SectionMasters />
 		<SectionBonus />
 		<SectionRead />
-		<SectionFaq />
-		<SectionHelp />
+		<SectionFaq class="section-help" />
+		<SectionHelp  />
 	</ViewWrapper>
 </template>
+
+<style scoped>
+@media (max-width: 1000px) {
+	.section-help {
+		padding-top: 60px;
+	}
+}
+</style>
