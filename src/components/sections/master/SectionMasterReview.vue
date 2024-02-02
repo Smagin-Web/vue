@@ -45,4 +45,15 @@ import { SwiperSlide } from 'swiper/vue'
 	justify-content: center;
 	gap: 30px;
 }
+
+@media (max-width: 1000px) {
+	.buttons {
+		display: grid;
+		gap: 14px;
+		margin-top: -40px;
+	}
+	.buttons button {
+		min-width: 320px;
+	}
+}
 </style>

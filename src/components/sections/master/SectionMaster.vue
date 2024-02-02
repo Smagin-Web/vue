@@ -251,6 +251,9 @@ const moreSkills = [
 }
 
 @media (max-width: 600px) {
+	.section-master {
+		padding-bottom: 60px;
+	}
 	.heading {
 		position: relative;
 		padding-top: 70px;
