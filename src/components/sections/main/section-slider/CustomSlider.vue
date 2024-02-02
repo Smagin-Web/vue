@@ -212,14 +212,22 @@ const onTouchSlider = () => {
 
 @media (max-width: 500px) {
 	.swiper-slide-prev :deep() .card {
-		top: 0px;
+		top: 20px;
 		background-color: #ede4da;
 	}
 
-	/* Меняем фон следующей карточки и перемещаем её вниз на 80px */
-
 	.swiper-slide-next :deep() .card {
-		bottom: 0px;
+		bottom: 20px;
+	}
+
+	.swiper-slide :deep() .card {
+		opacity: 0;
+	}
+
+	.swiper-slide-active :deep() .card,
+	.swiper-slide-prev :deep() .card,
+	.swiper-slide-next :deep() .card {
+		opacity: 1;
 	}
 }
 </style>
