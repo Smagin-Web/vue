@@ -43,7 +43,6 @@ const handleWheel = (event: WheelEvent) => {
 }
 
 const scrollToCenter = () => {
-	console.log('center')
 	const containerElement = container.value as HTMLElement | null
 	if (containerElement) {
 		containerElement.scrollIntoView({ behavior: 'smooth', block: 'center' })
@@ -54,20 +53,28 @@ const onChangeActive = (swiper: any) => {
 	activeSlideIndex.value = swiper.activeIndex + 1
 }
 
-const stopScrollingMobile = () => {
-	
-}
+const isActiveSlider = ref(true)
 
-const mobileSlideNext = throttle(() => swiperObject.slideNext(500), 1000)
+const preventTouchScroll = (event: any) =>
+	isActiveSlider.value ? event.preventDefault() : null
+
+const mobileSlideNext = throttle(() => swiperObject.slideNext(500), 500)
 
 const onTouchSlider = () => {
 	scrollToCenter()
 	mobileSlideNext()
+	if (swiperObject.isEnd) {
+		isActiveSlider.value = false
+	}
 }
 </script>
 
 <template>
-	<div class="wrapper" ref="container">
+	<div
+		class="wrapper"
+		ref="container"
+		v-on:touchmove.capture="preventTouchScroll"
+	>
 		<Swiper
 			@swiper="swiper => onSwiperInit(swiper)"
 			grab-cursor
