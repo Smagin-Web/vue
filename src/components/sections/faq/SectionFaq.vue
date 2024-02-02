@@ -47,7 +47,7 @@ const increment4 = () => {
 				class="bread-crumbs"
 				:items="['Главная', 'Частые вопросы']"
 			/>
-			<h1 class="heading">Частые вопросы</h1>
+			<h1 class="h-xxl heading">Частые вопросы</h1>
 
 			<div class="filters">
 				<Filter :active="true">Все вопросы</Filter>
@@ -96,8 +96,6 @@ const increment4 = () => {
 }
 
 .heading {
-	color: #000;
-	font-size: 60px;
 	padding-bottom: 50px;
 }
 
@@ -120,6 +118,9 @@ const increment4 = () => {
 	}
 	.section-faq {
 		padding-bottom: 80px;
+	}
+	.heading {
+		padding-bottom: 32px;
 	}
 }
 </style>

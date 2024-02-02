@@ -50,7 +50,7 @@ const moreSkills = [
 				class="bread-crumbs"
 				:items="['Главная', 'Специалисты', 'Ольга Заика']"
 			/>
-			<h1 class="heading">
+			<h1 class="h-xxl heading">
 				Ольга Заика
 				<ButtonBack class="button-back">Все специалисты</ButtonBack>
 			</h1>
@@ -101,8 +101,6 @@ const moreSkills = [
 }
 
 .heading {
-	color: #000;
-	font-size: 60px;
 	padding-bottom: 50px;
 	padding-top: 20px;
 
@@ -233,6 +231,9 @@ const moreSkills = [
 }
 
 @media (max-width: 1000px) {
+	.photo-wrapper::after {
+		display: none;
+	}
 	.heading {
 		font-size: 34px;
 	}
@@ -252,11 +253,15 @@ const moreSkills = [
 @media (max-width: 600px) {
 	.heading {
 		position: relative;
+		padding-top: 70px;
 	}
 	.button-back {
+		top: 0;
+		left: 0;
 		position: absolute;
-		top: -36px;
-		right: 0;
+	}
+	.list-group {
+		display: grid;
 	}
 }
 </style>
