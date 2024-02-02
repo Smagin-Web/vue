@@ -34,19 +34,9 @@ const onClickHandler = () => {
 		</span>
 		<div class="nav-list" v-bind:class="{ 'nav-list-active': isActive }">
 			<div class="nav-list-scroll">
-				<button class="nav-list-button">Все услуги</button>
 				<button class="nav-list-button">Аппаратная косметология</button>
 				<button class="nav-list-button">Инъекционная косметология</button>
 				<button class="nav-list-button">AntiAcne Concept</button>
-				<button class="nav-list-button">Clear Concept</button>
-				<button class="nav-list-button">Clear Concept</button>
-				<button class="nav-list-button">Clear Concept</button>
-				<button class="nav-list-button">Clear Concept</button>
-				<button class="nav-list-button">Clear Concept</button>
-				<button class="nav-list-button">Clear Concept</button>
-				<button class="nav-list-button">Clear Concept</button>
-				<button class="nav-list-button">Clear Concept</button>
-				<button class="nav-list-button">Clear Concept</button>
 				<button class="nav-list-button">Clear Concept</button>
 			</div>
 		</div>
@@ -105,7 +95,6 @@ const onClickHandler = () => {
 }
 
 .nav-list-scroll {
-	height: 100%;
 	overflow-y: scroll;
 	scrollbar-color: #458245 #714826;
 	scrollbar-width: auto;
@@ -123,7 +112,7 @@ const onClickHandler = () => {
 }
 
 .nav-list-active {
-	height: 450px;
+	min-height: 250px;
 	transform: translateY(-30px);
 	z-index: 1;
 
