@@ -1,8 +1,6 @@
 <script setup lang="ts">
 import { Mousewheel, EffectCreative } from 'swiper/modules'
 
-import throttle from './throttle'
-
 import 'swiper/css'
 import 'swiper/css/mousewheel'
 import './slider-custom.css'
@@ -13,13 +11,9 @@ import { ref } from 'vue'
 import CustomSliderCardTemplate from './CustomSliderCardTemplate.vue'
 import { dataSlides } from './data'
 
-let swiperObject: any = undefined
-const onSwiperInit = (swiper: any) => (swiperObject = swiper)
-
 let activeSlideIndex = ref(1)
 const container = ref<(HTMLElement & { swiper?: any }) | null>(null)
 const isLockScroll = ref(true)
-const isActiveSlider = ref(true)
 
 const handleWheel = (event: WheelEvent) => {
 	event.stopPropagation()
@@ -53,30 +47,11 @@ const scrollToCenter = () => {
 const onChangeActive = (swiper: any) => {
 	activeSlideIndex.value = swiper.activeIndex + 1
 }
-
-const preventTouchScroll = (event: any) =>
-	isActiveSlider.value ? event.preventDefault() : null
-
-const mobileSlideNext = throttle(() => swiperObject.slideNext(500), 500)
-
-const onTouchSlider = () => {
-	mobileSlideNext()
-	scrollToCenter()
-	if (swiperObject.isEnd) {
-		setTimeout(() => (isActiveSlider.value = false), 300)
-	}
-}
 </script>
 
 <template>
-	<div
-		class="wrapper"
-		ref="container"
-		v-on:touchmove.capture="preventTouchScroll"
-	>
+	<div class="wrapper" ref="container">
 		<Swiper
-			@swiper="swiper => onSwiperInit(swiper)"
-			grab-cursor
 			:effect="'creative'"
 			:speed="300"
 			:creativeEffect="{
@@ -94,9 +69,6 @@ const onTouchSlider = () => {
 			:release-on-edges="true"
 			:modules="[EffectCreative, Mousewheel]"
 			:slides-per-view="1"
-			:allowTouchMove="true"
-			@sliderMove="onTouchSlider"
-			@touch-move="onTouchSlider"
 			@activeIndexChange="onChangeActive"
 			@wheel="handleWheel"
 		>
