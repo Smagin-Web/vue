@@ -60,8 +60,8 @@ const preventTouchScroll = (event: any) =>
 const mobileSlideNext = throttle(() => swiperObject.slideNext(500), 500)
 
 const onTouchSlider = () => {
-	scrollToCenter()
 	mobileSlideNext()
+	scrollToCenter()
 	if (swiperObject.isEnd) {
 		setTimeout(() => (isActiveSlider.value = false), 300)
 	}

@@ -43,18 +43,12 @@ const props = defineProps([
 		</Suspense>
 
 		<div class="card-buttons">
-			<MButton class="first-button">Записаться на приём</MButton>
-			<MButtonOutline>Задать вопрос</MButtonOutline>
+			<MButton class="card-button">Подробнее</MButton>
 		</div>
 	</CardWrapper>
 </template>
 
 <style scoped>
-.card-buttons {
-	display: flex;
-	gap: 20px;
-}
-
 .card-info {
 	max-width: 880px;
 }
@@ -73,10 +67,9 @@ const props = defineProps([
 
 @media (max-width: 1300px) {
 	.card-buttons {
-		display: grid;
 		max-width: 600px;
 	}
-	.card-buttons button {
+	.card-button {
 		width: 100%;
 		max-width: 100%;
 		width: 300px;
@@ -85,9 +78,9 @@ const props = defineProps([
 
 @media (max-width: 1000px) {
 	.card-buttons {
-		max-width: 100%;
+		display: flex;
 		justify-content: center;
-		justify-items: center;
+		max-width: 100%;
 	}
 	.card-info {
 		max-width: 100%;
