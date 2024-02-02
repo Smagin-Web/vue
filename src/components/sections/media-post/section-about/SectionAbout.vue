@@ -134,4 +134,16 @@ const listItems = [
 	bottom: 0;
 	left: 0;
 }
+
+@media (max-width: 1000px) {
+	.heading {
+		position: relative;
+		display: block;
+		padding-top: 60px;
+	}
+	.button-back {
+		position: absolute;
+		top: 0;
+	}
+}
 </style>
