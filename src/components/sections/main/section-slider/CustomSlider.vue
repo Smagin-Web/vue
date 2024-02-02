@@ -19,6 +19,7 @@ const onSwiperInit = (swiper: any) => (swiperObject = swiper)
 let activeSlideIndex = ref(1)
 const container = ref<(HTMLElement & { swiper?: any }) | null>(null)
 const isLockScroll = ref(true)
+const isActiveSlider = ref(true)
 
 const handleWheel = (event: WheelEvent) => {
 	event.stopPropagation()
@@ -53,8 +54,6 @@ const onChangeActive = (swiper: any) => {
 	activeSlideIndex.value = swiper.activeIndex + 1
 }
 
-const isActiveSlider = ref(true)
-
 const preventTouchScroll = (event: any) =>
 	isActiveSlider.value ? event.preventDefault() : null
 
@@ -64,7 +63,7 @@ const onTouchSlider = () => {
 	scrollToCenter()
 	mobileSlideNext()
 	if (swiperObject.isEnd) {
-		isActiveSlider.value = false
+		setTimeout(() => (isActiveSlider.value = false), 300)
 	}
 }
 </script>
