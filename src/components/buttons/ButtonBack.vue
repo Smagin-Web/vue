@@ -1,6 +1,7 @@
 <template>
 	<button type="button" class="button-back">
 		<svg
+		class="button-icon"
 			xmlns="http://www.w3.org/2000/svg"
 			width="16"
 			height="16"
@@ -45,9 +46,14 @@
 
 @media (max-width: 750px) {
 	.button-back {
-		padding: 10px 26px;
-		font-size: 18px;
+		padding: 6px 18px;
+		font-size: 16px;
 		gap: 10px;
+		border-radius: 10px;
+	}
+	.button-icon{
+		width: 12px;
+		height: auto;
 	}
 }
 </style>
