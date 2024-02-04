@@ -44,5 +44,8 @@ import MButtonBig from '@/components/buttons/MButtonBig.vue'
 	.button-wrapper {
 		padding-top: 24px;
 	}
+	.section-title {
+		padding-bottom: 26px;
+	}
 }
 </style>
