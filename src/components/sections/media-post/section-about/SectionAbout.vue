@@ -42,7 +42,7 @@ const listItems = [
 						<li
 							v-for="(item, index) in listItems"
 							:key="index + item"
-							class="list-item"
+							class="list-item text-sm"
 						>
 							<a class="list-item-link" href="#" />
 							{{ item }}
@@ -118,8 +118,6 @@ const listItems = [
 .list-item {
 	position: relative;
 	padding: 0;
-	font-size: 22px;
-	color: #6d6364;
 	transition: 0.1s;
 }
 
@@ -144,6 +142,11 @@ const listItems = [
 	.button-back {
 		position: absolute;
 		top: 0;
+	}
+	.list-with-photo {
+		display: grid;
+		gap: 0;
+		padding-bottom: 32px;
 	}
 }
 </style>

@@ -6,7 +6,7 @@ defineProps<{
 
 <template>
 	<ul class="list">
-		<li v-for="(item, index) in items" :key="index" class="list-item">
+		<li v-for="(item, index) in items" :key="index" class="list-item text-sm">
 			{{ item }}
 		</li>
 	</ul>
@@ -19,18 +19,11 @@ defineProps<{
 
 .list-item {
 	padding-bottom: 10px;
-	color: #6d6364;
-	font-family: 'BrisaSans';
-	font-size: 22px;
-	font-weight: 400;
 }
 
 @media (max-width: 1000px) {
 	.list {
 		padding-bottom: 32px;
-	}
-	.list-item {
-		font-size: 18px;
 	}
 }
 </style>

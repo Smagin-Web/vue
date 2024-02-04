@@ -137,4 +137,10 @@ import MediaInfoWidget3 from './MediaInfoWidget3.vue'
 .section-text {
 	padding-bottom: 20px;
 }
+
+@media (max-width: 1000px) {
+	.section-media-info {
+		padding-bottom: 50px;
+	}
+}
 </style>

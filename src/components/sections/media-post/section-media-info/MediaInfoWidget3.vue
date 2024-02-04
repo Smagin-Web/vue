@@ -3,7 +3,7 @@
 <template>
 	<div class="widget">
 		<div class="widget-header">
-			<img src="./avatar.png" alt="" />
+			<img src="./avatar.png" alt="" class="widget-header-avatar" />
 			<div>
 				<h6 class="h-xs widget-header-title">Ольга Заика</h6>
 				<p class="text-mini">
@@ -40,5 +40,26 @@
 
 .widget-header-title {
 	padding-bottom: 10px;
+}
+
+@media (max-width: 1000px) {
+	.widget {
+		padding: 18px;
+		border-radius: 20px;
+		gap: 10px;
+	}
+
+	.widget-header {
+		gap: 20px;
+		padding-bottom: 24px;
+		align-items: start;
+	}
+}
+
+@media (max-width: 500px) {
+	.widget-header-avatar {
+		width: 80px;
+		height: auto;
+	}
 }
 </style>

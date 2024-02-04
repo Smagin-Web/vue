@@ -22,6 +22,14 @@ import IconInfo from './IconInfo.vue'
 	grid-template-columns: 40px 1fr;
 	gap: 38px;
 	border-radius: 50px;
-	background: #EDE4DA;
+	background: #ede4da;
+}
+
+@media (max-width: 1000px) {
+	.widget {
+		padding: 14px;
+		border-radius: 28px;
+		gap: 10px;
+	}
 }
 </style>

@@ -31,7 +31,7 @@ import MContainer from '@/components/shared/MContainer.vue'
 					</div>
 				</div>
 				<div class="service-card-right">
-					<img src="./tech.png" alt="" />
+					<img src="./tech.png" alt="" class="service-card-img" />
 					<CardSale />
 				</div>
 			</div>
@@ -76,5 +76,51 @@ import MContainer from '@/components/shared/MContainer.vue'
 .service-card-buttons {
 	display: flex;
 	gap: 20px;
+}
+
+@media (max-width: 1500px) {
+	.service-card {
+		flex-direction: column-reverse;
+	}
+	.service-card-right {
+		display: grid;
+		grid-template-columns: 1fr max-content;
+		padding-bottom: 32px;
+	}
+	.service-card-img {
+		max-width: 600px;
+		width: 100%;
+	}
+	.service-card-text {
+		padding-bottom: 32px;
+	}
+}
+
+@media (max-width: 1000px) {
+	.service-card {
+		padding: 20px;
+		border-radius: 20px;
+	}
+	.service-card-subtitle {
+		padding-bottom: 16px;
+	}
+	.service-card-title {
+		padding-bottom: 16px;
+	}
+	.service-card-right {
+		gap: 24px;
+	}
+	.section-service {
+		padding-bottom: 60px;
+	}
+}
+
+@media (max-width: 500px) {
+	.service-card-right {
+		grid-template-columns: 1fr;
+	}
+	.service-card-buttons {
+		flex-direction: column;
+	}
 }
 </style>

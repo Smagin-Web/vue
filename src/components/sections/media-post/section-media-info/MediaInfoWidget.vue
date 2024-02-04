@@ -22,4 +22,13 @@ import IconLike from './IconLike.vue'
 	border-radius: 50px;
 	background: #c2e5d2;
 }
+
+@media (max-width: 1000px) {
+	.widget {
+		padding: 14px;
+		border-radius: 28px;
+		align-items: start;
+		gap: 10px;
+	}
+}
 </style>
