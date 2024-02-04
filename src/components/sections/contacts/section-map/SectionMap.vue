@@ -67,6 +67,7 @@ import SelectRoad from './SelectRoad.vue'
 
 <style scoped>
 .section-map {
+	overflow: visible;
 	padding-bottom: 150px;
 }
 

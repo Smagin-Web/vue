@@ -126,6 +126,9 @@ import MButtonOutlineBig from '@/components/buttons/MButtonOutlineBig.vue'
 }
 
 @media (max-width: 1000px) {
+	.section-contacts-card {
+		padding-bottom: 70px;
+	}
 	.contact-icon {
 		width: 30px;
 	}

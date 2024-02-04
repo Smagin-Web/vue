@@ -18,7 +18,7 @@ const onClickHandler = () => {
 <template>
 	<div class="select-road" v-bind:class="className">
 		<button class="select-road-button text-sm" :onClick="onClickHandler">
-			Как добраться от МКАД на авто
+			Как добраться от МКАД
 		</button>
 
 		<SelectArrow class="select-road-icon" />
@@ -126,6 +126,13 @@ const onClickHandler = () => {
 @media (max-width: 1000px) {
 	.select-road {
 		width: 100%;
+	}
+	.select-road-list-button {
+		padding: 10px 14px;
+		border-radius: 10px;
+	}
+	.select-road-list.active {
+		padding-top: 60px;
 	}
 }
 
