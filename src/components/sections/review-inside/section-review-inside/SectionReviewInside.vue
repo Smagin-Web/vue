@@ -265,4 +265,14 @@ import IconText2 from './IconText2.vue'
 		z-index: 10;
 	}
 }
+
+@media (max-width: 500px) {
+	.card-badges {
+		gap: 10px;
+		flex-wrap: wrap;
+	}
+	.card-footer {
+		margin: 0 20px;
+	}
+}
 </style>
