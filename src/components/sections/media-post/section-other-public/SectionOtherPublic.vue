@@ -35,4 +35,14 @@ import MButtonBig from '@/components/buttons/MButtonBig.vue'
 	display: flex;
 	justify-content: center;
 }
+
+@media (max-width: 600px) {
+	.cards {
+		display: grid;
+		gap: 0;
+	}
+	.button-wrapper {
+		padding-top: 24px;
+	}
+}
 </style>

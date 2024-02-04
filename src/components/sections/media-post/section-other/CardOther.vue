@@ -58,4 +58,19 @@
 .card-other:hover .card-other-photo-wrapper::after {
 	border-width: 10px;
 }
+
+@media (max-width: 1000px) {
+	.card-other-title {
+		font-size: 22px;
+	}
+}
+
+@media (max-width: 600px) {
+	.card-other-title {
+		text-align: center;
+	}
+	.card-other-photo-wrapper{
+		margin-bottom: 14px;
+	}
+}
 </style>

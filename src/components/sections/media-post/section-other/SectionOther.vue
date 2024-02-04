@@ -33,4 +33,10 @@ import CardOther from './CardOther.vue'
 .section-other-swiper :deep() .button-next {
 	top: 20%;
 }
+
+@media (max-width: 1000px) {
+	.section-other {
+		padding-bottom: 0;
+	}
+}
 </style>
