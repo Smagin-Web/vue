@@ -39,7 +39,7 @@ defineProps<{
 @media (max-width: 1000px) {
 	.filter {
 		font-size: 14px;
-		padding: 12px 20px;
+		padding: 6px 20px;
 		height: auto;
 	}
 }
