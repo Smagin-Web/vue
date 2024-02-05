@@ -67,4 +67,10 @@ const increment3 = () => {
 	display: grid;
 	gap: 24px;
 }
+
+@media (max-width: 1000px) {
+	.section-faq {
+		padding-bottom: 50px;
+	}
+}
 </style>
