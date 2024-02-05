@@ -1,19 +1,8 @@
 <script setup lang="ts">
 import MContainer from '@/components/shared/MContainer.vue'
 import ButtonTour from './ButtonTour.vue'
-
-// Swiper
-import { Swiper, SwiperSlide } from 'swiper/vue'
-import { Pagination } from 'swiper/modules'
-import 'swiper/css'
-
-const modules = [Pagination]
-
-const changeActiveSlide = (swiper: any) => {
-	setTimeout(() => {
-		swiper.slideTo(0)
-	}, 50)
-}
+// import { Swiper, SwiperSlide } from 'swiper/vue'
+// import 'swiper/css'
 </script>
 
 <template>
@@ -25,19 +14,34 @@ const changeActiveSlide = (swiper: any) => {
 				комфорта и&nbsp;красоты
 				<ButtonTour />
 			</h2>
-			<Swiper
-				@swiper="changeActiveSlide"
-				:init="false"
+
+			<swiper-container
+				slides-per-view="auto"
+				centered-slides="true"
+				space-between="30"
+			>
+				<swiper-slide>
+					<div class="card-room">
+						<img src="./room.png" alt="" class="card-room-photo" />
+					</div>
+				</swiper-slide>
+				<swiper-slide>
+					<div class="card-room">
+						<img src="./room2.png" alt="" class="card-room-photo" />
+					</div>
+				</swiper-slide>
+				<swiper-slide>
+					<div class="card-room">
+						<img src="./room2.png" alt="" class="card-room-photo" />
+					</div>
+				</swiper-slide>
+			</swiper-container>
+
+			<!-- <Swiper
 				:slidesPerView="'auto'"
-				class="swiper-custom"
-				:modules="modules"
-				:grabCursor="true"
 				:centeredSlides="true"
+				:grabCursor="true"
 				:spaceBetween="24"
-				:initialSlide="-2"
-				:pagination="{
-					clickable: true
-				}"
 			>
 				<SwiperSlide>
 					<div class="card-room">
@@ -64,7 +68,7 @@ const changeActiveSlide = (swiper: any) => {
 						<img src="./room.png" alt="" class="card-room-photo" />
 					</div>
 				</SwiperSlide>
-			</Swiper>
+			</Swiper> -->
 		</MContainer>
 	</section>
 </template>
@@ -86,19 +90,13 @@ const changeActiveSlide = (swiper: any) => {
 	object-fit: cover;
 }
 
-/* swiper */
-
 .swiper {
-	padding-bottom: 100px;
 	overflow: visible;
-	width: 100%;
 }
 
-.swiper-custom :deep() .swiper-slide {
-	display: flex;
-	justify-content: center;
-	width: fit-content;
-}
+/* .swiper-custom :deep() .swiper-slide {
+	max-width: fit-content;
+} */
 
 @media (max-width: 1200px) {
 	.card-room-photo {
