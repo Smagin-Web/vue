@@ -68,6 +68,10 @@ const onClickHandler = () => {
 	box-shadow: none;
 }
 
+.select-road-list:not(.active) {
+	pointer-events: none;
+}
+
 .select-road-icon {
 	position: absolute;
 	right: 10px;

@@ -17,7 +17,7 @@ const changeActiveSlide = (swiper: any) => {
 </script>
 
 <template>
-	<section class="section-clinic-info">
+	<section>
 		<MContainer>
 			<h2 class="h-l section-heading">
 				Атмосферное пространство
@@ -114,6 +114,9 @@ const changeActiveSlide = (swiper: any) => {
 		width: auto;
 		object-fit: cover;
 	}
+	.swiper {
+		padding-bottom: 60px;
+	}
 }
 
 @media (max-width: 640px) {
@@ -121,6 +124,9 @@ const changeActiveSlide = (swiper: any) => {
 		flex-direction: column;
 		align-items: start;
 		gap: 20px;
+	}
+	.section-heading {
+		padding-bottom: 24px;
 	}
 }
 </style>

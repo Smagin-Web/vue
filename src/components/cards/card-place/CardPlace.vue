@@ -154,7 +154,8 @@ import CardPlaceContacts from './CardPlaceContacts.vue'
 
 @media (max-width: 550px) {
 	.card {
-		padding: 12px;
+		padding: 18px;
+		border-radius: 10px;
 	}
 	.card-img {
 		margin-bottom: 30px;

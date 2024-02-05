@@ -46,7 +46,11 @@ import CardPlace from '@/components/cards/card-place/CardPlace.vue'
 	.section-places {
 		padding-bottom: 80px;
 	}
+	.title {
+		padding-left: 0;
+	}
 	.text {
+		padding-left: 0;
 		padding-bottom: 20px;
 	}
 }
