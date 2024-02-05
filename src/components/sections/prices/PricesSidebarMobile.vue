@@ -11,7 +11,7 @@ const onClickHandler = () => {
 <template>
 	<div class="nav" :onClick="onClickHandler">
 		<button class="nav-main-button">Все услуги</button>
-		<span class="nav-icon-button">
+		<span class="nav-icon-button" v-bind:class="{ active: isActive }">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				width="40"
@@ -79,12 +79,14 @@ const onClickHandler = () => {
 	height: auto;
 	z-index: 10;
 	pointer-events: none;
+	transition: 0.1s;
 }
 
 .nav-list {
 	overflow: hidden;
 	position: absolute;
 	top: 50%;
+	height: auto;
 	background-color: #fff;
 	border-radius: 30px;
 	transition: 0.2s;
@@ -95,7 +97,7 @@ const onClickHandler = () => {
 	transform: translateY(-30px);
 	padding-top: 60px;
 	padding-left: 10px;
-	padding-bottom: 30px;
+	padding-bottom: 10px;
 	padding-right: 10px;
 }
 
@@ -117,11 +119,13 @@ const onClickHandler = () => {
 }
 
 .nav-list-active {
-	min-height: 250px;
 	z-index: 1;
-
 	opacity: 1;
 	box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.nav-icon-button.active {
+	transform: rotate(180deg);
 }
 
 .nav-list-button {
