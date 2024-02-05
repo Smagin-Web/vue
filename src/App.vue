@@ -1,7 +1,4 @@
-<script setup lang="ts">
-import { register } from 'swiper/element/bundle'
-register()
-</script>
+<script setup lang="ts"></script>
 
 <template>
 	<noindex>

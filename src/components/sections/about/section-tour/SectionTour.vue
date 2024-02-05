@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import MContainer from '@/components/shared/MContainer.vue'
 import ButtonTour from './ButtonTour.vue'
-// import { Swiper, SwiperSlide } from 'swiper/vue'
-// import 'swiper/css'
+import { Swiper, SwiperSlide } from 'swiper/vue'
+import 'swiper/css'
 </script>
 
 <template>
@@ -15,34 +15,7 @@ import ButtonTour from './ButtonTour.vue'
 				<ButtonTour />
 			</h2>
 
-			<swiper-container
-				slides-per-view="auto"
-				centered-slides="true"
-				space-between="30"
-			>
-				<swiper-slide>
-					<div class="card-room">
-						<img src="./room.png" alt="" class="card-room-photo" />
-					</div>
-				</swiper-slide>
-				<swiper-slide>
-					<div class="card-room">
-						<img src="./room2.png" alt="" class="card-room-photo" />
-					</div>
-				</swiper-slide>
-				<swiper-slide>
-					<div class="card-room">
-						<img src="./room2.png" alt="" class="card-room-photo" />
-					</div>
-				</swiper-slide>
-			</swiper-container>
-
-			<!-- <Swiper
-				:slidesPerView="'auto'"
-				:centeredSlides="true"
-				:grabCursor="true"
-				:spaceBetween="24"
-			>
+			<Swiper :effect="'creative'" :grabCursor="true" :spaceBetween="24">
 				<SwiperSlide>
 					<div class="card-room">
 						<img src="./room.png" alt="" class="card-room-photo" />
@@ -68,7 +41,7 @@ import ButtonTour from './ButtonTour.vue'
 						<img src="./room.png" alt="" class="card-room-photo" />
 					</div>
 				</SwiperSlide>
-			</Swiper> -->
+			</Swiper>
 		</MContainer>
 	</section>
 </template>
@@ -94,9 +67,9 @@ import ButtonTour from './ButtonTour.vue'
 	overflow: visible;
 }
 
-/* .swiper-custom :deep() .swiper-slide {
+.swiper :deep() .swiper-slide {
 	max-width: fit-content;
-} */
+}
 
 @media (max-width: 1200px) {
 	.card-room-photo {
