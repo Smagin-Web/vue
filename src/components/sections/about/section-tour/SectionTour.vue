@@ -2,6 +2,7 @@
 import MContainer from '@/components/shared/MContainer.vue'
 import ButtonTour from './ButtonTour.vue'
 import { Swiper, SwiperSlide } from 'swiper/vue'
+import { Pagination } from 'swiper/modules'
 import 'swiper/css'
 </script>
 
@@ -15,7 +16,13 @@ import 'swiper/css'
 				<ButtonTour />
 			</h2>
 
-			<Swiper :slidesPerView="'auto'" :grabCursor="true" :spaceBetween="24">
+			<Swiper
+				:slidesPerView="'auto'"
+				:grabCursor="true"
+				:spaceBetween="24"
+				:modules="[Pagination]"
+				:pagination="true"
+			>
 				<SwiperSlide>
 					<div class="card-room">
 						<img src="./room.png" alt="" class="card-room-photo" />
