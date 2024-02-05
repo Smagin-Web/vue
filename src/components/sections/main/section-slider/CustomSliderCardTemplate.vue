@@ -85,6 +85,9 @@ const props = defineProps([
 	.card-info {
 		max-width: 100%;
 	}
+	.card {
+		border-radius: 20px;
+	}
 }
 
 @media (max-width: 500px) {
