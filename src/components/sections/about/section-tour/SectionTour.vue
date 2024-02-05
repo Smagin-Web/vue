@@ -100,28 +100,6 @@ const changeActiveSlide = (swiper: any) => {
 	width: fit-content;
 }
 
-.swiper-custom :deep() .swiper-pagination-bullet {
-	position: relative;
-	display: block;
-	width: 60px;
-	height: 20px;
-	background-color: #ede4da;
-	border-radius: 100px;
-	z-index: 10;
-}
-
-.swiper-custom :deep() .swiper-pagination-bullet-active {
-	background-color: #ae8c8e;
-}
-
-.swiper-custom :deep() .swiper-pagination {
-	display: flex;
-	cursor: pointer;
-	justify-content: center;
-	gap: 24px;
-	margin-top: 50px;
-}
-
 @media (max-width: 1200px) {
 	.card-room-photo {
 		height: 324px;
@@ -143,16 +121,6 @@ const changeActiveSlide = (swiper: any) => {
 		flex-direction: column;
 		align-items: start;
 		gap: 20px;
-	}
-
-	.swiper-custom :deep() .swiper-pagination-bullet {
-		width: 40px;
-		height: 12px;
-		border-radius: 80px;
-	}
-	.swiper-custom :deep() .swiper-pagination {
-		margin-top: 30px;
-		gap: 14px;
 	}
 }
 </style>

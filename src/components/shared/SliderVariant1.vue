@@ -154,28 +154,6 @@ const onSwiperStart = () => {
 	opacity: 0.2;
 }
 
-.swiper-custom :deep() .swiper-pagination-bullet {
-	position: relative;
-	display: block;
-	width: 60px;
-	height: 20px;
-	background-color: #ede4da;
-	border-radius: 100px;
-	z-index: 10;
-}
-
-.swiper-custom :deep() .swiper-pagination-bullet-active {
-	background-color: #ae8c8e;
-}
-
-.swiper-custom :deep() .swiper-pagination {
-	display: flex;
-	cursor: pointer;
-	justify-content: center;
-	gap: 24px;
-	margin-top: 50px;
-}
-
 .swiper {
 	padding-bottom: 100px;
 }
@@ -195,11 +173,6 @@ const onSwiperStart = () => {
 	}
 	.content {
 		margin: 0;
-	}
-	.swiper-custom :deep() .swiper-pagination {
-		margin-top: 26px;
-		margin-right: 20px;
-		margin-left: 20px;
 	}
 }
 </style>

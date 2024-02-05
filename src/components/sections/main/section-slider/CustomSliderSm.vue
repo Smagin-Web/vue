@@ -54,27 +54,4 @@ import { dataSlides } from './data'
 	max-width: calc(100% - 60px);
 	margin: 0 auto;
 }
-
-.swiper :deep() .swiper-pagination {
-	display: flex;
-	cursor: pointer;
-	justify-content: space-between;
-	max-width: 300px;
-	margin: 0 auto;
-	margin-top: 30px;
-}
-
-.swiper :deep() .swiper-pagination-bullet {
-	position: relative;
-	display: block;
-	width: 20px;
-	height: 20px;
-	background-color: #ede4da;
-	border-radius: 100px;
-	z-index: 10;
-}
-
-.swiper :deep() .swiper-pagination-bullet-active {
-	background-color: #ae8c8e;
-}
 </style>
