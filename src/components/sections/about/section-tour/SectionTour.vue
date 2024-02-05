@@ -15,7 +15,7 @@ import 'swiper/css'
 				<ButtonTour />
 			</h2>
 
-			<Swiper :effect="'creative'" :grabCursor="true" :spaceBetween="24">
+			<Swiper :slidesPerView="'auto'" :grabCursor="true" :spaceBetween="24">
 				<SwiperSlide>
 					<div class="card-room">
 						<img src="./room.png" alt="" class="card-room-photo" />
