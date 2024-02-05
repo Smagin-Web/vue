@@ -41,6 +41,7 @@ import CardShadow from './CardShadow.vue'
 
 <style scoped>
 .section-help {
+	overflow: visible;
 	padding-top: 100px;
 	padding-bottom: 160px;
 }
