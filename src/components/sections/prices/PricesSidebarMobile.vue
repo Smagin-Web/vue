@@ -85,13 +85,18 @@ const onClickHandler = () => {
 	overflow: hidden;
 	position: absolute;
 	top: 50%;
-	height: 1px;
 	background-color: #fff;
 	border-radius: 30px;
 	transition: 0.2s;
 	width: 100%;
 	opacity: 0;
 	z-index: 1;
+
+	transform: translateY(-30px);
+	padding-top: 60px;
+	padding-left: 10px;
+	padding-bottom: 30px;
+	padding-right: 10px;
 }
 
 .nav-list-scroll {
@@ -113,13 +118,8 @@ const onClickHandler = () => {
 
 .nav-list-active {
 	min-height: 250px;
-	transform: translateY(-30px);
 	z-index: 1;
 
-	padding-top: 60px;
-	padding-left: 10px;
-	padding-bottom: 30px;
-	padding-right: 10px;
 	opacity: 1;
 	box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
