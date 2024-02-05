@@ -148,7 +148,7 @@ import IconPlay from '@/components/icons/IconPlay.vue'
 @media (max-width: 1100px) {
 	.photo-wrapper {
 		width: 100%;
-		max-width: 340px;
+		max-width: 360px;
 	}
 	.photo {
 		width: 100%;
