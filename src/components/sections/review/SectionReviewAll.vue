@@ -13,11 +13,11 @@ import MButtonBig from '@/components/buttons/MButtonBig.vue'
 			<BreadCrumbs :items="['Главная', 'Отзывы']" />
 			<h3 class="h-xxl heading">Отзывы</h3>
 			<div class="content">
-				<p class="text-lg" style="max-width: 660px">
+				<p class="text-sm" style="max-width: 660px">
 					Выберите специалиста, о&nbsp;котором хотите прочитать или оставить
 					отзыв
 				</p>
-				<SearchInput />
+				<SearchInput class="section-review-all-search" />
 				<MButtonBig>Оставить отзыв</MButtonBig>
 			</div>
 			<div class="cards">
@@ -90,7 +90,10 @@ import MButtonBig from '@/components/buttons/MButtonBig.vue'
 
 @media (max-width: 600px) {
 	.content {
-		grid-template-columns: minmax(200px, 300px);
+		justify-items: center;
+	}
+	.section-review-all-search {
+		width: 100%;
 	}
 }
 </style>

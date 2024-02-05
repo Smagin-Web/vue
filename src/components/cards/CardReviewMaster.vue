@@ -149,12 +149,18 @@ defineProps<{
 	.card-header-name {
 		font-size: 20px;
 	}
+	.card-header-name {
+		letter-spacing: -1px;
+	}
 }
 
 @media (max-width: 550px) {
 	.card {
 		padding: 40px 26px 34px;
-		border-radius: 38px;
+		border-radius: 32px;
+	}
+	.card-header {
+		border-radius: 24px;
 	}
 	.card-photo {
 		width: 100px;
