@@ -125,7 +125,7 @@ import SectionOfferList from './SectionOfferList.vue'
 	.card {
 		padding: 12px;
 		padding-top: 50px;
-		border-radius: 40px;
+		border-radius: 20px;
 	}
 
 	.card-content {

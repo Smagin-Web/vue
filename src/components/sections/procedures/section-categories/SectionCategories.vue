@@ -78,9 +78,14 @@ import SectionProceduresCard from '../../inside/section-procedures/SectionProced
 		justify-content: center;
 		grid-template-columns: 1fr;
 		gap: 30px;
+		padding-bottom: 30px;
 	}
 	.filters {
 		gap: 8px;
+		padding-bottom: 32px;
+	}
+	.button-wrapper {
+		margin-bottom: 32px;
 	}
 }
 </style>
