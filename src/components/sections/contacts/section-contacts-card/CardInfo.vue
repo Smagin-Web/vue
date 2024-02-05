@@ -86,10 +86,10 @@
 
 @media (max-width: 1100px) {
 	.card {
-		width: 300px;
-		padding: 28px;
-		padding-left: 34px;
-		border-radius: 40px;
+		max-width: 348px;
+		width: 100%;
+		padding: 20px;
+		border-radius: 26px;
 		gap: 16px;
 	}
 	.card-item {
