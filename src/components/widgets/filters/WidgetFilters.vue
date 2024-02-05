@@ -1,0 +1,29 @@
+<script setup lang="ts">
+import Filter from '@/components/shared/Filter.vue'
+
+const props = defineProps(['items'])
+</script>
+
+<template>
+	<div class="widget-filters">
+		<Filter v-for="(item, index) in props.items" :active="false" :key="index">
+			{{ item }}
+		</Filter>
+	</div>
+</template>
+
+<style scoped>
+.widget-filters {
+	display: flex;
+	gap: 30px;
+	padding-bottom: 70px;
+}
+
+@media (max-width: 1000px) {
+	.widget-filters {
+		gap: 8px;
+		flex-wrap: wrap;
+		padding-bottom: 32px;
+	}
+}
+</style>

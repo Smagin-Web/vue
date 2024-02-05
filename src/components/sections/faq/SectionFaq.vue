@@ -3,6 +3,7 @@ import MContainer from '@/components/shared/MContainer.vue'
 import BreadCrumbs from '@/components/shared/BreadCrumbs.vue'
 import Filter from '@/components/shared/Filter.vue'
 import FaqItem from '../inside/section-faq/FaqItem.vue'
+import WidgetFilters from '@/components/widgets/filters/WidgetFilters.vue'
 import { ref } from 'vue'
 
 let indexActiveItem = ref('0')
@@ -38,6 +39,18 @@ const increment4 = () => {
 		indexActiveItem.value = '4'
 	}
 }
+
+const filtersList = [
+	'Все вопросы',
+	'AntiAcne Concept',
+	'Clear Concept',
+	'Detox Concept',
+	'Lifting Concept',
+	'Brigth Concept',
+	'Hydro Concept',
+	'Red Concept',
+	'Personal Concept'
+]
 </script>
 
 <template>
@@ -49,17 +62,8 @@ const increment4 = () => {
 			/>
 			<h1 class="h-xxl heading">Частые вопросы</h1>
 
-			<div class="filters">
-				<Filter :active="true">Все вопросы</Filter>
-				<Filter :active="false">AntiAcne Concept</Filter>
-				<Filter :active="false">Clear Concept</Filter>
-				<Filter :active="false">Detox Concept</Filter>
-				<Filter :active="false">Lifting Concept</Filter>
-				<Filter :active="false">Brigth Concept</Filter>
-				<Filter :active="false">Hydro Concept</Filter>
-				<Filter :active="false">Red Concept</Filter>
-				<Filter :active="false">Personal Concept</Filter>
-			</div>
+			<WidgetFilters :items="filtersList" />
+
 			<div class="questions">
 				<FaqItem
 					:onClick="() => increment1()"
@@ -99,13 +103,6 @@ const increment4 = () => {
 	padding-bottom: 50px;
 }
 
-.filters {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 30px;
-	padding-bottom: 70px;
-}
-
 .questions {
 	display: grid;
 	max-width: 100%;
@@ -113,9 +110,6 @@ const increment4 = () => {
 }
 
 @media (max-width: 1000px) {
-	.filters {
-		gap: 8px;
-	}
 	.section-faq {
 		padding-bottom: 80px;
 	}

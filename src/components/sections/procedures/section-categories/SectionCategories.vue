@@ -4,6 +4,19 @@ import BreadCrumbs from '@/components/shared/BreadCrumbs.vue'
 import Filter from '@/components/shared/Filter.vue'
 import MButtonOutlineBig from '@/components/buttons/MButtonOutlineBig.vue'
 import SectionProceduresCard from '../../inside/section-procedures/SectionProceduresCard.vue'
+import WidgetFilters from '@/components/widgets/filters/WidgetFilters.vue'
+
+const filtersList = [
+	'Все процедуры',
+	'AntiAcne Concept',
+	'Clear Concept',
+	'Detox Concept',
+	'Lifting Concept',
+	'Brigth Concept',
+	'Hydro Concept',
+	'Red Concept',
+	'Personal Concept'
+]
 </script>
 
 <template>
@@ -11,17 +24,8 @@ import SectionProceduresCard from '../../inside/section-procedures/SectionProced
 		<MContainer>
 			<BreadCrumbs class="bread-crumbs" :items="['Главная', 'Процедуры']" />
 			<h1 class="h-xl">Процедуры</h1>
-			<div class="filters">
-				<Filter :active="true">Все процедуры</Filter>
-				<Filter :active="false">AntiAcne Concept</Filter>
-				<Filter :active="false">Clear Concept</Filter>
-				<Filter :active="false">Detox Concept</Filter>
-				<Filter :active="false">Lifting Concept</Filter>
-				<Filter :active="false">Brigth Concept</Filter>
-				<Filter :active="false">Hydro Concept</Filter>
-				<Filter :active="false">Red Concept</Filter>
-				<Filter :active="false">Personal Concept</Filter>
-			</div>
+
+			<WidgetFilters :items="filtersList" />
 			<div class="cards">
 				<SectionProceduresCard />
 				<SectionProceduresCard />
