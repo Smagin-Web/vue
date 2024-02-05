@@ -11,7 +11,7 @@ import PricesSidebarMobile from './PricesSidebarMobile.vue'
 		<MContainer>
 			<BreadCrumbs class="bread-crumbs" :items="['Главная', 'Цены']" />
 			<h1 class="h-xxl heading">Цены</h1>
-			<p class="text">
+			<p class="text text-sm">
 				Здесь ты&nbsp;найдешь стоимость услуг, предлагаемых в&nbsp;нашем
 				косметологическом центре Face Concept. После тщательного обследования
 				и&nbsp;установления точного диагноза, наш специалист подберет для тебя
@@ -49,8 +49,6 @@ import PricesSidebarMobile from './PricesSidebarMobile.vue'
 
 .text {
 	max-width: 1460px;
-	color: #6d6364;
-	font-size: 22px;
 	padding-bottom: 50px;
 }
 
@@ -85,6 +83,15 @@ import PricesSidebarMobile from './PricesSidebarMobile.vue'
 	}
 	.workspace {
 		display: block;
+	}
+}
+
+@media (max-width: 1000px) {
+	.heading {
+		padding-bottom: 14px;
+	}
+	.text {
+		padding-bottom: 18px;
 	}
 }
 </style>
