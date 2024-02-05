@@ -88,7 +88,7 @@ import PricesSidebarMobile from './PricesSidebarMobile.vue'
 
 @media (max-width: 1000px) {
 	.heading {
-		padding-bottom: 14px;
+		padding-bottom: 28px;
 	}
 	.text {
 		padding-bottom: 18px;

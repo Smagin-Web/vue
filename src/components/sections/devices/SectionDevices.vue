@@ -36,4 +36,10 @@ import SectionDevicesCard from './SectionDevicesCard.vue'
 .section-devices-text {
 	padding-bottom: 50px;
 }
+
+@media (max-width: 1000px) {
+	.section-title {
+		padding-bottom: 28px;
+	}
+}
 </style>
