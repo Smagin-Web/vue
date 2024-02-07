@@ -7,7 +7,7 @@ import MButtonOutlineBig from '@/components/buttons/MButtonOutlineBig.vue'
 <template>
 	<section class="section-procedures">
 		<MContainer>
-			<h3 class="h-xxl">Процедуры</h3>
+			<h3 class="h-xl">Процедуры</h3>
 
 			<div class="content">
 				<div class="content-group">

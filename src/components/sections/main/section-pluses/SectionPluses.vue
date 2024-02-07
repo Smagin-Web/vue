@@ -68,7 +68,7 @@ defineProps<{
 }
 .section-pluses {
 	overflow: hidden;
-	padding-top: 200px;
+	padding-top: 50px;
 }
 
 @media (max-width: 1600px) {
