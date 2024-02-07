@@ -1,7 +1,5 @@
 <template>
-	<a href="#">
-		<button class="tag"><slot /></button>
-	</a>
+	<div class="tag"><slot /></div>
 </template>
 
 <style scoped>
@@ -13,7 +11,7 @@
 	font-weight: 700;
 
 	padding: 10px 20px;
-  background: transparent;
+	background: transparent;
 }
 
 @media (max-width: 1250px) {

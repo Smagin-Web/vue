@@ -24,6 +24,11 @@ const className = `badge-${props.type}`
 	font-size: 16px;
 	font-weight: 700;
 	white-space: nowrap;
+	transition: 0.1s;
+}
+
+.badge-md:hover {
+	opacity: 0.8;
 }
 
 .badge-1 {

@@ -53,6 +53,10 @@ const props = defineProps([
 	max-width: 880px;
 }
 
+.card-button:hover {
+	opacity: 0.8 !important;
+}
+
 @media (max-width: 1600px) {
 	.card-info {
 		max-width: 900px;

@@ -53,7 +53,7 @@ const onChangeActive = (swiper: any) => {
 	<div class="wrapper" ref="container">
 		<Swiper
 			:effect="'creative'"
-			:speed="300"
+			:speed="500"
 			:creativeEffect="{
 				prev: {
 					translate: [0, -100, 0],

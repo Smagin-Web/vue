@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import IconNew from '../icons/IconNew.vue'
 import ButtonDecor from '../buttons/ButtonDecor.vue'
+
+const props = defineProps(['isArticle', 'isNews'])
 </script>
 
 <template>
@@ -25,9 +27,15 @@ import ButtonDecor from '../buttons/ButtonDecor.vue'
 					<IconNew />
 					<span class="card-date-text">15.05.2023</span>
 				</div>
-				<ButtonDecor class="card-tag">Новость</ButtonDecor>
+				<ButtonDecor class="card-tag" v-if="props.isNews">Новость</ButtonDecor>
+				<ButtonDecor class="card-tag" v-if="props.isArticle">
+					Статья
+				</ButtonDecor>
 			</div>
-			<h5 class="card-heading">Название публикации</h5>
+			<h5 class="card-heading" v-if="props.isNews">Название публикации</h5>
+			<h5 class="card-heading" v-if="props.isArticle">
+				Более длинное название публикации в 2 строчки
+			</h5>
 
 			<p class="card-text">
 				Краткий анонс публикацииLorem ipsum dolor sit amet consectetur. Purus

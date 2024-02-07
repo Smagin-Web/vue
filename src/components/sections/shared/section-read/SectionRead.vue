@@ -18,11 +18,13 @@ import { SwiperSlide } from 'swiper/vue'
 		</MContainer>
 
 		<SliderVariant1>
-			<SwiperSlide><CardNews class="card-news" /></SwiperSlide>
-			<SwiperSlide><CardNews class="card-news" /></SwiperSlide>
-			<SwiperSlide><CardNews class="card-news" /></SwiperSlide>
-			<SwiperSlide><CardNews class="card-news" /></SwiperSlide>
-			<SwiperSlide><CardNews class="card-news" /></SwiperSlide>
+			<SwiperSlide><CardNews class="card-news" :isNews="true" /></SwiperSlide>
+			<SwiperSlide>
+				<CardNews class="card-news" :isArticle="true" />
+			</SwiperSlide>
+			<SwiperSlide><CardNews class="card-news" :isNews="true" /></SwiperSlide>
+			<SwiperSlide><CardNews class="card-news" :isNews="true" /></SwiperSlide>
+			<SwiperSlide><CardNews class="card-news" :isNews="true" /></SwiperSlide>
 		</SliderVariant1>
 
 		<MContainer>

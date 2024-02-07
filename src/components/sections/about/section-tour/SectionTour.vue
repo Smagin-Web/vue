@@ -28,21 +28,25 @@ import 'swiper/css'
 						<img src="./room.png" alt="" class="card-room-photo" />
 					</div>
 				</SwiperSlide>
+
 				<SwiperSlide>
 					<div class="card-room">
 						<img src="./room2.png" alt="" class="card-room-photo" />
 					</div>
 				</SwiperSlide>
+
 				<SwiperSlide>
 					<div class="card-room">
 						<img src="./room.png" alt="" class="card-room-photo" />
 					</div>
 				</SwiperSlide>
+
 				<SwiperSlide>
 					<div class="card-room">
 						<img src="./room.png" alt="" class="card-room-photo" />
 					</div>
 				</SwiperSlide>
+
 				<SwiperSlide>
 					<div class="card-room">
 						<img src="./room.png" alt="" class="card-room-photo" />

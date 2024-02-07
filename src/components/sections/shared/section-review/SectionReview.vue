@@ -9,17 +9,21 @@ import MContainer from '@/components/shared/MContainer.vue'
 				<h4 class="heading">Отзывы на&nbsp;площадках</h4>
 				<div class="section-review__links">
 					<div class="section-review-item">
+						<a href="#" class="section-review-item-link" />
 						<img src="./yandex2.png" />
 					</div>
 					<div class="section-review-item">
+						<a href="#" class="section-review-item-link" />
 						<img src="./zoon2.png" />
 					</div>
 
 					<div class="section-review-item">
+						<a href="#" class="section-review-item-link" />
 						<img src="./gmaps2.png" />
 					</div>
 
 					<div class="section-review-item">
+						<a href="#" class="section-review-item-link" />
 						<img src="./twogis2.png" />
 					</div>
 				</div>
@@ -51,6 +55,7 @@ import MContainer from '@/components/shared/MContainer.vue'
 }
 
 .section-review-item {
+	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -58,6 +63,21 @@ import MContainer from '@/components/shared/MContainer.vue'
 	height: 100px;
 	border-radius: 50px;
 	background: #fff;
+
+	overflow: hidden;
+	transition: 0.2s;
+}
+
+.section-review-item:hover {
+	opacity: 0.8;
+}
+
+.section-review-item-link {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
 }
 
 .section-review-item img {
