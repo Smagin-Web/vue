@@ -6,7 +6,11 @@ const props = defineProps(['items'])
 
 <template>
 	<div class="widget-filters">
-		<Filter v-for="(item, index) in props.items" :active="false" :key="index">
+		<Filter
+			v-for="(item, index) in props.items"
+			:active="index === 0"
+			:key="index"
+		>
 			{{ item }}
 		</Filter>
 	</div>
@@ -15,6 +19,7 @@ const props = defineProps(['items'])
 <style scoped>
 .widget-filters {
 	display: flex;
+	flex-wrap: wrap;
 	gap: 30px;
 	padding-bottom: 70px;
 }

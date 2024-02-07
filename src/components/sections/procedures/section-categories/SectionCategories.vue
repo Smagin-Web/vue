@@ -23,7 +23,7 @@ const filtersList = [
 	<section class="section-categories">
 		<MContainer>
 			<BreadCrumbs class="bread-crumbs" :items="['Главная', 'Процедуры']" />
-			<h1 class="h-xl">Процедуры</h1>
+			<h1 class="h-xxl">Процедуры</h1>
 
 			<WidgetFilters :items="filtersList" />
 			<div class="cards">
