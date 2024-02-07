@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import MContainer from '@/components/shared/MContainer.vue'
 import BreadCrumbs from '@/components/shared/BreadCrumbs.vue'
-import Filter from '@/components/shared/Filter.vue'
 import MButtonOutlineBig from '@/components/buttons/MButtonOutlineBig.vue'
 import SectionProceduresCard from '../../inside/section-procedures/SectionProceduresCard.vue'
 import WidgetFilters from '@/components/widgets/filters/WidgetFilters.vue'
@@ -23,7 +22,7 @@ const filtersList = [
 	<section class="section-categories">
 		<MContainer>
 			<BreadCrumbs class="bread-crumbs" :items="['Главная', 'Процедуры']" />
-			<h1 class="h-xxl">Процедуры</h1>
+			<h1 class="h-xxl section-categories-title">Процедуры</h1>
 
 			<WidgetFilters :items="filtersList" />
 			<div class="cards">
@@ -42,11 +41,14 @@ const filtersList = [
 </template>
 
 <style scoped>
-.heading {
-	color: #000;
-	font-size: 60px;
-	padding-bottom: 50px;
+.section-categories {
+	padding-bottom: 150px;
 }
+
+.section-categories-title {
+	padding-bottom: 32px;
+}
+
 .bread-crumbs {
 	padding-bottom: 20px;
 }
@@ -78,6 +80,12 @@ const filtersList = [
 }
 
 @media (max-width: 820px) {
+	.section-categories {
+		padding-bottom: 70px;
+	}
+	.section-categories-title {
+		padding-bottom: 20px;
+	}
 	.cards {
 		justify-content: center;
 		grid-template-columns: 1fr;
