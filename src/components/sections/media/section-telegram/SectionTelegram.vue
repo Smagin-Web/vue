@@ -44,7 +44,7 @@ import InstagramIcon from './InstagramIcon.vue'
 
 .card-picture {
 	position: absolute;
-	width: 40%;
+	width: 46%;
 	right: 40px;
 	top: 30px;
 }
