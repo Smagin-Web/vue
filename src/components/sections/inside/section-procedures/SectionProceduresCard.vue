@@ -1,13 +1,14 @@
 <script setup lang="ts">
 import SectionProceduresBadge from './SectionProceduresBadge.vue'
-import IconLink from './IconLink.vue'
 import CardInfo from '@/components/card-elements/CardInfo.vue'
 import CardLink from '@/components/card-elements/CardLink.vue'
 </script>
 
 <template>
 	<div class="card">
-		<img src="./picture.png" class="card-image" alt="" />
+		<div class="card-image-wrap">
+			<img src="./picture.png" class="card-image" alt="" />
+		</div>
 		<div style="display: flex; gap: 10px">
 			<SectionProceduresBadge>AntiAcne Concept</SectionProceduresBadge>
 			<SectionProceduresBadge>Detox Concept</SectionProceduresBadge>
@@ -35,11 +36,41 @@ import CardLink from '@/components/card-elements/CardLink.vue'
 	position: relative;
 }
 
+.card-image-wrap {
+	position: relative;
+	width: 100%;
+	margin-bottom: 20px;
+	overflow: hidden;
+	border-radius: 40px;
+	padding: 3px;
+}
+
+.card-image-wrap::after {
+	content: '';
+	display: block;
+	position: absolute;
+
+	top: -1px;
+	right: -1px;
+	left: -1px;
+	bottom: -1px;
+	border: 0px solid #ffffff;
+	transition: 0.1s;
+	border-radius: inherit;
+}
+
+.card-image-wrap:hover::after {
+	border-width: 10px;
+}
+
+.card-image-wrap:hover {
+	cursor: pointer;
+}
+
 .card-image {
 	width: 100%;
 	height: auto;
 	display: block;
-	margin-bottom: 20px;
 }
 
 .card-heading {
