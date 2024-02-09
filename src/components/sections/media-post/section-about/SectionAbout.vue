@@ -88,6 +88,7 @@ const listItems = [
 	display: flex;
 	justify-content: space-between;
 	align-items: start;
+	gap: 24px;
 }
 
 .list-with-photo {

@@ -20,7 +20,11 @@ import SectionDevicesCard from './SectionDevicesCard.vue'
 				id amet nunc congue. Gravida dignissim at amet amet penatibus vitae sed
 				cras.
 			</p>
-			<SectionDevicesCard />
+			<div class="devices-cards">
+				<SectionDevicesCard />
+				<SectionDevicesCard />
+				<SectionDevicesCard />
+			</div>
 		</MContainer>
 	</section>
 </template>
@@ -28,6 +32,11 @@ import SectionDevicesCard from './SectionDevicesCard.vue'
 <style scoped>
 .section-devices {
 	padding-bottom: 150px;
+}
+
+.devices-cards {
+	display: grid;
+	gap: 24px;
 }
 
 .section-title {

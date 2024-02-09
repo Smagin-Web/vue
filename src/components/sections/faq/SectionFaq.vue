@@ -2,7 +2,7 @@
 import MContainer from '@/components/shared/MContainer.vue'
 import BreadCrumbs from '@/components/shared/BreadCrumbs.vue'
 import FaqItem from '../inside/section-faq/FaqItem.vue'
-import MSearch from '@/components/form/search/MSearch.vue'
+import MSelect from '@/components/form/select/MSelect.vue'
 import { ref } from 'vue'
 
 let indexActiveItem = ref('0')
@@ -47,7 +47,7 @@ const increment4 = () => {
 			<h1 class="h-xxl heading">Частые вопросы</h1>
 
 			<div class="section-faq-search">
-				<MSearch />
+				<MSelect />
 			</div>
 
 			<div class="questions">
