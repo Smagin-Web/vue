@@ -7,7 +7,7 @@ import 'swiper/css'
 </script>
 
 <template>
-	<section>
+	<section class="section-tour">
 		<MContainer>
 			<h2 class="h-l section-heading">
 				Атмосферное пространство
@@ -58,6 +58,10 @@ import 'swiper/css'
 </template>
 
 <style scoped>
+.section-tour {
+	padding-bottom: 160px;
+}
+
 .section-heading {
 	display: flex;
 	justify-content: space-between;
@@ -83,6 +87,9 @@ import 'swiper/css'
 }
 
 @media (max-width: 1200px) {
+	.section-tour {
+		padding-bottom: 120px;
+	}
 	.card-room-photo {
 		height: 324px;
 		width: auto;
@@ -102,6 +109,9 @@ import 'swiper/css'
 }
 
 @media (max-width: 640px) {
+	.section-tour {
+		padding-bottom: 30px;
+	}
 	.section-heading {
 		flex-direction: column;
 		align-items: start;

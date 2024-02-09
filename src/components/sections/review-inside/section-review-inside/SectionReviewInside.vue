@@ -20,7 +20,7 @@ import IconText2 from './IconText2.vue'
 				<br />
 				Юлии Епишиной
 
-				<ButtonBack class="button-back">Все специалисты</ButtonBack>
+				<ButtonBack class="button-back">Все отзывы</ButtonBack>
 			</h3>
 
 			<div class="card-with-photo">
