@@ -46,10 +46,7 @@ const moreSkills = [
 <template>
 	<section class="section-master">
 		<MContainer>
-			<BreadCrumbs
-				class="bread-crumbs"
-				:items="['Главная', 'Специалисты', 'Ольга Заика']"
-			/>
+			<BreadCrumbs :items="['Главная', 'Специалисты', 'Ольга Заика']" />
 			<h1 class="h-xxl heading">
 				Ольга Заика
 				<ButtonBack class="button-back">Все специалисты</ButtonBack>
@@ -102,7 +99,6 @@ const moreSkills = [
 
 .heading {
 	padding-bottom: 50px;
-	padding-top: 20px;
 
 	display: flex;
 	justify-content: space-between;

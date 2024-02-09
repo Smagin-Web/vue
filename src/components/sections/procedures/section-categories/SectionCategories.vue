@@ -21,7 +21,7 @@ const filtersList = [
 <template>
 	<section class="section-categories">
 		<MContainer>
-			<BreadCrumbs class="bread-crumbs" :items="['Главная', 'Процедуры']" />
+			<BreadCrumbs :items="['Главная', 'Процедуры']" />
 			<h1 class="h-xxl section-categories-title">Процедуры</h1>
 
 			<WidgetFilters :items="filtersList" />
@@ -47,10 +47,6 @@ const filtersList = [
 
 .section-categories-title {
 	padding-bottom: 32px;
-}
-
-.bread-crumbs {
-	padding-bottom: 20px;
 }
 
 .filters {

@@ -26,7 +26,7 @@ const listItems = [
 <template>
 	<section class="section-about">
 		<MContainer>
-			<BreadCrumbs class="bread-crumbs" :items="breadCrubmsItems" />
+			<BreadCrumbs :items="breadCrubmsItems" />
 			<h1 class="h-xxl heading">
 				<span>
 					Как избавиться от&nbsp;прыщей на&nbsp;лице: путь к&nbsp;чистой

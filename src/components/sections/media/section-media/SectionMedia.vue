@@ -11,7 +11,7 @@ const breadCrumbsList = ['Главная', 'Медиа']
 <template>
 	<section class="section-media">
 		<MContainer>
-			<BreadCrumbs class="bread-crumbs" :items="breadCrumbsList" />
+			<BreadCrumbs :items="breadCrumbsList" />
 			<h1 class="h-xxl heading">Медиа</h1>
 			<WidgetFilters :items="filtersArray" />
 

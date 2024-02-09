@@ -8,7 +8,6 @@ import SectionBannerBadges from './SectionBannerBadges.vue'
 	<section class="section-banner-about">
 		<MContainer>
 			<BreadCrumbs
-				class="bread-crumbs"
 				:items="['Главная', 'Концепты', 'Аппаратное лечение акне']"
 			/>
 		</MContainer>
@@ -33,10 +32,6 @@ import SectionBannerBadges from './SectionBannerBadges.vue'
 	margin: 0 auto;
 	display: flex;
 	align-items: center;
-}
-
-.bread-crumbs {
-	padding-bottom: 0;
 }
 
 .banner {

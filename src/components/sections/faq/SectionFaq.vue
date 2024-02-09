@@ -1,9 +1,8 @@
 <script setup lang="ts">
 import MContainer from '@/components/shared/MContainer.vue'
 import BreadCrumbs from '@/components/shared/BreadCrumbs.vue'
-import Filter from '@/components/shared/Filter.vue'
 import FaqItem from '../inside/section-faq/FaqItem.vue'
-import WidgetFilters from '@/components/widgets/filters/WidgetFilters.vue'
+import MSearch from '@/components/form/search/MSearch.vue'
 import { ref } from 'vue'
 
 let indexActiveItem = ref('0')
@@ -39,30 +38,17 @@ const increment4 = () => {
 		indexActiveItem.value = '4'
 	}
 }
-
-const filtersList = [
-	'Все вопросы',
-	'AntiAcne Concept',
-	'Clear Concept',
-	'Detox Concept',
-	'Lifting Concept',
-	'Brigth Concept',
-	'Hydro Concept',
-	'Red Concept',
-	'Personal Concept'
-]
 </script>
 
 <template>
 	<section class="section-faq">
 		<MContainer>
-			<BreadCrumbs
-				class="bread-crumbs"
-				:items="['Главная', 'Частые вопросы']"
-			/>
+			<BreadCrumbs :items="['Главная', 'Частые вопросы']" />
 			<h1 class="h-xxl heading">Частые вопросы</h1>
 
-			<WidgetFilters :items="filtersList" />
+			<div class="section-faq-search">
+				<MSearch />
+			</div>
 
 			<div class="questions">
 				<FaqItem
@@ -97,6 +83,10 @@ const filtersList = [
 <style scoped>
 .section-faq {
 	padding-bottom: 150px;
+}
+
+.section-faq-search {
+	padding-bottom: 32px;
 }
 
 .heading {
