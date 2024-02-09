@@ -3,8 +3,8 @@ import MContainer from '@/components/shared/MContainer.vue'
 import BreadCrumbs from '@/components/shared/BreadCrumbs.vue'
 import CardReviewMaster from '@/components/cards/CardReviewMaster.vue'
 import PaginationItems from '@/components/shared/PaginationItems.vue'
-import SearchInput from '@/components/shared/SearchInput.vue'
 import MButtonBig from '@/components/buttons/MButtonBig.vue'
+import MSelect from '@/components/form/select/MSelect.vue'
 </script>
 
 <template>
@@ -17,15 +17,27 @@ import MButtonBig from '@/components/buttons/MButtonBig.vue'
 					Выберите специалиста, о&nbsp;котором хотите прочитать или оставить
 					отзыв
 				</p>
-				<SearchInput class="section-review-all-search" />
+				<MSelect
+					class="section-review-all-select"
+					:start-item="'Все отзывы'"
+					:items="['Отзывы AntiAcne', 'Отзывы Lifting']"
+				/>
 				<MButtonBig>Оставить отзыв</MButtonBig>
 			</div>
 			<div class="cards">
 				<CardReviewMaster master-name="Заика Ольга" class="card-master" />
 				<CardReviewMaster master-name="Заика Ольга" class="card-master" />
-				<CardReviewMaster master-name="Заика Ольга" class="card-master" :badge="'yandex'" />
+				<CardReviewMaster
+					master-name="Заика Ольга"
+					class="card-master"
+					:badge="'yandex'"
+				/>
 				<CardReviewMaster master-name="Заика Ольга" class="card-master" />
-				<CardReviewMaster master-name="Заика Ольга" class="card-master" :badge="'2gis'" />
+				<CardReviewMaster
+					master-name="Заика Ольга"
+					class="card-master"
+					:badge="'2gis'"
+				/>
 				<CardReviewMaster master-name="Заика Ольга" class="card-master" />
 			</div>
 			<PaginationItems />
@@ -51,6 +63,10 @@ import MButtonBig from '@/components/buttons/MButtonBig.vue'
 	grid-template-columns: repeat(3, 1fr);
 	gap: 50px 24px;
 	margin-bottom: 70px;
+}
+
+.section-review-all-select {
+	width: 450px;
 }
 
 @media (max-width: 1700px) {
@@ -92,7 +108,7 @@ import MButtonBig from '@/components/buttons/MButtonBig.vue'
 	.content {
 		justify-items: center;
 	}
-	.section-review-all-search {
+	.section-review-all-select {
 		width: 100%;
 	}
 }

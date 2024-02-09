@@ -8,12 +8,17 @@ const onClickHandler = () => {
 	isActive.value = !isActive.value
 }
 
-const listItems = [
-	'AntiAcne Concept',
-	'Clear Concept',
-	'Lifting Concept',
-	'AntiAcne Concept'
-]
+const props = defineProps(['startItem', 'items'])
+
+const listItems =
+	props.items && props.items.length
+		? props.items
+		: [
+				'AntiAcne Concept',
+				'Clear Concept',
+				'Lifting Concept',
+				'AntiAcne Concept'
+		  ]
 </script>
 
 <template>
@@ -24,7 +29,7 @@ const listItems = [
 			type="button"
 			placeholder="Все клиники"
 		>
-			Все клиники
+			{{ props.startItem }}
 		</button>
 
 		<SelectIcon class="select-icon" v-bind:class="isActive ? 'active' : null" />

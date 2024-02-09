@@ -2,7 +2,7 @@
 import MContainer from '@/components/shared/MContainer.vue'
 import BreadCrumbs from '@/components/shared/BreadCrumbs.vue'
 import CardMaster from '../shared/section-masters/CardMaster.vue'
-import SearchInput from '@/components/shared/SearchInput.vue'
+import MSelect from '@/components/form/select/MSelect.vue'
 </script>
 
 <template>
@@ -22,7 +22,11 @@ import SearchInput from '@/components/shared/SearchInput.vue'
 				cras.
 			</p>
 
-			<SearchInput class="section-masters-search" />
+			<MSelect
+				class="section-masters-select"
+				:startItem="'Все специалисты'"
+				:items="['Специалисты AntiAcne', 'Специалисты Lifting']"
+			/>
 
 			<div class="cards">
 				<CardMaster />
@@ -57,7 +61,7 @@ import SearchInput from '@/components/shared/SearchInput.vue'
 	gap: 100px 24px;
 }
 
-.section-masters-search {
+.section-masters-select {
 	margin-bottom: 100px;
 }
 
