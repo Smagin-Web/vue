@@ -11,7 +11,7 @@ import SectionBonusPicture from './SectionBonusPicture.vue'
 			<div class="card">
 				<h6 class="card-badge">Подарочный сертификат</h6>
 				<div class="card-content">
-					<h5 class="card-heading">
+					<h5 class="card-heading h-l">
 						Сделайте приятный сюрприз близкому человеку
 					</h5>
 					<SectionBonusList class="card-list" />
@@ -44,8 +44,6 @@ import SectionBonusPicture from './SectionBonusPicture.vue'
 }
 
 .card-heading {
-	color: #000;
-	font-size: 42px;
 	padding-bottom: 40px;
 }
 
@@ -81,9 +79,6 @@ import SectionBonusPicture from './SectionBonusPicture.vue'
 }
 
 @media (max-width: 1650px) {
-	.card-heading {
-		font-size: 38px;
-	}
 	.card-badge {
 		font-size: 38px;
 		border-radius: 16px;
@@ -105,9 +100,6 @@ import SectionBonusPicture from './SectionBonusPicture.vue'
 @media (max-width: 1300px) {
 	.section-bonus {
 		padding-bottom: 130px;
-	}
-	.card-heading {
-		font-size: 34px;
 	}
 }
 
@@ -133,7 +125,6 @@ import SectionBonusPicture from './SectionBonusPicture.vue'
 		padding: 3px 16px;
 	}
 	.card-heading {
-		font-size: 28px;
 		max-width: 600px;
 	}
 }
@@ -153,7 +144,6 @@ import SectionBonusPicture from './SectionBonusPicture.vue'
 		padding-bottom: 360px;
 	}
 	.card-heading {
-		font-size: 24px;
 		padding-bottom: 20px;
 	}
 	.card-picture {
@@ -170,9 +160,6 @@ import SectionBonusPicture from './SectionBonusPicture.vue'
 		padding-right: 30px;
 		padding-top: 40px;
 		border-radius: 30px;
-	}
-	.card-heading {
-		font-size: 20px;
 	}
 	.card-badge {
 		font-size: 14px;

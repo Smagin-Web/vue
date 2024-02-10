@@ -7,7 +7,7 @@ import CardPlaceContacts from './CardPlaceContacts.vue'
 
 <template>
 	<div class="card">
-		<h2 class="h-xl card-heading-place">Face Concept Лефортово</h2>
+		<h2 class="h-xl">Face Concept Лефортово</h2>
 
 		<h5 class="h-md card-text">
 			Москва, улица Красноказарменная&nbsp;14А,

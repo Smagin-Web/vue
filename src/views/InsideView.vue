@@ -47,7 +47,15 @@ import SectionPluses from '@/components/sections/main/section-pluses/SectionPlus
 		<SectionHelp />
 		<SectionPlaces />
 		<SectionBonus />
-		<SectionRead />
+		<SectionRead class="section-read" />
 		<SectionFaq />
 	</ViewWrapper>
 </template>
+
+<style scoped>
+@media (max-width: 800px) {
+	.section-read {
+		padding-bottom: 90px;
+	}
+}
+</style>

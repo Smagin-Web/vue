@@ -68,25 +68,28 @@ import ButtonLink from '@/components/buttons/ButtonLink.vue'
 	}
 }
 
-@media screen and (max-width: 1400px) {
+@media (max-width: 1400px) {
+	.picture-wrapper {
+		width: 100%;
+	}
 	.content {
+		justify-items: end;
 		gap: 20px;
 	}
-
 	.heading {
 		padding-top: 0;
 		max-width: 600px;
 	}
-
 	.picture-wrapper {
 		max-width: 500px;
 	}
 }
 
-@media screen and (max-width: 1200px) {
+@media (max-width: 1200px) {
 	.content {
 		gap: 60px;
 		grid-template-columns: minmax(200px, 700px);
+		justify-items: start;
 	}
 
 	.heading {
