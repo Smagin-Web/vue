@@ -1,4 +1,8 @@
 <!-- eslint-disable vue/multi-word-component-names -->
+<script setup lang="ts">
+import IconPlay from '../icons/IconPlay.vue'
+</script>
+
 <template>
 	<div class="avatar-wrapper">
 		<a href="#" class="avatar-link" />
@@ -9,20 +13,6 @@
 		</div>
 	</div>
 </template>
-
-<script lang="ts">
-import IconPlay from '../icons/IconPlay.vue'
-
-export default {
-	props: {
-		src: {
-			type: String,
-			default: null
-		}
-	},
-	components: { IconPlay }
-}
-</script>
 
 <style scoped>
 .avatar-wrapper {
@@ -72,7 +62,35 @@ export default {
 	transition: 0.2s;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1870px) {
+	.avatar {
+		width: 220px;
+		height: 220px;
+	}
+}
+
+@media (max-width: 1600px) {
+	.avatar {
+		width: 200px;
+		height: 200px;
+	}
+}
+
+@media (max-width: 1400px) {
+	.avatar {
+		width: 180px;
+		height: 180px;
+	}
+}
+
+@media (max-width: 1300px) {
+	.avatar {
+		width: 160px;
+		height: 160px;
+	}
+}
+
+@media (max-width: 1150px) {
 	.avatar {
 		width: 150px;
 		height: 150px;
