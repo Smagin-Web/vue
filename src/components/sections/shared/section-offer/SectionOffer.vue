@@ -15,7 +15,7 @@ import SectionOfferList from './SectionOfferList.vue'
 					</div>
 					<div class="card-content">
 						<div>
-							<h3 class="heading">Хочешь&nbsp;здоровую&nbsp;кожу?</h3>
+							<h3 class="h-l heading">Хочешь&nbsp;здоровую&nbsp;кожу?</h3>
 
 							<SectionOfferList class="section-offer-list" />
 						</div>
@@ -41,10 +41,6 @@ import SectionOfferList from './SectionOfferList.vue'
 }
 
 .heading {
-	color: #000;
-	font-family: 'Pelinka';
-	font-size: 42px;
-	font-weight: 700;
 	padding-bottom: 40px;
 }
 
@@ -86,12 +82,6 @@ import SectionOfferList from './SectionOfferList.vue'
 	z-index: 20;
 }
 
-@media (max-width: 1600px) {
-	.heading {
-		font-size: 38px;
-	}
-}
-
 @media (max-width: 1400px) {
 	.card-content {
 		gap: 100px;
@@ -118,7 +108,6 @@ import SectionOfferList from './SectionOfferList.vue'
 
 @media (max-width: 1000px) {
 	.heading {
-		font-size: 20px;
 		padding-bottom: 38px;
 	}
 
@@ -142,9 +131,6 @@ import SectionOfferList from './SectionOfferList.vue'
 	.section-offer-container-custom {
 		padding-right: 8px;
 		padding-left: 8px;
-	}
-	.heading {
-		text-align: center;
 	}
 }
 
