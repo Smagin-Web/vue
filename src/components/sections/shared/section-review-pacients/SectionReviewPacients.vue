@@ -68,6 +68,12 @@ import ButtonLink from '@/components/buttons/ButtonLink.vue'
 	}
 }
 
+@media (max-width: 1500px) {
+	.buttons {
+		margin-top: -150px;
+	}
+}
+
 @media (max-width: 1400px) {
 	.picture-wrapper {
 		width: 100%;
@@ -82,6 +88,9 @@ import ButtonLink from '@/components/buttons/ButtonLink.vue'
 	}
 	.picture-wrapper {
 		max-width: 500px;
+	}
+	.buttons {
+		margin-top: -300px;
 	}
 }
 
@@ -99,7 +108,8 @@ import ButtonLink from '@/components/buttons/ButtonLink.vue'
 	}
 
 	.buttons {
-		padding-top: 60px;
+		margin-top: 0;
+		padding-top: 30px;
 	}
 }
 
@@ -109,7 +119,6 @@ import ButtonLink from '@/components/buttons/ButtonLink.vue'
 	}
 
 	.buttons {
-		padding-top: 60px;
 		justify-content: center;
 		display: grid;
 		gap: 30px;
