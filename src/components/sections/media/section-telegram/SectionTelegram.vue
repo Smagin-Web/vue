@@ -22,9 +22,11 @@ import InstagramIcon from './InstagramIcon.vue'
 						<MButtonBig class="card-button">Подписаться на канал</MButtonBig>
 						<div class="card-other">
 							<h6 class="card-text card-text-other">и другие соцсети</h6>
-							<a href="#"><VkIcon class="card-icon" /></a>
-							<a href="#"><InstagramIcon class="card-icon" /></a>
-							<a href="#"><YouTubeIcon class="card-icon" /></a>
+							<div class="card-icons">
+								<a href="#"><VkIcon class="card-icon" /></a>
+								<a href="#"><InstagramIcon class="card-icon" /></a>
+								<a href="#"><YouTubeIcon class="card-icon" /></a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -87,6 +89,11 @@ import InstagramIcon from './InstagramIcon.vue'
 .card-other {
 	display: flex;
 	align-items: center;
+	gap: 50px;
+}
+
+.card-icons {
+	display: flex;
 	gap: 30px;
 }
 
@@ -95,7 +102,6 @@ import InstagramIcon from './InstagramIcon.vue'
 }
 
 .card-text-other {
-	padding-right: 20px;
 	white-space: nowrap;
 }
 
@@ -141,6 +147,14 @@ import InstagramIcon from './InstagramIcon.vue'
 }
 
 @media (max-width: 1000px) {
+	.card-other {
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+	}
+	.card-text-other {
+		text-align: center;
+	}
 	.section-telegram {
 		padding-bottom: 40px;
 	}

@@ -16,12 +16,12 @@ const breadCrumbsList = ['Главная', 'Медиа']
 			<WidgetFilters :items="filtersArray" />
 
 			<div class="cards">
-				<CardNews />
-				<CardNews />
-				<CardNews />
-				<CardNews />
-				<CardNews />
-				<CardNews />
+				<CardNews class="section-media-card" />
+				<CardNews class="section-media-card" />
+				<CardNews class="section-media-card" />
+				<CardNews class="section-media-card" />
+				<CardNews class="section-media-card" />
+				<CardNews class="section-media-card" />
 			</div>
 		</MContainer>
 	</section>
@@ -42,6 +42,17 @@ const breadCrumbsList = ['Главная', 'Медиа']
 	gap: 24px;
 }
 
+@media (max-width: 1300px) {
+	.cards {
+		grid-template-columns: 1fr 1fr;
+		gap: 14px;
+	}
+	.section-media-card {
+		padding-bottom: 0;
+		padding-top: 0;
+	}
+}
+
 @media (max-width: 1000px) {
 	.section-media {
 		padding-bottom: 50px;
@@ -50,8 +61,14 @@ const breadCrumbsList = ['Главная', 'Медиа']
 		padding-bottom: 20px;
 	}
 	.cards {
-		grid-template-columns: 1fr;
 		gap: 10px;
+	}
+}
+
+@media (max-width: 700px) {
+	.cards {
+		grid-template-columns: 1fr;
+		gap: 16px;
 	}
 }
 </style>

@@ -12,11 +12,13 @@ import IconPlay from '@/components/icons/IconPlay.vue'
 		</a>
 
 		<a href="https://youtube.com" target="_blank">
-			<h5 class="card-heading">Ольга Заика</h5>
+			<h5 class="h-md card-heading">Ольга Заика</h5>
 		</a>
 
 		<a href="https://youtube.com" target="_blank">
-			<p class="card-text">Главный врач, врач-косметолог</p>
+			<p class="text-sm" style="text-align: center">
+				Главный врач, врач-косметолог
+			</p>
 		</a>
 	</div>
 </template>
@@ -75,25 +77,16 @@ import IconPlay from '@/components/icons/IconPlay.vue'
 
 .card-heading {
 	text-align: center;
-	font-size: 30px;
 	padding-top: 38px;
 	padding-bottom: 22px;
 }
 
-.card-text {
-	color: #6d6364;
-	text-align: center;
-	font-family: 'BrisaSans';
-	font-size: 22px;
-}
-
-@media screen and (max-width: 1000px) {
+@media (max-width: 1000px) {
 	.card {
 		max-width: 300px;
 	}
 
 	.card-heading {
-		font-size: 17px;
 		padding-bottom: 18px;
 	}
 

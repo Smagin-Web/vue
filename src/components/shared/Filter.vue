@@ -37,6 +37,22 @@ defineProps<{
 	color: #fff;
 }
 
+@media (max-width: 1600px) {
+	.filter {
+		font-size: 22px;
+		padding: 0 40px;
+		height: 54px;
+	}
+}
+
+@media (max-width: 1500px) {
+	.filter {
+		font-size: 20px;
+		padding: 0 34px;
+		height: 50px;
+	}
+}
+
 @media (max-width: 1000px) {
 	.filter {
 		font-size: 14px;
