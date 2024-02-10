@@ -15,15 +15,8 @@ const props = defineProps(['isArticle', 'isNews'])
 					src="https://static.zdravcity.ru/upload/main/fdd/1024_768_%D1%87%D0%B8%D1%81%D1%82%D0%BA%D0%B0.jpg"
 				/>
 			</div>
-			<div
-				style="
-					padding-bottom: 24px;
-					display: flex;
-					justify-content: space-between;
-					align-items: center;
-				"
-			>
-				<div style="display: flex; align-items: center; gap: 5px">
+			<div class="card-head-info">
+				<div class="card-head-info-date">
 					<IconNew />
 					<span class="card-date-text">15.05.2023</span>
 				</div>
@@ -32,13 +25,15 @@ const props = defineProps(['isArticle', 'isNews'])
 					Статья
 				</ButtonDecor>
 			</div>
-			<h5 class="card-heading" v-if="props.isNews">Название публикации</h5>
-			<h5 class="card-heading" v-if="props.isArticle">
+			<h5 class="h-sm-ultra card-heading" v-if="props.isNews">
+				Название публикации
+			</h5>
+			<h5 class="h-sm-ultra card-heading" v-if="props.isArticle">
 				Более длинное название публикации в 2 строчки
 			</h5>
 
-			<p class="card-text">
-				Краткий анонс публикацииLorem ipsum dolor sit amet consectetur. Purus
+			<p class="text-sm">
+				Краткий анонс публикации. Lorem ipsum dolor sit amet consectetur. Purus
 				dui vulputate sagittis aliquam ac pellentesque condimentum lectus amet.
 				Mollis vitae sit gravida tellus vel faucibus. Purus elementum tortor
 				lectus scelerisque non. Vitae sit non velit elit nisl ut egestas.
@@ -57,12 +52,38 @@ const props = defineProps(['isArticle', 'isNews'])
 	border: 10px solid white;
 }
 .card {
+	display: grid;
+	gap: 20px;
+
 	background-color: #fff;
 	border-radius: 50px;
 	padding: 40px;
 	max-width: 550px;
 
 	transition: 0.2s;
+}
+
+.card-heading {
+	line-clamp: 2;
+	text-overflow: ellipsis;
+
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+
+.card-head-info {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-bottom: 16px;
+}
+
+.card-head-info-date {
+	display: flex;
+	align-items: center;
+	gap: 5px;
 }
 
 .card-tag {
@@ -84,7 +105,6 @@ const props = defineProps(['isArticle', 'isNews'])
 	display: block;
 	max-width: 100%;
 	border-radius: 30px;
-	margin-bottom: 20px;
 }
 
 .card-img-container {
@@ -111,25 +131,17 @@ const props = defineProps(['isArticle', 'isNews'])
 	font-size: 16px;
 }
 
-.card-heading {
-	font-size: 24px;
-	padding-bottom: 20px;
+@media (max-width: 1600px) {
+	.card {
+		padding: 24px 24px 30px;
+		border-radius: 30px;
+	}
 }
 
-.card-text {
-	color: #6d6364;
-	font-family: 'BrisaSans';
-	font-size: 22px;
-}
-
-@media screen and (max-width: 1000px) {
+@media (max-width: 1000px) {
 	.card {
 		padding: 20px;
 		border-radius: 20px;
-	}
-
-	.card-heading {
-		font-size: 17px;
 	}
 
 	.card-text {

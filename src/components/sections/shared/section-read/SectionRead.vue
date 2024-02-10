@@ -5,6 +5,27 @@ import MButtonBig from '@/components/buttons/MButtonBig.vue'
 import SliderVariant1 from '@/components/shared/SliderVariant1.vue'
 
 import { SwiperSlide } from 'swiper/vue'
+
+const breakpoints = {
+	0: {
+		slidesPerView: 1
+	},
+	800: {
+		slidesPerView: 2
+	},
+	1000: {
+		slidesPerView: 2
+	},
+	1100: {
+		slidesPerView: 2
+	},
+	1300: {
+		slidesPerView: 2
+	},
+	1400: {
+		slidesPerView: 3
+	}
+}
 </script>
 
 <template>
@@ -17,7 +38,7 @@ import { SwiperSlide } from 'swiper/vue'
 			</h5>
 		</MContainer>
 
-		<SliderVariant1>
+		<SliderVariant1 :breakpoints="breakpoints">
 			<SwiperSlide><CardNews class="card-news" :isNews="true" /></SwiperSlide>
 			<SwiperSlide>
 				<CardNews class="card-news" :isArticle="true" />

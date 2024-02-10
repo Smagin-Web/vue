@@ -7,6 +7,26 @@ import { Swiper } from 'swiper/vue'
 import { Pagination } from 'swiper/modules'
 import 'swiper/css'
 
+const props = defineProps({
+	breakpoints: {
+		type: Object,
+		default: () => ({
+			1000: {
+				slidesPerView: 2
+			},
+			1100: {
+				slidesPerView: 1.5
+			},
+			1300: {
+				slidesPerView: 2
+			},
+			1400: {
+				slidesPerView: 3
+			}
+		})
+	}
+})
+
 const modules = [Pagination]
 
 let swiperObject: any = undefined
@@ -77,20 +97,7 @@ const onSwiperStart = () => {
 					:pagination="{
 						clickable: true
 					}"
-					:breakpoints="{
-						1000: {
-							slidesPerView: 2
-						},
-						1100: {
-							slidesPerView: 1.5
-						},
-						1300: {
-							slidesPerView: 2
-						},
-						1400: {
-							slidesPerView: 3
-						}
-					}"
+					:breakpoints="props.breakpoints"
 				>
 					<slot />
 				</Swiper>
