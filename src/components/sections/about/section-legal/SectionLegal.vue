@@ -4,7 +4,7 @@ import SectionLegalList from './SectionLegalList.vue'
 </script>
 
 <template>
-	<section class="section-map">
+	<section class="section-legal">
 		<MContainer>
 			<div class="card-legal">
 				<h4 class="h-l">Правовая информация</h4>
@@ -15,6 +15,11 @@ import SectionLegalList from './SectionLegalList.vue'
 </template>
 
 <style scoped>
+.section-legal {
+	padding-top: 60px;
+	padding-bottom: 90px;
+}
+
 .card-legal {
 	display: grid;
 	gap: 50px;
@@ -29,6 +34,10 @@ import SectionLegalList from './SectionLegalList.vue'
 }
 
 @media (max-width: 1200px) {
+	.section-legal {
+		padding-top: 40px;
+		padding-bottom: 50px;
+	}
 	.card-legal {
 		border-radius: 40px;
 		padding: 50px 40px;
