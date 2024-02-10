@@ -80,6 +80,7 @@ import PricesSidebarMobile from './PricesSidebarMobile.vue'
 	.sidebar-sm {
 		display: block;
 		margin-bottom: 20px;
+		margin-left: 0;
 	}
 	.workspace {
 		display: block;
