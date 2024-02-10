@@ -16,6 +16,7 @@ import AboutView from '@/views/AboutView.vue'
 import ContactsView from '@/views/ContactsView.vue'
 import BranchesView from '@/views/BranchesView.vue'
 import MediaPostView from '@/views/MediaPostView.vue'
+import PolicyView from '@/views/PolicyView.vue'
 
 const router = createRouter({
 	history: createWebHistory(import.meta.env.BASE_URL),
@@ -102,8 +103,13 @@ const router = createRouter({
 		},
 		{
 			path: '/media/1',
-			name: '/media/1',
+			name: 'media-post',
 			component: MediaPostView
+		},
+		{
+			path: '/policy',
+			name: 'policy',
+			component: PolicyView
 		}
 	]
 })

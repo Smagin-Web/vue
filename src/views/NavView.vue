@@ -24,6 +24,7 @@ import MContainer from '@/components/shared/MContainer.vue'
 				<a class="link" href="/contacts">14) Контакты</a>
 				<a class="link" href="/branches">15) Филиалы</a>
 				<a class="link" href="/media/1">16) Медиа - карточка</a>
+				<a class="link" href="/policy">17) Политика</a>
 			</div>
 		</MContainer>
 	</ViewWrapper>
