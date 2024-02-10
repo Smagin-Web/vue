@@ -5,86 +5,117 @@ import IconMessage from '../icons/IconMessage.vue'
 <template>
 	<div class="buttons-fixed">
 		<div class="background" />
-		<button class="button-fixed">Запись на приём</button>
-		<button class="button-fixed-two">
+		<button class="button-one">Запись на приём</button>
+		<button class="button-two">
 			<IconMessage class="button-icon" />
 		</button>
 	</div>
 </template>
 
 <style scoped>
-.background {
-	display: none;
-}
-.button-fixed {
-	color: #fff;
-	text-align: center;
-	font-family: 'BrisaSans';
-	font-size: 34px;
-	font-weight: 700;
-	padding: 19px 40px;
-
-	border-radius: 100px;
-	background: #ae8c8e;
-	border: none;
-}
-
-.button-fixed:hover {
-	opacity: 1;
-	background: #a87b7e;
-}
-
 .buttons-fixed {
-	z-index: 120;
 	position: fixed;
 	bottom: 40px;
 	right: 40px;
+	z-index: 120;
 
 	display: flex;
 	gap: 20px;
 }
 
-.button-fixed-two {
-	padding: 25px;
+.background {
+	display: none;
+}
 
+.button-one {
+	font-family: 'BrisaSans';
+	font-size: 34px;
+	font-weight: 700;
+	text-align: center;
+
+	color: #fff;
+	background: #ae8c8e;
+	border: none;
 	border-radius: 100px;
+
+	padding-right: 40px;
+	padding-left: 40px;
+}
+
+.button-one:hover {
+	opacity: 1;
+	background: #a87b7e;
+}
+
+.button-two {
+	height: 80px;
+	width: 80px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	border-radius: 50%;
 	background: #81cca4;
 	border: none;
 }
 
-.button-fixed-two:hover {
+.button-two:hover {
 	opacity: 1;
 	background: #63ac86;
 }
+
+@media (max-width: 1600px) {
+	.button-one {
+		font-size: 28px;
+		height: 70px;
+	}
+	.button-two {
+		height: 70px;
+		width: 70px;
+	}
+}
+
+@media (max-width: 1300px) {
+	.button-one {
+		font-size: 24px;
+		height: 60px;
+	}
+	.button-two {
+		height: 60px;
+		width: 60px;
+	}
+	.button-icon {
+		width: 26px;
+		height: auto;
+	}
+}
+
 @media (max-width: 1000px) {
 	.buttons-fixed {
+		padding: 20px;
+
+		justify-content: center;
+		gap: 10px;
+
 		left: 0;
 		right: 0;
 		bottom: 0;
-		justify-content: center;
-		background-color: #f4eee8;
-		padding: 20px;
-		gap: 10px;
-	}
 
-	.button-fixed {
+		background-color: #f4eee8;
+	}
+	.button-one {
 		font-size: 16px;
 		height: 40px;
 		padding: 0 45px;
 	}
-
 	.button-icon {
 		width: 16px;
-		height: auto;
 	}
-
-	.button-fixed-two {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		padding: 0;
-		width: 102px;
+	.button-two {
+		width: 100px;
 		height: 40px;
+		border-radius: 20px;
 	}
 
 	.background {

@@ -9,7 +9,7 @@ import ButtonLink from '@/components/buttons/ButtonLink.vue'
 	<section class="section-review-pactients">
 		<MContainer>
 			<div class="content">
-				<h3 class="heading">
+				<h3 class="heading h-l">
 					Наши пациенты стали нам добрыми друзьями.
 					<br /><br />
 					Они хорошеют год от&nbsp;года и оставляют положительные отзывы.
@@ -39,14 +39,13 @@ import ButtonLink from '@/components/buttons/ButtonLink.vue'
 	gap: 60px;
 }
 
-.button-big{
+.button-big {
 	min-width: 300px;
 }
 
 .heading {
 	min-height: 612px;
 	padding-top: 100px;
-	font-size: 42px;
 	max-width: 690px;
 }
 
@@ -76,7 +75,6 @@ import ButtonLink from '@/components/buttons/ButtonLink.vue'
 
 	.heading {
 		padding-top: 0;
-		font-size: 32px;
 		max-width: 600px;
 	}
 
