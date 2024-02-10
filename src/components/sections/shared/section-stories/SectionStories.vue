@@ -7,7 +7,7 @@ import MContainer from '@/components/shared/MContainer.vue'
 <template>
 	<section class="section-stories">
 		<MContainer>
-			<h2 class="heading">Истории наших клиентов</h2>
+			<h2 class="h-xl heading">Истории наших клиентов</h2>
 			<h5 class="text">
 				Это поможет тебе лучше понять структуру плана лечения
 				и&nbsp;ориентироваться в&nbsp;его стоимости
@@ -99,11 +99,6 @@ export default {
 	padding-bottom: 150px;
 }
 
-.heading {
-	padding-bottom: 40px;
-	font-size: 50px;
-}
-
 .text {
 	color: #6d6364;
 	font-size: 24px;
@@ -142,12 +137,7 @@ export default {
 	font-family: 'Pelinka';
 }
 
-@media screen and (max-width: 1300px) {
-	.heading {
-		padding-bottom: 40px;
-		font-size: 20px;
-	}
-
+@media (max-width: 1300px) {
 	.text {
 		color: #6d6364;
 		font-size: 17px;
@@ -188,9 +178,6 @@ export default {
 
 	.swiper-custom {
 		padding: 0 24px;
-	}
-	.heading{
-		padding-bottom: 30px;
 	}
 }
 </style>

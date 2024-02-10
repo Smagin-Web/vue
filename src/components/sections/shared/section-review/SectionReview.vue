@@ -6,7 +6,7 @@ import MContainer from '@/components/shared/MContainer.vue'
 	<section class="section-review">
 		<MContainer>
 			<div class="section-review-content">
-				<h4 class="heading">Отзывы на&nbsp;площадках</h4>
+				<h4 class="h-l">Отзывы на&nbsp;площадках</h4>
 				<div class="section-review__links">
 					<div class="section-review-item">
 						<a href="#" class="section-review-item-link" />
@@ -33,9 +33,6 @@ import MContainer from '@/components/shared/MContainer.vue'
 </template>
 
 <style scoped>
-.heading {
-	font-size: 42px;
-}
 .section-review {
 	padding-bottom: 160px;
 }
@@ -93,11 +90,7 @@ import MContainer from '@/components/shared/MContainer.vue'
 	}
 }
 
-@media screen and (max-width: 1000px) {
-	.heading {
-		font-size: 22px;
-	}
-
+@media (max-width: 1000px) {
 	.section-review {
 		padding-bottom: 50px;
 	}
@@ -106,7 +99,6 @@ import MContainer from '@/components/shared/MContainer.vue'
 		padding: 40px 14px;
 		border-radius: 40px;
 	}
-
 	.section-review__links {
 		width: 100%;
 		display: grid;
@@ -114,7 +106,6 @@ import MContainer from '@/components/shared/MContainer.vue'
 		gap: 15px;
 		align-items: start;
 	}
-
 	.section-review-item {
 		width: 100%;
 		height: 74px;

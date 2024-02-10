@@ -12,7 +12,7 @@ import CardShadow from './CardShadow.vue'
 			<div class="card-wrapper">
 				<div class="card">
 					<div class="card-left">
-						<h5 class="card-heading">Остались вопросы?</h5>
+						<h5 class="h-l card-heading">Остались вопросы?</h5>
 						<h6 class="card-text">
 							Пиши или звони напрямую нам.
 							<br />
@@ -76,8 +76,6 @@ import CardShadow from './CardShadow.vue'
 }
 
 .card-heading {
-	color: #000;
-	font-size: 42px;
 	padding-bottom: 30px;
 }
 
@@ -151,7 +149,6 @@ import CardShadow from './CardShadow.vue'
 		padding: 36px;
 	}
 	.card-heading {
-		font-size: 36px;
 		padding-bottom: 20px;
 	}
 	.card-text {
@@ -173,10 +170,8 @@ import CardShadow from './CardShadow.vue'
 }
 
 @media (max-width: 1000px) {
-	.card-heading {
-		font-size: 28px;
-	}
 	.card-text {
+		max-width: 380px;
 		font-size: 16px;
 	}
 	.card-buttons {
@@ -217,9 +212,6 @@ import CardShadow from './CardShadow.vue'
 	.card {
 		padding: 30px;
 		border-radius: 30px;
-	}
-	.card-heading {
-		font-size: 22px;
 	}
 	.card-text {
 		font-size: 14px;

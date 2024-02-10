@@ -12,7 +12,7 @@ const props = defineProps(['title', 'icon', 'text'])
 			<IconClock v-if="icon === 'time'" />
 			{{ props.title }}
 		</div>
-		<h6 class="info-text" v-if="props.text">
+		<h6 class="h-md" v-if="props.text">
 			{{ props.text }}
 		</h6>
 	</div>
@@ -32,23 +32,5 @@ const props = defineProps(['title', 'icon', 'text'])
 	font-size: 16px;
 	font-weight: 400;
 	padding-bottom: 10px;
-}
-
-.info-text {
-	padding-bottom: 0;
-	color: #000;
-	font-size: 34px;
-}
-
-@media (max-width: 1000px) {
-	.info-text {
-		font-size: 28px;
-	}
-}
-
-@media (max-width: 500px) {
-	.info-text {
-		font-size: 22px;
-	}
 }
 </style>

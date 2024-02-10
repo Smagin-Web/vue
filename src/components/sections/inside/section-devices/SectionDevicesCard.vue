@@ -6,8 +6,8 @@ import CardLink from '@/components/card-elements/CardLink.vue'
 	<div class="card">
 		<div class="card-content">
 			<div class="card-info">
-				<CardInfo text="Skinova Pro" />
-				<p class="card-text">
+				<h5 class="h-md">Skinova Pro</h5>
+				<p class="text-sm">
 					Клеточная реконструкция высокочастотным ультразвуком. Единственная
 					технология, регулирующая уровень кавеолина&nbsp;&mdash; структурного
 					белка клеточной мембраны, который находится практически во&nbsp;всех
@@ -45,31 +45,10 @@ import CardLink from '@/components/card-elements/CardLink.vue'
 }
 
 .card-info {
-	max-width: 930px;
-}
-
-.card-heading {
-	color: #000;
-	font-size: 34px;
-	padding-bottom: 20px;
 	padding-top: 10px;
-}
-
-.card-text {
-	color: #6d6364;
-	font-size: 22px;
-	font-weight: 400;
-	padding-bottom: 20px;
-}
-
-.card-title {
-	display: flex;
-	align-items: center;
-	gap: 6px;
-	color: #6d6364;
-	font-size: 16px;
-	font-weight: 400;
-	padding-bottom: 10px;
+	display: grid;
+	gap: 20px;
+	max-width: 930px;
 }
 
 .card-img-wrapper {
@@ -99,9 +78,6 @@ import CardLink from '@/components/card-elements/CardLink.vue'
 @media (max-width: 1600px) {
 	.card-info {
 		max-width: 700px;
-	}
-	.card-text {
-		font-size: 20px;
 	}
 }
 
@@ -134,11 +110,9 @@ import CardLink from '@/components/card-elements/CardLink.vue'
 		transform: none;
 		max-height: 200px;
 	}
-
 	.card-img {
 		max-height: 200px;
 	}
-
 	.card-info {
 		max-width: 100%;
 	}
@@ -149,11 +123,6 @@ import CardLink from '@/components/card-elements/CardLink.vue'
 		border-radius: 20px;
 		padding: 30px;
 	}
-	.card-text {
-		font-size: 18px;
-		padding-bottom: 50px;
-	}
-
 	.card-price {
 		padding-bottom: 20px;
 	}
@@ -163,19 +132,12 @@ import CardLink from '@/components/card-elements/CardLink.vue'
 	.card-img-wrapper {
 		position: static;
 	}
-
 	.card-img {
 		height: 100%;
 	}
-
 	.card-content {
 		display: block;
 	}
-
-	.card-text {
-		padding-bottom: 14px;
-	}
-
 	.card-price-and-link {
 		display: flex;
 		justify-content: space-between;
@@ -185,10 +147,6 @@ import CardLink from '@/components/card-elements/CardLink.vue'
 @media (max-width: 500px) {
 	.card {
 		padding: 20px;
-	}
-
-	.card-text {
-		font-size: 16px;
 	}
 }
 </style>

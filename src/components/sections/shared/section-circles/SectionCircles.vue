@@ -8,7 +8,7 @@ import SectionCirclesBlock from './SectionCirclesBlock.vue'
 <template>
 	<section class="section">
 		<MContainer>
-			<h3 class="h-xl heading">
+			<h3 class="h-l heading">
 				<span style="position: relative">
 					Отзывы клиентов в&nbsp;кружочках
 					<SectionCirclesArrowSm class="heading-icon-sm" />
@@ -22,11 +22,9 @@ import SectionCirclesBlock from './SectionCirclesBlock.vue'
 
 <style scoped>
 .heading {
+	position: relative;
 	max-width: 880px;
 	padding-bottom: 80px;
-
-	position: relative;
-	font-size: 42px;
 }
 
 .heading-icon {
@@ -58,18 +56,14 @@ import SectionCirclesBlock from './SectionCirclesBlock.vue'
 	.section {
 		padding-top: 0;
 	}
-
 	.heading {
 		display: grid;
 		justify-content: start;
-		font-size: 22px;
 		padding-bottom: 48px;
 	}
-
 	.heading-icon {
 		display: none;
 	}
-
 	.heading-icon-sm {
 		display: block;
 		position: absolute;
@@ -82,7 +76,6 @@ import SectionCirclesBlock from './SectionCirclesBlock.vue'
 	.heading span {
 		max-width: 260px;
 	}
-
 	.heading-icon-sm {
 		top: 10px;
 	}
