@@ -9,19 +9,23 @@ import InstagramIcon from './InstagramIcon.vue'
 <template>
 	<section class="section-telegram">
 		<MContainer>
-			<div class="card">
-				<img src="./picture.png" alt="" class="card-picture" />
-				<div class="card-content">
-					<h3 class="h-xxl card-title">Подпишись на наш телеграм-канал</h3>
-					<h6 class="card-text">
-						получай полезную информацию по&nbsp;уходу за&nbsp;кожей
-					</h6>
-					<MButtonBig class="card-button">Подписаться на канал</MButtonBig>
-					<div class="card-other">
-						<h6 class="card-text card-text-other">и другие соцсети</h6>
-						<a href="#"><VkIcon class="card-icon" /></a>
-						<a href="#"><InstagramIcon class="card-icon" /></a>
-						<a href="#"><YouTubeIcon class="card-icon" /></a>
+			<div class="card-wrapper">
+				<img src="./shadow.png" class="card-shadow" alt="" />
+
+				<div class="card">
+					<img src="./picture.png" alt="" class="card-picture" />
+					<div class="card-content">
+						<h3 class="h-xxl card-title">Подпишись на наш телеграм-канал</h3>
+						<h6 class="card-text">
+							получай полезную информацию по&nbsp;уходу за&nbsp;кожей
+						</h6>
+						<MButtonBig class="card-button">Подписаться на канал</MButtonBig>
+						<div class="card-other">
+							<h6 class="card-text card-text-other">и другие соцсети</h6>
+							<a href="#"><VkIcon class="card-icon" /></a>
+							<a href="#"><InstagramIcon class="card-icon" /></a>
+							<a href="#"><YouTubeIcon class="card-icon" /></a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -40,6 +44,19 @@ import InstagramIcon from './InstagramIcon.vue'
 	padding-top: 125px;
 	border-radius: 150px 20px;
 	background: #ede4da;
+}
+
+.card-wrapper {
+	position: relative;
+}
+
+.card-shadow {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%) translateY(25%);
+
+	width: 80%;
 }
 
 .card-picture {

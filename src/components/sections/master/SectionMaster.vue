@@ -8,6 +8,10 @@ import IconArrow from './IconArrow.vue'
 import IconPlay from '@/components/icons/IconPlay.vue'
 import MButtonBig from '@/components/buttons/MButtonBig.vue'
 
+import { ref } from 'vue'
+
+const isShowMore = ref(false)
+
 const skills = [
 	'Коррекция мимических морщин',
 	'Объемное моделирование лица филлерами',
@@ -41,6 +45,10 @@ const moreSkills = [
 	'Сертификат «Методики микротоковой терапии в уходе за лицом и телом», Москва, 2014 г.',
 	'Ноябрь 2015 г. – приняла участие в семинаре «Омолаживающая косметология лица и тела. Секреты зарубежной школы», Москва.'
 ]
+
+const showMore = () => {
+	isShowMore.value = true
+}
 </script>
 
 <template>
@@ -67,7 +75,10 @@ const moreSkills = [
 					<div class="line" />
 					<h5 class="heading-2">Дополнительное образование и сертификаты</h5>
 					<SectionMasterList :items="moreSkills" />
-					<button class="more-button">
+
+					<SectionMasterList v-if="isShowMore" :items="moreSkills" />
+
+					<button v-if="!isShowMore" class="more-button" @click="showMore">
 						Показать весь список
 						<IconArrow />
 					</button>
