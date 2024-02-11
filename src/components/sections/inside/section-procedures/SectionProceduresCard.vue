@@ -13,10 +13,10 @@ import CardLink from '@/components/card-elements/CardLink.vue'
 			<SectionProceduresBadge>AntiAcne Concept</SectionProceduresBadge>
 			<SectionProceduresBadge>Detox Concept</SectionProceduresBadge>
 		</div>
-		<h5 class="card-heading">
+		<h5 class="card-heading h-sm-ultra">
 			Аппаратная чистка лица Hydro&nbsp;Peel&nbsp;Plus
 		</h5>
-		<p class="card-text">
+		<p class="card-text text-sm">
 			Красота и здоровье кожи надолго, всего за одну процедуру.
 		</p>
 
@@ -32,7 +32,7 @@ import CardLink from '@/components/card-elements/CardLink.vue'
 	border-radius: 50px;
 	background: #fff;
 	padding: 40px;
-	max-width: 544px;
+	max-width: 600px;
 	position: relative;
 }
 
@@ -74,16 +74,11 @@ import CardLink from '@/components/card-elements/CardLink.vue'
 }
 
 .card-heading {
-	color: #000;
-	font-size: 24px;
 	padding-bottom: 20px;
 	padding-top: 20px;
 }
 
 .card-text {
-	color: #6d6364;
-	font-size: 22px;
-	font-weight: 400;
 	padding-bottom: 30px;
 }
 
@@ -91,6 +86,15 @@ import CardLink from '@/components/card-elements/CardLink.vue'
 	position: absolute;
 	right: 40px;
 	bottom: 40px;
+}
+
+@media (max-width: 1400px) {
+	.card-heading {
+		padding-bottom: 16px;
+	}
+	.card {
+		padding: 40px;
+	}
 }
 
 @media (max-width: 1000px) {
@@ -111,7 +115,6 @@ import CardLink from '@/components/card-elements/CardLink.vue'
 
 	.card-text {
 		padding-bottom: 16px;
-		font-size: 18px;
 		max-width: 330px;
 	}
 }
@@ -120,16 +123,9 @@ import CardLink from '@/components/card-elements/CardLink.vue'
 	.card {
 		padding-bottom: 10px;
 	}
-
 	.card-heading {
-		font-size: 20px;
 		padding-bottom: 10px;
 	}
-
-	.card-text {
-		font-size: 16px;
-	}
-
 	.card-link {
 		bottom: 20px;
 		right: 30px;

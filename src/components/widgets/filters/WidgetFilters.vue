@@ -24,6 +24,12 @@ const props = defineProps(['items'])
 	padding-bottom: 70px;
 }
 
+@media (max-width: 1400px) {
+	.widget-filters {
+		gap: 20px;
+	}
+}
+
 @media (max-width: 1000px) {
 	.widget-filters {
 		gap: 8px;

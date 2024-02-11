@@ -75,6 +75,12 @@ const filtersList = [
 	}
 }
 
+@media (max-width: 1400px) {
+	.filters {
+		gap: 20px;
+	}
+}
+
 @media (max-width: 820px) {
 	.section-categories {
 		padding-bottom: 70px;
