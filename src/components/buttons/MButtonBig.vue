@@ -19,6 +19,14 @@
 	border: black 2px solid;
 }
 
+@media (max-width: 1400px) {
+	.main-button {
+		max-width: 320px;
+		padding: 12px 0;
+		font-size: 20px;
+	}
+}
+
 @media (max-width: 1200px) {
 	.main-button {
 		max-width: 350px;

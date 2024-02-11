@@ -68,9 +68,21 @@ import ButtonLink from '@/components/buttons/ButtonLink.vue'
 	}
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1600px) {
+	.content {
+		gap: 0;
+	}
+	.heading {
+		padding-top: 0;
+	}
 	.buttons {
 		margin-top: -150px;
+	}
+}
+
+@media (max-width: 1500px) {
+	.heading {
+		min-height: 500px;
 	}
 }
 
@@ -90,7 +102,7 @@ import ButtonLink from '@/components/buttons/ButtonLink.vue'
 		max-width: 500px;
 	}
 	.buttons {
-		margin-top: -300px;
+		margin-top: -200px;
 	}
 }
 

@@ -26,10 +26,10 @@
 	}
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
 	.main-button-outline {
-		max-width: 350px;
-		padding: 16px 0;
+		max-width: 320px;
+		padding: 12px 0;
 		font-size: 20px;
 	}
 }

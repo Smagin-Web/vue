@@ -17,6 +17,12 @@
 	cursor: pointer;
 }
 
+@media (max-width: 1400px) {
+	.button-link {
+		font-size: 20px;
+	}
+}
+
 @media (max-width: 1000px) {
 	.button-link {
 		font-size: 16px;
