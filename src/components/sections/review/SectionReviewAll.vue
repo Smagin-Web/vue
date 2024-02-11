@@ -13,7 +13,7 @@ import MSelect from '@/components/form/select/MSelect.vue'
 			<BreadCrumbs :items="['Главная', 'Отзывы']" />
 			<h3 class="h-xxl heading">Отзывы</h3>
 			<div class="content">
-				<p class="text-sm" style="max-width: 660px">
+				<p class="text-sm content-text">
 					Выберите специалиста, о&nbsp;котором хотите прочитать или оставить
 					отзыв
 				</p>
@@ -58,6 +58,10 @@ import MSelect from '@/components/form/select/MSelect.vue'
 	gap: 34px;
 }
 
+.content-text {
+	max-width: 500px;
+}
+
 .cards {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -70,14 +74,16 @@ import MSelect from '@/components/form/select/MSelect.vue'
 }
 
 @media (max-width: 1700px) {
-	.content {
-		display: grid;
-		grid-template-columns: 1fr 500px;
-	}
 	.cards {
 		grid-template-columns: max-content max-content;
 		justify-items: center;
 		justify-content: space-around;
+	}
+}
+
+@media (max-width: 1500px) {
+	.content-text {
+		max-width: 400px;
 	}
 }
 
@@ -89,6 +95,13 @@ import MSelect from '@/components/form/select/MSelect.vue'
 	}
 	.card-master {
 		margin-right: 0;
+	}
+}
+
+@media (max-width: 1200px) {
+	.content {
+		display: grid;
+		grid-template-columns: 1fr;
 	}
 }
 
@@ -105,9 +118,6 @@ import MSelect from '@/components/form/select/MSelect.vue'
 }
 
 @media (max-width: 600px) {
-	.content {
-		justify-items: center;
-	}
 	.section-review-all-select {
 		width: 100%;
 	}
