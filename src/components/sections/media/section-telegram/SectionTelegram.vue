@@ -122,6 +122,23 @@ import InstagramIcon from './InstagramIcon.vue'
 	}
 }
 
+@media (max-width: 1400px) {
+	.card {
+		padding-bottom: 50px;
+		padding-left: 50px;
+		padding-top: 80px;
+		border-radius: 80px 30px 80px 30px;
+	}
+	.card-text {
+		font-size: 20px;
+		max-width: 500px;
+	}
+	.card-button {
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
+}
+
 @media (max-width: 1300px) {
 	.card {
 		padding: 60px;

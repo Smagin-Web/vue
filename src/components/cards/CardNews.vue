@@ -58,7 +58,7 @@ const props = defineProps(['isArticle', 'isNews'])
 	background-color: #fff;
 	border-radius: 50px;
 	padding: 40px;
-	max-width: 550px;
+	max-width: 600px;
 
 	transition: 0.2s;
 }
