@@ -6,20 +6,29 @@ import IconBurger from '../icons/IconBurger.vue'
 import HeaderSocialLink from './HeaderSocialLink.vue'
 import { ref } from 'vue'
 import HeaderNotify from './HeaderNotify.vue'
+import HeaderMobileMenu from './HeaderMobileMenu.vue'
 
 const items = ref([
 	'+7 498 661-07-31',
 	'Концепты',
 	'Процедуры',
 	'Аппараты',
-	'Цены',
-	'burger'
+	'Цены'
 ])
+
+const isOpenMenuMobile = ref(false)
+
+const toggleMenu = () => {
+	isOpenMenuMobile.value = !isOpenMenuMobile.value
+}
 </script>
 
 <template>
 	<header class="header">
+		<HeaderMobileMenu :isActive="isOpenMenuMobile" />
+
 		<HeaderNotify />
+
 		<MContainer>
 			<div class="header-flex">
 				<div class="header-flex-left">
@@ -27,19 +36,13 @@ const items = ref([
 					<HeaderSocialLink class="socials" />
 				</div>
 				<nav class="header-nav">
-					<a
-						class="header-nav-item"
-						href="/inside"
-						v-for="item in items"
-						:key="item"
-					>
-						<template v-if="item === 'burger'">
-							<IconBurger class="burger-icon" />
-						</template>
-						<template v-else>
-							<span class="header-nav-item-link">{{ item }}</span>
-						</template>
+					<a class="header-nav-item" v-for="item in items" :key="item" href="#">
+						<span class="header-nav-item-link">{{ item }}</span>
 					</a>
+
+					<button type="button" class="burger-button" @click="toggleMenu">
+						<IconBurger class="burger-button-icon" />
+					</button>
 				</nav>
 			</div>
 		</MContainer>
@@ -84,6 +87,13 @@ const items = ref([
 
 .header-nav .header-nav-item:first-child {
 	padding-right: 50px;
+}
+
+.burger-button {
+	background: none;
+	border: none;
+	position: relative;
+	z-index: 30;
 }
 
 @media screen and (max-width: 1620px) {

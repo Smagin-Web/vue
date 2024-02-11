@@ -49,6 +49,7 @@ import MContainer from '@/components/shared/MContainer.vue'
 	background: #ede4da;
 	padding: 80px;
 	display: flex;
+	gap: 24px;
 	justify-content: space-between;
 }
 
@@ -76,6 +77,12 @@ import MContainer from '@/components/shared/MContainer.vue'
 .service-card-buttons {
 	display: flex;
 	gap: 20px;
+}
+
+@media (max-width: 1700px) {
+	.service-card-buttons {
+		flex-direction: column;
+	}
 }
 
 @media (max-width: 1500px) {
