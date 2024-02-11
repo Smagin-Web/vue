@@ -144,6 +144,28 @@ import CardShadow from './CardShadow.vue'
 	}
 }
 
+@media (max-width: 1400px) {
+	.card-heading {
+		padding-bottom: 24px;
+	}
+	.card-text {
+		font-size: 20px;
+		padding-bottom: 40px;
+	}
+	.button-link {
+		max-width: 360px;
+	}
+	.card-left {
+		max-width: 470px;
+		flex-shrink: 0;
+	}
+	.card-picture {
+		width: 100%;
+		margin-top: 100px;
+		margin-bottom: 0;
+	}
+}
+
 @media (max-width: 1320px) {
 	.card {
 		padding: 36px;

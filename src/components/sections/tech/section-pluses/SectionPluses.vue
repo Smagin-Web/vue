@@ -139,7 +139,27 @@ import IconPlay from '@/components/icons/IconPlay.vue'
 	transition: 0.1s;
 }
 
-@media (max-width: 1450px) {
+@media (max-width: 1400px) {
+	.photo-wrapper {
+		max-width: 386px;
+	}
+	.photo-wrapper::after {
+		display: none;
+	}
+	.photo {
+		max-width: 100%;
+		height: auto;
+	}
+	.title {
+		font-size: 42px;
+		max-width: 386px;
+	}
+	.list {
+		gap: 24px;
+	}
+}
+
+@media (max-width: 1200px) {
 	.list {
 		grid-template-columns: 1fr;
 	}
