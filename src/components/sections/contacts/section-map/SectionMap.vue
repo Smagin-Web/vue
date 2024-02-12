@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import MContainer from '@/components/shared/MContainer.vue'
 import MapBadge from './MapBadge.vue'
-import SelectRoad from './SelectRoad.vue'
+// import SelectRoad from './SelectRoad.vue'
 </script>
 
 <template>

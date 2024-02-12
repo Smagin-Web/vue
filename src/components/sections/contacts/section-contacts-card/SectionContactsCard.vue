@@ -1,12 +1,12 @@
 <script setup lang="ts">
 import MContainer from '@/components/shared/MContainer.vue'
 import BreadCrumbs from '@/components/shared/BreadCrumbs.vue'
-import MButtonOutlineBig from '@/components/buttons/MButtonOutlineBig.vue'
+// import MButtonOutlineBig from '@/components/buttons/MButtonOutlineBig.vue'
 
 import CardInfo from './CardInfo.vue'
 import IconWhatsApp from './IconWhatsApp.vue'
 import IconTelegram from './IconTelegram.vue'
-import IconLocation from './IconLocation.vue'
+// import IconLocation from './IconLocation.vue'
 </script>
 
 <template>
@@ -21,8 +21,8 @@ import IconLocation from './IconLocation.vue'
 						<p class="text-sm numbers-title">Запись и консультация</p>
 
 						<h5 class="h-xxl numbers-item">
-							<a href="tel:+74986610730" style="color: black">
-								+7 498 661-07-30
+							<a href="tel:+79774122010" style="color: black">
+								+7 977 412-20-10
 							</a>
 
 							<a href="https://wa.me/79774122010">
@@ -35,8 +35,8 @@ import IconLocation from './IconLocation.vue'
 						</h5>
 
 						<h5 class="h-xxl">
-							<a href="tel:+79257267181" style="color: black">
-								+7 925 726-71-81
+							<a href="tel:+74952913578" style="color: black">
+								+7 495 291-35-78
 							</a>
 						</h5>
 					</div>
