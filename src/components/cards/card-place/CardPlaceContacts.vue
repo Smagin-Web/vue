@@ -6,14 +6,24 @@ import IconTelegram from './IconTelegram.vue'
 <template>
 	<div class="contacts">
 		<a href="#">
-			<h6 class="h-xxl">+7 925 726-71-81</h6>
+			<h6 class="h-xxl">
+				<a href="tel:+79257267181" style="color: inherit">+7 925 726-71-81 </a>
+			</h6>
 		</a>
 
 		<div class="contacts-socials">
-			<a href="#">
+			<a
+				href="https://wa.me/79774122010"
+				target="_blank"
+				rel="noopener noreferrer"
+			>
 				<IconWhatsapp class="contacts-icon" />
 			</a>
-			<a href="#">
+			<a
+				href="https://t.me/FaceConcept_bot"
+				target="_blank"
+				rel="noopener noreferrer"
+			>
 				<IconTelegram class="contacts-icon" />
 			</a>
 		</div>

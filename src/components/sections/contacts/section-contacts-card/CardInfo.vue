@@ -8,7 +8,7 @@
 			ОГРН 1185053020459
 		</p>
 
-		<a href="#" class="card-item">
+		<a href="https://disk.yandex.ru/d/mF_BJuNTm2_dSQ" class="card-item">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				width="30"
@@ -30,7 +30,7 @@
 			Карточка реквизитов
 		</a>
 
-		<a href="#" class="card-item">
+		<!-- <a href="#" class="card-item">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				width="30"
@@ -46,7 +46,7 @@
 				/>
 			</svg>
 			Лицензии
-		</a>
+		</a> -->
 	</div>
 </template>
 

@@ -18,16 +18,15 @@ import SelectRoad from './SelectRoad.vue'
 							<MapBadge number="11" color="#7ECECE">Лефортово</MapBadge>
 							<MapBadge number="10" color="#BED968">Римская</MapBadge>
 						</div>
-						<SelectRoad />
+						<!-- <SelectRoad /> -->
 					</div>
 				</div>
 				<div class="map-body">
 					<iframe
-						src="https://yandex.ru/map-widget/v1/org/moskovskiy_kreml/1023322799/?ll=37.618879%2C55.751426&z=14"
+						src="https://yandex.ru/map-widget/v1/?um=constructor%3Afba82c0c661acbf3edb12a02113a034c730ccc4dd65095f228719361c5d80dd2&amp;source=constructor"
 						width="100%"
 						height="780px"
-						allowfullscreen="true"
-						disableDragging
+						frameborder="0"
 						style="
 							border: none;
 							position: relative;
@@ -36,6 +35,14 @@ import SelectRoad from './SelectRoad.vue'
 							border-radius: 50px;
 						"
 					/>
+					<!-- <iframe
+						src="https://yandex.ru/map-widget/v1/org/moskovskiy_kreml/1023322799/?ll=37.618879%2C55.751426&z=14"
+						width="100%"
+						height="780px"
+						allowfullscreen="true"
+						disableDragging
+						
+					/> -->
 				</div>
 			</div>
 		</MContainer>

@@ -1,11 +1,12 @@
 <script setup lang="ts">
 import MContainer from '@/components/shared/MContainer.vue'
 import BreadCrumbs from '@/components/shared/BreadCrumbs.vue'
+import MButtonOutlineBig from '@/components/buttons/MButtonOutlineBig.vue'
 
+import CardInfo from './CardInfo.vue'
 import IconWhatsApp from './IconWhatsApp.vue'
 import IconTelegram from './IconTelegram.vue'
-import CardInfo from './CardInfo.vue'
-import MButtonOutlineBig from '@/components/buttons/MButtonOutlineBig.vue'
+import IconLocation from './IconLocation.vue'
 </script>
 
 <template>
@@ -20,14 +21,24 @@ import MButtonOutlineBig from '@/components/buttons/MButtonOutlineBig.vue'
 						<p class="text-sm numbers-title">Запись и консультация</p>
 
 						<h5 class="h-xxl numbers-item">
-							<a href="#" style="color: black">+7 498 661-07-30</a>
+							<a href="tel:+74986610730" style="color: black">
+								+7 498 661-07-30
+							</a>
 
-							<a href="#"><IconWhatsApp class="contact-icon" /></a>
+							<a href="https://wa.me/79774122010">
+								<IconWhatsApp class="contact-icon" />
+							</a>
 
-							<a href="#"><IconTelegram class="contact-icon" /></a>
+							<a href="https://t.me/FaceConcept_bot">
+								<IconTelegram class="contact-icon" />
+							</a>
 						</h5>
 
-						<a href="#"><h5 class="h-xxl">+7 925 726-71-81</h5></a>
+						<h5 class="h-xxl">
+							<a href="tel:+79257267181" style="color: black">
+								+7 925 726-71-81
+							</a>
+						</h5>
 					</div>
 
 					<a href="#">
@@ -42,23 +53,10 @@ import MButtonOutlineBig from '@/components/buttons/MButtonOutlineBig.vue'
 				</div>
 				<div class="content-right">
 					<CardInfo class="card-mini" />
-					<MButtonOutlineBig class="button-show-all">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							width="31"
-							height="30"
-							viewBox="0 0 31 30"
-							fill="none"
-						>
-							<path
-								fill-rule="evenodd"
-								clip-rule="evenodd"
-								d="M15.2296 1.875C10.0007 1.875 5.64599 5.88556 5.21644 11.0967C4.98517 13.9025 5.85185 16.6885 7.63392 18.8679L13.6253 26.1951C14.594 27.3799 16.4051 27.3799 17.3739 26.1951L23.3651 18.8679C25.1473 16.6885 26.0139 13.9025 25.7826 11.0967C25.3531 5.88556 20.9984 1.875 15.7695 1.875H15.2296ZM15.4995 16.25C17.9158 16.25 19.8745 14.2912 19.8745 11.875C19.8745 9.45875 17.9158 7.5 15.4995 7.5C13.0833 7.5 11.1245 9.45875 11.1245 11.875C11.1245 14.2912 13.0833 16.25 15.4995 16.25Z"
-								fill="black"
-							/>
-						</svg>
+					<!-- <MButtonOutlineBig class="button-show-all">
+						<IconLocation />
 						Филиалы
-					</MButtonOutlineBig>
+					</MButtonOutlineBig> -->
 				</div>
 			</div>
 		</MContainer>
