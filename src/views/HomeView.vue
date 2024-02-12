@@ -54,7 +54,7 @@ const closeModal = () => {
 		<SectionRead />
 
 		<ModalBonus
-			:isBonus="true"
+			:isBonus="false"
 			:isActive="isActiveModal"
 			:onClose="closeModal"
 		/>

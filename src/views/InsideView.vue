@@ -28,16 +28,29 @@ import ModalBonus from '@/components/modal/modal-bonus/ModalBonus.vue'
 
 import { ref } from 'vue'
 
+const isActiveModalBonus = ref(false)
 const isActiveModal = ref(false)
 
 const openModal = () => {
 	document.body.style.overflow = 'hidden'
 	isActiveModal.value = true
+	console.log('hello')
 }
 
 const closeModal = () => {
 	document.body.style.overflow = 'auto'
 	isActiveModal.value = false
+}
+
+const openModalBonus = () => {
+	document.body.style.overflow = 'hidden'
+	isActiveModalBonus.value = true
+	console.log('hello')
+}
+
+const closeModalBonus = () => {
+	document.body.style.overflow = 'auto'
+	isActiveModalBonus.value = false
 }
 </script>
 
@@ -48,7 +61,7 @@ const closeModal = () => {
 		<SectionInfo />
 		<SectionPreview />
 		<SectionTech />
-		<SectionOffer />
+		<SectionOffer :modalBonusOpen="openModal" />
 		<SectionResult />
 		<SectionProcedures />
 		<!-- <SectionRec /> -->
@@ -61,12 +74,17 @@ const closeModal = () => {
 		<!-- <SectionReview /> -->
 		<SectionHelp />
 		<!-- <SectionPlaces /> -->
-		<SectionBonus :openModal="openModal" />
+		<SectionBonus :openModal="openModalBonus" />
 		<!-- <SectionRead class="section-read" /> -->
 		<SectionFaq />
 
 		<ModalBonus
 			:isBonus="true"
+			:isActive="isActiveModalBonus"
+			:onClose="closeModalBonus"
+		/>
+		<ModalBonus
+			:isBonus="false"
 			:isActive="isActiveModal"
 			:onClose="closeModal"
 		/>
