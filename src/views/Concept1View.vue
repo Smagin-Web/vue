@@ -8,6 +8,8 @@ import { ref } from 'vue'
 import { conceptsInfo } from '@/components/sections/concept/const'
 import SectionInfo from '@/components/sections/shared/section-info/SectionInfo.vue'
 import SectionPreview from '@/components/sections/shared/section-preview/SectionPreview.vue'
+import SectionHelp from '@/components/sections/shared/section-help/SectionHelp.vue'
+import SectionFaq from '@/components/sections/inside/section-faq/SectionFaq.vue'
 
 const currentConcept = ref('')
 const router = useRouter()
@@ -29,5 +31,7 @@ console.log(conceptsInfo[currentConcept.value])
 			:title="conceptsInfo[currentConcept].preview.title"
 			:text="conceptsInfo[currentConcept].preview.text"
 		/>
+		<SectionHelp />
+		<SectionFaq />
 	</ViewWrapper>
 </template>
