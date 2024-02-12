@@ -2,25 +2,44 @@
 <script setup lang="ts">
 import MContainer from '../shared/MContainer.vue'
 import Logo from './Logo.vue'
-import IconBurger from '../icons/IconBurger.vue'
 import HeaderSocialLink from './HeaderSocialLink.vue'
 import { ref } from 'vue'
 import HeaderNotify from './HeaderNotify.vue'
 import HeaderMobileMenu from './HeaderMobileMenu.vue'
 import HeaderBurgerIcon from './HeaderBurgerIcon.vue'
 
-const items = ref([
-	'+7 498 661-07-31',
-	'Концепты',
-	'Процедуры',
-	'Аппараты',
-	'Цены'
-])
+const items = [
+	{
+		text: '+7 498 661-07-31',
+		link: 'tel:+74986610731'
+	},
+	{
+		text: 'Концепты',
+		link: '/concepts'
+	},
+	{
+		text: 'Процедуры',
+		link: '/procedures'
+	},
+	{
+		text: 'Аппараты',
+		link: '/devices'
+	},
+	{
+		text: 'Цены',
+		link: '/prices'
+	}
+]
 
 const isOpenMenuMobile = ref(false)
 
 const toggleMenu = () => {
 	isOpenMenuMobile.value = !isOpenMenuMobile.value
+	if (isOpenMenuMobile.value) {
+		document.body.style.overflow = 'hidden'
+	} else {
+		document.body.style.overflow = 'auto'
+	}
 }
 </script>
 
@@ -37,8 +56,13 @@ const toggleMenu = () => {
 					<HeaderSocialLink class="socials" />
 				</div>
 				<nav class="header-nav">
-					<a class="header-nav-item" v-for="item in items" :key="item" href="#">
-						<span class="header-nav-item-link">{{ item }}</span>
+					<a
+						class="header-nav-item"
+						v-for="item in items"
+						:key="item.text"
+						:href="item.link"
+					>
+						<span class="header-nav-item-link">{{ item.text }}</span>
 					</a>
 
 					<button type="button" class="burger-button" @click="toggleMenu">

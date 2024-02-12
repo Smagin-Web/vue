@@ -12,7 +12,8 @@ const props = defineProps({
 
 <style scoped>
 .burger-icon-wrapper {
-	padding-top: 20px;
+	padding-top: 14px;
+	padding-bottom: 14px;
 }
 
 .burger-icon,
