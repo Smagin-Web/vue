@@ -12,6 +12,7 @@ import {
 	liftingConcept,
 	brightConcept,
 	personalConcept,
+	consult,
 	allConcepts
 } from './const'
 import type { IPriceCard } from './const'
@@ -24,9 +25,14 @@ export interface ICategory {
 const activeCategory = ref(1)
 
 const categories: ICategory[] = [
+	
 	{
 		title: 'Все категории',
 		items: allConcepts
+	},
+	{
+		title: 'Консультации',
+		items: consult
 	},
 	{
 		title: 'AntiAcne Concept',

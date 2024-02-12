@@ -22,7 +22,13 @@ const props = defineProps(['modalBonusOpen'])
 							<SectionOfferList class="section-offer-list" />
 						</div>
 						<div class="image-container">
-							<img src="./more.png" class="image-more" />
+							<a
+								href="https://www.youtube.com/watch?v=DK1uUY_BN68"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<img src="./more.png" class="image-more" />
+							</a>
 							<img src="./offer.png" class="image" />
 						</div>
 					</div>
