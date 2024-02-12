@@ -24,6 +24,21 @@ import SectionTech from '@/components/sections/inside/section-tech/SectionTech.v
 import SectionFaq from '@/components/sections/inside/section-faq/SectionFaq.vue'
 
 import SectionPluses from '@/components/sections/main/section-pluses/SectionPluses.vue'
+import ModalBonus from '@/components/modal/modal-bonus/ModalBonus.vue'
+
+import { ref } from 'vue'
+
+const isActiveModal = ref(false)
+
+const openModal = () => {
+	document.body.style.overflow = 'hidden'
+	isActiveModal.value = true
+}
+
+const closeModal = () => {
+	document.body.style.overflow = 'auto'
+	isActiveModal.value = false
+}
 </script>
 
 <template>
@@ -46,9 +61,15 @@ import SectionPluses from '@/components/sections/main/section-pluses/SectionPlus
 		<!-- <SectionReview /> -->
 		<SectionHelp />
 		<!-- <SectionPlaces /> -->
-		<SectionBonus />
+		<SectionBonus :openModal="openModal" />
 		<!-- <SectionRead class="section-read" /> -->
 		<SectionFaq />
+
+		<ModalBonus
+			:isBonus="true"
+			:isActive="isActiveModal"
+			:onClose="closeModal"
+		/>
 	</ViewWrapper>
 </template>
 

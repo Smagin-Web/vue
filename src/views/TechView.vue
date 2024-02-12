@@ -11,6 +11,22 @@ import SectionPrice from '@/components/sections/tech/section-price/SectionPrice.
 import SectionMain from '@/components/sections/tech/section-main/SectionMain.vue'
 import SectionPluses from '@/components/sections/tech/section-pluses/SectionPluses.vue'
 import SectionBanner from '@/components/sections/tech/section-banner/SectionBanner.vue'
+
+import ModalBonus from '@/components/modal/modal-bonus/ModalBonus.vue'
+
+import { ref } from 'vue'
+
+const isActiveModal = ref(false)
+
+const openModal = () => {
+	document.body.style.overflow = 'hidden'
+	isActiveModal.value = true
+}
+
+const closeModal = () => {
+	document.body.style.overflow = 'auto'
+	isActiveModal.value = false
+}
 </script>
 
 <template>
@@ -20,10 +36,16 @@ import SectionBanner from '@/components/sections/tech/section-banner/SectionBann
 		<SectionBanner />
 		<SectionPrice />
 		<SectionMasters />
-		<SectionBonus />
+		<SectionBonus :openModal="openModal" />
 		<SectionRead />
 		<SectionFaq class="section-help" />
-		<SectionHelp  />
+		<SectionHelp />
+
+		<ModalBonus
+			:isBonus="true"
+			:isActive="isActiveModal"
+			:onClose="closeModal"
+		/>
 	</ViewWrapper>
 </template>
 

@@ -17,6 +17,22 @@ import SectionPluses from '@/components/sections/main/section-pluses/SectionPlus
 import SectionBanner from '@/components/sections/main/section-banner/SectionBanner.vue'
 import CustomSlider from '@/components/sections/main/section-slider/CustomSlider.vue'
 import CustomSliderSm from '@/components/sections/main/section-slider/CustomSliderSm.vue'
+
+import ModalBonus from '@/components/modal/modal-bonus/ModalBonus.vue'
+
+import { ref } from 'vue'
+
+const isActiveModal = ref(false)
+
+const openModal = () => {
+	document.body.style.overflow = 'hidden'
+	isActiveModal.value = true
+}
+
+const closeModal = () => {
+	document.body.style.overflow = 'auto'
+	isActiveModal.value = false
+}
 </script>
 
 <template>
@@ -27,7 +43,7 @@ import CustomSliderSm from '@/components/sections/main/section-slider/CustomSlid
 		<SectionTech />
 		<CustomSlider class="custom-slider-lg" />
 		<CustomSliderSm class="custom-slider-sm" />
-		<SectionOffer />
+		<SectionOffer :modalBonusOpen="openModal" />
 		<SectionResult />
 		<SectionStories />
 		<SectionOther />
@@ -36,6 +52,12 @@ import CustomSliderSm from '@/components/sections/main/section-slider/CustomSlid
 		<SectionCircles />
 		<SectionReview />
 		<SectionRead />
+
+		<ModalBonus
+			:isBonus="true"
+			:isActive="isActiveModal"
+			:onClose="closeModal"
+		/>
 	</ViewWrapper>
 </template>
 

@@ -3,7 +3,7 @@ import { ref } from 'vue'
 import ButtonFixed from './buttons/ButtonFixed.vue'
 import Header from './shared/Header.vue'
 import Footer from './shared/Footer.vue'
-import ModalBonus from './modal/modal-bonus/ModalBonus.vue';
+import ModalBonus from './modal/modal-bonus/ModalBonus.vue'
 
 const isActiveModal = ref(false)
 

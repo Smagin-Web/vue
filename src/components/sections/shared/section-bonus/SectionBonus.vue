@@ -3,6 +3,8 @@ import MContainer from '@/components/shared/MContainer.vue'
 import SectionBonusList from './SectionBonusList.vue'
 import MButtonBig from '@/components/buttons/MButtonBig.vue'
 import SectionBonusPicture from './SectionBonusPicture.vue'
+
+const props = defineProps(['openModal'])
 </script>
 
 <template>
@@ -15,7 +17,7 @@ import SectionBonusPicture from './SectionBonusPicture.vue'
 						Сделайте приятный сюрприз близкому человеку
 					</h5>
 					<SectionBonusList class="card-list" />
-					<MButtonBig>Оформить сертификат</MButtonBig>
+					<MButtonBig @click="props.openModal">Оформить сертификат</MButtonBig>
 				</div>
 				<SectionBonusPicture class="card-picture" />
 			</div>

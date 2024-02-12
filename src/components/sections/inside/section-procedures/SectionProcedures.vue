@@ -34,9 +34,9 @@ import SectionPriceItem from '../../tech/section-price/SectionPriceItem.vue'
 				</div> 
 			</div>-->
 
-			<div class="button-wrapper">
+			<!-- <div class="button-wrapper">
 				<MButtonOutlineBig>Все процедуры</MButtonOutlineBig>
-			</div>
+			</div> -->
 		</MContainer>
 	</section>
 </template>
