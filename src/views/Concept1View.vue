@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup lang="js">
 import ViewWrapper from '@/components/ViewWrapper.vue'
 import SectionConceptMain from '@/components/sections/concept/section-concept-main/SectionConceptMain.vue'
 import SectionPluses from '@/components/sections/main/section-pluses/SectionPluses.vue'
@@ -15,7 +15,6 @@ const currentConcept = ref('')
 const router = useRouter()
 
 currentConcept.value = router.currentRoute.value.path.split('/')[2]
-console.log(conceptsInfo[currentConcept.value])
 </script>
 
 <template>
