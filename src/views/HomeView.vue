@@ -45,13 +45,13 @@ const closeModal = () => {
 		<CustomSliderSm class="custom-slider-sm" />
 		<SectionOffer :modalBonusOpen="openModal" />
 		<SectionResult />
-		<SectionStories />
-		<SectionOther />
-		<SectionMasters />
+		<!-- <SectionStories /> -->
+		<!-- <SectionOther /> -->
+		<!-- <SectionMasters /> -->
 		<SectionReviewPacients />
-		<SectionCircles />
-		<SectionReview />
-		<SectionRead />
+		<!-- <SectionCircles /> -->
+		<!-- <SectionReview /> -->
+		<!-- <SectionRead /> -->
 
 		<ModalBonus
 			:isBonus="false"
