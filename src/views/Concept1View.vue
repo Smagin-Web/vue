@@ -9,26 +9,25 @@ import { conceptsInfo } from '@/components/sections/concept/const'
 import SectionInfo from '@/components/sections/shared/section-info/SectionInfo.vue'
 import SectionPreview from '@/components/sections/shared/section-preview/SectionPreview.vue'
 
-const currentNumberConcept = ref(0)
+const currentConcept = ref('')
 const router = useRouter()
 
-currentNumberConcept.value = Number(
-	router.currentRoute.value.path.split('/')[2]
-)
+currentConcept.value = router.currentRoute.value.path.split('/')[2]
+console.log(conceptsInfo[currentConcept.value])
 </script>
 
 <template>
 	<ViewWrapper>
-		<SectionConceptMain :title="conceptsInfo[currentNumberConcept].title" />
+		<SectionConceptMain :title="conceptsInfo[currentConcept].title" />
 		<SectionPluses
-			:text1="conceptsInfo[currentNumberConcept].pluses[0]"
-			:text2="conceptsInfo[currentNumberConcept].pluses[1]"
-			:text3="conceptsInfo[currentNumberConcept].pluses[2]"
+			:text1="conceptsInfo[currentConcept].pluses[0]"
+			:text2="conceptsInfo[currentConcept].pluses[1]"
+			:text3="conceptsInfo[currentConcept].pluses[2]"
 		/>
 		<SectionInfo />
 		<SectionPreview
-			:title="conceptsInfo[currentNumberConcept].preview.title"
-			:text="conceptsInfo[currentNumberConcept].preview.text"
+			:title="conceptsInfo[currentConcept].preview.title"
+			:text="conceptsInfo[currentConcept].preview.text"
 		/>
 	</ViewWrapper>
 </template>
