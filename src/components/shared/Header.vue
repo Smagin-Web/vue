@@ -7,6 +7,7 @@ import HeaderSocialLink from './HeaderSocialLink.vue'
 import { ref } from 'vue'
 import HeaderNotify from './HeaderNotify.vue'
 import HeaderMobileMenu from './HeaderMobileMenu.vue'
+import HeaderBurgerIcon from './HeaderBurgerIcon.vue'
 
 const items = ref([
 	'+7 498 661-07-31',
@@ -41,7 +42,7 @@ const toggleMenu = () => {
 					</a>
 
 					<button type="button" class="burger-button" @click="toggleMenu">
-						<IconBurger class="burger-button-icon" />
+						<HeaderBurgerIcon :isActive="isOpenMenuMobile" />
 					</button>
 				</nav>
 			</div>
