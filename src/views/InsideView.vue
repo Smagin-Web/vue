@@ -36,18 +36,18 @@ import SectionPluses from '@/components/sections/main/section-pluses/SectionPlus
 		<SectionOffer />
 		<SectionResult />
 		<SectionProcedures />
-		<SectionRec />
-		<SectionMasters />
-		<SectionDevices />
-		<SectionStories />
-		<SectionOther />
-		<SectionTariff />
-		<SectionCircles />
-		<SectionReview />
+		<!-- <SectionRec /> -->
+		<!-- <SectionMasters /> -->
+		<!-- <SectionDevices /> -->
+		<!-- <SectionStories /> -->
+		<!-- <SectionOther /> -->
+		<!-- <SectionTariff /> -->
+		<!-- <SectionCircles /> -->
+		<!-- <SectionReview /> -->
 		<SectionHelp />
-		<SectionPlaces />
+		<!-- <SectionPlaces /> -->
 		<SectionBonus />
-		<SectionRead class="section-read" />
+		<!-- <SectionRead class="section-read" /> -->
 		<SectionFaq />
 	</ViewWrapper>
 </template>
