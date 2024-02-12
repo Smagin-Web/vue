@@ -26,6 +26,9 @@ currentNumberConcept.value = Number(
 			:text3="conceptsInfo[currentNumberConcept].pluses[2]"
 		/>
 		<SectionInfo />
-		<SectionPreview />
+		<SectionPreview
+			:title="conceptsInfo[currentNumberConcept].preview.title"
+			:text="conceptsInfo[currentNumberConcept].preview.text"
+		/>
 	</ViewWrapper>
 </template>
