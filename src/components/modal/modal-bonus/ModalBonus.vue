@@ -22,8 +22,8 @@ const props = defineProps(['isActive', 'onClose'])
 				<input />
 			</form>
 			<MButtonBig class="modal-button">Отправить заявку</MButtonBig>
-			<p class="modal-agreement">
-				Нажимая кнопку «Отправить заявку», я соглашаюсь с политикой
+			<p class="text-mini modal-agreement">
+				Нажимая кнопку «Отправить заявку», я&nbsp;соглашаюсь с политикой
 				конфиденциальности
 			</p>
 			<p class="text-sm modal-text-socials">
@@ -108,7 +108,7 @@ const props = defineProps(['isActive', 'onClose'])
 }
 
 .modal-agreement {
-	max-width: 325px;
+	max-width: 360px;
 	margin: 0 auto;
 
 	text-align: center;
