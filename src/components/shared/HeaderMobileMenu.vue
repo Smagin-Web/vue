@@ -49,7 +49,7 @@ const props = defineProps(['isActive'])
 
 	background-color: #ede4da;
 	border-radius: 0 0 40px 40px;
-	padding: 13px 20px;
+	padding: 13px 20px 40px;
 	z-index: 20;
 
 	transition: 0.2s;
@@ -82,5 +82,6 @@ const props = defineProps(['isActive'])
 	display: flex;
 	gap: 30px;
 	padding-top: 50px;
+  align-items: center;
 }
 </style>
