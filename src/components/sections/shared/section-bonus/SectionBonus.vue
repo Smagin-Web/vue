@@ -15,7 +15,7 @@ import SectionBonusPicture from './SectionBonusPicture.vue'
 						Сделайте приятный сюрприз близкому человеку
 					</h5>
 					<SectionBonusList class="card-list" />
-					<MButtonBig>Купить сертификат</MButtonBig>
+					<MButtonBig>Оформить сертификат</MButtonBig>
 				</div>
 				<SectionBonusPicture class="card-picture" />
 			</div>
@@ -72,7 +72,7 @@ import SectionBonusPicture from './SectionBonusPicture.vue'
 	background: #b2977b;
 
 	color: #fff;
-
+	line-height: 76px;
 	font-family: 'UABrand';
 	font-size: 48px;
 	font-weight: 700;

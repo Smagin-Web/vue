@@ -1,12 +1,20 @@
 <script setup lang="ts">
 import IconMessage from '../icons/IconMessage.vue'
+
+const props = defineProps(['openModal'])
 </script>
 
 <template>
 	<div class="buttons-fixed">
 		<div class="background" />
-		<button class="button-one">Запись на приём</button>
+		<button class="button-one" @click="props.openModal">Запись на приём</button>
 		<button class="button-two">
+			<a
+				href="https://wa.me/79774122010"
+				class="button-two-link"
+				target="_blank"
+				rel="noopener noreferrer"
+			/>
 			<IconMessage class="button-icon" />
 		</button>
 	</div>
@@ -48,6 +56,7 @@ import IconMessage from '../icons/IconMessage.vue'
 }
 
 .button-two {
+	position: relative;
 	height: 80px;
 	width: 80px;
 
@@ -58,6 +67,14 @@ import IconMessage from '../icons/IconMessage.vue'
 	border-radius: 50%;
 	background: #81cca4;
 	border: none;
+}
+
+.button-two-link {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
 }
 
 .button-two:hover {

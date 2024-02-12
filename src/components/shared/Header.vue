@@ -2,32 +2,32 @@
 <script setup lang="ts">
 import MContainer from '../shared/MContainer.vue'
 import Logo from './Logo.vue'
-import HeaderSocialLink from './HeaderSocialLink.vue'
+// import HeaderSocialLink from './HeaderSocialLink.vue'
 import { ref } from 'vue'
-import HeaderNotify from './HeaderNotify.vue'
+// import HeaderNotify from './HeaderNotify.vue'
 import HeaderMobileMenu from './HeaderMobileMenu.vue'
 import HeaderBurgerIcon from './HeaderBurgerIcon.vue'
 
 const items = [
 	{
-		text: '+7 498 661-07-31',
-		link: 'tel:+74986610731'
+		text: '+7 495 291-35-78',
+		link: 'tel:+74952913578'
+	},
+	{
+		text: 'О клинике',
+		link: '/about'
 	},
 	{
 		text: 'Концепты',
 		link: '/concepts'
 	},
 	{
-		text: 'Процедуры',
-		link: '/procedures'
-	},
-	{
-		text: 'Аппараты',
-		link: '/devices'
-	},
-	{
 		text: 'Цены',
 		link: '/prices'
+	},
+	{
+		text: 'Контакты',
+		link: '/contacts'
 	}
 ]
 
@@ -47,13 +47,13 @@ const toggleMenu = () => {
 	<header class="header">
 		<HeaderMobileMenu :isActive="isOpenMenuMobile" />
 
-		<HeaderNotify />
+		<!-- <HeaderNotify /> -->
 
 		<MContainer>
 			<div class="header-flex">
 				<div class="header-flex-left">
 					<Logo />
-					<HeaderSocialLink class="socials" />
+					<!-- <HeaderSocialLink class="socials" /> -->
 				</div>
 				<nav class="header-nav">
 					<a
@@ -115,6 +115,7 @@ const toggleMenu = () => {
 }
 
 .burger-button {
+	display: none;
 	background: none;
 	border: none;
 	position: relative;
@@ -137,7 +138,7 @@ const toggleMenu = () => {
 	}
 }
 
-@media screen and (max-width: 1480px) {
+@media (max-width: 1480px) {
 	.header-nav .header-nav-item:first-child {
 		padding-right: 16px;
 	}
@@ -147,33 +148,34 @@ const toggleMenu = () => {
 	}
 }
 
-@media screen and (max-width: 1340px) {
+@media (max-width: 1340px) {
 	.socials {
 		display: none;
 	}
 }
 
-@media screen and (max-width: 1280px) {
+@media (max-width: 1280px) {
 	.header-nav-item-link {
 		font-size: 14px;
 	}
 }
 
-@media screen and (max-width: 1080px) {
+@media (max-width: 1080px) {
 	.header-nav .header-nav-item:first-child {
 		padding-right: 0;
 	}
-
 	.header-nav {
 		gap: 20px;
 	}
 }
 
-@media screen and (max-width: 1000px) {
+@media (max-width: 1000px) {
+	.burger-button {
+		display: block;
+	}
 	.header-nav-item-link {
 		display: none;
 	}
-
 	.header-flex {
 		padding: 12px 0 10px;
 	}

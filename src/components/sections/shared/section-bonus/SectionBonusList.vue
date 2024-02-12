@@ -9,8 +9,7 @@ import IconCheck from './IconCheck.vue'
 				<IconCheck />
 			</span>
 			<h6 class="list-text">
-				Номинал при покупке на&nbsp;сайте:
-				от&nbsp;5&nbsp;000₽&nbsp;до&nbsp;50&nbsp;000₽
+				Любой номинал сертификата при покупке на&nbsp;сайте
 			</h6>
 		</li>
 
@@ -18,14 +17,14 @@ import IconCheck from './IconCheck.vue'
 			<span class="list-icon">
 				<IconCheck />
 			</span>
-			<h6 class="list-text">Сертификат действует бессрочно</h6>
+			<h6 class="list-text">Сертификат действует 6&nbsp;месяцев</h6>
 		</li>
 
 		<li class="list-item">
 			<span class="list-icon">
 				<IconCheck />
 			</span>
-			<h6 class="list-text">Можно использовать на любую услугу</h6>
+			<h6 class="list-text">Можно использовать на&nbsp;любую услугу или товар</h6>
 		</li>
 	</ul>
 </template>
@@ -98,22 +97,21 @@ import IconCheck from './IconCheck.vue'
 
 	.list-text {
 		max-width: auto;
-    height: auto;
-    font-size: 18px;
+		height: auto;
+		font-size: 18px;
 	}
 
-  .list-item {
-    align-items: start;
-  }
+	.list-item {
+		align-items: start;
+	}
 }
 
-
 @media (max-width: 450px) {
-  .list-text {
-    font-size: 16px;
-  }
-  .list-item {
-    gap: 8px
-  }
+	.list-text {
+		font-size: 16px;
+	}
+	.list-item {
+		gap: 8px;
+	}
 }
 </style>

@@ -19,11 +19,21 @@ import CardShadow from './CardShadow.vue'
 							Мы открыты, и на связи в любое разумное время.
 						</h6>
 						<div class="card-buttons">
-							<a class="button-link button-link-tg" href="#">
+							<a
+								class="button-link button-link-tg"
+								href="https://wa.me/79774122010"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
 								Написать в Телеграм
 								<IconTelegram2 />
 							</a>
-							<a class="button-link button-link-wa" href="#">
+							<a
+								class="button-link button-link-wa"
+								href="https://t.me/FaceConcept_bot"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
 								Написать в WhatsApp
 								<IconWhatsApp2 />
 							</a>

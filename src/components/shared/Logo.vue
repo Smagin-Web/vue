@@ -5,7 +5,7 @@ import IconLogo from '../icons/IconLogo.vue'
 
 <template>
 	<div>
-		<a href="#">
+		<a href="/">
 			<IconLogo class="logo-icon" />
 		</a>
 	</div>

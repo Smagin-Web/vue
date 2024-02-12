@@ -3,6 +3,19 @@ import { ref } from 'vue'
 import ButtonFixed from './buttons/ButtonFixed.vue'
 import Header from './shared/Header.vue'
 import Footer from './shared/Footer.vue'
+import ModalBonus from './modal/modal-bonus/ModalBonus.vue';
+
+const isActiveModal = ref(false)
+
+const openModal = () => {
+	document.body.style.overflow = 'hidden'
+	isActiveModal.value = true
+}
+
+const closeModal = () => {
+	document.body.style.overflow = 'auto'
+	isActiveModal.value = false
+}
 
 const headerStyles = ref('display: block')
 
@@ -23,10 +36,12 @@ const handleScroll = (event: WheelEvent) => {
 		class="page-wrapper"
 		:class="{ 'modal-open': isModalOpen }"
 	>
-		<ButtonFixed />
+		<ButtonFixed :openModal="openModal" />
 		<Header :style="headerStyles" />
 		<slot />
 		<Footer />
+
+		<ModalBonus :isActive="isActiveModal" :onClose="closeModal" />
 	</div>
 </template>
 
