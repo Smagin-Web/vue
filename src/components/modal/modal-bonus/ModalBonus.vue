@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import MButtonBig from '@/components/buttons/MButtonBig.vue'
+import MInput from '@/components/form/input/MInput.vue'
 import CloseIcon from './CloseIcon.vue'
 
 const props = defineProps(['isActive', 'onClose'])
@@ -18,8 +19,8 @@ const props = defineProps(['isActive', 'onClose'])
 				свяжется с тобой, чтобы назначить визит в удобное для тебя время.
 			</p>
 			<form class="modal-form">
-				<input />
-				<input />
+				<MInput placeholder="Имя" />
+				<MInput placeholder="Телефон" />
 			</form>
 			<MButtonBig class="modal-button">Отправить заявку</MButtonBig>
 			<p class="text-mini modal-agreement">
@@ -88,6 +89,10 @@ const props = defineProps(['isActive', 'onClose'])
 	right: 0;
 
 	transform: translateX(20%) translateY(-20%);
+}
+
+.close-button:hover {
+	opacity: 1;
 }
 
 .modal-title {
