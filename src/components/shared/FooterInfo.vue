@@ -10,12 +10,12 @@ import IconAge18 from '../icons/IconAge18.vue'
 				ООО&nbsp;«Центр&nbsp;косметологии&nbsp;FACE&nbsp;CONCEPT»
 				<br />
 				<br class="spacing-sm" />
-				<a href="#" class="footer-link">
+				<a class="footer-link">
 					Лицензия №&nbsp;ЛО-50-01-010568&nbsp;от&nbsp;05.02.2019
 				</a>
 			</p>
 			<p class="footer-info-text footer-info-width-limit">
-				<a href="#" class="footer-link">
+				<a href="/policy" class="footer-link">
 					Политика по обработке персональных данных
 				</a>
 			</p>
