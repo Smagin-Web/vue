@@ -1,13 +1,38 @@
 <script setup lang="ts">
+'use strict'
+
 import MButtonBig from '@/components/buttons/MButtonBig.vue'
-import MInput from '@/components/form/input/MInput.vue'
 import CloseIcon from './CloseIcon.vue'
+import { reactive } from 'vue'
+import emailjs from 'emailjs-com'
+
+emailjs.init('uWrvoY8ZWXv7j-g9-')
 
 const props = defineProps(['isActive', 'onClose'])
+
+const dataObject = reactive({
+	user_name: '',
+	user_phone: ''
+})
+
+const sendEmail = () => {
+	emailjs.send('service_03ipejb', 'template_032l0us', dataObject).then(
+		response => {
+			console.log('SUCCESS!', response.status, response.text)
+		},
+		error => {
+			console.log('FAILED...', error)
+		}
+	)
+}
 </script>
 
 <template>
-	<div v-if="props.isActive" class="modal-wrapper">
+	<div
+		v-show="props.isActive"
+		@submit.prevent.stop="sendEmail"
+		class="modal-wrapper"
+	>
 		<div class="modal">
 			<button class="close-button" @click="onClose">
 				<CloseIcon class="close-button-icon" />
@@ -18,11 +43,33 @@ const props = defineProps(['isActive', 'onClose'])
 				Заполни форму — всё остальное наш администратор берёт на себя. Он быстро
 				свяжется с тобой, чтобы назначить визит в удобное для тебя время.
 			</p>
-			<form class="modal-form">
-				<MInput placeholder="Имя" />
-				<MInput placeholder="Телефон" />
+			<form
+				method="POST"
+				class="modal-form"
+				id="form_modal_bonus"
+				ref="formRef"
+			>
+				<input
+					class="minput"
+					type="text"
+					placeholder="Имя"
+					name="user_name"
+					v-model="dataObject.user_name"
+				/>
+
+				<input
+					class="minput"
+					type="text"
+					placeholder="Телефон"
+					name="user_phone"
+					v-model="dataObject.user_phone"
+				/>
+
+				<MButtonBig type="submit" class="modal-button">
+					Отправить заявку
+				</MButtonBig>
 			</form>
-			<MButtonBig class="modal-button">Отправить заявку</MButtonBig>
+
 			<p class="text-mini modal-agreement">
 				Нажимая кнопку «Отправить заявку», я&nbsp;соглашаюсь с политикой
 				конфиденциальности
@@ -55,8 +102,9 @@ const props = defineProps(['isActive', 'onClose'])
 <style scoped>
 .modal-wrapper {
 	display: flex;
-	align-items: center;
 	justify-content: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
 
 	position: fixed;
 	top: 0;
@@ -66,8 +114,10 @@ const props = defineProps(['isActive', 'onClose'])
 	z-index: 100;
 
 	background: rgba(0, 0, 0, 0.3);
+	overflow: auto;
 }
 .modal {
+	height: fit-content;
 	position: relative;
 	max-width: 700px;
 	background-color: #ede4da;
@@ -77,7 +127,6 @@ const props = defineProps(['isActive', 'onClose'])
 	padding-bottom: 50px;
 	padding-left: 60px;
 	padding-right: 60px;
-	max-height: 97vh;
 }
 
 .close-button {
@@ -109,7 +158,7 @@ const props = defineProps(['isActive', 'onClose'])
 	display: flex;
 	flex-direction: column;
 	gap: 30px;
-	padding-bottom: 50px;
+	padding-bottom: 30px;
 }
 
 .modal-agreement {
@@ -117,13 +166,13 @@ const props = defineProps(['isActive', 'onClose'])
 	margin: 0 auto;
 
 	text-align: center;
-	padding-top: 30px;
 	padding-bottom: 50px;
 }
 
 .modal-button {
 	width: 100%;
 	max-width: 100%;
+	margin-top: 30px;
 }
 
 .modal-text-socials {

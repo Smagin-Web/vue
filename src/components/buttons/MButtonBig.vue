@@ -1,5 +1,9 @@
+<script setup lang="ts">
+const props = defineProps(['type'])
+</script>
+
 <template>
-	<button class="main-button"><slot></slot></button>
+	<button class="main-button" :type="props.type"><slot></slot></button>
 </template>
 
 <style scoped>

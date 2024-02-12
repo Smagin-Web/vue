@@ -1,5 +1,6 @@
 @import './base.css';
 @import './fonts.css';
+@import './input.css';
 
 #app {
 	background-color: #f4eee8;
