@@ -1,15 +1,24 @@
 <script setup lang="ts">
 import MContainer from '@/components/shared/MContainer.vue'
+
+const props = defineProps({
+	title: {
+		type: String,
+		default: 'Мы разработали продукт — AntiAcne Concept'
+	},
+	text: {
+		type: String,
+		default:
+			'Задачей которого является эффективное лечение заболевания Акне первой, второй и третьей степен'
+	}
+})
 </script>
 
 <template>
 	<section class="section-preview">
 		<MContainer>
-			<h3 class="heading">Мы разработали продукт&nbsp;— AntiAcne Concept</h3>
-			<h4 class="heading-2">
-				Задачей которого является эффективное лечение заболевания Акне первой,
-				второй и&nbsp;третьей степен
-			</h4>
+			<h3 class="heading" v-text="props.title" />
+			<h4 class="heading-2" v-text="props.text" />
 		</MContainer>
 	</section>
 </template>

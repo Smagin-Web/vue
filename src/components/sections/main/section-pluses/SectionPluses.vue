@@ -33,7 +33,10 @@ onUnmounted(() => {
 })
 
 defineProps<{
-	moreText?: string;
+	moreText?: string
+	text1?: string
+	text2?: string
+	text3?: string
 }>()
 </script>
 
@@ -41,13 +44,19 @@ defineProps<{
 	<section class="section-pluses">
 		<MContainer>
 			<div class="cards">
-				<SectionPlusesPicture1 :style="parallaxStyle" style="transition: 1s" />
+				<SectionPlusesPicture1
+					:text="text1"
+					:style="parallaxStyle"
+					style="transition: 1s"
+				/>
 				<SectionPlusesPicture2
+					:text="text2"
 					:more-text="moreText"
 					:style="parallaxStyle2"
 					style="transition: 1s"
 				/>
 				<SectionPlusesPicture3
+					:text="text2"
 					:style="parallaxStyle3"
 					style="transition: 1s"
 					class="picture-3"

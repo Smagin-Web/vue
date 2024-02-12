@@ -1,30 +1,26 @@
 <script setup lang="ts">
 import PicturePluses3 from '../../../icons/PicturePluses3.vue'
-import SectionPlusesPictureText from './SectionPlusesPictureText.vue'
+import PlusesText from './PlusesText.vue'
 import SectionPlusesShadow from './SectionPlusesShadow.vue'
+import SvgBg3 from './svg/SvgBg3.vue'
+
+const props = defineProps({
+	text: {
+		type: String,
+		default: 'Своё закрытое сообщество, где делимся секретами молодости'
+	}
+})
 </script>
 
 <template>
 	<div class="card">
 		<SectionPlusesShadow class="card-shadow" />
+
 		<div class="wrapper">
-			<svg
-				width="100%"
-				viewBox="0 0 544 466"
-				fill="none"
-				xmlns="http://www.w3.org/2000/svg"
-			>
-				<path
-					d="M0 20C0 8.9543 8.95431 0 20 0H394C476.843 0 544 67.1573 544 150V446C544 457.046 535.046 466 524 466H150C67.1573 466 0 398.843 0 316V20Z"
-					fill="#EDE4DA"
-				/>
-			</svg>
+			<SvgBg3 />
 			<PicturePluses3 class="picture" />
 			<div class="text-wrapper">
-				<SectionPlusesPictureText>
-					Своё&nbsp;закрытое&nbsp;сообщество, где&nbsp;делимся&nbsp;секретами
-					молодости
-				</SectionPlusesPictureText>
+				<PlusesText :text="props.text" />
 			</div>
 		</div>
 	</div>
@@ -59,6 +55,7 @@ import SectionPlusesShadow from './SectionPlusesShadow.vue'
 }
 
 .text-wrapper {
+	text-align: center;
 	position: absolute;
 	bottom: 0;
 	left: 0;

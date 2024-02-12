@@ -1,30 +1,29 @@
 <script setup lang="ts">
 import PicturePluses2 from '../../../icons/PicturePluses2.vue'
-import SectionPlusesPictureText from './SectionPlusesPictureText.vue'
+import PlusesText from './PlusesText.vue'
 import SectionPlusesShadow from './SectionPlusesShadow.vue'
-defineProps<{
-	moreText?: string
-}>()
+import SvgBg2 from './svg/SvgBg2.vue'
+
+const props = defineProps({
+	moreText: {
+		type: String,
+		default: ''
+	},
+	text: {
+		type: String,
+		default: 'Парк лицензированной аппаратной косметологии'
+	}
+})
 </script>
 
 <template>
 	<div class="card">
 		<SectionPlusesShadow class="card-shadow" />
 		<div class="wrapper">
-			<svg
-				width="100%"
-				viewBox="0 0 544 630"
-				fill="none"
-				xmlns="http://www.w3.org/2000/svg"
-			>
-				<rect width="544" height="630" rx="100" fill="#EDE4DA" />
-			</svg>
+			<SvgBg2 />
 			<PicturePluses2 class="picture" />
 			<div class="text-wrapper">
-				<SectionPlusesPictureText>
-					Парк&nbsp;лицензированной аппаратной&nbsp;косметологии
-					<span class="more-text" v-if="moreText">{{ moreText }}</span>
-				</SectionPlusesPictureText>
+				<PlusesText :text="props.text" :more="props.moreText" />
 			</div>
 		</div>
 	</div>
@@ -62,6 +61,7 @@ defineProps<{
 }
 
 .text-wrapper {
+	text-align: center;
 	position: absolute;
 	top: 0;
 	left: 0;
