@@ -12,14 +12,14 @@ const props = defineProps({
 
 <template>
 	<div class="sidebar">
-		<div class="link-group">
+		<!-- <div class="link-group">
 			<a href="#">
 				<h5 class="link-text">Все услуги</h5>
 			</a>
 			<a href="#">
 				<h5 class="link-text">Консультации</h5>
 			</a>
-		</div>
+		</div> -->
 
 		<h6 class="link-mini">Услуги по концептам</h6>
 
@@ -79,7 +79,6 @@ const props = defineProps({
 	color: #6d6364;
 	font-size: 16px;
 	padding-bottom: 34px;
-	padding-top: 80px;
 }
 
 .sidebar-badge {
