@@ -4,6 +4,59 @@ import BreadCrumbs from '@/components/shared/BreadCrumbs.vue'
 import PricesSidebar from './PricesSidebar.vue'
 import PricesCard from './PricesCard.vue'
 import PricesSidebarMobile from './PricesSidebarMobile.vue'
+import { ref } from 'vue'
+import {
+	antiacneConcept,
+	clearConcept,
+	detoxConcept,
+	liftingConcept,
+	brightConcept,
+	personalConcept,
+	allConcepts
+} from './const'
+import type { IPriceCard } from './const'
+
+export interface ICategory {
+	title: string
+	items: IPriceCard[]
+}
+
+const activeCategory = ref(1)
+
+const categories: ICategory[] = [
+	{
+		title: 'Все категории',
+		items: allConcepts
+	},
+	{
+		title: 'AntiAcne Concept',
+		items: antiacneConcept
+	},
+	{
+		title: 'Clear Concept',
+		items: clearConcept
+	},
+	{
+		title: 'Detox Concept',
+		items: detoxConcept
+	},
+	{
+		title: 'Lifting Concept',
+		items: liftingConcept
+	},
+	{
+		title: 'Bright Concept',
+		items: brightConcept
+	},
+	{
+		title: 'Personal Concept',
+		items: personalConcept
+	}
+]
+
+const setActiveCategory = (numberCategory: number) => {
+	activeCategory.value = numberCategory
+}
 </script>
 
 <template>
@@ -19,19 +72,22 @@ import PricesSidebarMobile from './PricesSidebarMobile.vue'
 				домашнего ухода и&nbsp;системную терапию.
 			</p>
 			<div class="workspace">
-				<PricesSidebar class="sidebar-lg" />
+				<PricesSidebar
+					class="sidebar-lg"
+					:itemsConcepts="categories"
+					:setActiveCategory="setActiveCategory"
+					:activeIndex="activeCategory"
+				/>
 				<PricesSidebarMobile class="sidebar-sm" />
 				<div class="cards">
-					<PricesCard />
-					<PricesCard />
-					<PricesCard />
-					<PricesCard />
-					<PricesCard />
-					<PricesCard />
-
-					<PricesCard />
-					<PricesCard />
-					<PricesCard />
+					<PricesCard
+						v-for="(item, index) in categories[activeCategory].items"
+						:key="index"
+						:price="item.price"
+						:time="item.time"
+						:title="item.text"
+						:tech="item.tech"
+					/>
 				</div>
 			</div>
 		</MContainer>

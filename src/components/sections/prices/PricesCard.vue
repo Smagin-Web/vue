@@ -1,5 +1,13 @@
 <script lang="ts" setup>
 import BadgeMd from '@/components/ui/BadgeMd.vue'
+
+const props = defineProps({
+	title: String,
+	price: String,
+	time: String,
+	tech: String
+})
+console.log(props.tech)
 </script>
 <template>
 	<div class="card">
@@ -13,26 +21,25 @@ import BadgeMd from '@/components/ui/BadgeMd.vue'
 				<div>
 					<p class="card-title">Наименование</p>
 					<h6 class="h-xs">
-						Ультразвуковой SMAS - лифтинг. Лицо полностью , включая подчелюстную
-						зону
+						{{ props.title }}
 					</h6>
 				</div>
 			</div>
 
 			<div>
 				<p class="card-title">Аппарат</p>
-				<h6 class="h-xs">Аппарат LIFTERA-A, Южная Корея</h6>
+				<h6 class="h-xs">{{ props.tech || '-' }}</h6>
 			</div>
 
 			<div class="card-info-group-3">
 				<div>
 					<p class="card-title">Время процедуры</p>
-					<h6 class="h-xs">120 мин</h6>
+					<h6 class="h-xs">{{ props.time }} мин</h6>
 				</div>
 
 				<div>
 					<p class="card-title">Стоимость</p>
-					<h6 class="h-xs">44 900₽</h6>
+					<h6 class="h-xs">{{ props.price }}₽</h6>
 				</div>
 			</div>
 		</div>
