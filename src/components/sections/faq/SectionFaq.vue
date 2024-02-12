@@ -86,7 +86,7 @@ const increment4 = () => {
 }
 
 .section-faq-search {
-	padding-bottom: 32px;
+	padding-bottom: 70px;
 }
 
 .heading {
@@ -105,6 +105,9 @@ const increment4 = () => {
 	}
 	.heading {
 		padding-bottom: 32px;
+	}
+	.section-faq-search {
+		padding-bottom: 40px;
 	}
 }
 </style>

@@ -6,6 +6,8 @@ import Footer from './shared/Footer.vue'
 
 const headerStyles = ref('display: block')
 
+const isModalOpen = ref(false)
+
 const handleScroll = (event: WheelEvent) => {
 	if (event.deltaY > 0) {
 		headerStyles.value = 'transform: translateY(-100%)'
@@ -16,7 +18,11 @@ const handleScroll = (event: WheelEvent) => {
 </script>
 
 <template>
-	<div @wheel="handleScroll" class="page-wrapper">
+	<div
+		@wheel="handleScroll"
+		class="page-wrapper"
+		:class="{ 'modal-open': isModalOpen }"
+	>
 		<ButtonFixed />
 		<Header :style="headerStyles" />
 		<slot />
@@ -27,6 +33,10 @@ const handleScroll = (event: WheelEvent) => {
 <style scoped>
 .page-wrapper {
 	padding-top: 194px;
+}
+
+.modal-open {
+	overflow: hidden;
 }
 
 @media (max-width: 1000px) {

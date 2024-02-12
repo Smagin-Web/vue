@@ -3,6 +3,8 @@ import MContainer from '@/components/shared/MContainer.vue'
 import MBadge from '../../../ui/MBadge.vue'
 import CardInsideOffer from '../../../cards/CardInsideOffer.vue'
 import SectionOfferList from './SectionOfferList.vue'
+
+const props = defineProps(['modalBonusOpen'])
 </script>
 
 <template>
@@ -24,7 +26,10 @@ import SectionOfferList from './SectionOfferList.vue'
 							<img src="./offer.png" class="image" />
 						</div>
 					</div>
-					<CardInsideOffer class="card-inside" />
+					<CardInsideOffer
+						class="card-inside"
+						:onClickMainButton="props.modalBonusOpen"
+					/>
 				</div>
 			</MContainer>
 		</div>

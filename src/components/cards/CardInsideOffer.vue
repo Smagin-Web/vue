@@ -2,6 +2,8 @@
 import MButtonOutline from '../buttons/MButtonOutline.vue'
 import MButton from '../buttons/MButton.vue'
 import CardInsideOfferPrice from './CardInsideOfferPrice.vue'
+
+const props = defineProps(['onClickMainButton'])
 </script>
 
 <template>
@@ -12,7 +14,7 @@ import CardInsideOfferPrice from './CardInsideOfferPrice.vue'
 			</h4>
 			<CardInsideOfferPrice class="prices" />
 			<div class="buttons">
-				<MButton>Записаться на приём</MButton>
+				<MButton @click="props.onClickMainButton">Записаться на приём</MButton>
 				<MButtonOutline>Задать вопрос</MButtonOutline>
 			</div>
 		</div>
