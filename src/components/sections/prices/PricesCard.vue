@@ -7,7 +7,7 @@ import BadgeMd from '@/components/ui/BadgeMd.vue'
 			<div class="card-info-group-1">
 				<div class="card-info-item-1">
 					<p class="card-title">Код услуги</p>
-					<h6 class="h-xs">А22.30.022</h6>
+					<h6 class="h-xs">-</h6>
 				</div>
 
 				<div>
@@ -51,6 +51,14 @@ import BadgeMd from '@/components/ui/BadgeMd.vue'
 </template>
 
 <style scoped>
+.badges {
+	display: none !important;
+}
+.buttons {
+	display: none !important;
+}
+/* Временно скрываем кнопки */
+
 .card {
 	position: relative;
 	overflow: hidden;
@@ -102,6 +110,7 @@ import BadgeMd from '@/components/ui/BadgeMd.vue'
 	color: #6d6364;
 	font-size: 16px;
 	padding-bottom: 10px;
+	white-space: nowrap;
 }
 
 .card-info {
@@ -188,8 +197,7 @@ import BadgeMd from '@/components/ui/BadgeMd.vue'
 @media (max-width: 700px) {
 	.button-accent,
 	.button-second {
-		font-size: 16px
-		;
+		font-size: 16px;
 	}
 }
 </style>

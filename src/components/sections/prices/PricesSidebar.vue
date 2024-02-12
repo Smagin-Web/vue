@@ -7,12 +7,6 @@
 			<a href="#">
 				<h5 class="link-text">Консультации</h5>
 			</a>
-			<a href="#">
-				<h5 class="link-text">Аппаратная косметология</h5>
-			</a>
-			<a href="#">
-				<h5 class="link-text">Инъекционная косметология</h5>
-			</a>
 		</div>
 
 		<h6 class="link-mini">Услуги по концептам</h6>
