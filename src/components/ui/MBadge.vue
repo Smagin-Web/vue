@@ -5,7 +5,7 @@
 <style scoped>
 .main-badge {
 	font-family: 'UABrand', sans-serif;
-	line-height: 48px;
+	line-height: 60px;
 	display: inline-block;
 	color: white;
 	background-color: #bfb0e9;

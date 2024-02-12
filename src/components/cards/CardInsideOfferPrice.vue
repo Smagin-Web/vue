@@ -3,9 +3,9 @@
 <template>
 	<div class="prices">
 		<div class="price-old-wrapper">
-			<h4 class="price-old">2 500₽</h4>
+			<h4 class="price-old">3 500₽</h4>
 		</div>
-		<h4 class="price-new">990₽</h4>
+		<h4 class="price-new">0₽</h4>
 	</div>
 </template>
 

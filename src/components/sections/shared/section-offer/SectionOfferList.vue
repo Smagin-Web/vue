@@ -9,7 +9,7 @@
 		<li class="list-item">
 			<span>2</span>
 			<h5 class="text-lg">
-				Пройди 5-ти минутную диагностику с&nbsp;помощью Antera&nbsp;3D
+				Пройди 30-ти минутную диагностику с&nbsp;помощью JANUS PRO
 			</h5>
 		</li>
 		<li class="list-item">

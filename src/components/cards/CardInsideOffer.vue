@@ -10,7 +10,7 @@ const props = defineProps(['onClickMainButton'])
 	<div class="card-inside">
 		<div>
 			<h4 class="heading">
-				Первичный приём врача&nbsp;дерматолога&nbsp;+<br />диагностика&nbsp;Antera&nbsp;3D
+				Первичный приём врача&nbsp;дерматолога&nbsp;+<br />диагностика&nbsp;JANUS&nbsp;PRO
 			</h4>
 			<CardInsideOfferPrice class="prices" />
 			<div class="buttons">
