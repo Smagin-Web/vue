@@ -6,7 +6,7 @@ import IconAge18 from '../icons/IconAge18.vue'
 	<div class="footer-info">
 		<div class="footer-info-left">
 			<p class="footer-info-text">
-				Copyright&nbsp;©&nbsp;2019-2023.
+				Copyright&nbsp;©&nbsp;2019-2024.
 				ООО&nbsp;«Центр&nbsp;косметологии&nbsp;FACE&nbsp;CONCEPT»
 				<br />
 				<br class="spacing-sm" />

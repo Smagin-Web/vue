@@ -5,24 +5,26 @@ import FooterSocials from './FooterSocials.vue'
 
 <template>
 	<div class="footer-nav">
-		<div class="footer-nav-only-lg" v-for="(item, index) in items" :key="index">
-			<h5 class="footer-nav-title">
-				{{ item.title }}
-			</h5>
-			<a
-				v-for="(link, index) in item.links"
-				:key="index"
-				:href="link.href"
-				class="footer-nav-link"
-			>
-				{{ link.text }}
-			</a>
+		<div class="footer-nav-left">
+			<div v-for="(item, index) in items" :key="index">
+				<h5 class="footer-nav-title">
+					{{ item.title }}
+				</h5>
+				<a
+					v-for="(link, index) in item.links"
+					:key="index"
+					:href="link.href"
+					class="footer-nav-link"
+				>
+					{{ link.text }}
+				</a>
+			</div>
 		</div>
 
-		<div>
+		<div class="footer-nav-right">
 			<h5 class="footer-nav-title">Контакты</h5>
-			<a class="footer-nav-link">+7 498 661-07-31</a>
-			<a class="footer-nav-link">+7 925 726-71-81</a>
+			<a class="footer-nav-link" href="tel:+74952913578">+7 495 291-35-78</a>
+			<a class="footer-nav-link" href="tel:+79774122010">+7 977 412-20-10</a>
 			<a class="footer-nav-link">hello@faceconcept.ru</a>
 			<a class="footer-nav-link footer-nav-link-address">
 				Москва, Красноказарменная 14А, корпус 6
@@ -41,59 +43,38 @@ export default {
 		return {
 			items: [
 				{
-					title: 'Услуги',
+					title: 'Концепы',
 					links: [
 						{
-							text: 'Процедуры',
+							text: 'AntiAcne Concept',
 							href: '#'
 						},
 						{
-							text: 'Консультации',
+							text: 'Clear Concept',
 							href: '#'
 						},
 						{
-							text: 'Запись',
+							text: 'Detox Concept',
 							href: '#'
 						},
 						{
-							text: 'Процедуры',
+							text: 'Lifting Concept',
 							href: '#'
 						},
 						{
-							text: 'Консультации',
+							text: 'Brigth Concept',
 							href: '#'
 						},
 						{
-							text: 'Запись',
-							href: '#'
-						}
-					]
-				},
-				{
-					title: 'О Центре',
-					links: [
-						{
-							text: 'Процедуры',
+							text: 'Hydro Concept',
 							href: '#'
 						},
 						{
-							text: 'Консультации',
+							text: 'Red Concept',
 							href: '#'
 						},
 						{
-							text: 'Запись',
-							href: '#'
-						},
-						{
-							text: 'Процедуры',
-							href: '#'
-						},
-						{
-							text: 'Консультации',
-							href: '#'
-						},
-						{
-							text: 'Запись',
+							text: 'Personal  Concept',
 							href: '#'
 						}
 					]
@@ -102,27 +83,15 @@ export default {
 					title: 'Клиентам',
 					links: [
 						{
-							text: 'Процедуры',
+							text: 'О клинике',
 							href: '#'
 						},
 						{
-							text: 'Консультации',
+							text: 'Цены',
 							href: '#'
 						},
 						{
-							text: 'Запись',
-							href: '#'
-						},
-						{
-							text: 'Процедуры',
-							href: '#'
-						},
-						{
-							text: 'Консультации',
-							href: '#'
-						},
-						{
-							text: 'Запись',
+							text: 'Контакты',
 							href: '#'
 						}
 					]
@@ -135,10 +104,20 @@ export default {
 
 <style scoped>
 .footer-nav {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	gap: 20px;
-	padding-bottom: 70px;
+	display: flex;
+	justify-content: space-between;
+	gap: 32px;
+	padding-bottom: 60px;
+}
+
+.footer-nav-left {
+	display: flex;
+	justify-content: space-between;
+	width: 700px;
+}
+
+.footer-nav-right {
+	max-width: 550px;
 }
 
 .footer-nav-title {
@@ -169,10 +148,6 @@ export default {
 }
 
 @media (max-width: 1500px) {
-	.footer-nav-only-lg {
-		display: none;
-	}
-
 	.footer-nav-title {
 		color: #000;
 		font-family: 'Pelinka';
@@ -190,6 +165,35 @@ export default {
 
 	.footer-nav-link-address {
 		font-size: 17px;
+	}
+}
+
+@media (max-width: 1600px) {
+	.footer-nav-left {
+		width: 550px;
+	}
+}
+
+@media (max-width: 1250px) {
+	.footer-nav-left {
+		width: 410px;
+	}
+	.footer-nav-right {
+		width: 400px;
+	}
+	.footer-nav-link {
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 1000px) {
+	.footer-nav-left {
+		display: none;
+	}
+	.footer-nav-right {
+		width: 100%;
+		max-width: 480px;
+		margin: 0 auto;
 	}
 }
 

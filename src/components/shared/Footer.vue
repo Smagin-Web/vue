@@ -29,19 +29,7 @@ export default {
 					title: 'Услуги',
 					links: [
 						{
-							text: 'Процедуры',
-							href: '#'
-						},
-						{
-							text: 'Консультации',
-							href: '#'
-						},
-						{
 							text: 'Запись',
-							href: '#'
-						},
-						{
-							text: 'Процедуры',
 							href: '#'
 						},
 						{
@@ -142,5 +130,4 @@ export default {
 		display: none;
 	}
 }
-
 </style>

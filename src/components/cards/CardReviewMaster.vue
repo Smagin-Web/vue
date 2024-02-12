@@ -31,7 +31,7 @@ defineProps<{
 					<div class="card-badges">
 						<p class="card-calendar-badge">
 							<IconCalendar />
-							<span class="text-sm">15.05.2023</span>
+							<span class="text-sm">15.05.2024</span>
 						</p>
 						<IconYandexLocation v-if="badge === 'yandex'" />
 						<IconLocation2Gis v-if="badge === '2gis'" />

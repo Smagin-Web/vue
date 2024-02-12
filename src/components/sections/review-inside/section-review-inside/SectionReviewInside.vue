@@ -47,7 +47,7 @@ import IconText2 from './IconText2.vue'
 
 						<p class="card-badge">
 							<IconCalendar />
-							<span class="text-sm">15.05.2023</span>
+							<span class="text-sm">15.05.2024</span>
 						</p>
 					</div>
 					<p class="text-sm card-text">

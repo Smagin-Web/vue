@@ -18,7 +18,7 @@ const props = defineProps(['isArticle', 'isNews'])
 			<div class="card-head-info">
 				<div class="card-head-info-date">
 					<IconNew />
-					<span class="card-date-text">15.05.2023</span>
+					<span class="card-date-text">15.05.2024</span>
 				</div>
 				<ButtonDecor class="card-tag" v-if="props.isNews">Новость</ButtonDecor>
 				<ButtonDecor class="card-tag" v-if="props.isArticle">

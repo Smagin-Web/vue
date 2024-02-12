@@ -12,16 +12,46 @@ import IconGooglePlay from '../icons/IconGooglePlay.vue'
 <template>
 	<div class="footer-socials">
 		<div class="footer-socials-icons">
-			<a href="#"><IconTelegram /></a>
-			<a href="#"><IconWhatsapp /></a>
-			<a href="#"><IconVk /></a>
-			<a href="#"><IconInstagram /></a>
-			<a href="#"><IconYoutube /></a>
+			<a
+				href="https://t.me/faceconceptru"
+				target="_blank"
+				rel="noopener noreferrer"
+			>
+				<IconTelegram />
+			</a>
+			<a
+				href="https://wa.me/79774122010"
+				target="_blank"
+				rel="noopener noreferrer"
+			>
+				<IconWhatsapp />
+			</a>
+			<a
+				href="https://vk.com/face_concept"
+				target="_blank"
+				rel="noopener noreferrer"
+			>
+				<IconVk />
+			</a>
+			<a
+				href="https://www.instagram.com/face_concept_ru/"
+				target="_blank"
+				rel="noopener noreferrer"
+			>
+				<IconInstagram />
+			</a>
+			<a
+				href="https://www.youtube.com/@FaceConceptru"
+				target="_blank"
+				rel="noopener noreferrer"
+			>
+				<IconYoutube />
+			</a>
 		</div>
-		<div class="footer-socials-stores">
+		<!-- <div class="footer-socials-stores">
 			<a href="#"><IconAppStore /></a>
 			<a href="#"><IconGooglePlay /></a>
-		</div>
+		</div> -->
 	</div>
 </template>
 
@@ -48,6 +78,7 @@ import IconGooglePlay from '../icons/IconGooglePlay.vue'
 		max-width: 100%;
 	}
 	.footer-socials-icons {
+		width: 100%;
 		gap: 0;
 		max-width: 100%;
 	}
