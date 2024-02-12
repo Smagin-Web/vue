@@ -1,17 +1,17 @@
 <script setup lang="ts">
-import IconEmblem from './IconEmblem.vue'
-import IconArrow from './IconArrow.vue'
-import IconPlay from '@/components/icons/IconPlay.vue'
+// import IconEmblem from './IconEmblem.vue'
+// import IconArrow from './IconArrow.vue'
+// import IconPlay from '@/components/icons/IconPlay.vue'
 </script>
 
 <template>
 	<div class="content-clinic-right">
 		<div class="content-photo-wrapper">
 			<img src="./photo.png" alt="" class="content-photo" />
-			<IconPlay class="content-photo-icon" />
+			<!-- <IconPlay class="content-photo-icon" /> -->
 		</div>
-		<IconEmblem class="content-emblem" />
-		<IconArrow class="content-arrow" />
+		<!-- <IconEmblem class="content-emblem" /> -->
+		<!-- <IconArrow class="content-arrow" /> -->
 	</div>
 </template>
 

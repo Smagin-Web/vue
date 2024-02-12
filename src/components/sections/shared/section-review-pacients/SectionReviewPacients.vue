@@ -20,10 +20,10 @@ import ButtonLink from '@/components/buttons/ButtonLink.vue'
 					<PictureReviews />
 				</div>
 			</div>
-			<div class="buttons">
+			<!-- <div class="buttons">
 				<MButtonBig class="button-big">Перейти к отзывам</MButtonBig>
 				<ButtonLink>Оставить отзыв</ButtonLink>
-			</div>
+			</div> -->
 		</MContainer>
 	</section>
 </template>

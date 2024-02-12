@@ -2,12 +2,30 @@
 import SectionLegalListIcon from './SectionLegalListIcon.vue'
 
 const listItems = [
-	'График приема пациентов главным врачом',
-	'Контролирующие органы',
-	'ОГРН Свидетельство о постановке на учет',
-	'Сведения и документы медицинской организации',
-	'О правилах предоставления платных медицинских услуг',
-	'Правила внутреннего распорядка для потребителей медицинских услуг в ООО "ФЭЙС КОНЦЕПТ"'
+	{
+		text: 'График приема пациентов главным врачом',
+		link: 'https://disk.yandex.ru/d/aSRmQUFEkbPquA'
+	},
+	{
+		text: 'Контролирующие органы',
+		link: 'https://disk.yandex.ru/d/e137aupCHHAMkA'
+	},
+	{
+		text: 'ОГРН Свидетельство о постановке на учет',
+		link: 'https://disk.yandex.ru/d/U1AevBRRwPGPHA'
+	},
+	{
+		text: 'Сведения и документы медицинской организации',
+		link: 'https://disk.yandex.ru/d/6YnHNOny3_gMNQ'
+	},
+	{
+		text: 'О правилах предоставления платных медицинских услуг',
+		link: 'https://disk.yandex.ru/i/8VtAMbp7gRp2bA'
+	},
+	{
+		text: 'Правила внутреннего распорядка для потребителей медицинских услуг в ООО "ФЭЙС КОНЦЕПТ"',
+		link: 'https://disk.yandex.ru/d/FhuHmKyynNsOEA'
+	}
 ]
 </script>
 
@@ -16,11 +34,17 @@ const listItems = [
 		<div class="section-legal-list">
 			<div
 				v-for="(item, index) in listItems"
-				:key="item + index"
+				:key="item.text + index"
 				class="section-legal-list-item"
 			>
+				<a
+					:href="item.link"
+					class="section-legal-link"
+					target="_blank"
+					rel="noopener noreferrer"
+				/>
 				<SectionLegalListIcon class="section-legal-icon-document" />
-				<p class="text-sm">{{ item }}</p>
+				<p class="text-sm">{{ item.text }}</p>
 			</div>
 		</div>
 
@@ -34,11 +58,23 @@ const listItems = [
 					региональных программ гарантий бесплатного оказания гражданам
 					медицинской помощи.
 				</p>
-				<p class="text-sm" style="padding-top: 10px">
+				<p class="text-sm" style="padding-top: 10px; position: relative">
+					<a
+						href="https://disk.yandex.ru/d/k5gZiEwD6BEtqA"
+						class="section-legal-link"
+						target="_blank"
+						rel="noopener noreferrer"
+					/>
 					— Программы государственных гарантий бесплатного оказания гражданам
 					медицинской помощи
 				</p>
-				<p class="text-sm">
+				<p class="text-sm" style="position: relative">
+					<a
+						href="https://disk.yandex.ru/i/-j6lfE9VY-97rg"
+						class="section-legal-link"
+						target="_blank"
+						rel="noopener noreferrer"
+					/>
 					— Территориальные программы государственных гарантий бесплатного
 					оказания гражданам медицинской помощи
 				</p>
@@ -62,6 +98,22 @@ const listItems = [
 
 .section-legal-footer {
 	padding-top: 30px;
+}
+
+.section-legal-list-item {
+	position: relative;
+}
+
+.section-legal-link {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+
+.section-legal-list-item:hover svg {
+	opacity: 0.6;
 }
 
 @media (max-width: 1500px) {
