@@ -60,7 +60,6 @@ const props = defineProps([
 .card-button {
 	position: absolute;
 	bottom: 50px;
-	right: 50%;
 }
 
 @media (max-width: 1600px) {
