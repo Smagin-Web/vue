@@ -7,7 +7,8 @@ export const dataSlides: any[] = [
 		badgeNumber: '01.',
 		badgeName: 'AntiAcne Concept',
 		badgeColor: '#ce99ab',
-		iconSrc: './icon1.svg'
+		iconSrc: './icon1.svg',
+		link: '/concept/antiacne'
 	},
 	{
 		title:
@@ -18,7 +19,8 @@ export const dataSlides: any[] = [
 		badgeNumber: '02.',
 		badgeName: 'Clear Concept',
 		badgeColor: '#8AC8D7',
-		iconSrc: './icon2.svg'
+		iconSrc: './icon2.svg',
+		link: '/concept/clear'
 	},
 
 	// detox
@@ -32,7 +34,8 @@ export const dataSlides: any[] = [
 		badgeNumber: '03.',
 		badgeName: 'Detox Concept',
 		badgeColor: '#A7CA90',
-		iconSrc: './icon3.svg'
+		iconSrc: './icon3.svg',
+		link: '/concept/detox'
 	},
 	{
 		title: 'Подтяжка овала лица без операций',
@@ -42,7 +45,8 @@ export const dataSlides: any[] = [
 		badgeNumber: '04.',
 		badgeName: 'Lifting Concept',
 		badgeColor: '#A8A7FF',
-		iconSrc: './icon4.svg'
+		iconSrc: './icon4.svg',
+		link: '/concept/lifting'
 	},
 	{
 		title: 'Убираем пигментные пятна, сделаем твою кожу молодой и&nbsp;сияющей',
@@ -52,7 +56,8 @@ export const dataSlides: any[] = [
 		badgeNumber: '05.',
 		badgeName: 'Brigth Concept',
 		badgeColor: '#F2B280',
-		iconSrc: './icon5.svg'
+		iconSrc: './icon5.svg',
+		link: '/concept/brigth'
 	},
 	{
 		title:
@@ -63,7 +68,8 @@ export const dataSlides: any[] = [
 		badgeNumber: '06.',
 		badgeName: 'Hydro Concept',
 		badgeColor: '#86B6F8',
-		iconSrc: './icon6.svg'
+		iconSrc: './icon6.svg',
+		link: '/concept/hydro'
 	},
 	{
 		title: 'Вылечим купероз, розацеа, избавим от&nbsp;покраснений на&nbsp;лице',
@@ -73,7 +79,8 @@ export const dataSlides: any[] = [
 		badgeNumber: '07.',
 		badgeName: 'Red Concept',
 		badgeColor: '#F88476',
-		iconPng: './slider-picture-svg.png'
+		iconPng: './slider-picture-svg.png',
+		link: '/concept/red'
 	},
 	{
 		title: 'Разработаем персональный план по&nbsp;улучшению твоей кожи',
@@ -83,6 +90,7 @@ export const dataSlides: any[] = [
 		badgeNumber: '08.',
 		badgeName: 'Personal Concept',
 		badgeColor: '#B9B5A7',
-		iconBigSrc: './icon8.svg'
+		iconBigSrc: './icon8.svg',
+		link: '/concept/personal'
 	}
 ]

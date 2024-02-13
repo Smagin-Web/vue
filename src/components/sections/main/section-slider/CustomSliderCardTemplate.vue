@@ -15,7 +15,8 @@ const props = defineProps([
 	'badgeColor',
 	'iconSrc',
 	'iconBigSrc',
-	'iconPng'
+	'iconPng',
+	'link'
 ])
 </script>
 
@@ -43,7 +44,9 @@ const props = defineProps([
 		</Suspense>
 
 		<div class="card-buttons">
-			<MButton class="card-button">Подробнее</MButton>
+			<a :href="props.link">
+				<MButton class="card-button">Подробнее</MButton>
+			</a>
 		</div>
 	</CardWrapper>
 </template>
