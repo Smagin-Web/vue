@@ -1,4 +1,4 @@
-<script setup lang="js">
+<script setup lang="ts">
 import ViewWrapper from '@/components/ViewWrapper.vue'
 import SectionConceptMain from '@/components/sections/concept/section-concept-main/SectionConceptMain.vue'
 import SectionPluses from '@/components/sections/main/section-pluses/SectionPluses.vue'

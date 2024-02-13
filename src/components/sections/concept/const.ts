@@ -1,4 +1,15 @@
-export const conceptsInfo = {
+interface ConceptInfo {
+	concept: string
+	number: number
+	title: string
+	pluses: string[]
+	preview: {
+		title: string
+		text: string
+	}
+}
+
+export const conceptsInfo: Record<string, ConceptInfo> = {
 	personal: {
 		concept: 'personal',
 		number: 0,
@@ -56,7 +67,7 @@ export const conceptsInfo = {
 		}
 	},
 	lifting: {
-		contept: 'lifting',
+		concept: 'lifting',
 		number: 4,
 		title:
 			'Подтяжка овала лица без операций — знаем, как вернуть твоей коже молодость и красоту!',
@@ -71,7 +82,7 @@ export const conceptsInfo = {
 		}
 	},
 	detox: {
-		contept: 'detox',
+		concept: 'detox',
 		number: 5,
 		title:
 			'Избавим кожу от токсинов и загрязнений, наполним свежестью, здоровьем и сиянием',
@@ -86,7 +97,7 @@ export const conceptsInfo = {
 		}
 	},
 	clear: {
-		contept: 'clear',
+		concept: 'clear',
 		number: 5,
 		title:
 			'Сделаем твою кожу чистой и сияющей — без черных точек и расширенных пор!',
@@ -101,7 +112,7 @@ export const conceptsInfo = {
 		}
 	},
 	antiacne: {
-		contept: 'antiacne',
+		concept: 'antiacne',
 		number: 5,
 		title: 'Вылечим твою кожу и избавим от высыпаний на лице!',
 		pluses: [
