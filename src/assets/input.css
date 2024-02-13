@@ -32,3 +32,18 @@
 .minput:focus::placeholder {
 	opacity: 0.5;
 }
+
+@media (max-width: 1000px) {
+	.minput {
+		height: 60px;
+		padding-left: 30px;
+		padding-right: 30px;
+
+		border-radius: 40px;
+	}
+	.minput,
+	.minput::placeholder {
+		font-size: 16px;
+		line-height: 16px;
+	}
+}
