@@ -15,9 +15,9 @@ import IconAge18 from '../icons/IconAge18.vue'
 				</a>
 			</p>
 			<p class="footer-info-text footer-info-width-limit">
-				<a href="/policy" class="footer-link">
+				<router-link to="/policy" class="footer-link">
 					Политика по обработке персональных данных
-				</a>
+				</router-link>
 			</p>
 		</div>
 		<div class="footer-info-right">

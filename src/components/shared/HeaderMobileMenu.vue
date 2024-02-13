@@ -11,11 +11,21 @@ const props = defineProps(['isActive'])
 		</div>
 
 		<nav class="header-mobile-menu-nav">
-			<a class="header-mobile-menu-nav-link">Главная</a>
-			<a class="header-mobile-menu-nav-link">Концепты</a>
-			<a class="header-mobile-menu-nav-link">Цены</a>
-			<a class="header-mobile-menu-nav-link">О клинике</a>
-			<a class="header-mobile-menu-nav-link">Контакты</a>
+			<router-link class="header-mobile-menu-nav-link" to="/">
+				Главная
+			</router-link>
+			<router-link class="header-mobile-menu-nav-link" to="/concepts">
+				Концепты
+			</router-link>
+			<router-link class="header-mobile-menu-nav-link" to="/prices">
+				Цены
+			</router-link>
+			<router-link class="header-mobile-menu-nav-link" to="/about">
+				О клинике
+			</router-link>
+			<router-link class="header-mobile-menu-nav-link" to="/contacts">
+				Контакты
+			</router-link>
 		</nav>
 
 		<div class="header-mobile-menu-contacts">
@@ -82,6 +92,6 @@ const props = defineProps(['isActive'])
 	display: flex;
 	gap: 30px;
 	padding-top: 50px;
-  align-items: center;
+	align-items: center;
 }
 </style>

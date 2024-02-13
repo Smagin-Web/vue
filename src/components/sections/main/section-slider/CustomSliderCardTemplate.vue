@@ -44,9 +44,9 @@ const props = defineProps([
 		</Suspense>
 
 		<div class="card-buttons">
-			<a :href="props.link">
+			<router-link :to="props.link">
 				<MButton class="card-button">Подробнее</MButton>
-			</a>
+			</router-link>
 		</div>
 	</CardWrapper>
 </template>

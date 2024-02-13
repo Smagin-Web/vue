@@ -123,7 +123,10 @@ const router = createRouter({
 			name: '/concept/1',
 			component: Concept1View
 		}
-	]
+	],
+	scrollBehavior() {
+		return { top: 0 }
+	}
 })
 
 export default router

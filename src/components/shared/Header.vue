@@ -10,10 +10,6 @@ import HeaderBurgerIcon from './HeaderBurgerIcon.vue'
 
 const items = [
 	{
-		text: '+7 495 291-35-78',
-		link: 'tel:+74952913578'
-	},
-	{
 		text: 'О клинике',
 		link: '/about'
 	},
@@ -56,14 +52,17 @@ const toggleMenu = () => {
 					<!-- <HeaderSocialLink class="socials" /> -->
 				</div>
 				<nav class="header-nav">
-					<a
+					<a class="header-nav-item" href="tel:+74952913578">
+						<span class="header-nav-item-link">+7 495 291-35-78 </span>
+					</a>
+					<router-link
 						class="header-nav-item"
 						v-for="item in items"
 						:key="item.text"
-						:href="item.link"
+						:to="item.link"
 					>
 						<span class="header-nav-item-link">{{ item.text }}</span>
-					</a>
+					</router-link>
 
 					<button type="button" class="burger-button" @click="toggleMenu">
 						<HeaderBurgerIcon :isActive="isOpenMenuMobile" />

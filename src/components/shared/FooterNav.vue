@@ -10,14 +10,14 @@ import FooterSocials from './FooterSocials.vue'
 				<h5 class="footer-nav-title">
 					{{ item.title }}
 				</h5>
-				<a
+				<router-link
 					v-for="(link, index) in item.links"
 					:key="index"
-					:href="link.href"
+					:to="link.href"
 					class="footer-nav-link"
 				>
 					{{ link.text }}
-				</a>
+				</router-link>
 			</div>
 		</div>
 
@@ -47,35 +47,35 @@ export default {
 					links: [
 						{
 							text: 'AntiAcne Concept',
-							href: '#'
+							href: '/concept/antiacne'
 						},
 						{
 							text: 'Clear Concept',
-							href: '#'
+							href: '/concept/clear'
 						},
 						{
 							text: 'Detox Concept',
-							href: '#'
+							href: '/concept/detox'
 						},
 						{
 							text: 'Lifting Concept',
-							href: '#'
+							href: '/concept/lifting'
 						},
 						{
 							text: 'Brigth Concept',
-							href: '#'
+							href: '/concept/brigth'
 						},
 						{
 							text: 'Hydro Concept',
-							href: '#'
+							href: '/concept/hydro'
 						},
 						{
 							text: 'Red Concept',
-							href: '#'
+							href: '/concept/red'
 						},
 						{
 							text: 'Personal  Concept',
-							href: '#'
+							href: '/concept/personal'
 						}
 					]
 				},
