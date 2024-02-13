@@ -25,6 +25,15 @@ import MContainer from '@/components/shared/MContainer.vue'
 				<a class="link" href="/branches">15) Филиалы</a>
 				<a class="link" href="/media/1">16) Медиа - карточка</a>
 				<a class="link" href="/policy">17) Политика</a>
+
+				<a class="link" href="/concept/personal">personal</a>
+				<a class="link" href="/concept/red">red</a>
+				<a class="link" href="/concept/hydro">hydro</a>
+				<a class="link" href="/concept/bright">bright</a>
+				<a class="link" href="/concept/lifting">lifting</a>
+				<a class="link" href="/concept/detox">detox</a>
+				<a class="link" href="/concept/clear">clear</a>
+				<a class="link" href="/concept/antiacne">antiacne</a>
 			</div>
 		</MContainer>
 	</ViewWrapper>
