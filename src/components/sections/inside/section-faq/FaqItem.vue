@@ -34,20 +34,6 @@ watchEffect(() => {
 		heightItem.value = ''
 	}
 })
-
-// const onClickHandler = () => {
-// 	props.onClick()
-// 	if (props.isActive) {
-// 		heightItem.value = `height: ${itemRef.value.offsetHeight}px`
-// 		setTimeout(() => {
-// 			heightItem.value = `height: ${
-// 				itemRef.value.offsetHeight + textRef.value.offsetHeight
-// 			}px;`
-// 		}, 10)
-// 	} else {
-// 		heightItem.value = ''
-// 	}
-// }
 </script>
 
 <template>
@@ -58,9 +44,12 @@ watchEffect(() => {
 				<div class="item-icon" v-bind:class="{ active: isActive }" />
 			</div>
 		</h6>
-		<p class="item-text" v-bind:class="{ active: isActive }" ref="textRef">
-			{{ text }}
-		</p>
+		<p
+			class="item-text"
+			v-bind:class="{ active: isActive }"
+			ref="textRef"
+			v-html="text.replace(/\n/g, '<br />')"
+		/>
 	</div>
 </template>
 

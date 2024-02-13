@@ -42,6 +42,6 @@ currentConcept.value = router.currentRoute.value.path.split('/')[2]
 			:textDisable2="true"
 		/>
 		<SectionHelp />
-		<SectionFaq />
+		<SectionFaq :items="conceptsInfo[currentConcept].faq" />
 	</ViewWrapper>
 </template>
