@@ -10,6 +10,7 @@ import SectionInfo from '@/components/sections/shared/section-info/SectionInfo.v
 import SectionPreview from '@/components/sections/shared/section-preview/SectionPreview.vue'
 import SectionHelp from '@/components/sections/shared/section-help/SectionHelp.vue'
 import SectionFaq from '@/components/sections/inside/section-faq/SectionFaq.vue'
+import SectionTech from '@/components/sections/inside/section-tech/SectionTech.vue'
 
 const currentConcept = ref('')
 const router = useRouter()
@@ -33,6 +34,12 @@ currentConcept.value = router.currentRoute.value.path.split('/')[2]
 		<SectionPreview
 			:title="conceptsInfo[currentConcept].preview.title"
 			:text="conceptsInfo[currentConcept].preview.text"
+		/>
+		<SectionTech
+			:text1="conceptsInfo[currentConcept].info2.text1"
+			:text3="conceptsInfo[currentConcept].info2.text3"
+			:text4="conceptsInfo[currentConcept].info2.text4"
+			:textDisable2="true"
 		/>
 		<SectionHelp />
 		<SectionFaq />

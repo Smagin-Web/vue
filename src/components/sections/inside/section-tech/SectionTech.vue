@@ -2,6 +2,33 @@
 import MContainer from '@/components/shared/MContainer.vue'
 import SectionTechShadow from './SectionTechShadow.vue'
 import SectionTechPicture from './SectionTechPicture.vue'
+
+const props = defineProps({
+	text1: {
+		type: String,
+		default:
+			'В\u00A0ходе лечения мы\u00A0применяем новейшее оборудование и\u00A0инновационные терапевтические методики.'
+	},
+	text2: {
+		type: String,
+		default:
+			'Лечение в\u00A0нашем центре проходит без боли и\u00A0других неприятных ощущений.'
+	},
+	text3: {
+		type: String,
+		default:
+			'Благодаря комплексному подходу к\u00A0терапии угревой сыпи мы\u00A0не\u00A0только быстро избавляем наших пациентов от\u00A0кожных проблем, но\u00A0и предотвращаем их\u00A0повторное появление в\u00A0будущем.'
+	},
+	text4: {
+		type: String,
+		default:
+			'Результат нашего лечения ты\u00A0сможешь увидеть уже после первого посещения.'
+	},
+	textDisable2: {
+		type: Boolean,
+		default: false
+	}
+})
 </script>
 
 <template>
@@ -12,12 +39,10 @@ import SectionTechPicture from './SectionTechPicture.vue'
 					<div class="card-wrapper">
 						<div class="card card-1">
 							<h5 class="card-text">
-								В&nbsp;ходе лечения мы&nbsp;применяем новейшее оборудование
-								и&nbsp;инновационные терапевтические методики.
-								<br />
-								<br />
-								Лечение в&nbsp;нашем центре проходит без боли и&nbsp;других
-								неприятных ощущений.
+								{{ props.text1 }}
+								<br v-if="!props.textDisable2" />
+								<br v-if="!props.textDisable2" />
+								{{ props.textDisable2 ? undefined : props.text2 }}
 							</h5>
 						</div>
 						<SectionTechShadow class="card-shadow" />
@@ -28,14 +53,10 @@ import SectionTechPicture from './SectionTechPicture.vue'
 				<div class="card-wrapper">
 					<div class="card card-2">
 						<h5 class="card-text">
-							Благодаря комплексному подходу к&nbsp;терапии угревой сыпи
-							мы&nbsp;не&nbsp;только быстро избавляем наших пациентов
-							от&nbsp;кожных проблем, но&nbsp;и предотвращаем их&nbsp;повторное
-							появление в&nbsp;будущем.
+							{{ props.text3 }}
 							<br />
 							<br />
-							Результат нашего лечения ты&nbsp;сможешь увидеть уже после первого
-							посещения.
+							{{ props.text4 }}
 						</h5>
 					</div>
 					<SectionTechShadow class="card-shadow" />
