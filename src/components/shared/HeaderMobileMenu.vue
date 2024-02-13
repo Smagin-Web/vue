@@ -5,6 +5,7 @@ const props = defineProps(['isActive', 'onClose'])
 </script>
 
 <template>
+	<div class="header-mobile-menu-bg" :class="props.isActive && 'active'" />
 	<div class="header-mobile-menu" :class="props.isActive && 'active'">
 		<div class="header-mobile-menu-logo">
 			<Logo />
@@ -64,6 +65,22 @@ const props = defineProps(['isActive', 'onClose'])
 
 	transition: 0.2s;
 	transform: translateY(-100%);
+}
+
+.header-mobile-menu-bg {
+	position: absolute;
+	height: 100vh;
+	width: 100%;
+	top: 0;
+	right: 0;
+	left: 0;
+	background: rgba(244, 238, 232, 0.9);
+
+	display: none;
+}
+
+.header-mobile-menu-bg.active {
+	display: block;
 }
 
 .header-mobile-menu.active {
