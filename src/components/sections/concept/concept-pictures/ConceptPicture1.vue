@@ -11,6 +11,7 @@ currentNumberConcept.value = router.currentRoute.value.path.split('/')[2]
 <template>
 	<div class="picture-wrapper">
 		<img src="./bg-place.png" alt="" class="picture-img-bg" />
+		<img src="./shadow.png" alt="shadow" class="picture-img-bg-shadow" />
 
 		<div class="picture-img-head-wrapper">
 			<img src="./head.png" alt="" v-if="currentNumberConcept == 'antiacne'" />
@@ -45,6 +46,12 @@ currentNumberConcept.value = router.currentRoute.value.path.split('/')[2]
 .picture-img-bg {
 	width: 100%;
 	height: auto;
+}
+
+.picture-img-bg-shadow {
+	position: absolute;
+	width: 80%;
+	top: 35%;
 }
 
 .picture-img-head-wrapper img {
