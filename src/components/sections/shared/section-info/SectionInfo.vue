@@ -1,65 +1,36 @@
 <script setup lang="ts">
 import MContainer from '@/components/shared/MContainer.vue'
-import { ref, onMounted, onUnmounted } from 'vue'
 
-const scrollProgress = ref(0)
-const infoStyles = ref('opacity: 0; transform: translateX(-300px)')
-
-const handleScroll = () => {
-	const sectionInfo = document.querySelector('.section-info')
-	if (sectionInfo) {
-		// На сколько пролистали страницу
-		const scrollTop = window.scrollY
-		// Высота секции
-		const scrollHeight = sectionInfo.scrollHeight
-
-		if (scrollTop > 1200) {
-			scrollProgress.value = (scrollTop - 1200) / scrollHeight
-
-			infoStyles.value =
-				scrollProgress.value > 0.02
-					? `opacity: ${scrollProgress.value}; transform: translateX(0)`
-					: 'opacity: 0;  transform: translateX(-300px)'
-		}
-
-		// scrollProgress.value = Math.min(100, (scrollTop / scrollHeight) * 100)
+const props = defineProps({
+	title: {
+		type: String,
+		default:
+			'Наш Центр специализируется на\u00A0аппаратной косметологии лица и\u00A0имеет медицинскую лицензию'
+	},
+	text1: {
+		type: String,
+		default:
+			'Мы\u00A0уверены, что аппаратная косметология\u00A0— это безболезненные процедуры без стресса и\u00A0реабилитации, при которых клетки начинают работать лучше, улучшая состояние твоей кожи на\u00A0клеточном уровне.'
+	},
+	text2: {
+		type: String,
+		default:
+			'В\u00A0отличие от\u00A0инъекций, которые дают быстрый, но\u00A0временный результат, мы\u00A0заботимся о\u00A0долгосрочном здоровье твоей кожи.'
 	}
-}
-
-onMounted(() => {
-	window.addEventListener('scroll', handleScroll)
-})
-
-onUnmounted(() => {
-	window.removeEventListener('scroll', handleScroll)
 })
 </script>
 
 <template>
 	<section class="section-info">
 		<MContainer class="section-info-container">
-			<h3 class="heading">
-				Наш Центр специализируется
-				<br />
-				на&nbsp;аппаратной косметологии лица
-				<br />
-				и&nbsp;имеет медицинскую лицензию
-			</h3>
+			<h3 class="heading" v-text="props.title" />
 
 			<p class="text">
-				Мы&nbsp;уверены, что аппаратная косметология&nbsp;&mdash; это
-				безболезненные процедуры
-				<br />
-				без стресса и&nbsp;реабилитации, при которых клетки начинают работать
-				лучше,
-				<br />
-				улучшая состояние твоей кожи на&nbsp;клеточном уровне.
+				{{ props.text1 }}
 				<br />
 				<br />
-				В&nbsp;отличие от&nbsp;инъекций, которые дают быстрый, но&nbsp;временный
-				результат,
-				<br />
-				мы&nbsp;заботимся о&nbsp;долгосрочном здоровье твоей кожи.
+
+				{{ props.text2 }}
 			</p>
 		</MContainer>
 	</section>
@@ -84,17 +55,19 @@ onUnmounted(() => {
 }
 
 .heading {
+	max-width: 1300px;
+	margin: 0 auto;
 	color: #fff;
 	text-align: center;
 	font-family: 'Pelinka';
-	/* font-size: 50px; */
-	font-size: 2.4vw;
+	font-size: 48px;
 	font-weight: 700;
 	padding-bottom: 80px;
 	transition: 0.2s opacity;
 }
 
 .text {
+	max-width: 1050px;
 	color: #fff;
 	font-family: 'BrisaSans';
 	text-align: center;

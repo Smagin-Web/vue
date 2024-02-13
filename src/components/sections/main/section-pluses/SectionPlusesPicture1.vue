@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import PicturePluses1 from '../../../icons/PicturePluses1.vue'
+import PlusesText from './PlusesText.vue'
 import SectionPlusesShadow from './SectionPlusesShadow.vue'
 import SvgBg1 from './svg/SvgBg1.vue'
 
@@ -18,7 +19,7 @@ const props = defineProps({
 			<SvgBg1 />
 			<PicturePluses1 class="picture" />
 			<div class="text-wrapper">
-				<h4 class="h-sm-ultra" v-text="props.text" />
+				<PlusesText :text="props.text" />
 			</div>
 		</div>
 	</div>

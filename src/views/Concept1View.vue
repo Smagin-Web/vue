@@ -25,7 +25,11 @@ currentConcept.value = router.currentRoute.value.path.split('/')[2]
 			:text2="conceptsInfo[currentConcept].pluses[1]"
 			:text3="conceptsInfo[currentConcept].pluses[2]"
 		/>
-		<SectionInfo />
+		<SectionInfo
+			:title="conceptsInfo[currentConcept].info?.title"
+			:text1="conceptsInfo[currentConcept].info?.text1"
+			:text2="conceptsInfo[currentConcept].info?.text2"
+		/>
 		<SectionPreview
 			:title="conceptsInfo[currentConcept].preview.title"
 			:text="conceptsInfo[currentConcept].preview.text"

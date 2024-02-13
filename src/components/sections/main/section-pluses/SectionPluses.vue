@@ -56,7 +56,7 @@ defineProps<{
 					style="transition: 1s"
 				/>
 				<SectionPlusesPicture3
-					:text="text2"
+					:text="text3"
 					:style="parallaxStyle3"
 					style="transition: 1s"
 					class="picture-3"
