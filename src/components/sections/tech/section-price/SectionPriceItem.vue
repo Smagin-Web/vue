@@ -73,7 +73,6 @@
 	.item {
 		display: grid;
 		gap: 30px;
-		max-width: 700px;
 	}
 	.item-part {
 		display: grid;
