@@ -18,7 +18,11 @@ currentNumberConcept.value = router.currentRoute.value.path.split('/')[2]
 			<img src="./head2.png" alt="" v-if="currentNumberConcept == 'detox'" />
 			<img src="./head3.png" alt="" v-if="currentNumberConcept == 'lifting'" />
 			<img src="./head4.png" alt="" v-if="currentNumberConcept == 'brigth'" />
-			<img src="./head5.png" alt="" v-if="currentNumberConcept == 'hydro'" />
+			<img
+				src="./head_hydro.png"
+				alt=""
+				v-if="currentNumberConcept == 'hydro'"
+			/>
 			<img src="./head6.png" alt="" v-if="currentNumberConcept == 'red'" />
 			<img src="./head7.png" alt="" v-if="currentNumberConcept == 'personal'" />
 		</div>
