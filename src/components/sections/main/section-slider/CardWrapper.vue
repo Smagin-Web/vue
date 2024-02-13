@@ -23,6 +23,7 @@ const props = defineProps(['badgeColor', 'badgeName', 'badgeNumber'])
 	padding: 70px;
 	padding-top: 80px;
 	padding-right: 80px;
+	padding-bottom: 150px;
 
 	border-radius: 100px;
 	background: #fff;

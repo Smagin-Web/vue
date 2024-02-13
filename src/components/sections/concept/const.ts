@@ -17,7 +17,7 @@ interface ConceptInfo {
 		title: string
 		text: string
 	}
-	faq: any[]
+	faq?: Array[{ title: string; text: string }]
 }
 
 export const conceptsInfo: Record<string, ConceptInfo> = {

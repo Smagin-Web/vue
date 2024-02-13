@@ -57,6 +57,11 @@ const props = defineProps([
 	opacity: 0.8 !important;
 }
 
+.card-button {
+	position: absolute;
+	bottom: 50px;
+}
+
 @media (max-width: 1600px) {
 	.card-info {
 		max-width: 900px;
