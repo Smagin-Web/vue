@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import MContainer from '@/components/shared/MContainer.vue'
-import BreadCrumbs from '@/components/shared/BreadCrumbs.vue'
+// import BreadCrumbs from '@/components/shared/BreadCrumbs.vue'
 import ConceptPicture1 from '../concept-pictures/ConceptPicture1.vue'
 
 const props = defineProps(['title'])
@@ -9,9 +9,9 @@ const props = defineProps(['title'])
 <template>
 	<section class="section-concept-main">
 		<MContainer>
-			<BreadCrumbs
+			<!-- <BreadCrumbs
 				:items="['Главная', 'Концепты', 'Аппаратное лечение акне']"
-			/>
+			/> -->
 		</MContainer>
 		<div class="container-custom">
 			<ConceptPicture1 class="concept-picture" />
@@ -26,11 +26,17 @@ const props = defineProps(['title'])
 </template>
 
 <style scoped>
+.section-concept-main {
+	overflow: visible;
+	padding-top: 50px;
+}
 .container-custom {
 	max-width: 1920px;
 	padding: 0 46px;
 	margin: 0 auto;
 	display: flex;
+	gap: 50px;
+	justify-content: space-between;
 	align-items: center;
 }
 

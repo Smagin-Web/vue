@@ -49,6 +49,9 @@ export const conceptsInfo: Record<string, ConceptInfo> = {
 			text: 'Его задача — разработка индивидуального плана улучшения твоей кожи с\u00A0помощью инъекций и\u00A0уходовых процедур.'
 		}
 	},
+
+	// red
+
 	red: {
 		concept: 'red',
 		number: 1,
@@ -77,6 +80,9 @@ export const conceptsInfo: Record<string, ConceptInfo> = {
 			text: 'Его задача — лечение розацеа и купероза, устранение видимых покраснений на\u00A0лице.'
 		}
 	},
+
+	// hydro
+
 	hydro: {
 		concept: 'hydro',
 		number: 2,
@@ -103,6 +109,9 @@ export const conceptsInfo: Record<string, ConceptInfo> = {
 			text: 'Его задача — увлажнение твоей кожи, устранение стягивания, сухости, профилактика старения.'
 		}
 	},
+
+	// bright
+
 	bright: {
 		concept: 'bright',
 		number: 3,
@@ -132,6 +141,9 @@ export const conceptsInfo: Record<string, ConceptInfo> = {
 			text: 'Его задача — бережное осветление кожи, уменьшение пигментации, придание коже сияния.'
 		}
 	},
+
+	// lifting
+
 	lifting: {
 		concept: 'lifting',
 		number: 4,
@@ -162,6 +174,9 @@ export const conceptsInfo: Record<string, ConceptInfo> = {
 			text: 'Его\u00A0задача — профилактика старения, подтяжка овала лица, повышение плотности кожи, разглаживание морщин.'
 		}
 	},
+
+	// detox
+
 	detox: {
 		concept: 'detox',
 		number: 5,
@@ -189,6 +204,9 @@ export const conceptsInfo: Record<string, ConceptInfo> = {
 			text: 'Его задача — детоксикация кожи, восстановление нормальной работы клеток и\u00A0профилактика старения.'
 		}
 	},
+
+	// clear
+
 	clear: {
 		concept: 'clear',
 		number: 5,
@@ -219,6 +237,9 @@ export const conceptsInfo: Record<string, ConceptInfo> = {
 			text: 'Для очищения кожи, выравнивания рельефа, уменьшения жирности, сужения пор, лечения комедонов.'
 		}
 	},
+
+	// antiacne
+
 	antiacne: {
 		concept: 'antiacne',
 		number: 5,
