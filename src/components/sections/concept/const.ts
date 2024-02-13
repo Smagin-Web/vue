@@ -1,4 +1,7 @@
-import type { IFaqItem } from '../faq/SectionFaq.vue'
+export interface IFaqItem {
+	title: string
+	text: string
+}
 
 interface ConceptInfo {
 	concept: string
