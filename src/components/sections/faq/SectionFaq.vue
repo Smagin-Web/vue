@@ -5,6 +5,11 @@ import FaqItem from '../inside/section-faq/FaqItem.vue'
 import MSelect from '@/components/form/select/MSelect.vue'
 import { ref } from 'vue'
 
+interface IFaqItem {
+	title: string
+	text: string
+}
+
 let indexActiveItem = ref(20)
 
 const props = defineProps({

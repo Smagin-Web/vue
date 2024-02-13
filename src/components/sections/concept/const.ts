@@ -1,3 +1,5 @@
+import type { IFaqItem } from '../faq/SectionFaq.vue'
+
 interface ConceptInfo {
 	concept: string
 	number: number
@@ -17,7 +19,7 @@ interface ConceptInfo {
 		title: string
 		text: string
 	}
-	faq?: Array[{ title: string; text: string }]
+	faq?: Array[IFaqItem]
 }
 
 export const conceptsInfo: Record<string, ConceptInfo> = {

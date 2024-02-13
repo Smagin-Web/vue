@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import MButtonOutline from '@/components/buttons/MButtonOutline.vue'
+// import MButtonOutline from '@/components/buttons/MButtonOutline.vue'
 import MButton from '@/components/buttons/MButton.vue'
 import CardInfo from './CardInfo.vue'
 import CardWrapper from './CardWrapper.vue'
@@ -60,6 +60,7 @@ const props = defineProps([
 .card-button {
 	position: absolute;
 	bottom: 50px;
+	right: 50%;
 }
 
 @media (max-width: 1600px) {
