@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import Logo from './Logo.vue'
 
-const props = defineProps(['isActive'])
+const props = defineProps(['isActive', 'onClose'])
 </script>
 
 <template>
@@ -10,7 +10,7 @@ const props = defineProps(['isActive'])
 			<Logo />
 		</div>
 
-		<nav class="header-mobile-menu-nav">
+		<nav class="header-mobile-menu-nav" @click="onClose">
 			<router-link class="header-mobile-menu-nav-link" to="/">
 				Главная
 			</router-link>

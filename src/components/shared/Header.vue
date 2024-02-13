@@ -41,7 +41,7 @@ const toggleMenu = () => {
 
 <template>
 	<header class="header">
-		<HeaderMobileMenu :isActive="isOpenMenuMobile" />
+		<HeaderMobileMenu :isActive="isOpenMenuMobile" :onClose="toggleMenu" />
 
 		<!-- <HeaderNotify /> -->
 
