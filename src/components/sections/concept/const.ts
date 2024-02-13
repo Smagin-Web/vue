@@ -22,7 +22,7 @@ interface ConceptInfo {
 		title: string
 		text: string
 	}
-	faq?: Array[IFaqItem]
+	faq?: Array<IFaqItem>
 }
 
 export const conceptsInfo: Record<string, ConceptInfo> = {
