@@ -28,7 +28,7 @@ const props = defineProps(['title'])
 <style scoped>
 .section-concept-main {
 	overflow: visible;
-	padding-top: 50px;
+	padding-top: 80px;
 }
 .container-custom {
 	max-width: 1920px;
