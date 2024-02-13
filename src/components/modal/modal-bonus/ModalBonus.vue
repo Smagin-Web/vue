@@ -3,10 +3,12 @@
 
 import MButtonBig from '@/components/buttons/MButtonBig.vue'
 import CloseIcon from './CloseIcon.vue'
-import { reactive } from 'vue'
+import { ref, reactive } from 'vue'
 import emailjs from 'emailjs-com'
 
 emailjs.init('uWrvoY8ZWXv7j-g9-')
+
+const isActiveSuccess = ref(false)
 
 const props = defineProps(['isActive', 'onClose', 'isBonus'])
 
@@ -18,8 +20,12 @@ const dataObject = reactive({
 
 const sendEmail = () => {
 	emailjs.send('service_03ipejb', 'template_032l0us', dataObject).then(
-		response => {
-			console.log('SUCCESS!', response.status, response.text)
+		() => {
+			isActiveSuccess.value = true
+			setTimeout(() => {
+				isActiveSuccess.value = false
+				props.onClose()
+			}, 2000)
 		},
 		error => {
 			console.log('FAILED...', error)
@@ -35,6 +41,13 @@ const sendEmail = () => {
 		class="modal-wrapper"
 	>
 		<div class="modal">
+			<div
+				class="modal modal-success-screen"
+				:class="isActiveSuccess && 'active'"
+			>
+				<h6 class="h-l">Спасибо за заявку!</h6>
+				<p class="text-sm">Администратор скоро с Вами свяжется!</p>
+			</div>
 			<button class="close-button" @click="onClose">
 				<CloseIcon class="close-button-icon" />
 			</button>
@@ -145,6 +158,31 @@ const sendEmail = () => {
 	padding-right: 60px;
 }
 
+.modal-success-screen {
+	position: absolute;
+	bottom: 0;
+	top: 0;
+	right: 0;
+	left: 0;
+	height: auto;
+
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 32px;
+
+	transition: 0.2s;
+	opacity: 0;
+	pointer-events: none;
+	z-index: 10;
+}
+
+.modal-success-screen.active {
+	opacity: 1;
+}
+
 .close-button {
 	background: none;
 	border: none;
@@ -154,6 +192,7 @@ const sendEmail = () => {
 	right: 0;
 
 	transform: translateX(20%) translateY(-20%);
+	z-index: 1000;
 }
 
 .close-button:hover {
