@@ -15,13 +15,16 @@ const props = defineProps(['onClickMainButton'])
 			<CardInsideOfferPrice class="prices" />
 			<div class="buttons">
 				<MButton @click="props.onClickMainButton">Записаться на приём</MButton>
-				<a
-					href="https://wa.me/79774122010"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					<MButtonOutline>Задать вопрос</MButtonOutline>
-				</a>
+
+				<MButtonOutline>
+					<a
+						class="absolute-link"
+						href="https://wa.me/79774122010"
+						target="_blank"
+						rel="noopener noreferrer"
+					/>
+					Задать вопрос
+				</MButtonOutline>
 			</div>
 		</div>
 	</div>

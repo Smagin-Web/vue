@@ -4,6 +4,7 @@
 
 <style scoped>
 .main-button-outline {
+	position: relative;
 	color: #000;
 	font-family: 'BrisaSans';
 	font-size: 24px;

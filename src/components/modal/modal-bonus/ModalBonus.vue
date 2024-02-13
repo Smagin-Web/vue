@@ -40,11 +40,7 @@ const sendEmail = () => {
 </script>
 
 <template>
-	<div
-		v-show="props.isActive"
-		@submit.prevent.stop="sendEmail"
-		class="modal-wrapper"
-	>
+	<div class="modal-wrapper" v-show="props.isActive">
 		<div class="modal">
 			<ModalBlockSuccess
 				class="modal-bonus-success-screen"
@@ -62,7 +58,9 @@ const sendEmail = () => {
 				на&nbsp;себя. Он&nbsp;быстро свяжется с&nbsp;тобой, чтобы назначить
 				визит в&nbsp;удобное для тебя время.
 			</p>
+
 			<form
+				@submit.prevent.stop="sendEmail"
 				method="POST"
 				class="modal-form"
 				id="form_modal_bonus"
