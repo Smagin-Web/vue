@@ -8,7 +8,7 @@ import IconCheck from './IconCheck.vue'
 			<span class="list-icon">
 				<IconCheck />
 			</span>
-			<h6 class="list-text">
+			<h6 class="list-text text-lg">
 				Любой номинал сертификата при покупке на&nbsp;сайте
 			</h6>
 		</li>
@@ -17,14 +17,16 @@ import IconCheck from './IconCheck.vue'
 			<span class="list-icon">
 				<IconCheck />
 			</span>
-			<h6 class="list-text">Сертификат действует 6&nbsp;месяцев</h6>
+			<h6 class="list-text text-lg">Сертификат действует 6&nbsp;месяцев</h6>
 		</li>
 
 		<li class="list-item">
 			<span class="list-icon">
 				<IconCheck />
 			</span>
-			<h6 class="list-text">Можно использовать на&nbsp;любую услугу или товар</h6>
+			<h6 class="list-text text-lg">
+				Можно использовать на&nbsp;любую услугу или товар
+			</h6>
 		</li>
 	</ul>
 </template>
@@ -35,6 +37,7 @@ import IconCheck from './IconCheck.vue'
 	display: grid;
 	gap: 30px;
 	padding-left: 0;
+	max-width: 700px;
 }
 
 .list-item {
@@ -55,19 +58,12 @@ import IconCheck from './IconCheck.vue'
 }
 
 .list-text {
-	color: #6d6364;
-	font-size: 24px;
 	height: 28px;
-	max-width: 700px;
 }
 
-@media (max-width: 1380px) {
+@media (max-width: 1400px) {
 	.list-item {
 		gap: 16px;
-	}
-	.list-text {
-		font-size: 20px;
-		max-width: 550px;
 	}
 	.list-icon {
 		width: 38px;
@@ -79,18 +75,11 @@ import IconCheck from './IconCheck.vue'
 	}
 }
 
-@media (max-width: 1040px) {
-	.list-text {
-		max-width: 400px;
-	}
-}
-
 @media (max-width: 850px) {
 	.list-icon {
 		width: 28px;
 		height: 28px;
 	}
-
 	.list-icon svg {
 		width: 12px;
 	}
@@ -98,7 +87,6 @@ import IconCheck from './IconCheck.vue'
 	.list-text {
 		max-width: auto;
 		height: auto;
-		font-size: 18px;
 	}
 
 	.list-item {
@@ -107,9 +95,6 @@ import IconCheck from './IconCheck.vue'
 }
 
 @media (max-width: 450px) {
-	.list-text {
-		font-size: 16px;
-	}
 	.list-item {
 		gap: 8px;
 	}

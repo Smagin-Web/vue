@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import MContainer from '@/components/shared/MContainer.vue'
-import MBadge from '../../../ui/MBadge.vue'
 import CardInsideOffer from '../../../cards/CardInsideOffer.vue'
 import SectionOfferList from './SectionOfferList.vue'
+import BigBadge from '@/components/ui/big-badge/BigBadge.vue'
 
 const props = defineProps(['modalBonusOpen'])
 </script>
@@ -12,14 +12,12 @@ const props = defineProps(['modalBonusOpen'])
 		<div class="section-offer-container">
 			<MContainer class="section-offer-container-custom">
 				<div class="card">
-					<div class="card-badge">
-						<MBadge>Диагностика</MBadge>
-					</div>
+					<BigBadge style="background: #bfb0e9">Диагностика</BigBadge>
 					<div class="card-content">
-						<div>
+						<div class="card-content-left">
 							<h3 class="h-l heading">Хочешь&nbsp;здоровую&nbsp;кожу?</h3>
 
-							<SectionOfferList class="section-offer-list" />
+							<SectionOfferList />
 						</div>
 						<div class="image-container">
 							<a
@@ -62,6 +60,11 @@ const props = defineProps(['modalBonusOpen'])
 	padding: 80px;
 }
 
+.card-content-left {
+	width: 700px;
+	flex-shrink: 0;
+}
+
 .card-content {
 	padding-bottom: 50px;
 	display: flex;
@@ -93,17 +96,39 @@ const props = defineProps(['modalBonusOpen'])
 	z-index: 20;
 }
 
+@media (max-width: 1600px) {
+	.card-content-left {
+		width: 650px;
+	}
+}
+
 @media (max-width: 1400px) {
 	.card-content {
 		gap: 100px;
 	}
+	.card-content-left {
+		width: 600px;
+	}
+	.card {
+		border-radius: 48px;
+		padding: 80px 40px 40px;
+	}
 }
 
 @media (max-width: 1300px) {
+	.card-content-left {
+		width: 560px;
+	}
+}
+
+@media (max-width: 1200px) {
 	.card-content {
 		display: grid;
+		gap: 50px;
 	}
-
+	.card-content-left {
+		width: 100%;
+	}
 	.image-container {
 		max-width: 500px;
 		height: auto;

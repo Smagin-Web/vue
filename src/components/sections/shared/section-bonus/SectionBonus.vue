@@ -3,6 +3,7 @@ import MContainer from '@/components/shared/MContainer.vue'
 import SectionBonusList from './SectionBonusList.vue'
 import MButtonBig from '@/components/buttons/MButtonBig.vue'
 import SectionBonusPicture from './SectionBonusPicture.vue'
+import BigBadge from '@/components/ui/big-badge/BigBadge.vue'
 
 const props = defineProps(['openModal'])
 </script>
@@ -11,7 +12,7 @@ const props = defineProps(['openModal'])
 	<section class="section-bonus">
 		<MContainer>
 			<div class="card">
-				<h6 class="card-badge">Подарочный сертификат</h6>
+				<BigBadge style="background: #b2977b">Подарочный сертификат</BigBadge>
 				<div class="card-content">
 					<h5 class="card-heading h-l">
 						Сделайте приятный сюрприз близкому человеку
@@ -62,36 +63,19 @@ const props = defineProps(['openModal'])
 	width: auto;
 }
 
-.card-badge {
-	position: absolute;
-	left: 85px;
-	top: 0;
-	transform: translateY(-50%);
-
-	padding: 0 20px 6px;
-
-	border-radius: 20px;
-	background: #b2977b;
-
-	color: #fff;
-	line-height: 76px;
-	font-family: 'UABrand';
-	font-size: 48px;
-	font-weight: 700;
+@media (max-width: 1800px) {
+	.card-picture {
+		height: 100%;
+	}
 }
 
-@media (max-width: 1650px) {
-	.card-badge {
-		font-size: 38px;
-		border-radius: 16px;
-	}
-
+@media (max-width: 1600px) {
 	.card-picture {
 		height: 80%;
 	}
 }
 
-@media (max-width: 1380px) {
+@media (max-width: 1400px) {
 	.card {
 		border-radius: 48px;
 		padding: 60px;
@@ -103,9 +87,6 @@ const props = defineProps(['openModal'])
 	.section-bonus {
 		padding-bottom: 130px;
 	}
-}
-
-@media (max-width: 1150px) {
 	.card {
 		padding: 40px;
 		padding-top: 48px;
@@ -113,10 +94,6 @@ const props = defineProps(['openModal'])
 	.card-picture {
 		height: 70%;
 		right: 30px;
-	}
-	.card-badge {
-		font-size: 34px;
-		left: 40px;
 	}
 }
 
@@ -131,16 +108,9 @@ const props = defineProps(['openModal'])
 	}
 }
 
-@media (max-width: 850px) {
+@media (max-width: 900px) {
 	.section-bonus {
 		padding-bottom: 90px;
-	}
-	.card-badge {
-		font-size: 22px;
-		left: 50%;
-		top: -16px;
-		transform: translateX(-50%);
-		white-space: nowrap;
 	}
 	.card {
 		padding-bottom: 360px;
@@ -162,11 +132,6 @@ const props = defineProps(['openModal'])
 		padding-right: 30px;
 		padding-top: 40px;
 		border-radius: 30px;
-	}
-	.card-badge {
-		font-size: 14px;
-		font-weight: 600;
-		border-radius: 6px;
 	}
 }
 </style>

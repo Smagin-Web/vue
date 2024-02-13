@@ -9,7 +9,7 @@ const props = defineProps(['onClickMainButton'])
 <template>
 	<div class="card-inside">
 		<div>
-			<h4 class="heading">
+			<h4 class="heading h-md">
 				Первичный приём врача&nbsp;дерматолога&nbsp;+<br />диагностика&nbsp;JANUS&nbsp;PRO
 			</h4>
 			<CardInsideOfferPrice class="prices" />
@@ -50,37 +50,22 @@ const props = defineProps(['onClickMainButton'])
 }
 
 .heading {
-	color: #000;
-	font-family: 'Pelinka';
-	font-size: 34px;
-	font-weight: 700;
 	max-width: 945px;
 	padding-bottom: 70px;
 }
 
-@media (max-width: 1500px) {
-	.buttons {
-		display: grid;
-		gap: 30px;
-		max-width: 500px;
+@media (max-width: 1400px) {
+	.card-inside {
+		border-radius: 30px;
 	}
-	.heading {
-		font-size: 28px;
-	}
-}
-
-@media (max-width: 1300px) {
-	.heading {
-		padding-bottom: 40px;
-	}
-	.prices {
+	/* .prices {
 		position: static;
 		display: flex;
 		flex-direction: row-reverse;
 		justify-content: start;
 		padding-bottom: 40px;
 		gap: 24px;
-	}
+	} */
 
 	.buttons {
 		display: flex;
@@ -95,7 +80,6 @@ const props = defineProps(['onClickMainButton'])
 	}
 
 	.heading {
-		font-size: 20px;
 		padding-bottom: 24px;
 	}
 
@@ -120,9 +104,6 @@ const props = defineProps(['onClickMainButton'])
 }
 
 @media (max-width: 600px) {
-	.heading {
-		font-size: 18px;
-	}
 	.card-inside {
 		padding: 30px 16px 44px;
 	}

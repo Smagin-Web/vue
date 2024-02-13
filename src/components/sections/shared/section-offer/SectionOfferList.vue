@@ -24,7 +24,6 @@
 <style scoped>
 .list {
 	padding: 0;
-	max-width: 700px;
 	display: grid;
 	gap: 30px;
 }
@@ -53,15 +52,10 @@
 	align-items: center;
 }
 
-@media (max-width: 1000px) {
-	.list {
-		max-width: 370px;
-	}
+@media (max-width: 1400px) {
 	.list-item {
-		gap: 10px;
-		grid-template-columns: 1fr;
+		gap: 12px;
 	}
-
 	.list-item span {
 		padding-top: 3px;
 		color: white;
@@ -71,12 +65,29 @@
 		width: 40px;
 		height: 40px;
 	}
+}
+
+@media (max-width: 1000px) {
+	.list {
+		gap: 10px;
+	}
 	.list-item span {
 		font-size: 16px;
 
 		width: 30px;
 		height: 30px;
 	}
+}
+
+@media (max-width: 600px) {
+	.list {
+		max-width: 370px;
+	}
+	.list-item {
+		gap: 10px;
+		grid-template-columns: 1fr;
+	}
+
 	.list {
 		gap: 10px;
 	}

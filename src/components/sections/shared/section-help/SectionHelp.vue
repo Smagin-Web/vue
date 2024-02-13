@@ -242,11 +242,27 @@ import CardShadow from './CardShadow.vue'
 
 @media (max-width: 480px) {
 	.card {
-		padding: 30px;
+		padding: 24px;
+		padding-top: 36px;
 		border-radius: 30px;
 	}
 	.card-text {
 		font-size: 14px;
+	}
+}
+
+@media (max-width: 450px) {
+	.card {
+		gap: 80px;
+	}
+}
+
+@media (max-width: 400px) {
+	.card {
+		gap: 50px;
+	}
+	.card-buttons {
+		max-width: 100%;
 	}
 }
 </style>
