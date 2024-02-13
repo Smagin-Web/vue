@@ -91,6 +91,9 @@ const props = defineProps([
 		justify-content: center;
 		max-width: 100%;
 	}
+	.card-button {
+		position: static;
+	}
 	.card-info {
 		max-width: 100%;
 	}

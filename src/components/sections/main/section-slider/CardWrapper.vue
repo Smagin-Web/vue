@@ -45,6 +45,9 @@ const props = defineProps(['badgeColor', 'badgeName', 'badgeNumber'])
 	.card-info {
 		max-width: 750px;
 	}
+	.card {
+		padding-bottom: 0;
+	}
 }
 
 @media (max-width: 1300px) {
