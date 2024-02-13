@@ -34,7 +34,6 @@ const props = defineProps({
 	text-align: center;
 	text-shadow: 0px 10px 20px #d0c3b4;
 
-	margin: 0 -80px;
 	padding-bottom: 54px;
 }
 
@@ -44,63 +43,39 @@ const props = defineProps({
 	font-size: 50px;
 }
 
-@media (max-width: 1760px) {
+@media (max-width: 1800px) {
 	.heading {
-		margin: 0 -50px;
 		font-size: 80px;
 	}
 
 	.heading-2 {
-		font-size: 46px;
+		font-size: 40px;
 	}
 }
 
-@media (max-width: 1550px) {
+@media (max-width: 1600px) {
 	.section-preview {
 		padding: 120px 0;
 	}
 
 	.heading {
-		margin: 0 -30px;
-		font-size: 70px;
+		font-size: 60px;
 	}
 
 	.heading-2 {
-		font-size: 42px;
+		margin: 0 auto;
+		max-width: 700px;
+		font-size: 24px;
 	}
 }
 
-@media (max-width: 1370px) {
+@media (max-width: 1300px) {
 	.heading {
-		margin: 0 -20px;
-		font-size: 60px;
+		font-size: 44px;
 		padding-bottom: 42px;
 	}
-
 	.heading-2 {
-		font-size: 36px;
-	}
-}
-
-@media (max-width: 1200px) {
-	.heading {
-		margin: 0 -10px;
-		font-size: 52px;
-	}
-
-	.heading-2 {
-		font-size: 34px;
-	}
-}
-
-@media (max-width: 1100px) {
-	.heading {
-		margin: 0 -10px;
-		font-size: 48px;
-	}
-
-	.heading-2 {
-		font-size: 32px;
+		font-size: 20px;
 	}
 }
 
@@ -110,34 +85,32 @@ const props = defineProps({
 	}
 
 	.heading {
-		margin: 0;
-		font-size: 44px;
+		font-size: 36px;
+		padding-bottom: 30px;
 	}
 
 	.heading-2 {
-		font-size: 28px;
+		font-size: 20px;
 	}
 }
 
-@media (max-width: 580px) {
+@media (max-width: 800px) {
 	.heading {
-		margin: 0;
-		font-size: 38px;
-		padding-bottom: 40px;
+		font-size: 30px;
+		padding-bottom: 24px;
 	}
 
 	.heading-2 {
-		font-size: 24px;
+		font-size: 18px;
 	}
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
 	.heading {
-		margin: 0;
-		font-size: 34px;
+		font-size: 20px;
 	}
 	.heading-2 {
-		font-size: 22px;
+		font-size: 15px;
 	}
 }
 </style>
