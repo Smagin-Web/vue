@@ -62,13 +62,29 @@ const props = defineProps(['badgeColor', 'badgeName', 'badgeNumber'])
 
 @media (max-width: 1000px) {
 	.card {
+		height: 650px;
+
 		padding: 50px 14px 32px;
 		border-radius: 40px;
 		max-height: 100%;
-		height: auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
 	}
 	.card-info {
 		max-width: 100%;
+	}
+}
+
+@media (max-width: 700px) {
+	.card {
+		height: 700px;
+	}
+}
+
+@media (max-width: 600px) {
+	.card {
+		height: 600px;
 	}
 }
 </style>

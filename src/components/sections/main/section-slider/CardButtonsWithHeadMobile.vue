@@ -1,56 +1,27 @@
 <script setup lang="ts">
 // import MButtonOutline from '@/components/buttons/MButtonOutline.vue'
 import MButton from '@/components/buttons/MButton.vue'
-import CardInfo from './CardInfo.vue'
-import CardWrapper from './CardWrapper.vue'
 import CardImage from './CardImage.vue'
 
-const props = defineProps([
-	'title',
-	'subtitle',
-	'p1',
-	'p2',
-	'badgeNumber',
-	'badgeName',
-	'badgeColor',
-	'iconSrc',
-	'iconBigSrc',
-	'iconPng',
-	'link'
-])
+const props = defineProps(['link', 'iconSrc', 'iconBigSrc', 'iconPng'])
 </script>
 
 <template>
-	<CardWrapper
-		:badge-color="props.badgeColor"
-		:badge-name="props.badgeName"
-		:badge-number="props.badgeNumber"
-	>
-		<div class="card-info">
-			<CardInfo
-				:title="props.title"
-				:subtitle="props.subtitle"
-				:p1="props.p1"
-				:p2="props.p2"
+	<div class="card-buttons-with-head">
+		<Suspense>
+			<CardImage
+				:icon-src="props.iconSrc"
+				:icon-big-src="props.iconBigSrc"
+				:icon-png="props.iconPng"
 			/>
-		</div>
+		</Suspense>
 
-		<div class="card-buttons-with-head-lg">
-			<Suspense>
-				<CardImage
-					:icon-src="props.iconSrc"
-					:icon-big-src="props.iconBigSrc"
-					:icon-png="props.iconPng"
-				/>
-			</Suspense>
-
-			<div class="card-buttons">
-				<router-link :to="props.link">
-					<MButton class="card-button">Подробнее</MButton>
-				</router-link>
-			</div>
+		<div class="card-buttons">
+			<router-link :to="props.link">
+				<MButton class="card-button">Подробнее</MButton>
+			</router-link>
 		</div>
-	</CardWrapper>
+	</div>
 </template>
 
 <style scoped>
@@ -91,6 +62,9 @@ const props = defineProps([
 }
 
 @media (max-width: 1000px) {
+	.card {
+		height: 650px;
+	}
 	.card-buttons {
 		display: flex;
 		justify-content: center;
@@ -104,6 +78,12 @@ const props = defineProps([
 	}
 	.card {
 		border-radius: 20px;
+	}
+}
+
+@media (max-width: 500px) {
+	.card {
+		padding-top: 40px;
 	}
 }
 </style>
