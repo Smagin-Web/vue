@@ -72,22 +72,17 @@ const props = defineProps(['title'])
 	max-width: 650px;
 }
 
-@media (max-width: 1825px) {
-	.heading {
-		font-size: 82px;
+@media (max-width: 1800px) {
+	.concept-picture {
+		max-width: 600px;
 	}
-
 	.badges {
 		left: 590px;
 		top: 32px;
 	}
 }
 
-@media (max-width: 1730px) {
-	.heading {
-		font-size: 70px;
-	}
-
+@media (max-width: 1700px) {
 	.badges {
 		left: 520px;
 		top: 10px;
@@ -95,38 +90,34 @@ const props = defineProps(['title'])
 }
 
 @media (max-width: 1600px) {
-	.heading {
-		font-size: 60px;
+	.concept-picture {
+		max-width: 550px;
 	}
-
 	.badges {
 		left: 430px;
 		top: 20px;
 	}
 }
 
-@media (max-width: 1320px) {
-	.heading {
-		font-size: 50px;
-	}
-
-	.badges {
-		left: 360px;
-		top: 14px;
+@media (max-width: 1400px) {
+	.concept-picture {
+		max-width: 460px;
 	}
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1200px) {
+	.concept-picture {
+		max-width: 400px;
+	}
 	.banner {
 		width: 45%;
 	}
 }
 
-@media (max-width: 1150px) {
-	.heading {
-		font-size: 42px;
+@media (max-width: 1100px) {
+	.concept-picture {
+		max-width: 360px;
 	}
-
 	.badges {
 		left: 300px;
 		top: 10px;
