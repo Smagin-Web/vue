@@ -55,60 +55,58 @@ const props = defineProps(['onClickMainButton'])
 }
 
 @media (max-width: 1400px) {
+	.heading {
+		padding-bottom: 32px;
+	}
 	.card-inside {
 		border-radius: 30px;
+		padding: 44px 32px;
 	}
-	/* .prices {
-		position: static;
-		display: flex;
-		flex-direction: row-reverse;
-		justify-content: start;
-		padding-bottom: 40px;
-		gap: 24px;
-	} */
-
+	.prices {
+		bottom: 30px;
+	}
 	.buttons {
 		display: flex;
 		max-width: 100%;
 	}
 }
 
-@media (max-width: 1100px) {
-	.card-inside {
+@media (max-width: 1200px) {
+	.buttons {
+		max-width: 400px;
 		display: grid;
-		padding: 44px 32px;
 	}
+}
 
-	.heading {
-		padding-bottom: 24px;
+@media (max-width: 1000px) {
+	.card-inside {
+		border-radius: 14px;
 	}
-
-	.prices {
-		padding-bottom: 10px;
-	}
-
 	.buttons button {
 		font-size: 20px;
 	}
 }
 
-@media (max-width: 700px) {
-	.buttons {
-		display: grid;
-		gap: 24px;
+@media (max-width: 800px) {
+	.card-inside {
+		padding: 50px 16px 40px;
 	}
-
-	.buttons button {
-		font-size: 16px;
+	.prices {
+		right: 26px;
+	}
+	.buttons {
+		max-width: 270px;
 	}
 }
 
 @media (max-width: 600px) {
-	.card-inside {
-		padding: 30px 16px 44px;
-	}
 	.prices {
+		position: static;
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: start;
 		padding-bottom: 40px;
+		gap: 24px;
 	}
 }
 </style>

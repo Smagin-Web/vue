@@ -1,34 +1,34 @@
 <script setup lang="ts"></script>
 
 <template>
-	<div class="prices">
-		<div class="price-old-wrapper">
-			<h4 class="price-old">3 500₽</h4>
+	<div class="card-inside-prices">
+		<div class="prices-old-wrapper">
+			<h4 class="prices-old">3 500₽</h4>
 		</div>
-		<h4 class="price-new">0₽</h4>
+		<h4 class="prices-new">0₽</h4>
 	</div>
 </template>
 
 <style scoped>
-.prices {
+.card-inside-prices {
 	display: grid;
 
 	align-content: end;
 	justify-items: end;
 }
 
-.price-new {
+.prices-new {
 	font-size: 100px;
 	line-height: 100px;
 }
 
-.price-old-wrapper {
+.prices-old-wrapper {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
-.price-old {
+.prices-old {
 	color: #e4b5c3;
 	font-size: 40px;
 	text-align: end;
@@ -38,7 +38,7 @@
 	position: relative;
 }
 
-.price-old:after {
+.prices-old:after {
 	content: '';
 	display: block;
 	height: 14%;
@@ -51,21 +51,31 @@
 	border-radius: 20px;
 }
 
-@media screen and (max-width: 1100px) {
-	.price-new {
-		font-size: 54px;
+@media (max-width: 1400px) {
+	.prices-new {
+		font-size: 70px;
+		line-height: 70px;
 	}
-	.price-old {
+	.prices-old {
 		font-size: 28px;
 	}
 }
 
-@media screen and (max-width: 600px) {
-	.price-new {
+@media (max-width: 800px) {
+	.prices-new {
+		font-size: 60px;
+	}
+	.prices-old {
+		font-size: 24px;
+	}
+}
+
+@media (max-width: 600px) {
+	.prices-new {
 		font-size: 48px;
 		line-height: 40px;
 	}
-	.price-old {
+	.prices-old {
 		font-size: 24px;
 	}
 }

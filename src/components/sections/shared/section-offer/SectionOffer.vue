@@ -10,7 +10,7 @@ const props = defineProps(['modalBonusOpen'])
 <template>
 	<section class="section-offer">
 		<div class="section-offer-container">
-			<MContainer class="section-offer-container-custom">
+			<MContainer>
 				<div class="card">
 					<BigBadge style="background: #bfb0e9">Диагностика</BigBadge>
 					<div class="card-content">
@@ -41,12 +41,10 @@ const props = defineProps(['modalBonusOpen'])
 </template>
 
 <style scoped>
-.section-offer-container {
-	padding-top: 50px;
-}
 .section-offer {
+	padding-top: 100px;
 	padding-bottom: 100px;
-	overflow-x: hidden;
+	overflow-x: visible;
 }
 
 .heading {
@@ -146,27 +144,20 @@ const props = defineProps(['modalBonusOpen'])
 	.heading {
 		padding-bottom: 38px;
 	}
-
 	.card {
 		padding: 12px;
 		padding-top: 50px;
 		border-radius: 20px;
 	}
-
 	.card-content {
 		display: grid;
 		gap: 38px;
 		padding-bottom: 30px;
 	}
-
 	.card-badge {
 		left: 50%;
 		top: 0;
 		transform: translateY(-50%) translateX(-50%);
-	}
-	.section-offer-container-custom {
-		padding-right: 8px;
-		padding-left: 8px;
 	}
 }
 
@@ -176,9 +167,6 @@ const props = defineProps(['modalBonusOpen'])
 	}
 	.image-more {
 		padding-right: 40px;
-	}
-	.card-inside {
-		border-radius: 40px;
 	}
 	.section-offer-list {
 		max-width: 300px;
