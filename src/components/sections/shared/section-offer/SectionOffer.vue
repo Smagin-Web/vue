@@ -44,7 +44,7 @@ const props = defineProps(['modalBonusOpen'])
 .section-offer {
 	padding-top: 100px;
 	padding-bottom: 100px;
-	overflow-x: visible;
+	overflow: hidden;
 }
 
 .heading {
