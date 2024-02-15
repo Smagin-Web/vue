@@ -3,8 +3,6 @@ import MContainer from '@/components/shared/MContainer.vue'
 import CardInsideOffer from '../../../cards/CardInsideOffer.vue'
 import SectionOfferList from './SectionOfferList.vue'
 import BigBadge from '@/components/ui/big-badge/BigBadge.vue'
-
-const props = defineProps(['modalBonusOpen'])
 </script>
 
 <template>
@@ -30,10 +28,7 @@ const props = defineProps(['modalBonusOpen'])
 							<img src="./offer.png" class="image" />
 						</div>
 					</div>
-					<CardInsideOffer
-						class="card-inside"
-						:onClickMainButton="props.modalBonusOpen"
-					/>
+					<CardInsideOffer class="card-inside" />
 				</div>
 			</MContainer>
 		</div>

@@ -2,37 +2,21 @@
 import ViewWrapper from '@/components/ViewWrapper.vue'
 
 import SectionReviewPacients from '@/components/sections/shared/section-review-pacients/SectionReviewPacients.vue'
-import SectionStories from '@/components/sections/shared/section-stories/SectionStories.vue'
-import SectionMasters from '@/components/sections/shared/section-masters/SectionMasters.vue'
-import SectionCircles from '@/components/sections/shared/section-circles/SectionCircles.vue'
+// import SectionStories from '@/components/sections/shared/section-stories/SectionStories.vue'
+// import SectionMasters from '@/components/sections/shared/section-masters/SectionMasters.vue'
+// import SectionCircles from '@/components/sections/shared/section-circles/SectionCircles.vue'
 import SectionResult from '@/components/sections/shared/section-result/SectionResult.vue'
-import SectionReview from '@/components/sections/shared/section-review/SectionReview.vue'
+// import SectionReview from '@/components/sections/shared/section-review/SectionReview.vue'
 import SectionOffer from '@/components/sections/shared/section-offer/SectionOffer.vue'
-import SectionOther from '@/components/sections/shared/section-other/SectionOther.vue'
+// import SectionOther from '@/components/sections/shared/section-other/SectionOther.vue'
 import SectionInfo from '@/components/sections/shared/section-info/SectionInfo.vue'
-import SectionRead from '@/components/sections/shared/section-read/SectionRead.vue'
+// import SectionRead from '@/components/sections/shared/section-read/SectionRead.vue'
 import SectionTech from '@/components/sections/shared/section-tech/SectionTech.vue'
 
 import SectionPluses from '@/components/sections/main/section-pluses/SectionPluses.vue'
 import SectionBanner from '@/components/sections/main/section-banner/SectionBanner.vue'
 import CustomSlider from '@/components/sections/main/section-slider/CustomSlider.vue'
 import CustomSliderSm from '@/components/sections/main/section-slider/CustomSliderSm.vue'
-
-import ModalBonus from '@/components/modal/modal-bonus/ModalBonus.vue'
-
-import { ref } from 'vue'
-
-const isActiveModal = ref(false)
-
-const openModal = () => {
-	document.body.style.overflow = 'hidden'
-	isActiveModal.value = true
-}
-
-const closeModal = () => {
-	document.body.style.overflow = 'auto'
-	isActiveModal.value = false
-}
 </script>
 
 <template>
@@ -43,7 +27,7 @@ const closeModal = () => {
 		<SectionTech />
 		<CustomSlider class="custom-slider-lg" />
 		<CustomSliderSm class="custom-slider-sm" />
-		<SectionOffer :modalBonusOpen="openModal" />
+		<SectionOffer />
 		<SectionResult />
 		<!-- <SectionStories /> -->
 		<!-- <SectionOther /> -->
@@ -52,12 +36,6 @@ const closeModal = () => {
 		<!-- <SectionCircles /> -->
 		<!-- <SectionReview /> -->
 		<!-- <SectionRead /> -->
-
-		<ModalBonus
-			:isBonus="false"
-			:isActive="isActiveModal"
-			:onClose="closeModal"
-		/>
 	</ViewWrapper>
 </template>
 

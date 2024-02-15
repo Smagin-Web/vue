@@ -1,11 +1,12 @@
 <script setup lang="ts">
+import { useModalsStore } from '@/stores/modals'
 import MContainer from '@/components/shared/MContainer.vue'
 import SectionBonusList from './SectionBonusList.vue'
 import MButtonBig from '@/components/buttons/MButtonBig.vue'
 import SectionBonusPicture from './SectionBonusPicture.vue'
 import BigBadge from '@/components/ui/big-badge/BigBadge.vue'
 
-const props = defineProps(['openModal'])
+const store = useModalsStore()
 </script>
 
 <template>
@@ -18,7 +19,9 @@ const props = defineProps(['openModal'])
 						Сделайте приятный сюрприз близкому человеку
 					</h5>
 					<SectionBonusList class="card-list" />
-					<MButtonBig @click="props.openModal">Оформить сертификат</MButtonBig>
+					<MButtonBig @click="store.openModalBonuse">
+						Оформить сертификат
+					</MButtonBig>
 				</div>
 				<SectionBonusPicture class="card-picture" />
 			</div>

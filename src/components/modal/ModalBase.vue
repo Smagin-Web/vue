@@ -1,100 +1,36 @@
 <script setup lang="ts">
-'use strict'
-
-import { ref, reactive } from 'vue'
-import emailjs from 'emailjs-com'
-
-import MButtonBig from '@/components/buttons/MButtonBig.vue'
 import ModalBlockSuccess from './ModalBlockSuccess.vue'
 import CloseIcon from './CloseIcon.vue'
 import ModalLinkTelegram from './ModalLinkTelegram.vue'
 import ModalLinkWhatsapp from './ModalLinkWhatsapp.vue'
+import { useModalsStore } from '@/stores/modals'
 
-emailjs.init('uWrvoY8ZWXv7j-g9-')
+const store = useModalsStore()
 
-const isActiveSuccess = ref(false)
-
-const props = defineProps(['isActive', 'onClose', 'isBonus'])
-
-const dataObject = reactive({
-	user_name: '',
-	user_phone: '',
-	price: ''
-})
-
-const sendEmail = () => {
-	emailjs.send('service_03ipejb', 'template_032l0us', dataObject).then(
-		() => {
-			isActiveSuccess.value = true
-			setTimeout(() => {
-				isActiveSuccess.value = false
-				props.onClose()
-			}, 2000)
-		},
-		error => {
-			console.log('FAILED...', error)
-			props.onClose()
-		}
-	)
-}
+const props = defineProps(['title', 'isSuccess'])
 </script>
 
 <template>
-	<div class="modal-wrapper" v-show="props.isActive">
+	<div class="modal-wrapper">
 		<div class="modal">
 			<ModalBlockSuccess
 				class="modal-bonus-success-screen"
-				:class="isActiveSuccess && 'modal-bonus-success-screen-active'"
+				:class="props.isSuccess && 'modal-bonus-success-screen-active'"
 			/>
-			<button class="close-button" @click="onClose">
+
+			<button class="close-button" @click="store.closeAllModals">
 				<CloseIcon class="close-button-icon" />
 			</button>
 
-			<h4 class="h-l modal-title">
-				{{ props.isBonus ? 'Подарочный сертификат' : 'Запись на приём' }}
-			</h4>
-			<p class="text-sm modal-text">
-				Заполни форму&nbsp;&mdash; всё остальное наш администратор берёт
-				на&nbsp;себя. Он&nbsp;быстро свяжется с&nbsp;тобой, чтобы назначить
-				визит в&nbsp;удобное для тебя время.
-			</p>
+			<h4 class="h-l modal-title" v-text="props.title" />
+			<p
+				class="text-sm modal-text"
+				v-text="
+					'Заполни форму\u00A0\u2014 всё остальное наш администратор берёт на\u00A0себя. Он\u00A0быстро свяжется с\u00A0тобой, чтобы назначить визит в\u00A0удобное для тебя время.'
+				"
+			/>
 
-			<form
-				@submit.prevent.stop="sendEmail"
-				method="POST"
-				class="modal-form"
-				id="form_modal_bonus"
-				ref="formRef"
-			>
-				<input
-					class="minput"
-					type="text"
-					placeholder="Имя"
-					name="user_name"
-					v-model="dataObject.user_name"
-				/>
-
-				<input
-					class="minput"
-					type="text"
-					placeholder="Телефон"
-					name="user_phone"
-					v-model="dataObject.user_phone"
-				/>
-
-				<input
-					v-if="props.isBonus"
-					class="minput"
-					type="text"
-					placeholder="Номинал сертификата"
-					name="price"
-					v-model="dataObject.price"
-				/>
-
-				<MButtonBig type="submit" class="modal-button">
-					Отправить заявку
-				</MButtonBig>
-			</form>
+			<slot />
 
 			<p class="text-mini modal-agreement">
 				Нажимая кнопку «Отправить заявку», я&nbsp;соглашаюсь с политикой
@@ -183,13 +119,6 @@ const sendEmail = () => {
 	padding-bottom: 42px;
 }
 
-.modal-form {
-	display: flex;
-	flex-direction: column;
-	gap: 30px;
-	padding-bottom: 30px;
-}
-
 .modal-agreement {
 	max-width: 360px;
 	margin: 0 auto;
@@ -198,7 +127,14 @@ const sendEmail = () => {
 	padding-bottom: 50px;
 }
 
-.modal-button {
+.modal form {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	padding-bottom: 30px;
+}
+
+.modal form button {
 	width: 100%;
 	max-width: 100%;
 	margin-top: 30px;
@@ -230,7 +166,7 @@ const sendEmail = () => {
 	.modal-text {
 		max-width: 500px;
 	}
-	.modal-button {
+	.modal form button {
 		margin: 0;
 	}
 	.modal-agreement {

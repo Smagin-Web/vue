@@ -18,15 +18,15 @@
 }
 
 .minput:hover {
-	outline: 2px solid #c9bcbd;
+	outline: 1px solid #c9bcbd;
 }
 
 .minput:hover::placeholder {
-	opacity: 0.7;
+	opacity: 0.9;
 }
 
 .minput:focus {
-	outline: 2px solid #6d6364;
+	outline: 1px solid #6d6364;
 }
 
 .minput:focus::placeholder {

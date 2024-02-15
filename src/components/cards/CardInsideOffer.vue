@@ -2,8 +2,9 @@
 import MButtonOutline from '../buttons/MButtonOutline.vue'
 import MButton from '../buttons/MButton.vue'
 import CardInsideOfferPrice from './CardInsideOfferPrice.vue'
+import { useModalsStore } from '@/stores/modals'
 
-const props = defineProps(['onClickMainButton'])
+const store = useModalsStore()
 </script>
 
 <template>
@@ -14,7 +15,7 @@ const props = defineProps(['onClickMainButton'])
 			</h4>
 			<CardInsideOfferPrice class="prices" />
 			<div class="buttons">
-				<MButton @click="props.onClickMainButton">Записаться на приём</MButton>
+				<MButton @click="store.openModalApplication">Записаться на приём</MButton>
 
 				<MButtonOutline>
 					<a

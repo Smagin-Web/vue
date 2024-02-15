@@ -1,25 +1,15 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import { useModalsStore } from '@/stores/modals'
 import ButtonFixed from './buttons/ButtonFixed.vue'
 import Header from './shared/Header.vue'
 import Footer from './shared/Footer.vue'
-import ModalBonus from './modal/modal-bonus/ModalBonus.vue'
+import ModalBonuse from '@/components/modal/modal-bonuse/ModalBonuse.vue'
+import ModalApplication from '@/components/modal/modal-application/ModalApplication.vue'
 
-const isActiveModal = ref(false)
-
-const openModal = () => {
-	document.body.style.overflow = 'hidden'
-	isActiveModal.value = true
-}
-
-const closeModal = () => {
-	document.body.style.overflow = 'auto'
-	isActiveModal.value = false
-}
+const store = useModalsStore()
 
 const headerStyles = ref('display: block')
-
-const isModalOpen = ref(false)
 
 const handleScroll = (event: WheelEvent) => {
 	if (event.deltaY > 0) {
@@ -31,27 +21,22 @@ const handleScroll = (event: WheelEvent) => {
 </script>
 
 <template>
-	<div
-		@wheel="handleScroll"
-		class="page-wrapper"
-		:class="{ 'modal-open': isModalOpen }"
-	>
-		<ButtonFixed :openModal="openModal" />
+	<div @wheel="handleScroll" class="page-wrapper">
 		<Header :style="headerStyles" />
+
 		<slot />
+
+		<ButtonFixed />
 		<Footer />
 
-		<ModalBonus :isActive="isActiveModal" :onClose="closeModal" />
+		<ModalApplication />
+		<ModalBonuse />
 	</div>
 </template>
 
 <style scoped>
 .page-wrapper {
 	padding-top: 194px;
-}
-
-.modal-open {
-	overflow: hidden;
 }
 
 @media (max-width: 1000px) {

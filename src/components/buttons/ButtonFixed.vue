@@ -1,13 +1,14 @@
 <script setup lang="ts">
 import IconMessage from '../icons/IconMessage.vue'
+import { useModalsStore } from '@/stores/modals'
 
-const props = defineProps(['openModal'])
+const store = useModalsStore()
 </script>
 
 <template>
 	<div class="buttons-fixed">
 		<div class="background" />
-		<button class="button-one" @click="props.openModal">Запись на приём</button>
+		<button class="button-one" @click="store.openModalApplication">Запись на приём</button>
 		<button class="button-two">
 			<a
 				href="https://wa.me/79774122010"
@@ -147,3 +148,4 @@ const props = defineProps(['openModal'])
 	}
 }
 </style>
+@/stores/modals
