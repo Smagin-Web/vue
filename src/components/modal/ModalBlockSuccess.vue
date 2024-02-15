@@ -1,5 +1,12 @@
+<script setup lang="ts">
+const props = defineProps(['isActive'])
+</script>
+
 <template>
-	<div class="modal-success-screen">
+	<div
+		class="modal-success-screen"
+		:class="props.isActive && 'modal-success-screen-active'"
+	>
 		<h6 class="h-l">Спасибо за заявку!</h6>
 		<p class="text-sm">Администратор скоро с Вами свяжется!</p>
 	</div>
@@ -27,5 +34,11 @@
 	transition: 0.2s;
 	pointer-events: none;
 	z-index: 10;
+
+	opacity: 0;
+}
+
+.modal-success-screen-active {
+	opacity: 1;
 }
 </style>

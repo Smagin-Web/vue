@@ -6,6 +6,7 @@ import Header from './shared/Header.vue'
 import Footer from './shared/Footer.vue'
 import ModalBonuse from '@/components/modal/modal-bonuse/ModalBonuse.vue'
 import ModalApplication from '@/components/modal/modal-application/ModalApplication.vue'
+import ModalReplace from './modal/modal-replace/ModalReplace.vue'
 
 const store = useModalsStore()
 
@@ -29,6 +30,7 @@ const handleScroll = (event: WheelEvent) => {
 		<ButtonFixed />
 		<Footer />
 
+		<ModalReplace />
 		<ModalApplication />
 		<ModalBonuse />
 	</div>

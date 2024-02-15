@@ -6,6 +6,7 @@ interface IModalsStore {
 	isBodyLock: Ref<boolean>
 	isOpenModalApplication: Ref<boolean>
 	isOpenModalBonuse: Ref<boolean>
+	isOpenModalReplace: Ref<boolean>
 
 	openModalApplication: () => void
 	openModalBonuse: () => void
@@ -16,10 +17,12 @@ export const useModalsStore = defineStore('modals', () => {
 	const isBodyLock = ref(false)
 	const isOpenModalBonuse = ref(false)
 	const isOpenModalApplication = ref(false)
+	const isOpenModalReplace = ref(true)
 
 	const closeAllModals = () => {
 		isOpenModalApplication.value = false
 		isOpenModalBonuse.value = false
+		isOpenModalReplace.value = false
 
 		document.body.style.overflow = 'auto'
 	}
@@ -44,6 +47,7 @@ export const useModalsStore = defineStore('modals', () => {
 		isBodyLock,
 		isOpenModalApplication,
 		isOpenModalBonuse,
+		isOpenModalReplace,
 
 		openModalApplication,
 		openModalBonuse,

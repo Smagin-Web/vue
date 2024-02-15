@@ -28,11 +28,11 @@ const props = defineProps(['title'])
 <style scoped>
 .section-concept-main {
 	overflow: visible;
-	padding-top: 80px;
 }
 .container-custom {
 	max-width: 1920px;
 	padding: 0 46px;
+	padding-top: 100px;
 	margin: 0 auto;
 	display: flex;
 	gap: 50px;
@@ -100,6 +100,9 @@ const props = defineProps(['title'])
 }
 
 @media (max-width: 1400px) {
+	.container-custom {
+		padding-top: 50px;
+	}
 	.concept-picture {
 		max-width: 460px;
 	}
@@ -132,7 +135,7 @@ const props = defineProps(['title'])
 
 		max-width: 700px;
 
-		padding-top: 40px;
+		padding-top: 100px;
 		padding-left: 20px;
 		padding-right: 20px;
 	}
@@ -145,9 +148,6 @@ const props = defineProps(['title'])
 @media (max-width: 590px) {
 	.section-banner-about {
 		overflow: hidden;
-	}
-	.container-custom {
-		padding-top: 0;
 	}
 	.banner {
 		margin-top: -10px;
