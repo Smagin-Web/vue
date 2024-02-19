@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
 import { Mousewheel, EffectCreative } from 'swiper/modules'
 
 import 'swiper/css'
@@ -12,15 +12,15 @@ import CustomSliderCardTemplate from './CustomSliderCardTemplate.vue'
 import { dataSlides } from './data'
 
 let activeSlideIndex = ref(1)
-const container = ref<(HTMLElement & { swiper?: any }) | null>(null)
+const container = ref(null)
 const isLockScroll = ref(true)
 
-const handleWheel = (event: WheelEvent) => {
+const handleWheel = (event) => {
 	event.stopPropagation()
-	const swiper = (event.currentTarget as HTMLElement & { swiper?: any })?.swiper
+	const swiper = (event.currentTarget & { swiper }).swiper
 
-	const isEndSlide: boolean = swiper.isEnd && event.deltaY > 0
-	const isStartSlide: boolean = swiper.isBeginning && event.deltaY < 0
+	const isEndSlide = swiper.isEnd && event.deltaY > 0
+	const isStartSlide = swiper.isBeginning && event.deltaY < 0
 
 	// Если скролл заблокирован - блокируем событие, скроллим на центр слайдера
 	if (isLockScroll.value === true) {
@@ -38,13 +38,13 @@ const handleWheel = (event: WheelEvent) => {
 }
 
 const scrollToCenter = () => {
-	const containerElement = container.value as HTMLElement | null
+	const containerElement = container.value
 	if (containerElement) {
 		containerElement.scrollIntoView({ behavior: 'smooth', block: 'center' })
 	}
 }
 
-const onChangeActive = (swiper: any) => {
+const onChangeActive = (swiper) => {
 	activeSlideIndex.value = swiper.activeIndex + 1
 }
 </script>

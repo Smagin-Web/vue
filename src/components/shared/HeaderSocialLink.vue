@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup >
 import IconGoogle from '../icons/IconGoogle.vue'
 import IconYandex from '../icons/IconYandex.vue'
 </script>

@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup >
 import MContainer from '@/components/shared/MContainer.vue'
 import {
 	dataPolicy1,
@@ -6,7 +6,7 @@ import {
 	dataPolicy3,
 	dataPolicy4,
 	dataPolicy5
-} from './const'
+} from './const.js'
 import PolicyItem from './PolicyItem.vue'
 </script>
 

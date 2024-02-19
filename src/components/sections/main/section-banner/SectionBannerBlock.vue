@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup >
 import SectionBannerShadow from './SectionBannerShadow.vue'
 import PictureBgBanner from '../../../icons/PictureBgBanner.vue'
 </script>

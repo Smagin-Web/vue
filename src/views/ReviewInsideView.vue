@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup >
 import ViewWrapper from '@/components/ViewWrapper.vue'
 
 import SectionReviewInside from '@/components/sections/review-inside/section-review-inside/SectionReviewInside.vue'

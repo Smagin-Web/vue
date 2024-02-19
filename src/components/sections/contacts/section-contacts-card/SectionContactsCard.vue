@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup >
 import MContainer from '@/components/shared/MContainer.vue'
 import BreadCrumbs from '@/components/shared/BreadCrumbs.vue'
 // import MButtonOutlineBig from '@/components/buttons/MButtonOutlineBig.vue'

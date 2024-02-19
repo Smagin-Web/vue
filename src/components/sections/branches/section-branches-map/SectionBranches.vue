@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
 import MContainer from '@/components/shared/MContainer.vue'
 import BreadCrumbs from '@/components/shared/BreadCrumbs.vue'
 import IconLocation from './IconLocation.vue'
@@ -7,7 +7,7 @@ import { ref } from 'vue'
 
 const mapWrapper = ref('')
 
-const onMapScroll = (e: any) => {
+const onMapScroll = e => {
 	e.preventDefault()
 }
 </script>

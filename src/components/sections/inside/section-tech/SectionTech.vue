@@ -1,31 +1,26 @@
-<script setup lang="ts">
+<script setup>
 import MContainer from '@/components/shared/MContainer.vue'
 import SectionTechShadow from './SectionTechShadow.vue'
 import SectionTechPicture from './SectionTechPicture.vue'
 
 const props = defineProps({
 	text1: {
-		type: String,
 		default:
 			'В\u00A0ходе лечения мы\u00A0применяем новейшее оборудование и\u00A0инновационные терапевтические методики.'
 	},
 	text2: {
-		type: String,
 		default:
 			'Лечение в\u00A0нашем центре проходит без боли и\u00A0других неприятных ощущений.'
 	},
 	text3: {
-		type: String,
 		default:
 			'Благодаря комплексному подходу к\u00A0терапии угревой сыпи мы\u00A0не\u00A0только быстро избавляем наших пациентов от\u00A0кожных проблем, но\u00A0и предотвращаем их\u00A0повторное появление в\u00A0будущем.'
 	},
 	text4: {
-		type: String,
 		default:
 			'Результат нашего лечения ты\u00A0сможешь увидеть уже после первого посещения.'
 	},
 	textDisable2: {
-		type: Boolean,
 		default: false
 	}
 })

@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
 import MContainer from '@/components/shared/MContainer.vue'
 
 import { ref, onMounted, onUnmounted } from 'vue'
@@ -7,9 +7,9 @@ const stylesH1 = ref('opacity: 0;')
 const stylesH2 = ref('opacity: 0;')
 
 const isSectionInfoVisible = ref(false)
-let observer: IntersectionObserver | null = null
+let observer = null
 
-const handleSectionIntersect = (entries: IntersectionObserverEntry[]) => {
+const handleSectionIntersect = entries => {
 	const [entry] = entries
 	isSectionInfoVisible.value = entry.isIntersecting
 	if (isSectionInfoVisible.value) {

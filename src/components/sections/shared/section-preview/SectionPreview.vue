@@ -1,13 +1,11 @@
-<script setup lang="ts">
+<script setup>
 import MContainer from '@/components/shared/MContainer.vue'
 
 const props = defineProps({
 	title: {
-		type: String,
 		default: 'Мы разработали продукт — AntiAcne Concept'
 	},
 	text: {
-		type: String,
 		default:
 			'Задачей которого является эффективное лечение заболевания Акне первой, второй и третьей степен'
 	}

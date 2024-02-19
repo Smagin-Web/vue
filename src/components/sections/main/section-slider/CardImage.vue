@@ -1,17 +1,15 @@
-<script setup lang="ts">
+<script setup>
 const props = defineProps(['iconSrc', 'iconBigSrc', 'iconPng'])
 
-const getSrc = (name: any) => {
+const getSrc = name => {
 	if (name !== undefined) {
 		const path = `${name}`
-		const modules: Record<string, any> = import.meta.glob('./*.svg')
-		return modules[path]().then((mod: { default: unknown }) => mod.default)
+		const modules = import.meta.glob('./*.svg')
+		return modules[path]().then(mod => mod.default)
 	}
 }
 
 const icon = await getSrc(props.iconSrc || props.iconBigSrc || undefined)
-
-console.log(props.iconPng)
 </script>
 
 <template>

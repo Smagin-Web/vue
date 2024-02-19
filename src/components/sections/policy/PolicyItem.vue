@@ -1,12 +1,5 @@
-<script setup lang="ts">
-const props = defineProps({
-	text: {
-		type: String
-	},
-	listArray: {
-		type: Array<string>
-	}
-})
+<script setup>
+const props = defineProps(['text', 'listArray'])
 </script>
 
 <template>

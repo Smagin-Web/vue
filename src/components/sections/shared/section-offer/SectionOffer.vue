@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup >
 import MContainer from '@/components/shared/MContainer.vue'
 import CardInsideOffer from '../../../cards/CardInsideOffer.vue'
 import SectionOfferList from './SectionOfferList.vue'

@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup >
 import IconPlay from '@/components/icons/IconPlay.vue'
 </script>
 

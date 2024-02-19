@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup >
 import PictureShadow from './PictureShadow.vue'
 import SectionPictureBg from './SectionPictureBg.vue'
 </script>

@@ -1,5 +1,5 @@
 <!-- eslint-disable vue/multi-word-component-names -->
-<script setup lang="ts">
+<script setup >
 import IconPlay from '../icons/IconPlay.vue'
 </script>
 

@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup >
 import CardBadges from './CardBadges.vue'
 
 const props = defineProps(['badgeColor', 'badgeName', 'badgeNumber'])

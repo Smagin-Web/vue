@@ -1,25 +1,22 @@
-<script setup lang="ts">
+<script setup>
 import IconYandexLocation from '@/components/icons/IconYandexLocation.vue'
 import IconCalendar from '@/components/icons/IconCalendar.vue'
 import ButtonMore from '@/components/buttons/ButtonMore.vue'
 import IconLocation2Gis from '../icons/IconLocation2Gis.vue'
 
-defineProps<{
-	masterName?: string
-	badge?: 'yandex' | '2gis'
-}>()
+const props = defineProps(['masterName', 'badge'])
 </script>
 
 <template>
 	<div
 		class="card-wrapper"
-		:class="masterName ? 'card-wrapper-with-header' : ''"
+		:class="props.masterName ? 'card-wrapper-with-header' : ''"
 	>
-		<div class="card-header" v-if="masterName">
+		<div class="card-header" v-if="props.masterName">
 			<img src="./CardReviewMasterAvatar.png" alt="" />
 			<div>
 				<p class="text-sm card-header-title">Отзыв о специалисте</p>
-				<h6 class="card-header-name">{{ masterName }}</h6>
+				<h6 class="card-header-name">{{ props.masterName }}</h6>
 			</div>
 		</div>
 
@@ -33,8 +30,8 @@ defineProps<{
 							<IconCalendar />
 							<span class="text-sm">15.05.2024</span>
 						</p>
-						<IconYandexLocation v-if="badge === 'yandex'" />
-						<IconLocation2Gis v-if="badge === '2gis'" />
+						<IconYandexLocation v-if="props.badge === 'yandex'" />
+						<IconLocation2Gis v-if="props.badge === '2gis'" />
 					</div>
 
 					<img src="./CardReviewMasterPhoto.png" alt="" class="card-photo" />

@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup >
 import ViewWrapper from '@/components/ViewWrapper.vue'
 
 import SectionMaster from '@/components/sections/master/SectionMaster.vue'

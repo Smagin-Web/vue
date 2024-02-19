@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup >
 // import MButtonOutline from '@/components/buttons/MButtonOutline.vue'
 import MButton from '@/components/buttons/MButton.vue'
 import CardInfo from './CardInfo.vue'

@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup >
 import Filter from '@/components/shared/Filter.vue'
 
 const props = defineProps(['items'])

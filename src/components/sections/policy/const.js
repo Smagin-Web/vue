@@ -1,9 +1,4 @@
-interface IDataPolicy {
-	text: string
-	listArray?: Array<string>
-}
-
-export const dataPolicy1: IDataPolicy[] = [
+export const dataPolicy1 = [
 	{
 		text: `1. Политика обработки персональных данных (далее – Политика)
             разработана в соответствии с Федеральным законом от 27.07.2006.
@@ -37,7 +32,7 @@ export const dataPolicy1: IDataPolicy[] = [
 	}
 ]
 
-export const dataPolicy2: IDataPolicy[] = [
+export const dataPolicy2 = [
 	{ text: `2.1. Принципы обработки персональных данных.` },
 	{
 		text: `2.1.1. Обработка персональных данных у Оператора осуществляется на основе следующих принципов:`,
@@ -127,7 +122,7 @@ export const dataPolicy2: IDataPolicy[] = [
 	}
 ]
 
-export const dataPolicy3: IDataPolicy[] = [
+export const dataPolicy3 = [
 	{
 		text: `3.1. Согласие субъекта персональных данных на обработку его персональных данных Субъект персональных данных принимает решение о предоставлении его персональных данных и дает согласие на их обработку свободно, своей волей и в своем интересе.`
 	},
@@ -160,7 +155,7 @@ export const dataPolicy3: IDataPolicy[] = [
 	}
 ]
 
-export const dataPolicy4: IDataPolicy[] = [
+export const dataPolicy4 = [
 	{
 		text: `4.1. Безопасность персональных данных, обрабатываемых Оператора, обеспечивается реализацией правовых, организационных и технических мер, необходимых для обеспечения требований федерального законодательства в области защиты персональных данных.`
 	},
@@ -183,7 +178,7 @@ export const dataPolicy4: IDataPolicy[] = [
 	}
 ]
 
-export const dataPolicy5: IDataPolicy[] = [
+export const dataPolicy5 = [
 	{
 		text: `5.1. Иные права и обязанности Оператора, как оператора персональных данных определяются законодательством Российской Федерации в области персональных данных.`
 	},

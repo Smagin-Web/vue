@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
 import PicturePluses2 from '../../../icons/PicturePluses2.vue'
 import PlusesText from './PlusesText.vue'
 import SectionPlusesShadow from './SectionPlusesShadow.vue'
@@ -6,11 +6,9 @@ import SvgBg2 from './svg/SvgBg2.vue'
 
 const props = defineProps({
 	moreText: {
-		type: String,
 		default: ''
 	},
 	text: {
-		type: String,
 		default: 'Парк лицензированной аппаратной косметологии'
 	}
 })

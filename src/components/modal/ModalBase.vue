@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup >
 import ModalBlockSuccess from './ModalBlockSuccess.vue'
 import CloseIcon from './CloseIcon.vue'
 import ModalLinkTelegram from './ModalLinkTelegram.vue'

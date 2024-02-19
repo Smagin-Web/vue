@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup >
 import IconCheck from './IconCheck.vue'
 </script>
 

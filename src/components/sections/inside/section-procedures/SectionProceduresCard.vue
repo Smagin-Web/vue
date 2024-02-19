@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup >
 import SectionProceduresBadge from './SectionProceduresBadge.vue'
 import CardInfo from '@/components/card-elements/CardInfo.vue'
 import CardLink from '@/components/card-elements/CardLink.vue'

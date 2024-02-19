@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup >
 import SelectArrow from '@/components/icons/SelectArrow.vue'
 import { ref } from 'vue'
 

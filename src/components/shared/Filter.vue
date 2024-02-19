@@ -1,11 +1,11 @@
 <!-- eslint-disable vue/multi-word-component-names -->
-<script lang="ts" setup>
-defineProps<{
-	active: boolean
-}>()
+<script setup>
+const props = defineProps(['active'])
 </script>
 <template>
-	<button class="filter" v-bind:class="{ active: active }"><slot /></button>
+	<button class="filter" v-bind:class="{ active: props.active }">
+		<slot />
+	</button>
 </template>
 
 <style scoped>

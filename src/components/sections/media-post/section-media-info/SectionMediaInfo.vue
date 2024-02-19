@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup >
 import MContainer from '@/components/shared/MContainer.vue'
 import MediaInfoWidget from './MediaInfoWidget.vue'
 import MediaInfoWidget2 from './MediaInfoWidget2.vue'

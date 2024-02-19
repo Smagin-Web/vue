@@ -1,13 +1,7 @@
-<script lang="ts" setup>
+<script setup>
 import BadgeMd from '@/components/ui/BadgeMd.vue'
 
-const props = defineProps({
-	title: String,
-	price: String,
-	time: String,
-	tech: String
-})
-console.log(props.tech)
+const props = defineProps(['title', 'price', 'time', 'tech'])
 </script>
 <template>
 	<div class="card">

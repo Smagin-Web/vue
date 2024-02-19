@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup >
 import IconCardLink from '@/components/icons/IconCardLink.vue'
 const props = defineProps(['path'])
 </script>

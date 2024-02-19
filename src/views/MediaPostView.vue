@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup >
 import ViewWrapper from '@/components/ViewWrapper.vue'
 import SectionFaq from '@/components/sections/inside/section-faq/SectionFaq.vue'
 import SectionRec from '@/components/sections/inside/section-rec/SectionRec.vue'

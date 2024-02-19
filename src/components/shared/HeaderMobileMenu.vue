@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup >
 import Logo from './Logo.vue'
 
 const props = defineProps(['isActive', 'onClose'])

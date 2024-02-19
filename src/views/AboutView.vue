@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup >
 import ViewWrapper from '@/components/ViewWrapper.vue'
 
 import SectionClinicInfo from '@/components/sections/about/section-clinic-info/SectionClinicInfo.vue'

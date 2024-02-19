@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup >
 import MContainer from '@/components/shared/MContainer.vue'
 import PictureReviews from '@/components/icons/PictureReviews.vue'
 import MButtonBig from '@/components/buttons/MButtonBig.vue'

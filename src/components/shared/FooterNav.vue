@@ -1,5 +1,5 @@
 <!-- eslint-disable vue/multi-word-component-names -->
-<script setup lang="ts">
+<script setup >
 import FooterSocials from './FooterSocials.vue'
 </script>
 
@@ -37,7 +37,7 @@ import FooterSocials from './FooterSocials.vue'
 	</div>
 </template>
 
-<script lang="ts">
+<script >
 export default {
 	data() {
 		return {

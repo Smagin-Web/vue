@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup >
 import MButtonBig from '@/components/buttons/MButtonBig.vue'
 </script>
 <template>

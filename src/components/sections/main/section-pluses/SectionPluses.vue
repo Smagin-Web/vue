@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
 import { onMounted, onUnmounted, ref } from 'vue'
 import MContainer from '../../../shared/MContainer.vue'
 import SectionPlusesPicture1 from './SectionPlusesPicture1.vue'
@@ -32,12 +32,7 @@ onUnmounted(() => {
 	window.removeEventListener('scroll', handleScroll)
 })
 
-defineProps<{
-	moreText?: string
-	text1?: string
-	text2?: string
-	text3?: string
-}>()
+const props = defineProps(['moreText', 'text1', 'text2', 'text3'])
 </script>
 
 <template>
@@ -45,18 +40,18 @@ defineProps<{
 		<MContainer>
 			<div class="cards">
 				<SectionPlusesPicture1
-					:text="text1"
+					:text="props.text1"
 					:style="parallaxStyle"
 					style="transition: 1s"
 				/>
 				<SectionPlusesPicture2
-					:text="text2"
-					:more-text="moreText"
+					:text="props.text2"
+					:more-text="props.moreText"
 					:style="parallaxStyle2"
 					style="transition: 1s"
 				/>
 				<SectionPlusesPicture3
-					:text="text3"
+					:text="props.text3"
 					:style="parallaxStyle3"
 					style="transition: 1s"
 					class="picture-3"

@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup >
 import MContainer from '@/components/shared/MContainer.vue'
 import SectionHelpPicture from './SectionHelpPicture.vue'
 import IconTelegram2 from '@/components/icons/IconTelegram2.vue'

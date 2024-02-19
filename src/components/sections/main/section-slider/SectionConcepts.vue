@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup >
 import MContainer from '@/components/shared/MContainer.vue'
 import CustomSliderCardTemplate from './CustomSliderCardTemplate.vue'
 import { dataSlides } from './data'

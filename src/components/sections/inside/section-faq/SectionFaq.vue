@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
 import MContainer from '@/components/shared/MContainer.vue'
 import FaqItem from './FaqItem.vue'
 import { ref } from 'vue'
@@ -7,12 +7,11 @@ let indexActiveItem = ref(20)
 
 const props = defineProps({
 	items: {
-		type: Array<{ title: string; text: string }>,
 		default: [{ title: 'Заголовок', text: 'Ответ на вопрос' }]
 	}
 })
 
-const openFaq = (index: number) => {
+const openFaq = index => {
 	if (index != indexActiveItem.value) {
 		indexActiveItem.value = index
 	} else {

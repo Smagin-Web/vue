@@ -1,5 +1,5 @@
 <!-- eslint-disable vue/multi-word-component-names -->
-<script setup lang="ts">
+<script setup >
 import MContainer from '../shared/MContainer.vue'
 import Logo from '../icons/IconLogo.vue'
 import FooterNav from './FooterNav.vue'
@@ -20,7 +20,7 @@ import FooterInfo from './FooterInfo.vue'
 	</footer>
 </template>
 
-<script lang="ts">
+<script >
 export default {
 	data() {
 		return {

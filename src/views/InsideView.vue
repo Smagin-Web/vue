@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup >
 import ViewWrapper from '@/components/ViewWrapper.vue'
 
 // import SectionStories from '@/components/sections/shared/section-stories/SectionStories.vue'

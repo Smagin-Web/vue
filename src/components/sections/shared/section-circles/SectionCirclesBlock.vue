@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup >
 import Avatar from '@/components/ui/Avatar.vue'
 </script>
 

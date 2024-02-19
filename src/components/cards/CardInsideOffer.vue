@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup >
 import MButtonOutline from '../buttons/MButtonOutline.vue'
 import MButton from '../buttons/MButton.vue'
 import CardInsideOfferPrice from './CardInsideOfferPrice.vue'

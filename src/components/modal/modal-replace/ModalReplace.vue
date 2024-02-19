@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup >
 import { useModalsStore } from '@/stores/modals'
 import MButtonBig from '@/components/buttons/MButtonBig.vue'
 import ModalWrapper from '../ModalWrapper.vue'

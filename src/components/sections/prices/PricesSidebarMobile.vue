@@ -1,7 +1,5 @@
-<script setup lang="ts">
+<script setup>
 import { ref } from 'vue'
-import type { ICategory } from './SectionPrices.vue'
-import type { PropType } from 'vue'
 
 let isActive = ref(false)
 
@@ -9,31 +7,13 @@ const onClickHandler = () => {
 	isActive.value = !isActive.value
 }
 
-const props = defineProps({
-	activeIndex: {
-		type: Number,
-		default: 0
-	},
-	itemsConcepts: {
-		type: Array<ICategory>,
-		default: [
-			{
-				title: '',
-				items: []
-			}
-		]
-	},
-	setActiveCategory: {
-		type: Function as PropType<(index: number) => void>,
-		required: true
-	}
-})
+const props = defineProps(['activeIndex', 'itemsConcepts', 'setActiveCategory'])
 </script>
 
 <template>
 	<div class="nav" :onClick="onClickHandler">
 		<button class="nav-main-button" :class="{ active: isActive }">
-			{{ props.itemsConcepts[activeIndex].title }}
+			{{ props.itemsConcepts[activeIndex || 0].title }}
 		</button>
 		<span class="nav-icon-button" :class="{ active: isActive }">
 			<svg

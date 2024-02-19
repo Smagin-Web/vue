@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup >
 import 'swiper/css'
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import MContainer from '@/components/shared/MContainer.vue'
@@ -81,7 +81,7 @@ import MContainer from '@/components/shared/MContainer.vue'
 	</section>
 </template>
 
-<script lang="ts">
+<script >
 export default {
 	components: {
 		Swiper,

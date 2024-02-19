@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup >
 import MButtonOutlineBig from '@/components/buttons/MButtonOutlineBig.vue'
 import Icon8 from './Icon8.vue'
 import IconP from './IconP.vue'

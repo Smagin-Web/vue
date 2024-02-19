@@ -1,5 +1,5 @@
 <!-- eslint-disable vue/multi-word-component-names -->
-<script setup lang="ts">
+<script setup >
 import IconTelegram from '../icons/IconTelegram.vue'
 import IconWhatsapp from '../icons/IconWhatsapp.vue'
 import IconVk from '../icons/IconVk.vue'

@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
 import PicturePluses1 from '../../../icons/PicturePluses1.vue'
 import PlusesText from './PlusesText.vue'
 import SectionPlusesShadow from './SectionPlusesShadow.vue'
@@ -6,7 +6,6 @@ import SvgBg1 from './svg/SvgBg1.vue'
 
 const props = defineProps({
 	text: {
-		type: String,
 		default: 'Сертифицированные косметологи и врачи со стажем от 10 лет'
 	}
 })

@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup >
 import IconSliderArrowRight from '../icons/IconSliderArrowRight.vue'
 </script>
 <template>

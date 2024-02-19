@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup >
 import BreadCrumbs from '@/components/shared/BreadCrumbs.vue'
 import MContainer from '@/components/shared/MContainer.vue'
 import BadgeMd from '@/components/ui/BadgeMd.vue'

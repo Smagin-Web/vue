@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup >
 import PictureResult from '../../../icons/PictureResult.vue'
 import SectionResultShadow from './SectionResultShadow.vue'
 </script>

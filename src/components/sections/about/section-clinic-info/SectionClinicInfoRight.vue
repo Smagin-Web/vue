@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup >
 // import IconEmblem from './IconEmblem.vue'
 // import IconArrow from './IconArrow.vue'
 // import IconPlay from '@/components/icons/IconPlay.vue'

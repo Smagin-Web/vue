@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup >
 import IconWhatsapp from './IconWhatsapp.vue'
 import IconTelegram from './IconTelegram.vue'
 </script>

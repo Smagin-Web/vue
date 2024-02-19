@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
 import MContainer from '@/components/shared/MContainer.vue'
 import BreadCrumbs from '@/components/shared/BreadCrumbs.vue'
 import PricesSidebar from './PricesSidebar.vue'
@@ -14,17 +14,11 @@ import {
 	personalConcept,
 	consult,
 	allConcepts
-} from './const'
-import type { IPriceCard } from './const'
-
-export interface ICategory {
-	title: string
-	items: IPriceCard[]
-}
+} from './const.js'
 
 const activeCategory = ref(1)
 
-const categories: ICategory[] = [
+const categories = [
 	{
 		title: 'Все категории',
 		items: allConcepts
@@ -59,7 +53,7 @@ const categories: ICategory[] = [
 	}
 ]
 
-const setActiveCategory = (numberCategory: number) => {
+const setActiveCategory = numberCategory => {
 	activeCategory.value = numberCategory
 }
 </script>

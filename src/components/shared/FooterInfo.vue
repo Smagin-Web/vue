@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup >
 import IconAge18 from '../icons/IconAge18.vue'
 </script>
 

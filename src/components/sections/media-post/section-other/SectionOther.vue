@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup >
 import MContainer from '@/components/shared/MContainer.vue'
 import SliderVariant1 from '@/components/shared/SliderVariant1.vue'
 

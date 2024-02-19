@@ -1,12 +1,7 @@
-<script lang="ts" setup>
+<script setup>
 import { ref, onMounted, watchEffect } from 'vue'
 
-const props = defineProps<{
-	title: string
-	text: string
-	isActive: boolean
-	onClick: () => void
-}>()
+const props = defineProps(['title', 'text', 'isActive', 'onClick'])
 
 const textRef = ref()
 const titleRef = ref()

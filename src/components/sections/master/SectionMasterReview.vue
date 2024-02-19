@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup >
 import CardReviewMaster from '@/components/cards/CardReviewMaster.vue'
 import MContainer from '@/components/shared/MContainer.vue'
 import MButtonBig from '@/components/buttons/MButtonBig.vue'

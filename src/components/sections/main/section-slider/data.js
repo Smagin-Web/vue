@@ -1,4 +1,4 @@
-export const dataSlides: any[] = [
+export const dataSlides = [
 	{
 		title: `Вылечим твою кожу и&nbsp;избавим от высыпания на лице.`,
 		subtitle:

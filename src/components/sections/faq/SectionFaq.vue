@@ -1,25 +1,19 @@
-<script setup lang="ts">
+<script setup>
 import MContainer from '@/components/shared/MContainer.vue'
 import BreadCrumbs from '@/components/shared/BreadCrumbs.vue'
 import FaqItem from '../inside/section-faq/FaqItem.vue'
 import MSelect from '@/components/form/select/MSelect.vue'
 import { ref } from 'vue'
 
-interface IFaqItem {
-	title: string
-	text: string
-}
-
 let indexActiveItem = ref(20)
 
 const props = defineProps({
 	items: {
-		type: Array<{ title: string; text: string }>,
 		default: [{ title: 'Заголовок', text: 'Ответ на вопрос' }]
 	}
 })
 
-const openFaq = (index: number) => {
+const openFaq = index => {
 	indexActiveItem.value = index
 }
 </script>

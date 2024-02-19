@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup >
 import MContainer from '@/components/shared/MContainer.vue'
 import MapBadge from './MapBadge.vue'
 // import SelectRoad from './SelectRoad.vue'

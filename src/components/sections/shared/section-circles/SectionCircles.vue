@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup >
 import MContainer from '../../../shared/MContainer.vue'
 import SectionCirclesArrow from './SectionCirclesArrow.vue'
 import SectionCirclesArrowSm from './SectionCirclesArrowSm.vue'

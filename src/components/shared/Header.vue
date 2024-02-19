@@ -1,5 +1,5 @@
 <!-- eslint-disable vue/multi-word-component-names -->
-<script setup lang="ts">
+<script setup >
 import MContainer from '../shared/MContainer.vue'
 import Logo from './Logo.vue'
 // import HeaderSocialLink from './HeaderSocialLink.vue'

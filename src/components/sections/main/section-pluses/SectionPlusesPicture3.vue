@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
 import PicturePluses3 from '../../../icons/PicturePluses3.vue'
 import PlusesText from './PlusesText.vue'
 import SectionPlusesShadow from './SectionPlusesShadow.vue'
@@ -6,7 +6,6 @@ import SvgBg3 from './svg/SvgBg3.vue'
 
 const props = defineProps({
 	text: {
-		type: String,
 		default: 'Своё закрытое сообщество, где делимся секретами молодости'
 	}
 })

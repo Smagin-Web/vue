@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup >
 import { useModalsStore } from '@/stores/modals'
 import MContainer from '@/components/shared/MContainer.vue'
 import SectionBonusList from './SectionBonusList.vue'

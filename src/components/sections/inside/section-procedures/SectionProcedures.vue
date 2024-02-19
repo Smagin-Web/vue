@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup >
 import MContainer from '@/components/shared/MContainer.vue'
 // import SectionProceduresCard from './SectionProceduresCard.vue'
 import MButtonOutlineBig from '@/components/buttons/MButtonOutlineBig.vue'

@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup >
 import { onMounted, onUnmounted, ref } from 'vue'
 import SectionOtherCard from './SectionOtherCard.vue'
 

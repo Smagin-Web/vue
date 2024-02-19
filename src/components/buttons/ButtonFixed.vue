@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup >
 import IconMessage from '../icons/IconMessage.vue'
 import { useModalsStore } from '@/stores/modals'
 

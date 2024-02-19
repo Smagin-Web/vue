@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup >
 import IconPay from '@/components/icons/IconPay.vue'
 import IconClock from '../icons/IconClock.vue'
 

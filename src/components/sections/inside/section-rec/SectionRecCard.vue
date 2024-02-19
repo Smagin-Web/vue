@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup >
 import MButtonBig from '@/components/buttons/MButtonBig.vue'
 import CardInfo from '@/components/card-elements/CardInfo.vue'
 </script>

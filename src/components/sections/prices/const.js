@@ -1,11 +1,4 @@
-export interface IPriceCard {
-	text: string
-	tech?: string
-	time?: string
-	price: string
-}
-
-export const consult: Array<IPriceCard> = [
+export const consult = [
 	{
 		text: 'Прием (осмотр, консультация) врача- косметолога первичный с диагностикой камерой Janus PRO Sunlike',
 		time: '60',
@@ -43,7 +36,7 @@ export const consult: Array<IPriceCard> = [
 	}
 ]
 
-export const antiacneConcept: Array<IPriceCard> = [
+export const antiacneConcept = [
 	{
 		text: 'AntiAcne Concept, фотодинамическая терапия Heleo4 AntiAcne (гель антиакне для ФДТ)',
 		tech: 'Heleo4',
@@ -76,7 +69,7 @@ export const antiacneConcept: Array<IPriceCard> = [
 	}
 ]
 
-export const clearConcept: Array<IPriceCard> = [
+export const clearConcept = [
 	{
 		text: 'Clear Concept, PROFACIAL Clear Concept без RF- лифтинга (гель антиакне)',
 		tech: 'PROFACIAL',
@@ -127,7 +120,7 @@ export const clearConcept: Array<IPriceCard> = [
 	}
 ]
 
-export const detoxConcept: Array<IPriceCard> = [
+export const detoxConcept = [
 	{
 		text: 'Detox Concept, фотодинамическая терапия Heleo4 Detox, лицо (Антиэйдж гель для ФДТ)',
 		tech: 'Heleo4',
@@ -178,7 +171,7 @@ export const detoxConcept: Array<IPriceCard> = [
 	}
 ]
 
-export const liftingConcept: Array<IPriceCard> = [
+export const liftingConcept = [
 	{
 		text: 'Lifting Concept, Geneo Revive',
 		tech: 'Geneo+',
@@ -230,7 +223,7 @@ export const liftingConcept: Array<IPriceCard> = [
 	}
 ]
 
-export const brightConcept: Array<IPriceCard> = [
+export const brightConcept = [
 	{
 		text: 'Bright Concept, Geneo Illuminate без RF-лифтинга',
 		tech: 'Geneo+',
@@ -275,7 +268,7 @@ export const brightConcept: Array<IPriceCard> = [
 	}
 ]
 
-export const hydroConcept: Array<IPriceCard> = [
+export const hydroConcept = [
 	{
 		text: 'Geneo Hydro с RF- лифтингом',
 		tech: 'Geneo+',
@@ -320,7 +313,7 @@ export const hydroConcept: Array<IPriceCard> = [
 	}
 ]
 
-export const redConcept: Array<IPriceCard> = [
+export const redConcept = [
 	{
 		text: 'Red Concept, фотодинамическая терапия Heleo4 Red (гель Антиакне или Антиэйдж)',
 		tech: 'Heleo4',
@@ -347,7 +340,7 @@ export const redConcept: Array<IPriceCard> = [
 	}
 ]
 
-export const personalConcept: Array<IPriceCard> = [
+export const personalConcept = [
 	{
 		text: 'Personal Concept, Skin Retreat HELEO4 (массаж, фотобиомодуляция, маска)',
 		tech: 'Heleo 4',
@@ -474,7 +467,7 @@ export const personalConcept: Array<IPriceCard> = [
 	}
 ]
 
-export const allConcepts: Array<IPriceCard> = personalConcept
+export const allConcepts = personalConcept
 	.concat(redConcept)
 	.concat(hydroConcept)
 	.concat(brightConcept)

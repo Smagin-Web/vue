@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
 import MContainer from './MContainer.vue'
 import Heading from '../typography/Heading.vue'
 import IconClose from '../icons/IconClose.vue'
@@ -8,15 +8,7 @@ import IconClose from '../icons/IconClose.vue'
 	<div class="header-notify">
 		<MContainer>
 			<div style="position: relative">
-				<Heading
-					tag="h5"
-					color="#6D6364"
-					font-size-heading="20px"
-					letter-spacing-heading="6.9px"
-					text-transform="uppercase"
-				>
-					Версия сайта для слабовидящих
-				</Heading>
+				<h5 class="h-xxl">Версия сайта для слабовидящих</h5>
 
 				<div style="position: absolute; right: 0; top: -2px">
 					<a href="#">

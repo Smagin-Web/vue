@@ -1,12 +1,14 @@
-<script setup lang="ts">
-defineProps<{
-	items: string[]
-}>()
+<script setup>
+const props = defineProps(['items'])
 </script>
 
 <template>
 	<ul class="list">
-		<li v-for="(item, index) in items" :key="index" class="list-item text-sm">
+		<li
+			v-for="(item, index) in props.items"
+			:key="index"
+			class="list-item text-sm"
+		>
 			{{ item }}
 		</li>
 	</ul>

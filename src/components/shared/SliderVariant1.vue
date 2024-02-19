@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
 import MContainer from '@/components/shared/MContainer.vue'
 import IconSliderArrowRight from '@/components/icons/IconSliderArrowRight.vue'
 import { ref } from 'vue'
@@ -9,7 +9,6 @@ import 'swiper/css'
 
 const props = defineProps({
 	breakpoints: {
-		type: Object,
 		default: () => ({
 			1000: {
 				slidesPerView: 2
@@ -29,15 +28,15 @@ const props = defineProps({
 
 const modules = [Pagination]
 
-let swiperObject: any = undefined
-const onSwiperInit = (swiper: any) => (swiperObject = swiper)
+let swiperObject = undefined
+const onSwiperInit = (swiper) => (swiperObject = swiper)
 const sliderNext = () => swiperObject.slideNext(500)
 const sliderPrev = () => swiperObject.slidePrev(500)
 
 const isActiveNext = ref(true)
 const isActivePrev = ref(false)
 
-const onChangeSlider = (swiper: any) => {
+const onChangeSlider = (swiper) => {
 	if (swiper.realIndex === 0) {
 		isActivePrev.value = false
 	} else {

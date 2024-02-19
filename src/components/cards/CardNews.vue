@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup >
 import IconNew from '../icons/IconNew.vue'
 import ButtonDecor from '../buttons/ButtonDecor.vue'
 

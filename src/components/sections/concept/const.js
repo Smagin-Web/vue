@@ -1,31 +1,4 @@
-export interface IFaqItem {
-	title: string
-	text: string
-}
-
-interface ConceptInfo {
-	concept: string
-	number: number
-	title: string
-	pluses: string[]
-	info: {
-		title: string
-		text1: string
-		text2?: string
-	}
-	info2: {
-		text1: string
-		text3: string
-		text4: string
-	}
-	preview: {
-		title: string
-		text: string
-	}
-	faq?: Array<IFaqItem>
-}
-
-export const conceptsInfo: Record<string, ConceptInfo> = {
+export const conceptsInfo = {
 	personal: {
 		concept: 'personal',
 		number: 0,

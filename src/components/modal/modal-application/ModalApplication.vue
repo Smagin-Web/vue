@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup >
 import { useModalsStore } from '@/stores/modals'
 import { ref, reactive } from 'vue'
 import emailjs from 'emailjs-com'

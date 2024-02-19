@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup >
 import SectionBannerBadges from './SectionBannerBadges.vue'
 import SectionBannerBlock from './SectionBannerBlock.vue'
 import SectionBannerText from './SectionBannerText.vue'

@@ -1,15 +1,5 @@
-<script setup lang="ts">
-import type { ICategory } from './SectionPrices.vue'
-import type { PropType } from 'vue'
-
-const props = defineProps({
-	activeIndex: Number,
-	itemsConcepts: Array<ICategory>,
-	setActiveCategory: {
-		type: Function as PropType<(index: number) => void>,
-		required: true
-	}
-})
+<script setup>
+const props = defineProps(['activeIndex', 'itemsConcepts', 'setActiveCategory'])
 </script>
 
 <template>

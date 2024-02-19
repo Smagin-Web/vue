@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup >
 import SectionOtherBlockSm from './SectionOtherBlockSm.vue'
 import SectionOtherBlockMd from './SectionOtherBlockMd.vue'
 import SectionOtherBlockLg from './SectionOtherBlockLg.vue'

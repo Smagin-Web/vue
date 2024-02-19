@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup >
 import SectionLegalListIcon from './SectionLegalListIcon.vue'
 
 const listItems = [
