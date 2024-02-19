@@ -30,7 +30,11 @@ const props = defineProps(['isActive', 'onClose'])
 		</nav>
 
 		<div class="header-mobile-menu-contacts">
-			<a class="header-mobile-menu-nav-link">+7 977 412-20-10</a>
+			<a
+				class="header-mobile-menu-nav-link header-mobile-menu-nav-link-number"
+				href="tel:+74952913578"
+				>+7 495 291-35-78</a
+			>
 			<a>
 				<svg width="30" height="30" viewBox="0 0 30 30" fill="none">
 					<path
@@ -110,5 +114,15 @@ const props = defineProps(['isActive', 'onClose'])
 	gap: 30px;
 	padding-top: 50px;
 	align-items: center;
+}
+
+@media (max-width: 380px) {
+	.header-mobile-menu-contacts {
+		flex-wrap: wrap;
+	}
+	.header-mobile-menu-nav-link-number {
+		width: 100%;
+		display: block;
+	}
 }
 </style>

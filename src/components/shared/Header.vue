@@ -179,4 +179,10 @@ const toggleMenu = () => {
 		padding: 12px 0 10px;
 	}
 }
+
+@media (max-width: 380px) {
+	.header-nav-item {
+		display: none;
+	}
+}
 </style>

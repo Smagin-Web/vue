@@ -1,17 +1,41 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import type { ICategory } from './SectionPrices.vue'
+import type { PropType } from 'vue'
 
 let isActive = ref(false)
 
 const onClickHandler = () => {
 	isActive.value = !isActive.value
 }
+
+const props = defineProps({
+	activeIndex: {
+		type: Number,
+		default: 0
+	},
+	itemsConcepts: {
+		type: Array<ICategory>,
+		default: [
+			{
+				title: '',
+				items: []
+			}
+		]
+	},
+	setActiveCategory: {
+		type: Function as PropType<(index: number) => void>,
+		required: true
+	}
+})
 </script>
 
 <template>
 	<div class="nav" :onClick="onClickHandler">
-		<button class="nav-main-button">Все услуги</button>
-		<span class="nav-icon-button" v-bind:class="{ active: isActive }">
+		<button class="nav-main-button" :class="{ active: isActive }">
+			{{ props.itemsConcepts[activeIndex].title }}
+		</button>
+		<span class="nav-icon-button" :class="{ active: isActive }">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				width="40"
@@ -34,10 +58,15 @@ const onClickHandler = () => {
 		</span>
 		<div class="nav-list" v-bind:class="{ 'nav-list-active': isActive }">
 			<div class="nav-list-scroll">
-				<button class="nav-list-button">Аппаратная косметология</button>
-				<button class="nav-list-button">Инъекционная косметология</button>
-				<button class="nav-list-button">AntiAcne Concept</button>
-				<button class="nav-list-button">Clear Concept</button>
+				<button
+					v-for="(item, index) in props.itemsConcepts"
+					@click="() => setActiveCategory(index)"
+					:key="index"
+					:class="props.activeIndex === index && 'active'"
+					class="nav-list-button"
+				>
+					{{ item.title }}
+				</button>
 			</div>
 		</div>
 	</div>
@@ -70,6 +99,10 @@ const onClickHandler = () => {
 	z-index: 10;
 }
 
+.nav-main-button.active {
+	opacity: 0.5;
+}
+
 .nav-icon-button {
 	position: absolute;
 	right: 10px;
@@ -99,6 +132,8 @@ const onClickHandler = () => {
 	padding-left: 10px;
 	padding-bottom: 10px;
 	padding-right: 10px;
+
+	pointer-events: none;
 }
 
 .nav-list-scroll {
@@ -122,6 +157,7 @@ const onClickHandler = () => {
 	z-index: 1;
 	opacity: 1;
 	box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+	pointer-events: all;
 }
 
 .nav-icon-button.active {

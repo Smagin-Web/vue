@@ -35,7 +35,7 @@ const props = defineProps([
 			/>
 		</div>
 
-		<div class="card-buttons-with-head-lg">
+		<div>
 			<Suspense>
 				<CardImage
 					:icon-src="props.iconSrc"
@@ -104,6 +104,12 @@ const props = defineProps([
 	}
 	.card {
 		border-radius: 20px;
+	}
+}
+
+@media (max-width: 400px) {
+	.card-buttons {
+		display: block;
 	}
 }
 </style>

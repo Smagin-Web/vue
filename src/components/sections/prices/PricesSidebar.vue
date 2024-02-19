@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { defineProps } from 'vue'
 import type { ICategory } from './SectionPrices.vue'
 import type { PropType } from 'vue'
 

@@ -996,7 +996,7 @@ ee-first@1.1.1:
 
 emailjs-com@^3.2.0:
   version "3.2.0"
-  resolved "https://registry.yarnpkg.com/emailjs-com/-/emailjs-com-3.2.0.tgz#a53cb22f1bc433c701c84c53d8b56eefd5ce7111"
+  resolved "https://registry.npmjs.org/emailjs-com/-/emailjs-com-3.2.0.tgz"
   integrity sha512-Prbz3E1usiAwGjMNYRv6EsJ5c373cX7/AGnZQwOfrpNJrygQJ15+E9OOq4pU8yC977Z5xMetRfc3WmDX6RcjAA==
 
 encodeurl@~1.0.2:
@@ -2379,7 +2379,7 @@ pify@^3.0.0:
 
 pinia@^2.1.7:
   version "2.1.7"
-  resolved "https://registry.yarnpkg.com/pinia/-/pinia-2.1.7.tgz#4cf5420d9324ca00b7b4984d3fbf693222115bbc"
+  resolved "https://registry.npmjs.org/pinia/-/pinia-2.1.7.tgz"
   integrity sha512-+C2AHFtcFqjPih0zpYuvof37SFxMQ7OEG2zV9jRI12i9BOy3YQVAHwdKtyyc8pDcDyIc33WCIsZaCFWU7WWxGQ==
   dependencies:
     "@vue/devtools-api" "^6.5.0"
@@ -3144,6 +3144,16 @@ vue-yandex-maps@^0.11.18:
   version "0.11.18"
   resolved "https://registry.npmjs.org/vue-yandex-maps/-/vue-yandex-maps-0.11.18.tgz"
   integrity sha512-S3P/V8msGXA+e9LXY/fM5IVIRr9wYuUTtcXFSmTuRycYD0cYuMj69vI9h4fksf44CzEp+qrNvJsvQj/20Ckxsw==
+
+vue-yandex-metrika@^1.8.3:
+  version "1.8.3"
+  resolved "https://registry.yarnpkg.com/vue-yandex-metrika/-/vue-yandex-metrika-1.8.3.tgz#f27d71f385ae3f20544a4d295865a2e446293c60"
+  integrity sha512-WD/2CPM5NWXg7JdmgfiOq8J5QbidrCDoDAaE0JfE32wceY56ewzERVGnOGS/Tfx+HvarGc+oJsBbZxl/e2BWTA==
+
+vue3-yandex-metrika@^0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/vue3-yandex-metrika/-/vue3-yandex-metrika-0.0.4.tgz#dd48f4e051d313c3ff63639adea9066bf682fa11"
+  integrity sha512-nD1sIRc/o72TflN7avgEu2ozQ8znVCSBXBHpG0QU+zdjtnAD3kSSx6hm4WjieTZf/O+9oAZzQXEevsFjWVztfg==
 
 vue@^2.6.11:
   version "2.7.14"

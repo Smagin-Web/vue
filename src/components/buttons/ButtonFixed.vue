@@ -8,7 +8,9 @@ const store = useModalsStore()
 <template>
 	<div class="buttons-fixed">
 		<div class="background" />
-		<button class="button-one" @click="store.openModalApplication">Запись на приём</button>
+		<button class="button-one" @click="store.openModalApplication">
+			Запись на приём
+		</button>
 		<button class="button-two">
 			<a
 				href="https://wa.me/79774122010"
@@ -37,6 +39,7 @@ const store = useModalsStore()
 }
 
 .button-one {
+	white-space: nowrap;
 	font-family: 'BrisaSans';
 	font-size: 34px;
 	font-weight: 700;

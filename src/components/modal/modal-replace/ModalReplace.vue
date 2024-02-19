@@ -13,6 +13,7 @@ const store = useModalsStore()
 			text="Центр косметологии в г. Реутов переехал на новый сайт: www.zvezda-mira.ru"
 		>
 			<div class="button-wrapper">
+				<a href="http://www.zvezda-mira.ru/" class="absolute-link" />
 				<MButtonBig>Перейти на сайт</MButtonBig>
 			</div>
 		</ModalWrapper>
@@ -21,7 +22,8 @@ const store = useModalsStore()
 
 <style scoped>
 .button-wrapper {
-  display: flex;
-  justify-content: center;
+	position: relative;
+	display: flex;
+	justify-content: center;
 }
 </style>

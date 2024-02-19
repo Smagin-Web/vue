@@ -153,4 +153,15 @@ import SectionBannerText from './SectionBannerText.vue'
 		padding-top: 65px;
 	}
 }
+
+@media (max-width: 375px) {
+	.content-heading-text {
+		font-size: 30px;
+	}
+	.banner-badges {
+		width: 120px;
+		bottom: 24px;
+		left: 200px;
+	}
+}
 </style>

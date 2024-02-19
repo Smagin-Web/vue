@@ -43,7 +43,7 @@ export default {
 		return {
 			items: [
 				{
-					title: 'Концепы',
+					title: 'Концепты',
 					links: [
 						{
 							text: 'AntiAcne Concept',

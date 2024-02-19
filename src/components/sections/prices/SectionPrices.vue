@@ -25,7 +25,6 @@ export interface ICategory {
 const activeCategory = ref(1)
 
 const categories: ICategory[] = [
-	
 	{
 		title: 'Все категории',
 		items: allConcepts
@@ -84,7 +83,12 @@ const setActiveCategory = (numberCategory: number) => {
 					:setActiveCategory="setActiveCategory"
 					:activeIndex="activeCategory"
 				/>
-				<PricesSidebarMobile class="sidebar-sm" />
+				<PricesSidebarMobile
+					class="sidebar-sm"
+					:itemsConcepts="categories"
+					:setActiveCategory="setActiveCategory"
+					:activeIndex="activeCategory"
+				/>
 				<div class="cards">
 					<PricesCard
 						v-for="(item, index) in categories[activeCategory].items"
