@@ -1,4 +1,4 @@
-<script setup >
+<script setup>
 import MContainer from '@/components/shared/MContainer.vue'
 import MapBadge from './MapBadge.vue'
 // import SelectRoad from './SelectRoad.vue'
@@ -23,7 +23,7 @@ import MapBadge from './MapBadge.vue'
 				</div>
 				<div class="map-body">
 					<iframe
-						src="https://yandex.ru/map-widget/v1/?um=constructor%3Afba82c0c661acbf3edb12a02113a034c730ccc4dd65095f228719361c5d80dd2&amp;source=constructor"
+						src="https://yandex.com/map-widget/v1/?um=constructor%3Aa63de5d28596bb7d89b600147a0b2ef376c90787bc240b5b12a03a754f7d10fb&amp;source=constructor"
 						width="100%"
 						height="780px"
 						frameborder="0"
@@ -35,14 +35,6 @@ import MapBadge from './MapBadge.vue'
 							border-radius: 50px;
 						"
 					/>
-					<!-- <iframe
-						src="https://yandex.ru/map-widget/v1/org/moskovskiy_kreml/1023322799/?ll=37.618879%2C55.751426&z=14"
-						width="100%"
-						height="780px"
-						allowfullscreen="true"
-						disableDragging
-						
-					/> -->
 				</div>
 			</div>
 		</MContainer>
