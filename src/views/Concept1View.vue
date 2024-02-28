@@ -1,7 +1,7 @@
-<script setup >
+<script setup>
 import ViewWrapper from '@/components/ViewWrapper.vue'
 import SectionConceptMain from '@/components/sections/concept/section-concept-main/SectionConceptMain.vue'
-import SectionPluses from '@/components/sections/main/section-pluses/SectionPluses.vue'
+import SectionPluses from '@/components/sections/shared/section-pluses/SectionPluses.vue'
 
 import { useRouter } from 'vue-router'
 import { ref } from 'vue'
