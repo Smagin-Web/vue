@@ -58,8 +58,9 @@ const onMapScroll = e => {
 					</a>
 
 					<div class="map-wrapper" ref="mapWrapper">
+						
 						<iframe
-							src="https://yandex.ru/map-widget/v1/org/moskovskiy_kreml/1023322799/?ll=37.618879%2C55.751426&z=14"
+							src="https://yandex.com/map-widget/v1/?um=constructor%3Aa63de5d28596bb7d89b600147a0b2ef376c90787bc240b5b12a03a754f7d10fb&amp;source=constructor"
 							width="100%"
 							height="100%"
 							frameborder="1"
