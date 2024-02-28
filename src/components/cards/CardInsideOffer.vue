@@ -1,4 +1,4 @@
-<script setup >
+<script setup>
 import MButtonOutline from '../buttons/MButtonOutline.vue'
 import MButton from '../buttons/MButton.vue'
 import CardInsideOfferPrice from './CardInsideOfferPrice.vue'
@@ -11,11 +11,15 @@ const store = useModalsStore()
 	<div class="card-inside">
 		<div>
 			<h4 class="heading h-md">
-				Первичный приём врача&nbsp;дерматолога&nbsp;+<br />диагностика&nbsp;JANUS&nbsp;PRO
+				Первичный приём врача-косметолога<br />
+				+&nbsp;диагностика&nbsp;JANUS&nbsp;PRO.<br />
+				До&nbsp;конца&nbsp;февраля
 			</h4>
 			<CardInsideOfferPrice class="prices" />
 			<div class="buttons">
-				<MButton @click="store.openModalApplication">Записаться на приём</MButton>
+				<MButton @click="store.openModalApplication">
+					Записаться на приём
+				</MButton>
 
 				<MButtonOutline>
 					<a

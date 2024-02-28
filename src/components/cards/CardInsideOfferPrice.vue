@@ -1,9 +1,9 @@
-<script setup ></script>
+<script setup></script>
 
 <template>
 	<div class="card-inside-prices">
 		<div class="prices-old-wrapper">
-			<h4 class="prices-old">3 500₽</h4>
+			<h4 class="prices-old">2000₽</h4>
 		</div>
 		<h4 class="prices-new">0₽</h4>
 	</div>
