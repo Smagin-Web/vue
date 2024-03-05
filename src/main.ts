@@ -39,8 +39,8 @@ export const createApp = ViteSSG(
 		// 	env: 'production'
 		// })
 
-		// if (import.meta.env.SSR) initialState.pinia = pinia.state.value
-		// else pinia.state.value = initialState.pinia || {}
+		if (import.meta.env.SSR) initialState.pinia = pinia.state.value
+		else pinia.state.value = initialState.pinia || {}
 
 		// router.beforeEach((to, from, next) => {
 		// 	const store = useRootStore(pinia)
