@@ -1,4 +1,4 @@
-<script setup >
+<script setup>
 import { useModalsStore } from '@/stores/modals'
 import { ref, reactive } from 'vue'
 import emailjs from 'emailjs-com'
@@ -23,20 +23,20 @@ const sendSuccess = () => {
 	setTimeout(() => {
 		setCloseSuccess()
 		store.closeAllModals()
-	}, 2000)
+	}, 4000)
 }
 
 const sendEmail = () => {
-	emailjs.send('service_03ipejb', 'template_032l0us', dataObject).then(
-		() => sendSuccess(),
-		() => store.closeAllModals()
-	)
+	sendSuccess()
+	emailjs
+		.send('service_03ipejb', 'template_032l0us', dataObject)
+		.then(() => store.closeAllModals())
 }
 </script>
 
 <template>
 	<div v-show="store.isOpenModalBonuse">
-		<ModalBase>
+		<ModalBase :isSuccess="isActiveSuccess">
 			<form
 				@submit.prevent.stop="sendEmail"
 				method="POST"

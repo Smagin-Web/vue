@@ -12,7 +12,7 @@ const store = useModalsStore()
 		<div>
 			<h4 class="heading h-md">
 				Первичный приём врача-косметолога<br />
-				+&nbsp;диагностика&nbsp;JANUS&nbsp;PRO.<br />
+				+&nbsp;диагностика JANUS&nbsp;PRO.<br />
 				До&nbsp;конца&nbsp;февраля
 			</h4>
 			<CardInsideOfferPrice class="prices" />
