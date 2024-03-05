@@ -12,7 +12,7 @@ import InstagramIcon from './InstagramIcon.vue'
 			<div class="card-wrapper">
 				<img src="./shadow.png" class="card-shadow" alt="" />
 
-				<div class="card">
+				<div class="card-telegram">
 					<img src="./picture.png" alt="" class="card-picture" />
 					<div class="card-content">
 						<h3 class="h-xxl card-title">Подпишись на наш телеграм-канал</h3>
@@ -40,7 +40,7 @@ import InstagramIcon from './InstagramIcon.vue'
 	padding-bottom: 150px;
 }
 
-.card {
+.card-telegram {
 	position: relative;
 	padding: 80px;
 	padding-top: 125px;
@@ -123,7 +123,7 @@ import InstagramIcon from './InstagramIcon.vue'
 }
 
 @media (max-width: 1400px) {
-	.card {
+	.card-telegram {
 		padding-bottom: 50px;
 		padding-left: 50px;
 		padding-top: 80px;
@@ -140,7 +140,7 @@ import InstagramIcon from './InstagramIcon.vue'
 }
 
 @media (max-width: 1300px) {
-	.card {
+	.card-telegram {
 		padding: 60px;
 		padding-top: 80px;
 		border-radius: 100px 20px;
@@ -175,7 +175,7 @@ import InstagramIcon from './InstagramIcon.vue'
 	.section-telegram {
 		padding-bottom: 40px;
 	}
-	.card {
+	.card-telegram {
 		padding: 40px;
 		border-radius: 40px 10px;
 	}
@@ -221,7 +221,7 @@ import InstagramIcon from './InstagramIcon.vue'
 }
 
 @media (max-width: 500px) {
-	.card {
+	.card-telegram {
 		padding: 16px;
 		padding-top: 40px;
 		border-radius: 30px 10px;

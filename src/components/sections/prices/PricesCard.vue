@@ -4,7 +4,7 @@ import BadgeMd from '@/components/ui/BadgeMd.vue'
 const props = defineProps(['title', 'price', 'time', 'tech'])
 </script>
 <template>
-	<div class="card">
+	<div class="card-price">
 		<div class="card-info">
 			<div class="card-info-group-1">
 				<div class="card-info-item-1">
@@ -60,7 +60,7 @@ const props = defineProps(['title', 'price', 'time', 'tech'])
 }
 /* Временно скрываем кнопки */
 
-.card {
+.card-price {
 	position: relative;
 	overflow: hidden;
 	padding: 20px;
@@ -172,7 +172,7 @@ const props = defineProps(['title', 'price', 'time', 'tech'])
 }
 
 @media (max-width: 1000px) {
-	.card {
+	.card-price {
 		padding-bottom: 100px;
 	}
 	.card-info {

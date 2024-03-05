@@ -4,7 +4,7 @@ import CardInfo from '@/components/card-elements/CardInfo.vue'
 </script>
 
 <template>
-	<div class="card">
+	<div class="card-rec">
 		<div class="card-image-wrapper">
 			<img class="card-image" src="./picture.png" alt="" />
 		</div>
@@ -22,7 +22,7 @@ import CardInfo from '@/components/card-elements/CardInfo.vue'
 </template>
 
 <style scoped>
-.card {
+.card-rec {
 	max-width: 544px;
 	border-radius: 30px;
 	background: #fff;
@@ -64,7 +64,7 @@ import CardInfo from '@/components/card-elements/CardInfo.vue'
 }
 
 @media (max-width: 1200px) {
-	.card {
+	.card-rec {
 		max-width: 500px;
 		padding: 30px;
 		padding-top: 50px;
@@ -99,7 +99,7 @@ import CardInfo from '@/components/card-elements/CardInfo.vue'
 	.card-text {
 		font-size: 16px;
 	}
-	.card {
+	.card-rec {
 		max-width: 400px;
 		border-radius: 20px;
 	}

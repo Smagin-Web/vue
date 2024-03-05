@@ -6,7 +6,7 @@ const props = defineProps(['text', 'title', 'price', 'info'])
 </script>
 
 <template>
-	<div class="card">
+	<div class="card-tariff">
 		<h6 class="card-tag">Курс</h6>
 		<h5 class="card-heading">{{ props.title }}</h5>
 		<p class="card-text">
@@ -21,7 +21,7 @@ const props = defineProps(['text', 'title', 'price', 'info'])
 </template>
 
 <style scoped>
-.card {
+.card-tariff {
 	max-width: 544px;
 	padding: 40px;
 	border-radius: 50px;
@@ -88,7 +88,7 @@ const props = defineProps(['text', 'title', 'price', 'info'])
 }
 
 @media (max-width: 1300px) {
-	.card {
+	.card-tariff {
 		max-width: 100%;
 	}
 	.card-heading {
@@ -97,7 +97,7 @@ const props = defineProps(['text', 'title', 'price', 'info'])
 }
 
 @media (max-width: 1000px) {
-	.card {
+	.card-tariff {
 		padding: 30px;
 		border-radius: 30px;
 	}
@@ -119,7 +119,7 @@ const props = defineProps(['text', 'title', 'price', 'info'])
 }
 
 @media (max-width: 430px) {
-	.card {
+	.card-tariff {
 		padding: 18px;
 		border-radius: 20px;
 	}
