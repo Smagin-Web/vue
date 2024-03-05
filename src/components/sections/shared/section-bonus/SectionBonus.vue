@@ -12,7 +12,7 @@ const store = useModalsStore()
 <template>
 	<section class="section-bonus">
 		<MContainer>
-			<div class="card">
+			<div class="card-bonus">
 				<BigBadge style="background: #b2977b">Подарочный сертификат</BigBadge>
 				<div class="card-content">
 					<h5 class="card-heading h-l">
@@ -36,7 +36,7 @@ const store = useModalsStore()
 	padding-top: 34px;
 }
 
-.card {
+.card-bonus {
 	position: relative;
 
 	padding: 80px;
@@ -79,7 +79,7 @@ const store = useModalsStore()
 }
 
 @media (max-width: 1400px) {
-	.card {
+	.card-bonus {
 		border-radius: 48px;
 		padding: 60px;
 		padding-top: 68px;
@@ -90,7 +90,7 @@ const store = useModalsStore()
 	.section-bonus {
 		padding-bottom: 130px;
 	}
-	.card {
+	.card-bonus {
 		padding: 40px;
 		padding-top: 48px;
 	}
@@ -115,7 +115,7 @@ const store = useModalsStore()
 	.section-bonus {
 		padding-bottom: 90px;
 	}
-	.card {
+	.card-bonus {
 		padding-bottom: 360px;
 	}
 	.card-heading {
@@ -130,7 +130,7 @@ const store = useModalsStore()
 }
 
 @media (max-width: 450px) {
-	.card {
+	.card-bonus {
 		padding-left: 30px;
 		padding-right: 30px;
 		padding-top: 40px;

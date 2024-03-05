@@ -25,7 +25,7 @@ import MContainer from '@/components/shared/MContainer.vue'
 					:space-between="24"
 				>
 					<swiper-slide>
-						<div class="card">
+						<div class="card-courses">
 							<img src="./model.jpg" class="card-img" />
 							<p class="card-text">
 								Описание курса и проведёных процедур.Lorem ipsum dolor sit amet
@@ -42,7 +42,7 @@ import MContainer from '@/components/shared/MContainer.vue'
 						</div>
 					</swiper-slide>
 					<swiper-slide>
-						<div class="card">
+						<div class="card-courses">
 							<img src="./model.jpg" class="card-img" />
 							<p class="card-text">
 								Описание курса и проведёных процедур.Lorem ipsum dolor sit amet
@@ -59,7 +59,7 @@ import MContainer from '@/components/shared/MContainer.vue'
 						</div>
 					</swiper-slide>
 					<swiper-slide>
-						<div class="card">
+						<div class="card-courses">
 							<img src="./model.jpg" class="card-img" />
 							<p class="card-text">
 								Описание курса и проведёных процедур.Lorem ipsum dolor sit amet
@@ -106,7 +106,7 @@ export default {
 	max-width: 870px;
 }
 
-.card {
+.card-courses {
 	padding: 40px 40px 48px;
 	background-color: #fff;
 	border-radius: 50px;
@@ -144,7 +144,7 @@ export default {
 		padding-bottom: 34px;
 	}
 
-	.card {
+	.card-courses {
 		padding: 20px;
 		border-radius: 20px;
 	}

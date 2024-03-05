@@ -24,7 +24,7 @@ import IconText2 from './IconText2.vue'
 			</h3>
 
 			<div class="card-with-photo">
-				<div class="card">
+				<div class="card-review-inside">
 					<div class="card-footer">
 						<h6 class="h-sm-ultra card-footer-title">Ответ клиники</h6>
 						<p class="text-sm card-footer-text">
@@ -92,7 +92,7 @@ import IconText2 from './IconText2.vue'
 	gap: 24px;
 }
 
-.card {
+.card-review-inside {
 	width: 100%;
 	position: relative;
 	padding: 80px;
@@ -205,7 +205,7 @@ import IconText2 from './IconText2.vue'
 }
 
 @media (max-width: 1200px) {
-	.card {
+	.card-review-inside {
 		padding: 40px;
 		padding-right: 70px;
 		border-radius: 40px;
@@ -249,7 +249,7 @@ import IconText2 from './IconText2.vue'
 		flex-direction: column-reverse;
 		gap: 50px;
 	}
-	.card {
+	.card-review-inside {
 		padding: 24px;
 		border-radius: 20px;
 	}

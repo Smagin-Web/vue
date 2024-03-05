@@ -6,33 +6,33 @@ import SectionOtherCard from './SectionOtherCard.vue'
 	<div>
 		<div class="wrapper-cards">
 			<div class="row">
-				<SectionOtherCard :iconFilename="'ParallaxPhoto5.png'" class="card" />
+				<SectionOtherCard :iconFilename="'ParallaxPhoto5.png'" class="card-parallax" />
 				<SectionOtherCard
 					:iconFilename="'ParallaxPhoto1.png'"
-					class="card card-absolute"
+					class="card-parallax card-absolute"
 					style="top: 50%; right: 100%"
 				/>
 				<SectionOtherCard
 					:iconFilename="'ParallaxPhoto8.png'"
-					class="card card-absolute"
+					class="card-parallax card-absolute"
 					style="top: 50%; left: 100%"
 				/>
 			</div>
 			<div class="row">
-				<SectionOtherCard :iconFilename="'ParallaxPhoto2.png'" class="card" />
+				<SectionOtherCard :iconFilename="'ParallaxPhoto2.png'" class="card-parallax" />
 				<SectionOtherCard
 					:iconFilename="'ParallaxPhoto7.png'"
-					class="card card-absolute"
+					class="card-parallax card-absolute"
 					style="top: 50%; right: 110%"
 				/>
 				<SectionOtherCard
 					:iconFilename="'ParallaxPhoto6.png'"
-					class="card card-absolute"
+					class="card-parallax card-absolute"
 					style="top: 50%; left: 110%"
 				/>
 			</div>
 			<div class="row">
-				<SectionOtherCard :iconFilename="'ParallaxPhoto3.png'" class="card" />
+				<SectionOtherCard :iconFilename="'ParallaxPhoto3.png'" class="card-parallax" />
 			</div>
 		</div>
 	</div>
@@ -56,18 +56,18 @@ import SectionOtherCard from './SectionOtherCard.vue'
 	position: absolute;
 }
 
-.card {
+.card-parallax {
 	height: 160px;
 }
 
 @media (max-width: 1200px) {
-	.card {
+	.card-parallax {
 		height: 140px;
 	}
 }
 
 @media (max-width: 1000px) {
-	.card {
+	.card-parallax {
 		height: 115px;
 	}
 }

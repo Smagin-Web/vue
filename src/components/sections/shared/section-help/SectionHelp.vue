@@ -10,7 +10,7 @@ import CardShadow from './CardShadow.vue'
 	<section class="section-help">
 		<MContainer>
 			<div class="card-wrapper">
-				<div class="card">
+				<div class="card-help">
 					<div class="card-left">
 						<h5 class="h-l card-heading">Остались вопросы?</h5>
 						<h6 class="card-text">
@@ -69,7 +69,7 @@ import CardShadow from './CardShadow.vue'
 	width: 80%;
 }
 
-.card {
+.card-help {
 	position: relative;
 	z-index: 20;
 	padding: 80px;
@@ -137,7 +137,7 @@ import CardShadow from './CardShadow.vue'
 }
 
 @media (max-width: 1600px) {
-	.card {
+	.card-help {
 		padding: 50px;
 		border-radius: 40px;
 	}
@@ -177,7 +177,7 @@ import CardShadow from './CardShadow.vue'
 }
 
 @media (max-width: 1320px) {
-	.card {
+	.card-help {
 		padding: 36px;
 	}
 	.card-heading {
@@ -231,7 +231,7 @@ import CardShadow from './CardShadow.vue'
 	.section-help {
 		padding-top: 50px;
 	}
-	.card {
+	.card-help {
 		display: grid;
 		gap: 110px;
 	}
@@ -241,7 +241,7 @@ import CardShadow from './CardShadow.vue'
 }
 
 @media (max-width: 480px) {
-	.card {
+	.card-help {
 		padding: 24px;
 		padding-top: 36px;
 		border-radius: 30px;
@@ -252,13 +252,13 @@ import CardShadow from './CardShadow.vue'
 }
 
 @media (max-width: 450px) {
-	.card {
+	.card-help {
 		gap: 80px;
 	}
 }
 
 @media (max-width: 400px) {
-	.card {
+	.card-help {
 		gap: 50px;
 	}
 	.card-buttons {

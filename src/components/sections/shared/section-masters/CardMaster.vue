@@ -3,7 +3,7 @@ import IconPlay from '@/components/icons/IconPlay.vue'
 </script>
 
 <template>
-	<div class="card">
+	<div class="card-master">
 		<a href="https://youtube.com" target="_blank">
 			<div class="card-img-wrapper">
 				<img src="./Avatar.png" class="card-img" />
@@ -24,7 +24,7 @@ import IconPlay from '@/components/icons/IconPlay.vue'
 </template>
 
 <style scoped>
-.card {
+.card-master {
 	position: relative;
 	max-width: 402px;
 	min-width: 260px;
@@ -40,7 +40,7 @@ import IconPlay from '@/components/icons/IconPlay.vue'
 	transform: translateX(-50%);
 }
 
-.card:hover .card-icon {
+.card-master:hover .card-icon {
 	opacity: 1;
 	z-index: 20;
 }
@@ -64,7 +64,7 @@ import IconPlay from '@/components/icons/IconPlay.vue'
 	border: 1px solid #f4eee8;
 }
 
-.card:hover .card-img-wrapper:after {
+.card-master:hover .card-img-wrapper:after {
 	border: 10px solid #f4eee8;
 }
 
@@ -82,7 +82,7 @@ import IconPlay from '@/components/icons/IconPlay.vue'
 }
 
 @media (max-width: 1000px) {
-	.card {
+	.card-master {
 		max-width: 300px;
 	}
 

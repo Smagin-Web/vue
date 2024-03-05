@@ -15,7 +15,7 @@ const props = defineProps({
 </script>
 
 <template>
-	<div class="card">
+	<div class="card-pluses">
 		<SectionPlusesShadow class="card-shadow" />
 		<div class="wrapper">
 			<SvgBg2 />
@@ -28,7 +28,7 @@ const props = defineProps({
 </template>
 
 <style scoped>
-.card {
+.card-pluses {
 	position: relative;
 	padding-top: 60px;
 }

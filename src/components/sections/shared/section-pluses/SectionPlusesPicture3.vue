@@ -12,7 +12,7 @@ const props = defineProps({
 </script>
 
 <template>
-	<div class="card">
+	<div class="card-pluses">
 		<SectionPlusesShadow class="card-shadow" />
 
 		<div class="wrapper">
@@ -26,7 +26,7 @@ const props = defineProps({
 </template>
 
 <style scoped>
-.card {
+.card-pluses {
 	position: relative;
 }
 

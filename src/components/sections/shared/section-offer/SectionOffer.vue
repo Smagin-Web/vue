@@ -9,7 +9,7 @@ import BigBadge from '@/components/ui/big-badge/BigBadge.vue'
 	<section class="section-offer">
 		<div class="section-offer-container">
 			<MContainer>
-				<div class="card">
+				<div class="card-offer">
 					<BigBadge style="background: #bfb0e9">Диагностика</BigBadge>
 					<div class="card-content">
 						<div class="card-content-left">
@@ -46,7 +46,7 @@ import BigBadge from '@/components/ui/big-badge/BigBadge.vue'
 	padding-bottom: 40px;
 }
 
-.card {
+.card-offer {
 	position: relative;
 	border-radius: 100px;
 	background: #ede4da;
@@ -102,7 +102,7 @@ import BigBadge from '@/components/ui/big-badge/BigBadge.vue'
 	.card-content-left {
 		width: 600px;
 	}
-	.card {
+	.card-offer {
 		border-radius: 48px;
 		padding: 80px 40px 40px;
 	}
@@ -139,7 +139,7 @@ import BigBadge from '@/components/ui/big-badge/BigBadge.vue'
 	.heading {
 		padding-bottom: 38px;
 	}
-	.card {
+	.card-offer {
 		padding: 12px;
 		padding-top: 50px;
 		border-radius: 20px;
