@@ -59,7 +59,7 @@ import CardPlaceContacts from './CardPlaceContacts.vue'
 	transition: 0.2s;
 }
 
-.card:hover .card-img {
+.card-place:hover .card-img {
 	opacity: 1;
 }
 

@@ -20,7 +20,7 @@ const props = defineProps(['masterName', 'badge'])
 			</div>
 		</div>
 
-		<div class="card">
+		<div class="card-review">
 			<ButtonMore class="button-read-more">Читать отзыв</ButtonMore>
 			<div class="card-head">
 				<div>
@@ -88,7 +88,7 @@ const props = defineProps(['masterName', 'badge'])
 	padding-bottom: 6px;
 }
 
-.card {
+.card-review {
 	position: relative;
 	border-radius: 50px;
 	background: #fff;
@@ -106,11 +106,11 @@ const props = defineProps(['masterName', 'badge'])
 	transition: 0.1s;
 }
 
-.card:hover .button-read-more {
+.card-review:hover .button-read-more {
 	opacity: 1;
 }
 
-.card:hover {
+.card-review:hover {
 	background: rgba(255, 252, 252, 0.9);
 }
 
@@ -152,7 +152,7 @@ const props = defineProps(['masterName', 'badge'])
 }
 
 @media (max-width: 550px) {
-	.card {
+	.card-review {
 		padding: 40px 26px 34px;
 		border-radius: 32px;
 	}

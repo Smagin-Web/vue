@@ -85,7 +85,7 @@ const props = defineProps(['title', 'price', 'time', 'tech'])
 	transition: 0.2s;
 }
 
-.card:hover .buttons {
+.card-price:hover .buttons {
 	opacity: 1;
 }
 

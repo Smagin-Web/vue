@@ -104,7 +104,7 @@ import IconText2 from './IconText2.vue'
 	margin-right: 50px;
 }
 
-.card:after {
+.card-review-inside:after {
 	content: '';
 	width: 100px;
 	height: 100px;
@@ -210,7 +210,7 @@ import IconText2 from './IconText2.vue'
 		padding-right: 70px;
 		border-radius: 40px;
 	}
-	.card:after {
+	.card-review-inside:after {
 		width: 70px;
 		height: 70px;
 		right: -28px;
@@ -253,7 +253,7 @@ import IconText2 from './IconText2.vue'
 		padding: 24px;
 		border-radius: 20px;
 	}
-	.card:after {
+	.card-review-inside:after {
 		left: 100px;
 		right: auto;
 		top: -25px;
