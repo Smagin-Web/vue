@@ -1,4 +1,4 @@
-<script setup >
+<script setup>
 const props = defineProps(['badgeNumber', 'badgeColor', 'badgeName'])
 </script>
 
@@ -35,7 +35,7 @@ const props = defineProps(['badgeNumber', 'badgeColor', 'badgeName'])
 	border-radius: 20px;
 	padding: 0 22px 4px;
 	z-index: 20;
-  white-space: nowrap;
+	white-space: nowrap;
 }
 
 @media (max-width: 1500px) {

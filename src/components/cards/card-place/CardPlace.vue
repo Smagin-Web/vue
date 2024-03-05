@@ -6,7 +6,7 @@ import CardPlaceContacts from './CardPlaceContacts.vue'
 </script>
 
 <template>
-	<div class="card">
+	<div class="card-place">
 		<h2 class="h-xl">Face Concept Лефортово</h2>
 
 		<h5 class="h-md card-text">
@@ -36,7 +36,7 @@ import CardPlaceContacts from './CardPlaceContacts.vue'
 </template>
 
 <style scoped>
-.card {
+.card-place {
 	position: relative;
 	background-color: #fff;
 	padding: 40px;
@@ -101,7 +101,7 @@ import CardPlaceContacts from './CardPlaceContacts.vue'
 }
 
 @media (max-width: 1100px) {
-	.card {
+	.card-place {
 		padding: 30px;
 		border-radius: 30px;
 	}
@@ -131,7 +131,7 @@ import CardPlaceContacts from './CardPlaceContacts.vue'
 }
 
 @media (max-width: 600px) {
-	.card {
+	.card-place {
 		gap: 32px;
 	}
 	.card-heading {
@@ -153,7 +153,7 @@ import CardPlaceContacts from './CardPlaceContacts.vue'
 }
 
 @media (max-width: 550px) {
-	.card {
+	.card-place {
 		padding: 18px;
 		border-radius: 10px;
 	}

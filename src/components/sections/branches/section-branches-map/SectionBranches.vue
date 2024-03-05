@@ -4,6 +4,7 @@ import BreadCrumbs from '@/components/shared/BreadCrumbs.vue'
 import IconLocation from './IconLocation.vue'
 import IconList from './IconList.vue'
 import { ref } from 'vue'
+// import YandexMap from '../../../YandexMap.vue'
 
 const mapWrapper = ref('')
 
@@ -38,27 +39,10 @@ const onMapScroll = e => {
 						height: 100%;
 					"
 				>
-					<a
-						href="https://yandex.ru/maps/org/moskovskiy_kreml/1023322799/?utm_medium=mapframe&utm_source=maps"
-						style="color: #eee; font-size: 12px; position: absolute; top: 0px"
-					>
-						Московский Кремль
-					</a>
-					<a
-						href="https://yandex.ru/maps/213/moscow/category/museum/184105894/?utm_medium=mapframe&utm_source=maps"
-						style="color: #eee; font-size: 12px; position: absolute; top: 14px"
-					>
-						Музей в Москве
-					</a>
-					<a
-						href="https://yandex.ru/maps/213/moscow/category/landmark_attraction/89683368508/?utm_medium=mapframe&utm_source=maps"
-						style="color: #eee; font-size: 12px; position: absolute; top: 28px"
-					>
-						Достопримечательность в Москве
-					</a>
+					
 
 					<div class="map-wrapper" ref="mapWrapper">
-						
+						<!-- <YandexMap /> -->
 						<iframe
 							src="https://yandex.com/map-widget/v1/?um=constructor%3Aa63de5d28596bb7d89b600147a0b2ef376c90787bc240b5b12a03a754f7d10fb&amp;source=constructor"
 							width="100%"

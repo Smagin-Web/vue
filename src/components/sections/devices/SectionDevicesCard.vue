@@ -7,7 +7,7 @@ import MainTag from '@/components/ui/MainTag.vue'
 </script>
 
 <template>
-	<div class="card">
+	<div class="card-devices-main">
 		<CardLink class="card-link" />
 		<div class="card-left">
 			<h5 class="h-md card-title">Skinova Pro</h5>
@@ -47,7 +47,7 @@ import MainTag from '@/components/ui/MainTag.vue'
 </template>
 
 <style scoped>
-.card {
+.card-devices-main {
 	position: relative;
 	border-radius: 50px;
 	background: #fff;
@@ -157,7 +157,7 @@ import MainTag from '@/components/ui/MainTag.vue'
 }
 
 @media (max-width: 1200px) {
-	.card {
+	.card-devices-main {
 		padding: 20px;
 		border-radius: 20px;
 	}
@@ -171,7 +171,7 @@ import MainTag from '@/components/ui/MainTag.vue'
 }
 
 @media (max-width: 800px) {
-	.card {
+	.card-devices-main {
 		display: block;
 		padding-bottom: 80px;
 	}

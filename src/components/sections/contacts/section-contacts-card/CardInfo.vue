@@ -1,5 +1,5 @@
 <template>
-	<div class="card">
+	<div class="card-info">
 		<p class="text-sm card-text">
 			ООО «ФЭЙС КОНЦЕПТ»
 			<br />
@@ -51,7 +51,7 @@
 </template>
 
 <style scoped>
-.card {
+.card-info {
 	display: grid;
 	gap: 30px;
 
@@ -85,7 +85,7 @@
 }
 
 @media (max-width: 1100px) {
-	.card {
+	.card-info {
 		max-width: 348px;
 		width: 100%;
 		padding: 20px;

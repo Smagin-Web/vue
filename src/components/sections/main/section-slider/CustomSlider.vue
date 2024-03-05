@@ -111,42 +111,42 @@ const onChangeActive = (swiper) => {
 	transition: 0.2s;
 }
 
-.swiper-slide :deep() .card {
+.swiper-slide :deep() .card-slider {
 	background-color: #ede4da;
 }
 
-.swiper-slide-active :deep() .card {
+.swiper-slide-active :deep() .card-slider {
 	background-color: #fff;
 }
 
 /* Для всех карточек делаем прозрачный контент */
 
-.swiper-slide :deep() .card * {
+.swiper-slide :deep() .card-slider * {
 	opacity: 0;
 	transition: 0.2s;
 }
 
 /* Делаем непрозрачный контент для активной карточки */
 
-.swiper-slide-active :deep() .card * {
+.swiper-slide-active :deep() .card-slider * {
 	opacity: 1;
 }
 
 /* Меняем фон предыдущей карточки и перемещаем её вверх на 80px */
 
-.swiper-slide-prev :deep() .card {
+.swiper-slide-prev :deep() .card-slider {
 	top: -80px;
 	background-color: #ede4da;
 }
 
 /* Меняем фон следующей карточки и перемещаем её вниз на 80px */
 
-.swiper-slide-next :deep() .card {
+.swiper-slide-next :deep() .card-slider {
 	bottom: -60px;
 	background-color: #ede4da;
 }
 
-.swiper-slide-active .card:after {
+.swiper-slide-active .card-slider:after {
 	opacity: 0;
 	transition: 0.2s;
 }
@@ -170,10 +170,10 @@ const onChangeActive = (swiper) => {
 		height: auto;
 	}
 
-	.swiper-slide-prev :deep() .card {
+	.swiper-slide-prev :deep() .card-slider {
 		top: -20px;
 	}
-	.swiper-slide-next :deep() .card {
+	.swiper-slide-next :deep() .card-slider {
 		bottom: -20px;
 	}
 	.wrapper {
@@ -184,22 +184,22 @@ const onChangeActive = (swiper) => {
 }
 
 @media (max-width: 500px) {
-	.swiper-slide-prev :deep() .card {
+	.swiper-slide-prev :deep() .card-slider {
 		top: 20px;
 		background-color: #ede4da;
 	}
 
-	.swiper-slide-next :deep() .card {
+	.swiper-slide-next :deep() .card-slider {
 		bottom: 20px;
 	}
 
-	.swiper-slide :deep() .card {
+	.swiper-slide :deep() .card-slider {
 		opacity: 0;
 	}
 
-	.swiper-slide-active :deep() .card,
-	.swiper-slide-prev :deep() .card,
-	.swiper-slide-next :deep() .card {
+	.swiper-slide-active :deep() .card-slider,
+	.swiper-slide-prev :deep() .card-slider,
+	.swiper-slide-next :deep() .card-slider {
 		opacity: 1;
 	}
 }

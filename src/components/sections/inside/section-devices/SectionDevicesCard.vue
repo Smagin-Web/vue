@@ -3,7 +3,7 @@ import CardInfo from '@/components/card-elements/CardInfo.vue'
 import CardLink from '@/components/card-elements/CardLink.vue'
 </script>
 <template>
-	<div class="card">
+	<div class="card-devices-big">
 		<div class="card-content">
 			<div class="card-info">
 				<h5 class="h-md">Skinova Pro</h5>
@@ -33,7 +33,7 @@ import CardLink from '@/components/card-elements/CardLink.vue'
 </template>
 
 <style scoped>
-.card {
+.card-devices-big {
 	padding: 40px;
 	border-radius: 50px;
 	background-color: #fff;
@@ -119,7 +119,7 @@ import CardLink from '@/components/card-elements/CardLink.vue'
 }
 
 @media (max-width: 1000px) {
-	.card {
+	.card-devices-big {
 		border-radius: 20px;
 		padding: 30px;
 	}
@@ -145,7 +145,7 @@ import CardLink from '@/components/card-elements/CardLink.vue'
 }
 
 @media (max-width: 500px) {
-	.card {
+	.card-devices-big {
 		padding: 20px;
 	}
 }
