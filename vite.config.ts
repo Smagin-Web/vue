@@ -14,7 +14,7 @@ export default defineConfig({
     Pages(),
     Layouts(),
     VueRouter({
-      extensions: ['.vue', '.md']
+      extensions: ['.vue']
     })
   ],
   resolve: {
@@ -31,9 +31,5 @@ export default defineConfig({
     onFinished() {
       generateSitemap()
     }
-  },
-  ssr: {
-    // TODO: workaround until they support native ESM
-    noExternal: ['workbox-window', /vue-i18n/]
   }
 })

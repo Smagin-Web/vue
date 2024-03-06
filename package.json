@@ -5,37 +5,36 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "buildssg": "vite-ssg build",
     "build": "vite-ssg build",
+    "build-old": "run-p \"build-only {@}\" --",
     "preview": "vite preview",
     "build-only": "vite build",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "format": "prettier --write src/"
   },
   "dependencies": {
-    "emailjs-com": "^3.2.0",
-    "express": "^4.18.2",
-    "pinia": "^2.1.7",
-    "swiper": "^11.0.5",
-    "vite-plugin-pages": "^0.32.0",
-    "vite-plugin-vue-layouts": "^0.11.0",
-    "vite-ssg-sitemap": "^0.6.1",
-    "volar-service-vetur": "^0.0.13",
     "vue": "^3.4.19",
-    "vue3-yandex-metrika": "^0.0.4"
+    "pinia": "^2.1.7",
+    "emailjs-com": "^3.2.0",
+    "swiper": "^11.0.5",
+    "volar-service-vetur": "^0.0.13",
+    "vue3-yandex-metrika": "^0.0.4",
+    "vue-router": "^4.3.0"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.3.3",
     "@unhead/vue": "^1.8.11",
-    "@vitejs/plugin-vue": "^4.3.4",
+    "@vitejs/plugin-vue": "^3.2.6",
     "@vue/eslint-config-prettier": "^8.0.0",
     "eslint": "^8.49.0",
     "eslint-plugin-vue": "^9.17.0",
     "npm-run-all": "^4.1.5",
     "prettier": "^3.0.3",
-    "unplugin-vue-router": "^0.8.4",
     "vite": "^4.4.9",
     "vite-ssg": "^0.23.6",
-    "vue-router": "^4.3.0"
+    "vite-ssg-sitemap": "^0.6.1",
+    "vite-plugin-pages": "^0.32.0",
+    "vite-plugin-vue-layouts": "^0.11.0",
+    "unplugin-vue-router": "^0.8.4"
   }
 }
