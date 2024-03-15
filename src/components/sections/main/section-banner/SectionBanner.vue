@@ -1,5 +1,5 @@
-<script setup >
-import SectionBannerBadges from './SectionBannerBadges.vue'
+<script setup>
+import BannerTitle from './BannerTitle.vue'
 import SectionBannerBlock from './SectionBannerBlock.vue'
 import SectionBannerText from './SectionBannerText.vue'
 </script>
@@ -10,12 +10,7 @@ import SectionBannerText from './SectionBannerText.vue'
 			<div class="content">
 				<SectionBannerBlock class="banner" />
 				<div class="content-info">
-					<h2 class="content-heading-text">
-						Преобразуй
-						<br />
-						свою&nbsp;кожу
-						<SectionBannerBadges class="banner-badges" />
-					</h2>
+					<BannerTitle />
 					<SectionBannerText />
 				</div>
 			</div>
@@ -24,25 +19,25 @@ import SectionBannerText from './SectionBannerText.vue'
 </template>
 
 <style scoped>
-.banner-badges {
-	position: absolute;
-	left: calc(100% - 70px);
-	bottom: 20px;
-}
 .container-custom {
 	max-width: 1920px;
 	padding: 0 46px;
 	margin: 0 auto;
 }
+
 .section-banner {
 	padding-top: 100px;
 	overflow: visible;
 }
+
 .content {
+	display: flex;
 	gap: 50px;
-	display: grid;
-	grid-template-columns: minmax(0, 732px) max-content;
 	align-items: center;
+}
+
+.banner {
+	flex-shrink: 0;
 }
 
 .content-info {
@@ -54,36 +49,11 @@ import SectionBannerText from './SectionBannerText.vue'
 	padding-right: 280px;
 }
 
-.content-heading-text {
-	position: relative;
-	color: black;
-	font-family: 'Pelinka';
-	font-weight: 700;
-	font-size: 90px;
-	padding-bottom: 25px;
-	position: relative;
-}
-
-.content-info {
-	padding-right: 300px;
-}
 .text {
 	color: #6d6364;
 	font-family: 'BrisaSans', sans-serif;
 	font-size: 24px;
 	max-width: 650px;
-}
-
-@media screen and (max-width: 1600px) {
-	.content-heading-text {
-		font-size: 80px;
-	}
-
-	.banner-badges {
-		left: calc(100% - 110px);
-		bottom: 20px;
-		width: 340px;
-	}
 }
 
 @media (max-width: 1500px) {
@@ -92,25 +62,9 @@ import SectionBannerText from './SectionBannerText.vue'
 		bottom: 40px;
 		width: 250px;
 	}
-
-	.content-info {
-		padding-right: 120px;
-	}
-	.content-heading-text {
-		font-size: 70px;
-	}
-
-	.banner-badges {
-		right: 100px;
-	}
 }
 
 @media (max-width: 1200px) {
-	.banner-badges {
-		left: 222px;
-		bottom: 30px;
-		width: 140px;
-	}
 	.content {
 		grid-template-columns: 1fr;
 		justify-items: start;
@@ -120,11 +74,6 @@ import SectionBannerText from './SectionBannerText.vue'
 		padding-right: 0;
 		justify-content: start;
 		padding-bottom: 0;
-	}
-
-	.content-heading-text {
-		text-align: left;
-		font-size: 34px;
 	}
 
 	.banner {
@@ -144,6 +93,13 @@ import SectionBannerText from './SectionBannerText.vue'
 @media (max-width: 1000px) {
 	.section-banner {
 		padding-top: 50px;
+	}
+}
+
+@media (max-width: 800px) {
+	.content {
+		display: grid;
+		max-width: 450px;
 	}
 }
 
