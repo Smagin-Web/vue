@@ -1,4 +1,4 @@
-<script setup >
+<script setup>
 import ViewWrapper from '@/components/ViewWrapper.vue'
 
 import MContainer from '@/components/shared/MContainer.vue'

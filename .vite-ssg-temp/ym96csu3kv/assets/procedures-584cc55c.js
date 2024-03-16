@@ -104,7 +104,7 @@ const _sfc_main$1 = {
       "Clear Concept",
       "Detox Concept",
       "Lifting Concept",
-      "Brigth Concept",
+      "Bright Concept",
       "Hydro Concept",
       "Red Concept",
       "Personal Concept"

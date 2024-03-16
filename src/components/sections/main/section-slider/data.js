@@ -54,10 +54,10 @@ export const dataSlides = [
 			'Задачей концепта является бережное осветление кожи, уменьшение пигментации, придание коже сияния.',
 		p1: 'Подберем для тебя комплекс процедур, который избавит от&nbsp;веснушек, возрастной пигментации, застойных пятен от&nbsp;воспалений и&nbsp;акне.',
 		badgeNumber: '05.',
-		badgeName: 'Brigth Concept',
+		badgeName: 'Bright Concept',
 		badgeColor: '#F2B280',
 		iconSrc: './icon5.svg',
-		link: '/concept/brigth'
+		link: '/concept/bright'
 	},
 	{
 		title:

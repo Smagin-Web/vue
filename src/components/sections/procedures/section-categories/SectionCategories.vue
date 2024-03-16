@@ -11,7 +11,7 @@ const filtersList = [
 	'Clear Concept',
 	'Detox Concept',
 	'Lifting Concept',
-	'Brigth Concept',
+	'Bright Concept',
 	'Hydro Concept',
 	'Red Concept',
 	'Personal Concept'
