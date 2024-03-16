@@ -12,11 +12,13 @@ export default defineConfig({
   plugins: [
     vue(),
     Pages(),
+
     Layouts(),
     VueRouter({
       extensions: ['.vue']
     })
   ],
+
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
