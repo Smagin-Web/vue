@@ -62,8 +62,8 @@ export default {
 							href: '/concept/lifting'
 						},
 						{
-							text: 'Brigth Concept',
-							href: '/concept/brigth'
+							text: 'Bright Concept',
+							href: '/concept/bright'
 						},
 						{
 							text: 'Hydro Concept',
