@@ -1,4 +1,4 @@
-<script setup >
+<script setup>
 import Filter from '@/components/shared/Filter.vue'
 
 const props = defineProps(['items'])
@@ -11,7 +11,7 @@ const props = defineProps(['items'])
 			:active="index === 0"
 			:key="index"
 		>
-			{{ item }}
+			{{ item.title }}
 		</Filter>
 	</div>
 </template>

@@ -35,6 +35,10 @@ import MContainer from '@/components/shared/MContainer.vue'
 				<a class="link" href="/concept/clear">clear</a>
 				<a class="link" href="/concept/antiacne">antiacne</a>
 			</div>
+			<div style="padding-top: 40px">
+				<h3>https://admin.aivaga.store/api/procedures/0</h3>
+				<p>Получаем два объекта: категории и все процедуры</p>
+			</div>
 		</MContainer>
 	</ViewWrapper>
 </template>

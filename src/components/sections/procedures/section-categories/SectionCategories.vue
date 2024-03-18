@@ -1,38 +1,34 @@
-<script setup >
+<script setup>
+import { computed } from 'vue'
+import { useProceduresStore } from '@/stores/procedures'
+
 import MContainer from '@/components/shared/MContainer.vue'
 import BreadCrumbs from '@/components/shared/BreadCrumbs.vue'
 import MButtonOutlineBig from '@/components/buttons/MButtonOutlineBig.vue'
-import SectionProceduresCard from '../../inside/section-procedures/SectionProceduresCard.vue'
+import SectionProceduresCard from '@/components/sections/inside/section-procedures/SectionProceduresCard.vue'
 import WidgetFilters from '@/components/widgets/filters/WidgetFilters.vue'
 
-const filtersList = [
-	'Все процедуры',
-	'AntiAcne Concept',
-	'Clear Concept',
-	'Detox Concept',
-	'Lifting Concept',
-	'Bright Concept',
-	'Hydro Concept',
-	'Red Concept',
-	'Personal Concept'
-]
+const store = useProceduresStore()
 </script>
 
 <template>
-	<section class="section-categories">
+	<section id="section_categories" class="section-categories">
 		<MContainer>
 			<BreadCrumbs :items="['Главная', 'Процедуры']" />
+
 			<h1 class="h-xxl section-categories-title">Процедуры</h1>
 
-			<WidgetFilters :items="filtersList" />
+			<WidgetFilters v-if="store.categories" :items="store.categories" />
+
 			<div class="cards">
-				<SectionProceduresCard />
-				<SectionProceduresCard />
-				<SectionProceduresCard />
-				<SectionProceduresCard />
-				<SectionProceduresCard />
-				<SectionProceduresCard />
+				<SectionProceduresCard
+					v-if="!!store.procedures"
+					v-for="item in store.procedures"
+					:key="item"
+					:data="item"
+				/>
 			</div>
+
 			<div class="button-wrapper">
 				<MButtonOutlineBig>Показать ещё процедуры</MButtonOutlineBig>
 			</div>

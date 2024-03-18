@@ -1,7 +1,13 @@
-<script setup >
+<script setup>
 import SectionProceduresBadge from './SectionProceduresBadge.vue'
 import CardInfo from '@/components/card-elements/CardInfo.vue'
 import CardLink from '@/components/card-elements/CardLink.vue'
+
+const props = defineProps(['data'])
+
+const clickHandler = () => {
+	console.log('heelo')
+}
 </script>
 
 <template>
@@ -9,21 +15,25 @@ import CardLink from '@/components/card-elements/CardLink.vue'
 		<div class="card-image-wrap">
 			<img src="./picture.png" class="card-image" alt="" />
 		</div>
-		<div style="display: flex; gap: 10px">
-			<SectionProceduresBadge>AntiAcne Concept</SectionProceduresBadge>
-			<SectionProceduresBadge>Detox Concept</SectionProceduresBadge>
+		<div style="display: flex; gap: 10px; flex-wrap: wrap">
+			<SectionProceduresBadge
+				v-if="data?.category_procedures?.length"
+				v-for="category in data.category_procedures"
+			>
+				{{ category.title }}
+			</SectionProceduresBadge>
 		</div>
 		<h5 class="card-heading h-sm-ultra">
-			Аппаратная чистка лица Hydro&nbsp;Peel&nbsp;Plus
+			{{ data.title }}
 		</h5>
 		<p class="card-text text-sm">
-			Красота и здоровье кожи надолго, всего за одну процедуру.
+			{{ data.description_mini }}
 		</p>
 
-		<CardInfo icon="time" title="Время процедуры" text="1 час 30 минут" />
-		<CardInfo icon="pay" title="Стоимость" text="4 500₽" />
+		<CardInfo icon="time" title="Время процедуры" :text="data.duration" />
+		<CardInfo icon="pay" title="Стоимость" :text="`${data.price}₽`" />
 
-		<CardLink class="card-link" />
+		<CardLink class="card-link" :onClick="clickHandler" />
 	</div>
 </template>
 
