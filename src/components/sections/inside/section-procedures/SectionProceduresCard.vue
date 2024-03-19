@@ -4,10 +4,6 @@ import CardInfo from '@/components/card-elements/CardInfo.vue'
 import CardLink from '@/components/card-elements/CardLink.vue'
 
 const props = defineProps(['data'])
-
-const clickHandler = () => {
-	console.log('heelo')
-}
 </script>
 
 <template>
@@ -33,7 +29,7 @@ const clickHandler = () => {
 		<CardInfo icon="time" title="Время процедуры" :text="data.duration" />
 		<CardInfo icon="pay" title="Стоимость" :text="`${data.price}₽`" />
 
-		<CardLink class="card-link" :onClick="clickHandler" />
+		<CardLink class="card-link" />
 	</div>
 </template>
 

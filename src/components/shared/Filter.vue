@@ -1,9 +1,13 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <script setup>
-const props = defineProps(['active'])
+const props = defineProps(['active', 'onClick'])
 </script>
 <template>
-	<button class="filter" v-bind:class="{ active: props.active }">
+	<button
+		class="filter"
+		:onClick="onClick"
+		v-bind:class="{ active: props.active }"
+	>
 		<slot />
 	</button>
 </template>
