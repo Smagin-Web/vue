@@ -1,5 +1,4 @@
 <script setup>
-import { computed } from 'vue'
 import { useProceduresStore } from '@/stores/procedures'
 
 import MContainer from '@/components/shared/MContainer.vue'

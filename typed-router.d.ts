@@ -41,6 +41,7 @@ declare module 'vue-router/auto-routes' {
     '/nav': RouteRecordInfo<'/nav', '/nav', Record<never, never>, Record<never, never>>,
     '/policy': RouteRecordInfo<'/policy', '/policy', Record<never, never>, Record<never, never>>,
     '/prices': RouteRecordInfo<'/prices', '/prices', Record<never, never>, Record<never, never>>,
+    '/procedure/[name]': RouteRecordInfo<'/procedure/[name]', '/procedure/:name', { name: ParamValue<true> }, { name: ParamValue<false> }>,
     '/procedures': RouteRecordInfo<'/procedures', '/procedures', Record<never, never>, Record<never, never>>,
     '/review': RouteRecordInfo<'/review', '/review', Record<never, never>, Record<never, never>>,
     '/review-inside': RouteRecordInfo<'/review-inside', '/review-inside', Record<never, never>, Record<never, never>>,
