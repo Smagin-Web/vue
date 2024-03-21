@@ -3,7 +3,8 @@ import SectionProceduresBadge from './SectionProceduresBadge.vue'
 import CardInfo from '@/components/card-elements/CardInfo.vue'
 import CardLink from '@/components/card-elements/CardLink.vue'
 
-const props = defineProps(['data'])
+const props = defineProps(['data', 'link'])
+// const data = props.data
 </script>
 
 <template>
@@ -29,7 +30,7 @@ const props = defineProps(['data'])
 		<CardInfo icon="time" title="Время процедуры" :text="data.duration" />
 		<CardInfo icon="pay" title="Стоимость" :text="`${data.price}₽`" />
 
-		<CardLink class="card-link" />
+		<CardLink class="card-link" :link="data.link" />
 	</div>
 </template>
 

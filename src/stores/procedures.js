@@ -11,7 +11,6 @@ export const useProceduresStore = defineStore('procedures', {
 		async getCategories() {
 			const data = await getProcedures(this.proceduresApiId)
 			data.categories.splice(0, 0, { id: '0', title: 'Все' })
-			console.log(data)
 			this.categories = data.categories
 		},
 		async getProcedures() {

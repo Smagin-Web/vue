@@ -1,12 +1,12 @@
-<script setup >
+<script setup>
 import IconCardLink from '@/components/icons/IconCardLink.vue'
-const props = defineProps(['path'])
+const props = defineProps(['link'])
 </script>
 
 <template>
-	<a class="card-link" :href="props.path">
+	<router-link class="card-link" :to="`/procedure/${props.link}`">
 		<IconCardLink class="card-link-icon" />
-	</a>
+	</router-link>
 </template>
 
 <style scoped>
@@ -14,6 +14,7 @@ const props = defineProps(['path'])
 	display: block;
 	width: 140px;
 }
+
 .card-link-icon {
 	width: 100%;
 	height: auto;

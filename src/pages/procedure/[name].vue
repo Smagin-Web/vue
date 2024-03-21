@@ -13,18 +13,19 @@ import SectionPluses from '@/components/sections/tech/section-pluses/SectionPlus
 import SectionBanner from '@/components/sections/tech/section-banner/SectionBanner.vue'
 import { useProcedureStore } from '../../stores/procedure'
 import { useRoute } from 'vue-router'
+import { computed } from 'vue'
 
 const store = useProcedureStore()
 const name_procedure = useRoute().fullPath.split('/')[2]
 
 store.getProcedureByName(name_procedure)
 
-console.log(store.procedure)
+const procedure = computed(() => store.procedure)
 </script>
 
 <template>
 	<ViewWrapper>
-		<SectionMain />
+		<SectionMain v-if="procedure?.procedure" :data="procedure.procedure" />
 		<SectionPluses />
 		<SectionBanner />
 		<SectionPrice />

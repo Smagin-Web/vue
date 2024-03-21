@@ -9,7 +9,6 @@ export const useProcedureStore = defineStore('procedure', {
 	actions: {
 		async getProcedureByName(name) {
 			this.procedure = await getProcedureForName(name)
-			console.log(this.procedure)
 		}
 	}
 })

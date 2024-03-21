@@ -1,9 +1,11 @@
-<script setup >
+<script setup>
 import BreadCrumbs from '@/components/shared/BreadCrumbs.vue'
 import MContainer from '@/components/shared/MContainer.vue'
 import BadgeMd from '@/components/ui/BadgeMd.vue'
 import MainTag from '@/components/ui/MainTag.vue'
 import SectionMainPicture from './SectionMainPicture.vue'
+
+const props = defineProps(['data'])
 </script>
 
 <template>
@@ -18,29 +20,18 @@ import SectionMainPicture from './SectionMainPicture.vue'
 					<SectionMainPicture class="picture" />
 				</div>
 				<div class="section-content-right">
-					<h1 class="heading">Skinova Pro — новое поколение ультразвука</h1>
+					<h1 class="heading">{{ data.title }}</h1>
 					<div class="badges">
 						<BadgeMd type="1">AntiAcne Concept</BadgeMd>
 						<BadgeMd type="2">Detox Concept</BadgeMd>
 						<BadgeMd type="3">Lifting Concept</BadgeMd>
 					</div>
 					<p class="text">
-						Первая в мире ультразвуковая 3D-волна поколения triple действует
-						четко в цель: мгновенно омолаживает кожу на клеточном уровне,
-						стимулирует регенерацию, помогает в лечении дерматологических
-						проблем и восстановлении после агрессивных процедур и пластики.
+						{{ data.description }}
 					</p>
 					<p class="heading-mini">Показания</p>
 					<div class="tags">
-						<MainTag>Морщины</MainTag>
-						<MainTag>Дряблость кожи</MainTag>
-						<MainTag>Угревая сыпь, акне</MainTag>
-						<MainTag>Атопический дерматит</MainTag>
-						<MainTag>Экзема</MainTag>
-						<MainTag>Трофические язвы</MainTag>
-						<MainTag>Келоиды</MainTag>
-						<MainTag>Волчанка</MainTag>
-						<MainTag>Постакне</MainTag>
+						<MainTag v-for="tag in data.indications">{{ tag.title }}</MainTag>
 					</div>
 				</div>
 			</div>
