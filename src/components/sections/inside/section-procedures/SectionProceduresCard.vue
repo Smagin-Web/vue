@@ -4,7 +4,7 @@ import CardInfo from '@/components/card-elements/CardInfo.vue'
 import CardLink from '@/components/card-elements/CardLink.vue'
 
 const props = defineProps(['data', 'link'])
-// const data = props.data
+console.log(props.data)
 </script>
 
 <template>

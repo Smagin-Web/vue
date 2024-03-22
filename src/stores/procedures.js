@@ -15,7 +15,8 @@ export const useProceduresStore = defineStore('procedures', {
 		},
 		async getProcedures() {
 			const data = await getProcedures(this.proceduresApiId)
-			this.procedures = data.procedures
+			// console.log(data)
+			this.procedures = data.procedures.data
 		},
 		changeProceduresApiId(id) {
 			this.proceduresApiId = id

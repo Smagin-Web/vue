@@ -6,6 +6,8 @@ import MainTag from '@/components/ui/MainTag.vue'
 import SectionMainPicture from './SectionMainPicture.vue'
 
 const props = defineProps(['data'])
+
+console.log(props.data)
 </script>
 
 <template>
