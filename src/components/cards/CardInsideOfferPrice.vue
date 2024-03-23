@@ -5,7 +5,7 @@
 		<div class="prices-old-wrapper">
 			<h4 class="prices-old">2000₽</h4>
 		</div>
-		<h4 class="prices-new">0₽</h4>
+		<h4 class="prices-new">990₽</h4>
 	</div>
 </template>
 

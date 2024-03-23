@@ -5,7 +5,7 @@ export const useModalsStore = defineStore('modals', () => {
 	const isBodyLock = ref(false)
 	const isOpenModalBonuse = ref(false)
 	const isOpenModalApplication = ref(false)
-	const isOpenModalReplace = ref(true)
+	const isOpenModalReplace = ref(false)
 
 	const closeAllModals = () => {
 		isOpenModalApplication.value = false
