@@ -5,12 +5,14 @@ import CardLink from '@/components/card-elements/CardLink.vue'
 
 const props = defineProps(['data', 'link'])
 console.log(props.data)
+
+const img_src = `https://admin.aivaga.store/storage/images/procedures/${props.data.image}`
 </script>
 
 <template>
 	<div class="card">
 		<div class="card-image-wrap">
-			<img src="./picture.png" class="card-image" alt="" />
+			<img :src="img_src" class="card-image" alt="" />
 		</div>
 		<div style="display: flex; gap: 10px; flex-wrap: wrap">
 			<SectionProceduresBadge
