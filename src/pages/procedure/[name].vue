@@ -21,6 +21,8 @@ const name_procedure = useRoute().fullPath.split('/')[2]
 store.getProcedureByName(name_procedure)
 
 const procedure = computed(() => store.procedure)
+const categories = computed(() => store.categories)
+const badges = computed(() => store.badges)
 
 console.log(procedure)
 </script>
@@ -28,9 +30,10 @@ console.log(procedure)
 <template>
 	<ViewWrapper>
 		<SectionMain
-			v-if="procedure?.procedure"
-			:procedure="procedure.procedure"
-			:categories="procedure.categories"
+			v-if="store.badges?.length"
+			:procedure="procedure"
+			:categories="categories"
+			:badges="badges"
 		/>
 		<SectionPluses />
 		<SectionBanner />
