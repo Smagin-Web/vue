@@ -5,9 +5,27 @@ import BadgeMd from '@/components/ui/BadgeMd.vue'
 import MainTag from '@/components/ui/MainTag.vue'
 import SectionMainPicture from './SectionMainPicture.vue'
 
-const props = defineProps(['data'])
+const props = defineProps(['procedure', 'categories'])
 
-console.log(props.data)
+// Берем ID концептов, которым принадлежит технология
+const idConceptsBadgeArray = props.procedure.category_procedures.map(
+	item => item.concept_id
+)
+
+const badgesArray = []
+
+props.categories.map(category => {
+	idConceptsBadgeArray.map(id => {
+		if (category.concept_id === id) {
+			const returnItem = {
+				title: category.concept.title,
+				color: category.concept.color,
+				link: `/concept/${category.concept.slug}`
+			}
+			return badgesArray.push(returnItem)
+		}
+	})
+})
 </script>
 
 <template>
@@ -22,18 +40,25 @@ console.log(props.data)
 					<SectionMainPicture class="picture" />
 				</div>
 				<div class="section-content-right">
-					<h1 class="heading">{{ data.title }}</h1>
+					<h1 class="heading">{{ procedure.title }}</h1>
 					<div class="badges">
-						<BadgeMd type="1">AntiAcne Concept</BadgeMd>
-						<BadgeMd type="2">Detox Concept</BadgeMd>
-						<BadgeMd type="3">Lifting Concept</BadgeMd>
+						<BadgeMd
+							v-if="badgesArray.length"
+							v-for="badge in badgesArray"
+							:color="badge.color"
+							:link="badge.link"
+						>
+							{{ badge.title }}
+						</BadgeMd>
 					</div>
 					<p class="text">
-						{{ data.description }}
+						{{ procedure.description }}
 					</p>
 					<p class="heading-mini">Показания</p>
 					<div class="tags">
-						<MainTag v-for="tag in data.indications">{{ tag.title }}</MainTag>
+						<MainTag v-for="tag in procedure.indications">{{
+							tag.title
+						}}</MainTag>
 					</div>
 				</div>
 			</div>

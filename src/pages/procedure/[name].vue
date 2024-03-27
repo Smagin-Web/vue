@@ -21,11 +21,17 @@ const name_procedure = useRoute().fullPath.split('/')[2]
 store.getProcedureByName(name_procedure)
 
 const procedure = computed(() => store.procedure)
+
+console.log(procedure)
 </script>
 
 <template>
 	<ViewWrapper>
-		<SectionMain v-if="procedure?.procedure" :data="procedure.procedure" />
+		<SectionMain
+			v-if="procedure?.procedure"
+			:procedure="procedure.procedure"
+			:categories="procedure.categories"
+		/>
 		<SectionPluses />
 		<SectionBanner />
 		<SectionPrice />

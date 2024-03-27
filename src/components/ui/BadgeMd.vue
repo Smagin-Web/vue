@@ -1,12 +1,16 @@
-<script  setup>
-const props = defineProps(['type'])
+<script setup>
+const props = defineProps(['type', 'color', 'link'])
 
 const className = `badge-${props.type}`
 </script>
 
 <template>
-	<div class="badge-md" v-bind:class="className">
-		<a href="#" class="badge-md-link" />
+	<div
+		class="badge-md"
+		v-bind:class="className"
+		:style="`background: ${color}`"
+	>
+		<router-link :to="link" class="badge-md-link" />
 		<slot />
 	</div>
 </template>
@@ -29,18 +33,6 @@ const className = `badge-${props.type}`
 
 .badge-md:hover {
 	opacity: 0.8;
-}
-
-.badge-1 {
-	background-color: #98cbfa;
-}
-
-.badge-2 {
-	background-color: #81cca4;
-}
-
-.badge-3 {
-	background-color: #eea3a3;
 }
 
 .badge-md-link {
