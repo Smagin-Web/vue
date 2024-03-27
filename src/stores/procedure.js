@@ -15,23 +15,17 @@ export const useProcedureStore = defineStore('procedure', {
 			this.categories = response.categories
 
 			// Логика добавления бейджиков
-			const badgesArray = []
-
 			const idConceptsBadgeArray = response.procedure.category_procedures.map(
 				item => item.concept_id
 			)
-			response.categories.map(category => {
-				idConceptsBadgeArray.map(id => {
-					if (category.concept_id === id) {
-						const returnItem = {
-							title: category.concept.title,
-							color: category.concept.color,
-							link: `/concept/${category.concept.slug}`
-						}
-						return badgesArray.push(returnItem)
-					}
-				})
-			})
+
+			const badgesArray = response.categories
+				.filter(category => idConceptsBadgeArray.includes(category.concept_id))
+				.map(category => ({
+					title: category.concept.title,
+					color: category.concept.color,
+					link: `/concept/${category.concept.slug}`
+				}))
 
 			this.badges = badgesArray
 		},
